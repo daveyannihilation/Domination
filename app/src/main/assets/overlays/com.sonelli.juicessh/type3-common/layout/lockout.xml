@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@*com.sonelli.juicessh:drawable/loading_screen" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@*com.sonelli.juicessh:color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.8" />
+    <RelativeLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+        <ImageView android:id="@*com.sonelli.juicessh:id/loading_icon" android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@*com.sonelli.juicessh:drawable/ic_launcher" android:layout_centerInParent="true" android:contentDescription="@*com.sonelli.juicessh:string/app_name" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.8">
+        <TextView android:textSize="26.0sp" android:textStyle="bold" android:textColor="@*android:color/white" android:gravity="center_horizontal" android:id="@*com.sonelli.juicessh:id/loading_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@*com.sonelli.juicessh:string/locked_out" />
+        <TextView android:textSize="12.0sp" android:textStyle="italic" android:textColor="@*android:color/secondary_text_default_material_dark" android:gravity="center_horizontal" android:id="@*com.sonelli.juicessh:id/subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@*com.sonelli.juicessh:string/too_many_incorrect_security_lock_attempts" />
+    </LinearLayout>
+</LinearLayout>

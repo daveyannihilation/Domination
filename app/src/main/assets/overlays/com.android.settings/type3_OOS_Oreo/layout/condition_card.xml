@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@*com.android.settings:id/content" android:background="@*com.android.settings:color/material_grey_800" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:elevation="2.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@*com.android.settings:id/collapsed_group" android:layout_width="fill_parent" android:layout_height="56.0dip">
+            <ImageView android:id="@*android:id/icon" android:layout_width="24.0dip" android:layout_height="wrap_content" android:tint="?android:textColorPrimary" android:layout_marginEnd="36.0dip" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?android:textColorPrimary" android:id="@*android:id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <ImageView android:id="@*com.android.settings:id/expand_indicator" android:background="?android:selectableItemBackground" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:tint="?android:textColorPrimary" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@*com.android.settings:id/detail_group" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:paddingStart="60.0dip">
+            <TextView android:textAppearance="?android:textAppearanceListItemSecondary" android:textColor="?android:textColorPrimary" android:id="@*android:id/summary" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.7" android:paddingEnd="?android:listPreferredItemPaddingEnd" />
+            <View android:id="@*com.android.settings:id/divider" android:background="@*android:color/transparent" android:layout_width="fill_parent" android:layout_height="0.25dip" />
+            <com.android.internal.widget.ButtonBarLayout android:id="@*com.android.settings:id/buttonBar" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingEnd="?android:listPreferredItemPaddingEnd" style="?android:buttonBarStyle">
+                <Button android:textColor="?android:textColorPrimary" android:gravity="start" android:id="@*com.android.settings:id/first_action" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.8" android:paddingStart="4.0dip" style="?android:buttonBarButtonStyle" />
+                <Button android:textColor="?android:textColorPrimary" android:gravity="start" android:id="@*com.android.settings:id/second_action" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.8" android:paddingStart="4.0dip" style="?android:buttonBarButtonStyle" />
+            </com.android.internal.widget.ButtonBarLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

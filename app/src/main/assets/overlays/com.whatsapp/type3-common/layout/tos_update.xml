@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@*com.whatsapp:id/main_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@*com.whatsapp:id/screen_1" android:background="@*android:color/background_dark" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@*com.whatsapp:id/footer">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@*com.whatsapp:id/illustration" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@*com.whatsapp:drawable/ill_tos" android:scaleType="centerCrop" />
+            <View android:id="@*com.whatsapp:id/illustration_dummy" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="56.0dip" />
+            <com.whatsapp.TextEmojiLabel android:textSize="16.0sp" android:textColor="#ffdddddd" android:gravity="left" android:id="@*com.whatsapp:id/text_1" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@*com.whatsapp:style/Text.Field" />
+        </LinearLayout>
+    </ScrollView>
+    <ScrollView android:id="@*com.whatsapp:id/screen_2" android:background="@*android:color/background_dark" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@*com.whatsapp:id/footer">
+        <FrameLayout android:id="@*com.whatsapp:id/screen_2_frame" android:paddingTop="56.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.whatsapp.TextEmojiLabel android:textSize="14.0sp" android:textColor="#ffdddddd" android:gravity="left" android:id="@*com.whatsapp:id/text_2" android:background="@*com.whatsapp:drawable/tos_bubble" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" style="@*com.whatsapp:style/Text.Field" />
+        </FrameLayout>
+    </ScrollView>
+    <ImageView android:layout_width="fill_parent" android:layout_height="6.0dip" android:src="@*com.whatsapp:drawable/shadow_terms" android:scaleType="fitXY" android:layout_above="@*com.whatsapp:id/footer" />
+    <LinearLayout android:orientation="vertical" android:id="@*com.whatsapp:id/footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:id="@*com.whatsapp:id/age_consent_container" android:background="@*android:color/background_dark" android:paddingTop="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:textColor="#ffdddddd" android:id="@*com.whatsapp:id/age_consent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@*com.whatsapp:string/tos_age_checkbox" />
+            <View android:layout_gravity="bottom" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="12.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@*android:color/primary_material_dark" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="76.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@*com.whatsapp:id/title" android:paddingRight="16.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textSize="16.0sp" android:textColor="@*android:color/white" android:id="@*com.whatsapp:id/action" android:paddingLeft="28.0dip" android:paddingTop="8.0dip" android:paddingRight="28.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="" android:layout_gravity="bottom" android:orientation="horizontal" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="6.0dip">
+                <ImageView android:id="@*com.whatsapp:id/indicator_1" android:paddingLeft="4.0dip" android:paddingRight="2.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <ImageView android:id="@*com.whatsapp:id/indicator_2" android:paddingLeft="2.0dip" android:paddingRight="4.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@*com.whatsapp:id/not_now" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" android:text="@*com.whatsapp:string/not_now" android:layout_alignParentRight="true" />
+    <TextView android:textColor="@*android:color/white" android:id="@*com.whatsapp:id/age_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="-14.0dip" android:text="@*com.whatsapp:string/tos_age_tip" android:layout_above="@*com.whatsapp:id/footer" android:layout_alignParentLeft="true" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@*com.google.android.contacts:id/toolbar" android:layout_width="fill_parent" android:layout_height="@*com.google.android.contacts:dimen/abc_action_bar_default_height_material" android:elevation="4.0dip" app:navigationIcon="@*com.google.android.contacts:drawable/abc_ic_ab_back_material" app:navigationContentDescription="@*com.google.android.contacts:string/back_arrow_content_description" style="@*com.google.android.contacts:style/LightToolbarStyle">
+        <Button android:textSize="14.0sp" android:layout_gravity="end|center" android:id="@*com.google.android.contacts:id/action_button" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@*com.google.android.contacts:style/Widget.AppCompat.Button.Borderless" />
+    </android.support.v7.widget.Toolbar>
+    <android.support.design.widget.CoordinatorLayout android:background="@*android:color/background_dark" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@*com.google.android.contacts:layout/list_header" />
+            <ListView android:id="@*android:id/list" android:paddingTop="8.0dip" android:visibility="gone" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:dividerHeight="1.0px" android:layout_weight="1.0" />
+        </LinearLayout>
+        <android.support.v4.widget.ContentLoadingProgressBar android:layout_gravity="center" android:id="@*com.google.android.contacts:id/progress" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateOnly="true" style="@*com.google.android.contacts:style/Widget.AppCompat.ProgressBar" />
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

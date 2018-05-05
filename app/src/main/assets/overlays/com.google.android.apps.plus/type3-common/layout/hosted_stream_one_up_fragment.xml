@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.plus.views.StreamOneUpViewGroup android:id="@*com.google.android.apps.plus:id/list_container" android:backgroundTint="@null" android:background="@*com.google.android.apps.plus:color/quantum_white_100" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/com.google.android.apps.plus">
+    <com.google.android.libraries.social.ui.swiperefresh.SwipeRefreshLayoutWithUpScroll android:id="@*com.google.android.apps.plus:id/pull_to_refresh" android:backgroundTint="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignWithParentIfMissing="true">
+        <com.google.android.libraries.social.ui.views.RecyclingViewGroup android:id="@*android:id/list" android:backgroundTint="@null" android:scrollbars="vertical" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@*com.google.android.apps.plus:color/quantum_white_100" android:divider="@null" app:enableScrollBars="true" />
+    </com.google.android.libraries.social.ui.swiperefresh.SwipeRefreshLayoutWithUpScroll>
+    <LinearLayout android:layout_gravity="bottom|center" android:orientation="vertical" android:id="@*com.google.android.apps.plus:id/footer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:id="@*com.google.android.apps.plus:id/footer_divider" android:background="@*com.google.android.apps.plus:color/one_up_divider" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="2.0dip" android:importantForAccessibility="no" />
+        <include android:id="@*com.google.android.apps.plus:id/footer_bar" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" layout="@*com.google.android.apps.plus:layout/footer_bar" />
+        <include android:id="@*com.google.android.apps.plus:id/footer_bar_with_embeds" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@*com.google.android.apps.plus:layout/footer_bar_with_embeds" />
+        <include android:id="@*com.google.android.apps.plus:id/square_join_to_comment_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@*com.google.android.apps.plus:layout/square_post_join_to_comment" />
+    </LinearLayout>
+</com.google.android.apps.plus.views.StreamOneUpViewGroup>

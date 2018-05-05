@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@*com.whatsapp:id/wallpaper_preview_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/com.whatsapp">
+    <android.support.design.widget.AppBarLayout android:theme="@*com.whatsapp:style/ThemeOverlay.AppCompat.ActionBar" android:id="@*com.whatsapp:id/appbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <com.whatsapp.BidiToolbar android:id="@*com.whatsapp:id/toolbar" android:layout_width="fill_parent" android:layout_height="@*com.whatsapp:dimen/actionbar_height" app:popupTheme="@*com.whatsapp:style/ThemeOverlay.AppCompat.Light" app:titleTextAppearance="@*com.whatsapp:style/Widget.Styled.ActionBar.GalleryPicker.TitleTextStyle" app:theme="@*com.whatsapp:style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+        <View android:id="@*com.whatsapp:id/separator" android:background="@*com.whatsapp:color/divider_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    </android.support.design.widget.AppBarLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@*com.whatsapp:id/appbar">
+        <View android:id="@*com.whatsapp:id/transition_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.whatsapp.wallpaper.MarginCorrectedViewPager android:id="@*com.whatsapp:id/wallpaper_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@*com.whatsapp:id/control_holder" android:background="@*android:color/primary_material_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@*com.whatsapp:id/cancel_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@*com.whatsapp:string/cancel" android:layout_weight="1.0" style="@*com.whatsapp:style/Widget.AppCompat.Button.Borderless.Colored" />
+        <Button android:id="@*com.whatsapp:id/set_wallpaper_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@*com.whatsapp:string/wallpaper_preview_set" android:layout_weight="1.0" style="@*com.whatsapp:style/Widget.AppCompat.Button.Borderless.Colored" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@*com.google.android.apps.plus:id/sharekit_picker_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@null" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@*android:color/background_dark" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@*com.google.android.apps.plus:drawable/list_selector" android:layout_width="fill_parent" android:layout_height="@*com.google.android.apps.plus:dimen/sharekit_picker_header_height">
+            <com.google.android.libraries.social.avatars.ui.AvatarView android:id="@*com.google.android.apps.plus:id/sharekit_picker_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginStart="24.0dip" shape="round" size="tiny" />
+            <TextView android:id="@*com.google.android.apps.plus:id/sharekit_picker_summary_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:singleLine="true" android:layout_weight="1.0" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" style="@*com.google.android.apps.plus:style/TextRegular.Gray.16" />
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_marginEnd="16.0dip">
+                <com.google.android.libraries.social.media.ui.MediaView android:layout_gravity="end" android:id="@*com.google.android.apps.plus:id/thumbnail_1" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" scale="zoom" size="thumbnail" />
+                <com.google.android.libraries.social.media.ui.MediaView android:layout_gravity="end" android:id="@*com.google.android.apps.plus:id/thumbnail_2" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginRight="10.0dip" android:layout_marginEnd="10.0dip" scale="zoom" size="thumbnail" />
+                <com.google.android.libraries.social.media.ui.MediaView android:layout_gravity="end" android:id="@*com.google.android.apps.plus:id/thumbnail_3" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginRight="20.0dip" android:layout_marginEnd="20.0dip" scale="zoom" size="thumbnail" />
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@*com.google.android.apps.plus:drawable/sharebox_down_shadow" />
+</LinearLayout>

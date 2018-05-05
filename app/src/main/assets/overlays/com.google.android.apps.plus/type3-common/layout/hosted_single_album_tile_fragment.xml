@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@*android:color/background_floating_material_dark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.libraries.social.ui.swiperefresh.SwipeRefreshLayoutWithUpScroll android:id="@*com.google.android.apps.plus:id/pull_to_refresh" android:background="@null" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.google.android.libraries.social.ui.views.columngridview.ColumnGridView android:id="@*com.google.android.apps.plus:id/grid" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.google.android.libraries.social.ui.swiperefresh.SwipeRefreshLayoutWithUpScroll>
+        <FrameLayout android:layout_gravity="bottom" android:id="@*com.google.android.apps.plus:id/footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+            <com.google.android.apps.plus.views.SingleAlbumSocialFooterView android:id="@*com.google.android.apps.plus:id/footer_drive" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@*com.google.android.apps.plus:dimen/album_footer_height" />
+        </FrameLayout>
+    </LinearLayout>
+    <include layout="@*com.google.android.apps.plus:layout/empty_view_layout" />
+    <View android:id="@*com.google.android.apps.plus:id/translucent_layer" android:background="@*com.google.android.apps.plus:color/translucent_black_title_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@*com.google.android.apps.plus:id/list_parent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.google.android.libraries.social.ui.views.DeprecatedExpandingScrollView android:id="@*com.google.android.apps.plus:id/list_expander" android:background="@*android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" app:expandingScrollViewMinExposure="@*com.google.android.apps.plus:dimen/album_footer_height">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="0.0dip" android:maxWidth="@*com.google.android.apps.plus:dimen/album_stream_one_up_max_width" android:layout_weight="1.0">
+                <FrameLayout android:id="@*com.google.android.apps.plus:id/stream_one_up_fragment_container" android:background="@*com.google.android.apps.plus:color/album_container_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <FrameLayout android:id="@*com.google.android.apps.plus:id/social_footer_container" android:background="@*com.google.android.apps.plus:color/album_footer_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.google.android.apps.plus.views.SingleAlbumSocialFooterView android:layout_gravity="top" android:id="@*com.google.android.apps.plus:id/footer_shared" android:layout_width="fill_parent" android:layout_height="@*com.google.android.apps.plus:dimen/album_footer_height" />
+                </FrameLayout>
+            </FrameLayout>
+        </com.google.android.libraries.social.ui.views.DeprecatedExpandingScrollView>
+    </RelativeLayout>
+    <include android:layout_gravity="top" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@*com.google.android.apps.plus:layout/transient_server_error" />
+    <com.google.android.apps.plus.views.SingleAlbumTouchHandler android:id="@*com.google.android.apps.plus:id/touch_handler" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

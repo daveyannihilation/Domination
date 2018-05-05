@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout android:id="@*com.google.android.calendar:id/swipe_refresh_layout" android:background="@*com.google.android.calendar:color/timely_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@*com.google.android.calendar:dimen/views_horizontal_page_margin" android:layout_marginRight="@*com.google.android.calendar:dimen/views_horizontal_page_margin">
+        <TextView android:textSize="@*com.google.android.calendar:dimen/search_no_events_text_size" android:textColor="@*android:color/secondary_text_default_material_dark" android:gravity="center" android:id="@*com.google.android.calendar:id/no_result_label" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@*com.google.android.calendar:string/no_results_events_and_reminders" />
+        <android.support.v7.widget.RecyclerView android:id="@*com.google.android.calendar:id/search_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

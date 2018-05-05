@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:backgroundTint="@*android:color/primary_material_dark"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:chrome="http://schemas.android.com/apk/com.chrome.beta">
+    <org.chromium.chrome.browser.widget.newtab.NewTabButton android:layout_gravity="start|center|top" android:id="@*com.chrome.beta:id/new_tab_button" android:background="@*com.chrome.beta:drawable/abc_item_background_holo_dark" android:visibility="invisible" android:layout_width="wrap_content" android:contentDescription="@*com.chrome.beta:string/accessibility_toolbar_btn_new_tab" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" style="@*com.chrome.beta:style/ToolbarButton" />
+    <org.chromium.chrome.browser.toolbar.HomePageButton android:id="@*com.chrome.beta:id/home_button" android:visibility="gone" android:src="@*com.chrome.beta:drawable/btn_toolbar_home" android:contentDescription="@*com.chrome.beta:string/accessibility_toolbar_btn_home" style="@*com.chrome.beta:style/ToolbarButton" />
+    <org.chromium.chrome.browser.omnibox.LocationBarPhone android:layout_gravity="top" android:id="@*com.chrome.beta:id/location_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="end|center|top" android:orientation="horizontal" android:id="@*com.chrome.beta:id/toolbar_buttons" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Space android:layout_width="4.0dip" android:layout_height="fill_parent" />
+        <org.chromium.chrome.browser.widget.TintedImageButton android:id="@*com.chrome.beta:id/expand_sheet_button" android:visibility="gone" android:src="@*com.chrome.beta:drawable/ic_expand_less_black_24dp" android:contentDescription="@*com.chrome.beta:string/accessibility_toolbar_btn_expand" style="@*com.chrome.beta:style/ToolbarButton" />
+        <ImageButton android:layout_gravity="top" android:id="@*com.chrome.beta:id/tab_switcher_button" android:contentDescription="@*com.chrome.beta:string/accessibility_toolbar_btn_tabswitcher_toggle_default" style="@*com.chrome.beta:style/ToolbarButton" />
+        <FrameLayout android:id="@*com.chrome.beta:id/menu_button_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <org.chromium.chrome.browser.widget.TintedImageButton android:id="@*com.chrome.beta:id/menu_button" android:src="@*com.chrome.beta:drawable/ic_more_vert_black_24dp" android:contentDescription="@*com.chrome.beta:string/accessibility_toolbar_btn_menu" style="@*com.chrome.beta:style/ToolbarMenuButtonPhone" />
+            <ImageView android:id="@*com.chrome.beta:id/menu_badge" android:visibility="invisible" android:src="@*com.chrome.beta:drawable/badge_update_dark" android:contentDescription="@null" android:importantForAccessibility="no" style="@*com.chrome.beta:style/ToolbarMenuButtonPhone" />
+        </FrameLayout>
+    </LinearLayout>
+</merge>

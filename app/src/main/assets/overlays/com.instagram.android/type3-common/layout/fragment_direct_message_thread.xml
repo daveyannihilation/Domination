@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@*com.instagram.android:id/thread_title_change_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:gravity="center_vertical" android:id="@*com.instagram.android:id/new_thread_title" android:background="@*android:color/background_dark" android:paddingLeft="16.0dip" android:paddingRight="@*com.instagram.android:dimen/row_height_small" android:layout_width="fill_parent" android:layout_height="@*com.instagram.android:dimen/row_height_small" android:hint="@*com.instagram.android:string/direct_thread_title_change_hint" android:singleLine="true" android:inputType="text" android:imeOptions="actionDone" android:paddingStart="16.0dip" android:paddingEnd="@*com.instagram.android:dimen/row_height_small" />
+        <com.instagram.common.ui.colorfilter.ColorFilterAlphaImageView android:layout_gravity="end|center" android:id="@*com.instagram.android:id/cancel_change_title" android:layout_width="@*com.instagram.android:dimen/row_height_small" android:layout_height="@*com.instagram.android:dimen/row_height_small" android:layout_marginRight="4.0dip" android:src="@*com.instagram.android:drawable/nav_cancel" android:scaleType="center" android:contentDescription="@*com.instagram.android:string/direct_thread_title_change_dismiss_accessibility" android:layout_marginEnd="4.0dip" app:active_alpha="0x00000080" app:normal="@*com.instagram.android:color/grey_3" />
+        <include layout="@*com.instagram.android:layout/row_divider" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <FrameLayout android:id="@*com.instagram.android:id/message_thread_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v7.widget.RecyclerView android:id="@*com.instagram.android:id/message_list" android:backgroundTint="@null" android:paddingBottom="6.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ViewStub android:layout_gravity="bottom" android:id="@*com.instagram.android:id/two_row_composer_shadow" android:layout="@*com.instagram.android:layout/inverse_shadow" android:layout_width="fill_parent" android:layout_height="@*com.instagram.android:dimen/view_switcher_shadow_height" />
+            <include layout="@*com.instagram.android:layout/layout_listview_progressbar" />
+            <FrameLayout android:layout_gravity="bottom|center" android:id="@*com.instagram.android:id/direct_thread_new_message_indicator_avatar_view" android:background="@*com.instagram.android:drawable/direct_new_comment_avatar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.instagram.common.ui.widget.imageview.CircularImageView android:layout_gravity="center" android:id="@*com.instagram.android:id/direct_thread_new_message_indicator_avatar" style="@*com.instagram.android:style/Avatar.Small" />
+            </FrameLayout>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

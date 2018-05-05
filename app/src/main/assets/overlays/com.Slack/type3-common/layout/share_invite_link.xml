@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@*com.Slack:id/invite_options_container" android:background="@*android:color/background_floating_material_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" app:cardCornerRadius="2.0dip" app:cardElevation="2.0dip" app:cardUseCompatPadding="true" style="@*com.Slack:style/CardStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/com.Slack">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@*com.Slack:id/invite_link" android:background="@*com.Slack:drawable/abc_item_background_holo_dark" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.Slack.ui.widgets.FontIconView android:gravity="top" android:id="@*com.Slack:id/invite_link_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_alignTop="@*com.Slack:id/invite_link_text" android:layout_marginStart="16.0dip" app:iconColor="@*com.Slack:color/mention_ellipsis" app:iconResourceId="@*com.Slack:string/ts_icon_link" app:iconSize="23.0dip" />
+            <TextView android:textColor="@*com.Slack:color/steel_grey" android:id="@*com.Slack:id/invite_link_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:textIsSelectable="true" style="@*com.Slack:style/InstantInviteTextStyle.Small" fontPath="fonts/Lato-Regular.ttf" />
+        </RelativeLayout>
+        <View style="@*com.Slack:style/InstantInviteDividerStyle" />
+        <RelativeLayout android:id="@*com.Slack:id/invite_copy_link" android:background="@*com.Slack:drawable/abc_item_background_holo_dark" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <ImageView android:id="@*com.Slack:id/invite_copy_link_icon" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@*com.Slack:drawable/ic_files_24dp" android:tint="@*com.Slack:color/invite_share_link_icon_color" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_marginStart="16.0dip" />
+            <TextView android:id="@*com.Slack:id/invite_copy_link_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@*com.Slack:string/instant_invite_copy_link" android:layout_centerVertical="true" style="@*com.Slack:style/InstantInviteTextStyle" fontPath="fonts/Lato-Regular.ttf" />
+        </RelativeLayout>
+        <View android:id="@*com.Slack:id/invite_share_link_separator" style="@*com.Slack:style/InstantInviteDividerStyle" />
+        <RelativeLayout android:id="@*com.Slack:id/invite_share_link" android:background="@*com.Slack:drawable/abc_item_background_holo_dark" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <com.Slack.ui.widgets.FontIconView android:id="@*com.Slack:id/invite_share_link_icon" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_centerVertical="true" android:layout_marginStart="16.0dip" app:iconColor="@*com.Slack:color/instant_invite_link_blue" app:iconResourceId="@*com.Slack:string/ts_icon_share_android" app:iconSize="23.0dip" />
+            <TextView android:id="@*com.Slack:id/invite_share_link_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:text="@*com.Slack:string/instant_invite_share_link" android:layout_centerVertical="true" android:layout_marginEnd="14.0dip" style="@*com.Slack:style/InstantInviteTextStyle" fontPath="fonts/Lato-Regular.ttf" />
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@*com.android.chrome:id/control_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.chromium.chrome.browser.searchwidget.SearchActivityFadingBackgroundView android:id="@*com.android.chrome:id/fading_focus_target" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <ViewStub android:id="@*com.android.chrome:id/omnibox_results_container_stub" android:background="@*android:color/primary_material_dark" android:layout="@*com.android.chrome:layout/omnibox_results_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:id="@*com.android.chrome:id/toolbar_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@*com.android.chrome:dimen/toolbar_height_no_shadow" android:src="@*com.android.chrome:drawable/toolbar_shadow" android:scaleType="fitXY" android:contentDescription="@null" />
+    <FrameLayout android:id="@*com.android.chrome:id/toolbar" android:background="@*android:color/primary_material_dark" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@*com.android.chrome:dimen/toolbar_height_no_shadow">
+        <org.chromium.chrome.browser.searchwidget.SearchActivityLocationBarLayout android:layout_gravity="center_vertical" android:id="@*com.android.chrome:id/search_location_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@*com.android.chrome:dimen/search_activity_location_bar_margin_start" android:layout_marginRight="@*com.android.chrome:dimen/search_activity_location_bar_margin_end" />
+    </FrameLayout>
+    <FrameLayout android:id="@*com.android.chrome:id/bottom_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

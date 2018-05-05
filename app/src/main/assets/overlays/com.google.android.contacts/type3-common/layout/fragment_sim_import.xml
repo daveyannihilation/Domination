@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/com.google.android.contacts">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.Toolbar android:id="@*com.google.android.contacts:id/toolbar" android:layout_width="fill_parent" android:layout_height="@*com.google.android.contacts:dimen/abc_action_bar_default_height_material" android:elevation="3.0dip" app:title="@*com.google.android.contacts:string/sim_import_title_none_selected" app:navigationIcon="@*com.google.android.contacts:drawable/quantum_ic_close_vd_theme_24" app:navigationContentDescription="@*android:string/cancel" style="@*com.google.android.contacts:style/LightToolbarStyle">
+            <Button android:layout_gravity="end|center" android:id="@*com.google.android.contacts:id/import_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@*com.google.android.contacts:string/sim_import_button_text" style="@*com.google.android.contacts:style/Widget.AppCompat.Button.Borderless" />
+        </android.support.v7.widget.Toolbar>
+        <include layout="@*com.google.android.contacts:layout/account_header_presenter" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@*com.google.android.contacts:id/list" android:paddingTop="8.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <android.support.v4.widget.ContentLoadingProgressBar android:layout_gravity="center" android:id="@*com.google.android.contacts:id/loading_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" style="@*com.google.android.contacts:style/Widget.AppCompat.ProgressBar" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center" android:id="@*com.google.android.contacts:id/empty_message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@*com.google.android.contacts:string/sim_import_empty_message" />
+        </FrameLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

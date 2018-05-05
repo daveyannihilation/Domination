@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@*android:color/background_dark" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@*com.whatsapp:id/payments_tos_image_section" android:layout_width="137.0dip" android:layout_height="137.0dip" android:layout_marginTop="60.0dip" android:src="@*com.whatsapp:drawable/ic_hero_payments" />
+        <FrameLayout android:id="@*com.whatsapp:id/payments_tos_title_section" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="23.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@*com.whatsapp:id/payments_tos_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginTop="28.0dip" android:layout_marginRight="36.0dip" android:text="@*com.whatsapp:string/payments_tos_title_text" android:lineSpacingExtra="6.0dip" />
+        </FrameLayout>
+        <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.whatsapp.TextEmojiLabel android:textSize="14.0sp" android:textColor="#ff787878" android:gravity="center" android:layout_gravity="center" android:id="@*com.whatsapp:id/payments_tos_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:layout_marginTop="36.0dip" android:layout_marginRight="36.0dip" android:layout_marginBottom="36.0dip" android:text="@*com.whatsapp:string/payments_tos_desc_text" android:lineSpacingExtra="6.0dip" />
+            <Button android:textSize="14.0sp" android:gravity="center" android:layout_gravity="bottom|center" android:id="@*com.whatsapp:id/payments_tos_continue" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginBottom="35.0dip" android:text="@*com.whatsapp:string/payments_tos_continue_text" android:maxLines="1" android:textAllCaps="true" style="@*com.whatsapp:style/RegistrationButton" />
+            <ProgressBar android:layout_gravity="center" android:id="@*com.whatsapp:id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="35.0dip" style="?android:attr/progressBarStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

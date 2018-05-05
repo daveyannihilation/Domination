@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.Slack.ui.widgets.sliding.SlidingRelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/com.Slack">
+    <Space android:id="@*com.Slack:id/status_bar_space" android:layout_width="fill_parent" android:layout_height="@*com.Slack:dimen/status_bar_height_consumed" />
+    <WebView android:id="@*com.Slack:id/tos_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@*com.Slack:id/shadow" android:layout_below="@*com.Slack:id/status_bar_space" />
+    <View android:id="@*com.Slack:id/shadow" android:background="@*com.Slack:drawable/shadow" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_above="@*com.Slack:id/button_container" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@*com.Slack:id/button_container" android:background="@*android:color/button_material_dark" android:paddingLeft="@*com.Slack:dimen/join_team_screen_margins" android:paddingTop="12.0dip" android:paddingRight="@*com.Slack:dimen/join_team_screen_margins" android:paddingBottom="@*com.Slack:dimen/join_team_screen_margins" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@*com.Slack:string/join_team_terms_of_service_disclaimer" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@*com.Slack:dimen/join_team_screen_margins" android:animateLayoutChanges="true">
+            <TextView android:layout_gravity="center" android:id="@*com.Slack:id/next_button" android:paddingLeft="@*com.Slack:dimen/join_team_button_padding_horizontal" android:paddingRight="@*com.Slack:dimen/join_team_button_padding_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@*com.Slack:string/join_team_terms_of_service_agree" style="@*com.Slack:style/FlatButton.Green.Small" />
+            <com.Slack.ui.widgets.SlackProgressBar android:layout_gravity="center" android:id="@*com.Slack:id/progress_bar" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+</com.Slack.ui.widgets.sliding.SlidingRelativeLayout>

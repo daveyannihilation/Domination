@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@*com.google.android.apps.translate:id/drawer_layout" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@*com.google.android.apps.translate:id/main_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <include layout="@*com.google.android.apps.translate:layout/toolbar" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@*com.google.android.apps.translate:id/panel_signin" android:background="@*com.google.android.apps.translate:color/info_panel_background" android:paddingTop="@*com.google.android.apps.translate:dimen/phrasebook_single_padding" android:paddingBottom="@*com.google.android.apps.translate:dimen/phrasebook_single_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@*com.google.android.apps.translate:dimen/activity_vertical_margin" android:paddingEnd="@*com.google.android.apps.translate:dimen/activity_vertical_margin">
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@*com.google.android.apps.translate:color/primary_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@*com.google.android.apps.translate:string/msg_signin_info" android:layout_weight="1.0" />
+            <Button android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@*android:color/white" android:id="@*com.google.android.apps.translate:id/btn_signin" android:background="@*com.google.android.apps.translate:drawable/kennedy_blue_button" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="0.0dip" android:text="@*com.google.android.apps.translate:string/msg_signin" android:textAllCaps="true" android:layout_marginStart="@*com.google.android.apps.translate:dimen/phrasebook_single_padding" android:layout_marginEnd="0.0dip" />
+        </LinearLayout>
+        <FrameLayout android:background="@*android:color/background_dark" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ListView android:id="@*android:id/list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:orientation="vertical" android:id="@*com.google.android.apps.translate:id/msg_empty" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.google.android.apps.translate.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <TextView android:textColor="@*com.google.android.apps.translate:color/secondary_text" android:gravity="center_horizontal" android:padding="32.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@*com.google.android.apps.translate:string/msg_phrasebook_empty_hint" android:drawableTop="@*com.google.android.apps.translate:drawable/quantum_ic_star_border_grey600_36" android:drawablePadding="8.0dip" android:lineSpacingMultiplier="1.2" />
+                <com.google.android.apps.translate.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0" />
+            </LinearLayout>
+            <include layout="@*com.google.android.apps.translate:layout/buttery_progress" />
+        </FrameLayout>
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

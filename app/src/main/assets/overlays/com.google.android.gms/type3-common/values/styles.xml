@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AsAlertDialogTheme" parent="@*com.google.android.gms:style/Theme.AppCompat.Light.Dialog.MinWidth">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="*com.google.android.gms:windowActionBar">false</item>
+        <item name="*com.google.android.gms:windowNoTitle">true</item>
+    </style>
+
+    <style name="Auth.CredentialsDialog_Base" parent="@*com.google.android.gms:style/common.Theme.Light.Dialog.MinWidth">
+        <item name="*com.google.android.gms:credentials_account_name_text_color">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:credentials_display_name_text_color">@*android:color/white</item>
+        <item name="*com.google.android.gms:colorPrimary">@*android:color/primary_material_dark</item>
+    </style>
+
+    <style name="Base.TextAppearance.AppCompat.Inverse" parent="@*android:style/TextAppearance.Material" />
+    <style name="Base.TextAppearance.AppCompat.Large.Inverse" parent="@*android:style/TextAppearance.Material.Large" />
+    <style name="Base.TextAppearance.AppCompat.Medium.Inverse" parent="@*android:style/TextAppearance.Material.Medium" />
+
+    <style name="Base.TextAppearance.AppCompat.Small.Inverse" parent="@*android:style/TextAppearance.Material.Small" />
+
+    <style name="Base.Theme.FamilyManagement.v2" parent="@*com.google.android.gms:style/Theme.FamilyManagement">
+        <item name="android:colorBackground">@*android:color/background_floating_material_dark</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:spinnerDropDownItemStyle">@*com.google.android.gms:style/Widget.FamilyManagement.DropDownItem.Spinner</item>
+        <item name="android:spinnerItemStyle">@*com.google.android.gms:style/Widget.FamilyManagement.TextView.SpinnerItem</item>
+    </style>
+    <style name="Base.Theme.G1" parent="">
+        <item name="android:textColorLink">#ff1976d2</item>
+        <item name="*com.google.android.gms:fmNavButtonTextTint">#ff1976d2</item>
+        <item name="*com.google.android.gms:fmToolbarContentTint">#ffffffff</item>
+        <item name="*com.google.android.gms:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.gms:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.gms:colorAccent">#ff1976d2</item>
+        <item name="*com.google.android.gms:alertDialogTheme">@*com.google.android.gms:style/Theme.G1.Dialog</item>
+    </style>
+    <style name="Base.Theme.Play" parent="">
+        <item name="android:textColorLink">#ff009688</item>
+        <item name="*com.google.android.gms:fmNavButtonTextTint">#ffffffff</item>
+        <item name="*com.google.android.gms:fmToolbarContentTint">#ffffffff</item>
+        <item name="*com.google.android.gms:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.gms:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.gms:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="*com.google.android.gms:alertDialogTheme">@*com.google.android.gms:style/Theme.Play.Dialog</item>
+    </style>
+    <style name="Base.Theme.PlayMusic" parent="">
+        <item name="android:textColorLink">#ffe64a19</item>
+        <item name="*com.google.android.gms:fmNavButtonTextTint">#ffffffff</item>
+        <item name="*com.google.android.gms:fmToolbarContentTint">#ffffffff</item>
+        <item name="*com.google.android.gms:colorPrimary">#ffe64a19</item>
+        <item name="*com.google.android.gms:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.gms:colorAccent">#ffe64a19</item>
+        <item name="*com.google.android.gms:alertDialogTheme">@*com.google.android.gms:style/Theme.PlayMusic.Dialog</item>
+    </style>
+    <style name="Base.Theme.YouTube" parent="">
+        <item name="android:textColorLink">#ff1976d2</item>
+        <item name="*com.google.android.gms:fmNavButtonTextTint">#ffffffff</item>
+        <item name="*com.google.android.gms:fmToolbarContentTint">#ffffffff</item>
+        <item name="*com.google.android.gms:colorPrimary">#ffd32f2f</item>
+        <item name="*com.google.android.gms:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.gms:colorAccent">#ff1976d2</item>
+        <item name="*com.google.android.gms:alertDialogTheme">@*com.google.android.gms:style/Theme.YouTube.Dialog</item>
+    </style>
+
+    <style name="Base.Widget.AppCompat.Light.ActionBar.TabText" parent="@*android:style/Widget.Material.ActionBar.TabText" />
+    <style name="Base.Widget.AppCompat.Light.ActionBar.TabView" parent="@*android:style/Widget.Material.ActionBar.TabView" />
+    <style name="Base.Widget.AppCompat.Light.PopupMenu" parent="@*android:style/Widget.Material.PopupMenu" />
+    <style name="CardView" parent="@*com.google.android.gms:style/Base.CardView">
+        <item name="*com.google.android.gms:cardBackgroundColor">@*android:color/background_floating_material_dark</item>
+    </style>
+    <style name="CarFrxTheme.New" parent="@*com.google.android.gms:style/CarFrx">
+        <item name="android:colorAccent">#ff1976d2</item>
+        <item name="*com.google.android.gms:carFrxTitleSize">21.0sp</item>
+        <item name="*com.google.android.gms:carFrxBodySize">14.0sp</item>
+        <item name="*com.google.android.gms:carFrxFontFamily">sans-serif</item>
+        <item name="*com.google.android.gms:carFrxButtonBarLayout">@*com.google.android.gms:layout/car_frx_buttons</item>
+    </style>
+
+    <style name="CarWindowDisablePreview" parent="@*android:style/Theme.Material.NoActionBar">
+        <item name="android:colorBackground">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:previewImage">@null</item>
+    </style>
+
+    <style name="CardStyle">
+        <item name="android:background">@*android:color/background_floating_material_dark</item>
+        <item name="android:elevation">2.0dip</item>
+    </style>
+
+    <style name="ChromeSync.Dialog.Base" parent="@*com.google.android.gms:style/common.Theme.Light.Dialog.MinWidth">
+        <item name="*com.google.android.gms:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.gms:colorAccent">@*android:color/accent_material_dark</item>
+    </style>
+
+    <style name="CredentialsTypographyBase">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="CustomTitle" parent="@android:style/Theme.Holo" />
+    <style name="DialogActivityStyle" parent="@*android:style/Theme.Material.Dialog">
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+
+    <style name="Games.AlertDialog" parent="@*com.google.android.gms:style/Theme.AppCompat.Dialog.Alert">
+        <item name="android:textAppearance">@*com.google.android.gms:style/Games.AlertDialog.Body</item>
+        <item name="android:windowTitleStyle">@*com.google.android.gms:style/Games.AlertDialog.Title</item>
+        <item name="android:background">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:colorAccent">@*com.google.android.gms:color/play_games_theme_primary</item>
+        <item name="*com.google.android.gms:buttonBarPositiveButtonStyle">@*com.google.android.gms:style/Games.AlertDialog.PositiveButton</item>
+        <item name="*com.google.android.gms:buttonBarNegativeButtonStyle">@*com.google.android.gms:style/Games.AlertDialog.NegativeButton</item>
+        <item name="*com.google.android.gms:buttonBarNeutralButtonStyle">@*com.google.android.gms:style/Games.AlertDialog.NeutralButton</item>
+    </style>
+
+    <style name="GrantScopesAccountChip">
+        <item name="android:background">#ff1976d2</item>
+    </style>
+
+    <style name="IdentityBlueSwitchBarStyle">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">#ffdddddd</item>
+        <item name="*com.google.android.gms:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.gms:colorAccent">@*com.google.android.gms:color/material_google_blue_500</item>
+        <item name="*com.google.android.gms:paddingStart">@*com.google.android.gms:dimen/common_switch_bar_margin_start</item>
+        <item name="*com.google.android.gms:paddingEnd">@*com.google.android.gms:dimen/common_switch_bar_margin_end</item>
+    </style>
+    <style name="IdentityWhiteAppTheme" parent="@*com.google.android.gms:style/IdentityWhiteAppThemeBase">
+        <item name="*com.google.android.gms:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+    </style>
+    <style name="IdentityWhiteAppThemeBase" parent="@*com.google.android.gms:style/Theme.AppCompat">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="*com.google.android.gms:switchBarStyle">@*com.google.android.gms:style/IdentityBlueSwitchBarStyle</item>
+        <item name="*com.google.android.gms:spinnerDropDownItemStyle">@*com.google.android.gms:style/IdentityWhiteSpinnerDropDownItemStyle</item>
+        <item name="*com.google.android.gms:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.gms:colorAccent">@*com.google.android.gms:color/material_google_blue_500</item>
+        <item name="*com.google.android.gms:colorControlNormal">@*android:color/secondary_text_default_material_dark</item>
+    </style>
+
+    <style name="ItemDetailSectionContent">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ListHeaderStyle">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffdddddd</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MessageActivityPopupMenu" parent="@*com.google.android.gms:style/Theme.AppCompat.NoActionBar">
+        <item name="android:disabledAlpha">0.5</item>
+        <item name="android:popupBackground">@*android:color/background_floating_material_dark</item>
+    </style>
+
+    <style name="PeopleButton.Borderless" parent="@*android:style/Widget.Material.Button.Borderless" />
+    <style name="PeopleDialogTheme" parent="@*android:style/Theme.Material.Dialog" />
+
+    <style name="SemiTransparentActivity" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:alertDialogStyle">@*com.google.android.gms:style/matchstick.activityBaseDialog</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:colorControlActivated">@*com.google.android.gms:color/activity_dialog_accent_color</item>
+        <item name="android:statusBarColor">@*com.google.android.gms:color/activity_backdrop_bg_color</item>
+    </style>
+
+    <style name="SmartDevice.Widget.ProgressBar.Large.Inverse" parent="@*android:style/Widget.Material.ProgressBar.Large" />
+
+    <style name="SubscriptionsLightTheme" parent="@*com.google.android.gms:style/Theme.AppCompat">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="*com.google.android.gms:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.gms:colorAccent">@*com.google.android.gms:color/material_google_blue_500</item>
+    </style>
+
+    <style name="SuccessScreenButton">
+        <item name="android:buttonStyle">@*com.google.android.gms:style/Widget.AppCompat.Button</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="*com.google.android.gms:colorButtonNormal">@*com.google.android.gms:color/material_yellow_400</item>
+    </style>
+
+    <style name="Theme.EmeraldSea.Preference.Dialog" parent="@*android:style/Theme.Holo.Dialog" />
+
+    <style name="Theme.FamilyManagement" parent="@*com.google.android.gms:style/Theme.AppCompat.NoActionBar">
+        <item name="android:colorBackground">@*com.google.android.gms:color/fm_background</item>
+        <item name="android:windowBackground">@*com.google.android.gms:color/fm_background</item>
+        <item name="android:textColorLink">#ff1976d2</item>
+        <item name="*com.google.android.gms:fmNavButtonTextTint">#ffffffff</item>
+        <item name="*com.google.android.gms:fmToolbarContentTint">#ffffffff</item>
+        <item name="*com.google.android.gms:actionOverflowButtonStyle">@*com.google.android.gms:style/Widget.FamilyManagement.Overflow</item>
+        <item name="*com.google.android.gms:colorPrimary">#ff1976d2</item>
+        <item name="*com.google.android.gms:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.gms:colorAccent">#ff1976d2</item>
+        <item name="*com.google.android.gms:alertDialogTheme">@*com.google.android.gms:style/Theme.FamilyManagement.Dialog</item>
+    </style>
+    <style name="Theme.FamilyManagement.Dialog" parent="@*com.google.android.gms:style/Base.FamilyManagement.Dialog">
+        <item name="*com.google.android.gms:colorPrimary">#ff1976d2</item>
+        <item name="*com.google.android.gms:colorAccent">#ff1976d2</item>
+    </style>
+    <style name="Theme.FamilyManagement.Dialog.Progress" parent="@*com.google.android.gms:style/Theme.FamilyManagement.Dialog">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+    </style>
+    <style name="Theme.FamilyManagement.Wallet" parent="">
+        <item name="android:colorPrimary">#ff1976d2</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="android:colorAccent">#ff1976d2</item>
+    </style>
+    <style name="Theme.FamilyManagement.v2" parent="@*com.google.android.gms:style/Base.Theme.FamilyManagement.v2">
+        <item name="android:colorPrimary">#ff1976d2</item>
+        <item name="android:colorAccent">#ff1976d2</item>
+        <item name="*com.google.android.gms:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.gms:colorAccent">#ff1976d2</item>
+    </style>
+    <style name="Theme.G1" parent="@*com.google.android.gms:style/Base.Theme.G1">
+        <item name="android:textColorLink">#ff1976d2</item>
+        <item name="android:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="android:colorAccent">#ff1976d2</item>
+    </style>
+    <style name="Theme.G1.Dialog" parent="@*com.google.android.gms:style/Base.FamilyManagement.Dialog">
+        <item name="*com.google.android.gms:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.gms:colorAccent">#ff1976d2</item>
+    </style>
+
+    <style name="Theme.Ocr" parent="@*android:style/Theme.Holo.NoActionBar.Fullscreen" />
+    <style name="Theme.Ocr.Popup" parent="@*android:style/Theme.Holo.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowMinWidthMajor">90.0%</item>
+        <item name="android:windowMinWidthMinor">90.0%</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <style name="Theme.Play" parent="@*com.google.android.gms:style/Base.Theme.Play">
+        <item name="android:textColorLink">#ff009688</item>
+        <item name="android:colorControlNormal">#ffffffff</item>
+        <item name="android:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
+    </style>
+    <style name="Theme.Play.Dialog" parent="@*com.google.android.gms:style/Base.FamilyManagement.Dialog">
+        <item name="*com.google.android.gms:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.gms:colorAccent">@*android:color/accent_material_dark</item>
+    </style>
+    <style name="Theme.Play.Dialog.Progress" parent="@*com.google.android.gms:style/Theme.Play.Dialog">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+    </style>
+    <style name="Theme.PlayMusic" parent="@*com.google.android.gms:style/Base.Theme.PlayMusic">
+        <item name="android:textColorLink">#ffe64a19</item>
+        <item name="android:colorPrimary">#ffe64a19</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="android:colorAccent">#ffe64a19</item>
+    </style>
+    <style name="Theme.PlayMusic.Dialog" parent="@*com.google.android.gms:style/Base.FamilyManagement.Dialog">
+        <item name="*com.google.android.gms:colorPrimary">#ffe64a19</item>
+        <item name="*com.google.android.gms:colorAccent">#ffe64a19</item>
+    </style>
+    <style name="Theme.PlayMusic.Dialog.Progress" parent="@*com.google.android.gms:style/Theme.PlayMusic.Dialog">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+    </style>
+
+    <style name="Theme.YouTube" parent="@*com.google.android.gms:style/Base.Theme.YouTube">
+        <item name="android:textColorLink">#ff1976d2</item>
+        <item name="android:colorPrimary">#ffd32f2f</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="android:colorAccent">#ff1976d2</item>
+    </style>
+    <style name="Theme.YouTube.Dialog" parent="@*com.google.android.gms:style/Base.FamilyManagement.Dialog">
+        <item name="*com.google.android.gms:colorPrimary">#ffd32f2f</item>
+        <item name="*com.google.android.gms:colorAccent">#ff1976d2</item>
+    </style>
+    <style name="Theme.YouTube.Dialog.Progress" parent="@*com.google.android.gms:style/Theme.YouTube.Dialog">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+    </style>
+
+    <style name="Theme_Wallet_Google_Material_2" parent="@*com.google.android.gms:style/Theme_Wallet_First_Party_Light">
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.gms:materialButtonStyle">@*com.google.android.gms:style/Widget.GoogleMaterial.Button</item>
+        <item name="*com.google.android.gms:toolbarBackground">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.gms:toolbarTheme">@*com.google.android.gms:style/Theme_Wallet_Google_Material_2.ToolbarTheme</item>
+        <item name="*com.google.android.gms:useGoogleMaterial2ButtonStyle">true</item>
+        <item name="*com.google.android.gms:toolbarStyle">@*com.google.android.gms:style/Theme_Wallet_Google_Material_2.ToolbarStyle</item>
+    </style>
+
+    <style name="UrawTheme" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:colorControlActivated">@*com.google.android.gms:color/quantum_googblue500</item>
+    </style>
+
+    <style name="WalletConfirmationDialogImageText">
+        <item name="android:textSize">@*com.google.android.gms:dimen/wallet_font_material_input</item>
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+
+    <style name="common.Activity.Light" parent="@*android:style/Theme.Holo" />
+
+    <style name="common.Activity.Light.NoTitleBar" parent="@*android:style/Theme.Holo">
+        <item name="android:windowNoTitle">true</item>
+        <item name="*com.google.android.gms:indeterminateProgressStyle">?android:indeterminateProgressStyle</item>
+    </style>
+
+    <style name="common.Theme.Base.NoAppCompat.Light.Dialog" parent="@*android:style/Theme.Material.Dialog">
+        <item name="*com.google.android.gms:buttonBarStyle">?android:buttonBarStyle</item>
+        <item name="*com.google.android.gms:buttonBarButtonStyle">?android:buttonBarButtonStyle</item>
+        <item name="*com.google.android.gms:dividerHorizontal">?android:dividerHorizontal</item>
+    </style>
+    <style name="common.Theme.Base.NoAppCompat.Light.Dialog.MinWidth" parent="@*android:style/Theme.Material.Dialog.MinWidth">
+        <item name="*com.google.android.gms:buttonBarStyle">?android:buttonBarStyle</item>
+        <item name="*com.google.android.gms:buttonBarButtonStyle">?android:buttonBarButtonStyle</item>
+        <item name="*com.google.android.gms:dividerHorizontal">?android:dividerHorizontal</item>
+        <item name="android:background">@*android:color/background_floating_material_dark</item>
+    </style>
+
+    <style name="common.Widget.Snackbar" parent="@*com.google.android.gms:style/common.Widget.Base.Snackbar">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowEnterAnimation">@*com.google.android.gms:anim/abc_slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@*com.google.android.gms:anim/abc_slide_out_bottom</item>
+        <item name="android:background">@*android:color/background_floating_material_dark</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="*com.google.android.gms:windowHeight">wrap_content</item>
+    </style>
+
+    <style name="common.WidgetDropDownItemLight" parent="@*android:style/Widget.DropDownItem">
+        <item name="android:textColor">@*android:color/primary_text_dark</item>
+    </style>
+
+    <style name="completeDialogTheme" parent="@*android:style/Theme.Material.Dialog" />
+
+    <style name="drive_Button_Platform" parent="@*android:style/Widget.Material.Button.Borderless" />
+
+    <style name="drive_Spinner" parent="@*android:style/Widget.Material.Spinner.Underlined" />
+
+    <style name="fitness_manage_data_sources_primary">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:fontFamily">roboto-regular</item>
+    </style>
+    <style name="fitness_manage_data_sources_secondary">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffdddddd</item>
+        <item name="android:fontFamily">roboto-medium</item>
+    </style>
+
+    <style name="gh_ActivityStyleWithLightHeaderBackground" parent="@*com.google.android.gms:style/Theme.AppCompat">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="*com.google.android.gms:gh_selectableItemBackground">?android:selectableItemBackground</item>
+        <item name="*com.google.android.gms:textAppearanceSearchResultTitle">@*com.google.android.gms:style/gh_textAppearanceSearchResultTitleLight</item>
+        <item name="*com.google.android.gms:colorAccent">@*com.google.android.gms:color/material_google_blue_500</item>
+    </style>
+
+    <style name="gh_ChatSupportRequestFormIssueDescription">
+        <item name="android:textSize">@*com.google.android.gms:dimen/gh_chat_request_form_body_font_size</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:textColorHint">#ffbbbbbb</item>
+        <item name="android:gravity">top</item>
+        <item name="android:background">@*android:color/background_dark</item>
+        <item name="android:paddingLeft">@*com.google.android.gms:dimen/gh_contact_form_padding</item>
+        <item name="android:paddingTop">@*com.google.android.gms:dimen/gh_chat_request_description_top_padding</item>
+        <item name="android:paddingRight">@*com.google.android.gms:dimen/gh_contact_form_padding</item>
+        <item name="android:inputType">textMultiLine</item>
+    </style>
+
+    <style name="gh_HeaderBackgroundLightStyle">
+        <item name="android:background">@*android:color/primary_material_dark</item>
+    </style>
+
+    <style name="gh_whiteBackgroundStyle">
+        <item name="android:background">@*android:color/background_dark</item>
+    </style>
+
+    <style name="plus_oob_Interstitial" parent="@*android:style/Theme.Holo.NoActionBar">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:background">@*android:color/background_dark</item>
+    </style>
+
+    <style name="systemUpdateStatus">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ffdddddd</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="Platform.AppCompat" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:backgroundTint">@*android:color/background_dark</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textColorLink">@*android:color/accent_material_dark</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
+    </style>
+    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:backgroundTint">@*android:color/background_dark</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textColorLink">@*android:color/accent_material_dark</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
+    </style>
+    <style name="Platform.V11.AppCompat.Light" parent="@*android:style/Theme.Holo">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:backgroundTint">@*android:color/background_dark</item>
+    </style>
+
+    <style name="BaseTpActivityTheme" parent="@*com.google.android.gms:style/Theme.AppCompat">
+        <item name="android:colorBackground">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:materialButtonStyle">@*com.google.android.gms:style/Widget.GoogleMaterial.Button</item>
+        <item name="*com.google.android.gms:actionBarStyle">@*com.google.android.gms:style/TpWhiteActionBar</item>
+        <item name="*com.google.android.gms:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.gms:colorAccent">@*com.google.android.gms:color/google_blue600</item>
+    </style>
+
+    <style name="TpAlertDialogActivity" parent="@*com.google.android.gms:style/Base.Theme.AppCompat.Dialog.Alert">
+        <item name="android:alertDialogTheme">@*com.google.android.gms:style/TpAlertDialog</item>
+        <item name="*com.google.android.gms:windowNoTitle">true</item>
+        <item name="*com.google.android.gms:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.gms:colorAccent">@*com.google.android.gms:color/google_blue600</item>
+    </style>
+
+    <style name="TpWhiteActionBar" parent="@*com.google.android.gms:style/Widget.AppCompat.ActionBar.Solid">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="*com.google.android.gms:titleTextStyle">@*com.google.android.gms:style/TpWhiteActionBarTitle</item>
+        <item name="*com.google.android.gms:background">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.gms:elevation">0.0dip</item>
+    </style>
+
+    <style name="Platform.V21.AppCompat.Light" parent="@*android:style/Theme.Material.NoActionBar">
+        <item name="android:textColorHintInverse">#ffbbbbbb</item>
+        <item name="android:textColorHint">#ffbbbbbb</item>
+        <item name="android:textColorLink">@*android:color/accent_material_dark</item>
+        <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:backgroundTint">@*android:color/background_dark</item>
+    </style>
+    <style name="SetBackupAccountActivity" parent="@*android:style/Theme.Material.Dialog" />
+    <style name="TextAppearance.SetupWizardCardTitle" parent="@android:style/TextAppearance.Material.Display1">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TrustAgentNotificationWithNoActionBar" parent="@*android:style/Theme.Material.NoActionBar" />
+
+
+    <style name="auth_setup_wizard_theme_material.light" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:textColorSecondary">@*com.google.android.gms:color/auth_setup_wizard_color_secondary_light</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:colorAccent">@*com.google.android.gms:color/auth_setup_wizard_color_accent_light</item>
+        <item name="android:statusBarColor">@*android:color/transparent</item>
+        <item name="android:navigationBarColor">@*android:color/transparent</item>
+        <item name="*com.google.android.gms:auth_setup_wizard_divider_color">@*com.google.android.gms:color/auth_setup_wizard_divider_color_light</item>
+        <item name="*com.google.android.gms:auth_setup_wizard_link_color">@*com.google.android.gms:color/auth_setup_wizard_link_color_light</item>
+    </style>
+
+    <style name="matchstick.activityBaseDialog" parent="@*android:style/Theme.Material.Dialog.Alert">
+        <item name="android:colorBackground">@*com.google.android.gms:color/activity_dialog_background</item>
+        <item name="android:topDark">@*com.google.android.gms:color/activity_dialog_background</item>
+        <item name="android:centerDark">@*com.google.android.gms:color/activity_dialog_background</item>
+        <item name="android:bottomDark">@*com.google.android.gms:color/activity_dialog_background</item>
+        <item name="android:topBright">@*com.google.android.gms:color/activity_dialog_background</item>
+        <item name="android:centerBright">@*com.google.android.gms:color/activity_dialog_background</item>
+        <item name="android:bottomBright">@*com.google.android.gms:color/activity_dialog_background</item>
+        <item name="android:colorPrimary">@*com.google.android.gms:color/activity_dialog_background</item>
+        <item name="android:colorAccent">@*com.google.android.gms:color/activity_dialog_accent_color</item>
+        <item name="android:buttonBarPositiveButtonStyle">@*com.google.android.gms:style/matchstick.activityBaseDialog.button</item>
+        <item name="android:buttonBarNeutralButtonStyle">@*com.google.android.gms:style/matchstick.activityBaseDialog.button</item>
+        <item name="android:buttonBarNegativeButtonStyle">@*com.google.android.gms:style/matchstick.activityBaseDialog.button</item>
+    </style>
+
+</resources>

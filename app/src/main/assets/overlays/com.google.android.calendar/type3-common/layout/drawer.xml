@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@*android:color/background_floating_material_dark"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@*com.google.android.calendar:layout/drawer_top_separator" />
+    <RelativeLayout android:id="@*com.google.android.calendar:id/drawer_empty_view" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center" android:id="@*com.google.android.calendar:id/drawer_empty_view_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:text="@*com.google.android.calendar:string/drawer_empty_text" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ListView android:id="@*com.google.android.calendar:id/drawer_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="?android:selectableItemBackground" android:divider="@null" android:dividerHeight="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

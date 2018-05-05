@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@*com.whatsapp:id/send_current_location_btn" android:background="@*com.whatsapp:drawable/selector_orange_gradient" android:layout_width="wrap_content" android:layout_height="@*com.whatsapp:dimen/location_picker_row_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="left" android:layout_width="@*com.whatsapp:dimen/location_picker_row_height" android:layout_height="@*com.whatsapp:dimen/location_picker_row_height">
+        <ImageView android:layout_gravity="center" android:id="@*com.whatsapp:id/send_current_location_icon" android:background="@*com.whatsapp:drawable/send_current_location_background" android:layout_width="@*com.whatsapp:dimen/location_picker_icon_size" android:layout_height="@*com.whatsapp:dimen/location_picker_icon_size" android:src="@*com.whatsapp:drawable/ic_current_location" android:scaleType="center" android:tint="@*com.whatsapp:color/list_item_verified_title" />
+    </FrameLayout>
+    <LinearLayout android:gravity="left" android:layout_gravity="center|left" android:orientation="vertical" android:paddingLeft="@*com.whatsapp:dimen/location_picker_row_height" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="17.0sp" android:textColor="@*android:color/white" android:ellipsize="end" android:id="@*com.whatsapp:id/send_current_location_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@*com.whatsapp:string/send_this_location" android:maxLines="1" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffdddddd" android:ellipsize="end" android:id="@*com.whatsapp:id/location_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:id="@*com.whatsapp:id/this_location_divider" android:background="@*com.whatsapp:color/divider_gray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</FrameLayout>

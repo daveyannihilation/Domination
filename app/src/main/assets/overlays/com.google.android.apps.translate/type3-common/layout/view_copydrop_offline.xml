@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@*com.google.android.apps.translate:color/material_grey_300" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@*com.google.android.apps.translate:id/copydrop_offline_cloud" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@*com.google.android.apps.translate:drawable/quantum_ic_cloud_off_grey600_24" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" android:layout_toEndOf="@*com.google.android.apps.translate:id/copydrop_offline_cloud">
+        <TextView android:textSize="20.0sp" android:textColor="@*android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="@*com.google.android.apps.translate:string/copydrop_offline_view_header" />
+        <TextView android:textSize="16.0sp" android:textColor="@*com.google.android.apps.translate:color/copydrop_dark_grey" android:id="@*com.google.android.apps.translate:id/copydrop_offline_body_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="@*com.google.android.apps.translate:color/quantum_googblue500" android:gravity="center_vertical" android:id="@*com.google.android.apps.translate:id/copydrop_offline_view_langs_btn" android:background="@*com.google.android.apps.translate:drawable/bg_clickable_rect" android:layout_width="wrap_content" android:layout_height="@*com.google.android.apps.translate:dimen/copydrop_touch_target" android:text="@*com.google.android.apps.translate:string/copydrop_offline_view_langs_btn" android:layout_marginEnd="20.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@*com.google.android.apps.translate:id/copydrop_offline_retry_btn" android:background="@*com.google.android.apps.translate:drawable/bg_clickable_rect" android:layout_width="wrap_content" android:layout_height="@*com.google.android.apps.translate:dimen/copydrop_touch_target">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@*com.google.android.apps.translate:drawable/quantum_ic_refresh_googblue_24" android:layout_marginEnd="6.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="@*com.google.android.apps.translate:color/quantum_googblue500" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@*com.google.android.apps.translate:string/copydrop_offline_retry_btn" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.V7.Widget.AppCompat.AutoCompleteTextView" parent="@*android:style/Widget.AutoCompleteTextView">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">#ffdddddd</item>
+        <item name="android:background">@*com.google.android.apps.photos:drawable/abc_edit_text_material</item>
+        <item name="android:dropDownSelector">@*com.google.android.apps.photos:drawable/abc_list_selector_holo_dark</item>
+        <item name="android:popupBackground">@*com.google.android.apps.photos:drawable/abc_popup_background_mtrl_mult</item>
+    </style>
+    <style name="Base.V7.Widget.AppCompat.EditText" parent="@*android:style/Widget.EditText">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">#ffdddddd</item>
+        <item name="android:background">@*com.google.android.apps.photos:drawable/abc_edit_text_material</item>
+    </style>
+ 
+    <style name="DrawerMenu.AccountItem.TextStyle" parent="@*com.google.android.apps.photos:style/DrawerMenu.AccountItem">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="FloatingSearchBarCardView">
+        <item name="android:backgroundTint">@null</item>
+        <item name="android:layout_marginLeft">@*com.google.android.apps.photos:dimen/photos_floatingsearchbar_cardui_additional_side_padding</item>
+        <item name="android:layout_marginRight">@*com.google.android.apps.photos:dimen/photos_floatingsearchbar_cardui_additional_side_padding</item>
+        <item name="*com.google.android.apps.photos:cardBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.apps.photos:cardCornerRadius">@*com.google.android.apps.photos:dimen/photos_floatingsearchbar_cardui_corner_radius</item>
+        <item name="*com.google.android.apps.photos:cardElevation">@*com.google.android.apps.photos:dimen/photos_floatingsearchbar_cardui_default_elevation</item>
+        <item name="*com.google.android.apps.photos:cardMaxElevation">@*com.google.android.apps.photos:dimen/photos_floatingsearchbar_cardui_max_elevation</item>
+        <item name="*com.google.android.apps.photos:cardUseCompatPadding">true</item>
+    </style>
+
+
+
+    <style name="Platform.AppCompat" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>		
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+    </style>
+    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>		
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+    </style>
+
+    <style name="MapEnrichmentEditingTheme" parent="@*com.google.android.apps.photos:style/Theme.Photos.NoTitle">
+        <item name="*com.google.android.apps.photos:colorAccent">@*android:color/accent_material_dark</item>
+    </style>
+
+
+    <style name="GvrDialogTheme" parent="@*android:style/Theme.Holo.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+    </style>
+    <style name="Widget.Design.BottomSheet.Modal" parent="@*android:style/Widget">
+        <item name="android:background">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.apps.photos:behavior_peekHeight">auto</item>
+        <item name="*com.google.android.apps.photos:behavior_hideable">true</item>
+        <item name="*com.google.android.apps.photos:behavior_skipCollapsed">false</item>
+    </style>
+    <style name="Widget.Photos.ActionBar.Inverse.Overflow" parent="@*android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:id">@*com.google.android.apps.photos:id/actionbar_overflow</item>
+        <item name="android:src">@*com.google.android.apps.photos:drawable/quantum_ic_drawer_white_24</item>
+    </style>
+    <style name="Widget.Photos.ActionBar.Overflow" parent="@*android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:id">@*com.google.android.apps.photos:id/actionbar_overflow</item>
+        <item name="android:src">@*com.google.android.apps.photos:drawable/quantum_ic_drawer_grey600_24</item>
+    </style>
+    <style name="mm_OverFlow" parent="@*android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@*com.google.android.apps.photos:drawable/quantum_ic_more_vert_white_24</item>
+    </style>
+    <style name="Theme.Photos.Splash" parent="@*com.google.android.apps.photos:style/Theme.Photos.Fullscreen">
+        <item name="android:windowBackground">@*com.google.android.apps.photos:drawable/quantum_launchscreen_photos</item>
+        <item name="*com.google.android.apps.photos:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="android:backgroundTint">@null</item>
+        <item name="android:windowShowWallpaper">false</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+    <style name="Photos.Archive.Assistant.Review" parent="@*com.google.android.apps.photos:style/Theme.AppCompat">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="*com.google.android.apps.photos:windowActionBar">false</item>
+        <item name="*com.google.android.apps.photos:windowNoTitle">true</item>
+        <item name="*com.google.android.apps.photos:colorPrimary">@*com.google.android.apps.photos:color/quantum_googblue500</item>
+        <item name="*com.google.android.apps.photos:colorPrimaryDark">@*com.google.android.apps.photos:color/quantum_googblue700</item>
+        <item name="android:backgroundTint">@null</item>
+    </style>
+
+
+    <style name="Theme.Ingest" parent="@*com.google.android.apps.photos:style/Theme.AppCompat">
+        <item name="android:icon">@*android:color/transparent</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textColor">@*com.google.android.apps.photos:color/quantum_grey600</item>
+        <item name="android:logo">@*android:color/transparent</item>
+        <item name="android:actionBarStyle">@*com.google.android.apps.photos:style/Theme.Ingest.ActionBar</item>
+        <item name="android:actionModeCloseDrawable">@*com.google.android.apps.photos:drawable/quantum_ic_clear_white_24</item>
+        <item name="android:homeAsUpIndicator">@*com.google.android.apps.photos:drawable/quantum_ic_arrow_back_grey600_24</item>
+        <item name="android:actionMenuTextColor">@*com.google.android.apps.photos:color/quantum_white_text</item>
+        <item name="android:actionModeStyle">@*com.google.android.apps.photos:style/Theme.Ingest.ActionModeActionBar</item>
+        <item name="*com.google.android.apps.photos:actionBarStyle">@*com.google.android.apps.photos:style/Theme.Ingest.ActionBar</item>
+        <item name="*com.google.android.apps.photos:actionBarSize">@*com.google.android.apps.photos:dimen/actionbar_menuitem_height</item>
+        <item name="*com.google.android.apps.photos:actionMenuTextColor">@*com.google.android.apps.photos:color/quantum_white_text</item>
+        <item name="*com.google.android.apps.photos:actionModeStyle">@*com.google.android.apps.photos:style/Theme.Ingest.ActionModeActionBar</item>
+        <item name="*com.google.android.apps.photos:actionModeCloseDrawable">@*com.google.android.apps.photos:drawable/quantum_ic_clear_white_24</item>
+        <item name="*com.google.android.apps.photos:homeAsUpIndicator">@*com.google.android.apps.photos:drawable/quantum_ic_arrow_back_grey600_24</item>
+        <item name="*com.google.android.apps.photos:colorPrimary">@*android:color/primary_material_dark</item>
+    </style>
+    <style name="Theme.Ingest.ActionBar" parent="@*com.google.android.apps.photos:style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@*android:color/primary_material_dark</item>
+        <item name="android:displayOptions">showHome|showTitle</item>
+        <item name="android:titleTextStyle">@*com.google.android.apps.photos:style/Theme.Ingest.ActionBar.Black.TextStyle</item>
+        <item name="*com.google.android.apps.photos:displayOptions">showHome|showTitle</item>
+        <item name="*com.google.android.apps.photos:titleTextStyle">@*com.google.android.apps.photos:style/Theme.Ingest.ActionBar.Black.TextStyle</item>
+        <item name="*com.google.android.apps.photos:background">@*android:color/primary_material_dark</item>
+    </style>
+    <style name="Theme.Photos.Backup.Settings.Preferences.Base" parent="@*com.google.android.apps.photos:style/Theme.AppCompat">
+        <item name="android:icon">@*android:color/transparent</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textColor">@*com.google.android.apps.photos:color/quantum_grey600</item>
+        <item name="android:logo">@*android:color/transparent</item>
+        <item name="android:actionBarStyle">@*com.google.android.apps.photos:style/Widget.Photos.Backup.Settings.ActionBar</item>
+        <item name="android:homeAsUpIndicator">@*com.google.android.apps.photos:drawable/quantum_ic_arrow_back_grey600_24</item>
+        <item name="*com.google.android.apps.photos:actionBarStyle">@*com.google.android.apps.photos:style/Widget.Photos.Backup.Settings.ActionBar</item>
+        <item name="*com.google.android.apps.photos:actionBarSize">@*com.google.android.apps.photos:dimen/photos_backup_settings_actionbar_menuitem_height</item>
+        <item name="*com.google.android.apps.photos:actionMenuTextColor">?android:textColorPrimary</item>
+        <item name="*com.google.android.apps.photos:homeAsUpIndicator">@*com.google.android.apps.photos:drawable/quantum_ic_arrow_back_grey600_24</item>
+        <item name="*com.google.android.apps.photos:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.apps.photos:supportPreferenceCategoryStyle">@*com.google.android.apps.photos:style/SupportPreference.Category</item>
+        <item name="*com.google.android.apps.photos:supportPreferenceScreenStyle">@*com.google.android.apps.photos:style/SupportPreference.PreferenceScreen</item>
+        <item name="*com.google.android.apps.photos:supportPreferenceFragmentStyle">@*com.google.android.apps.photos:style/SupportPreferenceFragment</item>
+        <item name="*com.google.android.apps.photos:supportPreferenceStyle">@*com.google.android.apps.photos:style/SupportPreference</item>
+        <item name="*com.google.android.apps.photos:supportPreferenceInformationStyle">@*com.google.android.apps.photos:style/SupportPreference.Information</item>
+        <item name="*com.google.android.apps.photos:supportCheckBoxPreferenceStyle">@*com.google.android.apps.photos:style/SupportPreference.CheckBoxPreference</item>
+        <item name="*com.google.android.apps.photos:supportYesNoPreferenceStyle">@*com.google.android.apps.photos:style/SupportPreference.DialogPreference.YesNoPreference</item>
+        <item name="*com.google.android.apps.photos:supportDialogPreferenceStyle">@*com.google.android.apps.photos:style/SupportPreference.DialogPreference</item>
+        <item name="*com.google.android.apps.photos:supportEditTextPreferenceStyle">@*com.google.android.apps.photos:style/SupportPreference.DialogPreference.EditTextPreference</item>
+        <item name="*com.google.android.apps.photos:supportRingtonePreferenceStyle">@*com.google.android.apps.photos:style/SupportPreference.RingtonePreference</item>
+        <item name="*com.google.android.apps.photos:supportPreferencePanelStyle">@*com.google.android.apps.photos:style/SupportPreferencePanel</item>
+        <item name="*com.google.android.apps.photos:supportSwitchPreferenceStyle">@*com.google.android.apps.photos:style/SupportPreference.SwitchPreference</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+    </style>
+    <style name="Theme.Photos.Base" parent="@*com.google.android.apps.photos:style/Theme.AppCompat">
+        <item name="android:icon">@*android:color/transparent</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:logo">@*android:color/transparent</item>
+        <item name="android:actionBarStyle">@*com.google.android.apps.photos:style/Widget.Photos.ActionBar</item>
+        <item name="android:actionModeCloseDrawable">@*com.google.android.apps.photos:drawable/quantum_ic_clear_white_24</item>
+        <item name="android:actionOverflowButtonStyle">@*com.google.android.apps.photos:style/Widget.Photos.ActionBar.Overflow</item>
+        <item name="android:homeAsUpIndicator">@*com.google.android.apps.photos:drawable/quantum_ic_arrow_back_grey600_24</item>
+        <item name="android:actionModeStyle">@*com.google.android.apps.photos:style/Widget.Photos.ActionModeActionBar</item>
+        <item name="*com.google.android.apps.photos:actionOverflowButtonStyle">@*com.google.android.apps.photos:style/Widget.Photos.ActionBar.Overflow</item>
+        <item name="*com.google.android.apps.photos:actionBarStyle">@*com.google.android.apps.photos:style/Widget.Photos.ActionBar</item>
+        <item name="*com.google.android.apps.photos:actionBarSize">@*com.google.android.apps.photos:dimen/photos_theme_actionbar_menuitem_height</item>
+        <item name="*com.google.android.apps.photos:actionMenuTextColor">?android:textColorPrimary</item>
+        <item name="*com.google.android.apps.photos:actionModeStyle">@*com.google.android.apps.photos:style/Widget.Photos.ActionModeActionBar</item>
+        <item name="*com.google.android.apps.photos:actionModeCloseDrawable">@*com.google.android.apps.photos:drawable/quantum_ic_clear_white_24</item>
+        <item name="*com.google.android.apps.photos:homeAsUpIndicator">@*com.google.android.apps.photos:drawable/quantum_ic_arrow_back_grey600_24</item>
+        <item name="*com.google.android.apps.photos:colorPrimary">@*android:color/black</item>
+        <item name="*com.google.android.apps.photos:colorAccent">@*com.google.android.apps.photos:color/quantum_googblue500</item>
+    </style>
+    <style name="Theme.Photos.Cast" parent="@*com.google.android.apps.photos:style/Theme.Photos.Fullscreen">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="*com.google.android.apps.photos:windowActionBar">false</item>
+        <item name="*com.google.android.apps.photos:windowNoTitle">true</item>
+        <item name="*com.google.android.apps.photos:windowActionModeOverlay">true</item>
+    </style>
+    <style name="Widget.Photos.ActionBar" parent="@*com.google.android.apps.photos:style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@*android:color/primary_material_dark</item>
+        <item name="android:displayOptions">showHome|showTitle</item>
+        <item name="android:titleTextStyle">@*com.google.android.apps.photos:style/Widget.Photos.ActionBar.Black.TextStyle</item>
+        <item name="*com.google.android.apps.photos:displayOptions">showHome|showTitle</item>
+        <item name="*com.google.android.apps.photos:titleTextStyle">@*com.google.android.apps.photos:style/Widget.Photos.ActionBar.Black.TextStyle</item>
+        <item name="*com.google.android.apps.photos:background">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.apps.photos:contentInsetStart">@*com.google.android.apps.photos:dimen/photos_theme_actionbar_title_padding</item>
+    </style>
+    <style name="Widget.Photos.Backup.Settings.ActionBar" parent="@*com.google.android.apps.photos:style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@*android:color/primary_material_dark</item>
+        <item name="android:displayOptions">showHome|showTitle</item>
+        <item name="android:titleTextStyle">@*com.google.android.apps.photos:style/Widget.Photos.Backup.Settings.ActionBar.Black.TextStyle</item>
+    </style>
+
+
+
+    <style name="Theme.Photos.PhotoBook.EmptyStoreFront" parent="@*com.google.android.apps.photos:style/Theme.Photos">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="*com.google.android.apps.photos:actionBarStyle">@*com.google.android.apps.photos:style/Theme.Photos.PhotoBook.EmptyStoreFront.ActionBar</item>
+        <item name="*com.google.android.apps.photos:popupMenuStyle">@*com.google.android.apps.photos:style/Theme.Photos.PhotoBook.StoreFront.PopupMenu</item>
+    </style>
+    <style name="photos_lens_card_style" parent="@*com.google.android.apps.photos:style/CardView">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@*com.google.android.apps.photos:dimen/photos_lens_card_margin</item>
+        <item name="android:layout_marginTop">@*com.google.android.apps.photos:dimen/photos_lens_card_margin</item>
+        <item name="android:layout_marginRight">@*com.google.android.apps.photos:dimen/photos_lens_card_margin</item>
+        <item name="*com.google.android.apps.photos:cardBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.apps.photos:cardCornerRadius">2.0dip</item>
+        <item name="*com.google.android.apps.photos:cardElevation">2.0dip</item>
+    </style>
+    <style name="SearchCardView">
+        <item name="android:backgroundTint">@null</item>
+        <item name="android:layout_marginLeft">@*com.google.android.apps.photos:dimen/photos_search_cardui_margin_side</item>
+        <item name="android:layout_marginRight">@*com.google.android.apps.photos:dimen/photos_search_cardui_margin_side</item>
+        <item name="*com.google.android.apps.photos:cardBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.apps.photos:cardCornerRadius">@*com.google.android.apps.photos:dimen/photos_floatingsearchbar_cardui_corner_radius</item>
+        <item name="*com.google.android.apps.photos:cardElevation">@*com.google.android.apps.photos:dimen/photos_floatingsearchbar_cardui_default_elevation</item>
+        <item name="*com.google.android.apps.photos:cardMaxElevation">2.0dip</item>
+        <item name="*com.google.android.apps.photos:cardUseCompatPadding">true</item>
+    </style>
+
+
+
+    <style name="photos_photobook_wallet_custom_theme">
+        <item name="*com.google.android.apps.photos:colorPrimary">#ff1976d2</item>
+    </style>
+
+    <style name="mm_Theme" parent="@*com.google.android.apps.photos:style/Theme.Photos">
+        <item name="android:icon">@*android:color/transparent</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:logo">@*android:color/transparent</item>
+        <item name="android:actionBarStyle">@*com.google.android.apps.photos:style/mm_ActionBar</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:actionOverflowButtonStyle">@*com.google.android.apps.photos:style/mm_OverFlow</item>
+        <item name="android:actionMenuTextColor">@*com.google.android.apps.photos:color/mm_main_text</item>
+        <item name="*com.google.android.apps.photos:icon">@*android:color/transparent</item>
+        <item name="*com.google.android.apps.photos:logo">@*android:color/transparent</item>
+        <item name="*com.google.android.apps.photos:windowActionBarOverlay">true</item>
+        <item name="*com.google.android.apps.photos:actionOverflowButtonStyle">@*com.google.android.apps.photos:style/mm_OverFlow</item>
+        <item name="*com.google.android.apps.photos:actionBarStyle">@*com.google.android.apps.photos:style/mm_ActionBar</item>
+        <item name="*com.google.android.apps.photos:actionMenuTextColor">@*com.google.android.apps.photos:color/mm_main_text</item>
+        <item name="*com.google.android.apps.photos:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.apps.photos:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.apps.photos:colorAccent">@*com.google.android.apps.photos:color/mm_accent</item>
+    </style>
+
+
+    <style name="Theme.Photos.TransparentActionBar" parent="@*com.google.android.apps.photos:style/Theme.AppCompat.Light">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:actionOverflowButtonStyle">@*com.google.android.apps.photos:style/Widget.Photos.ActionBar.Inverse.Overflow</item>
+        <item name="android:homeAsUpIndicator">@*com.google.android.apps.photos:drawable/quantum_ic_arrow_back_white_24</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="*com.google.android.apps.photos:actionOverflowButtonStyle">@*com.google.android.apps.photos:style/Widget.Photos.ActionBar.Inverse.Overflow</item>
+        <item name="*com.google.android.apps.photos:actionBarStyle">@*com.google.android.apps.photos:style/Photos.ActionBar.Transparent</item>
+        <item name="*com.google.android.apps.photos:homeAsUpIndicator">@*com.google.android.apps.photos:drawable/quantum_ic_arrow_back_white_24</item>
+        <item name="*com.google.android.apps.photos:colorAccent">@*android:color/white</item>
+    </style>
+    <style name="largeWhiteTitleTextAppearance" parent="@*com.google.android.apps.photos:style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@*com.google.android.apps.photos:dimen/text_size_20</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="sendkit_ui_white_tint">
+        <item name="*com.google.android.apps.photos:colorControlNormal">@*android:color/white</item>
+    </style>
+
+
+    <style name="Theme.Photos.PhotoBook.StoreFront.AlertDialog" parent="@*com.google.android.apps.photos:style/Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColorPrimary">@*android:color/white</item>
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+
+
+    <style name="Theme.Photos.PhotoBook.StoreFront" parent="@*com.google.android.apps.photos:style/Theme.Photos">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="*com.google.android.apps.photos:actionBarStyle">@*com.google.android.apps.photos:style/Theme.Photos.PhotoBook.StoreFront.ActionBar</item>
+        <item name="*com.google.android.apps.photos:popupMenuStyle">@*com.google.android.apps.photos:style/Theme.Photos.PhotoBook.StoreFront.PopupMenu</item>
+        <item name="*com.google.android.apps.photos:colorPrimary">@*android:color/primary_material_dark</item>
+    </style>
+    <style name="Theme.Photos.EmptyState.Layout" parent="@*com.google.android.apps.photos:style/Theme.Photos.EmptyState">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@*android:color/background_dark</item>
+        <item name="android:paddingLeft">@*com.google.android.apps.photos:dimen/empty_state_layout_padding_horizontal</item>
+        <item name="android:paddingRight">@*com.google.android.apps.photos:dimen/empty_state_layout_padding_horizontal</item>
+        <item name="android:paddingBottom">@*com.google.android.apps.photos:dimen/empty_state_layout_padding_bottom</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="Theme.Photos.EmptyState.LayoutWithSideBleed" parent="@*com.google.android.apps.photos:style/Theme.Photos.EmptyState">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@*android:color/background_dark</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+
+    <style name="button_container">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">80.0dip</item>
+        <item name="android:layout_height">88.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:backgroundTint">@null</item>
+    </style>
+    <style name="circle_button">
+        <item name="android:layout_width">@*com.google.android.apps.photos:dimen/photos_assistant_create_circle_diameter</item>
+        <item name="android:layout_height">@*com.google.android.apps.photos:dimen/photos_assistant_create_circle_diameter</item>
+        <item name="android:backgroundTint">@null</item>
+    </style>
+</resources>

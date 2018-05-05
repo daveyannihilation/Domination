@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TableLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TableRow android:layout_marginTop="10.0dip">
+                <TextView android:textSize="18.0sp" android:textColor="#ffdddddd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@*com.sonelli.juicessh:string/nickname_colon" />
+                <EditText android:textSize="12.0sp" android:textColor="#ffdddddd" android:id="@*com.sonelli.juicessh:id/identityNickname_value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@*com.sonelli.juicessh:string/optional" android:layout_weight="1.0" android:inputType="textNoSuggestions" />
+            </TableRow>
+            <TableRow android:layout_marginTop="10.0dip">
+                <TextView android:textSize="18.0sp" android:textColor="#ffdddddd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@*com.sonelli.juicessh:string/username_colon" />
+                <EditText android:textSize="12.0sp" android:textColor="#ffdddddd" android:id="@*com.sonelli.juicessh:id/identityUsername_value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:inputType="textNoSuggestions" />
+            </TableRow>
+        </TableLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@*com.sonelli.juicessh:id/show_password_clickable" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="#ffdddddd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="Password" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffdddddd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(show less)" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@*com.sonelli.juicessh:id/password_set_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="10.0dip">
+            <Button android:textSize="12.0sp" android:textColor="@*android:color/white" android:gravity="center" android:id="@*com.sonelli.juicessh:id/password_clear_button" android:background="@*com.sonelli.juicessh:drawable/button" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginRight="5.0dip" android:text="@*com.sonelli.juicessh:string/clear" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffdddddd" android:id="@*com.sonelli.juicessh:id/password_set_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Last Set: 4 days ago" />
+        </LinearLayout>
+        <EditText android:textSize="12.0sp" android:textColor="#ffdddddd" android:id="@*com.sonelli.juicessh:id/edit_password" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@*com.sonelli.juicessh:string/optional" android:inputType="textPassword" />
+        <LinearLayout android:orientation="horizontal" android:id="@*com.sonelli.juicessh:id/show_key_clickable" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0sp" android:textColor="#ffdddddd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="Private Key" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffdddddd" android:id="@*com.sonelli.juicessh:id/show_more_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(show more)" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:textSize="12.0sp" android:textColor="@*android:color/white" android:gravity="center" android:id="@*com.sonelli.juicessh:id/identityPrivateKey_button" android:background="@*com.sonelli.juicessh:drawable/button" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginRight="5.0dip" android:text="@*com.sonelli.juicessh:string/clear" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffdddddd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Last Set: 4 days ago" />
+        </LinearLayout>
+        <RadioGroup android:orientation="vertical" android:id="@*com.sonelli.juicessh:id/radiogroup_import_type" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:textColor="@*android:color/white" android:id="@*com.sonelli.juicessh:id/radio_file_path" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@*com.sonelli.juicessh:string/smart_search" />
+            <RadioButton android:textColor="@*android:color/white" android:id="@*com.sonelli.juicessh:id/radio_smart_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@*com.sonelli.juicessh:string/paste" />
+        </RadioGroup>
+        <ImageView android:layout_gravity="center" android:id="@*com.sonelli.juicessh:id/iv_loading_smart_search" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@*com.sonelli.juicessh:drawable/spinner_black_16" android:contentDescription="@*com.sonelli.juicessh:string/this_is_a_loading_indicator" />
+        <TextView android:gravity="center" android:id="@*com.sonelli.juicessh:id/tv_loading_smart_search" android:paddingTop="5.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@*com.sonelli.juicessh:string/searching" />
+        <FrameLayout android:id="@*com.sonelli.juicessh:id/lv_smart_search_suggestions" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

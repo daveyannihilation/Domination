@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="?android:activatedBackgroundIndicator" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeightSmall"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@*android:color/primary_material_dark" android:paddingTop="24.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="?android:listPreferredItemPaddingStart" android:paddingEnd="?android:listPreferredItemPaddingEnd">
+        <TextView android:textAppearance="?android:textAppearanceListItem" android:ellipsize="marquee" android:id="@*android:id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+        <Switch android:gravity="end|center" android:id="@*android:id/switch_widget" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@*com.android.settings:id/gesture_animation_view" android:background="@*com.android.settings:color/gestures_setting_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingEnd="?android:listPreferredItemPaddingEnd">
+        <com.android.settings.widget.AspectRatioFrameLayout android:padding="@*com.android.settings:dimen/gesture_animation_padding" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextureView android:layout_gravity="center" android:id="@*com.android.settings:id/gesture_video" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:id="@*com.android.settings:id/gesture_image" android:background="@*com.android.settings:color/gestures_setting_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@*com.android.settings:id/gesture_play_button" android:layout_width="@*com.android.settings:dimen/gestures_play_button_size" android:layout_height="@*com.android.settings:dimen/gestures_play_button_size" android:src="@*com.android.settings:drawable/ic_gesture_play_button" />
+        </com.android.settings.widget.AspectRatioFrameLayout>
+        <TextView android:textAppearance="?android:textAppearanceListItemSecondary" android:textColor="?android:textColorSecondary" android:ellipsize="end" android:id="@*android:id/summary" android:paddingTop="@*com.android.settings:dimen/gestures_settings_padding_top_bottom" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLines="10" android:layout_weight="1.0" android:paddingStart="?android:listPreferredItemPaddingStart" />
+    </LinearLayout>
+</LinearLayout>

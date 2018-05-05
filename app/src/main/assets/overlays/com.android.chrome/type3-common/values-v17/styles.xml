@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ButtonBar" parent="@*android:style/Holo.ButtonBar.AlertDialog">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:divider">?android:dividerVertical</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:dividerPadding">0.0dip</item>
+    </style>
+    <style name="ButtonBarButton" parent="@*android:style/Widget.Holo.Button">
+        <item name="android:background">@*com.android.chrome:drawable/abc_item_background_holo_dark</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:paddingStart">4.0dip</item>
+        <item name="android:paddingEnd">4.0dip</item>
+    </style>
+
+    <style name="WebNotificationButton" parent="@*android:style/Widget.Holo.Button.Borderless.Small">
+        <item name="android:textColor">#ffdddddd</item>
+    </style>
+
+    <style name="ContextualSearchTextViewLayout">
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:background">@*android:color/background_dark</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:paddingStart">53.0dip</item>
+        <item name="android:paddingEnd">53.0dip</item>
+    </style>
+
+    <style name="ContextualSearchContextTextView">
+        <item name="android:textSize">@*com.android.chrome:dimen/text_size_large</item>
+        <item name="android:textColor">#ffdddddd</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">30.0dip</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:requiresFadingEdge">horizontal</item>
+    </style>
+
+    <style name="SearchActivityTheme" parent="@*com.android.chrome:style/MainTheme">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+    </style>
+    <style name="FullscreenWhiteActivityTheme" parent="@*com.android.chrome:style/FullscreenWhite">
+        <item name="*com.android.chrome:windowActionBar">false</item>
+        <item name="android:backgroundTint">@*android:color/primary_material_dark</item>
+    </style>
+
+    <style name="TabbedModeTheme" parent="@*com.android.chrome:style/MainTheme">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+    </style>
+
+
+    <style name="FullscreenWhiteBase" parent="@*com.android.chrome:style/Theme.AppCompat">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:textColorLink">@*com.android.chrome:color/light_active_color</item>
+        <item name="*com.android.chrome:windowNoTitle">true</item>
+        <item name="*com.android.chrome:colorPrimary">@*com.android.chrome:color/light_active_color</item>
+        <item name="*com.android.chrome:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.android.chrome:colorAccent">@*com.android.chrome:color/light_active_color</item>
+    </style>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@*android:color/background_dark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.Slack.ui.widgets.SlackToolbar android:id="@*com.Slack:id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@*com.Slack:style/BaseToolbarModuleStyle" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@*com.Slack:layout/edit_profile_photo_v2" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:textSize="16.0sp" android:textColor="@*com.Slack:color/dark_grey" android:textColorHint="@*com.Slack:color/cool_grey" android:gravity="start" android:layout_gravity="center_horizontal" android:id="@*com.Slack:id/profile_firstname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@*com.Slack:string/hint_profile_firstname" />
+                <EditText android:textSize="16.0sp" android:textColor="@*com.Slack:color/dark_grey" android:textColorHint="@*com.Slack:color/cool_grey" android:gravity="start" android:layout_gravity="center_horizontal" android:id="@*com.Slack:id/profile_lastname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="10.0dip" android:hint="@*com.Slack:string/hint_profile_lastname" />
+                <com.Slack.ui.widgets.profile.EditProfileFieldView android:textSize="16.0sp" android:textColor="@*com.Slack:color/dark_grey" android:textColorHint="@*com.Slack:color/cool_grey" android:gravity="start" android:layout_gravity="center_horizontal" android:id="@*com.Slack:id/profile_fullname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:hint="@*com.Slack:string/hint_profile_fullname" />
+                <com.Slack.ui.widgets.profile.EditProfileFieldView android:id="@*com.Slack:id/editprofile_preferredname" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <com.Slack.ui.widgets.profile.EditProfileFieldView android:id="@*com.Slack:id/editprofile_role" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:orientation="vertical" android:id="@*com.Slack:id/edit_profile_custom_status_cta" android:background="@*com.Slack:drawable/abc_item_background_holo_dark" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@*com.Slack:color/steel_grey" android:id="@*com.Slack:id/edit_profile_custom_status_cta_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@*com.Slack:string/label_edit_profile_custom_status" />
+                    <com.Slack.ui.widgets.EmojiTextView android:textSize="17.0sp" android:id="@*com.Slack:id/edit_profile_custom_status_cta_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" />
+                    <View android:id="@*com.Slack:id/edit_profile_custom_status_cta_divider" android:background="@*com.Slack:color/fake_edit_text_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                </LinearLayout>
+                <com.Slack.ui.widgets.profile.EditProfileFieldView android:id="@*com.Slack:id/editprofile_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
