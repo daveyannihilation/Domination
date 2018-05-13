@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.Slack.ui.widgets.profile.TouchlessScrollView android:id="@*com.Slack:id/content_scroller" android:background="@*android:color/background_dark" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/com.Slack">
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
         <RelativeLayout android:id="@*com.Slack:id/team_banner" android:background="@*android:color/background_floating_material_dark" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip">
             <TextView android:textSize="16.0sp" android:textColor="@*android:color/white" android:id="@*com.Slack:id/team_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:textIsSelectable="false" fontPath="fonts/Lato-Bold.ttf" />
             <include android:id="@*com.Slack:id/team_avatar" android:visibility="gone" android:layout_width="@*com.Slack:dimen/team_badge_medium_size" android:layout_height="@*com.Slack:dimen/team_badge_medium_size" android:layout_alignParentRight="true" android:layout_centerVertical="true" layout="@*com.Slack:layout/avatar_badge" />
         </RelativeLayout>
         <include layout="@*com.Slack:layout/profile_stranger_view" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@*com.Slack:id/profile_button_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+            <TextView android:id="@*com.Slack:id/button_profile_left" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@*com.Slack:string/calls_notification_action_message" android:layout_weight="1.0" android:layout_marginEnd="8.0dip" style="@*com.Slack:style/ProfileButton" />
+            <TextView android:id="@*com.Slack:id/button_profile_right" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@*com.Slack:string/toolbar_title_edit_profile" android:layout_weight="1.0" style="@*com.Slack:style/ProfileButton" />
+            <com.Slack.ui.widgets.FontIconView android:id="@*com.Slack:id/button_profile_overflow" android:visibility="visible" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginStart="8.0dip" app:iconResourceId="@*com.Slack:string/mb_icon_vertical_ellipsis" style="@*com.Slack:style/ProfileButton" />
+        </LinearLayout>
         <com.Slack.ui.widgets.profile.AppProfileFieldsLayout android:id="@*com.Slack:id/fields" android:layout_width="fill_parent" android:layout_height="fill_parent">
             <com.Slack.ui.widgets.profile.AppProfileFieldView android:id="@*com.Slack:id/profile_about" android:layout_width="fill_parent" android:layout_height="wrap_content" app:label="@*com.Slack:string/app_label_about" />
         </com.Slack.ui.widgets.profile.AppProfileFieldsLayout>

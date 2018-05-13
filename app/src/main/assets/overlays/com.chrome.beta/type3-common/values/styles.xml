@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <style name="AutoCompleteTextView.LowEnd" parent="@*android:style/Widget.Material.AutoCompleteTextView">
+        <item name="android:popupBackground">@*com.chrome.beta:drawable/popup_background_shadow</item>
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Inverse" parent="@*android:style/TextAppearance.Material" />
+    <style name="Base.TextAppearance.AppCompat.Large.Inverse" parent="@*android:style/TextAppearance.Material.Large" />
+    <style name="Base.TextAppearance.AppCompat.Medium.Inverse" parent="@*android:style/TextAppearance.Material.Medium" />
+    <style name="Base.TextAppearance.AppCompat.Small.Inverse" parent="@*android:style/TextAppearance.Material.Small" />
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse" parent="@*android:style/TextAppearance.Material.Widget.ActionBar.Subtitle" />
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse" parent="@*android:style/TextAppearance.Material.Widget.ActionBar.Title" />
+    <style name="Base.TextAppearance.AppCompat.Widget.Button.Inverse" parent="@*android:style/TextAppearance.Material.Widget.Button" />
     <style name="Base.V7.Widget.AppCompat.AutoCompleteTextView" parent="@*android:style/Widget.AutoCompleteTextView">
         <item name="android:textAppearance">?android:textAppearanceMedium</item>
         <item name="android:textColor">#ffdddddd</item>
@@ -8,7 +17,6 @@
         <item name="android:dropDownSelector">@*com.chrome.beta:drawable/abc_list_selector_holo_dark</item>
         <item name="android:popupBackground">@*com.chrome.beta:drawable/abc_popup_background_mtrl_mult</item>
     </style>
-
     <style name="Base.V7.Widget.AppCompat.EditText" parent="@*android:style/Widget.EditText">
         <item name="android:textAppearance">?android:textAppearanceMedium</item>
         <item name="android:textColor">#ffdddddd</item>
@@ -24,17 +32,12 @@
         <item name="android:maxLines">2</item>
         <item name="*com.chrome.beta:textAllCaps">true</item>
     </style>
-
-    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light">
-        <item name="android:dropDownListViewStyle">@*com.chrome.beta:style/Base.Widget.AppCompat.ListView.DropDown</item>
-    </style>
+    <style name="Base.Widget.AppCompat.Light.ActionBar.TabText" parent="@*android:style/Widget.Material.ActionBar.TabText" />
+    <style name="Base.Widget.AppCompat.Light.ActionBar.TabText.Inverse" parent="@*android:style/Widget.Material.ActionBar.TabText" />
+    <style name="Base.Widget.AppCompat.Light.ActionBar.TabView" parent="@*android:style/Widget.Material.ActionBar.TabView" />
+    <style name="Base.Widget.AppCompat.Light.PopupMenu" parent="@*android:style/Widget.Material.PopupMenu" />
     <style name="Base.Widget.AppCompat.ListView.DropDown" parent="@*android:style/Widget.Material.ListView.DropDown">
-      <item name="android:backgroundTint">@*android:color/background_floating_material_dark</item>
-    </style> 
-
-    <style name="PreferenceTextAppearanceMedium">
-        <item name="android:textSize">18.0sp</item>
-        <item name="android:textColor">#ffffffff</item>
+        <item name="android:backgroundTint">@*com.chrome.beta:color/background_floating_material_dark</item>
     </style>
     <style name="ButtonBar" parent="@*android:style/Holo.ButtonBar.AlertDialog">
         <item name="android:layout_width">fill_parent</item>
@@ -51,25 +54,19 @@
         <item name="android:layout_height">fill_parent</item>
         <item name="android:layout_weight">1.0</item>
     </style>
-
-    <style name="WebNotificationButton" parent="@*android:style/Widget.DeviceDefault.Button.Borderless.Small">
-        <item name="android:textColor">#ffdddddd</item>
+    <style name="CardView" parent="@*com.chrome.beta:style/Base.CardView">
+        <item name="*com.chrome.beta:cardBackgroundColor">@*com.chrome.beta:color/background_floating_material_dark</item>
     </style>
-
-    <style name="ContextualSearchTextViewLayout">
-        <item name="android:layout_gravity">bottom</item>
-        <item name="android:background">@*android:color/background_dark</item>
-        <item name="android:paddingLeft">53.0dip</item>
-        <item name="android:paddingRight">53.0dip</item>
-        <item name="android:visibility">invisible</item>
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">fill_parent</item>
-    </style>
-    <style name="ContextualSearchTextView">
-        <item name="android:textSize">@*com.chrome.beta:dimen/text_size_large</item>
+    <style name="ContextualSearchCaptionTextView">
+        <item name="android:textAppearance">@*com.chrome.beta:style/BlackBody</item>
         <item name="android:textColor">#ffffffff</item>
         <item name="android:ellipsize">end</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:background">@*com.chrome.beta:color/background_material_dark</item>
+        <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">7.0dip</item>
+        <item name="android:layout_marginRight">7.0dip</item>
         <item name="android:singleLine">true</item>
     </style>
     <style name="ContextualSearchContextTextView">
@@ -84,42 +81,68 @@
         <item name="android:layout_weight">1.0</item>
         <item name="android:requiresFadingEdge">horizontal</item>
     </style>
-
-    <style name="ContextualSearchCaptionTextView">
-        <item name="android:textAppearance">@*com.chrome.beta:style/BlackBody</item>
+    <style name="ContextualSearchTextView">
+        <item name="android:textSize">@*com.chrome.beta:dimen/text_size_large</item>
         <item name="android:textColor">#ffffffff</item>
         <item name="android:ellipsize">end</item>
-        <item name="android:layout_gravity">bottom</item>
-        <item name="android:background">@*android:color/background_dark</item>
-        <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">fill_parent</item>
-        <item name="android:layout_marginLeft">7.0dip</item>
-        <item name="android:layout_marginRight">7.0dip</item>
         <item name="android:singleLine">true</item>
     </style>
-
-
-    <style name="FullscreenWhiteBase" parent="@*com.chrome.beta:style/Theme.AppCompat.Light">
-        <item name="android:windowBackground">@*android:color/background_dark</item>
+    <style name="ContextualSearchTextViewLayout">
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:background">@*com.chrome.beta:color/background_material_dark</item>
+        <item name="android:paddingLeft">53.0dip</item>
+        <item name="android:paddingRight">53.0dip</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="FullscreenWhiteBase" parent="@*com.chrome.beta:style/Theme.AppCompat">
+        <item name="android:windowBackground">@*com.chrome.beta:color/background_material_dark</item>
         <item name="android:textColorLink">@*com.chrome.beta:color/light_active_color</item>
         <item name="*com.chrome.beta:windowNoTitle">true</item>
         <item name="*com.chrome.beta:colorPrimary">@*com.chrome.beta:color/light_active_color</item>
-        <item name="*com.chrome.beta:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.chrome.beta:colorPrimaryDark">@*com.chrome.beta:color/primary_dark_material_dark</item>
         <item name="*com.chrome.beta:colorAccent">@*com.chrome.beta:color/light_active_color</item>
     </style>
-
-
-
-    <style name="SearchActivityTheme" parent="@*com.chrome.beta:style/MainTheme">
-        <item name="android:windowBackground">@*android:color/background_dark</item>
+    <style name="GvrDialogTheme" parent="@*android:style/Theme.Material.Dialog" />
+    <style name="ListPopupWindow.LowEnd" parent="@*android:style/Widget.Material.ListPopupWindow">
+        <item name="android:popupBackground">@*com.chrome.beta:drawable/popup_background_shadow</item>
     </style>
-    <style name="FullscreenWhiteActivityTheme" parent="@*com.chrome.beta:style/FullscreenWhite">
-        <item name="*com.chrome.beta:windowActionBar">false</item>
-        <item name="android:backgroundTint">@*android:color/primary_material_dark</item>
+    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.Material">
+        <item name="android:dropDownListViewStyle">@*com.chrome.beta:style/Base.Widget.AppCompat.ListView.DropDown</item>
     </style>
-
-
-    <style name="TabbedModeTheme" parent="@*com.chrome.beta:style/MainTheme">
-        <item name="android:windowBackground">@*android:color/background_dark</item>
+    <style name="Platform.V11.AppCompat.Light" parent="@*android:style/Theme.Holo" />
+    <style name="Platform.V21.AppCompat.Light" parent="@*android:style/Theme.Material.NoActionBar">
+        <item name="android:textColorHintInverse">#ffbbbbbb</item>
+        <item name="android:textColorHint">#ffbbbbbb</item>
+        <item name="android:textColorLink">@*android:color/accent_material_dark</item>
+        <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
+    </style>
+    <style name="PreferencesDialogTheme" parent="@*android:style/Theme.Material.Dialog.Alert">
+        <item name="android:colorAccent">@*com.chrome.beta:color/pref_accent_color</item>
+    </style>
+    <style name="PreferenceTextAppearanceMedium">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="SearchActivityTheme" parent="@*com.chrome.beta:style/MainThemeBase">
+        <item name="android:windowBackground">@*com.chrome.beta:color/background_material_dark</item>
+    </style>
+    <style name="Spinner.LowEnd" parent="@*android:style/Widget.Material.Spinner">
+        <item name="android:popupBackground">@*com.chrome.beta:drawable/popup_background_shadow</item>
+    </style>
+    <style name="TabbedModeThemeBase" parent="@*com.chrome.beta:style/MainTheme">
+        <item name="android:windowBackground">@*com.chrome.beta:color/background_material_dark</item>
+    </style>
+    <style name="WebNotificationButton" parent="@*android:style/Widget.DeviceDefault.Button.Borderless.Small">
+        <item name="android:textColor">#ffdddddd</item>
+    </style>
+    <style name="Widget.Design.BottomSheet.Modal" parent="@*android:style/Widget">
+        <item name="android:background">@*com.chrome.beta:color/background_floating_material_dark</item>
+        <item name="android:elevation">@*com.chrome.beta:dimen/design_bottom_sheet_modal_elevation</item>
+        <item name="*com.chrome.beta:behavior_hideable">true</item>
+        <item name="*com.chrome.beta:behavior_peekHeight">auto</item>
+        <item name="*com.chrome.beta:behavior_skipCollapsed">false</item>
     </style>
 </resources>

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:orientation="vertical" android:id="@*com.whatsapp:id/business_details_card" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/com.whatsapp">
-    <View android:background="@*com.whatsapp:drawable/list_separator_bot" android:layout_width="fill_parent" android:layout_height="@*com.whatsapp:dimen/info_screen_card_spacing" />
-    <LinearLayout android:orientation="vertical" android:background="@*android:color/background_floating_material_dark" android:layout_width="fill_parent" android:layout_height="wrap_content">
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.whatsapp.InfoCard android:layout_width="fill_parent" android:layout_height="wrap_content" app:icContentColor="@*android:color/white" style="@*com.whatsapp:style/InfoCard">
         <LinearLayout android:orientation="horizontal" android:id="@*com.whatsapp:id/business_verification_status" android:background="@*com.whatsapp:drawable/selector_orange_gradient" android:paddingLeft="@*com.whatsapp:dimen/info_screen_padding" android:paddingTop="@*com.whatsapp:dimen/business_field_view_top_bottom_padding" android:paddingRight="@*com.whatsapp:dimen/info_screen_padding" android:paddingBottom="@*com.whatsapp:dimen/business_field_view_top_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@*com.whatsapp:dimen/info_screen_padding" android:paddingEnd="@*com.whatsapp:dimen/info_screen_padding">
             <ImageView android:id="@*com.whatsapp:id/business_verification_status_icon" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@*com.whatsapp:drawable/ic_business_unverified" android:paddingEnd="12.0dip" />
             <LinearLayout android:orientation="vertical" android:id="@*com.whatsapp:id/business_field_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
@@ -18,7 +17,6 @@
         <com.whatsapp.BusinessProfileFieldView android:id="@*com.whatsapp:id/business_link" android:tag="website" android:visibility="gone" app:bpfvImage="@*com.whatsapp:drawable/ic_business_link" app:bpfvSingleLine="true" app:bpfvEllipsize="end" style="@*com.whatsapp:style/BusinessProfileFieldView" />
         <com.whatsapp.BusinessProfileFieldView android:id="@*com.whatsapp:id/business_link_2" android:tag="website" android:visibility="gone" app:bpfvImage="@*com.whatsapp:drawable/ic_business_link" app:bpfvSingleLine="true" app:bpfvEllipsize="end" style="@*com.whatsapp:style/BusinessProfileFieldView" />
         <TextView android:gravity="center" android:id="@*com.whatsapp:id/blank_business_details_text" android:paddingLeft="@*com.whatsapp:dimen/business_blank_info_prompt_padding" android:paddingRight="@*com.whatsapp:dimen/business_blank_info_prompt_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@*com.whatsapp:dimen/business_blank_info_screen_prompt_height" android:singleLine="false" style="@*com.whatsapp:style/ListItemTitle" />
-    </LinearLayout>
-    <View android:background="@*com.whatsapp:drawable/list_separator_top" android:layout_width="fill_parent" android:layout_height="@*com.whatsapp:dimen/info_screen_card_spacing" />
+    </com.whatsapp.InfoCard>
     <com.whatsapp.BusinessCatalogMediaCard android:id="@*com.whatsapp:id/business_catalog_media_card" android:layout_width="fill_parent" android:layout_height="wrap_content" />
 </LinearLayout>

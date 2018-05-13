@@ -129,6 +129,7 @@
         <item name="*com.google.android.gms:paddingEnd">@*com.google.android.gms:dimen/common_switch_bar_margin_end</item>
     </style>
     <style name="IdentityWhiteAppTheme" parent="@*com.google.android.gms:style/IdentityWhiteAppThemeBase">
+        <item name="android:windowLightStatusBar">false</item>
         <item name="*com.google.android.gms:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
     </style>
     <style name="IdentityWhiteAppThemeBase" parent="@*com.google.android.gms:style/Theme.AppCompat">
@@ -231,14 +232,22 @@
         <item name="*com.google.android.gms:colorAccent">#ff1976d2</item>
     </style>
 
-    <style name="Theme.Ocr" parent="@*android:style/Theme.Holo.NoActionBar.Fullscreen" />
-    <style name="Theme.Ocr.Popup" parent="@*android:style/Theme.Holo.Dialog">
+    <style name="Theme.Ocr.AppCompat" parent="@*com.google.android.gms:style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="*com.google.android.gms:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.gms:colorAccent">@*com.google.android.gms:color/google_blue600</item>
+    </style>
+    <style name="Theme.Ocr.Popup.AppCompat" parent="@*com.google.android.gms:style/Theme.AppCompat.Light.Dialog">
         <item name="android:windowBackground">@*android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:backgroundDimEnabled">false</item>
         <item name="android:windowMinWidthMajor">90.0%</item>
         <item name="android:windowMinWidthMinor">90.0%</item>
         <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="*com.google.android.gms:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.gms:colorAccent">@*com.google.android.gms:color/google_blue600</item>
     </style>
 
     <style name="Theme.Play" parent="@*com.google.android.gms:style/Base.Theme.Play">
@@ -472,4 +481,37 @@
         <item name="android:buttonBarNegativeButtonStyle">@*com.google.android.gms:style/matchstick.activityBaseDialog.button</item>
     </style>
 
+
+
+    <style name="AsMgAppTheme" parent="@*com.google.android.gms:style/AsMgAppBaseTheme">
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="common.Theme.Base.GoogleSettings" parent="@*com.google.android.gms:style/Theme.AppCompat">
+        <item name="android:listPreferredItemHeight">72.0dip</item>
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:colorEdgeEffect">@*android:color/white</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="*com.google.android.gms:popupTheme">@*com.google.android.gms:style/ThemeOverlay.AppCompat</item>
+        <item name="*com.google.android.gms:actionBarTheme">@*com.google.android.gms:style/common.Theme.Base.ActionBar</item>
+        <item name="*com.google.android.gms:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.gms:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.gms:colorAccent">@*com.google.android.gms:color/material_google_blue_500</item>
+        <item name="*com.google.android.gms:preferenceTheme">@*com.google.android.gms:style/PreferenceTheme</item>
+    </style>
+    <style name="OcrMessageText.Dark" parent="@*com.google.android.gms:style/OcrMessageText">
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="udc.Theme" parent="@*com.google.android.gms:style/udc">
+        <item name="android:colorEdgeEffect">#33ffffff</item>
+    </style>
+    <style name="udc.Theme.Fullscreen.WhiteStatusBar" parent="@*com.google.android.gms:style/udc.Theme.Fullscreen">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="TpActivityTheme" parent="@*com.google.android.gms:style/BaseTpActivityTheme">
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
 </resources>

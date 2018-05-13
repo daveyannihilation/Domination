@@ -27,10 +27,28 @@
     <attr name="chipGroupStyle" format="reference" />
     <attr name="chipStandaloneStyle" format="reference" />
     <attr name="chipStyle" format="reference" />
-    <attr name="colorPalettePrimary" format="reference" />
-    <attr name="colorPaletteSecondary" format="reference" />
+    <attr name="colorPrimary100" format="color" />
+    <attr name="colorPrimary200" format="color" />
+    <attr name="colorPrimary300" format="color" />
+    <attr name="colorPrimary400" format="color" />
+    <attr name="colorPrimary50" format="color" />
+    <attr name="colorPrimary500" format="color" />
+    <attr name="colorPrimary600" format="color" />
+    <attr name="colorPrimary700" format="color" />
+    <attr name="colorPrimary800" format="color" />
+    <attr name="colorPrimary900" format="color" />
     <attr name="colorPrimaryLight" format="color" />
     <attr name="colorSecondary" format="color" />
+    <attr name="colorSecondary100" format="color" />
+    <attr name="colorSecondary200" format="color" />
+    <attr name="colorSecondary300" format="color" />
+    <attr name="colorSecondary400" format="color" />
+    <attr name="colorSecondary50" format="color" />
+    <attr name="colorSecondary500" format="color" />
+    <attr name="colorSecondary600" format="color" />
+    <attr name="colorSecondary700" format="color" />
+    <attr name="colorSecondary800" format="color" />
+    <attr name="colorSecondary900" format="color" />
     <attr name="colorSecondaryDark" format="color" />
     <attr name="colorSecondaryLight" format="color" />
     <attr name="colorWalletActionBarBackground" format="color" />
@@ -45,7 +63,6 @@
     <attr name="colorWalletLineItemProductDescription" format="reference|color" />
     <attr name="colorWalletMaterialAccent" format="reference|color" />
     <attr name="colorWalletMaterialPrimary" format="reference|color" />
-    <attr name="colorWalletMaterialPrimaryText" format="reference|color" />
     <attr name="colorWalletMaterialSecondaryText" format="reference|color" />
     <attr name="colorWalletNormalText" format="reference|color" />
     <attr name="colorWalletSubheaderBackground" format="reference|color" />
@@ -81,6 +98,7 @@
     <attr name="height" format="dimension" />
     <attr name="hideMotionSpec" format="reference" />
     <attr name="internalUicAddressRootLayout" format="reference|integer" />
+    <attr name="internalUicAddressRootWithoutFieldGroupRootLayout" format="reference|integer" />
     <attr name="internalUicAllowFullScreenIme" format="boolean" />
     <attr name="internalUicAndroidPayAcceptanceMarkIconDrawable" format="reference" />
     <attr name="internalUicAndroidPayHeroImageDrawable" format="reference" />
@@ -90,9 +108,13 @@
     <attr name="internalUicButtonPrimaryStyle" format="reference" />
     <attr name="internalUicCardNumberOneCardModeStartMargin" format="dimension" />
     <attr name="internalUicCarrierBillingDrawable" format="reference" />
+    <attr name="internalUicCarrierBillingPhoenixPhoneDrawable" format="reference" />
     <attr name="internalUicChipButtonRemoveDrawable" format="reference" />
     <attr name="internalUicCircleDoneIconBlueDrawable" format="reference" />
     <attr name="internalUicCircularButtonBackgroundDrawable" format="reference" />
+    <attr name="internalUicCollapsedAddressNewLineSeparator" format="string" />
+    <attr name="internalUicCollapsedMinAddressNewLineSeparator" format="string" />
+    <attr name="internalUicColorMaterialPrimaryText" format="reference|color" />
     <attr name="internalUicColorWalletButtonDisabled" format="reference|color" />
     <attr name="internalUicCreditCardAmexLogoDrawable" format="reference" />
     <attr name="internalUicCreditCardCartesBancairesLogoDrawable" format="reference" />
@@ -110,6 +132,7 @@
     <attr name="internalUicDefaultDisplayType" format="reference" />
     <attr name="internalUicDetailDisplayType" format="reference" />
     <attr name="internalUicDetailInfoDisplayType" format="reference" />
+    <attr name="internalUicDisplayCollapsedAddressNameEmphasized" format="boolean" />
     <attr name="internalUicDriveFormIconDrawable" format="reference" />
     <attr name="internalUicEditModeIconDrawable" format="reference" />
     <attr name="internalUicEmailIconDrawable" format="reference" />
@@ -151,6 +174,7 @@
         <enum name="gone" value="8" />
         <enum name="invisible" value="4" />
     </attr>
+    <attr name="internalUicMaterialFieldLayoutEnabled" format="boolean" />
     <attr name="internalUicMaterialFieldLayoutStyle" format="reference" />
     <attr name="internalUicNfcIconDrawable" format="reference" />
     <attr name="internalUicNonFormFieldTextStartMargin" format="dimension" />
@@ -161,12 +185,14 @@
     <attr name="internalUicPendingDisplayType" format="reference" />
     <attr name="internalUicProgressBarLayout" format="reference" />
     <attr name="internalUicPromoIconDrawable" format="reference" />
+    <attr name="internalUicRegionCodeViewLayout" format="reference|integer" />
     <attr name="internalUicSampleAccountNumberUsDrawable" format="reference" />
     <attr name="internalUicSampleRoutingNumberUsDrawable" format="reference" />
     <attr name="internalUicScoreCardDisplayType" format="reference" />
     <attr name="internalUicSectionIconAccountDrawable" format="reference" />
     <attr name="internalUicSectionIconBillingAccountDrawable" format="reference" />
     <attr name="internalUicSectionIconBillingDrawable" format="reference" />
+    <attr name="internalUicSectionIconBusinessInformationDrawable" format="reference" />
     <attr name="internalUicSectionIconContactDetailsDrawable" format="reference" />
     <attr name="internalUicSectionIconCountryDrawable" format="reference" />
     <attr name="internalUicSectionIconDateDrawable" format="reference" />
@@ -182,7 +208,11 @@
     <attr name="internalUicSetupWizardPlayIconDrawable" format="reference" />
     <attr name="internalUicShippingMethodGroundIconDrawable" format="reference" />
     <attr name="internalUicSubHeaderDisplayType" format="reference" />
-    <attr name="internalUicUseWebViewDialog" format="boolean" />
+    <attr name="internalUicUrlLinkDisplayType">
+        <enum name="externalBrowser" value="2" />
+        <enum name="webViewDialog" value="1" />
+        <enum name="webViewFullScreen" value="3" />
+    </attr>
     <attr name="internalUicUserDefaultAvatarDrawable" format="reference" />
     <attr name="internalUicUserIconDrawable" format="reference" />
     <attr name="internalUicUsernamePasswordRootLayout" format="reference|integer" />
@@ -299,11 +329,15 @@
     <attr name="mediaRouteTvIconDrawable" format="reference" />
     <attr name="mtrlColor" format="reference|color" />
     <attr name="mtrlColors" format="reference" />
+    <attr name="navigationViewStyle" format="reference" />
     <attr name="scrimBackground" format="reference|color" />
     <attr name="showMotionSpec" format="reference" />
     <attr name="styleLineItemSubValueText" format="reference" />
     <attr name="styleWidgetWalletFormSpinner" format="reference" />
     <attr name="styleWidgetWalletSpinner" format="reference" />
+    <attr name="suwButtonAllCaps" format="boolean" />
+    <attr name="suwButtonCornerRadius" format="dimension" />
+    <attr name="suwButtonFontFamily" format="reference|string" />
     <attr name="suwCardBackground" format="reference|color" />
     <attr name="suwColorPrimary" format="color" />
     <attr name="suwDividerCondition">
@@ -350,6 +384,7 @@
     <attr name="switchBarMarginStart" format="dimension" />
     <attr name="switchBarStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="switchBarTheme" format="reference" />
+    <attr name="tabStyle" format="reference" />
     <attr name="textAppearanceBody1" format="reference" />
     <attr name="textAppearanceBody2" format="reference" />
     <attr name="textAppearanceButton" format="reference" />
@@ -370,6 +405,7 @@
     <attr name="toolbarTheme" format="reference" />
     <attr name="uicAlwaysInlineExpandLabel" format="boolean" />
     <attr name="uicCameraDrawable" format="reference" />
+    <attr name="uicCameraDropDownDrawable" format="reference" />
     <attr name="uicCardLogoGridToggleButtonStartMargin" format="dimension" />
     <attr name="uicCardLogoGridToggleButtonStyle" format="reference" />
     <attr name="uicCardLogoGridToggleButtonTopMargin" format="dimension" />
@@ -391,8 +427,11 @@
     <attr name="uicFormButtonStyle" format="reference" />
     <attr name="uicFormButtonTextCapitalized" format="boolean" />
     <attr name="uicFormCheckboxTextAppearance" format="reference" />
+    <attr name="uicFormCollapsedAddressTextAppearance" format="reference" />
     <attr name="uicFormErrorColor" format="reference" />
+    <attr name="uicFormInlineTooltipIconEnabled" format="boolean" />
     <attr name="uicFormInputTextAppearance" format="reference" />
+    <attr name="uicFormInputTextAppearanceLarge" format="reference" />
     <attr name="uicFormItemHeight" format="dimension" />
     <attr name="uicFormListDivider" format="reference|color" />
     <attr name="uicFormListIconMargin" format="dimension" />
@@ -505,6 +544,7 @@
         <flag name="exitUntilCollapsed" value="0x00000002" />
         <flag name="scroll" value="0x00000001" />
         <flag name="snap" value="0x00000010" />
+        <flag name="snapMargins" value="0x00000020" />
     </attr>
     <attr name="layout_scrollInterpolator" format="reference" />
     <attr name="srcCompat" format="reference" />
@@ -583,6 +623,7 @@
     <attr name="dialogTheme" format="reference" />
     <attr name="dialogPreferredPadding" format="dimension" />
     <attr name="listDividerAlertDialog" format="reference" />
+    <attr name="dialogCornerRadius" format="dimension" />
     <attr name="actionDropDownStyle" format="reference" />
     <attr name="dropdownListPreferredItemHeight" format="dimension" />
     <attr name="spinnerDropDownItemStyle" format="reference" />
@@ -674,6 +715,7 @@
         <enum name="unlabeled" value="2" />
     </attr>
     <attr name="itemBackground" format="reference" />
+    <attr name="itemIconSize" format="dimension" />
     <attr name="itemIconTint" format="color" />
     <attr name="itemTextAppearanceInactive" format="reference" />
     <attr name="itemTextAppearanceActive" format="reference" />
@@ -1074,6 +1116,8 @@
     </attr>
     <attr name="font" format="reference" />
     <attr name="fontWeight" format="integer" />
+    <attr name="fontVariationSettings" format="string" />
+    <attr name="ttcIndex" format="integer" />
     <attr name="foregroundInsidePadding" format="boolean" />
     <attr name="searchEnabled" format="boolean" />
     <attr name="searchLabel" format="string" />
@@ -1176,7 +1220,6 @@
     <attr name="iconTint" format="color" />
     <attr name="additionalPaddingLeftForIcon" format="dimension" />
     <attr name="additionalPaddingRightForIcon" format="dimension" />
-    <attr name="buttonBackgroundTint" format="color" />
     <attr name="strokeColor" format="color" />
     <attr name="cornerRadius" format="dimension" />
     <attr name="rippleColor" format="color" />
@@ -1223,6 +1266,8 @@
     <attr name="subMenuArrow" format="reference" />
     <attr name="itemTextAppearance" format="reference" />
     <attr name="headerLayout" format="reference" />
+    <attr name="itemHorizontalPadding" format="dimension" />
+    <attr name="itemIconPadding" format="dimension" />
     <attr name="ocrAspectRatio" format="float" />
     <attr name="layout_titleType">
         <enum name="none" value="0" />
@@ -1289,6 +1334,7 @@
     <attr name="allowDividerBelow" format="boolean" />
     <attr name="singleLineTitle" format="boolean" />
     <attr name="iconSpaceReserved" format="boolean" />
+    <attr name="isPreferenceVisible" format="boolean" />
     <attr name="allowDividerAfterLastItem" format="boolean" />
     <attr name="orderingFromXml" format="boolean" />
     <attr name="initialExpandedChildrenCount" format="integer" />
@@ -1316,6 +1362,18 @@
     <attr name="switchPreferenceStyle" format="reference" />
     <attr name="switchPreferenceCompatStyle" format="reference" />
     <attr name="seekBarPreferenceStyle" format="reference" />
+    <attr name="productNameTextColor" format="color" />
+    <attr name="logoColor">
+        <enum name="dark" value="1" />
+        <enum name="light" value="2" />
+        <enum name="grey" value="3" />
+        <enum name="standard" value="0" />
+    </attr>
+    <attr name="lockupSizingMode">
+        <enum name="normal" value="1" />
+        <enum name="auto" value="0" />
+        <enum name="small" value="2" />
+    </attr>
     <attr name="color_sequence" format="reference|color" />
     <attr name="ratio" format="string" />
     <attr name="paddingBottomNoButtons" format="dimension" />
@@ -1372,8 +1430,8 @@
     <attr name="showSeekBarValue" format="boolean" />
     <attr name="aspectRatio" format="float" />
     <attr name="buttonSize" format="reference">
-        <enum name="icon_only" value="2" />
         <enum name="standard" value="0" />
+        <enum name="icon_only" value="2" />
         <enum name="wide" value="1" />
     </attr>
     <attr name="colorScheme" format="reference">
@@ -1403,6 +1461,7 @@
     </attr>
     <attr name="windowXOffset" format="integer|dimension" />
     <attr name="windowYOffset" format="integer|dimension" />
+    <attr name="snackbarButtonStyle" format="reference" />
     <attr name="maxActionInlineWidth" format="dimension" />
     <attr name="weights" format="reference" />
     <attr name="columnSizes" format="reference" />
@@ -1468,6 +1527,7 @@
         <enum name="center" value="1" />
         <enum name="stretch" value="3" />
     </attr>
+    <attr name="tabIndicatorAnimationDuration" format="integer" />
     <attr name="tabIndicatorFullWidth" format="boolean" />
     <attr name="tabMode">
         <enum name="fixed" value="1" />
@@ -1656,9 +1716,13 @@
     </attr>
     <attr name="internalUicCardFragmentRootLayout" format="reference|integer" />
     <attr name="internalUicCardFragmentCollapsibleStateEnabled" format="boolean" />
-    <attr name="internalUicCardFragmentInlineCardImagesEnabled" format="boolean" />
-    <attr name="internalUicCardFragmentLeftSideCardImageEnabled" format="boolean" />
-    <attr name="internalUicCardFragmentMaterialFieldLayoutEnabled" format="boolean" />
+    <attr name="internalUicCardFragmentCardImagesPosition">
+        <enum name="left" value="1" />
+        <enum name="above" value="0" />
+        <enum name="inline_left" value="2" />
+        <enum name="inline_right" value="3" />
+    </attr>
+    <attr name="internalUicCardFragmentCardNumberLayout" format="reference|integer" />
     <attr name="internalUicCardImagesWidth" format="dimension" />
     <attr name="internalUicCardImagesHeight" format="dimension" />
     <attr name="internalUicSpacingBetweenCardImages" format="dimension" />
@@ -1711,7 +1775,6 @@
     <attr name="internalUicFieldErrorTextAppearance" format="reference" />
     <attr name="internalUicFieldDescriptionTextAppearance" format="reference" />
     <attr name="internalUicOtpFieldRootLayout" format="reference" />
-    <attr name="internalUicOtpFieldMaterialFieldLayoutEnabled" format="boolean" />
     <attr name="internalUicIconOffsetWhenCollapsed" format="dimension" />
     <attr name="internalUicIconOffsetWhenExpanded" format="dimension" />
     <attr name="internalUicIconOffsetWhenExpandedAndReadOnlyAlignedField" format="dimension" />
@@ -1776,8 +1839,8 @@
     <attr name="client_application_id" format="integer" />
     <attr name="mtrlSize">
         <enum name="large" value="3" />
-        <enum name="medium" value="2" />
         <enum name="small" value="1" />
+        <enum name="medium" value="2" />
     </attr>
     <attr name="mtrlIndeterminateProgressStyle">
         <enum name="circular" value="0" />
