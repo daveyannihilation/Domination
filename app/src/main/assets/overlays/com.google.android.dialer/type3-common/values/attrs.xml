@@ -117,6 +117,7 @@
         <flag name="exitUntilCollapsed" value="0x00000002" />
         <flag name="scroll" value="0x00000001" />
         <flag name="snap" value="0x00000010" />
+        <flag name="snapMargins" value="0x00000020" />
     </attr>
     <attr name="layout_scrollInterpolator" format="reference" />
     <attr name="srcCompat" format="reference" />
@@ -195,6 +196,7 @@
     <attr name="dialogTheme" format="reference" />
     <attr name="dialogPreferredPadding" format="dimension" />
     <attr name="listDividerAlertDialog" format="reference" />
+    <attr name="dialogCornerRadius" format="dimension" />
     <attr name="actionDropDownStyle" format="reference" />
     <attr name="dropdownListPreferredItemHeight" format="dimension" />
     <attr name="spinnerDropDownItemStyle" format="reference" />
@@ -547,11 +549,6 @@
     <attr name="layout_flexGrow" format="float" />
     <attr name="layout_flexShrink" format="float" />
     <attr name="layout_flexBasisPercent" format="fraction" />
-    <attr name="layout_minWidth" format="dimension" />
-    <attr name="layout_minHeight" format="dimension" />
-    <attr name="layout_maxWidth" format="dimension" />
-    <attr name="layout_maxHeight" format="dimension" />
-    <attr name="layout_wrapBefore" format="boolean" />
     <attr name="layout_alignSelf">
         <enum name="auto" value="-1" />
         <enum name="center" value="2" />
@@ -560,6 +557,11 @@
         <enum name="baseline" value="3" />
         <enum name="stretch" value="4" />
     </attr>
+    <attr name="layout_minWidth" format="dimension" />
+    <attr name="layout_minHeight" format="dimension" />
+    <attr name="layout_maxWidth" format="dimension" />
+    <attr name="layout_maxHeight" format="dimension" />
+    <attr name="layout_wrapBefore" format="boolean" />
     <attr name="fabSize">
         <enum name="normal" value="0" />
         <enum name="auto" value="-1" />
@@ -589,6 +591,8 @@
     </attr>
     <attr name="font" format="reference" />
     <attr name="fontWeight" format="integer" />
+    <attr name="fontVariationSettings" format="string" />
+    <attr name="ttcIndex" format="integer" />
     <attr name="foregroundInsidePadding" format="boolean" />
     <attr name="measureWithLargestChild" format="boolean" />
     <attr name="showDividers">
@@ -725,6 +729,7 @@
         <enum name="light" value="1" />
     </attr>
     <attr name="scopeUris" format="reference|string" />
+    <attr name="snackbarButtonStyle" format="reference" />
     <attr name="maxActionInlineWidth" format="dimension" />
     <attr name="thumbTint" format="color" />
     <attr name="thumbTintMode">
@@ -751,6 +756,7 @@
     <attr name="switchPadding" format="dimension" />
     <attr name="splitTrack" format="boolean" />
     <attr name="showText" format="boolean" />
+    <attr name="urlToOpen" format="string" />
     <attr name="tabIndicatorColor" format="color" />
     <attr name="tabIndicatorHeight" format="dimension" />
     <attr name="tabContentStart" format="dimension" />
@@ -762,6 +768,7 @@
         <enum name="top" value="2" />
         <enum name="stretch" value="3" />
     </attr>
+    <attr name="tabIndicatorAnimationDuration" format="integer" />
     <attr name="tabIndicatorFullWidth" format="boolean" />
     <attr name="tabMode">
         <enum name="fixed" value="1" />
