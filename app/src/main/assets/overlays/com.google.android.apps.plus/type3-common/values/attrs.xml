@@ -8,28 +8,8 @@
     <attr name="chipGroupStyle" format="reference" />
     <attr name="chipStandaloneStyle" format="reference" />
     <attr name="chipStyle" format="reference" />
-    <attr name="colorPrimary100" format="color" />
-    <attr name="colorPrimary200" format="color" />
-    <attr name="colorPrimary300" format="color" />
-    <attr name="colorPrimary400" format="color" />
-    <attr name="colorPrimary50" format="color" />
-    <attr name="colorPrimary500" format="color" />
-    <attr name="colorPrimary600" format="color" />
-    <attr name="colorPrimary700" format="color" />
-    <attr name="colorPrimary800" format="color" />
-    <attr name="colorPrimary900" format="color" />
     <attr name="colorPrimaryLight" format="color" />
     <attr name="colorSecondary" format="color" />
-    <attr name="colorSecondary100" format="color" />
-    <attr name="colorSecondary200" format="color" />
-    <attr name="colorSecondary300" format="color" />
-    <attr name="colorSecondary400" format="color" />
-    <attr name="colorSecondary50" format="color" />
-    <attr name="colorSecondary500" format="color" />
-    <attr name="colorSecondary600" format="color" />
-    <attr name="colorSecondary700" format="color" />
-    <attr name="colorSecondary800" format="color" />
-    <attr name="colorSecondary900" format="color" />
     <attr name="colorSecondaryDark" format="color" />
     <attr name="colorSecondaryLight" format="color" />
     <attr name="constraintSet" format="reference" />
@@ -129,7 +109,6 @@
     </attr>
     <attr name="materialButtonStyle" format="reference" />
     <attr name="materialCardViewStyle" format="reference" />
-    <attr name="materialSwitchStyle" format="reference" />
     <attr name="mediaRouteAudioTrackDrawable" format="reference" />
     <attr name="mediaRouteButtonStyle" format="reference" />
     <attr name="mediaRouteCloseDrawable" format="reference" />
@@ -397,7 +376,7 @@
         <enum name="end" value="1" />
     </attr>
     <attr name="fabAttached" format="boolean" />
-    <attr name="fabCradleDiameter" format="dimension" />
+    <attr name="fabCradleMargin" format="dimension" />
     <attr name="fabCradleRoundedCornerRadius" format="dimension" />
     <attr name="fabCradleVerticalOffset" format="dimension" />
     <attr name="hideOnScroll" format="boolean" />
@@ -410,7 +389,7 @@
     <attr name="itemIconSize" format="dimension" />
     <attr name="itemTextAppearanceInactive" format="reference" />
     <attr name="itemTextAppearanceActive" format="reference" />
-    <attr name="itemHorizontalTranslation" format="boolean" />
+    <attr name="itemHorizontalTranslationEnabled" format="boolean" />
     <attr name="behavior_peekHeight" format="dimension">
         <enum name="auto" value="-1" />
     </attr>
@@ -429,6 +408,9 @@
     <attr name="contentPaddingRight" format="dimension" />
     <attr name="contentPaddingTop" format="dimension" />
     <attr name="contentPaddingBottom" format="dimension" />
+    <attr name="summaryOn" format="string" />
+    <attr name="summaryOff" format="string" />
+    <attr name="disableDependentsState" format="boolean" />
     <attr name="chipBackgroundColor" format="color" />
     <attr name="chipMinHeight" format="dimension" />
     <attr name="chipCornerRadius" format="dimension" />
@@ -563,6 +545,12 @@
     </attr>
     <attr name="expandingScrollViewMinExposure" format="dimension" />
     <attr name="expandingScrollViewMaxExposure" format="dimension" />
+    <attr name="dialogTitle" format="string" />
+    <attr name="dialogMessage" format="string" />
+    <attr name="dialogIcon" format="reference" />
+    <attr name="positiveButtonText" format="string" />
+    <attr name="negativeButtonText" format="string" />
+    <attr name="dialogLayout" format="reference" />
     <attr name="color" format="color" />
     <attr name="spinBars" format="boolean" />
     <attr name="drawableSize" format="dimension" />
@@ -571,6 +559,7 @@
     <attr name="arrowShaftLength" format="dimension" />
     <attr name="barLength" format="dimension" />
     <attr name="thickness" format="dimension" />
+    <attr name="leafDescendantWidth" format="dimension" />
     <attr name="entrySummaries" format="reference" />
     <attr name="layout_x" format="integer" />
     <attr name="layout_y" format="integer" />
@@ -634,11 +623,6 @@
     <attr name="layout_flexGrow" format="float" />
     <attr name="layout_flexShrink" format="float" />
     <attr name="layout_flexBasisPercent" format="fraction" />
-    <attr name="layout_minWidth" format="dimension" />
-    <attr name="layout_minHeight" format="dimension" />
-    <attr name="layout_maxWidth" format="dimension" />
-    <attr name="layout_maxHeight" format="dimension" />
-    <attr name="layout_wrapBefore" format="boolean" />
     <attr name="layout_alignSelf">
         <enum name="center" value="2" />
         <enum name="auto" value="-1" />
@@ -647,6 +631,11 @@
         <enum name="baseline" value="3" />
         <enum name="stretch" value="4" />
     </attr>
+    <attr name="layout_minWidth" format="dimension" />
+    <attr name="layout_minHeight" format="dimension" />
+    <attr name="layout_maxWidth" format="dimension" />
+    <attr name="layout_maxHeight" format="dimension" />
+    <attr name="layout_wrapBefore" format="boolean" />
     <attr name="fabSize">
         <enum name="normal" value="0" />
         <enum name="auto" value="-1" />
@@ -726,6 +715,8 @@
         <flag name="middle" value="0x00000002" />
     </attr>
     <attr name="dividerPadding" format="dimension" />
+    <attr name="entries" format="reference" />
+    <attr name="entryValues" format="reference" />
     <attr name="imageAspectRatioAdjust">
         <enum name="none" value="0" />
         <enum name="adjust_height" value="2" />
@@ -758,8 +749,8 @@
     <attr name="ambientEnabled" format="boolean" />
     <attr name="iconPadding" format="dimension" />
     <attr name="iconTint" format="color" />
-    <attr name="additionalPaddingLeftForIcon" format="dimension" />
-    <attr name="additionalPaddingRightForIcon" format="dimension" />
+    <attr name="additionalPaddingStartForIcon" format="dimension" />
+    <attr name="additionalPaddingEndForIcon" format="dimension" />
     <attr name="cornerRadius" format="dimension" />
     <attr name="externalRouteEnabledDrawable" format="reference" />
     <attr name="mediaRouteButtonTint" format="color" />
@@ -825,6 +816,50 @@
     <attr name="compact" format="boolean" />
     <attr name="overlapAnchor" format="boolean" />
     <attr name="state_above_anchor" format="boolean" />
+    <attr name="key" format="string" />
+    <attr name="summary" format="string" />
+    <attr name="order" format="integer" />
+    <attr name="fragment" format="string" />
+    <attr name="widgetLayout" format="reference" />
+    <attr name="enabled" format="boolean" />
+    <attr name="selectable" format="boolean" />
+    <attr name="dependency" format="string" />
+    <attr name="persistent" format="boolean" />
+    <attr name="defaultValue" format="reference|string|integer|boolean|float" />
+    <attr name="shouldDisableView" format="boolean" />
+    <attr name="allowDividerAbove" format="boolean" />
+    <attr name="allowDividerBelow" format="boolean" />
+    <attr name="singleLineTitle" format="boolean" />
+    <attr name="iconSpaceReserved" format="boolean" />
+    <attr name="isPreferenceVisible" format="boolean" />
+    <attr name="allowDividerAfterLastItem" format="boolean" />
+    <attr name="orderingFromXml" format="boolean" />
+    <attr name="initialExpandedChildrenCount" format="integer" />
+    <attr name="maxWidth" format="dimension" />
+    <attr name="maxHeight" format="dimension" />
+    <attr name="preferenceTheme" format="reference" />
+    <attr name="preferenceScreenStyle" format="reference" />
+    <attr name="preferenceActivityStyle" format="reference" />
+    <attr name="preferenceFragmentStyle" format="reference" />
+    <attr name="preferenceFragmentCompatStyle" format="reference" />
+    <attr name="preferenceCategoryStyle" format="reference" />
+    <attr name="preferenceStyle" format="reference" />
+    <attr name="preferenceInformationStyle" format="reference" />
+    <attr name="checkBoxPreferenceStyle" format="reference" />
+    <attr name="yesNoPreferenceStyle" format="reference" />
+    <attr name="dialogPreferenceStyle" format="reference" />
+    <attr name="editTextPreferenceStyle" format="reference" />
+    <attr name="ringtonePreferenceStyle" format="reference" />
+    <attr name="dropdownPreferenceStyle" format="reference" />
+    <attr name="preferenceLayoutChild" format="reference" />
+    <attr name="preferencePanelStyle" format="reference" />
+    <attr name="preferenceHeaderPanelStyle" format="reference" />
+    <attr name="preferenceListStyle" format="reference" />
+    <attr name="preferenceFragmentListStyle" format="reference" />
+    <attr name="preferenceFragmentPaddingSide" format="dimension" />
+    <attr name="switchPreferenceStyle" format="reference" />
+    <attr name="switchPreferenceCompatStyle" format="reference" />
+    <attr name="seekBarPreferenceStyle" format="reference" />
     <attr name="paddingBottomNoButtons" format="dimension" />
     <attr name="paddingTopNoTitle" format="dimension" />
     <attr name="layoutManager" format="string" />
@@ -837,6 +872,28 @@
     <attr name="fastScrollHorizontalThumbDrawable" format="reference" />
     <attr name="fastScrollHorizontalTrackDrawable" format="reference" />
     <attr name="enableScrollBars" format="boolean" />
+    <attr name="useDarkActionMenuButton" format="boolean" />
+    <attr name="features" format="integer">
+        <flag name="italic" value="0x00000002" />
+        <flag name="all_character_level_features" value="0x000003ff" />
+        <flag name="all_features" value="0x0000ffff" />
+        <flag name="all_paragraph_level_features" value="0x0000fc00" />
+        <flag name="bold" value="0x00000001" />
+        <flag name="bulleted_list" value="0x00002000" />
+        <flag name="center_align" value="0x00000800" />
+        <flag name="fill_color" value="0x00000020" />
+        <flag name="left_align" value="0x00000400" />
+        <flag name="nested_list" value="0x00008000" />
+        <flag name="numbered_list" value="0x00004000" />
+        <flag name="right_align" value="0x00001000" />
+        <flag name="strikethrough" value="0x00000008" />
+        <flag name="subscript" value="0x00000200" />
+        <flag name="superscript" value="0x00000100" />
+        <flag name="text_color" value="0x00000010" />
+        <flag name="text_size" value="0x00000080" />
+        <flag name="typeface" value="0x00000040" />
+        <flag name="underline" value="0x00000004" />
+    </attr>
     <attr name="insetForeground" format="reference|color" />
     <attr name="behavior_overlapTop" format="dimension" />
     <attr name="layout" format="reference" />
@@ -851,6 +908,10 @@
     <attr name="suggestionRowLayout" format="reference" />
     <attr name="queryBackground" format="reference" />
     <attr name="submitBackground" format="reference" />
+    <attr name="min" format="integer" />
+    <attr name="seekBarIncrement" format="integer" />
+    <attr name="adjustable" format="boolean" />
+    <attr name="showSeekBarValue" format="boolean" />
     <attr name="buttonSize" format="reference">
         <enum name="icon_only" value="2" />
         <enum name="standard" value="0" />
@@ -935,6 +996,8 @@
     <attr name="switchPadding" format="dimension" />
     <attr name="splitTrack" format="boolean" />
     <attr name="showText" format="boolean" />
+    <attr name="switchTextOn" format="string" />
+    <attr name="switchTextOff" format="string" />
     <attr name="tabIndicatorColor" format="color" />
     <attr name="tabIndicatorHeight" format="dimension" />
     <attr name="tabContentStart" format="dimension" />
