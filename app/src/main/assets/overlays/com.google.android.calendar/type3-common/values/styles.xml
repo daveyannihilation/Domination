@@ -11,6 +11,9 @@
     <style name="CalendarTheme.CreateGrooveActivity" parent="@*com.google.android.calendar:style/CalendarTheme.NoActionBar">
         <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="android:windowNoTitle">true</item>
+        <item name="android:colorPrimary">@*com.google.android.calendar:color/calendar_primary</item>
+        <item name="android:colorAccent">@*com.google.android.calendar:color/accent_blue</item>
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
         <item name="*com.google.android.calendar:windowNoTitle">true</item>
         <item name="*com.google.android.calendar:colorPrimary">@*com.google.android.calendar:color/calendar_primary</item>
         <item name="*com.google.android.calendar:colorAccent">@*com.google.android.calendar:color/accent_blue</item>
@@ -114,6 +117,7 @@
         <item name="android:background">@*android:color/primary_material_dark</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:elevation">4.0dip</item>
         <item name="*com.google.android.calendar:actionBarSize">@*com.google.android.calendar:dimen/action_bar_height</item>
         <item name="*com.google.android.calendar:titleTextAppearance">@*com.google.android.calendar:style/TextAppearance.Toolbar.White</item>
         <item name="*com.google.android.calendar:navigationIcon">@*com.google.android.calendar:drawable/quantum_ic_arrow_back_grey600_24</item>
@@ -190,6 +194,7 @@
 
     <style name="Widget.Design.BottomSheet.Modal" parent="@*android:style/Widget">
         <item name="android:background">@*android:color/background_floating_material_dark</item>
+        <item name="android:elevation">@*com.google.android.calendar:dimen/design_bottom_sheet_modal_elevation</item>
         <item name="*com.google.android.calendar:behavior_peekHeight">auto</item>
         <item name="*com.google.android.calendar:behavior_hideable">true</item>
         <item name="*com.google.android.calendar:behavior_skipCollapsed">false</item>
@@ -233,5 +238,18 @@
         <item name="android:windowShowWallpaper">false</item>
         <item name="android:windowIsTranslucent">false</item>
         <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+    </style>
+
+
+    <style name="FollowUpActionButton" parent="@*com.google.android.calendar:style/Widget.GoogleMaterial.Chip.Assistive">
+        <item name="android:theme">@*com.google.android.calendar:style/Theme.MaterialComponents</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">8.0dip</item>
+        <item name="android:layout_marginEnd">8.0dip</item>
+        <item name="*com.google.android.calendar:chipBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.calendar:chipStrokeColor">@*android:color/white</item>
+        <item name="*com.google.android.calendar:chipStrokeWidth">1.0dip</item>
     </style>
 </resources>
