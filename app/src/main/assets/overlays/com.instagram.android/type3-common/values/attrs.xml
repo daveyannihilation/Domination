@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <attr name="ButtonStyle" format="reference" />
     <attr name="SeletedPicturePaddingRight" format="dimension" />
     <attr name="TokenTextViewStyle" format="reference" />
     <attr name="actionBarGlyphColor" format="color" />
@@ -83,7 +84,7 @@
     <attr name="bottomMedium" format="reference|color" />
     <attr name="bottom_spacing" format="dimension" />
     <attr name="browserActionBarForegroundPressedColor" format="color" />
-    <attr name="bubble_radius" format="integer" />
+    <attr name="bubble_radius" format="float" />
     <attr name="buttonColor" format="reference" />
     <attr name="buttonImage" format="reference" />
     <attr name="buttonPrimary" format="reference" />
@@ -125,6 +126,7 @@
     <attr name="centerColor" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="centerDark" format="reference|color" />
     <attr name="centerMedium" format="reference|color" />
+    <attr name="center_bubble_vertically" format="boolean" />
     <attr name="checkedDrawable" format="reference" />
     <attr name="circleCrop" format="boolean" />
     <attr name="circleRadius" format="dimension" />
@@ -197,6 +199,7 @@
     <attr name="creationVignetteDrawable" format="reference" />
     <attr name="creationWarmthDrawable" format="reference" />
     <attr name="cropHighlightBackground" format="color" />
+    <attr name="customGlyphColour" format="reference" />
     <attr name="customToastViewStyle" format="reference" />
     <attr name="dark" format="boolean" />
     <attr name="defaultActionBarBackIcon" format="reference" />
@@ -222,6 +225,7 @@
         <enum name="none" value="2" />
     </attr>
     <attr name="directInboxInlineCameraTintColor" format="reference" />
+    <attr name="directInboxQuickRepliesEnabled" format="boolean" />
     <attr name="directInboxSelfUpdateMegaphoneEligible" format="boolean" />
     <attr name="directInboxUnseenDotEnabled" format="boolean" />
     <attr name="directInboxUnseenEphemeralMessageIndicator" format="reference" />
@@ -265,6 +269,7 @@
     <attr name="directViewModesNuxAllowed" format="boolean" />
     <attr name="directVisualMessageShareSheetCheckBoxGradientEnabled" format="boolean" />
     <attr name="directVisualMessageThumbnailMask" format="reference" />
+    <attr name="directVisualMessageThumbnailUnseenOverlay" format="reference" />
     <attr name="direction">
         <enum name="north" value="0" />
         <enum name="south" value="1" />
@@ -288,7 +293,6 @@
     <attr name="enableBorder" format="boolean" />
     <attr name="enableClearButton" format="boolean" />
     <attr name="enablePinchZoom" format="boolean" />
-    <attr name="enablePinchZoomDeprecated" format="boolean" />
     <attr name="enablePinchZoomDeprecatedIG" format="boolean" />
     <attr name="enableQuickBackWhenEmpty" format="boolean" />
     <attr name="enabledIconColor" format="color" />
@@ -305,6 +309,11 @@
     <attr name="expanded_icon" format="reference" />
     <attr name="eyedropper_icon" format="reference" />
     <attr name="fakeBold" format="boolean" />
+    <attr name="fastScrollEnabled" format="boolean" />
+    <attr name="fastScrollHorizontalThumbDrawable" format="reference" />
+    <attr name="fastScrollHorizontalTrackDrawable" format="reference" />
+    <attr name="fastScrollVerticalThumbDrawable" format="reference" />
+    <attr name="fastScrollVerticalTrackDrawable" format="reference" />
     <attr name="feedLikeActiveColor" format="color" />
     <attr name="feedSaveActiveColor" format="color" />
     <attr name="fillColor" format="color" />
@@ -327,6 +336,12 @@
     <attr name="fixed_height" format="dimension" />
     <attr name="fixed_width" format="dimension" />
     <attr name="followButtonStyle" format="string" />
+    <attr name="font" format="reference" />
+    <attr name="fontStyle">
+        <enum name="italic" value="1" />
+        <enum name="normal" value="0" />
+    </attr>
+    <attr name="fontWeight" format="integer" />
     <attr name="footnote" format="reference" />
     <attr name="footnoteDetail" format="reference" />
     <attr name="footnoteEmphasized" format="reference" />
@@ -388,10 +403,6 @@
     <attr name="indicatorMaxWidth" format="dimension" />
     <attr name="indicatorShadowRadius" format="dimension" />
     <attr name="initialCameraFacing">
-        <enum name="back" value="0" />
-        <enum name="front" value="1" />
-    </attr>
-    <attr name="initialCameraFacingDeprecated">
         <enum name="back" value="0" />
         <enum name="front" value="1" />
     </attr>
@@ -526,7 +537,6 @@
     <attr name="loadingSubtitle" format="reference|string" />
     <attr name="loadingTitle" format="reference|string" />
     <attr name="lockMediaOrientation" format="boolean" />
-    <attr name="lockMediaOrientationDeprecated" format="boolean" />
     <attr name="lockMediaOrientationDeprecatedIG" format="boolean" />
     <attr name="maxDurationMS" format="integer" />
     <attr name="maxHeight" format="dimension" />
@@ -579,12 +589,6 @@
     <attr name="peopleTagSearchTheme" format="reference" />
     <attr name="perfTrackingCategory" format="string" />
     <attr name="photoCaptureQuality">
-        <enum name="deactivated" value="3" />
-        <enum name="high" value="0" />
-        <enum name="low" value="2" />
-        <enum name="medium" value="1" />
-    </attr>
-    <attr name="photoCaptureQualityDeprecated">
         <enum name="deactivated" value="3" />
         <enum name="high" value="0" />
         <enum name="low" value="2" />
@@ -761,11 +765,6 @@
         <flag name="focus" value="0x00000001" />
         <flag name="metering" value="0x00000002" />
     </attr>
-    <attr name="singleTapGestureDeprecated">
-        <flag name="disabled" value="0x00000000" />
-        <flag name="focus" value="0x00000001" />
-        <flag name="metering" value="0x00000002" />
-    </attr>
     <attr name="slideOutIcon" format="reference" />
     <attr name="spacing" format="dimension" />
     <attr name="spanCount" format="integer" />
@@ -834,6 +833,8 @@
     <attr name="track_button_spacing" format="dimension" />
     <attr name="track_colour" format="color" />
     <attr name="track_width" format="dimension" />
+    <attr name="transparentUpdatableButtonStyle" format="reference" />
+    <attr name="transparentWhiteUpdatableButtonStyle" format="reference" />
     <attr name="triangleColor" format="color" />
     <attr name="trianglePadding" format="dimension" />
     <attr name="triangleSize" format="dimension" />
@@ -847,12 +848,6 @@
     <attr name="updatableButtonGlyphStyle" format="reference" />
     <attr name="updatableButtonStyle" format="reference" />
     <attr name="videoCaptureQuality">
-        <enum name="deactivated" value="3" />
-        <enum name="high" value="0" />
-        <enum name="low" value="2" />
-        <enum name="medium" value="1" />
-    </attr>
-    <attr name="videoCaptureQualityDeprecated">
         <enum name="deactivated" value="3" />
         <enum name="high" value="0" />
         <enum name="low" value="2" />
@@ -878,12 +873,18 @@
     <attr name="wrappedInversePrimaryButtonStyle" format="reference" />
     <attr name="wrappedPrimaryButtonStyle" format="reference" />
     <attr name="wrappedSecondaryButtonStyle" format="reference" />
-    <item type="attr" name="APKTOOL_DUMMY_10">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_20">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_11">false</item>
     <item type="attr" name="APKTOOL_DUMMY_21">false</item>
     <item type="attr" name="APKTOOL_DUMMY_22">false</item>
     <item type="attr" name="APKTOOL_DUMMY_23">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_ce">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_d2">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_d3">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_24">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_d1">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_d6">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_d7">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_143">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_144">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_145">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_146">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_147">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_148">false</item>
 </resources>

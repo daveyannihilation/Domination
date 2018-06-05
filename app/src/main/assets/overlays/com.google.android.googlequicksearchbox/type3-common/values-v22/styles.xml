@@ -7,6 +7,8 @@
         <item name="android:statusBarColor">@*com.google.android.googlequicksearchbox:color/status_bar_color</item>
         <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
         <item name="android:windowLightStatusBar">false</item>
+        <item name="*com.google.android.googlequicksearchbox:windowActionBar">false</item>
+        <item name="*com.google.android.googlequicksearchbox:windowNoTitle">true</item>
     </style>
     <style name="SuwAlertDialogTheme.Light" parent="@*android:style/Theme.Material.Dialog.Alert" />
     <style name="SuwThemeGlifV2" parent="@*com.google.android.googlequicksearchbox:style/SuwThemeGlif">
@@ -37,5 +39,18 @@
         <item name="*com.google.android.googlequicksearchbox:suwBackgroundPatterned">false</item>
         <item name="*com.google.android.googlequicksearchbox:suwBackgroundBaseColor">@*android:color/background_floating_material_dark</item>
     </style>
-
+    <style name="StandaloneZeroState.Theme.Base" parent="@*com.google.android.googlequicksearchbox:style/Theme.Velvet">
+        <item name="android:backgroundDimAmount">0.58</item>
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:popupMenuStyle">@*com.google.android.googlequicksearchbox:style/Opa.PopupMenu</item>
+        <item name="android:textAppearanceLargePopupMenu">@*com.google.android.googlequicksearchbox:style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large</item>
+        <item name="android:textAppearanceSmallPopupMenu">@*com.google.android.googlequicksearchbox:style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small</item>
+        <item name="android:statusBarColor">@*com.google.android.googlequicksearchbox:color/standalone_zs_status_bar</item>
+        <item name="android:navigationBarColor">@*com.google.android.googlequicksearchbox:color/standalone_zs_navigation_bar</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
 </resources>

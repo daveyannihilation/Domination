@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@*com.google.android.music:id/mr_expandable_area" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@*com.google.android.music:id/mr_dialog_area" android:background="@*android:color/secondary_text_leanback_light" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@*com.google.android.music:id/mr_title_bar" android:paddingLeft="24.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@*com.google.android.music:style/TextAppearance.MediaRouter.Title" android:ellipsize="end" android:gravity="center_vertical" android:id="@*com.google.android.music:id/mr_name" android:layout_width="0.0dip" android:layout_height="72.0dip" android:singleLine="true" android:layout_weight="1.0" />
+            <ImageButton android:layout_gravity="center_vertical" android:id="@*com.google.android.music:id/mr_close" android:background="@*com.google.android.music:drawable/abc_item_background_holo_dark" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@*com.google.android.music:drawable/mr_dialog_close_dark" android:contentDescription="@*com.google.android.music:string/mr_controller_close_description" />
+        </LinearLayout>
+        <FrameLayout android:id="@*com.google.android.music:id/mr_custom_control" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@*com.google.android.music:id/mr_default_control" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="top" android:id="@*com.google.android.music:id/mr_art" android:background="@*com.google.android.music:color/app_color_primary" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" android:contentDescription="@*com.google.android.music:string/mr_controller_album_art" />
+            <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:splitMotionEvents="false">
+                <LinearLayout android:theme="@*com.google.android.music:style/ThemeOverlay.MediaRouter.Dark" android:layout_gravity="bottom" android:orientation="vertical" android:id="@*com.google.android.music:id/mr_media_main_control" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include android:id="@*com.google.android.music:id/mr_playback_control" layout="@*com.google.android.music:layout/mr_playback_control" />
+                    <View android:id="@*com.google.android.music:id/mr_control_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+                    <include android:id="@*com.google.android.music:id/mr_volume_control" layout="@*com.google.android.music:layout/mr_volume_control" />
+                </LinearLayout>
+                <android.support.v7.app.OverlayListView android:theme="@*com.google.android.music:style/ThemeOverlay.MediaRouter.Dark" android:scrollbarStyle="outsideOverlay" android:id="@*com.google.android.music:id/mr_volume_group_list" android:paddingTop="@*com.google.android.music:dimen/mr_controller_volume_group_list_padding_top" android:visibility="gone" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:splitMotionEvents="false" />
+            </LinearLayout>
+        </FrameLayout>
+        <include layout="@*com.google.android.music:layout/abc_alert_dialog_button_bar_material" />
+    </LinearLayout>
+</FrameLayout>
