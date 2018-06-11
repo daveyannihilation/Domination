@@ -8,10 +8,7 @@
     <attr name="chipGroupStyle" format="reference" />
     <attr name="chipStandaloneStyle" format="reference" />
     <attr name="chipStyle" format="reference" />
-    <attr name="colorPrimaryLight" format="color" />
     <attr name="colorSecondary" format="color" />
-    <attr name="colorSecondaryDark" format="color" />
-    <attr name="colorSecondaryLight" format="color" />
     <attr name="constraintSet" format="reference" />
     <attr name="coordinatorLayoutStyle" format="reference" />
     <attr name="drawerArrowStyle" format="reference" />
@@ -194,8 +191,11 @@
     <attr name="showTitle" format="boolean" />
     <attr name="buttonIconDimen" format="dimension" />
     <attr name="expanded" format="boolean" />
+    <attr name="liftOnScroll" format="boolean" />
     <attr name="state_collapsed" format="boolean" />
     <attr name="state_collapsible" format="boolean" />
+    <attr name="state_lifted" format="boolean" />
+    <attr name="state_liftable" format="boolean" />
     <attr name="layout_scrollFlags">
         <flag name="enterAlways" value="0x00000004" />
         <flag name="enterAlwaysCollapsed" value="0x00000008" />
@@ -235,6 +235,9 @@
     <attr name="autoSizeMinTextSize" format="dimension" />
     <attr name="autoSizeMaxTextSize" format="dimension" />
     <attr name="fontFamily" format="string" />
+    <attr name="lineHeight" format="dimension" />
+    <attr name="firstBaselineToTopHeight" format="dimension" />
+    <attr name="lastBaselineToBottomHeight" format="dimension" />
     <attr name="windowActionBar" format="boolean" />
     <attr name="windowNoTitle" format="boolean" />
     <attr name="windowActionBarOverlay" format="boolean" />
@@ -416,7 +419,6 @@
     <attr name="chipCornerRadius" format="dimension" />
     <attr name="chipStrokeColor" format="color" />
     <attr name="chipStrokeWidth" format="dimension" />
-    <attr name="chipText" format="string" />
     <attr name="chipIconEnabled" format="boolean" />
     <attr name="chipIcon" format="reference" />
     <attr name="chipIconSize" format="dimension" />
@@ -582,6 +584,7 @@
         <enum name="flex_start" value="0" />
         <enum name="space_around" value="4" />
         <enum name="space_between" value="3" />
+        <enum name="space_evenly" value="5" />
     </attr>
     <attr name="alignItems">
         <enum name="center" value="2" />
@@ -619,6 +622,7 @@
         <flag name="beginning" value="0x00000001" />
         <flag name="middle" value="0x00000002" />
     </attr>
+    <attr name="maxLine" format="integer" />
     <attr name="layout_order" format="integer" />
     <attr name="layout_flexGrow" format="float" />
     <attr name="layout_flexShrink" format="float" />
@@ -747,6 +751,7 @@
     <attr name="zOrderOnTop" format="boolean" />
     <attr name="uiMapToolbar" format="boolean" />
     <attr name="ambientEnabled" format="boolean" />
+    <attr name="iconSize" format="dimension" />
     <attr name="iconPadding" format="dimension" />
     <attr name="iconTint" format="color" />
     <attr name="additionalPaddingStartForIcon" format="dimension" />
