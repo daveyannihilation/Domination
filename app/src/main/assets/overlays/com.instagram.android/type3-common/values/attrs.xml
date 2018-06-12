@@ -3,7 +3,10 @@
     <attr name="ButtonStyle" format="reference" />
     <attr name="SeletedPicturePaddingRight" format="dimension" />
     <attr name="TokenTextViewStyle" format="reference" />
+    <attr name="actionBarButtonWidth" format="reference|dimension" />
     <attr name="actionBarGlyphColor" format="color" />
+    <attr name="actionBarHeight" format="reference|dimension" />
+    <attr name="actionBarHeightWithShadow" format="reference|dimension" />
     <attr name="actionBarSearchStyle" format="reference" />
     <attr name="actionBarShadowVisibility" format="integer" />
     <attr name="actionBarTextButtonStyle" format="reference" />
@@ -81,6 +84,7 @@
     <attr name="borderSize" format="reference|dimension" />
     <attr name="bottomBright" format="reference|color" />
     <attr name="bottomDark" format="reference|color" />
+    <attr name="bottomEdge" format="boolean" />
     <attr name="bottomMedium" format="reference|color" />
     <attr name="bottom_spacing" format="dimension" />
     <attr name="browserActionBarForegroundPressedColor" format="color" />
@@ -202,6 +206,7 @@
     <attr name="customGlyphColour" format="reference" />
     <attr name="customToastViewStyle" format="reference" />
     <attr name="dark" format="boolean" />
+    <attr name="dashedEdgeColor" format="color" />
     <attr name="defaultActionBarBackIcon" format="reference" />
     <attr name="defaultActionBarBackground" format="reference" />
     <attr name="defaultActionBarForegroundPressedColor" format="color" />
@@ -274,7 +279,6 @@
         <enum name="north" value="0" />
         <enum name="south" value="1" />
     </attr>
-    <attr name="disabledColor" format="color" />
     <attr name="disabled_alpha" format="integer" min="0" max="255" />
     <attr name="dismissableText" format="string" />
     <attr name="dividerColor" format="color" />
@@ -295,9 +299,8 @@
     <attr name="enablePinchZoom" format="boolean" />
     <attr name="enablePinchZoomDeprecatedIG" format="boolean" />
     <attr name="enableQuickBackWhenEmpty" format="boolean" />
-    <attr name="enabledIconColor" format="color" />
-    <attr name="enabledTextColor" format="color" />
     <attr name="endColor" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="endEdge" format="boolean" />
     <attr name="errorBackground" format="reference" />
     <attr name="errorButtonText" format="reference|string" />
     <attr name="errorColor" format="color" />
@@ -316,6 +319,7 @@
     <attr name="fastScrollVerticalTrackDrawable" format="reference" />
     <attr name="feedLikeActiveColor" format="color" />
     <attr name="feedSaveActiveColor" format="color" />
+    <attr name="fifthColor" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="fillColor" format="color" />
     <attr name="filledColor" format="color" />
     <attr name="filterListBackground" format="color" />
@@ -323,6 +327,7 @@
     <attr name="filterListDividers" format="reference" />
     <attr name="filterListItemText" format="reference" />
     <attr name="filterListTheme" format="reference" />
+    <attr name="firstColor" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="fitAspectRatio" format="boolean" />
     <attr name="fittingIcon" format="reference" />
     <attr name="fittingMaxWidth" format="dimension" />
@@ -337,6 +342,17 @@
     <attr name="fixed_width" format="dimension" />
     <attr name="followButtonStyle" format="string" />
     <attr name="font" format="reference" />
+    <attr name="fontProviderAuthority" format="string" />
+    <attr name="fontProviderCerts" format="reference" />
+    <attr name="fontProviderFetchStrategy">
+        <enum name="async" value="1" />
+        <enum name="blocking" value="0" />
+    </attr>
+    <attr name="fontProviderFetchTimeout" format="integer">
+        <enum name="forever" value="-1" />
+    </attr>
+    <attr name="fontProviderPackage" format="string" />
+    <attr name="fontProviderQuery" format="string" />
     <attr name="fontStyle">
         <enum name="italic" value="1" />
         <enum name="normal" value="0" />
@@ -347,6 +363,7 @@
     <attr name="footnoteEmphasized" format="reference" />
     <attr name="footnoteLink" format="reference" />
     <attr name="forceFullWidth" format="boolean" />
+    <attr name="fourthColor" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="fraction_screen_width" format="float" />
     <attr name="fullBright" format="reference|color" />
     <attr name="fullDark" format="reference|color" />
@@ -714,6 +731,7 @@
     <attr name="searchUserInfo" format="reference" />
     <attr name="searchUserName" format="reference" />
     <attr name="searchVerticalSeparatorPadding" format="dimension" />
+    <attr name="secondColor" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="secondaryButtonStyle" format="reference" />
     <attr name="secondaryText" format="string" />
     <attr name="section" format="reference" />
@@ -746,7 +764,6 @@
         <enum name="linear" value="0" />
         <enum name="radial" value="1" />
     </attr>
-    <attr name="shareTableStyle" format="reference" />
     <attr name="shouldHideAllComments" format="boolean" />
     <attr name="shouldMinimizeAllComments" format="boolean" />
     <attr name="shouldShowFollowBack" format="boolean" />
@@ -770,6 +787,7 @@
     <attr name="spanCount" format="integer" />
     <attr name="stackFromEnd" format="boolean" />
     <attr name="startColor" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="startEdge" format="boolean" />
     <attr name="state">
         <enum name="Empty" value="0" />
         <enum name="Error" value="2" />
@@ -808,6 +826,7 @@
     <attr name="textPaddingRight" format="dimension" />
     <attr name="textSize" format="dimension" />
     <attr name="textSizeLocation" format="dimension" />
+    <attr name="thirdColor" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="thumbDrawable" format="reference" />
     <attr name="thumb_colour" format="color" />
     <attr name="thumb_size" format="dimension" />
@@ -829,6 +848,7 @@
     <attr name="toolTipColor" format="color" />
     <attr name="topBright" format="reference|color" />
     <attr name="topDark" format="reference|color" />
+    <attr name="topEdge" format="boolean" />
     <attr name="total_bubble_count" format="integer" />
     <attr name="track_button_spacing" format="dimension" />
     <attr name="track_colour" format="color" />
@@ -873,18 +893,12 @@
     <attr name="wrappedInversePrimaryButtonStyle" format="reference" />
     <attr name="wrappedPrimaryButtonStyle" format="reference" />
     <attr name="wrappedSecondaryButtonStyle" format="reference" />
-    <item type="attr" name="APKTOOL_DUMMY_11">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_21">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_22">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_23">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_14">false</item>
     <item type="attr" name="APKTOOL_DUMMY_24">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_d1">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_25">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_26">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_27">false</item>
     <item type="attr" name="APKTOOL_DUMMY_d6">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_d7">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_143">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_144">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_145">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_146">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_147">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_148">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_db">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_dc">false</item>
 </resources>

@@ -1243,6 +1243,7 @@
     <attr name="defaultMarginsEnabled" format="boolean" />
     <attr name="hideNavigationIcon" format="boolean" />
     <attr name="useDrawerArrowDrawable" format="boolean" />
+    <attr name="autoShowKeyboard" format="boolean" />
     <attr name="selectionDarkBackground" format="reference|color" />
     <attr name="selectionDarkForeground" format="reference|color" />
     <attr name="selectionLightBackground" format="reference|color" />
@@ -1277,6 +1278,7 @@
     <attr name="hideArgumentSeparator" format="boolean" />
     <attr name="applyClickableStyle" format="boolean" />
     <attr name="hasLargeArgumentImage" format="boolean" />
+    <attr name="googleMaterialEnabled" format="boolean" />
     <attr name="styleCardFooterText" format="reference" />
     <attr name="styleDonateButton" format="reference" />
     <attr name="styleEpisodeListTitle" format="reference" />
@@ -1285,6 +1287,24 @@
     <attr name="stylePodcastDescription" format="reference" />
     <attr name="stylePodcastShowSubtitle" format="reference" />
     <attr name="stylePodcastShowTitle" format="reference" />
+    <attr name="stylePlaybackPanelCollapsedContainer" format="reference" />
+    <attr name="stylePlaybackPanelTitle" format="reference" />
+    <attr name="stylePlaybackPanelSubtitle" format="reference" />
+    <attr name="stylePlaybackPanelCollapsedPause" format="reference" />
+    <attr name="stylePlaybackPanelCollapsedArrowDown" format="reference" />
+    <attr name="stylePlaybackPanelExpandedContainer" format="reference" />
+    <attr name="stylePlaybackPanelSeekbarExpanded" format="reference" />
+    <attr name="stylePlaybackPanelSeekbarCollapsed" format="reference" />
+    <attr name="stylePlaybackPanelPlayedTime" format="reference" />
+    <attr name="stylePlaybackPanelRemainingTime" format="reference" />
+    <attr name="stylePlaybackPanelRewind" format="reference" />
+    <attr name="stylePlaybackPanelExpandedPause" format="reference" />
+    <attr name="stylePlaybackPanelExpandedFastForward" format="reference" />
+    <attr name="stylePlaybackPanelShowLink" format="reference" />
+    <attr name="stylePlaybackPanelThumbnail" format="reference" />
+    <attr name="stylePlaybackPanelSpeedSettingDone" format="reference" />
+    <attr name="stylePlaybackPanelSpeedSelector" format="reference" />
+    <attr name="stylePlaybackPanelSpeedSelectorContainer" format="reference" />
     <attr name="overlapAnchor" format="boolean" />
     <attr name="state_above_anchor" format="boolean" />
     <attr name="summary" format="string" />
@@ -1349,8 +1369,10 @@
         <enum name="signIn" value="1" />
         <enum name="waa" value="2" />
     </attr>
+    <attr name="shadowAlpha" format="float" />
     <attr name="rating" format="float" />
     <attr name="foregroundColor" format="color" />
+    <attr name="starGap" format="dimension" />
     <attr name="starDrawable" format="reference" />
     <attr name="ratio" format="float" />
     <attr name="listeningColor" format="reference" />
@@ -1582,16 +1604,11 @@
         <enum name="filled" value="1" />
         <enum name="outline" value="2" />
     </attr>
-    <attr name="boxPaddingStart" format="dimension" />
     <attr name="boxCollapsedPaddingTop" format="dimension" />
-    <attr name="boxExpandedPaddingTop" format="dimension" />
-    <attr name="boxPaddingEnd" format="dimension" />
-    <attr name="boxCollapsedPaddingBottom" format="dimension" />
     <attr name="boxCornerRadiusTopStart" format="dimension" />
     <attr name="boxCornerRadiusTopEnd" format="dimension" />
     <attr name="boxCornerRadiusBottomStart" format="dimension" />
     <attr name="boxCornerRadiusBottomEnd" format="dimension" />
-    <attr name="boxExpandedPaddingBottom" format="dimension" />
     <attr name="boxStrokeColor" format="color" />
     <attr name="boxBackgroundColor" format="color" />
     <attr name="boxStrokeWidth" format="dimension" />
@@ -1600,6 +1617,7 @@
     <attr name="imageHeight" format="reference|dimension" />
     <attr name="columnPadding" format="reference|dimension" />
     <attr name="enforceMaterialTheme" format="boolean" />
+    <attr name="enforceTextAppearance" format="boolean" />
     <attr name="tintList" format="reference" />
     <attr name="titleTextAppearance" format="reference" />
     <attr name="subtitleTextAppearance" format="reference" />
