@@ -70,9 +70,7 @@
         <item name="android:id">@*com.google.android.apps.photos:id/actionbar_overflow</item>
         <item name="android:src">@*com.google.android.apps.photos:drawable/quantum_ic_drawer_grey600_24</item>
     </style>
-    <style name="mm_OverFlow" parent="@*android:style/Widget.Holo.ActionButton.Overflow">
-        <item name="android:src">@*com.google.android.apps.photos:drawable/quantum_ic_more_vert_white_24</item>
-    </style>
+
     <style name="Theme.Photos.Splash" parent="@*com.google.android.apps.photos:style/Theme.Photos.Fullscreen">
         <item name="android:windowBackground">@*com.google.android.apps.photos:drawable/quantum_launchscreen_photos</item>
         <item name="*com.google.android.apps.photos:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
@@ -154,6 +152,7 @@
         <item name="android:actionOverflowButtonStyle">@*com.google.android.apps.photos:style/Widget.Photos.ActionBar.Overflow</item>
         <item name="android:homeAsUpIndicator">@*com.google.android.apps.photos:drawable/quantum_ic_arrow_back_grey600_24</item>
         <item name="android:actionModeStyle">@*com.google.android.apps.photos:style/Widget.Photos.ActionModeActionBar</item>
+        <item name="*com.google.android.apps.photos:tabBackgroundColor">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.apps.photos:actionOverflowButtonStyle">@*com.google.android.apps.photos:style/Widget.Photos.ActionBar.Overflow</item>
         <item name="*com.google.android.apps.photos:actionBarStyle">@*com.google.android.apps.photos:style/Widget.Photos.ActionBar</item>
         <item name="*com.google.android.apps.photos:actionBarSize">@*com.google.android.apps.photos:dimen/photos_theme_actionbar_menuitem_height</item>
@@ -161,6 +160,7 @@
         <item name="*com.google.android.apps.photos:actionModeStyle">@*com.google.android.apps.photos:style/Widget.Photos.ActionModeActionBar</item>
         <item name="*com.google.android.apps.photos:actionModeCloseDrawable">@*com.google.android.apps.photos:drawable/quantum_ic_clear_white_24</item>
         <item name="*com.google.android.apps.photos:homeAsUpIndicator">@*com.google.android.apps.photos:drawable/quantum_ic_arrow_back_grey600_24</item>
+        <item name="*com.google.android.apps.photos:borderlessButtonStyle">@*com.google.android.apps.photos:style/Widget.Photos.Button.Borderless</item>
         <item name="*com.google.android.apps.photos:colorPrimary">@*android:color/black</item>
         <item name="*com.google.android.apps.photos:colorAccent">@*com.google.android.apps.photos:color/quantum_googblue500</item>
     </style>
@@ -224,20 +224,7 @@
 
 
 
-    <style name="Theme.Photos.TransparentActionBar" parent="@*com.google.android.apps.photos:style/Theme.AppCompat.Light">
-        <item name="android:windowBackground">@*android:color/transparent</item>
-        <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:backgroundDimEnabled">false</item>
-        <item name="android:actionOverflowButtonStyle">@*com.google.android.apps.photos:style/Widget.Photos.ActionBar.Inverse.Overflow</item>
-        <item name="android:homeAsUpIndicator">@*com.google.android.apps.photos:drawable/quantum_ic_arrow_back_white_24</item>
-        <item name="android:windowTranslucentStatus">true</item>
-        <item name="android:windowTranslucentNavigation">true</item>
-        <item name="*com.google.android.apps.photos:actionOverflowButtonStyle">@*com.google.android.apps.photos:style/Widget.Photos.ActionBar.Inverse.Overflow</item>
-        <item name="*com.google.android.apps.photos:actionBarStyle">@*com.google.android.apps.photos:style/Photos.ActionBar.Transparent</item>
-        <item name="*com.google.android.apps.photos:homeAsUpIndicator">@*com.google.android.apps.photos:drawable/quantum_ic_arrow_back_white_24</item>
-        <item name="*com.google.android.apps.photos:colorAccent">@*android:color/white</item>
-    </style>
+
     <style name="largeWhiteTitleTextAppearance" parent="@*com.google.android.apps.photos:style/TextAppearance.Widget.AppCompat.Toolbar.Title">
         <item name="android:textSize">@*com.google.android.apps.photos:dimen/text_size_20</item>
         <item name="android:textStyle">normal</item>
@@ -296,7 +283,7 @@
     </style>
 
 
-    <style name="photos_suggested_actions_editor_button_style" parent="@*com.google.android.apps.photos:style/Widget.AppCompat.Button.Borderless">
+    <style name="photos_suggested_actions_editor_button_style" parent="@*com.google.android.apps.photos:style/Widget.Photos.Button.Borderless">
         <item name="android:textColor">@*com.google.android.apps.photos:color/suggestion_editor_save_button_text</item>
         <item name="android:background">@*android:color/button_material_dark</item>
         <item name="android:layout_width">0.0dip</item>
@@ -306,7 +293,7 @@
     </style>
 
 
-    <style name="BaseTabButton">
+    <style name="BaseTabButton" parent="@*com.google.android.apps.photos:style/Widget.Photos.Button.Borderless">
         <item name="android:textAppearance">@*com.google.android.apps.photos:style/TextAppearance.AppCompat.Caption</item>
         <item name="android:textSize">@*com.google.android.apps.photos:dimen/photos_tabbar_tab_text_size</item>
         <item name="android:textColor">@*com.google.android.apps.photos:color/tab_text_color</item>

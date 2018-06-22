@@ -184,6 +184,7 @@
     <attr name="mtrlColors" format="reference" />
     <attr name="navigationViewStyle" format="reference" />
     <attr name="openSearchBarStyle" format="reference" />
+    <attr name="openSearchViewPrefixStyle" format="reference" />
     <attr name="openSearchViewStyle" format="reference" />
     <attr name="optinHeaderBackgroundColor" format="reference|color" />
     <attr name="optinHeaderTextColor" format="reference|color" />
@@ -636,6 +637,7 @@
     <attr name="chipStrokeWidth" format="dimension" />
     <attr name="chipIconEnabled" format="boolean" />
     <attr name="chipIcon" format="reference" />
+    <attr name="chipIconTint" format="color" />
     <attr name="chipIconSize" format="dimension" />
     <attr name="closeIconEnabled" format="boolean" />
     <attr name="closeIcon" format="reference" />
@@ -1056,7 +1058,7 @@
         <enum name="vertical" value="1" />
     </attr>
     <attr name="rowCount" format="integer" />
-    <attr name="columnCount" format="reference|integer" />
+    <attr name="columnCount" format="integer" />
     <attr name="useDefaultMargins" format="boolean" />
     <attr name="alignmentMode">
         <enum name="alignBounds" value="0" />
@@ -1086,6 +1088,8 @@
         <flag name="clip_vertical" value="0x00000080" />
         <flag name="fill" value="0x00000077" />
     </attr>
+    <attr name="headerTitle" format="reference" />
+    <attr name="headerMessage" format="reference" />
     <attr name="inputEnabled" format="boolean" />
     <attr name="sourceClass">
         <enum name="contact" value="1" />
@@ -1182,6 +1186,10 @@
     <attr name="latLngBoundsNorthEastLongitude" format="float" />
     <attr name="iconSize" format="dimension" />
     <attr name="iconPadding" format="dimension" />
+    <attr name="iconGravity">
+        <flag name="start" value="0x00000001" />
+        <flag name="textStart" value="0x00000002" />
+    </attr>
     <attr name="iconTint" format="color" />
     <attr name="additionalPaddingStartForIcon" format="dimension" />
     <attr name="additionalPaddingEndForIcon" format="dimension" />
@@ -1240,8 +1248,10 @@
     <attr name="itemHorizontalPadding" format="dimension" />
     <attr name="itemIconPadding" format="dimension" />
     <attr name="multiline" format="boolean" />
+    <attr name="contentResId" format="reference" />
     <attr name="defaultMarginsEnabled" format="boolean" />
     <attr name="hideNavigationIcon" format="boolean" />
+    <attr name="searchPrefixText" format="string" />
     <attr name="useDrawerArrowDrawable" format="boolean" />
     <attr name="autoShowKeyboard" format="boolean" />
     <attr name="selectionDarkBackground" format="reference|color" />
@@ -1281,9 +1291,9 @@
     <attr name="googleMaterialEnabled" format="boolean" />
     <attr name="styleCardFooterText" format="reference" />
     <attr name="styleDonateButton" format="reference" />
-    <attr name="styleEpisodeListTitle" format="reference" />
     <attr name="styleEpisodeSubtitle" format="reference" />
     <attr name="styleEpisodeTitle" format="reference" />
+    <attr name="styleHeadline6" format="reference" />
     <attr name="stylePodcastDescription" format="reference" />
     <attr name="stylePodcastShowSubtitle" format="reference" />
     <attr name="stylePodcastShowTitle" format="reference" />
@@ -1365,6 +1375,7 @@
         <enum name="small" value="2" />
     </attr>
     <attr name="promotionType">
+        <enum name="googlePodcasts" value="3" />
         <enum name="shortcut" value="0" />
         <enum name="signIn" value="1" />
         <enum name="waa" value="2" />
@@ -1404,6 +1415,7 @@
         <flag name="topLeft" value="0x00000001" />
         <flag name="topRight" value="0x00000002" />
     </attr>
+    <attr name="containerColor" format="color" />
     <attr name="insetForeground" format="reference|color" />
     <attr name="behavior_overlapTop" format="dimension" />
     <attr name="iconifiedByDefault" format="boolean" />
@@ -1505,6 +1517,10 @@
     <attr name="suwIllustrationImage" format="reference|color" />
     <attr name="suwStatusBarBackground" format="reference|color" />
     <attr name="suwContainer" format="reference" />
+    <attr name="edgeSwipeWidth" format="dimension" />
+    <attr name="edgeSwipeThreshold" format="dimension" />
+    <attr name="edgeSwipeDismissThreshold" format="dimension" />
+    <attr name="edgeSwipeTranslationX" format="dimension" />
     <attr name="thumbTint" format="color" />
     <attr name="thumbTintMode">
         <enum name="add" value="16" />

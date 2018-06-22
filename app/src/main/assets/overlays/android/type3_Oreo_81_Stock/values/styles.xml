@@ -139,8 +139,8 @@
         <item name="android:colorControlNormal">@*android:color/white</item>
         <item name="android:colorControlActivated">@*android:color/accent_material_dark</item>
         <item name="android:colorSecondary">@*android:color/button_material_dark</item>
-        <!-- <item name="android:windowLightNavigationBar">false</item> -->
-        <!-- <item name="android:navigationBarDividerColor">#00000000</item> -->
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:navigationBarDividerColor">@*android:color/primary_dark_material_dark</item>
     </style>
     <style name="Theme.DeviceDefault.Light.SearchBar" parent="@*android:style/Theme.Material.SearchBar" />
     <style name="AlertDialog.DeviceDefault.Light" parent="@*android:style/Theme.DeviceDefault.Dialog" />
@@ -257,7 +257,11 @@
        <item name="*android:windowMinWidthMinor">@*android:dimen/dialog_min_width_minor</item>
     </style>
 
-    <style name="Theme.DeviceDefault.InputMethod" parent="@*android:style/Theme.Material.InputMethod" />
+    <style name="Theme.DeviceDefault.InputMethod" parent="@*android:style/Theme.Material.InputMethod">
+        <item name="android:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
+    </style>
 
     <style name="Theme.DeviceDefault.System" parent="@*android:style/Theme.Material">  <!-- Power Menu dialog style -->
         <item name="android:alertDialogTheme">@*android:style/Theme.Material.Dialog.Alert</item>
@@ -270,6 +274,8 @@
         <item name="*android:visibility">gone</item>
         <item name="*android:layout_width">fill_parent</item>
         <item name="*android:layout_height">wrap_content</item>
+        <item name="*android:shadowColor">@*android:color/white</item>
+        <item name="*android:shadowRadius">2.0</item>
     </style>
 
 

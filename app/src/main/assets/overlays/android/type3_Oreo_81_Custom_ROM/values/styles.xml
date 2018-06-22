@@ -146,7 +146,7 @@
     <style name="Theme.Material.SearchBar" parent="@*android:style/Theme.Material.Panel" />
     <style name="Theme.DeviceDefault.Resolver" parent="@*android:style/Theme.DeviceDefault">
         <item name="android:windowBackground">@*android:color/transparent</item>
-        <item name="android:backgroundTint">@*android:color/background_floating_material_dark</item>
+        <!-- <item name="android:backgroundTint">@*android:color/background_floating_material_dark</item> -->
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowContentOverlay">@null</item>
@@ -255,7 +255,11 @@
        <item name="*android:windowMinWidthMinor">@*android:dimen/dialog_min_width_minor</item>
     </style>
 
-    <style name="Theme.DeviceDefault.InputMethod" parent="@*android:style/Theme.Material.InputMethod" />
+    <style name="Theme.DeviceDefault.InputMethod" parent="@*android:style/Theme.Material.InputMethod">
+        <item name="android:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
+    </style>
 
     <style name="Theme.DeviceDefault.System" parent="@*android:style/Theme.Material">  <!-- Power Menu dialog style -->
         <item name="android:alertDialogTheme">@*android:style/Theme.Material.Dialog.Alert</item>
