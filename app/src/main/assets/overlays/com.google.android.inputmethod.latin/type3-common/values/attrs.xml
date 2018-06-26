@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <attr name="AddIcon" format="reference" />
     <attr name="ArtKeyboardSubCategoryRowWeight" format="float" />
     <attr name="AutocompleteQueryIcon" format="reference" />
     <attr name="BaseKeyboardBodyHeight" format="dimension" />
@@ -327,7 +326,6 @@
     <attr name="MaxPageableCandidatesPerRow" format="integer" />
     <attr name="MorseSwitchToNextLanguageWeight" format="reference" />
     <attr name="NoConnectionIcon" format="reference" />
-    <attr name="NoStickerPackIcon" format="reference" />
     <attr name="OneHandedBgComposingText" format="reference" />
     <attr name="OneHandedBgKeyboardBody" format="reference" />
     <attr name="OneHandedBgMoreCandidatesHolder" format="reference" />
@@ -346,7 +344,6 @@
     <attr name="PopupBubbleUnderlineOnDecodeLayout" format="reference" />
     <attr name="PrimeKeyboardNumberRowWeight" format="float" />
     <attr name="RecentC2QCandidateIcon" format="reference" />
-    <attr name="RecentImagesIcon" format="reference" />
     <attr name="RecentQueryIcon" format="reference" />
     <attr name="TextEditingIconAlpha" format="integer" />
     <attr name="bottomAppBarStyle" format="reference" />
@@ -358,30 +355,7 @@
     <attr name="chipStandaloneStyle" format="reference" />
     <attr name="chipStyle" format="reference" />
     <attr name="colorLabelDynamic" format="color" />
-    <attr name="colorPrimary100" format="color" />
-    <attr name="colorPrimary200" format="color" />
-    <attr name="colorPrimary300" format="color" />
-    <attr name="colorPrimary400" format="color" />
-    <attr name="colorPrimary50" format="color" />
-    <attr name="colorPrimary500" format="color" />
-    <attr name="colorPrimary600" format="color" />
-    <attr name="colorPrimary700" format="color" />
-    <attr name="colorPrimary800" format="color" />
-    <attr name="colorPrimary900" format="color" />
-    <attr name="colorPrimaryLight" format="color" />
     <attr name="colorSecondary" format="color" />
-    <attr name="colorSecondary100" format="color" />
-    <attr name="colorSecondary200" format="color" />
-    <attr name="colorSecondary300" format="color" />
-    <attr name="colorSecondary400" format="color" />
-    <attr name="colorSecondary50" format="color" />
-    <attr name="colorSecondary500" format="color" />
-    <attr name="colorSecondary600" format="color" />
-    <attr name="colorSecondary700" format="color" />
-    <attr name="colorSecondary800" format="color" />
-    <attr name="colorSecondary900" format="color" />
-    <attr name="colorSecondaryDark" format="color" />
-    <attr name="colorSecondaryLight" format="color" />
     <attr name="constraintSet" format="reference" />
     <attr name="coordinatorLayoutStyle" format="reference" />
     <attr name="drawerArrowStyle" format="reference" />
@@ -480,7 +454,6 @@
     </attr>
     <attr name="materialButtonStyle" format="reference" />
     <attr name="materialCardViewStyle" format="reference" />
-    <attr name="materialSwitchStyle" format="reference" />
     <attr name="navigationViewStyle" format="reference" />
     <attr name="rippleColor" format="color" />
     <attr name="scrimBackground" format="reference|color" />
@@ -566,8 +539,11 @@
     <attr name="buttonIconDimen" format="dimension" />
     <attr name="errorPlaceholder" format="integer" />
     <attr name="expanded" format="boolean" />
+    <attr name="liftOnScroll" format="boolean" />
     <attr name="state_collapsed" format="boolean" />
     <attr name="state_collapsible" format="boolean" />
+    <attr name="state_lifted" format="boolean" />
+    <attr name="state_liftable" format="boolean" />
     <attr name="layout_scrollFlags">
         <flag name="enterAlways" value="0x00000004" />
         <flag name="enterAlwaysCollapsed" value="0x00000008" />
@@ -607,6 +583,9 @@
     <attr name="autoSizeMinTextSize" format="dimension" />
     <attr name="autoSizeMaxTextSize" format="dimension" />
     <attr name="fontFamily" format="string" />
+    <attr name="lineHeight" format="dimension" />
+    <attr name="firstBaselineToTopHeight" format="dimension" />
+    <attr name="lastBaselineToBottomHeight" format="dimension" />
     <attr name="windowActionBar" format="boolean" />
     <attr name="windowNoTitle" format="boolean" />
     <attr name="windowActionBarOverlay" format="boolean" />
@@ -733,7 +712,7 @@
         <enum name="end" value="1" />
     </attr>
     <attr name="fabAttached" format="boolean" />
-    <attr name="fabCradleDiameter" format="dimension" />
+    <attr name="fabCradleMargin" format="dimension" />
     <attr name="fabCradleRoundedCornerRadius" format="dimension" />
     <attr name="fabCradleVerticalOffset" format="dimension" />
     <attr name="hideOnScroll" format="boolean" />
@@ -746,7 +725,7 @@
     <attr name="itemIconSize" format="dimension" />
     <attr name="itemTextAppearanceInactive" format="reference" />
     <attr name="itemTextAppearanceActive" format="reference" />
-    <attr name="itemHorizontalTranslation" format="boolean" />
+    <attr name="itemHorizontalTranslationEnabled" format="boolean" />
     <attr name="behavior_peekHeight" format="dimension">
         <enum name="auto" value="-1" />
     </attr>
@@ -770,7 +749,6 @@
     <attr name="chipCornerRadius" format="dimension" />
     <attr name="chipStrokeColor" format="color" />
     <attr name="chipStrokeWidth" format="dimension" />
-    <attr name="chipText" format="string" />
     <attr name="chipIconEnabled" format="boolean" />
     <attr name="chipIcon" format="reference" />
     <attr name="chipIconSize" format="dimension" />
@@ -928,6 +906,7 @@
         <enum name="flex_start" value="0" />
         <enum name="space_around" value="4" />
         <enum name="space_between" value="3" />
+        <enum name="space_evenly" value="5" />
     </attr>
     <attr name="alignItems">
         <enum name="center" value="2" />
@@ -965,15 +944,11 @@
         <flag name="beginning" value="0x00000001" />
         <flag name="middle" value="0x00000002" />
     </attr>
+    <attr name="maxLine" format="integer" />
     <attr name="layout_order" format="integer" />
     <attr name="layout_flexGrow" format="float" />
     <attr name="layout_flexShrink" format="float" />
     <attr name="layout_flexBasisPercent" format="fraction" />
-    <attr name="layout_minWidth" format="dimension" />
-    <attr name="layout_minHeight" format="dimension" />
-    <attr name="layout_maxWidth" format="dimension" />
-    <attr name="layout_maxHeight" format="dimension" />
-    <attr name="layout_wrapBefore" format="boolean" />
     <attr name="layout_alignSelf">
         <enum name="center" value="2" />
         <enum name="auto" value="-1" />
@@ -982,6 +957,11 @@
         <enum name="baseline" value="3" />
         <enum name="stretch" value="4" />
     </attr>
+    <attr name="layout_minWidth" format="dimension" />
+    <attr name="layout_minHeight" format="dimension" />
+    <attr name="layout_maxWidth" format="dimension" />
+    <attr name="layout_maxHeight" format="dimension" />
+    <attr name="layout_wrapBefore" format="boolean" />
     <attr name="fabSize">
         <enum name="normal" value="0" />
         <enum name="auto" value="-1" />
@@ -1061,10 +1041,11 @@
     <attr name="circleCrop" format="boolean" />
     <attr name="minValue" format="integer" />
     <attr name="valueInterval" format="integer" />
+    <attr name="iconSize" format="dimension" />
     <attr name="iconPadding" format="dimension" />
     <attr name="iconTint" format="color" />
-    <attr name="additionalPaddingLeftForIcon" format="dimension" />
-    <attr name="additionalPaddingRightForIcon" format="dimension" />
+    <attr name="additionalPaddingStartForIcon" format="dimension" />
+    <attr name="additionalPaddingEndForIcon" format="dimension" />
     <attr name="cornerRadius" format="dimension" />
     <attr name="CoversSoftKey" format="boolean" />
     <attr name="PopupDistance" format="dimension" />
@@ -1289,16 +1270,11 @@
         <enum name="filled" value="1" />
         <enum name="outline" value="2" />
     </attr>
-    <attr name="boxPaddingStart" format="dimension" />
     <attr name="boxCollapsedPaddingTop" format="dimension" />
-    <attr name="boxExpandedPaddingTop" format="dimension" />
-    <attr name="boxPaddingEnd" format="dimension" />
-    <attr name="boxCollapsedPaddingBottom" format="dimension" />
     <attr name="boxCornerRadiusTopStart" format="dimension" />
     <attr name="boxCornerRadiusTopEnd" format="dimension" />
     <attr name="boxCornerRadiusBottomStart" format="dimension" />
     <attr name="boxCornerRadiusBottomEnd" format="dimension" />
-    <attr name="boxExpandedPaddingBottom" format="dimension" />
     <attr name="boxStrokeColor" format="color" />
     <attr name="boxBackgroundColor" format="color" />
     <attr name="boxStrokeWidth" format="dimension" />
