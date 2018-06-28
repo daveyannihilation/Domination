@@ -81,8 +81,6 @@
         <item name="*com.instagram.android:quickCaptureControllerDirectReplyHeaderBackground">@null</item>
         <item name="*com.instagram.android:quickCaptureControllerDirectReplyHeaderMinHeight">40.0dip</item>
         <item name="*com.instagram.android:quickCaptureControllerFaceFilterButton">@*com.instagram.android:drawable/smile_states</item>
-        <item name="*com.instagram.android:quickCaptureControllerFaceFilterButtonProgressIndicatorMargin">10.0dip</item>
-        <item name="*com.instagram.android:quickCaptureControllerFaceFilterButtonProgressIndicatorSize">28.0dip</item>
         <item name="*com.instagram.android:quickCaptureControllerFlashButton">@*com.instagram.android:drawable/flash_states</item>
         <item name="*com.instagram.android:quickCaptureControllerGalleryButton">@*com.instagram.android:drawable/overlay_gallery_icon</item>
         <item name="*com.instagram.android:quickCaptureControllerGalleryButtonSize">@*com.instagram.android:dimen/quick_capture_gallery_preview_button_size</item>
@@ -122,6 +120,11 @@
     </style>
     <style name="ButtonSecondary" parent="@*com.instagram.android:style/ButtonPrimary">
         <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="ButtonTextStyle" parent="@*android:style/Widget.Button">
+        <item name="android:textSize">@*com.instagram.android:dimen/font_medium</item>
+        <item name="android:textColor">#ff1976d2</item>
+        <item name="android:background">@*android:color/button_material_dark</item>
     </style>
     <style name="CapturePickerLabel">
         <item name="android:textSize">12.0dip</item>
@@ -636,6 +639,13 @@
         <item name="android:gravity">center_vertical</item>
         <item name="android:lineSpacingMultiplier">1.05</item>
         <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="TwoFacLoginHelpMenuItem" parent="@*android:style/Widget.Button">
+        <item name="android:textSize">@*com.instagram.android:dimen/font_medium</item>
+        <item name="android:textColor">#ff1976d2</item>
+        <item name="android:background">@*android:color/button_material_dark</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@*com.instagram.android:dimen/two_fac_login_help_menu_item_height</item>
     </style>
     <style name="UnconnectedTitleText">
         <item name="android:textSize">@*com.instagram.android:dimen/font_medium</item>

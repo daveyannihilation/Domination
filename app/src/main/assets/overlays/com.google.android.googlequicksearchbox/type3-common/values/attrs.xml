@@ -209,6 +209,13 @@
         <flag name="all" value="0x00000002" />
         <flag name="one" value="0x00000001" />
     </attr>
+    <attr name="resize_mode">
+        <enum name="fill" value="3" />
+        <enum name="fit" value="0" />
+        <enum name="fixed_height" value="2" />
+        <enum name="fixed_width" value="1" />
+        <enum name="zoom" value="4" />
+    </attr>
     <attr name="rewind_increment" format="integer" />
     <attr name="rippleColor" format="color" />
     <attr name="scmContentPaddingTop" format="dimension" />
@@ -725,6 +732,7 @@
     <attr name="layout_keyline" format="integer" />
     <attr name="layout_anchorGravity">
         <flag name="end" value="0x00800005" />
+        <flag name="fill" value="0x00000077" />
         <flag name="center_horizontal" value="0x00000001" />
         <flag name="fill_horizontal" value="0x00000007" />
         <flag name="left" value="0x00000003" />
@@ -737,7 +745,6 @@
         <flag name="fill_vertical" value="0x00000070" />
         <flag name="clip_horizontal" value="0x00000008" />
         <flag name="clip_vertical" value="0x00000080" />
-        <flag name="fill" value="0x00000077" />
     </attr>
     <attr name="layout_insetEdge">
         <enum name="none" value="0" />
@@ -1074,6 +1081,7 @@
     <attr name="layout_columnWeight" format="float" />
     <attr name="layout_gravity">
         <flag name="end" value="0x00800005" />
+        <flag name="fill" value="0x00000077" />
         <flag name="center_horizontal" value="0x00000001" />
         <flag name="fill_horizontal" value="0x00000007" />
         <flag name="left" value="0x00000003" />
@@ -1086,7 +1094,6 @@
         <flag name="fill_vertical" value="0x00000070" />
         <flag name="clip_horizontal" value="0x00000008" />
         <flag name="clip_vertical" value="0x00000080" />
-        <flag name="fill" value="0x00000077" />
     </attr>
     <attr name="headerTitle" format="reference" />
     <attr name="headerMessage" format="reference" />
@@ -1566,8 +1573,8 @@
         <enum name="scrollable" value="0" />
     </attr>
     <attr name="tabGravity">
-        <enum name="center" value="1" />
         <enum name="fill" value="0" />
+        <enum name="center" value="1" />
     </attr>
     <attr name="tabInlineLabel" format="boolean" />
     <attr name="tabMinWidth" format="dimension" />

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="ActionBar" parent="@*android:style/Widget.Holo.ActionBar.Solid" />
+    <style name="ActionBar" parent="@*android:style/Widget.Material.ActionBar.Solid" />
 
     <style name="ActionBarBaseStyle.Preferences" parent="@*com.google.android.calendar:style/ActionBar">
         <item name="android:background">@*android:color/primary_material_dark</item>
@@ -88,7 +88,7 @@
     <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light" />
 
 
-    <style name="PreferencesThemeBase" parent="@*android:style/Theme.Holo" />
+    <style name="PreferencesThemeBase" parent="@*android:style/Theme.Material" />
 
 
 
@@ -212,7 +212,7 @@
         <item name="*com.google.android.calendar:colorPrimary">@*android:color/primary_material_dark</item>
         <item name="*com.google.android.calendar:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
     </style>
-    <style name="Theme.Actionbar.Base" parent="@*android:style/Widget.Holo.ActionBar.Solid" />
+    <style name="Theme.Actionbar.Base" parent="@*android:style/Widget.Material.ActionBar.Solid" />
 
 
     <style name="growthkit_feature_highlight_black">
@@ -251,5 +251,16 @@
         <item name="*com.google.android.calendar:chipBackgroundColor">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.calendar:chipStrokeColor">@*android:color/white</item>
         <item name="*com.google.android.calendar:chipStrokeWidth">1.0dip</item>
+    </style>
+
+
+    <style name="ActionbarTheme.Compat" parent="@*com.google.android.calendar:style/ActionbarTheme">
+        <item name="android:background">@*android:color/primary_material_dark</item>
+        <item name="android:displayOptions">homeAsUp|showTitle</item>
+    </style>
+    <style name="FindTimeTheme" parent="@*com.google.android.calendar:style/FindTimeThemeBase">
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
     </style>
 </resources>
