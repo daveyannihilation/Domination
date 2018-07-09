@@ -96,4 +96,27 @@
 
 
     <style name="Theme.SystemUI.Dialog.GlobalActions" parent="@*android:style/Theme.Material.NoActionBar.Fullscreen" />
+    <style name="Theme.SystemUI.Light" parent="@*android:style/Theme.DeviceDefault.QuickSettings">
+        <item name="android:colorControlHighlight">@*android:color/primary_text_material_dark</item>
+        <item name="*com.android.systemui:passwordStyle">@*com.android.systemui:style/PasswordTheme</item>
+        <item name="*com.android.systemui:wallpaperTextColor">@*android:color/primary_text_material_dark</item>
+        <item name="*com.android.systemui:wallpaperTextColorSecondary">@*android:color/secondary_text_material_dark</item>
+    </style>
+
+    <style name="RecentsTheme.Wallpaper.Light" parent="@*com.android.systemui:style/RecentsTheme.Wallpaper">
+        <item name="*com.android.systemui:clearAllBackgroundColor">@*com.android.systemui:color/recents_clear_all_button_bg_light_color</item>
+        <item name="*com.android.systemui:wallpaperTextColor">@*android:color/primary_text_material_dark</item>
+        <item name="*com.android.systemui:wallpaperTextColorSecondary">@*android:color/secondary_text_material_dark</item>
+    </style>
+
+
+    <style name="qs_theme" parent="@*com.android.systemui:style/qs_base">
+        <item name="*com.android.systemui:darkIconTheme">@*com.android.systemui:style/QSIconTheme</item>
+        <item name="*com.android.systemui:lightIconTheme">@*com.android.systemui:style/QSIconTheme</item>
+        <item name="android:colorPrimary">@*android:color/background_floating_material_dark</item>
+        <item name="android:colorPrimaryDark">@*android:color/background_floating_material_dark</item>
+        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="android:colorSecondary">@*android:color/button_material_dark</item>
+        <item name="android:colorControlNormal">@*android:color/white</item>
+    </style>
 </resources>

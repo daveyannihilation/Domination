@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout android:id="@*org.chromium.chrome:id/control_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <org.chromium.chrome.browser.searchwidget.SearchActivityFadingBackgroundView android:id="@*org.chromium.chrome:id/fading_focus_target" android:layout_width="0.0dip" android:layout_height="0.0dip" />
     <ViewStub android:id="@*org.chromium.chrome:id/omnibox_results_container_stub" android:background="@*org.chromium.chrome:color/background_floating_material_dark" android:layout="@*org.chromium.chrome:layout/omnibox_results_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <ImageView android:id="@*org.chromium.chrome:id/toolbar_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@*org.chromium.chrome:dimen/toolbar_height_no_shadow" android:src="@*org.chromium.chrome:drawable/toolbar_shadow" android:scaleType="fitXY" android:contentDescription="@null" />
+    <ImageView android:id="@*org.chromium.chrome:id/toolbar_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@*org.chromium.chrome:dimen/toolbar_height_no_shadow" android:src="@*org.chromium.chrome:drawable/toolbar_shadow" android:scaleType="fitXY" />
     <FrameLayout android:id="@*org.chromium.chrome:id/toolbar" android:background="@*org.chromium.chrome:color/primary_material_dark" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@*org.chromium.chrome:dimen/toolbar_height_no_shadow">
         <org.chromium.chrome.browser.searchwidget.SearchActivityLocationBarLayout android:layout_gravity="center_vertical" android:id="@*org.chromium.chrome:id/search_location_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@*org.chromium.chrome:dimen/search_activity_location_bar_margin_start" android:layout_marginEnd="@*org.chromium.chrome:dimen/search_activity_location_bar_margin_end" />
     </FrameLayout>
