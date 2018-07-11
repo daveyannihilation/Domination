@@ -41,7 +41,7 @@
 
 
     <style name="SelectableItem" parent="@*android:style/Theme.DeviceDefault.Light">
-        <item name="android:background">?android:selectableItemBackground</item>
+        <item name="android:background">?*android:selectableItemBackground</item>
     </style>
 
     <style name="TextAppearanceMedium" parent="@*android:style/TextAppearance.Medium">
@@ -56,4 +56,92 @@
         <item name="android:overScrollMode">always</item>
     </style>
 
+
+
+    <style name="PeopleTheme" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:navigationBarColor">@*com.android.contacts:color/navigation_bar_color</item>
+        <item name="android:windowLightNavigationBar">@*com.android.contacts:bool/windowLightNavigationBar</item>
+        <item name="android:actionBarStyle">@*com.android.contacts:style/ContactsActionBarStyle</item>
+        <!-- Style for the overflow button in the actionbar. -->
+        <item name="android:actionOverflowButtonStyle">@*com.android.contacts:style/ContactsActionBarOverflowQP</item>
+        <item name="android:actionModeCloseDrawable">@*com.android.contacts:drawable/quantum_ic_close_vd_theme_24</item>
+        <item name="android:textColorPrimary">@*android:color/white</item>
+        <item name="android:textColorSecondary">@*com.android.contacts:color/secondary_text_color</item>
+        <item name="android:icon">@*android:color/transparent</item>
+        <item name="android:listViewStyle">@*com.android.contacts:style/ListViewStyle</item>
+        <item name="android:windowBackground">@*com.android.contacts:color/background_primary</item>
+        <item name="android:colorPrimaryDark">@*com.android.contacts:color/primary_color_dark</item>
+        <item name="android:colorPrimary">@*com.android.contacts:color/primary_color</item>
+        <item name="android:colorAccent">@*com.android.contacts:color/primary_color</item>
+        <item name="android:alertDialogTheme">@*com.android.contacts:style/ContactsAlertDialogTheme</item>
+        <item name="*com.android.contacts:list_item_height">@*com.android.contacts:dimen/contact_browser_list_item_height</item>
+        <item name="*com.android.contacts:list_section_header_height">24dip</item>
+        <item name="*com.android.contacts:list_item_padding_top">
+            @*com.android.contacts:dimen/contact_browser_list_item_padding_top_or_bottom
+        </item>
+        <item name="*com.android.contacts:list_item_padding_right">32dp</item>
+        <item name="*com.android.contacts:list_item_padding_bottom">
+            @*com.android.contacts:dimen/contact_browser_list_item_padding_top_or_bottom
+        </item>
+        <item name="*com.android.contacts:list_item_padding_left">0dp</item>
+        <item name="*com.android.contacts:list_item_gap_between_image_and_text">
+            @*com.android.contacts:dimen/contact_browser_list_item_gap_between_image_and_text
+        </item>
+        <item name="*com.android.contacts:list_item_gap_between_label_and_data">5dip</item>
+        <item name="*com.android.contacts:list_item_presence_icon_margin">4dip</item>
+        <item name="*com.android.contacts:list_item_presence_icon_size">16dip</item>
+        <item name="*com.android.contacts:list_item_photo_size">@*com.android.contacts:dimen/contact_browser_list_item_photo_size</item>
+        <item name="*com.android.contacts:list_item_profile_photo_size">70dip</item>
+        <item name="*com.android.contacts:list_item_prefix_highlight_color">@*com.android.contacts:color/people_app_theme_color</item>
+        <item name="*com.android.contacts:list_item_background_color">@*com.android.contacts:color/list_item_pinned_header_color</item>
+        <item name="*com.android.contacts:list_item_header_text_color">@*com.android.contacts:color/people_app_theme_color</item>
+        <item name="*com.android.contacts:list_item_header_text_size">14sp</item>
+        <item name="*com.android.contacts:list_item_header_height">30dip</item>
+        <item name="*com.android.contacts:list_item_header_text_indent">8dip</item>
+        <item name="*com.android.contacts:contact_browser_list_padding_left">0dip</item>
+        <item name="*com.android.contacts:contact_browser_list_padding_right">0dip</item>
+        <item name="*com.android.contacts:contact_browser_background">@*com.android.contacts:color/background_primary</item>
+        <item name="*com.android.contacts:list_item_text_indent">@*com.android.contacts:dimen/contact_browser_list_item_text_indent</item>
+        <item name="*com.android.contacts:list_item_text_offset_top">-2dp</item>
+        <item name="*com.android.contacts:list_item_avatar_offset_top">-1dp</item>
+        <!-- Favorites -->
+        <item name="*com.android.contacts:favorites_padding_bottom">0dip</item>
+        <!-- Popup menu -->
+        <item name="android:popupMenuStyle">@*com.android.contacts:style/PopupMenuStyle</item>
+    </style>
+
+
+    <style name="LaunchScreenTheme" parent="@*com.android.contacts:Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@*com.android.contacts:drawable/quantum_launchscreen_contacts</item>
+        <!-- Ensure the status bar color matches the background (grey 500) -->
+        <!-- TODO(yaolu): Switch to use quantum_grey if in Google3 -->
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowShowWallpaper">false</item>
+    </style>
+    <style name="PopupMenuStyle" parent="@*android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@*android:color/background_floating_material_dark</item>
+    </style>
+
+    <style name="PopupMenuStyleAppCompat" parent="@*com.android.contacts:Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@*android:color/background_floating_material_dark</item>
+    </style>
+    <style name="EmptyStateTextStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:alpha">0.54</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="Theme.CallSubjectDialogTheme" parent="@*android:style/Theme.Material.Dialog">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <!-- No backgrounds, titles or window float -->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowElevation">0dp</item>
+    </style>
 </resources>
