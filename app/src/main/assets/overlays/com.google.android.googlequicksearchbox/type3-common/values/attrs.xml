@@ -363,6 +363,9 @@
     <attr name="showTitle" format="boolean" />
     <attr name="buttonIconDimen" format="dimension" />
     <attr name="minIntervalSeconds" format="integer" />
+    <attr name="logoSpriteDrawable" format="reference" />
+    <attr name="frameCount" format="integer" />
+    <attr name="durationMillis" format="integer" />
     <attr name="expanded" format="boolean" />
     <attr name="liftOnScroll" format="boolean" />
     <attr name="state_collapsed" format="boolean" />
@@ -569,7 +572,6 @@
         <enum name="end" value="1" />
         <enum name="center" value="0" />
     </attr>
-    <attr name="fabAttached" format="boolean" />
     <attr name="fabCradleMargin" format="dimension" />
     <attr name="fabCradleRoundedCornerRadius" format="dimension" />
     <attr name="fabCradleVerticalOffset" format="dimension" />
@@ -1097,6 +1099,7 @@
     </attr>
     <attr name="headerTitle" format="reference" />
     <attr name="headerMessage" format="reference" />
+    <attr name="headerIcon" format="reference" />
     <attr name="inputEnabled" format="boolean" />
     <attr name="sourceClass">
         <enum name="contact" value="1" />
@@ -1260,6 +1263,7 @@
     <attr name="hideNavigationIcon" format="boolean" />
     <attr name="searchPrefixText" format="string" />
     <attr name="useDrawerArrowDrawable" format="boolean" />
+    <attr name="fadeThroughMenuItems" format="boolean" />
     <attr name="autoShowKeyboard" format="boolean" />
     <attr name="selectionDarkBackground" format="reference|color" />
     <attr name="selectionDarkForeground" format="reference|color" />
@@ -1488,6 +1492,7 @@
     <attr name="gridTextVerticalPadding" format="dimension" />
     <attr name="gridTopPadding" format="dimension" />
     <attr name="gridBottomPadding" format="dimension" />
+    <attr name="snackbarStyle" format="reference" />
     <attr name="snackbarButtonStyle" format="reference" />
     <attr name="maxActionInlineWidth" format="dimension" />
     <attr name="maxSize" format="dimension" />
@@ -1662,6 +1667,16 @@
     <attr name="logoDescription" format="string" />
     <attr name="titleTextColor" format="color" />
     <attr name="subtitleTextColor" format="color" />
+    <attr name="directionMode">
+        <enum name="direction_decrease" value="1" />
+        <enum name="direction_increase" value="0" />
+        <enum name="direction_increase_decrease" value="2" />
+    </attr>
+    <attr name="dimension">
+        <enum name="x" value="0" />
+        <enum name="xy" value="2" />
+        <enum name="y" value="1" />
+    </attr>
     <attr name="textInDuration" format="integer" />
     <attr name="textOutDuration" format="integer" />
     <attr name="paddingStart" format="dimension" />

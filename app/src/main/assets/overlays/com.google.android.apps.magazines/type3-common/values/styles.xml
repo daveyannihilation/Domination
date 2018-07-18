@@ -131,7 +131,7 @@
         <item name="android:editTextStyle">@*com.google.android.apps.magazines:style/NSEditTextStyle</item>
         <item name="*com.google.android.apps.magazines:actionMenuTextAppearance">@*com.google.android.apps.magazines:style/NSMenuTextAppearance</item>
         <item name="*com.google.android.apps.magazines:actionMenuTextColor">@*android:color/white</item>
-        <item name="*com.google.android.apps.magazines:homeAsUpIndicator">@*com.google.android.apps.magazines:drawable/ic_close_wht_24dp</item>
+        <item name="*com.google.android.apps.magazines:homeAsUpIndicator">@*com.google.android.apps.magazines:drawable/quantum_ic_close_vd_theme_24</item>
         <item name="*com.google.android.apps.magazines:colorPrimary">@*com.google.android.apps.magazines:color/app_color_material_dark</item>
         <item name="*com.google.android.apps.magazines:colorControlNormal">@*android:color/white</item>
         <item name="*com.google.android.apps.magazines:colorControlActivated">@*com.google.android.apps.magazines:color/app_color_material_dark</item>
@@ -148,7 +148,7 @@
         <item name="android:paddingStart">@*com.google.android.apps.magazines:dimen/card_inner_content_padding</item>
         <item name="android:paddingEnd">@*com.google.android.apps.magazines:dimen/card_inner_content_padding</item>
         <item name="*com.google.android.apps.magazines:bindText">@*com.google.android.apps.magazines:id/NativeAd_sponsoredBannerText</item>
-        <item name="*com.google.android.apps.magazines:bindBackground">@*com.google.android.apps.magazines:id/NativeAd_sponsoredBannerBackgroundDrawable</item>
+        <item name="*com.google.android.apps.magazines:bindBackground">@*com.google.android.apps.magazines:id/NativeAd_sponsoredBannerBackgroundColorDrawable</item>
         <item name="*com.google.android.apps.magazines:bindVisibility">@*com.google.android.apps.magazines:id/NativeAd_showSponsoredBanner</item>
         <item name="*com.google.android.apps.magazines:customFont">ITALIC_CONDENSED_SANS</item>
     </style>
@@ -242,5 +242,26 @@
         <item name="android:windowBackground">@*com.google.android.apps.magazines:drawable/quantum_launchscreen_google_news</item>
         <item name="android:windowShowWallpaper">false</item>
         <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+
+    <style name="LetterIcon">
+        <item name="android:textSize">@*com.google.android.apps.magazines:dimen/letter_icon_text_size</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:contentDescription">@null</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:importantForAccessibility">no</item>
+        <item name="*com.google.android.apps.magazines:bind__editModeText">S</item>
+    </style>
+    <style name="Widget.GoogleMaterial.ProductLockupView" parent="@*android:style/Widget">
+        <item name="*com.google.android.apps.magazines:productNameTextColor">@*android:color/white</item>
+        <item name="*com.google.android.apps.magazines:logoColor">standard</item>
+        <item name="*com.google.android.apps.magazines:lockupSizingMode">auto</item>
+    </style>
+    <style name="Widget.GoogleMaterial.ProductLockupView.Dark" parent="@*com.google.android.apps.magazines:style/Widget.GoogleMaterial.ProductLockupView">
+        <item name="*com.google.android.apps.magazines:productNameTextColor">@*android:color/white</item>
+        <item name="*com.google.android.apps.magazines:logoColor">standard</item>
     </style>
 </resources>
