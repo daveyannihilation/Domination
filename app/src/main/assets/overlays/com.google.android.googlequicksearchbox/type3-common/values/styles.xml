@@ -65,11 +65,11 @@
         <item name="android:textColor">#ffdddddd</item>
     </style>
     <style name="SearchPlate">
-        <item name="android:background">@*android:color/background_floating_material_dark</item>
+        <item name="android:background">@*com.google.android.googlequicksearchbox:drawable/search_bg_rr_shadow</item>
         <item name="android:backgroundTint">@null</item>
     </style>
     <style name="SearchPlate.SearchBox" parent="@*android:style/Widget.EditText">
-        <item name="android:background">@*android:color/background_floating_material_dark</item>
+        <item name="android:background">@*android:color/transparent</item>
         <item name="android:backgroundTint">@null</item>
     </style>
 
@@ -223,7 +223,7 @@
 
     <style name="KeepListViewDropdownStyle" parent="@*android:style/Widget.ListView.DropDown">
         <item name="android:background">@*android:color/background_dark</item>
-        <item name="android:listSelector">?android:listChoiceBackgroundIndicator</item>
+        <item name="android:listSelector">?*android:listChoiceBackgroundIndicator</item>
     </style>
     <style name="Theme.OptIn.Light" parent="@*com.google.android.googlequicksearchbox:style/Theme.OptIn.NoFullBleed">
         <item name="*com.google.android.googlequicksearchbox:optinHeaderBackgroundColor">@*android:color/primary_material_dark</item>
@@ -498,7 +498,7 @@
     </style>
 
     <style name="TextAppearance.ShortcutCardDescriptionLabel" parent="@*android:style/TextAppearance">
-        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textAppearance">?*android:textAppearanceSmall</item>
         <item name="android:textSize">14.0sp</item>
         <item name="android:typeface">sans</item>
         <item name="android:textColor">#ffdddddd</item>
@@ -547,18 +547,18 @@
         <item name="android:shadowRadius">8.0</item>
     </style>
     <style name="Theme.Velvet" parent="@*com.google.android.googlequicksearchbox:style/Theme.Gsa">
-        <item name="android:windowBackground">@*com.google.android.googlequicksearchbox:color/activity_background</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowDisablePreview">true</item>
         <item name="android:windowSoftInputMode">adjustPan|stateUnchanged</item>
         <item name="android:windowActionBar">false</item>
-        <item name="android:statusBarColor">@*com.google.android.googlequicksearchbox:color/status_bar_background</item>
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
         <item name="*com.google.android.googlequicksearchbox:qpCardElevation">@*com.google.android.googlequicksearchbox:dimen/card_elevation</item>
         <item name="android:shadowColor">@*android:color/white</item>
         <item name="android:shadowDx">2.0</item>
         <item name="android:shadowDy">2.0</item>
         <item name="android:shadowRadius">8.0</item>
-<!--    <item name="android:backgroundTint">@*android:color/background_dark</item>-->
+        <item name="android:backgroundTint">@*android:color/background_dark</item>
     </style>
 
 
@@ -735,7 +735,7 @@
         <item name="android:backgroundTint">@null</item>
     </style>
     <style name="Theme.Velvet.Card" parent="@*com.google.android.googlequicksearchbox:style/Theme.Velvet">
-        <item name="cardBackground">@*com.google.android.googlequicksearchbox:drawable/card_background_c8_b4</item>
+        <item name="*com.google.android.googlequicksearchbox:cardBackground">@*com.google.android.googlequicksearchbox:drawable/card_background_c8_b4</item>
         <item name="android:backgroundTint">@null</item>
     </style>
 
@@ -914,4 +914,27 @@
         <item name="android:textColor">#ffffffff</item>
         <item name="android:fontFamily">sans-serif</item>
     </style>
+
+
+
+    <style name="OverflowMenuTheme" parent="@*android:style/Theme.Holo">
+        <item name="android:background">@*android:color/background_floating_material_dark</item>
+    </style>
+    <style name="back_of_card_dark_theme">
+        <item name="*com.google.android.googlequicksearchbox:backOfCardCloseFontColor">#ffffffff</item>
+        <item name="*com.google.android.googlequicksearchbox:backOfCardHeaderBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.googlequicksearchbox:backOfCardLineColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.googlequicksearchbox:cardActionIconTint">#ffffffff</item>
+        <item name="*com.google.android.googlequicksearchbox:cardActionLabelColor">#ffffffff</item>
+        <item name="android:backgroundTint">@*android:color/background_floating_material_dark</item>
+    </style>
+    <style name="back_of_card_light_theme">
+        <item name="*com.google.android.googlequicksearchbox:backOfCardCloseFontColor">#ffffffff</item>
+        <item name="*com.google.android.googlequicksearchbox:backOfCardHeaderBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.googlequicksearchbox:backOfCardLineColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.googlequicksearchbox:cardActionIconTint">#ffffffff</item>
+        <item name="*com.google.android.googlequicksearchbox:cardActionLabelColor">#ffffffff</item>
+        <item name="android:backgroundTint">@*android:color/background_floating_material_dark</item>
+    </style>
+
 </resources>

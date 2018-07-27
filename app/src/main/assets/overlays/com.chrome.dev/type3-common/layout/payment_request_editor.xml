@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout android:background="@*com.chrome.dev:color/background_material_dark"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:chrome="http://schemas.android.com/apk/res-auto">
-    <org.chromium.chrome.browser.widget.prefeditor.EditorDialogToolbar android:id="@*com.chrome.dev:id/action_bar" android:background="@*com.chrome.dev:color/dark_action_bar_color" android:layout_width="fill_parent" android:layout_height="@*com.chrome.dev:dimen/abc_action_bar_default_height_material" android:layout_alignParentTop="true" android:layout_alignParentStart="true" android:layout_alignParentEnd="true" />
+    <org.chromium.chrome.browser.widget.prefeditor.EditorDialogToolbar android:id="@*com.chrome.dev:id/action_bar" android:layout_width="fill_parent" android:layout_height="@*com.chrome.dev:dimen/abc_action_bar_default_height_material" android:layout_alignParentTop="true" android:layout_alignParentStart="true" android:layout_alignParentEnd="true" />
+    <include android:layout="@*com.chrome.dev:layout/preferences_action_bar_shadow" />
     <org.chromium.chrome.browser.widget.FadingEdgeScrollView android:id="@*com.chrome.dev:id/scroll_view" android:backgroundTint="@*com.chrome.dev:color/background_material_dark" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@*com.chrome.dev:id/action_bar" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" android:layout_alignParentEnd="true">
         <LinearLayout android:orientation="vertical" android:id="@*com.chrome.dev:id/contents" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@*com.chrome.dev:dimen/pref_autofill_content_spacing" android:paddingEnd="@*com.chrome.dev:dimen/pref_autofill_content_spacing" />
     </org.chromium.chrome.browser.widget.FadingEdgeScrollView>
-    <org.chromium.chrome.browser.widget.FadingShadowView android:id="@*com.chrome.dev:id/shadow" android:layout_width="fill_parent" android:layout_height="@*com.chrome.dev:dimen/action_bar_shadow_height" android:layout_below="@*com.chrome.dev:id/action_bar" android:layout_alignParentStart="true" android:layout_alignParentEnd="true" />
 </RelativeLayout>

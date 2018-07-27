@@ -7,11 +7,16 @@
     <attr name="assistant_setting_payments_list_divider_right_padding" format="dimension" />
     <attr name="assistant_setting_payments_list_item_left_right_padding" format="dimension" />
     <attr name="assistant_setting_payments_setup_template_top_padding" format="dimension" />
+    <attr name="backOfCardCloseFontColor" format="color" />
+    <attr name="backOfCardHeaderBackgroundColor" format="color" />
+    <attr name="backOfCardLineColor" format="color" />
     <attr name="bottomAppBarStyle" format="reference" />
     <attr name="bottomNavigationStyle" format="reference" />
     <attr name="bottomSheetDialogTheme" format="reference" />
     <attr name="bottomSheetStyle" format="reference" />
     <attr name="buttonFooterLayout" format="reference" />
+    <attr name="cardActionIconTint" format="color" />
+    <attr name="cardActionLabelColor" format="color" />
     <attr name="cardBackground" format="reference|color" />
     <attr name="cardViewStyle" format="reference" />
     <attr name="carouselImagePaddingLeft" format="dimension" />
@@ -38,6 +43,11 @@
     <attr name="edgeGlowSize" format="integer" />
     <attr name="enabledBackgroundColor" format="reference|color" />
     <attr name="fadeImageIfLoadedFromCache" format="boolean" />
+    <attr name="fadingMode">
+        <enum name="fade_in" value="0" />
+        <enum name="fade_out" value="1" />
+        <enum name="fade_out_in" value="2" />
+    </attr>
     <attr name="fastforward_increment" format="integer" />
     <attr name="floatingActionButtonStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="forceFullHeight" format="boolean" />
@@ -546,6 +556,7 @@
     <attr name="lowerUnitValue" format="float" />
     <attr name="upperUnitValue" format="float" />
     <attr name="unitStep" format="float" />
+    <attr name="arcStartDegree" format="integer" />
     <attr name="arcTrackWidth" format="dimension" />
     <attr name="arcTrackHighlightWidth" format="dimension" />
     <attr name="arcTrackColor" format="color" />
@@ -644,14 +655,17 @@
     <attr name="chipCornerRadius" format="dimension" />
     <attr name="chipStrokeColor" format="color" />
     <attr name="chipStrokeWidth" format="dimension" />
+    <attr name="chipIconVisible" format="boolean" />
     <attr name="chipIconEnabled" format="boolean" />
     <attr name="chipIcon" format="reference" />
     <attr name="chipIconTint" format="color" />
     <attr name="chipIconSize" format="dimension" />
+    <attr name="closeIconVisible" format="boolean" />
     <attr name="closeIconEnabled" format="boolean" />
     <attr name="closeIcon" format="reference" />
     <attr name="closeIconTint" format="color" />
     <attr name="closeIconSize" format="dimension" />
+    <attr name="checkedIconVisible" format="boolean" />
     <attr name="checkedIconEnabled" format="boolean" />
     <attr name="checkedIcon" format="reference" />
     <attr name="chipStartPadding" format="dimension" />
@@ -727,6 +741,8 @@
         <enum name="src_in" value="5" />
         <enum name="src_over" value="3" />
     </attr>
+    <attr name="title" format="string" />
+    <attr name="summary" format="string" />
     <attr name="keylines" format="reference" />
     <attr name="statusBarBackground" format="reference|color" />
     <attr name="layout_behavior" format="string" />
@@ -822,11 +838,6 @@
     <attr name="hasDefaultImage" format="boolean" />
     <attr name="key" format="string" />
     <attr name="value" format="string" />
-    <attr name="fadingMode">
-        <enum name="fade_in" value="0" />
-        <enum name="fade_out" value="1" />
-        <enum name="fade_out_in" value="2" />
-    </attr>
     <attr name="className" format="string" />
     <attr name="packageName" format="string" />
     <attr name="container" format="string" />
@@ -835,7 +846,6 @@
     <attr name="y" format="string" />
     <attr name="spanX" format="string" />
     <attr name="spanY" format="string" />
-    <attr name="title" format="string" />
     <attr name="uri" format="string" />
     <attr name="paramName" format="string" />
     <attr name="paramValue" format="string" />
@@ -1131,6 +1141,7 @@
         <enum name="none" value="0" />
         <enum name="actionAndCancelButtons" value="2" />
         <enum name="actionButton" value="1" />
+        <enum name="cancelButton" value="4" />
         <enum name="progressBar" value="3" />
     </attr>
     <attr name="actionText" format="reference" />
@@ -1201,8 +1212,6 @@
         <flag name="textStart" value="0x00000002" />
     </attr>
     <attr name="iconTint" format="color" />
-    <attr name="additionalPaddingStartForIcon" format="dimension" />
-    <attr name="additionalPaddingEndForIcon" format="dimension" />
     <attr name="cornerRadius" format="dimension" />
     <attr name="alphabeticModifiers">
         <flag name="ALT" value="0x00000002" />
@@ -1328,7 +1337,6 @@
     <attr name="stylePlaybackPanelSpeedSelectorContainer" format="reference" />
     <attr name="overlapAnchor" format="boolean" />
     <attr name="state_above_anchor" format="boolean" />
-    <attr name="summary" format="string" />
     <attr name="order" format="integer" />
     <attr name="fragment" format="string" />
     <attr name="widgetLayout" format="reference" />
@@ -1391,6 +1399,8 @@
         <enum name="signIn" value="1" />
         <enum name="waa" value="2" />
     </attr>
+    <attr name="appearAnimator" format="reference" />
+    <attr name="disappearAnimator" format="reference" />
     <attr name="shadowAlpha" format="float" />
     <attr name="rating" format="float" />
     <attr name="foregroundColor" format="color" />
@@ -1529,10 +1539,6 @@
     <attr name="suwIllustrationImage" format="reference|color" />
     <attr name="suwStatusBarBackground" format="reference|color" />
     <attr name="suwContainer" format="reference" />
-    <attr name="edgeSwipeWidth" format="dimension" />
-    <attr name="edgeSwipeThreshold" format="dimension" />
-    <attr name="edgeSwipeDismissThreshold" format="dimension" />
-    <attr name="edgeSwipeTranslationX" format="dimension" />
     <attr name="thumbTint" format="color" />
     <attr name="thumbTintMode">
         <enum name="add" value="16" />
