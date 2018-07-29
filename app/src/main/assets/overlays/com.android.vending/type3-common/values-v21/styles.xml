@@ -50,19 +50,7 @@
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabText.Inverse" parent="@*android:style/Widget.Material.ActionBar.TabText" />
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabView" parent="@*android:style/Widget.Material.ActionBar.TabView" />
     <style name="Base.Widget.AppCompat.Light.PopupMenu" parent="@*android:style/Widget.Material.PopupMenu" />
-    <style name="SetupWizardTheme.Light" parent="@*android:style/Theme.Material.NoActionBar">
-        <item name="android:textColorSecondary">#ffdddddd</item>
-        <item name="android:colorAccent">#ff1976d2</item>
-        <item name="android:statusBarColor">@*android:color/transparent</item>
-        <item name="android:navigationBarColor">@*android:color/transparent</item>
-        <item name="*com.android.vending:uicDelegateToSupportLibAlertDialog">false</item>
-        <item name="*com.android.vending:setup_wizard_background_color">@*android:color/background_dark</item>
-        <item name="*com.android.vending:setup_wizard_primary_text_color">#ffffffff</item>
-        <item name="*com.android.vending:setup_wizard_row_divider">#00000000</item>
-        <item name="*com.android.vending:setup_wizard_secondary_text_color">#ffdddddd</item>
-        <item name="*com.android.vending:setup_wizard_section_title_text_color">#ffffffff</item>
-        <item name="*com.android.vending:setup_wizard_title_text_color">#ffffffff</item>
-    </style>
+
 
 
     <style name="Platform.V21.AppCompat.Light" parent="@*android:style/Theme.Material.NoActionBar">
@@ -78,20 +66,7 @@
         <item name="android:colorAccent">@*android:color/accent_material_dark</item>
         <item name="*com.android.vending:uicDelegateToSupportLibAlertDialog">true</item>
     </style>
-    <style name="Play_MyApps_ActionButton" parent="@*com.android.vending:style/PlayMediumPlainText">
-        <item name="android:textSize">@*com.android.vending:dimen/play_price_small_size</item>
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:gravity">center</item>
-        <item name="android:layout_margin">@*com.android.vending:dimen/play_card_myapps_inset_margin</item>
-        <item name="android:minWidth">@*com.android.vending:dimen/play_card_myapps_action_button_width_min</item>
-        <item name="android:minHeight">@*com.android.vending:dimen/play_card_myapps_action_button_height_min</item>
-        <item name="android:layout_weight">1.0</item>
-        <item name="android:elevation">0.0dip</item>
-        <item name="android:stateListAnimator">@null</item>
-        <item name="*com.android.vending:action_xpadding">12.0dip</item>
-        <item name="*com.android.vending:action_top_padding">0.0dip</item>
-        <item name="*com.android.vending:action_bottom_padding">0.0dip</item>
-    </style>
+
     <style name="Theme.InstrumentManager.Light" parent="@*com.android.vending:style/Theme.Common.InstrumentManager.Light">
         <item name="*com.android.vending:imProgressBarTopMargin">-5.0dip</item>
         <item name="*com.android.vending:uicCardLogoGridToggleButtonStartMargin">-8.0dip</item>
@@ -106,4 +81,24 @@
 
 
     <style name="GvrDialogTheme" parent="@*android:style/Theme.Material.Dialog" />
+
+
+    <style name="BasicActionButton" parent="@*com.android.vending:style/PlayMediumPlainText">
+        <item name="android:textSize">@*com.android.vending:dimen/play_price_small_size</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:elevation">0.0dip</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="*com.android.vending:action_bottom_padding">0.0dip</item>
+        <item name="*com.android.vending:action_top_padding">0.0dip</item>
+        <item name="*com.android.vending:action_xpadding">12.0dip</item>
+    </style>
+    <style name="PackageWarning.AlertDialog.PositiveButton" parent="@*com.android.vending:style/Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+        <item name="android:paddingStart">16.0dip</item>
+        <item name="android:paddingEnd">16.0dip</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
 </resources>

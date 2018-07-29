@@ -159,10 +159,7 @@
         <item name="android:gravity">center</item>
     </style>
 
-    <style name="PlayMediumBoldText" parent="@*com.android.vending:style/PlayGridBoldText" />
-    <style name="PlayGridBoldText">
-        <item name="android:textStyle">bold</item>
-    </style>
+
     <style name="HighlightBannerOverlaySubtitle" parent="@*com.android.vending:style/PlayPlainText">
         <item name="android:textSize">@*com.android.vending:dimen/play_cluster_header_subtitle_size</item>
         <item name="android:textStyle">normal</item>
@@ -272,15 +269,9 @@
     <style name="GiftEmailTitleText">
         <item name="android:textSize">@*com.android.vending:dimen/play_purchase_title_size</item>
         <item name="android:textColor">#ffffffff</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
     </style>
-    <style name="PECardText">
-        <item name="android:textSize">14.0sp</item>
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:ellipsize">end</item>
-        <item name="android:gravity">start|center</item>
-        <item name="android:layout_marginLeft">16.0dip</item>
-        <item name="android:layout_marginRight">16.0dip</item>
-    </style>
+
     <style name="PlayAdLabelBaseline" parent="@*com.android.vending:style/PlayMediumPlainText">
         <item name="android:textColor">#ffffffff</item>
         <item name="android:background">@*com.android.vending:drawable/play_ad_label</item>
@@ -354,18 +345,7 @@
         <item name="*com.android.vending:action_top_padding">7.0dip</item>
         <item name="*com.android.vending:action_bottom_padding">8.0dip</item>
     </style>
-    <style name="Play_MyApps_ActionButton" parent="@*com.android.vending:style/PlayMediumPlainText">
-        <item name="android:textSize">@*com.android.vending:dimen/play_price_small_size</item>
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:gravity">center</item>
-        <item name="android:layout_margin">@*com.android.vending:dimen/play_card_myapps_inset_margin</item>
-        <item name="android:minWidth">@*com.android.vending:dimen/play_card_myapps_action_button_width_min</item>
-        <item name="android:minHeight">@*com.android.vending:dimen/play_card_myapps_action_button_height_min</item>
-        <item name="android:layout_weight">1.0</item>
-        <item name="*com.android.vending:action_xpadding">12.0dip</item>
-        <item name="*com.android.vending:action_top_padding">0.0dip</item>
-        <item name="*com.android.vending:action_bottom_padding">0.0dip</item>
-    </style>
+
     <style name="TagLinksRectangleTitle" parent="@*com.android.vending:style/PlayPlainText">
         <item name="android:textSize">16.0sp</item>
         <item name="android:textColor">#ffffffff</item>
@@ -385,7 +365,7 @@
         <item name="android:paddingLeft">16.0dip</item>
         <item name="android:paddingRight">16.0dip</item>
         <item name="android:minWidth">88.0dip</item>
-        <item name="android:minHeight">36.0dip</item>
+        <item name="android:minHeight">48.0dip</item>
         <item name="*com.android.vending:playAccessibilityClassOverride">android.widget.Button</item>
     </style>
     <style name="WarmWelcomeV2CardDescription" parent="@*com.android.vending:style/PlayEduCardDescription">
@@ -423,6 +403,7 @@
         <item name="android:textColor">#ffdddddd</item>
         <item name="android:textColorLink">#ffdddddd</item>
         <item name="android:lineSpacingMultiplier">1.1</item>
+        <item name="android:fontFamily">sans-serif</item>
     </style>
     <style name="PEText.CallToAction" parent="@*com.android.vending:style/PEText">
         <item name="android:textSize">@*com.android.vending:dimen/pe_small_text_size</item>
@@ -442,18 +423,9 @@
         <item name="android:textStyle">normal</item>
         <item name="android:textColor">#ffffffff</item>
         <item name="android:lineSpacingMultiplier">1.1</item>
+        <item name="android:fontFamily">sans-serif-light</item>
     </style>
-    <style name="PETrackListItem">
-        <item name="android:textSize">@*com.android.vending:dimen/pe_medium_text_size</item>
-        <item name="android:textStyle">normal</item>
-        <item name="android:textColor">#ffdddddd</item>
-        <item name="android:gravity">center_vertical</item>
-    </style>
-    <style name="PETrackListItem.TrackName" parent="@*com.android.vending:style/PETrackListItem">
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:ellipsize">end</item>
-        <item name="android:maxLines">2</item>
-    </style>
+
     <style name="DetailsSecondaryActionButtonIcon">
         <item name="android:gravity">center</item>
         <item name="android:layout_width">wrap_content</item>
@@ -499,5 +471,70 @@
     <style name="Theme.QuickInstallProgress.AppNameText" parent="@*android:style/TextAppearance.Material.Subhead">
         <item name="android:textSize">18.0sp</item>
         <item name="android:textColor">#ffffffff</item>
+    </style>
+
+
+    <style name="BasicActionButton" parent="@*com.android.vending:style/PlayMediumPlainText">
+        <item name="android:textSize">@*com.android.vending:dimen/play_price_small_size</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="*com.android.vending:action_bottom_padding">0.0dip</item>
+        <item name="*com.android.vending:action_top_padding">0.0dip</item>
+        <item name="*com.android.vending:action_xpadding">12.0dip</item>
+    </style>
+    <style name="InstantAppsSwitchCompat">
+        <item name="*com.android.vending:colorControlActivated">#ff388e3c</item>
+        <item name="*com.android.vending:colorSwitchThumbNormal">#ff787878</item>
+    </style>
+    <style name="NotificationCenterCard" parent="@*com.android.vending:style/NotificationCenterCardDeprecated">
+        <item name="android:background">@*android:color/background_floating_material_dark</item>
+        <item name="android:minHeight">@*com.android.vending:dimen/notification_center_card_minimum_height</item>
+    </style>
+    <style name="PaymentMethodsPageRowBase">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@*android:color/background_dark</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">@*com.android.vending:drawable/play_highlight_overlay_light</item>
+        <item name="android:minHeight">@*com.android.vending:dimen/payment_methods_row_min_height</item>
+    </style>
+    <style name="PopupRedirectActivityTheme.Toolbar.SubtitleTextStyle.BottomSheet" parent="@*com.android.vending:style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="PopupRedirectActivityTheme.Toolbar.TitleTextStyle.BottomSheet" parent="@*com.android.vending:style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="PopupRedirectActivityThemeBottomSheet" parent="@*com.android.vending:style/PopupRedirectActivityTheme.BottomSheet">
+        <item name="*com.android.vending:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.android.vending:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+    </style>
+    <style name="RetailModeButton" parent="@*com.android.vending:style/Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">@*com.android.vending:dimen/retail_mode_body_text_size</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:background">@*com.android.vending:drawable/retail_mode_button</item>
+        <item name="android:layout_marginBottom">@*com.android.vending:dimen/retail_mode_button_bottom_margin</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">google-sans-medium</item>
+    </style>
+    <style name="RetailModeText">
+        <item name="android:textSize">@*com.android.vending:dimen/retail_mode_body_text_size</item>
+        <item name="android:textColor">#ffdddddd</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:lineSpacingMultiplier">@*com.android.vending:dimen/retail_mode_text_line_spacing</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="RetailModeTitleText">
+        <item name="android:textSize">@*com.android.vending:dimen/retail_mode_title_text_size</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">@*com.android.vending:dimen/retail_mode_title_bottom_margin</item>
+        <item name="android:lineSpacingMultiplier">@*com.android.vending:dimen/retail_mode_title_line_spacing</item>
+        <item name="android:fontFamily">google-sans-medium</item>
+    </style>
+    <style name="SubscriptionPromotionView">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@*android:color/background_dark</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
 </resources>

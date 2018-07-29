@@ -1,29 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="CalculatorTheme" parent="@*android:style/Theme.DeviceDefault.Light">
-        <item name="android:colorForeground">#ffffffff</item>
-        <item name="android:colorBackground">@*android:color/background_floating_material_dark</item>
-        <item name="android:textColorPrimary">#ffffffff</item>
-        <item name="android:textColorSecondary">#ffdddddd</item>
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:popupBackground">@*android:color/background_floating_material_dark</item>
-    </style>
-    <style name="Theme" parent="@*android:style/Theme.DeviceDefault.Light">
-        <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
-        <item name="android:colorPrimary">@*com.google.android.calculator:color/calculator_primary_color</item>
-        <item name="android:colorAccent">@*com.google.android.calculator:color/calculator_accent_color</item>
-        <item name="android:statusBarColor">@*com.google.android.calculator:color/calculator_statusbar_color</item>
-    </style>
     <style name="DisplayTextStyle" parent="@*android:style/Widget.Material.TextView">
         <item name="android:gravity">end|bottom|center</item>
-        <item name="android:background">@*android:color/transparent</item>
-        <item name="android:cursorVisible">false</item>
         <item name="android:includeFontPadding">false</item>
+        <item name="android:inputType">textNoSuggestions</item>
+        <item name="android:textIsSelectable">true</item>
         <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:textAlignment">viewEnd</item>
     </style>
-
-
     <style name="PadButtonStyle" parent="@*android:style/Widget.Material.Button.Borderless">
         <item name="android:textColor">#ffffffff</item>
         <item name="android:gravity">center</item>
@@ -40,7 +24,12 @@
         <item name="*com.google.android.calculator:layout_columnWeight">1.0</item>
         <item name="*com.google.android.calculator:layout_gravity">fill</item>
     </style>
-
+    <style name="Theme" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
+        <item name="android:colorPrimary">@*com.google.android.calculator:color/calculator_primary_color</item>
+        <item name="android:colorAccent">@*com.google.android.calculator:color/calculator_accent_color</item>
+        <item name="android:statusBarColor">@*com.google.android.calculator:color/calculator_statusbar_color</item>
+    </style>
     <style name="ThemeOverlay.Popup" parent="@*android:style/ThemeOverlay.Material">
         <item name="android:textDirection">locale</item>
     </style>

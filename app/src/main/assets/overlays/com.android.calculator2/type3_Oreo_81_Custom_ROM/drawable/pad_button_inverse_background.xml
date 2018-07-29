@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@*android:color/ripple_material_dark"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@*android:id/mask">
+        <shape android:shape="rectangle">
+            <corners android:radius="4.0dip" />
+            <solid android:color="@*android:color/button_material_dark" />
+        </shape>
+    </item>
+    <item>
+        <selector android:enterFadeDuration="@*android:integer/config_longAnimTime" android:exitFadeDuration="@*android:integer/config_longAnimTime">
+            <item android:state_selected="true">
+                <shape android:shape="rectangle">
+                    <corners android:radius="4.0dip" />
+                    <solid android:color="@*android:color/ripple_material_dark" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>
