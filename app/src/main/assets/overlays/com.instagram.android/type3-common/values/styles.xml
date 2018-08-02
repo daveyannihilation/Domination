@@ -69,6 +69,8 @@
         <item name="*com.instagram.android:directRoundedBubbleBackground">@*com.instagram.android:drawable/rounded_bubble_background_gradient_blue</item>
         <item name="*com.instagram.android:directRoundedBubbleSelector">@*com.instagram.android:drawable/rounded_bubble_background_blue_selector</item>
         <item name="*com.instagram.android:directTextColorSelector">@*com.instagram.android:drawable/blue_text_color_selector</item>
+        <item name="*com.instagram.android:directVideoCallActiveDrawable">@*com.instagram.android:drawable/video_call_active</item>
+        <item name="*com.instagram.android:directVideoCallActivePulseColor">@*com.instagram.android:color/blue_5_10_transparent</item>
         <item name="*com.instagram.android:directVisualMessageThumbnailMask">@*com.instagram.android:drawable/unseen_permanent_visual_thumbnail_mask</item>
         <item name="*com.instagram.android:directVisualMessageThumbnailUnseenOverlay">@*com.instagram.android:drawable/direct_visual_message_thumbnail_overlay_unseen_received</item>
         <item name="*com.instagram.android:dividerColor">@*android:color/transparent</item>
@@ -88,6 +90,10 @@
         <item name="*com.instagram.android:quickCaptureControllerShadowHeight">70.0dip</item>
         <item name="*com.instagram.android:quickCaptureControllerShutterButtonSize">80.0dip</item>
         <item name="*com.instagram.android:quickCaptureControllerTopShadowDrawable">@*com.instagram.android:drawable/reel_viewer_shadow_top</item>
+        <item name="*com.instagram.android:reelAvatarBottomPadding">2.0dip</item>
+        <item name="*com.instagram.android:reelAvatarTopPadding">@*com.instagram.android:dimen/tray_avatar_padding_top</item>
+        <item name="*com.instagram.android:reelItemBottomPadding">@*com.instagram.android:dimen/tray_item_padding_bottom</item>
+        <item name="*com.instagram.android:reelItemLabelViewTextSize">@*com.instagram.android:dimen/font_small</item>
         <item name="*com.instagram.android:segmentedUnderlineWidth">@*com.instagram.android:dimen/segmented_underline_width_whiteout</item>
         <item name="*com.instagram.android:textColorBoldLink">@*android:color/white</item>
         <item name="*com.instagram.android:textColorHyperlink">@*android:color/accent_material_dark</item>
@@ -141,17 +147,7 @@
         <item name="*com.instagram.android:notificationNub">@*com.instagram.android:drawable/notification_tooltip_nub_whiteout</item>
         <item name="*com.instagram.android:notificationTooltip">@*com.instagram.android:drawable/notification_tooltip_whiteout</item>
     </style>
-    <style name="CustomToast.Text" parent="@*android:style/Widget.TextView">
-        <item name="android:textSize">12.0sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:ellipsize">end</item>
-        <item name="android:padding">12.0dip</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:singleLine">true</item>
-        <item name="android:drawablePadding">6.0dip</item>
-    </style>
+
     <style name="DirectTapToRevealTextStyle" parent="@*com.instagram.android:style/ShadowTextViewStyle">
         <item name="android:textSize">16.0sp</item>
         <item name="android:textColor">@*android:color/white</item>
@@ -235,19 +231,7 @@
         <item name="android:textColor">@*com.instagram.android:drawable/secondary_button_inverse_textcolor_selector</item>
         <item name="android:background">@*android:color/button_material_dark</item>
     </style>
-    <style name="IgSettingsRadioButton">
-        <item name="android:textSize">@*com.instagram.android:dimen/font_medium</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:layout_gravity">center_vertical</item>
-        <item name="android:background">@*com.instagram.android:drawable/bg_simple_row</item>
-        <item name="android:paddingLeft">28.0dip</item>
-        <item name="android:paddingRight">28.0dip</item>
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:button">@null</item>
-        <item name="android:minHeight">@*com.instagram.android:dimen/row_height_small</item>
-    </style>
+
     <style name="IgTextboxStyle" parent="@*android:style/Widget.CompoundButton.CheckBox">
         <item name="android:textColor">@*android:color/white</item>
     </style>

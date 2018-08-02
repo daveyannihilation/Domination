@@ -281,7 +281,6 @@
         <enum name="center" value="0" />
         <enum name="end" value="1" />
     </attr>
-    <attr name="fabAttached" format="boolean" />
     <attr name="fabCradleMargin" format="dimension" />
     <attr name="fabCradleRoundedCornerRadius" format="dimension" />
     <attr name="fabCradleVerticalOffset" format="dimension" />
@@ -326,6 +325,7 @@
     <attr name="chipStrokeWidth" format="dimension" />
     <attr name="chipIconEnabled" format="boolean" />
     <attr name="chipIcon" format="reference" />
+    <attr name="chipIconTint" format="color" />
     <attr name="chipIconSize" format="dimension" />
     <attr name="closeIconEnabled" format="boolean" />
     <attr name="closeIcon" format="reference" />
@@ -641,6 +641,10 @@
     <attr name="latLngBoundsNorthEastLongitude" format="float" />
     <attr name="iconSize" format="dimension" />
     <attr name="iconPadding" format="dimension" />
+    <attr name="iconGravity">
+        <flag name="start" value="0x00000001" />
+        <flag name="textStart" value="0x00000002" />
+    </attr>
     <attr name="iconTint" format="color" />
     <attr name="additionalPaddingStartForIcon" format="dimension" />
     <attr name="additionalPaddingEndForIcon" format="dimension" />
@@ -832,16 +836,11 @@
         <enum name="filled" value="1" />
         <enum name="outline" value="2" />
     </attr>
-    <attr name="boxPaddingStart" format="dimension" />
     <attr name="boxCollapsedPaddingTop" format="dimension" />
-    <attr name="boxExpandedPaddingTop" format="dimension" />
-    <attr name="boxPaddingEnd" format="dimension" />
-    <attr name="boxCollapsedPaddingBottom" format="dimension" />
     <attr name="boxCornerRadiusTopStart" format="dimension" />
     <attr name="boxCornerRadiusTopEnd" format="dimension" />
     <attr name="boxCornerRadiusBottomStart" format="dimension" />
     <attr name="boxCornerRadiusBottomEnd" format="dimension" />
-    <attr name="boxExpandedPaddingBottom" format="dimension" />
     <attr name="boxStrokeColor" format="color" />
     <attr name="boxBackgroundColor" format="color" />
     <attr name="boxStrokeWidth" format="dimension" />
@@ -851,6 +850,7 @@
     <attr name="dialpad_background" format="color" />
     <attr name="dialpad_elevation" format="dimension" />
     <attr name="enforceMaterialTheme" format="boolean" />
+    <attr name="enforceTextAppearance" format="boolean" />
     <attr name="titleTextAppearance" format="reference" />
     <attr name="subtitleTextAppearance" format="reference" />
     <attr name="titleMargin" format="dimension" />
