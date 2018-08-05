@@ -215,10 +215,10 @@
     <style name="DiscoveryRatingBar">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="*com.android.vending:star_height">@*com.android.vending:dimen/discovery_badge_rating_bar_height</item>
-        <item name="*com.android.vending:star_color">@*android:color/white</item>
-        <item name="*com.android.vending:star_bg_color">@*android:color/background_floating_material_dark</item>
         <item name="*com.android.vending:gap">@*com.android.vending:dimen/discovery_badge_rating_bar_star_gap</item>
+        <item name="*com.android.vending:star_bg_color">@*android:color/ripple_material_dark</item>
+        <item name="*com.android.vending:star_color">@*android:color/white</item>
+        <item name="*com.android.vending:star_height">@*com.android.vending:dimen/discovery_badge_rating_bar_height</item>
     </style>
     <style name="FamilyEducationCardAction" parent="@*com.android.vending:style/PlayCardAction">
         <item name="android:textColor">#ffffffff</item>
@@ -536,5 +536,100 @@
         <item name="android:background">@*android:color/background_dark</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="PlayProtectAssistCard">
+        <item name="android:background">@*android:color/background_floating_material_dark</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="SubscriptionCluster">
+        <item name="android:background">@*android:color/background_dark</item>
+        <item name="android:paddingLeft">@*com.android.vending:dimen/subscription_cluster_horizontal_padding</item>
+        <item name="android:paddingTop">@*com.android.vending:dimen/subscription_cluster_vertical_padding</item>
+        <item name="android:paddingRight">@*com.android.vending:dimen/subscription_cluster_horizontal_padding</item>
+        <item name="android:paddingBottom">@*com.android.vending:dimen/subscription_cluster_vertical_padding</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:soundEffectsEnabled">false</item>
+        <item name="*com.android.vending:playCardBackgroundColor">@*android:color/background_floating_material_dark</item>
+    </style>
+    <style name="SubscriptionClusterDeprecated">
+        <item name="android:padding">@*com.android.vending:dimen/subscription_cluster_padding</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:soundEffectsEnabled">false</item>
+        <item name="*com.android.vending:playCardBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.android.vending:playCardElevation">@*com.android.vending:dimen/play_card_default_elevation</item>
+    </style>
+    <style name="LeftNavRedesignWhiteTheme" parent="@*com.android.vending:style/Theme.AppCompat">
+        <item name="android:textColorPrimary">@*com.android.vending:color/play_primary_settings_set</item>
+        <item name="android:textAppearanceMedium">@*com.android.vending:style/DarkerMedium</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:textColorTertiary">@*com.android.vending:color/play_tertiary_settings_set</item>
+        <item name="*com.android.vending:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.android.vending:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.android.vending:uicDelegateToSupportLibAlertDialog">true</item>
+    </style>
+    <style name="PaymentMethodsPageRecyclerView">
+        <item name="android:background">@*android:color/background_dark</item>
+    </style>
+    <style name="TopChartRankingInfoModule">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@*android:color/background_dark</item>
+        <item name="android:padding">@*com.android.vending:dimen/details_module_medium_padding</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:foreground">@*com.android.vending:drawable/focus_overlay</item>
+    </style>
+    <style name="AccountRowBase">
+        <item name="android:background">@*android:color/background_dark</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:foreground">@*com.android.vending:drawable/play_highlight_overlay_light</item>
+        <item name="android:minHeight">@*com.android.vending:dimen/account_row_min_height</item>
+    </style>
+    <style name="FamilyMemberSettingTheme" parent="@*com.android.vending:style/Theme.AppCompat">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:textColorLink">@*com.android.vending:color/family_action</item>
+        <item name="*com.android.vending:colorPrimary">@*com.android.vending:color/play_multi_primary</item>
+        <item name="*com.android.vending:colorPrimaryDark">@*com.android.vending:color/play_multi_recents</item>
+    </style>
+    <style name="FamilySetupTheme" parent="@*com.android.vending:style/FinskyTheme">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:textColorLink">#ff0097a7</item>
+        <item name="*com.android.vending:colorAccent">@*com.android.vending:color/play_multi_secondary</item>
+        <item name="*com.android.vending:colorPrimary">@*com.android.vending:color/play_multi_primary</item>
+        <item name="*com.android.vending:colorPrimaryDark">@*com.android.vending:color/play_multi_recents</item>
+    </style>
+    <style name="PromotionCampaignHeader">
+        <item name="*com.android.vending:playCardBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.android.vending:playCardClipToOutline">true</item>
+        <item name="*com.android.vending:playCardCornerRadius">0.0dip</item>
+        <item name="*com.android.vending:playCardElevation">@*com.android.vending:dimen/play_card_default_elevation</item>
+        <item name="*com.android.vending:playCardInset">0.0dip</item>
+    </style>
+    <style name="PromotionCampaignHeaderSavedText" parent="@*com.android.vending:style/LightPurchase_Details">
+        <item name="android:textColor">@*com.android.vending:color/green_500</item>
+        <item name="android:background">@*android:color/background_dark</item>
+    </style>
+    <style name="PromotionCampaignHeaderSubtitle" parent="@*com.android.vending:style/LightPurchase_Details">
+        <item name="android:background">@*android:color/background_dark</item>
+        <item name="*com.android.vending:allowsCompactLineSpacing">true</item>
+    </style>
+    <style name="SubscriptionClusterRow">
+        <item name="android:paddingLeft">@*com.android.vending:dimen/subscription_cluster_padding</item>
+        <item name="android:paddingRight">@*com.android.vending:dimen/subscription_cluster_padding</item>
+        <item name="android:paddingBottom">@*com.android.vending:dimen/subscription_cluster_padding</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:soundEffectsEnabled">false</item>
+        <item name="*com.android.vending:playCardBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.android.vending:playCardElevation">@*com.android.vending:dimen/play_card_default_elevation</item>
     </style>
 </resources>
