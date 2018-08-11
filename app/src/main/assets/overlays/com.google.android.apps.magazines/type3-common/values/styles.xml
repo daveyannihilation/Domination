@@ -68,7 +68,7 @@
     <style name="DialogText">
         <item name="android:textAppearance">@*android:style/TextAppearance.Medium</item>
         <item name="android:textSize">@*com.google.android.apps.magazines:dimen/user_data_collection_form_description_text_size</item>
-        <item name="android:textColor">@*com.google.android.apps.magazines:color/card_text_normal</item>
+        <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
         <item name="android:textColorHint">#ffbbbbbb</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -109,11 +109,17 @@
         <item name="android:paddingStart">24.0dip</item>
         <item name="android:paddingEnd">24.0dip</item>
     </style>
-    <style name="GMTabs" parent="@*com.google.android.apps.magazines:style/Widget.GoogleMaterial.TabLayout">
+    <style name="GMTabs" parent="@*com.google.android.apps.magazines:style/Widget.MaterialComponents.TabLayout">
         <item name="android:background">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.apps.magazines:tabContentStart">@*com.google.android.apps.magazines:dimen/card_inner_content_2x_padding</item>
+        <item name="*com.google.android.apps.magazines:tabIndicator">@*com.google.android.apps.magazines:drawable/google_tabs_rounded_line_indicator</item>
+        <item name="*com.google.android.apps.magazines:tabIndicatorFullWidth">false</item>
         <item name="*com.google.android.apps.magazines:tabMode">scrollable</item>
+        <item name="*com.google.android.apps.magazines:tabTextAppearance">@*com.google.android.apps.magazines:style/TextAppearance.GoogleMaterial.Tab</item>
+        <item name="*com.google.android.apps.magazines:tabTextColor">@*com.google.android.apps.magazines:color/tabs_color_selector</item>
+        <item name="*com.google.android.apps.magazines:tabIconTint">@*com.google.android.apps.magazines:color/tabs_color_selector</item>
         <item name="*com.google.android.apps.magazines:tabUnboundedRipple">true</item>
+        <item name="*com.google.android.apps.magazines:enforceTextAppearance">false</item>
     </style>
 
     <style name="HeaderAttribution">

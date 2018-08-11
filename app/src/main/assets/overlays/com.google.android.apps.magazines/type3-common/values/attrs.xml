@@ -223,6 +223,9 @@
     <attr name="showTitle" format="boolean" />
     <attr name="buttonIconDimen" format="dimension" />
     <attr name="minIntervalSeconds" format="integer" />
+    <attr name="logoSpriteDrawable" format="reference" />
+    <attr name="frameCount" format="integer" />
+    <attr name="durationMillis" format="integer" />
     <attr name="expanded" format="boolean" />
     <attr name="liftOnScroll" format="boolean" />
     <attr name="state_collapsed" format="boolean" />
@@ -421,7 +424,6 @@
         <enum name="end" value="1" />
         <enum name="center" value="0" />
     </attr>
-    <attr name="fabAttached" format="boolean" />
     <attr name="fabCradleMargin" format="dimension" />
     <attr name="fabCradleRoundedCornerRadius" format="dimension" />
     <attr name="fabCradleVerticalOffset" format="dimension" />
@@ -518,14 +520,17 @@
     <attr name="chipCornerRadius" format="dimension" />
     <attr name="chipStrokeColor" format="color" />
     <attr name="chipStrokeWidth" format="dimension" />
+    <attr name="chipIconVisible" format="boolean" />
     <attr name="chipIconEnabled" format="boolean" />
     <attr name="chipIcon" format="reference" />
     <attr name="chipIconTint" format="color" />
     <attr name="chipIconSize" format="dimension" />
+    <attr name="closeIconVisible" format="boolean" />
     <attr name="closeIconEnabled" format="boolean" />
     <attr name="closeIcon" format="reference" />
     <attr name="closeIconTint" format="color" />
     <attr name="closeIconSize" format="dimension" />
+    <attr name="checkedIconVisible" format="boolean" />
     <attr name="checkedIconEnabled" format="boolean" />
     <attr name="checkedIcon" format="reference" />
     <attr name="chipStartPadding" format="dimension" />
@@ -775,6 +780,8 @@
     <attr name="useCompatPadding" format="boolean" />
     <attr name="maxImageSize" format="dimension" />
     <attr name="behavior_autoHide" format="boolean" />
+    <attr name="itemSpacing" format="dimension" />
+    <attr name="lineSpacing" format="dimension" />
     <attr name="layout_flmWidth" format="float|dimension">
         <enum name="wrap_content" value="-2" />
         <enum name="match_parent" value="-1" />
@@ -966,8 +973,6 @@
         <flag name="textStart" value="0x00000002" />
     </attr>
     <attr name="iconTint" format="color" />
-    <attr name="additionalPaddingStartForIcon" format="dimension" />
-    <attr name="additionalPaddingEndForIcon" format="dimension" />
     <attr name="cornerRadius" format="reference|dimension" />
     <attr name="alphabeticModifiers">
         <flag name="ALT" value="0x00000002" />
@@ -1028,6 +1033,7 @@
     <attr name="bindMeasuredAspectRatioOverride" format="reference" />
     <attr name="bindCornerRadius" format="reference" />
     <attr name="bindElevation" format="reference" />
+    <attr name="bindUseLowResPreview" format="reference" />
     <attr name="bindFontSizeScale" format="reference" />
     <attr name="bindTextAlignment" format="reference" />
     <attr name="bindLineHeightMultiplier" format="reference" />
@@ -1086,6 +1092,7 @@
     <attr name="hideNavigationIcon" format="boolean" />
     <attr name="searchPrefixText" format="string" />
     <attr name="useDrawerArrowDrawable" format="boolean" />
+    <attr name="fadeThroughMenuItems" format="boolean" />
     <attr name="autoShowKeyboard" format="boolean" />
     <attr name="requireMinWidth" format="boolean" />
     <attr name="requireMinHeight" format="boolean" />
@@ -1309,6 +1316,7 @@
     <attr name="bindMaxWidthMultiplier" format="reference" />
     <attr name="bindMaxHeightMultiplier" format="reference" />
     <attr name="accountForPadding" format="boolean" />
+    <attr name="snackbarStyle" format="reference" />
     <attr name="snackbarButtonStyle" format="reference" />
     <attr name="maxActionInlineWidth" format="dimension" />
     <attr name="interiorPadding" format="dimension" />
