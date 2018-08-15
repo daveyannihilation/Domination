@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:orientation="vertical" android:background="@*com.google.android.apps.inbox:color/bt_megalist_item_background" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/com.google.android.apps.inbox">
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <include layout="@*com.google.android.apps.inbox:layout/bt_visual_element_hierarchy_cv_message" />
     <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
         <RelativeLayout android:id="@*com.google.android.apps.inbox:id/message_header" android:background="@*com.google.android.apps.inbox:drawable/abc_item_background_holo_dark" android:focusable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@*com.google.android.apps.inbox:dimen/bt_detailed_conversation_header_height" android:layout_weight="1.0">
@@ -17,7 +17,7 @@
         <com.google.android.apps.bigtop.widgets.MegalistWebViewTrimmer android:id="@*com.google.android.apps.inbox:id/webview_trimmer" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@*com.google.android.apps.inbox:dimen/bt_detailed_conversation_webview_horizontal_margin" android:layout_marginRight="@*com.google.android.apps.inbox:dimen/bt_detailed_conversation_webview_horizontal_margin">
             <com.google.android.apps.bigtop.widgets.MegalistWebView android:id="@*com.google.android.apps.inbox:id/webview" android:layout_width="fill_parent" android:layout_height="0.0dip" />
         </com.google.android.apps.bigtop.widgets.MegalistWebViewTrimmer>
-        <FrameLayout android:gravity="center" android:orientation="horizontal" android:id="@*com.google.android.apps.inbox:id/loading_scrim" android:background="@*com.google.android.apps.inbox:color/background_material_dark" android:paddingTop="@*com.google.android.apps.inbox:dimen/bt_detailed_conversation_loading_padding" android:paddingBottom="@*com.google.android.apps.inbox:dimen/bt_detailed_conversation_loading_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:gravity="center" android:orientation="horizontal" android:id="@*com.google.android.apps.inbox:id/loading_scrim" android:background="@*android:color/primary_text_leanback_light" android:paddingTop="@*com.google.android.apps.inbox:dimen/bt_detailed_conversation_loading_padding" android:paddingBottom="@*com.google.android.apps.inbox:dimen/bt_detailed_conversation_loading_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
             <ProgressBar android:layout_gravity="center" android:id="@*com.google.android.apps.inbox:id/expanded_cv_loading_spinner" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@*com.google.android.apps.inbox:dimen/bt_item_list_loading_margin" />
         </FrameLayout>
     </FrameLayout>

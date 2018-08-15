@@ -2,14 +2,16 @@
 <LinearLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView android:textColor="@*android:color/white" android:ellipsize="end" android:gravity="center_horizontal" android:id="@*com.google.android.apps.photos:id/suggested_editor_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginBottom="12.0dip" android:maxLines="1" />
-    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
-        <com.google.android.apps.photos.photofragment.components.photoview.PhotoView android:id="@*com.google.android.apps.photos:id/suggestion_editor_preview_pane" android:layout_width="fill_parent" android:layout_height="fill_parent"
-          xmlns:android="http://schemas.android.com/apk/res/android" />
-        <android.widget.ProgressBar android:layout_gravity="center" android:id="@*com.google.android.apps.photos:id/suggestion_editor_spinner" android:layout_width="48.0dip" android:layout_height="48.0dip" android:alpha="0.0" style="@*com.google.android.apps.photos:style/Widget.Photos.ProgressBar.IndeterminateWhite" />
+    <FrameLayout android:id="@*com.google.android.apps.photos:id/suggested_editor_preview" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ViewStub android:id="@*com.google.android.apps.photos:id/suggested_editor_preview_stub" android:layout="@*com.google.android.apps.photos:layout/photos_suggestedactions_editor_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
     </FrameLayout>
     <TextView android:textColor="@*android:color/white" android:gravity="center_horizontal" android:id="@*com.google.android.apps.photos:id/undo_or_copy_hint" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="20.0dip" android:text="@*com.google.android.apps.photos:string/photos_suggestedactions_editor_undo_hint" android:singleLine="false" />
-    <LinearLayout android:orientation="horizontal" android:id="@*com.google.android.apps.photos:id/suggested_editor_action_bar" android:background="@*com.google.android.apps.photos:color/quantum_grey900" android:layout_width="fill_parent" android:layout_height="@*com.google.android.apps.photos:dimen/photos_suggestedactions_editor_bar_height">
-        <Button android:id="@*com.google.android.apps.photos:id/cancel_suggested_action" android:text="@*com.google.android.apps.photos:string/photos_suggestedactions_editor_cancel_button" style="@*com.google.android.apps.photos:style/photos_suggested_actions_editor_button_style" />
-        <Button android:id="@*com.google.android.apps.photos:id/save_suggested_action" android:text="@*com.google.android.apps.photos:string/photos_suggestedactions_editor_save_button" style="@*com.google.android.apps.photos:style/photos_suggested_actions_editor_button_style" />
+    <LinearLayout android:orientation="horizontal" android:id="@*com.google.android.apps.photos:id/suggested_editor_action_bar" android:background="@*android:color/primary_material_dark" android:layout_width="fill_parent" android:layout_height="@*com.google.android.apps.photos:dimen/photos_suggestedactions_editor_bar_height" android:baselineAligned="false">
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:layout_gravity="center" android:id="@*com.google.android.apps.photos:id/cancel_suggested_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@*com.google.android.apps.photos:string/photos_suggestedactions_editor_cancel_button" style="@*com.google.android.apps.photos:style/Widget.Photos.Button.Borderless.SuggestedActionsEditorCancelButton" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:layout_gravity="center" android:id="@*com.google.android.apps.photos:id/save_suggested_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@*com.google.android.apps.photos:string/photos_suggestedactions_editor_save_button" style="@*com.google.android.apps.photos:style/Widget.Photos.SuggestedActionsEditorCancelButton" />
+        </FrameLayout>
     </LinearLayout>
 </LinearLayout>

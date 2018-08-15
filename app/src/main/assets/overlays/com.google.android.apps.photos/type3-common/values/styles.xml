@@ -48,9 +48,7 @@
         <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
     </style>
 
-    <style name="MapEnrichmentEditingTheme" parent="@*com.google.android.apps.photos:style/Theme.Photos.NoTitle">
-        <item name="*com.google.android.apps.photos:colorAccent">@*android:color/white</item>
-    </style>
+
 
 
     <style name="GvrDialogTheme" parent="@*android:style/Theme.Holo.Dialog">
@@ -77,12 +75,8 @@
         <item name="android:windowShowWallpaper">false</item>
         <item name="android:windowIsTranslucent">false</item>
     </style>
-    <style name="Photos.Archive.Assistant.Review" parent="@*com.google.android.apps.photos:style/Theme.AppCompat">
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-        <item name="*com.google.android.apps.photos:windowActionBar">false</item>
-        <item name="*com.google.android.apps.photos:windowNoTitle">true</item>
-        <item name="*com.google.android.apps.photos:colorPrimary">@*com.google.android.apps.photos:color/quantum_googblue500</item>
-        <item name="*com.google.android.apps.photos:colorPrimaryDark">@*com.google.android.apps.photos:color/quantum_googblue700</item>
+    <style name="Photos.Archive.Assistant.Review" parent="@*com.google.android.apps.photos:style/Theme.Photos.NoTitle">
+        <item name="*com.google.android.apps.photos:colorPrimaryDark">@*com.google.android.apps.photos:color/photos_archive_assistant_status_bar_background</item>
         <item name="android:backgroundTint">@null</item>
     </style>
 
@@ -201,8 +195,8 @@
         <item name="android:layout_marginTop">@*com.google.android.apps.photos:dimen/photos_lens_card_margin</item>
         <item name="android:layout_marginRight">@*com.google.android.apps.photos:dimen/photos_lens_card_margin</item>
         <item name="*com.google.android.apps.photos:cardBackgroundColor">@*android:color/background_floating_material_dark</item>
-        <item name="*com.google.android.apps.photos:cardCornerRadius">2.0dip</item>
-        <item name="*com.google.android.apps.photos:cardElevation">2.0dip</item>
+        <item name="*com.google.android.apps.photos:cardCornerRadius">@*com.google.android.apps.photos:dimen/photos_theme_rounded_corner_radius</item>
+        <item name="*com.google.android.apps.photos:cardElevation">@*com.google.android.apps.photos:dimen/photos_lens_card_elevation</item>
     </style>
     <style name="SearchBarView">
         <item name="android:backgroundTint">@null</item>
@@ -260,14 +254,7 @@
 
 
 
-    <style name="photos_suggested_actions_editor_button_style" parent="@*com.google.android.apps.photos:style/Widget.Photos.Button.Borderless">
-        <item name="android:textColor">@*com.google.android.apps.photos:color/suggestion_editor_save_button_text</item>
-        <item name="android:background">@*android:color/button_material_dark</item>
-        <item name="android:layout_width">0.0dip</item>
-        <item name="android:layout_height">fill_parent</item>
-        <item name="android:layout_weight">1.0</item>
-        <item name="android:textAllCaps">true</item>
-    </style>
+
 
 
     <style name="BaseTabButton" parent="@*com.google.android.apps.photos:style/Widget.Photos.Button.Borderless">
@@ -396,5 +383,28 @@
         <item name="android:textSize">36.0sp</item>
         <item name="android:textColor">@*android:color/white</item>
         <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+
+    <style name="photos_assistant_create_button_container">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">80.0dip</item>
+        <item name="android:layout_height">88.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:backgroundTint">@null</item>
+    </style>
+    <style name="photos_assistant_create_circle_button">
+        <item name="android:layout_width">@*com.google.android.apps.photos:dimen/photos_assistant_create_circle_diameter</item>
+        <item name="android:layout_height">@*com.google.android.apps.photos:dimen/photos_assistant_create_circle_diameter</item>
+        <item name="android:backgroundTint">@null</item>
+    </style>
+    <style name="Photos.Album.Enrichment.Ui.MapFromToEditTextTheme" parent="@*com.google.android.apps.photos:style/Photos.Album.Enrichment.Ui.EnrichmentActivity">
+        <item name="*com.google.android.apps.photos:colorAccent">@*android:color/white</item>
+    </style>
+    <style name="Widget.Photos.Button.Borderless.SuggestedActionsEditorCancelButton" parent="@*com.google.android.apps.photos:style/Widget.Photos.Button.Borderless">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:background">@*android:color/button_material_dark</item>
+        <item name="android:textAllCaps">true</item>
     </style>
 </resources>

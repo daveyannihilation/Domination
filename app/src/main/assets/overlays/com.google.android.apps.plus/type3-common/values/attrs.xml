@@ -121,6 +121,10 @@
     <attr name="mtrlColor" format="reference|color" />
     <attr name="mtrlColors" format="reference" />
     <attr name="navigationViewStyle" format="reference" />
+    <attr name="openSearchBarStyle" format="reference" />
+    <attr name="openSearchViewPrefixStyle" format="reference" />
+    <attr name="openSearchViewStyle" format="reference" />
+    <attr name="productLockupViewStyle" format="reference" />
     <attr name="rippleColor" format="color" />
     <attr name="scrimBackground" format="reference|color" />
     <attr name="showMotionSpec" format="reference" />
@@ -190,6 +194,10 @@
     <attr name="listItemLayout" format="reference" />
     <attr name="showTitle" format="boolean" />
     <attr name="buttonIconDimen" format="dimension" />
+    <attr name="minIntervalSeconds" format="integer" />
+    <attr name="logoSpriteDrawable" format="reference" />
+    <attr name="frameCount" format="integer" />
+    <attr name="durationMillis" format="integer" />
     <attr name="expanded" format="boolean" />
     <attr name="liftOnScroll" format="boolean" />
     <attr name="state_collapsed" format="boolean" />
@@ -418,6 +426,8 @@
     <attr name="chipCornerRadius" format="dimension" />
     <attr name="chipStrokeColor" format="color" />
     <attr name="chipStrokeWidth" format="dimension" />
+    <attr name="chipMinTouchTargetSize" format="dimension" />
+    <attr name="chipTouchTargetDelegate" format="reference" />
     <attr name="chipIconVisible" format="boolean" />
     <attr name="chipIconEnabled" format="boolean" />
     <attr name="chipIcon" format="reference" />
@@ -678,6 +688,37 @@
     <attr name="ttcIndex" format="integer" />
     <attr name="foregroundInsidePadding" format="boolean" />
     <attr name="maxHeightPercentage" format="float" />
+    <attr name="colorPrimaryLight" format="color" />
+    <attr name="colorSecondaryLight" format="color" />
+    <attr name="colorSecondaryDark" format="color" />
+    <attr name="colorPrimary50" format="color" />
+    <attr name="colorPrimary100" format="color" />
+    <attr name="colorPrimary200" format="color" />
+    <attr name="colorPrimary300" format="color" />
+    <attr name="colorPrimary400" format="color" />
+    <attr name="colorPrimary500" format="color" />
+    <attr name="colorPrimary600" format="color" />
+    <attr name="colorPrimary700" format="color" />
+    <attr name="colorPrimary800" format="color" />
+    <attr name="colorPrimary900" format="color" />
+    <attr name="colorSecondary50" format="color" />
+    <attr name="colorSecondary100" format="color" />
+    <attr name="colorSecondary200" format="color" />
+    <attr name="colorSecondary300" format="color" />
+    <attr name="colorSecondary400" format="color" />
+    <attr name="colorSecondary500" format="color" />
+    <attr name="colorSecondary600" format="color" />
+    <attr name="colorSecondary700" format="color" />
+    <attr name="colorSecondary800" format="color" />
+    <attr name="colorSecondary900" format="color" />
+    <attr name="textAppearanceDisplay1" format="reference" />
+    <attr name="textAppearanceDisplay2" format="reference" />
+    <attr name="textAppearanceDisplay3" format="reference" />
+    <attr name="textAppearanceSubhead1" format="reference" />
+    <attr name="textAppearanceSubhead2" format="reference" />
+    <attr name="textAppearanceSubtitleAlt1" format="reference" />
+    <attr name="textAppearanceSubtitleAlt2" format="reference" />
+    <attr name="textAppearanceButtonAlt" format="reference" />
     <attr name="orientation">
         <enum name="horizontal" value="0" />
         <enum name="vertical" value="1" />
@@ -825,6 +866,12 @@
     <attr name="headerLayout" format="reference" />
     <attr name="itemHorizontalPadding" format="dimension" />
     <attr name="itemIconPadding" format="dimension" />
+    <attr name="defaultMarginsEnabled" format="boolean" />
+    <attr name="hideNavigationIcon" format="boolean" />
+    <attr name="searchPrefixText" format="string" />
+    <attr name="useDrawerArrowDrawable" format="boolean" />
+    <attr name="fadeThroughMenuItems" format="boolean" />
+    <attr name="autoShowKeyboard" format="boolean" />
     <attr name="compact" format="boolean" />
     <attr name="overlapAnchor" format="boolean" />
     <attr name="state_above_anchor" format="boolean" />
@@ -872,6 +919,18 @@
     <attr name="switchPreferenceStyle" format="reference" />
     <attr name="switchPreferenceCompatStyle" format="reference" />
     <attr name="seekBarPreferenceStyle" format="reference" />
+    <attr name="productNameTextColor" format="color" />
+    <attr name="logoColor">
+        <enum name="dark" value="1" />
+        <enum name="grey" value="3" />
+        <enum name="light" value="2" />
+        <enum name="standard" value="0" />
+    </attr>
+    <attr name="lockupSizingMode">
+        <enum name="normal" value="1" />
+        <enum name="auto" value="0" />
+        <enum name="small" value="2" />
+    </attr>
     <attr name="paddingBottomNoButtons" format="dimension" />
     <attr name="paddingTopNoTitle" format="dimension" />
     <attr name="layoutManager" format="string" />
@@ -925,8 +984,8 @@
     <attr name="adjustable" format="boolean" />
     <attr name="showSeekBarValue" format="boolean" />
     <attr name="buttonSize" format="reference">
-        <enum name="icon_only" value="2" />
         <enum name="standard" value="0" />
+        <enum name="icon_only" value="2" />
         <enum name="wide" value="1" />
     </attr>
     <attr name="colorScheme" format="reference">
@@ -1163,9 +1222,9 @@
         <enum name="src_over" value="3" />
     </attr>
     <attr name="mtrlSize">
+        <enum name="small" value="1" />
         <enum name="large" value="3" />
         <enum name="medium" value="2" />
-        <enum name="small" value="1" />
     </attr>
     <attr name="mtrlIndeterminateProgressStyle">
         <enum name="circular" value="0" />

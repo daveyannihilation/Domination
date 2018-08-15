@@ -35,6 +35,10 @@
     <attr name="activityTitleText" format="reference" />
     <attr name="activityUserDetails" format="reference" />
     <attr name="activityUserInfo" format="reference" />
+    <attr name="alignmentMode">
+        <enum name="alignBounds" value="0" />
+        <enum name="alignMargins" value="1" />
+    </attr>
     <attr name="allowTextSelection" format="boolean" />
     <attr name="analyticsTag" format="string" />
     <attr name="angle">
@@ -138,6 +142,7 @@
     <attr name="captureDeleteTextColor" format="color" />
     <attr name="captureStrokeRing" format="color" />
     <attr name="captureStyle" format="reference" />
+    <attr name="carouselIndicatorStyle" format="reference" />
     <attr name="centerBright" format="reference|color" />
     <attr name="centerColor" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="centerDark" format="reference|color" />
@@ -168,6 +173,8 @@
         <enum name="dark" value="0" />
         <enum name="light" value="1" />
     </attr>
+    <attr name="columnCount" format="integer" />
+    <attr name="columnOrderPreserved" format="boolean" />
     <attr name="confirmation_icon" format="reference" />
     <attr name="constraintSet" format="reference" />
     <attr name="constraint_referenced_ids" format="string" />
@@ -433,7 +440,6 @@
     <attr name="horizontalProgressLayout" format="reference" />
     <attr name="icon" format="reference" />
     <attr name="iconColor" format="color" />
-    <attr name="iconPaddingTop" format="dimension" />
     <attr name="icon_padding" format="dimension" />
     <attr name="igSwitchStyle" format="reference" />
     <attr name="image" format="reference" />
@@ -479,6 +485,9 @@
     <attr name="largePrimaryButtonStyle" format="reference" />
     <attr name="layoutManager" format="string" />
     <attr name="layout_aspectRatio" format="fraction" />
+    <attr name="layout_column" format="integer" />
+    <attr name="layout_columnSpan" format="integer" min="1" />
+    <attr name="layout_columnWeight" format="float" />
     <attr name="layout_constrainedHeight" format="boolean" />
     <attr name="layout_constrainedWidth" format="boolean" />
     <attr name="layout_constraintBaseline_creator" format="integer" />
@@ -578,6 +587,22 @@
     <attr name="layout_goneMarginRight" format="dimension" />
     <attr name="layout_goneMarginStart" format="dimension" />
     <attr name="layout_goneMarginTop" format="dimension" />
+    <attr name="layout_gravity">
+        <flag name="bottom" value="0x00000050" />
+        <flag name="center" value="0x00000011" />
+        <flag name="center_horizontal" value="0x00000001" />
+        <flag name="center_vertical" value="0x00000010" />
+        <flag name="clip_horizontal" value="0x00000008" />
+        <flag name="clip_vertical" value="0x00000080" />
+        <flag name="end" value="0x00800005" />
+        <flag name="fill" value="0x00000077" />
+        <flag name="fill_horizontal" value="0x00000007" />
+        <flag name="fill_vertical" value="0x00000070" />
+        <flag name="left" value="0x00000003" />
+        <flag name="right" value="0x00000005" />
+        <flag name="start" value="0x00800003" />
+        <flag name="top" value="0x00000030" />
+    </attr>
     <attr name="layout_heightPercent" format="fraction" />
     <attr name="layout_marginBottomPercent" format="fraction" />
     <attr name="layout_marginEndPercent" format="fraction" />
@@ -594,6 +619,9 @@
         <flag name="none" value="0x00000000" />
         <flag name="standard" value="0x00000003" />
     </attr>
+    <attr name="layout_row" format="integer" />
+    <attr name="layout_rowSpan" format="integer" min="1" />
+    <attr name="layout_rowWeight" format="float" />
     <attr name="layout_widthPercent" format="fraction" />
     <attr name="left" format="dimension" />
     <attr name="lightActionBarForegroundPressedColor" format="color" />
@@ -623,6 +651,7 @@
     <attr name="mediaTabTextColor" format="color" />
     <attr name="mediaTabTextColorSelected" format="color" />
     <attr name="medium" format="boolean" />
+    <attr name="messageBorderEnabled" format="reference|boolean" />
     <attr name="messageRequest" format="reference" />
     <attr name="messageRequestAction" format="reference" />
     <attr name="messageRequestPadding" format="dimension" />
@@ -649,6 +678,10 @@
     <attr name="nuxLogoTintColor" format="color" />
     <attr name="nuxTextColor" format="color" />
     <attr name="onScreenDurationMs" format="integer" />
+    <attr name="orientation">
+        <enum name="horizontal" value="0" />
+        <enum name="vertical" value="1" />
+    </attr>
     <attr name="outerCircleColour" format="color" />
     <attr name="outlineWidth" format="dimension" />
     <attr name="paddingBottom" format="dimension" />
@@ -685,6 +718,8 @@
     <attr name="primaryButtonStyle" format="reference" />
     <attr name="primaryText" format="string" />
     <attr name="priority" format="float" />
+    <attr name="productNameStyle" format="reference" />
+    <attr name="productPriceStyle" format="reference" />
     <attr name="profileAvatarImageSize" format="dimension" />
     <attr name="profileAvatarLarge" format="reference" />
     <attr name="profileAvatarRingSize" format="dimension" />
@@ -766,18 +801,21 @@
     </attr>
     <attr name="rowAvatarWidth" format="dimension" />
     <attr name="rowBadge" format="reference" />
+    <attr name="rowCount" format="integer" />
     <attr name="rowDetailBoldText" format="reference" />
     <attr name="rowDetailStyle" format="reference" />
     <attr name="rowDivider" format="reference" />
     <attr name="rowDividerColor" format="color" />
     <attr name="rowHeaderDivider" format="reference" />
     <attr name="rowHeight" format="reference" />
+    <attr name="rowOrderPreserved" format="boolean" />
     <attr name="rowPadding" format="dimension" />
     <attr name="rowRightPadding" format="dimension" />
     <attr name="rowTextPadding" format="dimension" />
     <attr name="rowTextStyle" format="reference" />
     <attr name="rowUserInfo" format="reference" />
     <attr name="rowUserName" format="reference" />
+    <attr name="scanmarks" format="reference" />
     <attr name="scopeUris" format="reference|string" />
     <attr name="screen_width_fraction" format="float" />
     <attr name="scrollingCircleCountThreshold" format="integer" />
@@ -804,6 +842,8 @@
     <attr name="secondaryButtonStyle" format="reference" />
     <attr name="secondaryText" format="string" />
     <attr name="section" format="reference" />
+    <attr name="sectionBottomPadding" format="reference" />
+    <attr name="sectionDivider" format="reference" />
     <attr name="seekBarActiveColor" format="color" />
     <attr name="seekBarInactiveColor" format="color" />
     <attr name="seekBarKnob" format="reference" />
@@ -812,11 +852,6 @@
     <attr name="seekBarStyle" format="reference" />
     <attr name="seekBarTextAlpha" format="integer" />
     <attr name="seekBarTextColor" format="color" />
-    <attr name="segmentFillType">
-        <enum name="current_segment" value="1" />
-        <enum name="sliding_segment" value="2" />
-        <enum name="total_progress" value="0" />
-    </attr>
     <attr name="segmentedUnderlineWidth" format="reference" />
     <attr name="selectedCircleColor" format="color" />
     <attr name="selectedColor" format="color" />
@@ -939,6 +974,7 @@
     <attr name="unfilledColor" format="color" />
     <attr name="updatableButtonGlyphStyle" format="reference" />
     <attr name="updatableButtonStyle" format="reference" />
+    <attr name="useDefaultMargins" format="boolean" />
     <attr name="variant_filled" format="reference" />
     <attr name="variant_outline" format="reference" />
     <attr name="videoCaptureQuality">

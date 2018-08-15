@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SecurityPreferenceButtonContainer" parent="@*android:style/Widget.Material.SegmentedButton">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:weightSum">2.0</item>
+        <item name="android:dividerPadding">8.0dip</item>
+    </style>
+    <style name="SecurityPreferenceButton" parent="@*android:style/Widget.Material.Button.Borderless">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="Theme.SettingsBase" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:colorBackground">@*android:color/background_floating_material_dark</item>
+        <!--<item name="android:windowBackground">@*android:color/background_dark</item>-->
+        <item name="android:textColorPrimaryInverse">#ffffffff</item>
+        <item name="android:colorControlNormal">@*android:color/accent_material_dark</item>
+    </style>
+
+
+    <style name="Theme.AlertDialog" parent="@*android:style/Theme.Material.Dialog.Alert">
+        <item name="android:textColorPrimary">#ffffffff</item>
+        <item name="android:textColorSecondary">#ffdddddd</item>
+        <item name="android:colorBackground">@*android:color/background_floating_material_dark</item>
+        <item name="android:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
+    </style>
+
+
+
+    <!--<style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+    </style>-->
+    <style name="FallbackHome" parent="@*android:style/Theme.DeviceDefault.Light" />
+    <!--<style name="PreferenceFragmentListSinglePane" parent="@*android:style/PreferenceFragmentList">
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:background">@*android:color/background_dark</item>
+    </style>-->
+
+    <style name="Theme.SettingsAlertDialog" parent="@*android:style/Theme.Material.Dialog.Alert" />
+    <style name="Theme.DateTimeSettingsSetupWizard" parent="@*android:style/Theme.Material.NoActionBar" />
+    <style name="Theme.SettingsDialog" parent="@*android:style/Theme.Material.Dialog.NoActionBar" />
+    <style name="Theme.SettingsLicenseActivity" parent="@*android:style/Theme.Material.Panel" />
+    <style name="Theme.AppPicker" parent="@*android:style/Theme.Material.Dialog" />
+    <style name="Theme.SmartBar.Dialog" parent="@*android:style/Theme.Material.Dialog.Alert" />
+
+
+
+    <style name="BluetoothPermission" parent="@*android:style/Theme.Material.Dialog.Alert">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="FingerprintHeaderStyle" parent="@*android:style/TextAppearance.Material.Subhead">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:paddingTop">16.0dip</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+
+
+    <style name="SupportPrimaryButton" parent="@*android:style/Widget.Material.Button" />
+    <style name="SupportSecondaryButton" parent="@*android:style/Widget.Material.Button.Borderless">
+        <item name="android:textSize">12.0sp</item>
+    </style>
+
+
+    <style name="ActionPrimaryButton" parent="@*android:style/Widget.Material.Button" />
+    <style name="ActionSecondaryButton" parent="@*android:style/Widget.Material.Button" />
+    <style name="SuwAlertDialogTheme.Light" parent="@*android:style/Theme.DeviceDefault.Dialog.Alert" />
+    <style name="Theme.ActionBar" parent="@*android:style/Widget.DeviceDefault.ActionBar.Solid">
+        <item name="android:contentInsetStart">@*com.android.settings:dimen/actionbar_contentInsetStart</item>
+    </style>
+    <style name="ThemeOverlay.SwitchBar.Settings" parent="@*android:style/ThemeOverlay.Material.ActionBar">
+        <item name="android:textColorPrimary">@*android:color/white</item>
+        <item name="*com.android.settings:switchBarBackgroundActivatedColor">@*android:color/button_material_dark</item>
+        <item name="*com.android.settings:switchBarBackgroundColor">@*android:color/button_material_dark</item>
+        <item name="*com.android.settings:switchBarMarginEnd">@*com.android.settings:dimen/switchbar_subsettings_margin_end</item>
+        <item name="*com.android.settings:switchBarMarginStart">@*com.android.settings:dimen/switchbar_subsettings_margin_start</item>
+    </style>
+    <style name="SuwThemeGlifV2.Light" parent="@*com.android.settings:style/SuwThemeGlif">
+        <item name="android:colorBackground">@*android:color/background_floating_material_dark</item>
+        <item name="android:editTextStyle">@*com.android.settings:style/SuwEditText</item>
+        <item name="android:alertDialogTheme">@*com.android.settings:style/SuwAlertDialogTheme.Light</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="*com.android.settings:suwBackgroundBaseColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.android.settings:suwBackgroundPatterned">false</item>
+        <item name="*com.android.settings:suwDividerInsetEnd">?suwMarginSides</item>
+        <item name="*com.android.settings:suwDividerInsetStart">?suwMarginSides</item>
+        <item name="*com.android.settings:suwDividerInsetStartNoIcon">?suwMarginSides</item>
+        <item name="*com.android.settings:suwEditTextBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.android.settings:suwGlifHeaderGravity">center_horizontal</item>
+        <item name="*com.android.settings:suwScrollIndicators">bottom|top</item>
+    </style>
+    <style name="SuwThemeGlifV3.Light" parent="@*com.android.settings:style/SuwBaseThemeGlifV3.Light">
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:navigationBarDividerColor">@*android:color/primary_dark_material_dark</item>
+    </style>
+</resources>

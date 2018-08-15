@@ -4,12 +4,12 @@
     <style name="ButtonBar" parent="@*android:style/Holo.ButtonBar.AlertDialog">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:divider">?android:dividerVertical</item>
+        <item name="android:divider">?*android:dividerVertical</item>
         <item name="android:showDividers">middle</item>
         <item name="android:dividerPadding">0.0dip</item>
     </style>
     <style name="ButtonBarButton" parent="@*android:style/Widget.Holo.Button">
-        <item name="android:background">?android:selectableItemBackground</item>
+        <item name="android:background">?*android:selectableItemBackground</item>
         <item name="android:layout_width">0.0dip</item>
         <item name="android:layout_height">fill_parent</item>
         <item name="android:layout_weight">1.0</item>
@@ -22,7 +22,7 @@
     </style>
 
     <style name="SigninPromoDialog" parent="@*org.chromium.chrome:style/Platform.AppCompat">
-        <item name="android:windowBackground">@*org.chromium.chrome:color/background_floating_material_dark</item>
+        <item name="android:windowBackground">@*android:color/secondary_text_leanback_light</item>
         <item name="android:windowFrame">@null</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsFloating">true</item>
@@ -34,7 +34,7 @@
     </style>
     <style name="ContextualSearchTextViewLayout">
         <item name="android:layout_gravity">bottom</item>
-        <item name="android:background">@*org.chromium.chrome:color/background_material_dark</item>
+        <item name="android:background">@*android:color/primary_text_leanback_light</item>
         <item name="android:visibility">invisible</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">fill_parent</item>
@@ -61,12 +61,12 @@
         <item name="android:requiresFadingEdge">horizontal</item>
     </style>
     <style name="PhysicalWebNearbyUrlsListStyle" parent="@*org.chromium.chrome:style/Platform.AppCompat">
-        <item name="android:windowBackground">@*org.chromium.chrome:color/background_material_dark</item>
+        <item name="android:windowBackground">@*android:color/primary_text_leanback_light</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">fill_parent</item>
     </style>
     <style name="PhysicalWebOptInStyle" parent="@*org.chromium.chrome:style/Platform.AppCompat">
-        <item name="android:windowBackground">@*org.chromium.chrome:color/background_material_dark</item>
+        <item name="android:windowBackground">@*android:color/primary_text_leanback_light</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
@@ -76,7 +76,7 @@
         <item name="android:textColor">#ffffffff</item>
         <item name="android:ellipsize">end</item>
         <item name="android:layout_gravity">bottom</item>
-        <item name="android:background">@*org.chromium.chrome:color/background_material_dark</item>
+        <item name="android:background">@*android:color/primary_text_leanback_light</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">fill_parent</item>
         <item name="android:singleLine">true</item>
@@ -85,17 +85,17 @@
     </style>
 
     <style name="FullscreenWhite" parent="@*org.chromium.chrome:style/Theme.AppCompat">
-        <item name="android:windowBackground">@*org.chromium.chrome:color/background_material_dark</item>
+        <item name="android:windowBackground">@*android:color/primary_text_leanback_light</item>
         <item name="android:textColorLink">@*android:color/accent_material_dark</item>
         <item name="*org.chromium.chrome:windowNoTitle">true</item>
-        <item name="android:colorPrimary">@*org.chromium.chrome:color/primary_material_dark</item>
-        <item name="android:colorPrimaryDark">@*org.chromium.chrome:color/primary_dark_material_dark</item>
+        <item name="android:colorPrimary">@*android:color/secondary_text_leanback_light</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_text_leanback_light</item>
         <item name="android:colorAccent">@*android:color/accent_material_dark</item>
         <item name="android:windowShowWallpaper">false</item>
     </style>
 
 
     <style name="SearchActivityTheme" parent="@*org.chromium.chrome:style/MainTheme">
-        <item name="android:windowBackground">@*org.chromium.chrome:color/background_material_dark</item>
+        <item name="android:windowBackground">@*android:color/primary_text_leanback_light</item>
     </style>
 </resources>
