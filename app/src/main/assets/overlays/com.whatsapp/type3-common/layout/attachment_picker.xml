@@ -19,6 +19,10 @@
                 <com.whatsapp.ThumbnailButton android:id="@*com.whatsapp:id/pickfiletype_gallery" android:src="@*com.whatsapp:drawable/attach_gallery" android:contentDescription="@*com.whatsapp:string/attach_picture_from_gallery" whatsapp:tbtnRadius="-1.0dip" whatsapp:tbtnForegroundOnly="true" style="@*com.whatsapp:style/AttachPickerIcon" />
                 <com.whatsapp.CondensedTextView android:text="@*com.whatsapp:string/attach_picture_from_gallery" style="@*com.whatsapp:style/AttachPickerLabel" />
             </LinearLayout>
+            <LinearLayout android:id="@*com.whatsapp:id/pickfiletype_product_holder" android:visibility="gone" style="@*com.whatsapp:style/AttachPickerItem">
+                <com.whatsapp.ThumbnailButton android:id="@*com.whatsapp:id/pickfiletype_product" android:contentDescription="@*com.whatsapp:string/attach_product" whatsapp:tbtnForegroundOnly="true" whatsapp:tbtnRadius="-1.0dip" style="@*com.whatsapp:style/AttachPickerIcon" />
+                <com.whatsapp.CondensedTextView android:text="@*com.whatsapp:string/attach_product" style="@*com.whatsapp:style/AttachPickerLabel" />
+            </LinearLayout>
         </LinearLayout>
         <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@*com.whatsapp:id/attach_picker_second_row" android:paddingBottom="@*com.whatsapp:dimen/attach_popup_vertical_padding" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
             <LinearLayout android:id="@*com.whatsapp:id/pickfiletype_audio_holder" style="@*com.whatsapp:style/AttachPickerItem">
