@@ -11,18 +11,21 @@
     <color name="legacy_primary">#ff202020</color>
 
     <style name="Theme.DeviceDefault.Light" parent="@*android:style/Theme.Material">
-        <item name="android:dialogCornerRadius">@*android:dimen/config_dialogCornerRadius</item>
-        <item name="android:buttonCornerRadius">@*android:dimen/config_buttonCornerRadius</item>
+        <item name="*android:dialogCornerRadius">@*android:dimen/config_dialogCornerRadius</item>
+        <item name="*android:buttonCornerRadius">@*android:dimen/config_buttonCornerRadius</item>
         <item name="*android:colorProgressBackgroundNormal">@*android:color/config_progress_background_tint</item>
         <item name="*android:progressBarCornerRadius">@*android:dimen/config_progressBarCornerRadius</item>
     </style>
     <style name="Theme.Material.Settings" parent="@*android:style/Theme.Material">
-        <item name="android:homeAsUpIndicator">@*android:drawable/ic_ab_back_material_settings</item>
-        <item name="android:colorPrimary">@*android:color/primary_material_dark</item>
-        <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
-        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="*android:homeAsUpIndicator">@*android:drawable/ic_ab_back_material_settings</item>
+        <item name="*android:presentationTheme">@*android:style/Theme.Material.Settings.Dialog.Presentation</item>
+        <item name="*android:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="*android:colorAccent">@*android:color/accent_material_dark</item>
         <item name="*android:colorSecondary">@*android:color/button_material_dark</item>
-        <item name="android:colorControlNormal">@*android:color/white</item>
-        <item name="android:colorControlActivated">@*android:color/accent_material_dark</item>
+        <item name="*android:panelMenuListTheme">@*android:style/Theme.Material.Settings.CompactMenu</item>
+        <item name="*android:searchDialogTheme">@*android:style/Theme.Material.Settings.SearchBar</item>
+        <item name="*android:colorControlNormal">@*android:color/white</item>
+        <item name="*android:colorControlActivated">@*android:color/accent_material_dark</item>
     </style>
 </resources>

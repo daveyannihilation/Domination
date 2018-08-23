@@ -33,7 +33,15 @@
     <attr name="chipGroupStyle" format="reference" />
     <attr name="chipStandaloneStyle" format="reference" />
     <attr name="chipStyle" format="reference" />
+    <attr name="colorOnBackground" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="colorOnError" format="color" />
+    <attr name="colorOnPrimary" format="color" />
+    <attr name="colorOnSecondary" format="color" />
+    <attr name="colorOnSurface" format="color" />
+    <attr name="colorPrimaryVariant" format="color" />
     <attr name="colorSecondary" format="color" />
+    <attr name="colorSecondaryVariant" format="color" />
+    <attr name="colorSurface" format="color" />
     <attr name="constraintSet" format="reference" />
     <attr name="controller_layout_id" format="reference" />
     <attr name="coordinatorLayoutStyle" format="reference" />
@@ -55,6 +63,7 @@
     <attr name="hideMotionSpec" format="reference" />
     <attr name="horizontalItemMargin" format="reference|dimension" />
     <attr name="isLightTheme" format="boolean" />
+    <attr name="isMaterialTheme" format="boolean" />
     <attr name="layout_appearAnimationDuration" format="reference|integer" />
     <attr name="layout_appearAnimationStartDelay" format="reference|integer" />
     <attr name="layout_appearAnimationType">
@@ -546,13 +555,14 @@
     <attr name="colorError" format="reference|color" />
     <attr name="viewInflaterClass" format="string" />
     <attr name="arcStyle" format="reference" />
-    <attr name="descriptionTint" format="color" />
-    <attr name="descriptionIcon" format="reference" />
-    <attr name="descriptionGravity">
+    <attr name="valueTextAppearance" format="reference" />
+    <attr name="descriptionTextAppearance" format="reference" />
+    <attr name="textGravity">
         <enum name="bottom" value="0" />
         <enum name="center" value="1" />
     </attr>
     <attr name="decimalPattern" format="string" />
+    <attr name="valueFormat" format="reference" />
     <attr name="lowerUnitValue" format="float" />
     <attr name="upperUnitValue" format="float" />
     <attr name="unitStep" format="float" />
@@ -649,12 +659,14 @@
     <attr name="back_color" format="reference|integer|color" />
     <attr name="back_max_scale" format="reference|float" />
     <attr name="flip_duration_ms" format="integer" />
-    <attr name="radius" format="reference|dimension" />
+    <attr name="radius" format="dimension" />
     <attr name="chipBackgroundColor" format="color" />
     <attr name="chipMinHeight" format="dimension" />
     <attr name="chipCornerRadius" format="dimension" />
     <attr name="chipStrokeColor" format="color" />
     <attr name="chipStrokeWidth" format="dimension" />
+    <attr name="chipMinTouchTargetSize" format="dimension" />
+    <attr name="chipTouchTargetDelegate" format="reference" />
     <attr name="chipIconVisible" format="boolean" />
     <attr name="chipIconEnabled" format="boolean" />
     <attr name="chipIcon" format="reference" />
@@ -1309,7 +1321,6 @@
     <attr name="hideArgumentSeparator" format="boolean" />
     <attr name="applyClickableStyle" format="boolean" />
     <attr name="hasLargeArgumentImage" format="boolean" />
-    <attr name="googleMaterialEnabled" format="boolean" />
     <attr name="styleCardFooterText" format="reference" />
     <attr name="styleDonateButton" format="reference" />
     <attr name="styleEpisodeSubtitle" format="reference" />
@@ -1317,25 +1328,13 @@
     <attr name="styleHeadline6" format="reference" />
     <attr name="stylePodcastDescription" format="reference" />
     <attr name="stylePodcastShowSubtitle" format="reference" />
-    <attr name="stylePodcastShowTitle" format="reference" />
-    <attr name="stylePlaybackPanelCollapsedContainer" format="reference" />
+    <attr name="stylePodcastHeader" format="reference" />
     <attr name="stylePlaybackPanelTitle" format="reference" />
     <attr name="stylePlaybackPanelSubtitle" format="reference" />
-    <attr name="stylePlaybackPanelCollapsedPause" format="reference" />
-    <attr name="stylePlaybackPanelCollapsedArrowDown" format="reference" />
-    <attr name="stylePlaybackPanelExpandedContainer" format="reference" />
-    <attr name="stylePlaybackPanelSeekbarExpanded" format="reference" />
-    <attr name="stylePlaybackPanelSeekbarCollapsed" format="reference" />
-    <attr name="stylePlaybackPanelPlayedTime" format="reference" />
-    <attr name="stylePlaybackPanelRemainingTime" format="reference" />
-    <attr name="stylePlaybackPanelRewind" format="reference" />
-    <attr name="stylePlaybackPanelExpandedPause" format="reference" />
-    <attr name="stylePlaybackPanelExpandedFastForward" format="reference" />
     <attr name="stylePlaybackPanelShowLink" format="reference" />
-    <attr name="stylePlaybackPanelThumbnail" format="reference" />
     <attr name="stylePlaybackPanelSpeedSettingDone" format="reference" />
-    <attr name="stylePlaybackPanelSpeedSelector" format="reference" />
-    <attr name="stylePlaybackPanelSpeedSelectorContainer" format="reference" />
+    <attr name="styleEpisodePagePlayButton" format="reference" />
+    <attr name="styleEpisodePageMetadata" format="reference" />
     <attr name="overlapAnchor" format="boolean" />
     <attr name="state_above_anchor" format="boolean" />
     <attr name="order" format="integer" />
