@@ -8,8 +8,10 @@
     <attr name="chipGroupStyle" format="reference" />
     <attr name="chipStandaloneStyle" format="reference" />
     <attr name="chipStyle" format="reference" />
+    <attr name="colorBackgroundPromo" format="reference|color" />
     <attr name="colorIcon" format="color" />
     <attr name="colorIconOnUnthemedDarkBackground" format="color" />
+    <attr name="colorIconOnUnthemedLightBackground" format="color" />
     <attr name="colorIconSecondary" format="color" />
     <attr name="colorMobileOriginatingChatBackground" format="color" />
     <attr name="colorMobileOriginatingChatText" format="color" />
@@ -18,6 +20,7 @@
     <attr name="colorPrimary20pct" format="reference|color" />
     <attr name="colorSecondary" format="color" />
     <attr name="colorTextOnUnthemedDarkBackground" format="color" />
+    <attr name="colorTextOnUnthemedLightBackground" format="color" />
     <attr name="coordinatorLayoutStyle" format="reference" />
     <attr name="dialpad_end_key_spacing" format="dimension" />
     <attr name="dialpad_style" format="reference" />
@@ -268,15 +271,6 @@
     <attr name="tooltipForegroundColor" format="reference|color" />
     <attr name="colorError" format="reference|color" />
     <attr name="viewInflaterClass" format="string" />
-    <attr name="autoResizeText_resizeStepUnit">
-        <enum name="unitDip" value="1" />
-        <enum name="unitIn" value="4" />
-        <enum name="unitMm" value="5" />
-        <enum name="unitPt" value="3" />
-        <enum name="unitPx" value="0" />
-        <enum name="unitSp" value="2" />
-    </attr>
-    <attr name="autoResizeText_minTextSize" format="dimension" />
     <attr name="fabAlignmentMode">
         <enum name="center" value="0" />
         <enum name="end" value="1" />
@@ -323,14 +317,17 @@
     <attr name="chipCornerRadius" format="dimension" />
     <attr name="chipStrokeColor" format="color" />
     <attr name="chipStrokeWidth" format="dimension" />
+    <attr name="chipIconVisible" format="boolean" />
     <attr name="chipIconEnabled" format="boolean" />
     <attr name="chipIcon" format="reference" />
     <attr name="chipIconTint" format="color" />
     <attr name="chipIconSize" format="dimension" />
+    <attr name="closeIconVisible" format="boolean" />
     <attr name="closeIconEnabled" format="boolean" />
     <attr name="closeIcon" format="reference" />
     <attr name="closeIconTint" format="color" />
     <attr name="closeIconSize" format="dimension" />
+    <attr name="checkedIconVisible" format="boolean" />
     <attr name="checkedIconEnabled" format="boolean" />
     <attr name="checkedIcon" format="reference" />
     <attr name="chipStartPadding" format="dimension" />
@@ -575,6 +572,8 @@
     <attr name="useCompatPadding" format="boolean" />
     <attr name="maxImageSize" format="dimension" />
     <attr name="behavior_autoHide" format="boolean" />
+    <attr name="itemSpacing" format="dimension" />
+    <attr name="lineSpacing" format="dimension" />
     <attr name="fontProviderAuthority" format="string" />
     <attr name="fontProviderPackage" format="string" />
     <attr name="fontProviderQuery" format="string" />
@@ -646,8 +645,6 @@
         <flag name="textStart" value="0x00000002" />
     </attr>
     <attr name="iconTint" format="color" />
-    <attr name="additionalPaddingStartForIcon" format="dimension" />
-    <attr name="additionalPaddingEndForIcon" format="dimension" />
     <attr name="cornerRadius" format="dimension" />
     <attr name="maxHeight" format="dimension" />
     <attr name="alphabeticModifiers">
@@ -737,6 +734,7 @@
         <enum name="light" value="1" />
     </attr>
     <attr name="scopeUris" format="reference|string" />
+    <attr name="snackbarStyle" format="reference" />
     <attr name="snackbarButtonStyle" format="reference" />
     <attr name="maxActionInlineWidth" format="dimension" />
     <attr name="thumbTint" format="color" />

@@ -20,18 +20,19 @@
         <item name="android:maxLines">2</item>
         <item name="*com.android.chrome:textAllCaps">true</item>
     </style>
+    <style name="Base.Widget.AppCompat.Button.Colored" parent="@*android:style/Widget.Material.Button" />
     <style name="Base.Widget.AppCompat.ListView.DropDown" parent="@*android:style/Widget.Material.ListView.DropDown">
       <item name="android:backgroundTint">@*android:color/secondary_text_leanback_light</item>
     </style>
     <style name="Base.V7.Widget.AppCompat.AutoCompleteTextView" parent="@*android:style/Widget.AutoCompleteTextView">
-        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textAppearance">?*android:textAppearanceMedium</item>
         <item name="android:textColor">#ffdddddd</item>
         <item name="android:background">@*com.android.chrome:drawable/abc_edit_text_material</item>
         <item name="android:dropDownSelector">@*com.android.chrome:drawable/abc_list_selector_holo_dark</item>
         <item name="android:popupBackground">@*com.android.chrome:drawable/abc_popup_background_mtrl_mult</item>
     </style>
     <style name="Base.V7.Widget.AppCompat.EditText" parent="@*android:style/Widget.EditText">
-        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textAppearance">?*android:textAppearanceMedium</item>
         <item name="android:textColor">#ffdddddd</item>
         <item name="android:background">@*com.android.chrome:drawable/abc_edit_text_material</item>
     </style>
@@ -42,7 +43,7 @@
     <style name="ButtonBar" parent="@*android:style/Holo.ButtonBar.AlertDialog">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:divider">?android:dividerVertical</item>
+        <item name="android:divider">?*android:dividerVertical</item>
         <item name="android:showDividers">middle</item>
         <item name="android:dividerPadding">0.0dip</item>
     </style>
@@ -133,10 +134,6 @@
     </style>
     <style name="Spinner.LowEnd" parent="@*android:style/Widget.Material.Spinner">
         <item name="android:popupBackground">@*com.android.chrome:drawable/popup_background_shadow</item>
-    </style>
-    <style name="TabbedModeTheme" parent="@*com.android.chrome:style/TabbedModeThemeBase">
-        <item name="android:windowBackground">@*android:color/primary_text_leanback_light</item>
-        <item name="android:windowShowWallpaper">false</item>
     </style>
     <style name="TabbedModeThemeBase" parent="@*com.android.chrome:style/MainTheme">
         <item name="android:windowBackground">@*android:color/primary_text_leanback_light</item>

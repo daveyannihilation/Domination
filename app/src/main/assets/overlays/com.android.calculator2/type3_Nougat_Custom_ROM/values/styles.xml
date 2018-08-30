@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme" parent="@*android:style/Theme.DeviceDefault.Light">
-        <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
+    <style name="CalculatorTheme" parent="@*android:style/Theme.Material.NoActionBar">
+        <item name="android:windowContentOverlay">@null</item>
         <item name="android:colorPrimary">#ff006064</item>
         <item name="android:statusBarColor">#ff006064</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+    </style>
+    <style name="DisplayEditTextStyle" parent="@*android:style/Widget.Material.EditText">
+        <item name="android:gravity">end|bottom|center</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:fontFamily">sans-serif-light</item>
     </style>
     <style name="DisplayTextStyle" parent="@*android:style/Widget.Material.TextView">
         <item name="android:gravity">end|bottom|center</item>
@@ -33,17 +41,9 @@
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">fill_parent</item>
     </style>
-    <style name="CalculatorTheme" parent="@*android:style/Theme.Material.NoActionBar">
-        <item name="android:windowContentOverlay">@null</item>
+    <style name="Theme" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
         <item name="android:colorPrimary">#ff006064</item>
         <item name="android:statusBarColor">#ff006064</item>
-        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
-    </style>
-    <style name="DisplayEditTextStyle" parent="@*android:style/Widget.Material.EditText">
-        <item name="android:gravity">end|bottom|center</item>
-        <item name="android:background">#00000000</item>
-        <item name="android:cursorVisible">false</item>
-        <item name="android:includeFontPadding">false</item>
-        <item name="android:fontFamily">sans-serif-light</item>
     </style>
 </resources>

@@ -120,7 +120,7 @@
         <item name="android:elevation">4.0dip</item>
         <item name="*com.google.android.calendar:actionBarSize">@*com.google.android.calendar:dimen/action_bar_height</item>
         <item name="*com.google.android.calendar:titleTextAppearance">@*com.google.android.calendar:style/TextAppearance.Toolbar.White</item>
-        <item name="*com.google.android.calendar:navigationIcon">@*com.google.android.calendar:drawable/quantum_ic_arrow_back_grey600_24</item>
+        <item name="*com.google.android.calendar:navigationIcon">@*com.google.android.calendar:drawable/ic_arrow_back_grey600_24</item>
         <item name="*com.google.android.calendar:navigationContentDescription">@*com.google.android.calendar:string/accessibility_navigation_icon</item>
     </style>
 
@@ -258,7 +258,9 @@
         <item name="android:background">@*android:color/primary_material_dark</item>
         <item name="android:displayOptions">homeAsUp|showTitle</item>
     </style>
-    <style name="FindTimeTheme" parent="@*com.google.android.calendar:style/FindTimeThemeBase">
+    <style name="FindTimeTheme" parent="@*com.google.android.calendar:style/CalendarTheme.AbstractNoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:actionMenuTextAppearance">@*com.google.android.calendar:style/WhiteToolbarActionTextAppearance</item>
         <item name="android:windowTranslucentStatus">false</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
@@ -273,5 +275,48 @@
         <item name="android:colorEdgeEffect">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.calendar:actionMenuTextColor">@*android:color/white</item>
         <item name="*com.google.android.calendar:colorAccent">@*com.google.android.calendar:color/quantum_googblue</item>
+    </style>
+
+
+    <style name="CalendarGmTheme.NoActionBar.Base" parent="@*com.google.android.calendar:style/Theme.GoogleMaterial.Light.NoActionBar.Bridge">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:startYear">1970</item>
+        <item name="android:endYear">2036</item>
+        <item name="android:colorPrimary">@*com.google.android.calendar:color/google_blue600</item>
+        <item name="android:statusBarColor">@*android:color/transparent</item>
+        <item name="*com.google.android.calendar:snackbarStyle">@*com.google.android.calendar:style/Widget.GoogleMaterial.Snackbar</item>
+        <item name="*com.google.android.calendar:snackbarButtonStyle">@*com.google.android.calendar:style/Widget.GoogleMaterial.TextButton.Snackbar</item>
+    </style>
+    <style name="EditTextToolbarGm" parent="@*com.google.android.calendar:style/EditTextToolbar">
+        <item name="android:background">@*android:color/primary_material_dark</item>
+        <item name="android:paddingStart">4.0dip</item>
+        <item name="*com.google.android.calendar:contentInsetStart">60.0dip</item>
+        <item name="*com.google.android.calendar:contentInsetStartWithNavigation">60.0dip</item>
+        <item name="*com.google.android.calendar:titleTextAppearance">@*com.google.android.calendar:style/TextAppearance.Toolbar.GoogleMaterial</item>
+        <item name="*com.google.android.calendar:navigationIcon">@*com.google.android.calendar:drawable/quantum_gm_ic_arrow_back_gm_grey_24</item>
+    </style>
+    <style name="EditTextToolbarEditText" parent="@*com.google.android.calendar:style/Edit.Text">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:textColorHighlight">@*com.google.android.calendar:color/highlight_color</item>
+        <item name="android:textColorHint">#ffbbbbbb</item>
+        <item name="android:textColorLink">@*android:color/white</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:inputType">textFilter|textNoSuggestions</item>
+        <item name="android:textCursorDrawable">@*com.google.android.calendar:drawable/cursor_white</item>
+        <item name="android:paddingStart">0.0dip</item>
+    </style>
+    <style name="EditTextToolbarRightButton" parent="@*com.google.android.calendar:style/CalendarButton">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">48.0dip</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="HeadlineTitle.Light" parent="@*com.google.android.calendar:style/HeadlineTitle">
+        <item name="android:textColor">@*android:color/white</item>
     </style>
 </resources>

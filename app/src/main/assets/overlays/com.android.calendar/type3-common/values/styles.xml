@@ -1,10 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<resources xmlns:android="http://schemas.android.com/apk/res/android">
-
-
+<resources>
+    <style name="AppBaseTheme" parent="@*android:style/Theme.DeviceDefault.Light" />
+    <style name="CalendarActionBarStyle" parent="@*android:style/Widget.Material.ActionBar.Solid">
+        <item name="android:displayOptions">showCustom</item>
+    </style>
+    <style name="CalendarTheme" parent="@*android:Theme.DeviceDefault.Light">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="CalendarTheme.WithActionBar" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:actionBarStyle">@*com.android.calendar:style/CalendarActionBarStyle</item>
+        <item name="android:endYear">2036</item>
+        <item name="android:startYear">1970</item>
+        <item name="android:colorPrimary">#ff303f9f</item>
+        <item name="android:colorPrimaryDark">#ff1a237e</item>
+        <item name="android:colorAccent">#ff1976d2</item>
+        <item name="android:windowActionBar">true</item>
+        <item name="android:windowNoTitle">false</item>
+    </style>
+    <style name="EditEvent_Layout" parent="@*android:Theme.DeviceDefault.Light" />
+    <style name="EditEventCustomActionButton" parent="@*android:style/Widget.Material.ActionButton">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:focusable">true</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="Settings" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorPrimary">#ff303f9f</item>
+        <item name="android:colorPrimaryDark">#ff1a237e</item>
+        <item name="android:colorAccent">#ff1976d2</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+    <style name="Sync" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorPrimary">#ff303f9f</item>
+        <item name="android:colorPrimaryDark">#ff1a237e</item>
+        <item name="android:colorAccent">#ff1976d2</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+    <style name="TextAppearance.Date_Range_Title" parent="">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#ffdddddd</item>
+    </style>
+    <style name="TextAppearance.EditEvent" parent="">
+        <item name="android:textAppearance">?*android:attr/textAppearanceMedium</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#ffdddddd</item>
+    </style>
+    <style name="TextAppearance.EditEvent_Button" parent="@*com.android.calendar:style/TextAppearance.EditEvent_Label">
+        <item name="android:textColor">#ffdddddd</item>
+    </style>
+    <style name="TextAppearance.EditEvent_homeTime" parent="">
+        <item name="android:textAppearance">?*android:attr/textAppearanceSmall</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#ffbbbbbb</item>
+        <item name="android:paddingRight">2dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
     <style name="TextAppearance.EditEvent_Label" parent="">
-        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textAppearance">?*android:attr/textAppearanceSmall</item>
         <item name="android:minHeight">48dip</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_marginLeft">16dip</item>
@@ -16,102 +71,25 @@
         <item name="android:textSize">18sp</item>
         <item name="android:textColor">#ffdddddd</item>
     </style>
-
-    <style name="TextAppearance.EditEvent_Button" parent="@*com.android.calendar:style/TextAppearance.EditEvent_Label">
-        <item name="android:textColor">#ffdddddd</item>
-    </style>
-
-    <style name="TextAppearance.Recurrence_Button" parent="@*com.android.calendar:style/TextAppearance.EditEvent_Label">
-        <item name="android:textColor">#ffffffff</item>
-    </style>
-
-
     <style name="TextAppearance.EditEvent_Small" parent="">
-        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textAppearance">?*android:attr/textAppearanceSmall</item>
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">#ffdddddd</item>
         <item name="android:textAllCaps">true</item>
     </style>
-
-    <style name="TextAppearance.EditEvent" parent="">
-        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
-        <item name="android:textSize">18sp</item>
-        <item name="android:textColor">#ffdddddd</item>
-    </style>
-
-    <style name="TextAppearance.EditEventCalSpinner" parent="">
-        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
-        <item name="android:textSize">24sp</item>
-        <item name="android:textColor">#ffffffff</item>
-    </style>
-
     <style name="TextAppearance.EditEvent_Spinner" parent="@*android:style/Widget.Material.Spinner">
         <item name="android:textSize">18sp</item>
         <item name="android:textColor">#ffdddddd</item>
         <item name="android:layout_marginRight">12dp</item>
         <item name="android:layout_marginLeft">12dp</item>
     </style>
-
-    <style name="TextAppearance.EditEvent_homeTime" parent="">
-        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
-        <item name="android:textSize">12sp</item>
-        <item name="android:textColor">#ffbbbbbb</item>
-        <item name="android:paddingRight">2dip</item>
-        <item name="android:singleLine">true</item>
+    <style name="TextAppearance.EditEventCalSpinner" parent="">
+        <item name="android:textAppearance">?*android:attr/textAppearanceMedium</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#ffffffff</item>
     </style>
-
-    <style name="EditEvent_Layout" parent="@*android:Theme.DeviceDefault.Light">
+    <style name="TextAppearance.Recurrence_Button" parent="@*com.android.calendar:style/TextAppearance.EditEvent_Label">
+        <item name="android:textColor">#ffffffff</item>
     </style>
-
-    <style name="TextAppearance.Date_Range_Title" parent="">
-        <item name="android:textSize">18sp</item>
-        <item name="android:textColor">#ffdddddd</item>
-    </style>
-
-    <style name="CalendarTheme" parent="@*android:Theme.DeviceDefault.Light">
-        <item name="android:windowContentOverlay">@null</item>
-    </style>
-
-    <style name="Sync" parent="@*android:style/Theme.DeviceDefault.Light">
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:colorPrimary">#ff303f9f</item>
-        <item name="android:colorPrimaryDark">#ff1a237e</item>
-        <item name="android:colorAccent">#ff1976d2</item>
-        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-    </style>
-
-    <style name="Settings" parent="@*android:style/Theme.DeviceDefault.Light">
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:colorPrimary">#ff303f9f</item>
-        <item name="android:colorPrimaryDark">#ff1a237e</item>
-        <item name="android:colorAccent">#ff1976d2</item>
-        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-    </style>
-
-    <style name="CalendarTheme.WithActionBar" parent="@*android:style/Theme.DeviceDefault.Light">
-        <item name="android:actionBarStyle">@*com.android.calendar:style/CalendarActionBarStyle</item>
-        <item name="android:endYear">2036</item>
-        <item name="android:startYear">1970</item>
-        <item name="android:colorPrimary">#ff303f9f</item>
-        <item name="android:colorPrimaryDark">#ff1a237e</item>
-        <item name="android:colorAccent">#ff1976d2</item>
-        <item name="android:windowActionBar">true</item>
-        <item name="android:windowNoTitle">false</item>
-    </style>
-
-    <style name="CalendarActionBarStyle" parent="@*android:style/Widget.Material.ActionBar.Solid">
-        <item name="android:displayOptions">showCustom</item>
-    </style>
-
-    <style name="EditEventCustomActionButton" parent="@*android:style/Widget.Material.ActionButton">
-        <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_weight">1</item>
-        <item name="android:focusable">true</item>
-        <item name="android:orientation">horizontal</item>
-    </style>
-    <style name="AppBaseTheme" parent="@*android:style/Theme.DeviceDefault.Light" />
-   
     <style name="TextAppearance.Recurrence_SpinnerButton" parent="@*android:style/Widget.Material.Spinner" />
-
 </resources>
