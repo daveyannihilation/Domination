@@ -1,51 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.IAPTheme" parent="@*android:style/Theme.DeviceDefault.Light">
-        <item name="android:windowBackground">@*android:color/transparent</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowIsFloating">true</item>
-        <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:backgroundDimEnabled">false</item>
+    <style name="BugleBaseM2Theme" parent="@*com.google.android.apps.messaging:style/Theme.GoogleMaterial.Light">
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@*android:color/transparent</item>
+        <item name="android:statusBarColor">@*android:color/transparent</item>
+        <item name="android:windowShowWallpaper">true</item>
     </style>
-    <style name="AppBaseTheme" parent="@*android:style/Theme.DeviceDefault.Light" />
-    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light">
-        <item name="android:colorBackground">@*android:color/background_floating_material_dark</item>
-        <item name="android:windowBackground">@*android:color/background_dark</item>
+    <style name="BugleBaseToolbarM2Theme" parent="@*com.google.android.apps.messaging:style/Theme.GoogleMaterial.Light.NoActionBar">
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@*android:color/transparent</item>
+        <item name="android:statusBarColor">@*android:color/transparent</item>
+        <item name="android:windowShowWallpaper">true</item>
     </style>
-
-    <style name="ConversationMessage">
-        <item name="android:textColor">#ffffffff</item>
+    <style name="BugleM2Theme.ConversationActivity" parent="@*com.google.android.apps.messaging:style/BugleToolbarM2Theme">
+        <item name="android:fastScrollPreviewBackgroundLeft">@*com.google.android.apps.messaging:drawable/contacts_fastscroll_label_left</item>
+        <item name="android:fastScrollPreviewBackgroundRight">@*com.google.android.apps.messaging:drawable/contacts_fastscroll_label_right</item>
+        <item name="android:colorEdgeEffect">@*com.google.android.apps.messaging:color/conversation_edge_effect</item>
+        <item name="*com.google.android.apps.messaging:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@*com.google.android.apps.messaging:color/background_material_light</item>
+        <item name="android:windowShowWallpaper">true</item>
     </style>
-    <style name="ConversationMessageTimestamp">
-        <item name="android:background">@*android:color/transparent</item>
-    </style>
-    <style name="ConversationMessageStatus">
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:background">@*android:color/transparent</item>
-    </style>
-    <style name="ConversationMessageInfo">
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:background">@*android:color/transparent</item>
-    </style>
-    <style name="BugleTheme.ConversationListActivity" parent="@*com.google.android.apps.messaging:style/BugleToolbarTheme.BigTitle">
-        <item name="android:windowBackground">@*android:color/background_dark</item>
+    <style name="BugleM2Theme.ConversationListActivity" parent="@*com.google.android.apps.messaging:style/BugleToolbarM2Theme.Lockup">
+        <item name="android:windowBackground">@*com.google.android.apps.messaging:color/background_material_light</item>
+        <item name="android:windowShowWallpaper">true</item>
     </style>
     <style name="BugleTheme.ArchivedConversationListActivity" parent="@*com.google.android.apps.messaging:style/BugleToolbarTheme">
-        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowBackground">@*com.google.android.apps.messaging:color/background_material_light</item>
         <item name="*com.google.android.apps.messaging:colorPrimary">@*com.google.android.apps.messaging:color/archived_conversation_action_bar_background_color</item>
         <item name="*com.google.android.apps.messaging:colorPrimaryDark">@*com.google.android.apps.messaging:color/archived_conversation_action_bar_background_color_dark</item>
+        <item name="android:windowShowWallpaper">true</item>
     </style>
-
-
+    <style name="BugleTheme.ConversationListActivity" parent="@*com.google.android.apps.messaging:style/BugleToolbarTheme.BigTitle">
+        <item name="android:windowBackground">@*com.google.android.apps.messaging:color/background_material_light</item>
+        <item name="android:windowShowWallpaper">true</item>
+    </style>
+    <style name="BugleTheme.DialogActivity" parent="@*com.google.android.apps.messaging:style/Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:background">@*android:color/background_floating_material_dark</item>
+    </style>
+    <style name="BugleTheme.DittoActivity" parent="@*com.google.android.apps.messaging:style/BugleTheme">
+        <item name="android:windowBackground">@*com.google.android.apps.messaging:color/background_material_light</item>
+        <item name="android:windowShowWallpaper">true</item>
+    </style>
     <style name="BugleThemeGreyBackground" parent="@*com.google.android.apps.messaging:style/BugleTheme">
-        <item name="android:background">@*android:color/background_dark</item>
+        <item name="android:background">@*com.google.android.apps.messaging:color/background_material_light</item>
+        <item name="android:windowShowWallpaper">true</item>
     </style>
-
-
-
+    <style name="C2oCustomizationHandleTextStyle">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
+    </style>
+    <style name="CreationBarBackButtonStyle" parent="@*com.google.android.apps.messaging:style/Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="*com.google.android.apps.messaging:tint">@*android:color/white</item>
+    </style>
+    <style name="CreationTitleTextStyle" parent="@*com.google.android.apps.messaging:style/TextAppearance.AppCompat">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@*com.google.android.apps.messaging:dimen/title_margin_top</item>
+        <item name="android:fontFamily">@*com.google.android.apps.messaging:font/quicksand_bold</item>
+        <item name="android:layout_marginStart">@*com.google.android.apps.messaging:dimen/text_margin</item>
+        <item name="android:layout_marginEnd">@*com.google.android.apps.messaging:dimen/text_margin</item>
+    </style>
+    <style name="PhotoViewTheme" parent="@*com.google.android.apps.messaging:style/Theme.AppCompat">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.apps.messaging:windowActionBarOverlay">true</item>
+        <item name="*com.google.android.apps.messaging:actionBarStyle">@*com.google.android.apps.messaging:style/AppCompat.ActionBar</item>
+        <item name="*com.google.android.apps.messaging:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+    </style>
+    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light" />
+    <style name="PromoBannerButtonStyle" parent="@*com.google.android.apps.messaging:style/Widget.AppCompat.Button">
+        <item name="android:textSize">@*com.google.android.apps.messaging:dimen/promo_button_text_size</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:background">@*com.google.android.apps.messaging:drawable/avatar_promo_button_background</item>
+        <item name="android:layout_height">@*com.google.android.apps.messaging:dimen/promo_button_height</item>
+        <item name="android:paddingStart">@*com.google.android.apps.messaging:dimen/promo_button_padding_lr</item>
+        <item name="android:paddingEnd">@*com.google.android.apps.messaging:dimen/promo_button_padding_lr</item>
+    </style>
     <style name="RecipientEditTextViewBase">
-        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textAppearance">?*android:textAppearanceMedium</item>
         <item name="android:background">@null</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -55,23 +89,12 @@
         <item name="android:textDirection">locale</item>
         <item name="android:textAlignment">viewStart</item>
     </style>
-
-
-
-    <style name="BugleTheme.DialogActivity" parent="@*com.google.android.apps.messaging:style/Theme.AppCompat.Light.Dialog">
-        <item name="android:windowNoTitle">false</item>
-        <item name="android:background">@*android:color/background_floating_material_dark</item>
+    <style name="Widget.GoogleMaterial.CardView.Dark" parent="@*com.google.android.apps.messaging:style/Widget.GoogleMaterial.CardView">
+        <item name="*com.google.android.apps.messaging:strokeColor">@*android:color/white</item>
     </style>
-    <style name="C2oCustomizationHandleTextStyle">
-        <item name="android:textSize">16.0sp</item>
-        <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
-    </style>
-
-
-    <style name="BugleM2Theme.ConversationListActivity" parent="@*com.google.android.apps.messaging:style/BugleToolbarM2Theme.Lockup">
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-    </style>
-    <style name="BugleTheme.DittoActivity" parent="@*com.google.android.apps.messaging:style/BugleTheme">
-        <item name="android:windowBackground">@*android:color/background_dark</item>
+    <style name="ZeroStateSearchToolbarTitleTextStyle">
+        <item name="android:textSize">@*com.google.android.apps.messaging:dimen/zero_state_toolbar_title_size</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:fontFamily">@*com.google.android.apps.messaging:font/google_sans</item>
     </style>
 </resources>

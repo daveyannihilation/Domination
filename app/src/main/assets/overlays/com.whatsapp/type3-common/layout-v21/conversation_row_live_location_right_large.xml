@@ -17,7 +17,9 @@
             </FrameLayout>
         </FrameLayout>
         <RelativeLayout android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
-            <include layout="@*com.whatsapp:layout/conversation_row_live_location_status_large" />
+            <FrameLayout android:id="@*com.whatsapp:id/live_location_info_holder" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@*com.whatsapp:layout/conversation_row_live_location_status_large" />
+            </FrameLayout>
             <com.whatsapp.TextAndDateLayout android:id="@*com.whatsapp:id/text_and_date" android:paddingTop="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
                 <com.whatsapp.TextEmojiLabel android:textSize="@*com.whatsapp:dimen/conversation_text_row_tv" android:textColor="#ffffffff" android:layout_gravity="left" android:id="@*com.whatsapp:id/live_location_caption" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="@*com.whatsapp:dimen/conversation_video_thumb_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-1.0dip" />
                 <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom|center|right" android:orientation="horizontal" android:id="@*com.whatsapp:id/date_wrapper" android:paddingLeft="@*com.whatsapp:dimen/conversation_image_date_padding_right" android:paddingRight="@*com.whatsapp:dimen/conversation_image_date_padding_right" android:paddingBottom="@*com.whatsapp:dimen/conversation_image_date_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content">

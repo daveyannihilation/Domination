@@ -4,6 +4,7 @@
     <attr name="bottomNavigationStyle" format="reference" />
     <attr name="bottomSheetDialogTheme" format="reference" />
     <attr name="bottomSheetStyle" format="reference" />
+    <attr name="c2oItemBackground" format="reference|color" />
     <attr name="cardViewStyle" format="reference" />
     <attr name="chipGroupStyle" format="reference" />
     <attr name="chipStandaloneStyle" format="reference" />
@@ -106,6 +107,8 @@
     </attr>
     <attr name="materialButtonStyle" format="reference" />
     <attr name="materialCardViewStyle" format="reference" />
+    <attr name="mtrlColor" format="reference|color" />
+    <attr name="mtrlColors" format="reference" />
     <attr name="navigationViewStyle" format="reference" />
     <attr name="openSearchBarStyle" format="reference" />
     <attr name="openSearchViewPrefixStyle" format="reference" />
@@ -181,6 +184,9 @@
     <attr name="showTitle" format="boolean" />
     <attr name="buttonIconDimen" format="dimension" />
     <attr name="minIntervalSeconds" format="integer" />
+    <attr name="logoSpriteDrawable" format="reference" />
+    <attr name="frameCount" format="integer" />
+    <attr name="durationMillis" format="integer" />
     <attr name="expanded" format="boolean" />
     <attr name="liftOnScroll" format="boolean" />
     <attr name="state_collapsed" format="boolean" />
@@ -363,7 +369,6 @@
         <enum name="center" value="0" />
         <enum name="end" value="1" />
     </attr>
-    <attr name="fabAttached" format="boolean" />
     <attr name="fabCradleMargin" format="dimension" />
     <attr name="fabCradleRoundedCornerRadius" format="dimension" />
     <attr name="fabCradleVerticalOffset" format="dimension" />
@@ -402,14 +407,17 @@
     <attr name="chipCornerRadius" format="dimension" />
     <attr name="chipStrokeColor" format="color" />
     <attr name="chipStrokeWidth" format="dimension" />
+    <attr name="chipIconVisible" format="boolean" />
     <attr name="chipIconEnabled" format="boolean" />
     <attr name="chipIcon" format="reference" />
     <attr name="chipIconTint" format="color" />
     <attr name="chipIconSize" format="dimension" />
+    <attr name="closeIconVisible" format="boolean" />
     <attr name="closeIconEnabled" format="boolean" />
     <attr name="closeIcon" format="reference" />
     <attr name="closeIconTint" format="color" />
     <attr name="closeIconSize" format="dimension" />
+    <attr name="checkedIconVisible" format="boolean" />
     <attr name="checkedIconEnabled" format="boolean" />
     <attr name="checkedIcon" format="reference" />
     <attr name="chipStartPadding" format="dimension" />
@@ -652,6 +660,8 @@
     <attr name="useCompatPadding" format="boolean" />
     <attr name="maxImageSize" format="dimension" />
     <attr name="behavior_autoHide" format="boolean" />
+    <attr name="itemSpacing" format="dimension" />
+    <attr name="lineSpacing" format="dimension" />
     <attr name="fontProviderAuthority" format="string" />
     <attr name="fontProviderPackage" format="string" />
     <attr name="fontProviderQuery" format="string" />
@@ -786,6 +796,19 @@
     </attr>
     <attr name="imageAspectRatio" format="float" />
     <attr name="circleCrop" format="boolean" />
+    <attr name="lottie_fileName" format="string" />
+    <attr name="lottie_autoPlay" format="boolean" />
+    <attr name="lottie_loop" format="boolean" />
+    <attr name="lottie_imageAssetsFolder" format="string" />
+    <attr name="lottie_progress" format="float" />
+    <attr name="lottie_enableMergePathsForKitKatAndAbove" format="boolean" />
+    <attr name="lottie_cacheStrategy">
+        <enum name="none" value="0" />
+        <enum name="strong" value="2" />
+        <enum name="weak" value="1" />
+    </attr>
+    <attr name="lottie_colorFilter" format="color" />
+    <attr name="lottie_scale" format="float" />
     <attr name="mapType">
         <enum name="none" value="0" />
         <enum name="normal" value="1" />
@@ -822,8 +845,6 @@
         <flag name="textStart" value="0x00000002" />
     </attr>
     <attr name="iconTint" format="color" />
-    <attr name="additionalPaddingStartForIcon" format="dimension" />
-    <attr name="additionalPaddingEndForIcon" format="dimension" />
     <attr name="cornerRadius" format="reference|dimension" />
     <attr name="alphabeticModifiers">
         <flag name="ALT" value="0x00000002" />
@@ -875,6 +896,7 @@
     <attr name="hideNavigationIcon" format="boolean" />
     <attr name="searchPrefixText" format="string" />
     <attr name="useDrawerArrowDrawable" format="boolean" />
+    <attr name="fadeThroughMenuItems" format="boolean" />
     <attr name="autoShowKeyboard" format="boolean" />
     <attr name="layout_widthPercent" format="fraction" />
     <attr name="layout_heightPercent" format="fraction" />
@@ -990,6 +1012,7 @@
         <enum name="light" value="1" />
     </attr>
     <attr name="scopeUris" format="reference|string" />
+    <attr name="snackbarStyle" format="reference" />
     <attr name="snackbarButtonStyle" format="reference" />
     <attr name="maxActionInlineWidth" format="dimension" />
     <attr name="maxLevelRadius" format="reference|dimension" />
@@ -1199,4 +1222,25 @@
         <enum name="monochrome" value="2" />
         <enum name="android_pay" value="3" />
     </attr>
+    <attr name="mtrlSize">
+        <enum name="large" value="3" />
+        <enum name="small" value="1" />
+        <enum name="medium" value="2" />
+    </attr>
+    <attr name="mtrlIndeterminateProgressStyle">
+        <enum name="circular" value="0" />
+        <enum name="linear" value="1" />
+        <enum name="linearReverse" value="2" />
+    </attr>
+    <attr name="mtrlDeterminateProgressStyle">
+        <enum name="circular" value="0" />
+        <enum name="linear" value="1" />
+    </attr>
+    <attr name="mtrlLinearGrowFrom">
+        <enum name="bottom" value="0" />
+        <enum name="top" value="1" />
+        <enum name="off" value="2" />
+    </attr>
+    <attr name="mtrlLinearBarHeight" format="reference|dimension" />
+    <attr name="mtrlLinearBarInset" format="reference|dimension" />
 </resources>

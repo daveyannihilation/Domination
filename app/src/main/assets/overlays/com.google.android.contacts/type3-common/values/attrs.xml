@@ -41,8 +41,6 @@
     <attr name="actionViewClass" format="string" />
     <attr name="activated_background" format="reference" />
     <attr name="activityChooserViewStyle" format="reference" />
-    <attr name="additionalPaddingEndForIcon" format="dimension" />
-    <attr name="additionalPaddingStartForIcon" format="dimension" />
     <attr name="adjustable" format="boolean" />
     <attr name="alertDialogButtonGroupStyle" format="reference" />
     <attr name="alertDialogCenterButtons" format="boolean" />
@@ -80,6 +78,7 @@
     <attr name="arrowHeadLength" format="dimension" />
     <attr name="arrowShaftLength" format="dimension" />
     <attr name="autoCompleteTextViewStyle" format="reference" />
+    <attr name="autoShowKeyboard" format="boolean" />
     <attr name="autoSizeMaxTextSize" format="dimension" />
     <attr name="autoSizeMinTextSize" format="dimension" />
     <attr name="autoSizePresetSizes" format="reference" />
@@ -88,6 +87,7 @@
         <enum name="none" value="0" />
         <enum name="uniform" value="1" />
     </attr>
+    <attr name="avatarSize" format="dimension" />
     <attr name="background" format="reference" />
     <attr name="backgroundSplit" format="reference|color" />
     <attr name="backgroundStacked" format="reference|color" />
@@ -112,6 +112,7 @@
     <attr name="borderWidth" format="dimension" />
     <attr name="borderlessButtonStyle" format="reference" />
     <attr name="bottomAppBarStyle" format="reference" />
+    <attr name="bottomDrawerStyle" format="reference" />
     <attr name="bottomNavigationStyle" format="reference" />
     <attr name="bottomSheetDialogTheme" format="reference" />
     <attr name="bottomSheetStyle" format="reference" />
@@ -121,16 +122,11 @@
         <enum name="none" value="0" />
         <enum name="outline" value="2" />
     </attr>
-    <attr name="boxCollapsedPaddingBottom" format="dimension" />
     <attr name="boxCollapsedPaddingTop" format="dimension" />
     <attr name="boxCornerRadiusBottomEnd" format="dimension" />
     <attr name="boxCornerRadiusBottomStart" format="dimension" />
     <attr name="boxCornerRadiusTopEnd" format="dimension" />
     <attr name="boxCornerRadiusTopStart" format="dimension" />
-    <attr name="boxExpandedPaddingBottom" format="dimension" />
-    <attr name="boxExpandedPaddingTop" format="dimension" />
-    <attr name="boxPaddingEnd" format="dimension" />
-    <attr name="boxPaddingStart" format="dimension" />
     <attr name="boxStrokeColor" format="color" />
     <attr name="boxStrokeWidth" format="dimension" />
     <attr name="buttonBarButtonStyle" format="reference" />
@@ -179,6 +175,7 @@
     <attr name="checkedChip" format="reference" />
     <attr name="checkedIcon" format="reference" />
     <attr name="checkedIconEnabled" format="boolean" />
+    <attr name="checkedIconVisible" format="boolean" />
     <attr name="checkedTextViewStyle" format="reference" />
     <attr name="chipBackgroundColor" format="color" />
     <attr name="chipCornerRadius" format="dimension" />
@@ -187,6 +184,8 @@
     <attr name="chipIcon" format="reference" />
     <attr name="chipIconEnabled" format="boolean" />
     <attr name="chipIconSize" format="dimension" />
+    <attr name="chipIconTint" format="color" />
+    <attr name="chipIconVisible" format="boolean" />
     <attr name="chipMinHeight" format="dimension" />
     <attr name="chipSpacing" format="dimension" />
     <attr name="chipSpacingHorizontal" format="dimension" />
@@ -203,6 +202,7 @@
     <attr name="closeIconSize" format="dimension" />
     <attr name="closeIconStartPadding" format="dimension" />
     <attr name="closeIconTint" format="color" />
+    <attr name="closeIconVisible" format="boolean" />
     <attr name="closeItemLayout" format="reference" />
     <attr name="collapseContentDescription" format="string" />
     <attr name="collapseIcon" format="reference" />
@@ -260,6 +260,7 @@
     <attr name="colorSecondaryLight" format="color" />
     <attr name="colorSwitchThumbNormal" format="color" />
     <attr name="commitIcon" format="reference" />
+    <attr name="constraintSet" format="reference" />
     <attr name="contact_browser_list_padding_left" format="dimension" />
     <attr name="contact_browser_list_padding_right" format="dimension" />
     <attr name="contentDescription" format="string" />
@@ -306,6 +307,7 @@
     <attr name="dialpad_voicemail_tint" format="color" />
     <attr name="direction" format="string" />
     <attr name="disableDependentsState" format="boolean" />
+    <attr name="discSize" format="dimension" />
     <attr name="displayOptions">
         <flag name="disableHome" value="0x00000020" />
         <flag name="homeAsUp" value="0x00000004" />
@@ -327,6 +329,7 @@
     <attr name="dropDownListViewStyle" format="reference" />
     <attr name="dropdownListPreferredItemHeight" format="dimension" />
     <attr name="dropdownPreferenceStyle" format="reference" />
+    <attr name="durationMillis" format="integer" />
     <attr name="edgeWidth" format="dimension" />
     <attr name="editTextBackground" format="reference" />
     <attr name="editTextColor" format="reference|color" />
@@ -335,11 +338,13 @@
     <attr name="elevation" format="dimension" />
     <attr name="enabled" format="boolean" />
     <attr name="enforceMaterialTheme" format="boolean" />
+    <attr name="enforceTextAppearance" format="boolean" />
     <attr name="entries" format="reference" />
     <attr name="entryValues" format="reference" />
     <attr name="errorEnabled" format="boolean" />
     <attr name="errorTextAppearance" format="reference" />
     <attr name="expandActivityOverflowButtonDrawable" format="reference" />
+    <attr name="expandable" format="boolean" />
     <attr name="expanded" format="boolean" />
     <attr name="expandedTitleGravity">
         <flag name="bottom" value="0x00000050" />
@@ -363,7 +368,6 @@
         <enum name="center" value="0" />
         <enum name="end" value="1" />
     </attr>
-    <attr name="fabAttached" format="boolean" />
     <attr name="fabCradleMargin" format="dimension" />
     <attr name="fabCradleRoundedCornerRadius" format="dimension" />
     <attr name="fabCradleVerticalOffset" format="dimension" />
@@ -373,6 +377,7 @@
         <enum name="mini" value="1" />
         <enum name="normal" value="0" />
     </attr>
+    <attr name="fadeThroughMenuItems" format="boolean" />
     <attr name="fastScrollEnabled" format="boolean" />
     <attr name="fastScrollHorizontalThumbDrawable" format="reference" />
     <attr name="fastScrollHorizontalTrackDrawable" format="reference" />
@@ -414,6 +419,7 @@
     <attr name="forceFullHeight" format="boolean" />
     <attr name="foregroundInsidePadding" format="boolean" />
     <attr name="fragment" format="string" />
+    <attr name="frameCount" format="integer" />
     <attr name="gapBetweenBars" format="dimension" />
     <attr name="goIcon" format="reference" />
     <attr name="headerLayout" format="reference" />
@@ -434,6 +440,10 @@
     <attr name="hoveredFocusedTranslationZ" format="dimension" />
     <attr name="icon" format="reference" />
     <attr name="iconEndPadding" format="dimension" />
+    <attr name="iconGravity">
+        <flag name="start" value="0x00000001" />
+        <flag name="textStart" value="0x00000002" />
+    </attr>
     <attr name="iconPadding" format="dimension" />
     <attr name="iconSize" format="dimension" />
     <attr name="iconSpaceReserved" format="boolean" />
@@ -528,6 +538,80 @@
         <enum name="pin" value="1" />
     </attr>
     <attr name="layout_collapseParallaxMultiplier" format="float" />
+    <attr name="layout_constraintBaseline_creator" format="integer" />
+    <attr name="layout_constraintBaseline_toBaselineOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintBottom_creator" format="integer" />
+    <attr name="layout_constraintBottom_toBottomOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintBottom_toTopOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintDimensionRatio" format="string" />
+    <attr name="layout_constraintEnd_toEndOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintEnd_toStartOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintGuide_begin" format="dimension" />
+    <attr name="layout_constraintGuide_end" format="dimension" />
+    <attr name="layout_constraintGuide_percent" format="float" />
+    <attr name="layout_constraintHeight_default">
+        <enum name="spread" value="0" />
+        <enum name="wrap" value="1" />
+    </attr>
+    <attr name="layout_constraintHeight_max" format="dimension" />
+    <attr name="layout_constraintHeight_min" format="dimension" />
+    <attr name="layout_constraintHorizontal_bias" format="float" />
+    <attr name="layout_constraintHorizontal_chainStyle">
+        <enum name="packed" value="2" />
+        <enum name="spread" value="0" />
+        <enum name="spread_inside" value="1" />
+    </attr>
+    <attr name="layout_constraintHorizontal_weight" format="float" />
+    <attr name="layout_constraintLeft_creator" format="integer" />
+    <attr name="layout_constraintLeft_toLeftOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintLeft_toRightOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintRight_creator" format="integer" />
+    <attr name="layout_constraintRight_toLeftOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintRight_toRightOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintStart_toEndOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintStart_toStartOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintTop_creator" format="integer" />
+    <attr name="layout_constraintTop_toBottomOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintTop_toTopOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintVertical_bias" format="float" />
+    <attr name="layout_constraintVertical_chainStyle">
+        <enum name="packed" value="2" />
+        <enum name="spread" value="0" />
+        <enum name="spread_inside" value="1" />
+    </attr>
+    <attr name="layout_constraintVertical_weight" format="float" />
+    <attr name="layout_constraintWidth_default">
+        <enum name="spread" value="0" />
+        <enum name="wrap" value="1" />
+    </attr>
+    <attr name="layout_constraintWidth_max" format="dimension" />
+    <attr name="layout_constraintWidth_min" format="dimension" />
     <attr name="layout_dodgeInsetEdges">
         <flag name="all" value="0x00000077" />
         <flag name="bottom" value="0x00000050" />
@@ -538,9 +622,17 @@
         <flag name="start" value="0x00800003" />
         <flag name="top" value="0x00000030" />
     </attr>
+    <attr name="layout_editor_absoluteX" format="dimension" />
+    <attr name="layout_editor_absoluteY" format="dimension" />
     <attr name="layout_flexBasisPercent" format="fraction" />
     <attr name="layout_flexGrow" format="float" />
     <attr name="layout_flexShrink" format="float" />
+    <attr name="layout_goneMarginBottom" format="dimension" />
+    <attr name="layout_goneMarginEnd" format="dimension" />
+    <attr name="layout_goneMarginLeft" format="dimension" />
+    <attr name="layout_goneMarginRight" format="dimension" />
+    <attr name="layout_goneMarginStart" format="dimension" />
+    <attr name="layout_goneMarginTop" format="dimension" />
     <attr name="layout_insetEdge">
         <enum name="bottom" value="80" />
         <enum name="end" value="8388613" />
@@ -561,6 +653,12 @@
     <attr name="layout_narrowPaddingRight" format="dimension" />
     <attr name="layout_narrowParentWidth" format="dimension" />
     <attr name="layout_narrowWidth" format="dimension" />
+    <attr name="layout_optimizationLevel">
+        <flag name="all" value="0x00000002" />
+        <flag name="basic" value="0x00000004" />
+        <flag name="chains" value="0x00000008" />
+        <flag name="none" value="0x00000001" />
+    </attr>
     <attr name="layout_order" format="integer" />
     <attr name="layout_scrollFlags">
         <flag name="enterAlways" value="0x00000004" />
@@ -600,7 +698,6 @@
     <attr name="list_item_gap_between_indexer_and_image" format="dimension" />
     <attr name="list_item_gap_between_label_and_data" format="dimension" />
     <attr name="list_item_header_height" format="dimension" />
-    <attr name="list_item_header_text_color" format="color" />
     <attr name="list_item_header_text_indent" format="dimension" />
     <attr name="list_item_header_text_size" format="dimension" />
     <attr name="list_item_height" format="dimension" />
@@ -611,11 +708,9 @@
     <attr name="list_item_padding_bottom_extra" format="dimension" />
     <attr name="list_item_padding_left" format="dimension" />
     <attr name="list_item_padding_right" format="dimension" />
-    <attr name="list_item_padding_right_starred_contact" format="dimension" />
     <attr name="list_item_padding_top" format="dimension" />
     <attr name="list_item_padding_top_extra" format="dimension" />
     <attr name="list_item_photo_size" format="dimension" />
-    <attr name="list_item_prefix_highlight_color" format="color" />
     <attr name="list_item_profile_photo_size" format="dimension" />
     <attr name="list_item_text_indent" format="dimension" />
     <attr name="list_item_text_offset_top" format="dimension" />
@@ -640,6 +735,7 @@
         <enum name="standard" value="0" />
     </attr>
     <attr name="logoDescription" format="string" />
+    <attr name="logoSpriteDrawable" format="reference" />
     <attr name="mapType">
         <enum name="hybrid" value="4" />
         <enum name="none" value="0" />
@@ -660,6 +756,29 @@
     <attr name="mimeType" format="string" />
     <attr name="min" format="integer" />
     <attr name="minIntervalSeconds" format="integer" />
+    <attr name="mtrlColor" format="reference|color" />
+    <attr name="mtrlColors" format="reference" />
+    <attr name="mtrlDeterminateProgressStyle">
+        <enum name="circular" value="0" />
+        <enum name="linear" value="1" />
+    </attr>
+    <attr name="mtrlIndeterminateProgressStyle">
+        <enum name="circular" value="0" />
+        <enum name="linear" value="1" />
+        <enum name="linearReverse" value="2" />
+    </attr>
+    <attr name="mtrlLinearBarHeight" format="reference|dimension" />
+    <attr name="mtrlLinearBarInset" format="reference|dimension" />
+    <attr name="mtrlLinearGrowFrom">
+        <enum name="bottom" value="0" />
+        <enum name="off" value="2" />
+        <enum name="top" value="1" />
+    </attr>
+    <attr name="mtrlSize">
+        <enum name="large" value="3" />
+        <enum name="medium" value="2" />
+        <enum name="small" value="1" />
+    </attr>
     <attr name="multiChoiceItemLayout" format="reference" />
     <attr name="navigationContentDescription" format="string" />
     <attr name="navigationIcon" format="reference" />
@@ -679,6 +798,7 @@
         <flag name="SYM" value="0x00000004" />
     </attr>
     <attr name="openSearchBarStyle" format="reference" />
+    <attr name="openSearchViewPrefixStyle" format="reference" />
     <attr name="openSearchViewStyle" format="reference" />
     <attr name="order" format="integer" />
     <attr name="orderingFromXml" format="boolean" />
@@ -741,9 +861,11 @@
     <attr name="scopeUris" format="reference|string" />
     <attr name="scrimAnimationDuration" format="integer" />
     <attr name="scrimBackground" format="reference|color" />
+    <attr name="scrimColor" format="color" />
     <attr name="scrimVisibleHeightTrigger" format="dimension" />
     <attr name="searchHintIcon" format="reference" />
     <attr name="searchIcon" format="reference" />
+    <attr name="searchPrefixText" format="string" />
     <attr name="searchViewStyle" format="reference" />
     <attr name="section_header_background" format="reference" />
     <attr name="seekBarIncrement" format="integer" />
@@ -793,6 +915,7 @@
     <attr name="singleLineTitle" format="boolean" />
     <attr name="singleSelection" format="boolean" />
     <attr name="snackbarButtonStyle" format="reference" />
+    <attr name="snackbarStyle" format="reference" />
     <attr name="spanCount" format="integer" />
     <attr name="spinBars" format="boolean" />
     <attr name="spinnerDropDownItemStyle" format="reference" />
@@ -906,6 +1029,7 @@
     <attr name="textColorSearchUrl" format="reference|color" />
     <attr name="textEndPadding" format="dimension" />
     <attr name="textInputStyle" format="reference" />
+    <attr name="textSizeMaxDp" format="dimension" />
     <attr name="textStartPadding" format="dimension" />
     <attr name="theme" format="reference" />
     <attr name="thickness" format="dimension" />
