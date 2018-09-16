@@ -29,10 +29,7 @@
     <attr name="chipGroupStyle" format="reference" />
     <attr name="chipStandaloneStyle" format="reference" />
     <attr name="chipStyle" format="reference" />
-    <attr name="colorPrimaryLight" format="color" />
     <attr name="colorSecondary" format="color" />
-    <attr name="colorSecondaryDark" format="color" />
-    <attr name="colorSecondaryLight" format="color" />
     <attr name="colorWalletActionBarBackground" format="color" />
     <attr name="colorWalletActionBarForeground" format="reference|color" />
     <attr name="colorWalletButtonHighlightPrimary" format="reference|color" />
@@ -70,6 +67,7 @@
     <attr name="drawableWalletFlatButtonBackground" format="reference" />
     <attr name="drawableWalletLogoText" format="reference" />
     <attr name="drawerArrowStyle" format="reference" />
+    <attr name="flashIconColor" format="color" />
     <attr name="floatingActionButtonStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="fmNavButtonTextTint" format="reference|color" />
     <attr name="fmToolbarContentTint" format="reference|color" />
@@ -89,6 +87,7 @@
     <attr name="internalUicCardNumberOneCardModeStartMargin" format="dimension" />
     <attr name="internalUicCarrierBillingDrawable" format="reference" />
     <attr name="internalUicCarrierBillingPhoenixPhoneDrawable" format="reference" />
+    <attr name="internalUicCheckMarkAnimationDrawable" format="reference" />
     <attr name="internalUicChipButtonRemoveDrawable" format="reference" />
     <attr name="internalUicCircleDoneIconBlueDrawable" format="reference" />
     <attr name="internalUicCircularButtonBackgroundDrawable" format="reference" />
@@ -147,6 +146,7 @@
     <attr name="internalUicInfoMessageImageSize" format="reference|dimension" />
     <attr name="internalUicInfoMessageLayout" format="reference|integer" />
     <attr name="internalUicInputDisplayType" format="reference" />
+    <attr name="internalUicIsAppCompat" format="boolean" />
     <attr name="internalUicLargeCodeDisplayDisplayType" format="reference" />
     <attr name="internalUicLegalMessageLayout" format="reference|integer" />
     <attr name="internalUicMaterialFieldHiddenErrorViewVisibility">
@@ -164,7 +164,9 @@
     <attr name="internalUicNonFormFieldTextTopBottomMargin" format="dimension" />
     <attr name="internalUicPaginationNextDrawable" format="reference" />
     <attr name="internalUicPaginationPreviousDrawable" format="reference" />
+    <attr name="internalUicPaypalAccountLinkingAnimationDrawable" format="reference" />
     <attr name="internalUicPaypalLightDrawable" format="reference" />
+    <attr name="internalUicPaypalLogoFullDrawable" format="reference" />
     <attr name="internalUicPendingDisplayType" format="reference" />
     <attr name="internalUicProgressBarLayout" format="reference" />
     <attr name="internalUicPromoIconDrawable" format="reference" />
@@ -192,6 +194,7 @@
     <attr name="internalUicShippingMethodGroundIconDrawable" format="reference" />
     <attr name="internalUicShowKeyboardDelayMs" format="integer" />
     <attr name="internalUicSubHeaderDisplayType" format="reference" />
+    <attr name="internalUicSubHeaderPrimaryDisplayType" format="reference" />
     <attr name="internalUicUrlLinkDisplayType">
         <enum name="externalBrowser" value="2" />
         <enum name="webViewDialog" value="1" />
@@ -313,6 +316,10 @@
     <attr name="mtrlColor" format="reference|color" />
     <attr name="mtrlColors" format="reference" />
     <attr name="navigationViewStyle" format="reference" />
+    <attr name="openSearchBarStyle" format="reference" />
+    <attr name="openSearchViewPrefixStyle" format="reference" />
+    <attr name="openSearchViewStyle" format="reference" />
+    <attr name="productLockupViewStyle" format="reference" />
     <attr name="rippleColor" format="color" />
     <attr name="scrimBackground" format="reference|color" />
     <attr name="showMotionSpec" format="reference" />
@@ -524,9 +531,15 @@
     <attr name="showTitle" format="boolean" />
     <attr name="buttonIconDimen" format="dimension" />
     <attr name="minIntervalSeconds" format="integer" />
+    <attr name="logoSpriteDrawable" format="reference" />
+    <attr name="frameCount" format="integer" />
+    <attr name="durationMillis" format="integer" />
     <attr name="expanded" format="boolean" />
+    <attr name="liftOnScroll" format="boolean" />
     <attr name="state_collapsed" format="boolean" />
     <attr name="state_collapsible" format="boolean" />
+    <attr name="state_lifted" format="boolean" />
+    <attr name="state_liftable" format="boolean" />
     <attr name="layout_scrollFlags">
         <flag name="enterAlways" value="0x00000004" />
         <flag name="enterAlwaysCollapsed" value="0x00000008" />
@@ -695,7 +708,6 @@
         <enum name="end" value="1" />
         <enum name="center" value="0" />
     </attr>
-    <attr name="fabAttached" format="boolean" />
     <attr name="fabCradleMargin" format="dimension" />
     <attr name="fabCradleRoundedCornerRadius" format="dimension" />
     <attr name="fabCradleVerticalOffset" format="dimension" />
@@ -720,6 +732,13 @@
     <attr name="edgeWidth" format="dimension" />
     <attr name="cornerRadiusToWidthRatio" format="float" />
     <attr name="fixedCornerRadius" format="dimension" />
+    <attr name="layout_box">
+        <flag name="all" value="0x0000000f" />
+        <flag name="left" value="0x00000001" />
+        <flag name="right" value="0x00000004" />
+        <flag name="bottom" value="0x00000008" />
+        <flag name="top" value="0x00000002" />
+    </attr>
     <attr name="boxedEdges">
         <flag name="all" value="0x0000000f" />
         <flag name="none" value="0x00000000" />
@@ -728,15 +747,10 @@
         <flag name="bottom" value="0x00000008" />
         <flag name="top" value="0x00000002" />
     </attr>
-    <attr name="layout_box">
-        <flag name="all" value="0x0000000f" />
-        <flag name="left" value="0x00000001" />
-        <flag name="right" value="0x00000004" />
-        <flag name="bottom" value="0x00000008" />
-        <flag name="top" value="0x00000002" />
-    </attr>
     <attr name="butterflyScaleType">
+        <enum name="fitHeight" value="3" />
         <enum name="fitStage" value="0" />
+        <enum name="fitWidth" value="2" />
         <enum name="scaleStage" value="1" />
     </attr>
     <attr name="allowStacking" format="boolean" />
@@ -764,9 +778,9 @@
     <attr name="chipCornerRadius" format="dimension" />
     <attr name="chipStrokeColor" format="color" />
     <attr name="chipStrokeWidth" format="dimension" />
-    <attr name="chipText" format="string" />
     <attr name="chipIconEnabled" format="boolean" />
     <attr name="chipIcon" format="reference" />
+    <attr name="chipIconTint" format="color" />
     <attr name="chipIconSize" format="dimension" />
     <attr name="closeIconEnabled" format="boolean" />
     <attr name="closeIcon" format="reference" />
@@ -788,28 +802,6 @@
     <attr name="singleLine" format="boolean" />
     <attr name="singleSelection" format="boolean" />
     <attr name="checkedChip" format="reference" />
-    <attr name="background_color" format="color" />
-    <attr name="background_radius" format="dimension" />
-    <attr name="background_radius_pressed" format="dimension" />
-    <attr name="background_border_width" format="dimension" />
-    <attr name="background_border_color" format="color" />
-    <attr name="background_border_cap">
-        <enum name="butt" value="0" />
-        <enum name="round" value="1" />
-        <enum name="square" value="2" />
-    </attr>
-    <attr name="img_padding" format="dimension" />
-    <attr name="background_shadow_width" format="dimension" />
-    <attr name="img_circle_percentage" format="dimension" />
-    <attr name="img_horizontal_offset_percentage" format="dimension" />
-    <attr name="img_tint" format="color" />
-    <attr name="background_radius_percent" format="fraction" />
-    <attr name="background_radius_pressed_percent" format="fraction" />
-    <attr name="clip_dimen">
-        <enum name="none" value="0" />
-        <enum name="height" value="1" />
-        <enum name="width" value="2" />
-    </attr>
     <attr name="circle_color" format="color" />
     <attr name="circle_radius" format="dimension" />
     <attr name="circle_radius_pressed" format="dimension" />
@@ -828,6 +820,28 @@
     <attr name="circle_radius_percent" format="fraction" />
     <attr name="circle_radius_pressed_percent" format="fraction" />
     <attr name="square_dimen">
+        <enum name="none" value="0" />
+        <enum name="height" value="1" />
+        <enum name="width" value="2" />
+    </attr>
+    <attr name="background_color" format="color" />
+    <attr name="background_radius" format="dimension" />
+    <attr name="background_radius_pressed" format="dimension" />
+    <attr name="background_border_width" format="dimension" />
+    <attr name="background_border_color" format="color" />
+    <attr name="background_border_cap">
+        <enum name="butt" value="0" />
+        <enum name="round" value="1" />
+        <enum name="square" value="2" />
+    </attr>
+    <attr name="img_padding" format="dimension" />
+    <attr name="background_shadow_width" format="dimension" />
+    <attr name="img_circle_percentage" format="dimension" />
+    <attr name="img_horizontal_offset_percentage" format="dimension" />
+    <attr name="img_tint" format="color" />
+    <attr name="background_radius_percent" format="fraction" />
+    <attr name="background_radius_pressed_percent" format="fraction" />
+    <attr name="clip_dimen">
         <enum name="none" value="0" />
         <enum name="height" value="1" />
         <enum name="width" value="2" />
@@ -1022,6 +1036,7 @@
         <enum name="flex_start" value="0" />
         <enum name="space_around" value="4" />
         <enum name="space_between" value="3" />
+        <enum name="space_evenly" value="5" />
     </attr>
     <attr name="alignItems">
         <enum name="center" value="2" />
@@ -1059,6 +1074,7 @@
         <flag name="beginning" value="0x00000001" />
         <flag name="middle" value="0x00000002" />
     </attr>
+    <attr name="maxLine" format="integer" />
     <attr name="layout_order" format="integer" />
     <attr name="layout_flexGrow" format="float" />
     <attr name="layout_flexShrink" format="float" />
@@ -1128,6 +1144,9 @@
     </attr>
     <attr name="sectionContent" format="string" />
     <attr name="globalSearchIcon" format="reference" />
+    <attr name="colorPrimaryLight" format="color" />
+    <attr name="colorSecondaryLight" format="color" />
+    <attr name="colorSecondaryDark" format="color" />
     <attr name="colorPrimary50" format="color" />
     <attr name="colorPrimary100" format="color" />
     <attr name="colorPrimary200" format="color" />
@@ -1197,6 +1216,19 @@
     </attr>
     <attr name="imageAspectRatio" format="float" />
     <attr name="circleCrop" format="boolean" />
+    <attr name="lottie_fileName" format="string" />
+    <attr name="lottie_autoPlay" format="boolean" />
+    <attr name="lottie_loop" format="boolean" />
+    <attr name="lottie_imageAssetsFolder" format="string" />
+    <attr name="lottie_progress" format="float" />
+    <attr name="lottie_enableMergePathsForKitKatAndAbove" format="boolean" />
+    <attr name="lottie_cacheStrategy">
+        <enum name="none" value="0" />
+        <enum name="strong" value="2" />
+        <enum name="weak" value="1" />
+    </attr>
+    <attr name="lottie_colorFilter" format="color" />
+    <attr name="lottie_scale" format="float" />
     <attr name="mapType">
         <enum name="none" value="0" />
         <enum name="normal" value="1" />
@@ -1226,7 +1258,12 @@
     <attr name="latLngBoundsSouthWestLongitude" format="float" />
     <attr name="latLngBoundsNorthEastLatitude" format="float" />
     <attr name="latLngBoundsNorthEastLongitude" format="float" />
+    <attr name="iconSize" format="dimension" />
     <attr name="iconPadding" format="dimension" />
+    <attr name="iconGravity">
+        <flag name="start" value="0x00000001" />
+        <flag name="textStart" value="0x00000002" />
+    </attr>
     <attr name="iconTint" format="color" />
     <attr name="additionalPaddingStartForIcon" format="dimension" />
     <attr name="additionalPaddingEndForIcon" format="dimension" />
@@ -1285,20 +1322,14 @@
         <enum name="none" value="0" />
         <enum name="normal" value="1" />
         <enum name="google_logo" value="2" />
+        <enum name="my_google" value="3" />
     </attr>
-    <attr name="wsPageIndicatorDotSpacing" format="dimension" />
-    <attr name="wsPageIndicatorDotRadius" format="dimension" />
-    <attr name="wsPageIndicatorDotRadiusSelected" format="dimension" />
-    <attr name="wsPageIndicatorDotColor" format="color" />
-    <attr name="wsPageIndicatorDotColorSelected" format="color" />
-    <attr name="wsPageIndicatorDotFadeWhenIdle" format="boolean" />
-    <attr name="wsPageIndicatorDotFadeOutDelay" format="integer" />
-    <attr name="wsPageIndicatorDotFadeOutDuration" format="integer" />
-    <attr name="wsPageIndicatorDotFadeInDuration" format="integer" />
-    <attr name="wsPageIndicatorDotShadowColor" format="color" />
-    <attr name="wsPageIndicatorDotShadowRadius" format="dimension" />
-    <attr name="wsPageIndicatorDotShadowDx" format="dimension" />
-    <attr name="wsPageIndicatorDotShadowDy" format="dimension" />
+    <attr name="defaultMarginsEnabled" format="boolean" />
+    <attr name="hideNavigationIcon" format="boolean" />
+    <attr name="searchPrefixText" format="string" />
+    <attr name="useDrawerArrowDrawable" format="boolean" />
+    <attr name="fadeThroughMenuItems" format="boolean" />
+    <attr name="autoShowKeyboard" format="boolean" />
     <attr name="pageIndicatorDotSpacing" format="dimension" />
     <attr name="pageIndicatorDotRadius" format="dimension" />
     <attr name="pageIndicatorDotRadiusSelected" format="dimension" />
@@ -1312,6 +1343,19 @@
     <attr name="pageIndicatorDotShadowRadius" format="dimension" />
     <attr name="pageIndicatorDotShadowDx" format="dimension" />
     <attr name="pageIndicatorDotShadowDy" format="dimension" />
+    <attr name="wsPageIndicatorDotSpacing" format="dimension" />
+    <attr name="wsPageIndicatorDotRadius" format="dimension" />
+    <attr name="wsPageIndicatorDotRadiusSelected" format="dimension" />
+    <attr name="wsPageIndicatorDotColor" format="color" />
+    <attr name="wsPageIndicatorDotColorSelected" format="color" />
+    <attr name="wsPageIndicatorDotFadeWhenIdle" format="boolean" />
+    <attr name="wsPageIndicatorDotFadeOutDelay" format="integer" />
+    <attr name="wsPageIndicatorDotFadeOutDuration" format="integer" />
+    <attr name="wsPageIndicatorDotFadeInDuration" format="integer" />
+    <attr name="wsPageIndicatorDotShadowColor" format="color" />
+    <attr name="wsPageIndicatorDotShadowRadius" format="dimension" />
+    <attr name="wsPageIndicatorDotShadowDx" format="dimension" />
+    <attr name="wsPageIndicatorDotShadowDy" format="dimension" />
     <attr name="dotDiameter" format="dimension" />
     <attr name="dotGap" format="dimension" />
     <attr name="animationDuration" format="integer" />
@@ -1611,20 +1655,16 @@
         <enum name="filled" value="1" />
         <enum name="outline" value="2" />
     </attr>
-    <attr name="boxPaddingStart" format="dimension" />
     <attr name="boxCollapsedPaddingTop" format="dimension" />
-    <attr name="boxExpandedPaddingTop" format="dimension" />
-    <attr name="boxPaddingEnd" format="dimension" />
-    <attr name="boxCollapsedPaddingBottom" format="dimension" />
     <attr name="boxCornerRadiusTopStart" format="dimension" />
     <attr name="boxCornerRadiusTopEnd" format="dimension" />
     <attr name="boxCornerRadiusBottomStart" format="dimension" />
     <attr name="boxCornerRadiusBottomEnd" format="dimension" />
-    <attr name="boxExpandedPaddingBottom" format="dimension" />
     <attr name="boxStrokeColor" format="color" />
     <attr name="boxBackgroundColor" format="color" />
     <attr name="boxStrokeWidth" format="dimension" />
     <attr name="enforceMaterialTheme" format="boolean" />
+    <attr name="enforceTextAppearance" format="boolean" />
     <attr name="titleTextAppearance" format="reference" />
     <attr name="subtitleTextAppearance" format="reference" />
     <attr name="titleMargin" format="dimension" />
@@ -1818,11 +1858,11 @@
     <attr name="positiveButtonIcon" format="reference" />
     <attr name="neutralButtonIcon" format="reference" />
     <attr name="negativeButtonIcon" format="reference" />
+    <attr name="peek_view" format="reference" />
+    <attr name="drawer_content" format="reference" />
     <attr name="peekView" format="reference" />
     <attr name="drawerContent" format="reference" />
     <attr name="enableAutoPeek" format="boolean" />
-    <attr name="peek_view" format="reference" />
-    <attr name="drawer_content" format="reference" />
     <attr name="layout_gravityRound">
         <flag name="center_horizontal" value="0x00000001" />
         <flag name="end" value="0x00800005" />
@@ -1854,12 +1894,12 @@
         <enum name="multiPage" value="1" />
         <enum name="singlePage" value="0" />
     </attr>
-    <attr name="bezelWidth" format="fraction" />
-    <attr name="circularScrollingGestureEnabled" format="boolean" />
-    <attr name="scrollDegreesPerScreen" format="float" />
     <attr name="bezel_width" format="fraction" />
     <attr name="circular_scrolling_gesture_enabled" format="boolean" />
     <attr name="scroll_degrees_per_screen" format="float" />
+    <attr name="bezelWidth" format="fraction" />
+    <attr name="circularScrollingGestureEnabled" format="boolean" />
+    <attr name="scrollDegreesPerScreen" format="float" />
     <attr name="client_application_id" format="integer" />
     <attr name="mtrlSize">
         <enum name="large" value="3" />

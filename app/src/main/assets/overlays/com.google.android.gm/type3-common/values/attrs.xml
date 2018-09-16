@@ -22,6 +22,7 @@
     <attr name="colorSecondary" format="color" />
     <attr name="colorSecondaryVariant" format="color" />
     <attr name="colorSurface" format="color" />
+    <attr name="constraintSet" format="reference" />
     <attr name="coordinatorLayoutStyle" format="reference" />
     <attr name="drawerArrowStyle" format="reference" />
     <attr name="floatingActionButtonStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
@@ -30,6 +31,94 @@
     <attr name="hideMotionSpec" format="reference" />
     <attr name="isLightTheme" format="boolean" />
     <attr name="isMaterialTheme" format="boolean" />
+    <attr name="layout_constraintBaseline_creator" format="integer" />
+    <attr name="layout_constraintBaseline_toBaselineOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintBottom_creator" format="integer" />
+    <attr name="layout_constraintBottom_toBottomOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintBottom_toTopOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintDimensionRatio" format="string" />
+    <attr name="layout_constraintEnd_toEndOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintEnd_toStartOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintGuide_begin" format="dimension" />
+    <attr name="layout_constraintGuide_end" format="dimension" />
+    <attr name="layout_constraintGuide_percent" format="float" />
+    <attr name="layout_constraintHeight_default">
+        <enum name="spread" value="0" />
+        <enum name="wrap" value="1" />
+    </attr>
+    <attr name="layout_constraintHeight_max" format="dimension" />
+    <attr name="layout_constraintHeight_min" format="dimension" />
+    <attr name="layout_constraintHorizontal_bias" format="float" />
+    <attr name="layout_constraintHorizontal_chainStyle">
+        <enum name="spread" value="0" />
+        <enum name="packed" value="2" />
+        <enum name="spread_inside" value="1" />
+    </attr>
+    <attr name="layout_constraintHorizontal_weight" format="float" />
+    <attr name="layout_constraintLeft_creator" format="integer" />
+    <attr name="layout_constraintLeft_toLeftOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintLeft_toRightOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintRight_creator" format="integer" />
+    <attr name="layout_constraintRight_toLeftOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintRight_toRightOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintStart_toEndOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintStart_toStartOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintTop_creator" format="integer" />
+    <attr name="layout_constraintTop_toBottomOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintTop_toTopOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintVertical_bias" format="float" />
+    <attr name="layout_constraintVertical_chainStyle">
+        <enum name="spread" value="0" />
+        <enum name="packed" value="2" />
+        <enum name="spread_inside" value="1" />
+    </attr>
+    <attr name="layout_constraintVertical_weight" format="float" />
+    <attr name="layout_constraintWidth_default">
+        <enum name="spread" value="0" />
+        <enum name="wrap" value="1" />
+    </attr>
+    <attr name="layout_constraintWidth_max" format="dimension" />
+    <attr name="layout_constraintWidth_min" format="dimension" />
+    <attr name="layout_editor_absoluteX" format="dimension" />
+    <attr name="layout_editor_absoluteY" format="dimension" />
+    <attr name="layout_goneMarginBottom" format="dimension" />
+    <attr name="layout_goneMarginEnd" format="dimension" />
+    <attr name="layout_goneMarginLeft" format="dimension" />
+    <attr name="layout_goneMarginRight" format="dimension" />
+    <attr name="layout_goneMarginStart" format="dimension" />
+    <attr name="layout_goneMarginTop" format="dimension" />
+    <attr name="layout_optimizationLevel">
+        <flag name="all" value="0x00000002" />
+        <flag name="basic" value="0x00000004" />
+        <flag name="chains" value="0x00000008" />
+        <flag name="none" value="0x00000001" />
+    </attr>
     <attr name="materialButtonStyle" format="reference" />
     <attr name="materialCardViewStyle" format="reference" />
     <attr name="mtrlColor" format="reference|color" />
@@ -47,6 +136,7 @@
     <attr name="suwButtonAllCaps" format="boolean" />
     <attr name="suwButtonCornerRadius" format="dimension" />
     <attr name="suwButtonFontFamily" format="reference|string" />
+    <attr name="suwButtonHighlightAlpha" format="float" />
     <attr name="suwCardBackground" format="reference|color" />
     <attr name="suwColorPrimary" format="color" />
     <attr name="suwDividerCondition">
@@ -80,12 +170,12 @@
     <attr name="suwNavBarTextColor" format="color" />
     <attr name="suwNavBarTheme" format="reference" />
     <attr name="suwScrollIndicators">
+        <flag name="none" value="0x00000000" />
         <flag name="end" value="0x00000020" />
         <flag name="left" value="0x00000004" />
         <flag name="right" value="0x00000008" />
         <flag name="start" value="0x00000010" />
         <flag name="bottom" value="0x00000002" />
-        <flag name="none" value="0x00000000" />
         <flag name="top" value="0x00000001" />
     </attr>
     <attr name="tabStyle" format="reference" />
@@ -105,6 +195,8 @@
     <attr name="textInputStyle" format="reference" />
     <attr name="title" format="string" />
     <attr name="state_accepted" format="boolean" />
+    <attr name="discSize" format="dimension" />
+    <attr name="avatarSize" format="dimension" />
     <attr name="navigationMode">
         <enum name="listMode" value="1" />
         <enum name="normal" value="0" />
@@ -330,6 +422,10 @@
         <enum name="end" value="1" />
         <enum name="center" value="0" />
     </attr>
+    <attr name="fabAnimationMode">
+        <enum name="scale" value="0" />
+        <enum name="slide" value="1" />
+    </attr>
     <attr name="fabCradleMargin" format="dimension" />
     <attr name="fabCradleRoundedCornerRadius" format="dimension" />
     <attr name="fabCradleVerticalOffset" format="dimension" />
@@ -340,7 +436,6 @@
         <enum name="selected" value="0" />
         <enum name="unlabeled" value="2" />
     </attr>
-    <attr name="itemIconSize" format="dimension" />
     <attr name="itemTextAppearanceInactive" format="reference" />
     <attr name="itemTextAppearanceActive" format="reference" />
     <attr name="itemHorizontalTranslationEnabled" format="boolean" />
@@ -479,23 +574,23 @@
         <flag name="fill" value="0x00000077" />
     </attr>
     <attr name="layout_insetEdge">
+        <enum name="none" value="0" />
         <enum name="end" value="8388613" />
         <enum name="left" value="3" />
         <enum name="right" value="5" />
         <enum name="start" value="8388611" />
         <enum name="bottom" value="80" />
-        <enum name="none" value="0" />
         <enum name="top" value="48" />
     </attr>
     <attr name="layout_dodgeInsetEdges">
+        <flag name="all" value="0x00000077" />
+        <flag name="none" value="0x00000000" />
         <flag name="end" value="0x00800005" />
         <flag name="left" value="0x00000003" />
         <flag name="right" value="0x00000005" />
         <flag name="start" value="0x00800003" />
         <flag name="bottom" value="0x00000050" />
-        <flag name="none" value="0x00000000" />
         <flag name="top" value="0x00000030" />
-        <flag name="all" value="0x00000077" />
     </attr>
     <attr name="corpusId" format="string" />
     <attr name="corpusVersion" format="string" />
@@ -541,8 +636,8 @@
     <attr name="offerLoadMore" format="boolean" />
     <attr name="offerMoveTo" format="boolean" />
     <attr name="defaultLookback">
-        <enum name="auto" value="-2" />
         <enum name="all" value="6" />
+        <enum name="auto" value="-2" />
         <enum name="days1" value="1" />
         <enum name="days3" value="2" />
         <enum name="months1" value="5" />
@@ -573,8 +668,8 @@
         <enum name="row_reverse" value="1" />
     </attr>
     <attr name="flexWrap">
-        <enum name="nowrap" value="0" />
         <enum name="wrap" value="1" />
+        <enum name="nowrap" value="0" />
         <enum name="wrap_reverse" value="2" />
     </attr>
     <attr name="justifyContent">
@@ -604,20 +699,20 @@
     <attr name="dividerDrawableHorizontal" format="reference" />
     <attr name="dividerDrawableVertical" format="reference" />
     <attr name="showDivider">
-        <flag name="end" value="0x00000004" />
         <flag name="none" value="0x00000000" />
+        <flag name="end" value="0x00000004" />
         <flag name="beginning" value="0x00000001" />
         <flag name="middle" value="0x00000002" />
     </attr>
     <attr name="showDividerHorizontal">
-        <flag name="end" value="0x00000004" />
         <flag name="none" value="0x00000000" />
+        <flag name="end" value="0x00000004" />
         <flag name="beginning" value="0x00000001" />
         <flag name="middle" value="0x00000002" />
     </attr>
     <attr name="showDividerVertical">
-        <flag name="end" value="0x00000004" />
         <flag name="none" value="0x00000000" />
+        <flag name="end" value="0x00000004" />
         <flag name="beginning" value="0x00000001" />
         <flag name="middle" value="0x00000002" />
     </attr>
@@ -771,8 +866,8 @@
     <attr name="toAddressesSection" format="string" />
     <attr name="measureWithLargestChild" format="boolean" />
     <attr name="showDividers">
-        <flag name="end" value="0x00000004" />
         <flag name="none" value="0x00000000" />
+        <flag name="end" value="0x00000004" />
         <flag name="beginning" value="0x00000001" />
         <flag name="middle" value="0x00000002" />
     </attr>
@@ -839,6 +934,7 @@
     <attr name="headerLayout" format="reference" />
     <attr name="itemHorizontalPadding" format="dimension" />
     <attr name="itemIconPadding" format="dimension" />
+    <attr name="itemIconSize" format="dimension" />
     <attr name="defaultMarginsEnabled" format="boolean" />
     <attr name="hideNavigationIcon" format="boolean" />
     <attr name="searchPrefixText" format="string" />
@@ -954,6 +1050,7 @@
         <enum name="omnibox_title_section" value="5" />
         <enum name="omnibox_url_section" value="4" />
     </attr>
+    <attr name="expandable" format="boolean" />
     <attr name="buttonSize" format="reference">
         <enum name="standard" value="0" />
         <enum name="icon_only" value="2" />

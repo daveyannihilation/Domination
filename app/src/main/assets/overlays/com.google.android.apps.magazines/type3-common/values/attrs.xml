@@ -12,7 +12,15 @@
     <attr name="chipGroupStyle" format="reference" />
     <attr name="chipStandaloneStyle" format="reference" />
     <attr name="chipStyle" format="reference" />
+    <attr name="colorOnBackground" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="colorOnError" format="color" />
+    <attr name="colorOnPrimary" format="color" />
+    <attr name="colorOnSecondary" format="color" />
+    <attr name="colorOnSurface" format="color" />
+    <attr name="colorPrimaryVariant" format="color" />
     <attr name="colorSecondary" format="color" />
+    <attr name="colorSecondaryVariant" format="color" />
+    <attr name="colorSurface" format="color" />
     <attr name="constraintSet" format="reference" />
     <attr name="controller_layout_id" format="reference" />
     <attr name="coordinatorLayoutStyle" format="reference" />
@@ -24,6 +32,7 @@
     <attr name="height" format="dimension" />
     <attr name="hideMotionSpec" format="reference" />
     <attr name="isLightTheme" format="boolean" />
+    <attr name="isMaterialTheme" format="boolean" />
     <attr name="is_avatar" format="boolean" />
     <attr name="is_avatar_no_ring" format="boolean" />
     <attr name="layout_constraintBaseline_creator" format="integer" />
@@ -146,6 +155,7 @@
     <attr name="strokeWidth" format="dimension" />
     <attr name="surface_type">
         <enum name="none" value="0" />
+        <enum name="spherical_view" value="3" />
         <enum name="surface_view" value="1" />
         <enum name="texture_view" value="2" />
     </attr>
@@ -520,6 +530,8 @@
     <attr name="chipCornerRadius" format="dimension" />
     <attr name="chipStrokeColor" format="color" />
     <attr name="chipStrokeWidth" format="dimension" />
+    <attr name="chipMinTouchTargetSize" format="dimension" />
+    <attr name="chipTouchTargetDelegate" format="reference" />
     <attr name="chipIconVisible" format="boolean" />
     <attr name="chipIconEnabled" format="boolean" />
     <attr name="chipIcon" format="reference" />
@@ -1041,6 +1053,7 @@
     <attr name="isTransitionGroup" format="boolean" />
     <attr name="willNotDraw" format="boolean" />
     <attr name="disableShadow" format="boolean" />
+    <attr name="bindPaddingResId" format="reference" />
     <attr name="bindPaddingTopResId" format="reference" />
     <attr name="bindPaddingBottomResId" format="reference" />
     <attr name="bindPaddingStartResId" format="reference" />
@@ -1077,6 +1090,7 @@
     <attr name="useTitleEllipsizing" format="boolean" />
     <attr name="minLinesForVisibility" format="reference|integer" />
     <attr name="bindMinLines" format="reference|integer" />
+    <attr name="bindMaxLines" format="reference|integer" />
     <attr name="bindNonTouchStateColorDrawable" format="reference" />
     <attr name="bindTouchStateColorDrawable" format="reference" />
     <attr name="forceWrapContentHeight" format="reference|boolean" />
@@ -1445,6 +1459,7 @@
     <attr name="boxStrokeWidth" format="dimension" />
     <attr name="enforceMaterialTheme" format="boolean" />
     <attr name="enforceTextAppearance" format="boolean" />
+    <attr name="labelTextColor" format="color" />
     <attr name="titleTextAppearance" format="reference" />
     <attr name="subtitleTextAppearance" format="reference" />
     <attr name="titleMargin" format="dimension" />
@@ -1465,10 +1480,6 @@
     <attr name="logoDescription" format="string" />
     <attr name="titleTextColor" format="color" />
     <attr name="subtitleTextColor" format="color" />
-    <attr name="bindCircleBorderColor" format="reference" />
-    <attr name="bindCircleBorderWidth" format="reference" />
-    <attr name="bindCircleInset" format="reference" />
-    <attr name="bindCircleBackgroundColor" format="reference" />
     <attr name="defaultVolumePct" format="fraction" />
     <attr name="paddingStart" format="dimension" />
     <attr name="paddingEnd" format="dimension" />

@@ -1,37 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <style name="Base.TextAppearance.AppCompat.Widget.Button.Inverse" parent="@*android:style/TextAppearance.Material.Widget.Button" />
-    <style name="Theme.SubSettingsDialogWhenLarge" parent="@*android:style/Theme.DeviceDefault.Light">
-        <item name="android:windowShowWallpaper">true</item>
-        <item name="android:windowIsTranslucent">false</item>
-        <item name="android:colorBackgroundCacheHint">@null</item>
+    <style name="Oneplus.Theme.Material.Light.DarkActionBar" parent="@*com.android.settings:style/OneplusThemeBase">
         <item name="android:actionBarWidgetTheme">@null</item>
-        <item name="android:actionBarTheme">@*android:style/ThemeOverlay.Material.Dark.ActionBar</item>
+        <item name="android:actionBarTheme">@*com.android.settings:style/Oneplus.ThemeOverlay.Material.Dark.ActionBar</item>
         <item name="android:colorPrimary">@*android:color/primary_material_dark</item>
         <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
-        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
-        <item name="android:navigationBarColor">#ff000001</item>
-        <item name="*com.android.settings:onePlusPrimaryColor">@*android:color/accent_material_dark</item>
-        <item name="*com.android.settings:preferenceTheme">@*com.android.settings:style/PreferenceTheme</item>
-        <item name="*com.android.settings:preferenceBackgroundColor">@*com.android.settings:drawable/preference_background</item>
-    </style>
-    <style name="Theme.SettingsBase" parent="@*android:style/Theme.DeviceDefault.Light">
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-        <item name="android:colorBackground">@*android:color/background_floating_material_dark</item>
-        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
-        <item name="android:listDivider">@*android:color/transparent</item>
-        <item name="android:colorSecondary">@*android:color/button_material_dark</item>
-        <item name="android:colorPrimary">@*android:color/primary_material_dark</item>
-        <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
-        <item name="android:colorControlActivated">@*android:color/accent_material_dark</item>
-        <item name="android:colorEdgeEffect">@*android:color/secondary_text_default_material_dark</item>
-        <item name="android:colorControlHighlight">@*android:color/secondary_text_default_material_dark</item>
-        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
-        <item name="android:navigationBarColor">#ff000001</item><!--Navbar background for oos-->
-        <item name="*com.android.settings:onePlusPrimaryColor">@*com.android.settings:color/settings_accent_color</item>
-        <item name="*com.android.settings:onePlusActionbarBackgroundColor">@*com.android.settings:color/oneplus_main_home_bg_ab</item>
+        <item name="android:popupTheme">@*com.android.settings:style/Oneplus.ThemeOverlay.Material.Dark</item>
+        <item name="*com.android.settings:onePlusActionbarTitleColor">@*com.android.settings:color/oneplus_contorl_text_color_primary_dark</item>
+        <item name="*com.android.settings:onePlusActionbarSubtitleColor">@*com.android.settings:color/oneplus_contorl_text_color_secondary_dark</item>
+        <item name="*com.android.settings:onePlusTabTextColor">@*com.android.settings:color/oneplus_contorl_text_color_disable_dark</item>
+        <item name="*com.android.settings:onePlusTabTextSelectedColor">@*com.android.settings:color/oneplus_contorl_text_color_primary_dark</item>
+        <item name="*com.android.settings:onePlusTabIndicatorColor">@*com.android.settings:color/oneplus_contorl_text_color_primary_dark</item>
+        <item name="*com.android.settings:onePlusActionbarIconColor">@*com.android.settings:color/oneplus_contorl_icon_color_active_dark</item>
+        <item name="*com.android.settings:onePlusActionbarBackgroundColor">@*android:color/primary_material_dark</item>
+        <item name="*com.android.settings:onePlusActionbarLineColor">@*android:color/primary_material_dark</item>
         <item name="*com.android.settings:onePlusActionbarBackground">@*com.android.settings:drawable/op_actionbar_background</item>
+        <item name="*com.android.settings:onePlusActionbarTitleAlpha">1.0</item>
+        <item name="*com.android.settings:onePlusActionbarSubtitleAlpha">0.7</item>
+        <item name="*com.android.settings:onePlusTabTextAlpha">1.0</item>
+        <item name="*com.android.settings:onePlusTabTextSelectedAlpha">1.0</item>
+        <item name="*com.android.settings:onePlusActionbarIconAlpha">1.0</item>
+        <item name="*com.android.settings:onePlusColorControlHighlight">@*android:color/secondary_text_default_material_dark</item>
+    </style>
+    <style name="Oneplus.ThemeOverlay.Material.Light" parent="@*com.android.settings:style/Oneplus.ThemeOverlay.Material">
+        <item name="android:colorBackground">@*android:color/background_floating_material_dark</item>
+        <item name="android:textColorPrimary">@*com.android.settings:color/primary_text_material_dark</item>
+        <item name="android:textColorPrimaryDisableOnly">@*com.android.settings:color/primary_text_disable_only_material_dark</item>
+        <item name="android:textColorSecondary">@*com.android.settings:color/secondary_text_material_dark</item>
+        <item name="android:textColorPrimaryInverse">@*com.android.settings:color/primary_text_material_light</item>
+        <item name="android:textColorSecondaryInverse">@*com.android.settings:color/secondary_text_material_light</item>
+        <item name="android:textColorHintInverse">@*com.android.settings:color/op_hint_foreground_material_light</item>
+        <item name="android:textCheckMark">@*com.android.settings:drawable/indicator_check_mark_dark</item>
+        <item name="android:textCheckMarkInverse">@*com.android.settings:drawable/indicator_check_mark_light</item>
+        <item name="android:textColorHighlight">@*com.android.settings:color/highlighted_text_material</item>
+        <item name="android:textColorHint">@*com.android.settings:color/op_hint_foreground_material_dark</item>
+        <item name="android:textColorTertiary">@*com.android.settings:color/secondary_text_material_dark</item>
+        <item name="android:textColorTertiaryInverse">@*com.android.settings:color/secondary_text_material_light</item>
+        <item name="android:colorBackgroundCacheHint">@*com.android.settings:color/background_cache_hint_selector_material_dark</item>
+        <item name="android:textColorAlertDialogListItem">@*com.android.settings:color/primary_text_material_dark</item>
+        <item name="android:textColorHighlightInverse">@*com.android.settings:color/highlighted_text_material</item>
+        <item name="android:colorControlNormal">@*android:color/accent_material_dark</item>
+        <item name="android:colorButtonNormal">@*com.android.settings:color/btn_default_material_dark</item>
+        <item name="android:colorControlHighlight">@*android:color/secondary_text_default_material_dark</item>
     </style>
     <style name="OneplusThemeBase" parent="@*android:style/Theme.DeviceDefault.Light">
         <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
@@ -135,48 +146,35 @@
         <item name="*com.android.settings:onePlusActionbarBackgroundColor">@*android:color/primary_material_dark</item>
         <item name="*com.android.settings:onePlusActionbarLineColor">@*android:color/primary_material_dark</item>
     </style>
-    <style name="Oneplus.ThemeOverlay.Material.Light" parent="@*com.android.settings:style/Oneplus.ThemeOverlay.Material">
+    <style name="Theme.SettingsBase" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="android:colorBackground">@*android:color/background_floating_material_dark</item>
-        <item name="android:textColorPrimary">@*com.android.settings:color/primary_text_material_dark</item>
-        <item name="android:textColorPrimaryDisableOnly">@*com.android.settings:color/primary_text_disable_only_material_dark</item>
-        <item name="android:textColorSecondary">@*com.android.settings:color/secondary_text_material_dark</item>
-        <item name="android:textColorPrimaryInverse">@*com.android.settings:color/primary_text_material_light</item>
-        <item name="android:textColorSecondaryInverse">@*com.android.settings:color/secondary_text_material_light</item>
-        <item name="android:textColorHintInverse">@*com.android.settings:color/op_hint_foreground_material_light</item>
-        <item name="android:textCheckMark">@*com.android.settings:drawable/indicator_check_mark_dark</item>
-        <item name="android:textCheckMarkInverse">@*com.android.settings:drawable/indicator_check_mark_light</item>
-        <item name="android:textColorHighlight">@*com.android.settings:color/highlighted_text_material</item>
-        <item name="android:textColorHint">@*com.android.settings:color/op_hint_foreground_material_dark</item>
-        <item name="android:textColorTertiary">@*com.android.settings:color/secondary_text_material_dark</item>
-        <item name="android:textColorTertiaryInverse">@*com.android.settings:color/secondary_text_material_light</item>
-        <item name="android:colorBackgroundCacheHint">@*com.android.settings:color/background_cache_hint_selector_material_dark</item>
-        <item name="android:textColorAlertDialogListItem">@*com.android.settings:color/primary_text_material_dark</item>
-        <item name="android:textColorHighlightInverse">@*com.android.settings:color/highlighted_text_material</item>
-        <item name="android:colorControlNormal">@*android:color/accent_material_dark</item>
-        <item name="android:colorButtonNormal">@*com.android.settings:color/btn_default_material_dark</item>
-        <item name="android:colorControlHighlight">@*android:color/secondary_text_default_material_dark</item>
-    </style>
-    <style name="Oneplus.Theme.Material.Light.DarkActionBar" parent="@*com.android.settings:style/OneplusThemeBase">
-        <item name="android:actionBarWidgetTheme">@null</item>
-        <item name="android:actionBarTheme">@*com.android.settings:style/Oneplus.ThemeOverlay.Material.Dark.ActionBar</item>
+        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="android:listDivider">@*android:color/transparent</item>
+        <item name="android:colorSecondary">@*android:color/button_material_dark</item>
         <item name="android:colorPrimary">@*android:color/primary_material_dark</item>
         <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
-        <item name="android:popupTheme">@*com.android.settings:style/Oneplus.ThemeOverlay.Material.Dark</item>
-        <item name="*com.android.settings:onePlusActionbarTitleColor">@*com.android.settings:color/oneplus_contorl_text_color_primary_dark</item>
-        <item name="*com.android.settings:onePlusActionbarSubtitleColor">@*com.android.settings:color/oneplus_contorl_text_color_secondary_dark</item>
-        <item name="*com.android.settings:onePlusTabTextColor">@*com.android.settings:color/oneplus_contorl_text_color_disable_dark</item>
-        <item name="*com.android.settings:onePlusTabTextSelectedColor">@*com.android.settings:color/oneplus_contorl_text_color_primary_dark</item>
-        <item name="*com.android.settings:onePlusTabIndicatorColor">@*com.android.settings:color/oneplus_contorl_text_color_primary_dark</item>
-        <item name="*com.android.settings:onePlusActionbarIconColor">@*com.android.settings:color/oneplus_contorl_icon_color_active_dark</item>
-        <item name="*com.android.settings:onePlusActionbarBackgroundColor">@*android:color/primary_material_dark</item>
-        <item name="*com.android.settings:onePlusActionbarLineColor">@*android:color/primary_material_dark</item>
+        <item name="android:colorControlActivated">@*android:color/accent_material_dark</item>
+        <item name="android:colorEdgeEffect">@*android:color/secondary_text_default_material_dark</item>
+        <item name="android:colorControlHighlight">@*android:color/secondary_text_default_material_dark</item>
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:navigationBarColor">#ff000001</item><!--Navbar background for oos-->
+        <item name="*com.android.settings:onePlusPrimaryColor">@*com.android.settings:color/settings_accent_color</item>
+        <item name="*com.android.settings:onePlusActionbarBackgroundColor">@*com.android.settings:color/oneplus_main_home_bg_ab</item>
         <item name="*com.android.settings:onePlusActionbarBackground">@*com.android.settings:drawable/op_actionbar_background</item>
-        <item name="*com.android.settings:onePlusActionbarTitleAlpha">1.0</item>
-        <item name="*com.android.settings:onePlusActionbarSubtitleAlpha">0.7</item>
-        <item name="*com.android.settings:onePlusTabTextAlpha">1.0</item>
-        <item name="*com.android.settings:onePlusTabTextSelectedAlpha">1.0</item>
-        <item name="*com.android.settings:onePlusActionbarIconAlpha">1.0</item>
-        <item name="*com.android.settings:onePlusColorControlHighlight">@*android:color/secondary_text_default_material_dark</item>
     </style>
-
+    <style name="Theme.SubSettingsDialogWhenLarge" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:actionBarWidgetTheme">@null</item>
+        <item name="android:actionBarTheme">@*android:style/ThemeOverlay.Material.Dark.ActionBar</item>
+        <item name="android:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="android:navigationBarColor">#ff000001</item>
+        <item name="*com.android.settings:onePlusPrimaryColor">@*android:color/accent_material_dark</item>
+        <item name="*com.android.settings:preferenceTheme">@*com.android.settings:style/PreferenceTheme</item>
+        <item name="*com.android.settings:preferenceBackgroundColor">@*com.android.settings:drawable/preference_background</item>
+    </style>
 </resources>

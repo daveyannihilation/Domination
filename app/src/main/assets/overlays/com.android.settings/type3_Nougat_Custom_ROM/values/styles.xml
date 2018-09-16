@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <style name="SecurityPreferenceButtonContainer" parent="@*android:style/Widget.Material.SegmentedButton">
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:weightSum">2.0</item>
-        <item name="android:dividerPadding">8.0dip</item>
+    <style name="FallbackHome" parent="@*android:style/Theme.DeviceDefault.Light" />
+    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+    </style>
+    <style name="PreferenceFragmentListSinglePane" parent="@*android:style/PreferenceFragmentList">
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:background">@*android:color/background_dark</item>
     </style>
     <style name="SecurityPreferenceButton" parent="@*android:style/Widget.Material.Button.Borderless">
         <item name="android:ellipsize">marquee</item>
@@ -14,14 +15,12 @@
         <item name="android:singleLine">true</item>
         <item name="android:layout_weight">1.0</item>
     </style>
-
-    <style name="Theme.SettingsBase" parent="@*android:style/Theme.DeviceDefault.Light">
-        <item name="android:colorBackground">@*android:color/background_floating_material_dark</item>
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-        <item name="android:textColorPrimaryInverse">#ffffffff</item>
+    <style name="SecurityPreferenceButtonContainer" parent="@*android:style/Widget.Material.SegmentedButton">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:weightSum">2.0</item>
+        <item name="android:dividerPadding">8.0dip</item>
     </style>
-
-
     <style name="Theme.AlertDialog" parent="@*android:style/Theme.Material.Dialog.Alert">
         <item name="android:textColorPrimary">#ffffffff</item>
         <item name="android:textColorSecondary">#ffdddddd</item>
@@ -30,23 +29,15 @@
         <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
         <item name="android:colorAccent">@*android:color/accent_material_dark</item>
     </style>
-
-
-
-    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light">
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-    </style>
-    <style name="FallbackHome" parent="@*android:style/Theme.DeviceDefault.Light" />
-    <style name="PreferenceFragmentListSinglePane" parent="@*android:style/PreferenceFragmentList">
-        <item name="android:scrollbarStyle">outsideOverlay</item>
-        <item name="android:background">@*android:color/background_dark</item>
-    </style>
-
-    <style name="Theme.SettingsAlertDialog" parent="@*android:style/Theme.Material.Dialog.Alert" />
+    <style name="Theme.AppPicker" parent="@*android:style/Theme.Material.Dialog" />
     <style name="Theme.DateTimeSettingsSetupWizard" parent="@*android:style/Theme.Material.NoActionBar" />
+    <style name="Theme.SettingsAlertDialog" parent="@*android:style/Theme.Material.Dialog.Alert" />
+    <style name="Theme.SettingsBase" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:colorBackground">@*android:color/background_floating_material_dark</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:textColorPrimaryInverse">#ffffffff</item>
+    </style>
     <style name="Theme.SettingsDialog" parent="@*android:style/Theme.Material.Dialog.NoActionBar" />
     <style name="Theme.SettingsLicenseActivity" parent="@*android:style/Theme.Material.Panel" />
-    <style name="Theme.AppPicker" parent="@*android:style/Theme.Material.Dialog" />
     <style name="Theme.SmartBar.Dialog" parent="@*android:style/Theme.Material.Dialog.Alert" />
-
 </resources>

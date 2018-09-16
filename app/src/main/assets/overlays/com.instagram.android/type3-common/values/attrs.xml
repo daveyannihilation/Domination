@@ -14,6 +14,7 @@
     <attr name="actionBarTitleActionableTextColor" format="color" />
     <attr name="actionBarTitleStyle" format="reference" />
     <attr name="actionBarTitleTextColor" format="color" />
+    <attr name="actionText" format="string" />
     <attr name="active" format="color" />
     <attr name="activeColor" format="color" />
     <attr name="activeStrokeWidth" format="dimension" />
@@ -35,10 +36,6 @@
     <attr name="activityTitleText" format="reference" />
     <attr name="activityUserDetails" format="reference" />
     <attr name="activityUserInfo" format="reference" />
-    <attr name="alignment">
-        <enum name="left" value="0" />
-        <enum name="right" value="1" />
-    </attr>
     <attr name="alignmentMode">
         <enum name="alignBounds" value="0" />
         <enum name="alignMargins" value="1" />
@@ -96,6 +93,7 @@
     <attr name="bodyDetail" format="reference" />
     <attr name="bodyEmphasized" format="reference" />
     <attr name="bodyLink" format="reference" />
+    <attr name="bodyText" format="string" />
     <attr name="boldAllLinks" format="boolean" />
     <attr name="borderColor" format="color" />
     <attr name="borderDrawable" format="reference" />
@@ -233,6 +231,7 @@
     <attr name="creationWarmthDrawable" format="reference" />
     <attr name="cropHighlightBackground" format="color" />
     <attr name="customGlyphColour" format="reference" />
+    <attr name="customTextColour" format="reference" />
     <attr name="customToastViewStyle" format="reference" />
     <attr name="dark" format="boolean" />
     <attr name="dashedEdgeColor" format="color" />
@@ -334,7 +333,6 @@
     <attr name="enableBorder" format="boolean" />
     <attr name="enableClearButton" format="boolean" />
     <attr name="enablePinchZoom" format="boolean" />
-    <attr name="enablePinchZoomDeprecatedIG" format="boolean" />
     <attr name="endColor" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="endEdge" format="boolean" />
     <attr name="errorBackground" format="reference" />
@@ -465,10 +463,6 @@
         <enum name="back" value="0" />
         <enum name="front" value="1" />
     </attr>
-    <attr name="initialCameraFacingDeprecatedIG">
-        <enum name="back" value="0" />
-        <enum name="front" value="1" />
-    </attr>
     <attr name="initial_stroke_width" format="dimension" />
     <attr name="innerCircleColour" format="color" />
     <attr name="innerCircleInset" format="dimension" />
@@ -484,7 +478,7 @@
     <attr name="keepObservingAfterRequestDisallowTouchEvent" format="boolean" />
     <attr name="label" format="reference" />
     <attr name="labelLink" format="reference" />
-    <attr name="labelText" format="reference|string" />
+    <attr name="labelText" format="string" />
     <attr name="largePrimaryButtonStyle" format="reference" />
     <attr name="layoutManager" format="string" />
     <attr name="layout_aspectRatio" format="fraction" />
@@ -639,7 +633,6 @@
     <attr name="loadingSubtitle" format="reference|string" />
     <attr name="loadingTitle" format="reference|string" />
     <attr name="lockMediaOrientation" format="boolean" />
-    <attr name="lockMediaOrientationDeprecatedIG" format="boolean" />
     <attr name="maxDurationMS" format="integer" />
     <attr name="maxHeight" format="dimension" />
     <attr name="maxWidth" format="dimension" />
@@ -681,6 +674,7 @@
     <attr name="nuxLogoTintColor" format="color" />
     <attr name="nuxTextColor" format="color" />
     <attr name="onScreenDurationMs" format="integer" />
+    <attr name="onlyShowCurrentSegmentUnseenColor" format="color" />
     <attr name="orientation">
         <enum name="horizontal" value="0" />
         <enum name="vertical" value="1" />
@@ -700,12 +694,6 @@
     <attr name="perfTrackingCategory" format="string" />
     <attr name="persist" format="boolean" />
     <attr name="photoCaptureQuality">
-        <enum name="deactivated" value="3" />
-        <enum name="high" value="0" />
-        <enum name="low" value="2" />
-        <enum name="medium" value="1" />
-    </attr>
-    <attr name="photoCaptureQualityDeprecatedIG">
         <enum name="deactivated" value="3" />
         <enum name="high" value="0" />
         <enum name="low" value="2" />
@@ -916,6 +904,7 @@
     <attr name="stroke_width" format="dimension" />
     <attr name="stroke_width_button" format="dimension" />
     <attr name="subtitle" format="reference|string" />
+    <attr name="subtitleText" format="string" />
     <attr name="supports_undo" format="boolean" />
     <attr name="tabBarHeight" format="reference" />
     <attr name="tabButtonBackground" format="reference" />
@@ -924,6 +913,7 @@
     <attr name="text" format="string" />
     <attr name="textColor" format="color" />
     <attr name="textColorBoldLink" format="color" />
+    <attr name="textColorHashtag" format="color" />
     <attr name="textColorHyperlink" format="color" />
     <attr name="textColorLocation" format="color" />
     <attr name="textColorPrimary" format="color" />
@@ -936,6 +926,7 @@
     <attr name="textPaddingLeft" format="dimension" />
     <attr name="textPaddingRight" format="dimension" />
     <attr name="textSize" format="dimension" />
+    <attr name="textSizeHashtag" format="dimension" />
     <attr name="textSizeLocation" format="dimension" />
     <attr name="thirdColor" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="thumbDrawable" format="reference" />
@@ -952,7 +943,7 @@
     <attr name="titleButtonPrimary" format="reference" />
     <attr name="titleInactive" format="reference" />
     <attr name="titleLogoDrawable" format="reference" />
-    <attr name="titleText" format="reference" />
+    <attr name="titleText" format="string" />
     <attr name="tokenTextViewBackground" format="reference" />
     <attr name="tokenTextViewTextColor" format="reference|color" />
     <attr name="tombstoneBackground" format="reference" />
@@ -984,12 +975,6 @@
     <attr name="variant_filled" format="reference" />
     <attr name="variant_outline" format="reference" />
     <attr name="videoCaptureQuality">
-        <enum name="deactivated" value="3" />
-        <enum name="high" value="0" />
-        <enum name="low" value="2" />
-        <enum name="medium" value="1" />
-    </attr>
-    <attr name="videoCaptureQualityDeprecatedIG">
         <enum name="deactivated" value="3" />
         <enum name="high" value="0" />
         <enum name="low" value="2" />

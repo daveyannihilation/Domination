@@ -1,27 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.Settings" parent="@*android:style/Theme.Material.DialogWhenLarge">
-        <item name="android:windowCloseOnTouchOutside">true</item>
-        <item name="android:colorPrimary">#ff1976d2</item>
-        <item name="android:colorAccent">#ff1976d2</item>
-    </style>
-    <style name="SettingsLight" parent="@*android:style/Theme.DeviceDefault.Light">
-        <item name="android:textColorPrimary">#ffffffff</item>
-        <item name="android:textColorSecondary">#ffdddddd</item>
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:actionBarStyle">@*com.android.phone:style/DialtactsActionBarStyle</item>
-        <item name="android:windowActionBarOverlay">false</item>
-        <item name="android:actionOverflowButtonStyle">@*com.android.phone:style/DialtactsActionBarOverflow</item>
-        <item name="android:homeAsUpIndicator">@*com.android.phone:drawable/ic_back_arrow</item>
-        <item name="android:actionMenuTextColor">#ffffffff</item>
-        <item name="android:colorPrimaryDark">#ff0d47a1</item>
-    </style>
     <style name="DialerAlertDialogTheme" parent="@*android:style/Theme.Material.Dialog">
         <item name="android:textColor">#ffffffff</item>
         <item name="android:colorAccent">#ff1976d2</item>
     </style>
-
     <style name="EmergencyDialerTheme" parent="@*android:style/Theme.DeviceDefault.Light">
         <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="android:homeAsUpIndicator">@*com.android.phone:drawable/ic_back_arrow</item>
@@ -29,16 +11,28 @@
         <item name="android:statusBarColor">@*android:color/transparent</item>
         <item name="android:navigationBarColor">@*android:color/transparent</item>
     </style>
-    <style name="SimImportTheme" parent="@*android:style/Theme.DeviceDefault.Light">
-        <item name="android:actionBarStyle">@*com.android.phone:style/TelephonyActionBarStyle</item>
-        <item name="android:actionOverflowButtonStyle">@*com.android.phone:style/DialtactsActionBarOverflow</item>
-        <item name="android:homeAsUpIndicator">@*com.android.phone:drawable/ic_back_arrow</item>
-        <item name="android:colorPrimaryDark">#ff0d47a1</item>
+    <style name="Oneplus.Theme.Material.Light.DarkActionBar" parent="@*com.android.phone:style/OneplusThemeBase">
+        <item name="android:actionBarWidgetTheme">@null</item>
+        <item name="android:actionBarTheme">@*com.android.phone:style/Oneplus.ThemeOverlay.Material.Dark.ActionBar</item>
+        <item name="android:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="android:popupTheme">@*com.android.phone:style/Oneplus.ThemeOverlay.Material.Dark</item>
+        <item name="*com.android.phone:onePlusActionbarTitleColor">@*com.android.phone:color/oneplus_contorl_text_color_primary_dark</item>
+        <item name="*com.android.phone:onePlusActionbarSubtitleColor">@*com.android.phone:color/oneplus_contorl_text_color_secondary_dark</item>
+        <item name="*com.android.phone:onePlusTabTextColor">@*com.android.phone:color/oneplus_contorl_text_color_disable_dark</item>
+        <item name="*com.android.phone:onePlusTabTextSelectedColor">@*com.android.phone:color/oneplus_contorl_text_color_primary_dark</item>
+        <item name="*com.android.phone:onePlusTabIndicatorColor">@*com.android.phone:color/oneplus_contorl_text_color_primary_dark</item>
+        <item name="*com.android.phone:onePlusActionbarIconColor">@*com.android.phone:color/oneplus_contorl_icon_color_active_dark</item>
+        <item name="*com.android.phone:onePlusActionbarBackgroundColor">@*android:color/primary_material_dark</item>
+        <item name="*com.android.phone:onePlusActionbarLineColor">@*android:color/primary_material_dark</item>
+        <item name="*com.android.phone:onePlusActionbarBackground">@*com.android.phone:drawable/op_actionbar_background</item>
+        <item name="*com.android.phone:onePlusActionbarTitleAlpha">1.0</item>
+        <item name="*com.android.phone:onePlusActionbarSubtitleAlpha">0.7</item>
+        <item name="*com.android.phone:onePlusTabTextAlpha">1.0</item>
+        <item name="*com.android.phone:onePlusTabTextSelectedAlpha">1.0</item>
+        <item name="*com.android.phone:onePlusActionbarIconAlpha">1.0</item>
+        <item name="*com.android.phone:onePlusColorControlHighlight">@*android:color/highlighted_text_dark</item>
     </style>
-    <style name="Theme.Material.Settings" parent="@*android:style/Theme.DeviceDefault.Light" />
-
-
-
     <style name="OneplusThemeBase" parent="@*android:style/Theme.DeviceDefault.Light">
         <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
         <item name="android:navigationBarColor">#ff000001</item>
@@ -130,27 +124,28 @@
         <item name="*com.android.phone:onePlusActionbarIconAlpha">1.0</item>
         <item name="*com.android.phone:onePlusColorControlHighlight">@*com.android.phone:color/op_ripple_material_light</item>
     </style>
-    <style name="Oneplus.Theme.Material.Light.DarkActionBar" parent="@*com.android.phone:style/OneplusThemeBase">
-        <item name="android:actionBarWidgetTheme">@null</item>
-        <item name="android:actionBarTheme">@*com.android.phone:style/Oneplus.ThemeOverlay.Material.Dark.ActionBar</item>
-        <item name="android:colorPrimary">@*android:color/primary_material_dark</item>
-        <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
-        <item name="android:popupTheme">@*com.android.phone:style/Oneplus.ThemeOverlay.Material.Dark</item>
-        <item name="*com.android.phone:onePlusActionbarTitleColor">@*com.android.phone:color/oneplus_contorl_text_color_primary_dark</item>
-        <item name="*com.android.phone:onePlusActionbarSubtitleColor">@*com.android.phone:color/oneplus_contorl_text_color_secondary_dark</item>
-        <item name="*com.android.phone:onePlusTabTextColor">@*com.android.phone:color/oneplus_contorl_text_color_disable_dark</item>
-        <item name="*com.android.phone:onePlusTabTextSelectedColor">@*com.android.phone:color/oneplus_contorl_text_color_primary_dark</item>
-        <item name="*com.android.phone:onePlusTabIndicatorColor">@*com.android.phone:color/oneplus_contorl_text_color_primary_dark</item>
-        <item name="*com.android.phone:onePlusActionbarIconColor">@*com.android.phone:color/oneplus_contorl_icon_color_active_dark</item>
-        <item name="*com.android.phone:onePlusActionbarBackgroundColor">@*android:color/primary_material_dark</item>
-        <item name="*com.android.phone:onePlusActionbarLineColor">@*android:color/primary_material_dark</item>
-        <item name="*com.android.phone:onePlusActionbarBackground">@*com.android.phone:drawable/op_actionbar_background</item>
-        <item name="*com.android.phone:onePlusActionbarTitleAlpha">1.0</item>
-        <item name="*com.android.phone:onePlusActionbarSubtitleAlpha">0.7</item>
-        <item name="*com.android.phone:onePlusTabTextAlpha">1.0</item>
-        <item name="*com.android.phone:onePlusTabTextSelectedAlpha">1.0</item>
-        <item name="*com.android.phone:onePlusActionbarIconAlpha">1.0</item>
-        <item name="*com.android.phone:onePlusColorControlHighlight">@*android:color/highlighted_text_dark</item>
+    <style name="SettingsLight" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:textColorPrimary">#ffffffff</item>
+        <item name="android:textColorSecondary">#ffdddddd</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionBarStyle">@*com.android.phone:style/DialtactsActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">false</item>
+        <item name="android:actionOverflowButtonStyle">@*com.android.phone:style/DialtactsActionBarOverflow</item>
+        <item name="android:homeAsUpIndicator">@*com.android.phone:drawable/ic_back_arrow</item>
+        <item name="android:actionMenuTextColor">#ffffffff</item>
+        <item name="android:colorPrimaryDark">#ff0d47a1</item>
     </style>
-
+    <style name="SimImportTheme" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:actionBarStyle">@*com.android.phone:style/TelephonyActionBarStyle</item>
+        <item name="android:actionOverflowButtonStyle">@*com.android.phone:style/DialtactsActionBarOverflow</item>
+        <item name="android:homeAsUpIndicator">@*com.android.phone:drawable/ic_back_arrow</item>
+        <item name="android:colorPrimaryDark">#ff0d47a1</item>
+    </style>
+    <style name="Theme.Material.Settings" parent="@*android:style/Theme.DeviceDefault.Light" />
+    <style name="Theme.Settings" parent="@*android:style/Theme.Material.DialogWhenLarge">
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:colorPrimary">#ff1976d2</item>
+        <item name="android:colorAccent">#ff1976d2</item>
+    </style>
 </resources>

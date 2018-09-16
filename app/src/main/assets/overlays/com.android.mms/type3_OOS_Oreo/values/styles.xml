@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="MmsHoloTheme" parent="@*com.android.mms:style/Oneplus.Theme.DeviceDefault">
+        <item name="android:imeOptions">flagNoExtractUi</item>
+        <item name="android:alertDialogTheme">@*com.android.mms:style/OnePlusContactsAlertDialogTheme</item>
+        <item name="android:colorPrimary">@*android:color/transparent</item>
+        <item name="android:colorPrimaryDark">@*android:color/transparent</item>
+        <item name="android:colorAccent">@*com.android.mms:color/control_base_color</item>
+        <item name="android:windowLightStatusBar">@*com.android.mms:bool/config_window_light_status_Bar</item>
+        <item name="*com.android.mms:onePlusPrimaryColor">@*com.android.mms:color/control_base_color</item>
+        <item name="*com.android.mms:onePlusActionbarTitleColor">@*com.android.mms:color/oos_actionbar_text_color</item>
+        <item name="*com.android.mms:onePlusActionbarIconColor">@*com.android.mms:color/default_menu_color</item>
+        <item name="*com.android.mms:onePlusActionbarBackgroundColor">@*android:color/transparent</item>
+        <item name="*com.android.mms:onePlusActionbarIconAlpha">1.0</item>
+    </style>
+    <style name="MmsOneplusTheme" parent="@*com.android.mms:style/MmsHoloTheme">
+        <item name="android:colorPrimary">@*android:color/transparent</item>
+        <item name="android:colorPrimaryDark">@*android:color/transparent</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:searchViewStyle">@*com.android.mms:style/MmsSearchView</item>
+        <item name="android:statusBarColor">@*android:color/transparent</item>
+        <item name="android:navigationBarColor">@*android:color/transparent</item>
+    </style>
+    <style name="OnePlus.Widget.Design.FloatingActionButton" parent="@*android:style/Widget">
+        <item name="android:background">@*com.android.mms:drawable/op_design_fab_background</item>
+        <item name="*com.android.mms:op_fabSize">normal</item>
+        <item name="*com.android.mms:op_backgroundTint">@*android:color/accent_material_dark</item>
+        <item name="*com.android.mms:op_rippleColor">?android:colorControlHighlight</item>
+        <item name="*com.android.mms:op_elevation">@*com.android.mms:dimen/design_fab_elevation</item>
+        <item name="*com.android.mms:op_pressedTranslationZ">@*com.android.mms:dimen/design_fab_translation_z_pressed</item>
+        <item name="*com.android.mms:op_borderWidth">@*com.android.mms:dimen/design_fab_border_width</item>
+    </style>
     <style name="OneplusThemeBase" parent="@*android:style/Theme.DeviceDefault.Light">
         <item name="android:buttonStyle">@*com.android.mms:style/OnePlus.Widget.Material.Button</item>
         <item name="android:windowBackground">@*android:color/background_dark</item>
@@ -90,37 +120,7 @@
         <item name="*com.android.mms:onePlusActionbarIconAlpha">1.0</item>
         <item name="*com.android.mms:onePlusColorControlHighlight">@*com.android.mms:color/op_ripple_material_light</item>
     </style>
-    <style name="OnePlus.Widget.Design.FloatingActionButton" parent="@*android:style/Widget">
-        <item name="android:background">@*com.android.mms:drawable/op_design_fab_background</item>
-        <item name="*com.android.mms:op_fabSize">normal</item>
-        <item name="*com.android.mms:op_backgroundTint">@*android:color/accent_material_dark</item>
-        <item name="*com.android.mms:op_rippleColor">?android:colorControlHighlight</item>
-        <item name="*com.android.mms:op_elevation">@*com.android.mms:dimen/design_fab_elevation</item>
-        <item name="*com.android.mms:op_pressedTranslationZ">@*com.android.mms:dimen/design_fab_translation_z_pressed</item>
-        <item name="*com.android.mms:op_borderWidth">@*com.android.mms:dimen/design_fab_border_width</item>
-    </style>
-    <style name="MmsOneplusTheme" parent="@*com.android.mms:style/MmsHoloTheme">
-        <item name="android:colorPrimary">@*android:color/transparent</item>
-        <item name="android:colorPrimaryDark">@*android:color/transparent</item>
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-        <item name="android:searchViewStyle">@*com.android.mms:style/MmsSearchView</item>
-        <item name="android:statusBarColor">@*android:color/transparent</item>
-        <item name="android:navigationBarColor">@*android:color/transparent</item>
-    </style>
     <style name="Widget.Design.CoordinatorLayout" parent="@android:style/Widget">
         <item name="*com.android.mms:opStatusBarBackground">@*android:color/transparent</item>
-    </style>
-    <style name="MmsHoloTheme" parent="@*com.android.mms:style/Oneplus.Theme.DeviceDefault">
-        <item name="android:imeOptions">flagNoExtractUi</item>
-        <item name="android:alertDialogTheme">@*com.android.mms:style/OnePlusContactsAlertDialogTheme</item>
-        <item name="android:colorPrimary">@*android:color/transparent</item>
-        <item name="android:colorPrimaryDark">@*android:color/transparent</item>
-        <item name="android:colorAccent">@*com.android.mms:color/control_base_color</item>
-        <item name="android:windowLightStatusBar">@*com.android.mms:bool/config_window_light_status_Bar</item>
-        <item name="*com.android.mms:onePlusPrimaryColor">@*com.android.mms:color/control_base_color</item>
-        <item name="*com.android.mms:onePlusActionbarTitleColor">@*com.android.mms:color/oos_actionbar_text_color</item>
-        <item name="*com.android.mms:onePlusActionbarIconColor">@*com.android.mms:color/default_menu_color</item>
-        <item name="*com.android.mms:onePlusActionbarBackgroundColor">@*android:color/transparent</item>
-        <item name="*com.android.mms:onePlusActionbarIconAlpha">1.0</item>
     </style>
 </resources>

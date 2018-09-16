@@ -4,8 +4,8 @@
     <View android:id="@*com.google.android.gm:id/nested_folder_space" android:visibility="gone" android:layout_width="@*com.google.android.gm:dimen/nested_folder_space" android:layout_height="wrap_content" />
     <ImageView android:id="@*com.google.android.gm:id/folder_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@*com.google.android.gm:style/FolderListIconStyle" android:tint="@*android:color/white" />
     <com.android.mail.ui.NonOverlappingLinearLayout android:id="@*com.google.android.gm:id/folder_content_wrapper" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
-        <TextView android:textSize="@*com.google.android.gm:dimen/drawer_item_font_size" android:textColor="@*com.google.android.gm:color/text_color_black" android:ellipsize="end" android:id="@*com.google.android.gm:id/name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" android:fontFamily="sans-serif-medium" style="@*com.google.android.gm:style/FolderListItemStyle" />
-        <TextView android:id="@*com.google.android.gm:id/unread" style="@*com.google.android.gm:style/DrawerUnreadCount" />
-        <TextView android:id="@*com.google.android.gm:id/unseen" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:includeFontPadding="false" style="@*com.google.android.gm:style/UnseenCount" />
+        <TextView android:textSize="@*com.google.android.gm:dimen/drawer_item_font_size" android:textColor="@*android:color/white" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@*com.google.android.gm:id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" style="@*com.google.android.gm:style/FolderListItemStyle.Material" />
+        <TextView android:id="@*com.google.android.gm:id/unread" style="@*com.google.android.gm:style/DrawerUnreadCount.Material" />
+        <TextView android:id="@*com.google.android.gm:id/unseen" style="@*com.google.android.gm:style/UnseenCountDrawer" />
     </com.android.mail.ui.NonOverlappingLinearLayout>
 </com.android.mail.ui.FolderItemView>

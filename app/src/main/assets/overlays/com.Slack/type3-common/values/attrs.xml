@@ -42,6 +42,21 @@
     <attr name="alertDialogCenterButtons" format="boolean" />
     <attr name="alertDialogStyle" format="reference" />
     <attr name="alertDialogTheme" format="reference" />
+    <attr name="alignContent">
+        <enum name="center" value="2" />
+        <enum name="flex_end" value="1" />
+        <enum name="flex_start" value="0" />
+        <enum name="space_around" value="4" />
+        <enum name="space_between" value="3" />
+        <enum name="stretch" value="5" />
+    </attr>
+    <attr name="alignItems">
+        <enum name="baseline" value="3" />
+        <enum name="center" value="2" />
+        <enum name="flex_end" value="1" />
+        <enum name="flex_start" value="0" />
+        <enum name="stretch" value="4" />
+    </attr>
     <attr name="alignmentMode">
         <enum name="alignBounds" value="0" />
         <enum name="alignMargins" value="1" />
@@ -91,6 +106,7 @@
         <enum name="src_over" value="3" />
     </attr>
     <attr name="barLength" format="dimension" />
+    <attr name="barrierAllowsGoneWidgets" format="boolean" />
     <attr name="barrierDirection">
         <enum name="bottom" value="3" />
         <enum name="end" value="6" />
@@ -120,6 +136,7 @@
         <flag name="bottom" value="0x00000050" />
         <flag name="top" value="0x00000030" />
     </attr>
+    <attr name="buttonIconDimen" format="dimension" />
     <attr name="buttonPanelSideLayout" format="reference" />
     <attr name="buttonSize" format="reference">
         <enum name="icon_only" value="2" />
@@ -143,6 +160,7 @@
     <attr name="cardMaxElevation" format="dimension" />
     <attr name="cardPreventCornerOverlap" format="boolean" />
     <attr name="cardUseCompatPadding" format="boolean" />
+    <attr name="cardViewStyle" format="reference" />
     <attr name="chainUseRtl" format="boolean" />
     <attr name="checkboxStyle" format="reference" />
     <attr name="checkedTextViewStyle" format="reference" />
@@ -209,6 +227,7 @@
     <attr name="contentScrim" format="color" />
     <attr name="controlBackground" format="reference" />
     <attr name="controller_layout_id" format="reference" />
+    <attr name="coordinatorLayoutStyle" format="reference" />
     <attr name="count" format="integer" />
     <attr name="counterEnabled" format="boolean" />
     <attr name="counterMaxLength" format="integer" />
@@ -216,6 +235,7 @@
     <attr name="counterTextAppearance" format="reference" />
     <attr name="customNavigationLayout" format="reference" />
     <attr name="darkModeSelectable" format="boolean" />
+    <attr name="darkModeTextColor" format="color" />
     <attr name="defaultQueryHint" format="string" />
     <attr name="detail" format="reference|string" />
     <attr name="dialogPreferredPadding" format="dimension" />
@@ -231,6 +251,9 @@
         <flag name="useLogo" value="0x00000001" />
     </attr>
     <attr name="divider" format="reference" />
+    <attr name="dividerDrawable" format="reference" />
+    <attr name="dividerDrawableHorizontal" format="reference" />
+    <attr name="dividerDrawableVertical" format="reference" />
     <attr name="dividerHorizontal" format="reference" />
     <attr name="dividerPadding" format="dimension" />
     <attr name="dividerVertical" format="reference" />
@@ -272,6 +295,7 @@
     <attr name="expandedTitleMarginStart" format="dimension" />
     <attr name="expandedTitleMarginTop" format="dimension" />
     <attr name="expandedTitleTextAppearance" format="reference" />
+    <attr name="fabCustomSize" format="dimension" />
     <attr name="fabSize">
         <enum name="auto" value="-1" />
         <enum name="mini" value="1" />
@@ -283,6 +307,17 @@
     <attr name="fastScrollVerticalThumbDrawable" format="reference" />
     <attr name="fastScrollVerticalTrackDrawable" format="reference" />
     <attr name="fastforward_increment" format="integer" />
+    <attr name="flexDirection">
+        <enum name="column" value="2" />
+        <enum name="column_reverse" value="3" />
+        <enum name="row" value="0" />
+        <enum name="row_reverse" value="1" />
+    </attr>
+    <attr name="flexWrap">
+        <enum name="nowrap" value="0" />
+        <enum name="wrap" value="1" />
+        <enum name="wrap_reverse" value="2" />
+    </attr>
     <attr name="floatLabelHint" format="reference|string" />
     <attr name="floatLabelPaddingBottom" format="reference|dimension" />
     <attr name="floatLabelPaddingLeft" format="reference|dimension" />
@@ -347,6 +382,7 @@
     <attr name="imageButtonStyle" format="reference" />
     <attr name="imageHeight" format="dimension" />
     <attr name="imageWidth" format="dimension" />
+    <attr name="indeterminateColor" format="reference|color" />
     <attr name="indeterminateProgressStyle" format="reference" />
     <attr name="initialActivityCount" format="string" />
     <attr name="insetForeground" format="reference|color" />
@@ -356,10 +392,26 @@
     <attr name="itemPadding" format="dimension" />
     <attr name="itemTextAppearance" format="reference" />
     <attr name="itemTextColor" format="color" />
+    <attr name="justifyContent">
+        <enum name="center" value="2" />
+        <enum name="flex_end" value="1" />
+        <enum name="flex_start" value="0" />
+        <enum name="space_around" value="4" />
+        <enum name="space_between" value="3" />
+        <enum name="space_evenly" value="5" />
+    </attr>
     <attr name="keylines" format="reference" />
     <attr name="label" format="string" />
     <attr name="layout" format="reference" />
     <attr name="layoutManager" format="string" />
+    <attr name="layout_alignSelf">
+        <enum name="auto" value="-1" />
+        <enum name="baseline" value="3" />
+        <enum name="center" value="2" />
+        <enum name="flex_end" value="1" />
+        <enum name="flex_start" value="0" />
+        <enum name="stretch" value="4" />
+    </attr>
     <attr name="layout_anchor" format="reference" />
     <attr name="layout_anchorGravity">
         <flag name="bottom" value="0x00000050" />
@@ -484,12 +536,15 @@
         <flag name="end" value="0x00800005" />
         <flag name="left" value="0x00000003" />
         <flag name="none" value="0x00000000" />
-        <flag name="right" value="0x00000003" />
+        <flag name="right" value="0x00000005" />
         <flag name="start" value="0x00800003" />
         <flag name="top" value="0x00000030" />
     </attr>
     <attr name="layout_editor_absoluteX" format="dimension" />
     <attr name="layout_editor_absoluteY" format="dimension" />
+    <attr name="layout_flexBasisPercent" format="fraction" />
+    <attr name="layout_flexGrow" format="float" />
+    <attr name="layout_flexShrink" format="float" />
     <attr name="layout_goneMarginBottom" format="dimension" />
     <attr name="layout_goneMarginEnd" format="dimension" />
     <attr name="layout_goneMarginLeft" format="dimension" />
@@ -517,18 +572,24 @@
         <enum name="end" value="8388613" />
         <enum name="left" value="3" />
         <enum name="none" value="0" />
-        <enum name="right" value="3" />
+        <enum name="right" value="5" />
         <enum name="start" value="8388611" />
         <enum name="top" value="48" />
     </attr>
     <attr name="layout_keyline" format="integer" />
+    <attr name="layout_maxHeight" format="dimension" />
+    <attr name="layout_maxWidth" format="dimension" />
+    <attr name="layout_minHeight" format="dimension" />
+    <attr name="layout_minWidth" format="dimension" />
     <attr name="layout_optimizationLevel">
         <flag name="barrier" value="0x00000002" />
         <flag name="chains" value="0x00000004" />
+        <flag name="dimensions" value="0x00000008" />
         <flag name="direct" value="0x00000001" />
         <flag name="none" value="0x00000000" />
         <flag name="standard" value="0x00000003" />
     </attr>
+    <attr name="layout_order" format="integer" />
     <attr name="layout_row" format="integer" />
     <attr name="layout_rowSpan" format="integer" min="1" />
     <attr name="layout_rowWeight" format="float" />
@@ -540,6 +601,7 @@
         <flag name="snap" value="0x00000010" />
     </attr>
     <attr name="layout_scrollInterpolator" format="reference" />
+    <attr name="layout_wrapBefore" format="boolean" />
     <attr name="listChoiceBackgroundIndicator" format="reference" />
     <attr name="listDividerAlertDialog" format="reference" />
     <attr name="listItemLayout" format="reference" />
@@ -555,6 +617,7 @@
     <attr name="logoDescription" format="string" />
     <attr name="maxActionInlineWidth" format="dimension" />
     <attr name="maxButtonHeight" format="dimension" />
+    <attr name="maxLine" format="integer" />
     <attr name="maxWidth" format="dimension" />
     <attr name="measureWithLargestChild" format="boolean" />
     <attr name="menu" format="reference" />
@@ -562,6 +625,8 @@
         <enum name="file" value="1" />
         <enum name="message" value="0" />
     </attr>
+    <attr name="minTouchSizeHorizontal" format="dimension" />
+    <attr name="minTouchSizeVertical" format="dimension" />
     <attr name="multiChoiceItemLayout" format="reference" />
     <attr name="navigationContentDescription" format="string" />
     <attr name="navigationIcon" format="reference" />
@@ -649,6 +714,24 @@
         <flag name="withText" value="0x00000004" />
     </attr>
     <attr name="showBroadcast" format="boolean" />
+    <attr name="showDivider">
+        <flag name="beginning" value="0x00000001" />
+        <flag name="end" value="0x00000004" />
+        <flag name="middle" value="0x00000002" />
+        <flag name="none" value="0x00000000" />
+    </attr>
+    <attr name="showDividerHorizontal">
+        <flag name="beginning" value="0x00000001" />
+        <flag name="end" value="0x00000004" />
+        <flag name="middle" value="0x00000002" />
+        <flag name="none" value="0x00000000" />
+    </attr>
+    <attr name="showDividerVertical">
+        <flag name="beginning" value="0x00000001" />
+        <flag name="end" value="0x00000004" />
+        <flag name="middle" value="0x00000002" />
+        <flag name="none" value="0x00000000" />
+    </attr>
     <attr name="showDividers">
         <flag name="beginning" value="0x00000001" />
         <flag name="end" value="0x00000004" />
@@ -671,7 +754,7 @@
     <attr name="state_above_anchor" format="boolean" />
     <attr name="state_collapsed" format="boolean" />
     <attr name="state_collapsible" format="boolean" />
-    <attr name="statusBarBackground" format="reference" />
+    <attr name="statusBarBackground" format="reference|color" />
     <attr name="statusBarScrim" format="color" />
     <attr name="style" format="string" />
     <attr name="subMenuArrow" format="reference" />
@@ -793,6 +876,7 @@
     <attr name="use_controller" format="boolean" />
     <attr name="userName" format="string" />
     <attr name="verticalItemSpacing" format="dimension" />
+    <attr name="viewInflaterClass" format="string" />
     <attr name="voiceIcon" format="reference" />
     <attr name="windowActionBar" format="boolean" />
     <attr name="windowActionBarOverlay" format="boolean" />
