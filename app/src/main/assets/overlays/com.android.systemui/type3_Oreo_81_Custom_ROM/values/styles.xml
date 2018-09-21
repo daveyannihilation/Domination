@@ -11,6 +11,18 @@
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabText.Inverse" parent="@*android:style/Widget.Material.ActionBar.TabText" />
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabView" parent="@*android:style/Widget.Material.ActionBar.TabView" />
     <style name="Base.Widget.AppCompat.Light.PopupMenu" parent="@*android:style/Widget.Material.PopupMenu" />
+    <style name="edit_theme" parent="@*android:style/Theme.DeviceDefault.QuickSettings">
+        <item name="android:colorBackground">@*android:color/primary_dark_material_dark</item>
+        <item name="android:colorSecondary">@*android:color/primary_dark_material_dark</item>
+    </style>
+    <style name="hybrid_notification_text">
+        <item name="android:textColor">#ffdddddd</item>
+        <item name="android:paddingEnd">4.0dip</item>
+    </style>
+    <style name="hybrid_notification_title">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:paddingEnd">4.0dip</item>
+    </style>
     <style name="KeyboardShortcutsDialog" parent="@*android:style/Theme.Material" />
     <style name="Keyguard.TextView" parent="@*android:style/Widget.Material.TextView">
         <item name="android:textSize">@*com.android.systemui:dimen/kg_status_line_font_size</item>
@@ -33,14 +45,41 @@
         <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
     </style>
     <style name="Platform.V25.AppCompat.Light" parent="@*android:style/Theme.Material.NoActionBar" />
+    <style name="qs_theme" parent="@*com.android.systemui:style/qs_base">
+        <item name="*com.android.systemui:darkIconTheme">@*com.android.systemui:style/QSIconTheme</item>
+        <item name="*com.android.systemui:lightIconTheme">@*com.android.systemui:style/QSIconTheme</item>
+        <item name="android:colorPrimary">@*android:color/background_floating_material_dark</item>
+        <item name="android:colorPrimaryDark">@*android:color/background_floating_material_dark</item>
+        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="android:colorSecondary">@*android:color/button_material_dark</item>
+        <item name="android:colorControlNormal">@*android:color/white</item>
+    </style>
     <style name="QSIconTheme">
         <item name="*com.android.systemui:backgroundColor">@*android:color/ripple_material_dark</item>
         <item name="*com.android.systemui:fillColor">@*android:color/white</item>
         <item name="*com.android.systemui:singleToneColor">@*android:color/white</item>
     </style>
+    <style name="RecentsTheme.Wallpaper.Light" parent="@*com.android.systemui:style/RecentsTheme.Wallpaper">
+        <item name="*com.android.systemui:clearAllBackgroundColor">@*com.android.systemui:color/recents_clear_all_button_bg_light_color</item>
+        <item name="*com.android.systemui:wallpaperTextColor">@*android:color/primary_text_material_dark</item>
+        <item name="*com.android.systemui:wallpaperTextColorSecondary">@*android:color/secondary_text_material_dark</item>
+    </style>
+    <style name="systemui_theme_remote_input" parent="@*android:style/Theme.Material">
+        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
+    </style>
     <style name="TextAppearance.NotificationInfo" parent="@*com.android.systemui:style/TextAppearance">
         <item name="android:textColor">@*android:color/white</item>
         <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="TextAppearance.NotificationInfo.Primary">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:alpha">0.87</item>
+    </style>
+    <style name="TextAppearance.NotificationInfo.Secondary">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:alpha">0.54</item>
     </style>
     <style name="TextAppearance.StatusBar.SystemPanel" parent="@*android:style/TextAppearance.StatusBar">
         <item name="android:textAppearance">?android:textAppearance</item>
@@ -61,6 +100,13 @@
     </style>
     <style name="Theme.SystemUI.Dialog" parent="@*android:style/Theme.Material.Dialog" />
     <style name="Theme.SystemUI.Dialog.Alert" parent="@*android:style/Theme.Material.Dialog.Alert" />
+    <style name="Theme.SystemUI.Dialog.GlobalActions" parent="@*android:style/Theme.Material.NoActionBar.Fullscreen" />
+    <style name="Theme.SystemUI.Light" parent="@*android:style/Theme.DeviceDefault.QuickSettings">
+        <item name="android:colorControlHighlight">@*android:color/primary_text_material_dark</item>
+        <item name="*com.android.systemui:passwordStyle">@*com.android.systemui:style/PasswordTheme</item>
+        <item name="*com.android.systemui:wallpaperTextColor">@*android:color/primary_text_material_dark</item>
+        <item name="*com.android.systemui:wallpaperTextColorSecondary">@*android:color/secondary_text_material_dark</item>
+    </style>
     <style name="Widget.Leanback.OnboardingStartButtonStyle" parent="@*com.android.systemui:style/Widget.Leanback">
         <item name="android:textSize">16.0sp</item>
         <item name="android:textColor">#ff1976d2</item>
@@ -77,59 +123,5 @@
         <item name="android:paddingEnd">24.0dip</item>
         <item name="android:elevation">1.5dip</item>
         <item name="android:stateListAnimator">@null</item>
-    </style>
-    <style name="edit_theme" parent="@*android:style/Theme.DeviceDefault.QuickSettings">
-        <item name="android:colorBackground">@*android:color/primary_dark_material_dark</item>
-        <item name="android:colorSecondary">@*android:color/primary_dark_material_dark</item>
-    </style>
-    <style name="hybrid_notification_text">
-        <item name="android:textColor">#ffdddddd</item>
-        <item name="android:paddingEnd">4.0dip</item>
-    </style>
-    <style name="hybrid_notification_title">
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:paddingEnd">4.0dip</item>
-    </style>
-    <style name="systemui_theme_remote_input" parent="@*android:style/Theme.Material">
-        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
-    </style>
-
-
-    <style name="Theme.SystemUI.Dialog.GlobalActions" parent="@*android:style/Theme.Material.NoActionBar.Fullscreen" />
-    <style name="Theme.SystemUI.Light" parent="@*android:style/Theme.DeviceDefault.QuickSettings">
-        <item name="android:colorControlHighlight">@*android:color/primary_text_material_dark</item>
-        <item name="*com.android.systemui:passwordStyle">@*com.android.systemui:style/PasswordTheme</item>
-        <item name="*com.android.systemui:wallpaperTextColor">@*android:color/primary_text_material_dark</item>
-        <item name="*com.android.systemui:wallpaperTextColorSecondary">@*android:color/secondary_text_material_dark</item>
-    </style>
-
-    <style name="RecentsTheme.Wallpaper.Light" parent="@*com.android.systemui:style/RecentsTheme.Wallpaper">
-        <item name="*com.android.systemui:clearAllBackgroundColor">@*com.android.systemui:color/recents_clear_all_button_bg_light_color</item>
-        <item name="*com.android.systemui:wallpaperTextColor">@*android:color/primary_text_material_dark</item>
-        <item name="*com.android.systemui:wallpaperTextColorSecondary">@*android:color/secondary_text_material_dark</item>
-    </style>
-
-
-    <style name="qs_theme" parent="@*com.android.systemui:style/qs_base">
-        <item name="*com.android.systemui:darkIconTheme">@*com.android.systemui:style/QSIconTheme</item>
-        <item name="*com.android.systemui:lightIconTheme">@*com.android.systemui:style/QSIconTheme</item>
-        <item name="android:colorPrimary">@*android:color/background_floating_material_dark</item>
-        <item name="android:colorPrimaryDark">@*android:color/background_floating_material_dark</item>
-        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
-        <item name="android:colorSecondary">@*android:color/button_material_dark</item>
-        <item name="android:colorControlNormal">@*android:color/white</item>
-    </style>
-
-
-    <style name="TextAppearance.NotificationInfo.Primary">
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:alpha">0.87</item>
-    </style>
-
-    <style name="TextAppearance.NotificationInfo.Secondary">
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:textSize">14sp</item>
-        <item name="android:alpha">0.54</item>
     </style>
 </resources>
