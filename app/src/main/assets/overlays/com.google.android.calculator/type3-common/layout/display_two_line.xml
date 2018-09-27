@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.calculator2.display.CalculatorDisplay android:orientation="vertical" android:id="@*com.google.android.calculator:id/display" android:background="@*android:color/background_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@*com.google.android.calculator:layout/toolbar" />
+    <com.android.calculator2.display.CalculatorScrollView android:id="@*com.google.android.calculator:id/formula_container" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:layoutDirection="ltr">
+        <com.android.calculator2.display.CalculatorFormula android:textColor="@*android:color/white" android:ellipsize="none" android:id="@*com.google.android.calculator:id/formula" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" style="@*com.google.android.calculator:style/DisplayTextStyle.Formula" />
+    </com.android.calculator2.display.CalculatorScrollView>
+    <com.android.calculator2.display.CalculatorResult android:textColor="@*android:color/secondary_text_default_material_dark" android:id="@*com.google.android.calculator:id/result" android:layout_width="fill_parent" android:layout_height="wrap_content" android:bufferType="spannable" android:singleLine="true" android:layoutDirection="ltr" style="@*com.google.android.calculator:style/DisplayTextStyle.Result" />
+</com.android.calculator2.display.CalculatorDisplay>
