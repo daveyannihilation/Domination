@@ -3,22 +3,11 @@
     <style name="AutoCompleteTextView.LowEnd" parent="@*android:style/Widget.Material.AutoCompleteTextView">
         <item name="android:popupBackground">@*com.chrome.dev:drawable/popup_background_shadow</item>
     </style>
-    <style name="Base.V7.Widget.AppCompat.AutoCompleteTextView" parent="@*android:style/Widget.AutoCompleteTextView">
-        <item name="android:textAppearance">?*android:textAppearanceMedium</item>
-        <item name="android:textColor">#ffdddddd</item>
-    </style>
-    <style name="Base.V7.Widget.AppCompat.EditText" parent="@*android:style/Widget.EditText">
-        <item name="android:textAppearance">?*android:textAppearanceMedium</item>
-        <item name="android:textColor">#ffdddddd</item>
-    </style>
-    <style name="Base.Widget.AppCompat.ActionBar.TabText" parent="">
-        <item name="android:textColor">#ffffffff</item>
-    </style>
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabText" parent="@*android:style/Widget.Material.ActionBar.TabText" />
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabText.Inverse" parent="@*android:style/Widget.Material.ActionBar.TabText" />
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabView" parent="@*android:style/Widget.Material.ActionBar.TabView" />
     <style name="Base.Widget.AppCompat.Light.PopupMenu" parent="@*android:style/Widget.Material.PopupMenu" />
-    <style name="Base.Widget.AppCompat.ListView.DropDown" parent="@*com.chrome.dev:style/Base.Widget.AppCompat.ListView">
+    <style name="Base.Widget.AppCompat.ListView.DropDown" parent="@*android:style/Widget.Material.ListView.DropDown">
         <item name="android:divider">@null</item>
         <item name="android:backgroundTint">@*android:color/secondary_text_leanback_light</item>
     </style>
@@ -31,50 +20,43 @@
     </style>
     <style name="ButtonBarButton" parent="@*android:style/Widget.Holo.Button">
         <item name="android:background">?*android:selectableItemBackground</item>
-        <item name="android:paddingStart">4.0dip</item>
-        <item name="android:paddingEnd">4.0dip</item>
         <item name="android:layout_width">0.0dip</item>
         <item name="android:layout_height">fill_parent</item>
         <item name="android:layout_weight">1.0</item>
+        <item name="android:paddingStart">4.0dip</item>
+        <item name="android:paddingEnd">4.0dip</item>
     </style>
     <style name="CardView" parent="@*com.chrome.dev:style/Base.CardView">
         <item name="*com.chrome.dev:cardBackgroundColor">@*android:color/secondary_text_leanback_light</item>
     </style>
     <style name="ContextualSearchCaptionTextView">
-        <item name="android:textSize">14.0sp</item>
-        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textAppearance">@*com.chrome.dev:style/BlackBody</item>>
         <item name="android:ellipsize">end</item>
         <item name="android:layout_gravity">bottom</item>
         <item name="android:background">@*android:color/primary_text_leanback_light</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:includeFontPadding">false</item>
         <item name="android:layout_marginStart">7.0dip</item>
         <item name="android:layout_marginEnd">7.0dip</item>
-        <item name="android:singleLine">true</item>
-    </style>
-    <style name="ContextualSearchTextView">
-        <item name="android:textSize">18.0sp</item>
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:ellipsize">end</item>
-        <item name="android:layout_height">fill_parent</item>
-        <item name="android:singleLine">true</item>
     </style>
     <style name="ContextualSearchTextViewLayout">
         <item name="android:layout_gravity">bottom</item>
         <item name="android:background">@*android:color/primary_text_leanback_light</item>
-        <item name="android:paddingStart">53.0dip</item>
-        <item name="android:paddingEnd">53.0dip</item>
         <item name="android:visibility">invisible</item>
         <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">53.0dip</item>
+        <item name="android:paddingEnd">53.0dip</item>
     </style>
     <style name="FullscreenWhiteBase" parent="@*com.chrome.dev:style/Theme.AppCompat">
         <item name="android:windowBackground">@*android:color/primary_text_leanback_light</item>
         <item name="android:textColorLink">@*android:color/accent_material_dark</item>
+        <item name="*com.chrome.dev:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="*com.chrome.dev:colorPrimary">@*android:color/secondary_text_leanback_light</item>
+        <item name="*com.chrome.dev:colorPrimaryDark">@*android:color/primary_text_leanback_light</item>
         <item name="*com.chrome.dev:windowNoTitle">true</item>
-        <item name="android:colorPrimary">@*android:color/secondary_text_leanback_light</item>
-        <item name="android:colorPrimaryDark">@*android:color/primary_text_leanback_light</item>
-        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
         <item name="android:windowShowWallpaper">false</item>
     </style>
     <style name="GvrDialogTheme" parent="@*android:style/Theme.Material.Dialog" />
@@ -84,25 +66,17 @@
     <style name="NewTabPageRecyclerView">
         <item name="android:colorEdgeEffect">@*android:color/secondary_text_default_material_dark</item>
     </style>
-    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.Material" />
     <style name="Platform.V11.AppCompat.Light" parent="@*android:style/Theme.Holo" />
     <style name="Platform.V21.AppCompat.Light" parent="@*android:style/Theme.Material.NoActionBar">
         <item name="android:textColorHintInverse">#ffbbbbbb</item>
         <item name="android:textColorHint">#ffbbbbbb</item>
         <item name="android:textColorLink">@*android:color/accent_material_dark</item>
         <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
-        <item name="android:navigationBarColor">@*android:color/primary_text_leanback_light</item>
+        <item name="android:navigationBarColor">@*android:color/black</item>
         <item name="android:windowShowWallpaper">false</item>
-    </style>
-    <style name="PopupWindow.LowEnd" parent="@*android:style/Widget.Material.PopupWindow">
-        <item name="android:popupBackground">@*com.chrome.dev:drawable/popup_background_shadow</item>
     </style>
     <style name="PreferencesDialogTheme" parent="@*android:style/Theme.Material.Dialog.Alert">
         <item name="android:colorAccent">@*com.chrome.dev:color/pref_accent_color</item>
-    </style>
-    <style name="PreferenceTextAppearanceMedium">
-        <item name="android:textSize">18.0sp</item>
-        <item name="android:textColor">#ffffffff</item>
     </style>
     <style name="SearchActivityTheme" parent="@*com.chrome.dev:style/MainThemeBase">
         <item name="android:windowBackground">@*android:color/primary_text_leanback_light</item>
@@ -112,6 +86,7 @@
     </style>
     <style name="TabbedModeTheme" parent="@*com.chrome.dev:style/TabbedModeThemeBase">
         <item name="android:statusBarColor">@*android:color/primary_text_leanback_light</item>
+        <item name="android:windowLightStatusBar">false</item>
     </style>
     <style name="TabbedModeThemeBase" parent="@*com.chrome.dev:style/MainTheme">
         <item name="android:windowBackground">@*android:color/primary_text_leanback_light</item>

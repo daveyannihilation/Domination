@@ -104,7 +104,6 @@
     <attr name="ColorChordedTrack" format="color" />
     <attr name="ColorDragConfirmationOverlayBackground" format="reference" />
     <attr name="ColorDragConfirmationText" format="reference" />
-    <attr name="ColorExtensionSearchHint" format="reference" />
     <attr name="ColorExtensionSearchText" format="reference" />
     <attr name="ColorGestureTrack" format="color" />
     <attr name="ColorGifCategoryBgColor" format="reference" />
@@ -154,8 +153,6 @@
     <attr name="ColorMorseKeyboardSeparator" format="reference" />
     <attr name="ColorSymbolMajorSelected" format="color" />
     <attr name="ColorSymbolMinorSelected" format="color" />
-    <attr name="ColorTextEditingPopupLabel" format="reference" />
-    <attr name="ColorTextEditingUnActivateKey" format="reference" />
     <attr name="ColorTranslateBoardLabel" format="reference" />
     <attr name="ComposingInnerPadding" format="dimension" />
     <attr name="DefaultQueryIcon" format="reference" />
@@ -171,6 +168,7 @@
     <attr name="Icon9KeyZhShift" format="reference" />
     <attr name="Icon9KeyZhShiftLocked" format="reference" />
     <attr name="IconAccessPointAnimationDot" format="reference" />
+    <attr name="IconAccessPointClipboard" format="reference" />
     <attr name="IconAccessPointCloseOneHanded" format="reference" />
     <attr name="IconAccessPointOneHanded" format="reference" />
     <attr name="IconAccessPointQualityBugReport" format="reference" />
@@ -197,8 +195,8 @@
     <attr name="IconDeactiveAlpha" format="integer" />
     <attr name="IconDel" format="reference" />
     <attr name="IconDisabledAlpha" format="integer" />
+    <attr name="IconDisabledMic" format="reference" />
     <attr name="IconDone" format="reference" />
-    <attr name="IconDownArrow" format="reference" />
     <attr name="IconDropDown" format="reference" />
     <attr name="IconEditKeyboardAlpha" format="float" />
     <attr name="IconEnter" format="reference" />
@@ -211,6 +209,8 @@
     <attr name="IconHeaderTabEnDeactive" format="reference" />
     <attr name="IconHeaderTabZhActive" format="reference" />
     <attr name="IconHeaderTabZhDeactive" format="reference" />
+    <attr name="IconHelp" format="reference" />
+    <attr name="IconHelpDisplayed" format="reference" />
     <attr name="IconHideKeyboard" format="reference" />
     <attr name="IconImeActionBack" format="reference" />
     <attr name="IconImeActionBackMorse" format="reference" />
@@ -220,8 +220,6 @@
     <attr name="IconJaSwitchToHiragana" format="reference" />
     <attr name="IconKeyboardBackspace" format="reference" />
     <attr name="IconKeyboardEditingOvalBackWithState" format="reference" />
-    <attr name="IconLeftArrow" format="reference" />
-    <attr name="IconLeftMostArrow" format="reference" />
     <attr name="IconMainCategoryDraw" format="reference" />
     <attr name="IconMainCategoryEmoticon" format="reference" />
     <attr name="IconMainCategoryNumber" format="reference" />
@@ -241,8 +239,6 @@
     <attr name="IconPopupSetting" format="reference" />
     <attr name="IconPrevious" format="reference" />
     <attr name="IconRecent" format="reference" />
-    <attr name="IconRightArrow" format="reference" />
-    <attr name="IconRightMostArrow" format="reference" />
     <attr name="IconSearch" format="reference" />
     <attr name="IconSearchMagnifier" format="reference" />
     <attr name="IconSend" format="reference" />
@@ -308,7 +304,6 @@
     <attr name="IconTips" format="reference" />
     <attr name="IconToggleMoreAccessPoints" format="reference" />
     <attr name="IconTrashCan" format="reference" />
-    <attr name="IconUpArrow" format="reference" />
     <attr name="IconZWJ" format="reference" />
     <attr name="IconZWNJ" format="reference" />
     <attr name="IsLightTheme" format="boolean" />
@@ -324,6 +319,7 @@
     <attr name="LabelBottomMarginBottom" format="dimension" />
     <attr name="LayoutJaFunction" format="reference" />
     <attr name="MaxPageableCandidatesPerRow" format="integer" />
+    <attr name="MorseBottomIconPaddingTop" format="reference" />
     <attr name="MorseSwitchToNextLanguageWeight" format="reference" />
     <attr name="NoConnectionIcon" format="reference" />
     <attr name="OneHandedBgComposingText" format="reference" />
@@ -345,7 +341,6 @@
     <attr name="PrimeKeyboardNumberRowWeight" format="float" />
     <attr name="RecentC2QCandidateIcon" format="reference" />
     <attr name="RecentQueryIcon" format="reference" />
-    <attr name="TextEditingIconAlpha" format="integer" />
     <attr name="bottomAppBarStyle" format="reference" />
     <attr name="bottomNavigationStyle" format="reference" />
     <attr name="bottomSheetDialogTheme" format="reference" />
@@ -355,7 +350,15 @@
     <attr name="chipStandaloneStyle" format="reference" />
     <attr name="chipStyle" format="reference" />
     <attr name="colorLabelDynamic" format="color" />
+    <attr name="colorOnBackground" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="colorOnError" format="color" />
+    <attr name="colorOnPrimary" format="color" />
+    <attr name="colorOnSecondary" format="color" />
+    <attr name="colorOnSurface" format="color" />
+    <attr name="colorPrimaryVariant" format="color" />
     <attr name="colorSecondary" format="color" />
+    <attr name="colorSecondaryVariant" format="color" />
+    <attr name="colorSurface" format="color" />
     <attr name="constraintSet" format="reference" />
     <attr name="coordinatorLayoutStyle" format="reference" />
     <attr name="drawerArrowStyle" format="reference" />
@@ -364,6 +367,7 @@
     <attr name="hideMotionSpec" format="reference" />
     <attr name="iconTabKey" format="reference" />
     <attr name="isLightTheme" format="boolean" />
+    <attr name="isMaterialTheme" format="boolean" />
     <attr name="layout_constraintBaseline_creator" format="integer" />
     <attr name="layout_constraintBaseline_toBaselineOf" format="reference">
         <enum name="parent" value="0" />
@@ -455,6 +459,10 @@
     <attr name="materialButtonStyle" format="reference" />
     <attr name="materialCardViewStyle" format="reference" />
     <attr name="navigationViewStyle" format="reference" />
+    <attr name="openSearchBarStyle" format="reference" />
+    <attr name="openSearchViewPrefixStyle" format="reference" />
+    <attr name="openSearchViewStyle" format="reference" />
+    <attr name="productLockupViewStyle" format="reference" />
     <attr name="rippleColor" format="color" />
     <attr name="scrimBackground" format="reference|color" />
     <attr name="showMotionSpec" format="reference" />
@@ -537,6 +545,10 @@
     <attr name="listItemLayout" format="reference" />
     <attr name="showTitle" format="boolean" />
     <attr name="buttonIconDimen" format="dimension" />
+    <attr name="minIntervalSeconds" format="integer" />
+    <attr name="logoSpriteDrawable" format="reference" />
+    <attr name="frameCount" format="integer" />
+    <attr name="durationMillis" format="integer" />
     <attr name="errorPlaceholder" format="integer" />
     <attr name="expanded" format="boolean" />
     <attr name="liftOnScroll" format="boolean" />
@@ -711,7 +723,6 @@
         <enum name="center" value="0" />
         <enum name="end" value="1" />
     </attr>
-    <attr name="fabAttached" format="boolean" />
     <attr name="fabCradleMargin" format="dimension" />
     <attr name="fabCradleRoundedCornerRadius" format="dimension" />
     <attr name="fabCradleVerticalOffset" format="dimension" />
@@ -744,18 +755,25 @@
     <attr name="contentPaddingRight" format="dimension" />
     <attr name="contentPaddingTop" format="dimension" />
     <attr name="contentPaddingBottom" format="dimension" />
+    <attr name="textLabelLayout" format="reference" />
     <attr name="chipBackgroundColor" format="color" />
     <attr name="chipMinHeight" format="dimension" />
     <attr name="chipCornerRadius" format="dimension" />
     <attr name="chipStrokeColor" format="color" />
     <attr name="chipStrokeWidth" format="dimension" />
+    <attr name="chipMinTouchTargetSize" format="dimension" />
+    <attr name="chipTouchTargetDelegate" format="reference" />
+    <attr name="chipIconVisible" format="boolean" />
     <attr name="chipIconEnabled" format="boolean" />
     <attr name="chipIcon" format="reference" />
+    <attr name="chipIconTint" format="color" />
     <attr name="chipIconSize" format="dimension" />
+    <attr name="closeIconVisible" format="boolean" />
     <attr name="closeIconEnabled" format="boolean" />
     <attr name="closeIcon" format="reference" />
     <attr name="closeIconTint" format="color" />
     <attr name="closeIconSize" format="dimension" />
+    <attr name="checkedIconVisible" format="boolean" />
     <attr name="checkedIconEnabled" format="boolean" />
     <attr name="checkedIcon" format="reference" />
     <attr name="chipStartPadding" format="dimension" />
@@ -974,6 +992,16 @@
     <attr name="useCompatPadding" format="boolean" />
     <attr name="maxImageSize" format="dimension" />
     <attr name="behavior_autoHide" format="boolean" />
+    <attr name="FloatingKeyboardPaddingBottom" format="dimension" />
+    <attr name="FloatingKeyboardInnerPadding" format="dimension" />
+    <attr name="FloatingKeyboardInnerPaddingBottom" format="dimension" />
+    <attr name="FloatingKeyboardBodyHeight" format="dimension" />
+    <attr name="FloatingKeyboardBodyHeightNormal" format="dimension" />
+    <attr name="FloatingKeyboardBodyHeightMoreLetterRows" format="dimension" />
+    <attr name="FloatingKeyboardSizeRatio" format="float" />
+    <attr name="FloatingKeyboardBottomShadow" format="dimension" />
+    <attr name="itemSpacing" format="dimension" />
+    <attr name="lineSpacing" format="dimension" />
     <attr name="fontProviderAuthority" format="string" />
     <attr name="fontProviderPackage" format="string" />
     <attr name="fontProviderQuery" format="string" />
@@ -1014,6 +1042,37 @@
         <enum name="thing_proto" value="9" />
     </attr>
     <attr name="sectionContent" format="string" />
+    <attr name="colorPrimaryLight" format="color" />
+    <attr name="colorSecondaryLight" format="color" />
+    <attr name="colorSecondaryDark" format="color" />
+    <attr name="colorPrimary50" format="color" />
+    <attr name="colorPrimary100" format="color" />
+    <attr name="colorPrimary200" format="color" />
+    <attr name="colorPrimary300" format="color" />
+    <attr name="colorPrimary400" format="color" />
+    <attr name="colorPrimary500" format="color" />
+    <attr name="colorPrimary600" format="color" />
+    <attr name="colorPrimary700" format="color" />
+    <attr name="colorPrimary800" format="color" />
+    <attr name="colorPrimary900" format="color" />
+    <attr name="colorSecondary50" format="color" />
+    <attr name="colorSecondary100" format="color" />
+    <attr name="colorSecondary200" format="color" />
+    <attr name="colorSecondary300" format="color" />
+    <attr name="colorSecondary400" format="color" />
+    <attr name="colorSecondary500" format="color" />
+    <attr name="colorSecondary600" format="color" />
+    <attr name="colorSecondary700" format="color" />
+    <attr name="colorSecondary800" format="color" />
+    <attr name="colorSecondary900" format="color" />
+    <attr name="textAppearanceDisplay1" format="reference" />
+    <attr name="textAppearanceDisplay2" format="reference" />
+    <attr name="textAppearanceDisplay3" format="reference" />
+    <attr name="textAppearanceSubhead1" format="reference" />
+    <attr name="textAppearanceSubhead2" format="reference" />
+    <attr name="textAppearanceSubtitleAlt1" format="reference" />
+    <attr name="textAppearanceSubtitleAlt2" format="reference" />
+    <attr name="textAppearanceButtonAlt" format="reference" />
     <attr name="inputEnabled" format="boolean" />
     <attr name="sourceClass">
         <enum name="contact" value="1" />
@@ -1041,11 +1100,26 @@
     <attr name="circleCrop" format="boolean" />
     <attr name="minValue" format="integer" />
     <attr name="valueInterval" format="integer" />
+    <attr name="lottie_fileName" format="string" />
+    <attr name="lottie_autoPlay" format="boolean" />
+    <attr name="lottie_loop" format="boolean" />
+    <attr name="lottie_imageAssetsFolder" format="string" />
+    <attr name="lottie_progress" format="float" />
+    <attr name="lottie_enableMergePathsForKitKatAndAbove" format="boolean" />
+    <attr name="lottie_cacheStrategy">
+        <enum name="none" value="0" />
+        <enum name="strong" value="2" />
+        <enum name="weak" value="1" />
+    </attr>
+    <attr name="lottie_colorFilter" format="color" />
+    <attr name="lottie_scale" format="float" />
     <attr name="iconSize" format="dimension" />
     <attr name="iconPadding" format="dimension" />
+    <attr name="iconGravity">
+        <flag name="start" value="0x00000001" />
+        <flag name="textStart" value="0x00000002" />
+    </attr>
     <attr name="iconTint" format="color" />
-    <attr name="additionalPaddingStartForIcon" format="dimension" />
-    <attr name="additionalPaddingEndForIcon" format="dimension" />
     <attr name="cornerRadius" format="dimension" />
     <attr name="CoversSoftKey" format="boolean" />
     <attr name="PopupDistance" format="dimension" />
@@ -1106,8 +1180,26 @@
     <attr name="OneHandedKeyboardBodyHeightMoreLetterRows" format="dimension" />
     <attr name="OneHandedKeyboardSizeRatio" format="float" />
     <attr name="OneHandedKeyboardBottomShadow" format="dimension" />
+    <attr name="defaultMarginsEnabled" format="boolean" />
+    <attr name="hideNavigationIcon" format="boolean" />
+    <attr name="searchPrefixText" format="string" />
+    <attr name="useDrawerArrowDrawable" format="boolean" />
+    <attr name="fadeThroughMenuItems" format="boolean" />
+    <attr name="autoShowKeyboard" format="boolean" />
     <attr name="overlapAnchor" format="boolean" />
     <attr name="state_above_anchor" format="boolean" />
+    <attr name="productNameTextColor" format="color" />
+    <attr name="logoColor">
+        <enum name="dark" value="1" />
+        <enum name="grey" value="3" />
+        <enum name="light" value="2" />
+        <enum name="standard" value="0" />
+    </attr>
+    <attr name="lockupSizingMode">
+        <enum name="normal" value="1" />
+        <enum name="auto" value="0" />
+        <enum name="small" value="2" />
+    </attr>
     <attr name="paddingBottomNoButtons" format="dimension" />
     <attr name="paddingTopNoTitle" format="dimension" />
     <attr name="layoutManager" format="string" />
@@ -1119,6 +1211,7 @@
     <attr name="fastScrollVerticalTrackDrawable" format="reference" />
     <attr name="fastScrollHorizontalThumbDrawable" format="reference" />
     <attr name="fastScrollHorizontalTrackDrawable" format="reference" />
+    <attr name="allowViewTransparency" format="boolean" />
     <attr name="insetForeground" format="reference|color" />
     <attr name="behavior_overlapTop" format="dimension" />
     <attr name="layout" format="reference" />
@@ -1155,8 +1248,8 @@
         <enum name="omnibox_url_section" value="4" />
     </attr>
     <attr name="buttonSize" format="reference">
-        <enum name="icon_only" value="2" />
         <enum name="standard" value="0" />
+        <enum name="icon_only" value="2" />
         <enum name="wide" value="1" />
     </attr>
     <attr name="colorScheme" format="reference">
@@ -1165,6 +1258,7 @@
         <enum name="light" value="1" />
     </attr>
     <attr name="scopeUris" format="reference|string" />
+    <attr name="snackbarStyle" format="reference" />
     <attr name="snackbarButtonStyle" format="reference" />
     <attr name="maxActionInlineWidth" format="dimension" />
     <attr name="DelayPressEffect" format="boolean" />
@@ -1198,7 +1292,6 @@
     <attr name="switchPadding" format="dimension" />
     <attr name="splitTrack" format="boolean" />
     <attr name="showText" format="boolean" />
-    <attr name="SystemPropertyKey" format="string" />
     <attr name="tabIndicatorColor" format="color" />
     <attr name="tabIndicatorHeight" format="dimension" />
     <attr name="tabContentStart" format="dimension" />
@@ -1279,6 +1372,7 @@
     <attr name="boxBackgroundColor" format="color" />
     <attr name="boxStrokeWidth" format="dimension" />
     <attr name="enforceMaterialTheme" format="boolean" />
+    <attr name="enforceTextAppearance" format="boolean" />
     <attr name="titleTextAppearance" format="reference" />
     <attr name="subtitleTextAppearance" format="reference" />
     <attr name="titleMargin" format="dimension" />
