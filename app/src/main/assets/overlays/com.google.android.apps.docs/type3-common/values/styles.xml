@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <style name="ActionBarMenu" parent="@*android:style/Theme.Material" />
 
 
@@ -9,24 +8,23 @@
         <item name="android:textColor">?*android:textColorPrimary</item>
         <item name="android:textColorHint">?*android:textColorHint</item>
     </style>
-
     <style name="Base.TextAppearance.AppCompat.Large.Inverse" parent="@*com.google.android.apps.docs:style/Base.TextAppearance.AppCompat.Large">
         <item name="android:textColor">?*android:textColorPrimary</item>
         <item name="android:textColorHint">?*android:textColorHint</item>
     </style>
-
     <style name="Base.TextAppearance.AppCompat.Medium.Inverse" parent="@*com.google.android.apps.docs:style/Base.TextAppearance.AppCompat.Medium">
         <item name="android:textColor">?*android:textColorSecondary</item>
         <item name="android:textColorHint">?*android:textColorHint</item>
     </style>
-
     <style name="Base.TextAppearance.AppCompat.Small.Inverse" parent="@*com.google.android.apps.docs:style/Base.TextAppearance.AppCompat.Small">
         <item name="android:textColor">?*android:textColorTertiary</item>
         <item name="android:textColorHint">?*android:textColorHint</item>
     </style>
-
-
-
+    <style name="Base.Theme.GoogleMaterial.Light" parent="@*com.google.android.apps.docs:style/Base.V14.Theme.GoogleMaterial.Light">
+        <item name="android:colorPrimaryDark">@*android:color/primary_text_leanback_light</item>
+        <item name="*com.google.android.apps.docs:colorPrimaryDark">@*android:color/primary_text_leanback_light</item>
+        <item name="android:statusBarColor">@*android:color/primary_text_leanback_light</item>
+    </style>
     <style name="Base.V7.Widget.AppCompat.AutoCompleteTextView" parent="@*android:style/Widget.AutoCompleteTextView">
         <item name="android:textAppearance">?*android:textAppearanceMedium</item>
         <item name="android:textColor">#ffbbbbbb</item>
@@ -39,7 +37,6 @@
         <item name="android:textColor">#ffbbbbbb</item>
         <item name="android:background">@*com.google.android.apps.docs:drawable/abc_edit_text_material</item>
     </style>
-
     <style name="BaseActionBarOverflow" parent="@*android:style/Widget.Holo.ActionButton.Overflow" />
     <style name="BaseAppTheme" parent="@*android:style/Theme.Holo" />
     <style name="BaseAutoCompleteTextView" parent="@*android:style/Widget.Holo.AutoCompleteTextView" />
@@ -52,7 +49,6 @@
         <item name="android:buttonBarStyle">@*com.google.android.apps.docs:style/PreLDialogButtonBar</item>
         <item name="android:buttonBarButtonStyle">@*com.google.android.apps.docs:style/DialogButton</item>
     </style>
-
     <style name="BaseDialogThemeWhenLarge" parent="@*android:style/Theme.Holo.DialogWhenLarge">
         <item name="android:textAppearanceMedium">@*com.google.android.apps.docs:style/PreLDialogTextAppearance</item>
         <item name="android:windowBackground">@*android:color/transparent</item>
@@ -62,7 +58,8 @@
         <item name="android:buttonBarStyle">@*com.google.android.apps.docs:style/PreLDialogButtonBar</item>
         <item name="android:buttonBarButtonStyle">@*com.google.android.apps.docs:style/DialogButton</item>
     </style>
-
+    <style name="BaseWebViewActionBar" parent="@*android:style/Widget.Holo.ActionBar.Solid" />
+    <style name="BaseWebViewTheme" parent="@*android:style/Theme.Holo" />
     <style name="BlackTitledDialog" parent="@*android:style/Theme.Holo.Dialog">
         <item name="android:windowBackground">@*android:color/transparent</item>
         <item name="android:windowContentOverlay">@null</item>
@@ -70,7 +67,6 @@
         <item name="android:windowMinWidthMajor">@*android:dimen/dialog_min_width_major</item>
         <item name="android:windowMinWidthMinor">@*android:dimen/dialog_min_width_minor</item>
     </style>
-
     <style name="CakemixTheme.Projector" parent="@*android:style/Theme.Holo">
         <item name="android:actionBarStyle">@*com.google.android.apps.docs:style/ProjectorActionBar</item>
         <item name="android:actionModeCloseButtonStyle">@*com.google.android.apps.docs:style/ActionModeCloseButton</item>
@@ -78,93 +74,6 @@
         <item name="android:actionBarWidgetTheme">@*com.google.android.apps.docs:style/CakemixTheme.ProjectorDropDown</item>
         <item name="android:actionBarItemBackground">@*com.google.android.apps.docs:drawable/state_selector_background</item>
     </style>
-    <style name="DialogTitleBlack" parent="@*android:style/TextAppearance.DialogWindowTitle">
-        <item name="android:textColor">#ffffffff</item>
-    </style>
-
-    <style name="HoloLikeButton" parent="@*android:style/Widget.Holo.Button.Borderless">
-        <item name="android:textAppearance">?android:textAppearanceMedium</item>
-        <item name="android:textColor">#ffffffff</item>
-    </style>
-    <style name="HoloLikeButtonBar" parent="@*android:style/Holo.ButtonBar">
-        <item name="android:background">@*android:color/legacy_primary</item>
-    </style>
-
-    <style name="PageIndicatorStyle">
-        <item name="android:textSize">14.0sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">#ffdddddd</item>
-        <item name="android:gravity">center</item>
-    </style>
-
-    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.Material">
-        <item name="android:windowShowWallpaper">false</item>
-        <item name="android:colorPrimaryDark">@*android:color/primary_text_leanback_light</item>
-        <item name="*com.google.android.apps.docs:colorPrimaryDark">@*android:color/primary_text_leanback_light</item>
-        <item name="android:statusBarColor">@*android:color/primary_text_leanback_light</item>
-    </style>
-
-    <style name="PreviewOpenInAnotherApp_container">
-        <item name="android:layout_gravity">center</item>
-        <item name="android:background">@*android:color/primary_text_leanback_light</item>
-        <item name="android:padding">16.0dip</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-    </style>
-
-    <style name="ProgressBarSpinner" parent="@*android:style/Widget.Holo.ProgressBar.Large">
-        <item name="android:indeterminateOnly">true</item>
-    </style>
-
-    <style name="Upload.Button.Spinner" parent="@*android:style/Widget.Holo.Spinner">
-        <item name="android:textSize">@*com.google.android.apps.docs:dimen/m_text_size_body</item>
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">0.0dip</item>
-        <item name="android:layout_marginBottom">0.0dip</item>
-        <item name="android:minHeight">@*com.google.android.apps.docs:dimen/m_touch_target_size</item>
-        <item name="android:layout_marginStart">0.0dip</item>
-        <item name="android:layout_marginEnd">0.0dip</item>
-    </style>
-
-    <style name="WelcomeThemeBase" parent="@*android:style/Theme.Holo.NoActionBar">
-        <item name="android:windowBackground">@*android:color/transparent</item>
-        <item name="android:windowIsTranslucent">true</item>
-        <item name="android:colorBackgroundCacheHint">@null</item>
-    </style>
-
-
-    <style name="Widget.Design.BottomSheet.Modal" parent="@*android:style/Widget">
-        <item name="android:background">@*android:color/secondary_text_leanback_light</item>
-        <item name="android:elevation">@*com.google.android.apps.docs:dimen/design_bottom_sheet_modal_elevation</item>
-        <item name="*com.google.android.apps.docs:behavior_peekHeight">auto</item>
-        <item name="*com.google.android.apps.docs:behavior_hideable">true</item>
-        <item name="*com.google.android.apps.docs:behavior_skipCollapsed">false</item>
-    </style>
-
-    <style name="ds_compat_app_theme" parent="@*android:style/Theme.Material">
-        <item name="android:windowContentOverlay">@*com.google.android.apps.docs:drawable/ds_actionbar_shadow</item>
-        <item name="android:windowTitleSize">@*com.google.android.apps.docs:dimen/ds_actionbar_compat_height</item>
-        <item name="android:windowTitleBackgroundStyle">@*com.google.android.apps.docs:style/ds_action_bar_compat</item>
-        <item name="*com.google.android.apps.docs:ds_actionbar_compat_title_style">@*com.google.android.apps.docs:style/ds_action_bar_compat_title</item>
-        <item name="*com.google.android.apps.docs:ds_actionbar_compat_item_style">@*com.google.android.apps.docs:style/ds_action_bar_compat_item</item>
-        <item name="*com.google.android.apps.docs:ds_actionbar_compat_item_home_style">@*com.google.android.apps.docs:style/ds_action_bar_compat_home_item</item>
-        <item name="android:windowShowWallpaper">false</item>
-    </style>
-    <style name="ds_scanner_base_theme" parent="@*android:style/Theme.Material">
-        <item name="android:windowBackground">@*android:color/primary_text_leanback_light</item>
-        <item name="android:windowShowWallpaper">false</item>
-    </style>
-    <style name="ds_scanner_capture_theme" parent="@*android:style/Theme.Material">
-        <item name="android:windowBackground">@*android:color/primary_text_leanback_light</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowFullscreen">true</item>
-        <item name="android:windowShowWallpaper">false</item>
-    </style>
-
-
-
-    <style name="BaseWebViewTheme" parent="@*android:style/Theme.Holo" />
     <style name="CommonTheme" parent="@*com.google.android.apps.docs:style/VersionTheme">
         <item name="android:windowNoTitle">true</item>
         <item name="android:actionBarStyle">@*com.google.android.apps.docs:style/OverlayActionBarStyle</item>
@@ -187,44 +96,11 @@
         <item name="*com.google.android.apps.docs:actionModeBackground">@*android:color/secondary_text_leanback_light</item>
         <item name="*com.google.android.apps.docs:actionModeCloseDrawable">@*com.google.android.apps.docs:drawable/back_grey</item>
     </style>
-    <style name="OverlayActionBarStyleLight" parent="@*com.google.android.apps.docs:style/Widget.AppCompat.ActionBar.Solid">
-        <item name="android:background">@*android:color/secondary_text_leanback_light</item>
-        <item name="android:height">@*com.google.android.apps.docs:dimen/viewer_action_bar_height</item>
-        <item name="android:elevation">5.0dip</item>
-        <item name="*com.google.android.apps.docs:height">@*com.google.android.apps.docs:dimen/viewer_action_bar_height</item>
-        <item name="*com.google.android.apps.docs:background">@*android:color/secondary_text_leanback_light</item>
-    </style>
-    <style name="discussion_edit_comment_text_style_base" parent="@*com.google.android.apps.docs:style/discussion_full_width_wrap_height">
-        <item name="android:textAppearance">@*com.google.android.apps.docs:style/discussion_edit_text_style</item>
-        <item name="android:gravity">top</item>
-        <item name="android:background">@*android:color/secondary_text_leanback_light</item>
-        <item name="android:focusable">true</item>
-        <item name="android:cursorVisible">true</item>
-        <item name="android:editable">true</item>
-        <item name="android:completionThreshold">1</item>
-        <item name="android:inputType">textCapSentences|textMultiLine</item>
-        <item name="android:imeOptions">actionDone</item>
-        <item name="android:textCursorDrawable">@*android:drawable/light_header</item>
-    </style>
-
-
-    <style name="UrawTheme" parent="@*com.google.android.apps.docs:style/Theme.AppCompat" />
-    <style name="BaseWebViewActionBar" parent="@*android:style/Widget.Holo.ActionBar.Solid" />
-
-
-
-
-
     <style name="DetailInfoCard_Text.Secondary" parent="@*com.google.android.apps.docs:style/DetailInfoCard_Text">
         <item name="android:textSize">@*com.google.android.apps.docs:dimen/m_entry_text_size_tertiary</item>
         <item name="android:textColor">#ffdddddd</item>
         <item name="android:visibility">gone</item>
         <item name="android:layout_weight">0.47</item>
-    </style>
-    <style name="SiteAccessOptionsDialogMessage.InfoTextAppearance" parent="@*com.google.android.apps.docs:style/SiteAccessOptionsDialogMessage">
-        <item name="android:textSize">@*com.google.android.apps.docs:dimen/m_entry_text_size_secondary</item>
-        <item name="android:textStyle">italic</item>
-        <item name="android:textColor">#ffdddddd</item>
     </style>
     <style name="DevFlagsAppTheme" parent="@*com.google.android.apps.docs:style/CakemixTheme.AppCompatActivity.NoActionBar">
         <item name="android:statusBarColor">@*android:color/primary_text_leanback_light</item>
@@ -238,15 +114,105 @@
         <item name="*com.google.android.apps.docs:colorPrimaryDark">@*android:color/primary_text_leanback_light</item>
         <item name="*com.google.android.apps.docs:colorAccent">@*com.google.android.apps.docs:color/quantum_googred500</item>
     </style>
-
-
+    <style name="DialogTitleBlack" parent="@*android:style/TextAppearance.DialogWindowTitle">
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="discussion_edit_comment_text_style_base" parent="@*com.google.android.apps.docs:style/discussion_full_width_wrap_height">
+        <item name="android:textAppearance">@*com.google.android.apps.docs:style/discussion_edit_text_style</item>
+        <item name="android:gravity">top</item>
+        <item name="android:background">@*android:color/secondary_text_leanback_light</item>
+        <item name="android:focusable">true</item>
+        <item name="android:cursorVisible">true</item>
+        <item name="android:editable">true</item>
+        <item name="android:completionThreshold">1</item>
+        <item name="android:inputType">textCapSentences|textMultiLine</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:textCursorDrawable">@*android:drawable/light_header</item>
+    </style>
+    <style name="ds_compat_app_theme" parent="@*android:style/Theme.Material">
+        <item name="android:windowContentOverlay">@*com.google.android.apps.docs:drawable/ds_actionbar_shadow</item>
+        <item name="android:windowTitleSize">@*com.google.android.apps.docs:dimen/ds_actionbar_compat_height</item>
+        <item name="android:windowTitleBackgroundStyle">@*com.google.android.apps.docs:style/ds_action_bar_compat</item>
+        <item name="*com.google.android.apps.docs:ds_actionbar_compat_title_style">@*com.google.android.apps.docs:style/ds_action_bar_compat_title</item>
+        <item name="*com.google.android.apps.docs:ds_actionbar_compat_item_style">@*com.google.android.apps.docs:style/ds_action_bar_compat_item</item>
+        <item name="*com.google.android.apps.docs:ds_actionbar_compat_item_home_style">@*com.google.android.apps.docs:style/ds_action_bar_compat_home_item</item>
+        <item name="android:windowShowWallpaper">false</item>
+    </style>
+    <style name="ds_scanner_base_theme" parent="@*android:style/Theme.Material">
+        <item name="android:windowBackground">@*android:color/primary_text_leanback_light</item>
+        <item name="android:windowShowWallpaper">false</item>
+    </style>
+    <style name="ds_scanner_capture_theme" parent="@*android:style/Theme.Material">
+        <item name="android:windowBackground">@*android:color/primary_text_leanback_light</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowShowWallpaper">false</item>
+    </style>
+    <style name="HoloLikeButton" parent="@*android:style/Widget.Holo.Button.Borderless">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="HoloLikeButtonBar" parent="@*android:style/Holo.ButtonBar">
+        <item name="android:background">@*android:color/legacy_primary</item>
+    </style>
     <style name="LegacyEmptyStateMessageTitleAppearance" parent="@*com.google.android.apps.docs:style/quantum_text_subhead_black">
         <item name="android:textColor">@*android:color/white</item>
     </style>
-    <style name="Base.Theme.GoogleMaterial.Light" parent="@*com.google.android.apps.docs:style/Base.V14.Theme.GoogleMaterial.Light">
+    <style name="OverlayActionBarStyleLight" parent="@*com.google.android.apps.docs:style/Widget.AppCompat.ActionBar.Solid">
+        <item name="android:background">@*android:color/secondary_text_leanback_light</item>
+        <item name="android:height">@*com.google.android.apps.docs:dimen/viewer_action_bar_height</item>
+        <item name="android:elevation">5.0dip</item>
+        <item name="*com.google.android.apps.docs:height">@*com.google.android.apps.docs:dimen/viewer_action_bar_height</item>
+        <item name="*com.google.android.apps.docs:background">@*android:color/secondary_text_leanback_light</item>
+    </style>
+    <style name="PageIndicatorStyle">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffdddddd</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.Material">
+        <item name="android:windowShowWallpaper">false</item>
         <item name="android:colorPrimaryDark">@*android:color/primary_text_leanback_light</item>
         <item name="*com.google.android.apps.docs:colorPrimaryDark">@*android:color/primary_text_leanback_light</item>
         <item name="android:statusBarColor">@*android:color/primary_text_leanback_light</item>
     </style>
-
+    <style name="PreviewOpenInAnotherApp_container">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@*android:color/primary_text_leanback_light</item>
+        <item name="android:padding">16.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ProgressBarSpinner" parent="@*android:style/Widget.Holo.ProgressBar.Large">
+        <item name="android:indeterminateOnly">true</item>
+    </style>
+    <style name="SiteAccessOptionsDialogMessage.InfoTextAppearance" parent="@*com.google.android.apps.docs:style/SiteAccessOptionsDialogMessage">
+        <item name="android:textSize">@*com.google.android.apps.docs:dimen/m_entry_text_size_secondary</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">#ffdddddd</item>
+    </style>
+    <style name="Upload.Button.Spinner" parent="@*android:style/Widget.Holo.Spinner">
+        <item name="android:textSize">@*com.google.android.apps.docs:dimen/m_text_size_body</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">0.0dip</item>
+        <item name="android:layout_marginBottom">0.0dip</item>
+        <item name="android:minHeight">@*com.google.android.apps.docs:dimen/m_touch_target_size</item>
+        <item name="android:layout_marginStart">0.0dip</item>
+        <item name="android:layout_marginEnd">0.0dip</item>
+    </style>
+    <style name="UrawTheme" parent="@*com.google.android.apps.docs:style/Theme.AppCompat" />
+    <style name="WelcomeThemeBase" parent="@*android:style/Theme.Holo.NoActionBar">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="Widget.Design.BottomSheet.Modal" parent="@*android:style/Widget">
+        <item name="android:background">@*android:color/secondary_text_leanback_light</item>
+        <item name="android:elevation">@*com.google.android.apps.docs:dimen/design_bottom_sheet_modal_elevation</item>
+        <item name="*com.google.android.apps.docs:behavior_peekHeight">auto</item>
+        <item name="*com.google.android.apps.docs:behavior_hideable">true</item>
+        <item name="*com.google.android.apps.docs:behavior_skipCollapsed">false</item>
+    </style>
 </resources>

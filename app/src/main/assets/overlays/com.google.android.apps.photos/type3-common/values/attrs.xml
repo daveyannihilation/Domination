@@ -157,6 +157,8 @@
     <attr name="textAppearanceSubtitle2" format="reference" />
     <attr name="textInputStyle" format="reference" />
     <attr name="title" format="string" />
+    <attr name="discSize" format="dimension" />
+    <attr name="avatarSize" format="dimension" />
     <attr name="navigationMode">
         <enum name="listMode" value="1" />
         <enum name="normal" value="0" />
@@ -214,6 +216,7 @@
     <attr name="durationMillis" format="integer" />
     <attr name="expanded" format="boolean" />
     <attr name="liftOnScroll" format="boolean" />
+    <attr name="liftOnScrollTargetViewId" format="reference" />
     <attr name="state_collapsed" format="boolean" />
     <attr name="state_collapsible" format="boolean" />
     <attr name="state_lifted" format="boolean" />
@@ -899,7 +902,8 @@
     <attr name="hideNavigationIcon" format="boolean" />
     <attr name="searchPrefixText" format="string" />
     <attr name="useDrawerArrowDrawable" format="boolean" />
-    <attr name="fadeThroughMenuItems" format="boolean" />
+    <attr name="animateNavigationIcon" format="boolean" />
+    <attr name="animateMenuItems" format="boolean" />
     <attr name="autoShowKeyboard" format="boolean" />
     <attr name="layout_widthPercent" format="fraction" />
     <attr name="layout_heightPercent" format="fraction" />
@@ -973,6 +977,7 @@
         <enum name="omnibox_title_section" value="5" />
         <enum name="omnibox_url_section" value="4" />
     </attr>
+    <attr name="expandable" format="boolean" />
     <attr name="shadowColor" format="color" />
     <attr name="buttonSize" format="reference">
         <enum name="standard" value="0" />
@@ -988,6 +993,10 @@
     <attr name="snackbarStyle" format="reference" />
     <attr name="snackbarButtonStyle" format="reference" />
     <attr name="maxActionInlineWidth" format="dimension" />
+    <attr name="animationMode">
+        <enum name="slide" value="0" />
+        <enum name="fade" value="1" />
+    </attr>
     <attr name="forcedDimension">
         <enum name="height" value="1" />
         <enum name="width" value="0" />

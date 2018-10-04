@@ -389,6 +389,7 @@
     <attr name="durationMillis" format="integer" />
     <attr name="expanded" format="boolean" />
     <attr name="liftOnScroll" format="boolean" />
+    <attr name="liftOnScrollTargetViewId" format="reference" />
     <attr name="state_collapsed" format="boolean" />
     <attr name="state_collapsible" format="boolean" />
     <attr name="state_lifted" format="boolean" />
@@ -759,7 +760,7 @@
         <enum name="src_in" value="5" />
         <enum name="src_over" value="3" />
     </attr>
-    <attr name="title" format="reference" />
+    <attr name="title" format="string" />
     <attr name="summary" format="string" />
     <attr name="keylines" format="reference" />
     <attr name="statusBarBackground" format="reference|color" />
@@ -1301,7 +1302,8 @@
     <attr name="hideNavigationIcon" format="boolean" />
     <attr name="searchPrefixText" format="string" />
     <attr name="useDrawerArrowDrawable" format="boolean" />
-    <attr name="fadeThroughMenuItems" format="boolean" />
+    <attr name="animateNavigationIcon" format="boolean" />
+    <attr name="animateMenuItems" format="boolean" />
     <attr name="autoShowKeyboard" format="boolean" />
     <attr name="selectionDarkBackground" format="reference|color" />
     <attr name="selectionDarkForeground" format="reference|color" />
@@ -1522,6 +1524,10 @@
     <attr name="snackbarStyle" format="reference" />
     <attr name="snackbarButtonStyle" format="reference" />
     <attr name="maxActionInlineWidth" format="dimension" />
+    <attr name="animationMode">
+        <enum name="fade" value="1" />
+        <enum name="slide" value="0" />
+    </attr>
     <attr name="maxSize" format="dimension" />
     <attr name="range" format="integer" />
     <attr name="star_height" format="dimension" />

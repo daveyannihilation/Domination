@@ -83,7 +83,13 @@
         <item name="android:colorButtonNormal">#ff1976d2</item>
     </style>
 
-    <style name="SettingsStyle" parent="@*com.google.android.dialer:style/Dialer.ThemeBase.ActionBar">
+    <style name="SettingsStyle" parent="@*com.google.android.dialer:style/Dialer.ThemeBase.NoActionBar">
+        <item name="android:textColorPrimary">@*com.google.android.dialer:color/settings_text_color_primary</item>
+        <item name="android:textColorSecondary">@*com.google.android.dialer:color/settings_text_color_secondary</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:colorAccent">#ff1976d2</item>
+    </style>
+    <style name="SettingsStyle.Dark" parent="@*com.google.android.dialer:style/Dialer.Dark.ThemeBase.NoActionBar">
         <item name="android:textColorPrimary">@*com.google.android.dialer:color/settings_text_color_primary</item>
         <item name="android:textColorSecondary">@*com.google.android.dialer:color/settings_text_color_secondary</item>
         <item name="android:windowBackground">@*android:color/background_dark</item>
@@ -123,7 +129,7 @@
         <item name="*com.google.android.dialer:colorControlNormal">@*android:color/secondary_text_default_material_dark</item>
     </style>
     <style name="Dialer.Dark.ThemeBase" parent="@*com.google.android.dialer:style/Dialer.Dark">
-        <item name="android:colorBackground">@*android:color/background_floating_material_dark</item>
+        <item name="android:colorBackground">@*android:color/background_dark</item>
         <item name="android:textColorPrimary">@*com.google.android.dialer:color/dialer_dark_primary_text_color</item>
         <item name="android:textColorSecondary">@*com.google.android.dialer:color/dialer_dark_secondary_text_color</item>
         <item name="android:textColorPrimaryInverse">@*android:color/white</item>
@@ -133,12 +139,21 @@
         <item name="android:colorPrimaryDark">#ff0d47a1</item>
         <item name="android:colorAccent">#ff1976d2</item>
         <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
         <item name="android:colorBackgroundFloating">@*android:color/background_floating_material_dark</item>
-        <item name="*com.google.android.dialer:colorBackgroundPromo">@*android:color/background_floating_material_dark</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:navigationBarDividerColor">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.dialer:colorBackgroundPromo">@*android:color/background_dark</item>
         <item name="*com.google.android.dialer:colorIcon">@*android:color/white</item>
         <item name="*com.google.android.dialer:colorIconOnUnthemedDarkBackground">@*android:color/white</item>
         <item name="*com.google.android.dialer:colorIconOnUnthemedLightBackground">@*android:color/white</item>
         <item name="*com.google.android.dialer:colorIconSecondary">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.dialer:colorMobileOriginatingChatBackground">#ff1976d2</item>
+        <item name="*com.google.android.dialer:colorMobileOriginatingChatText">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.dialer:colorMobileTerminatingChatBackground">@*android:color/background_dark</item>
+        <item name="*com.google.android.dialer:colorMobileTerminatingChatText">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.dialer:colorPageIndicator">@*com.google.android.dialer:color/dialer_page_indicator_color</item>
         <item name="*com.google.android.dialer:colorPrimary20pct">@*com.google.android.dialer:color/dialer_dark_theme_color_20pct</item>
         <item name="*com.google.android.dialer:colorTextOnUnthemedDarkBackground">@*android:color/white</item>
         <item name="*com.google.android.dialer:colorTextOnUnthemedLightBackground">@*android:color/white</item>
@@ -149,7 +164,7 @@
         <item name="*com.google.android.dialer:colorControlActivated">@*android:color/white</item>
     </style>
     <style name="Dialer.ThemeBase" parent="@*com.google.android.dialer:style/Dialer">
-        <item name="android:colorBackground">@*android:color/background_floating_material_dark</item>
+        <item name="android:colorBackground">@*android:color/background_dark</item>
         <item name="android:textColorPrimary">@*com.google.android.dialer:color/dialer_primary_text_color</item>
         <item name="android:textColorSecondary">@*com.google.android.dialer:color/dialer_secondary_text_color</item>
         <item name="android:textColorPrimaryInverse">@*android:color/white</item>
@@ -164,7 +179,7 @@
         <item name="android:colorBackgroundFloating">@*android:color/background_floating_material_dark</item>
         <item name="android:windowLightNavigationBar">false</item>
         <item name="android:navigationBarDividerColor">@*android:color/primary_dark_material_dark</item>
-        <item name="*com.google.android.dialer:colorBackgroundPromo">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.dialer:colorBackgroundPromo">@*android:color/background_dark</item>
         <item name="*com.google.android.dialer:colorIcon">@*com.google.android.dialer:color/dialer_icon_color</item>
         <item name="*com.google.android.dialer:colorIconOnUnthemedDarkBackground">@*android:color/white</item>
         <item name="*com.google.android.dialer:colorIconOnUnthemedLightBackground">@*android:color/white</item>
@@ -173,6 +188,7 @@
         <item name="*com.google.android.dialer:colorMobileOriginatingChatText">#ff1976d2</item>
         <item name="*com.google.android.dialer:colorMobileTerminatingChatBackground">@*android:color/background_dark</item>
         <item name="*com.google.android.dialer:colorMobileTerminatingChatText">#ff1976d2</item>
+        <item name="*com.google.android.dialer:colorPageIndicator">@*com.google.android.dialer:color/dialer_page_indicator_color</item>
         <item name="*com.google.android.dialer:colorPrimary20pct">@*com.google.android.dialer:color/dialer_theme_color_20pct</item>
         <item name="*com.google.android.dialer:colorTextOnUnthemedDarkBackground">@*android:color/white</item>
         <item name="*com.google.android.dialer:colorTextOnUnthemedLightBackground">@*android:color/white</item>

@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:orientation="horizontal" android:background="@*android:color/background_floating_material_dark" android:paddingTop="16.0dip" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="24.0dip" android:elevation="8.0dip" app:behavior_hideable="true" app:behavior_skipCollapsed="true" app:layout_behavior="android.support.design.widget.BottomSheetBehavior" app:layout_insetEdge="bottom"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ImageView android:id="@*com.google.android.dialer:id/promotion_icon" android:layout_width="36.0dip" android:layout_height="36.0dip" android:tint="@*android:color/white" />
+    <ImageView android:id="@*com.google.android.dialer:id/promotion_icon" android:layout_width="36.0dip" android:layout_height="36.0dip" android:importantForAccessibility="no" />
     <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="24.0dip">
         <TextView android:id="@*com.google.android.dialer:id/promotion_title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@*com.google.android.dialer:style/Dialer.TextAppearance.Header2" />
         <TextView android:id="@*com.google.android.dialer:id/promotion_details" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:lineSpacingMultiplier="1.5" style="@*com.google.android.dialer:style/Dialer.TextAppearance.Secondary" />
-        <Button android:layout_gravity="end" android:id="@*com.google.android.dialer:id/ok_got_it" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:text="@*com.google.android.dialer:string/ok_got_it" android:stateListAnimator="@null" style="@*com.google.android.dialer:style/DialerFlatButtonStyle" />
+        <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip">
+            <Button android:id="@*com.google.android.dialer:id/got_it" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@*com.google.android.dialer:string/got_it" android:stateListAnimator="@null" style="@*com.google.android.dialer:style/DialerFlatButtonStyle" />
+            <Button android:id="@*com.google.android.dialer:id/show_demo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@*com.google.android.dialer:string/show_demo" android:stateListAnimator="@null" style="@*com.google.android.dialer:style/DialerFlatButtonStyle" />
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>

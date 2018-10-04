@@ -5,7 +5,9 @@
         <ScrollView android:id="@*com.google.android.apps.plus:id/sharekit_content_scrollview" android:background="@null" android:paddingTop="@*com.google.android.apps.plus:dimen/sharekit_card_margin" android:scrollbars="none" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0" android:overScrollMode="never">
             <LinearLayout android:orientation="vertical" android:id="@*com.google.android.apps.plus:id/sharekit_composed_content_fragment_container" android:background="@*com.google.android.apps.plus:drawable/bg_cardtop_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
                 <include layout="@*com.google.android.apps.plus:layout/sharekit_sharebox_header" />
-                <fragment android:name="com.google.android.libraries.social.sharekit.impl.ComposedContentFragment" android:id="@*com.google.android.apps.plus:id/sharekit_composed_content_fragment" android:backgroundTint="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <FrameLayout android:id="@*com.google.android.apps.plus:id/domain_tooltip_anchor" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <fragment android:name="com.google.android.libraries.social.sharekit.impl.ComposedContentFragment" android:id="@*com.google.android.apps.plus:id/sharekit_composed_content_fragment" android:backgroundTint="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </FrameLayout>
             </LinearLayout>
         </ScrollView>
         <include android:id="@*com.google.android.apps.plus:id/sharebox_buttons_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@*com.google.android.apps.plus:layout/sharekit_sharebox_footer" />
