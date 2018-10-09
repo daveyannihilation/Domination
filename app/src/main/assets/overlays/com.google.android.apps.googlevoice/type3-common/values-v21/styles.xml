@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <style name="AppBlockedTheme" parent="@*com.google.android.apps.googlevoice:style/BaseTheme">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.apps.googlevoice:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+    </style>
     <style name="Base.TextAppearance.AppCompat.Inverse" parent="@*android:style/TextAppearance.Material" />
     <style name="Base.TextAppearance.AppCompat.Large.Inverse" parent="@*android:style/TextAppearance.Material.Large" />
     <style name="Base.TextAppearance.AppCompat.Medium.Inverse" parent="@*android:style/TextAppearance.Material.Medium" />
@@ -11,15 +15,6 @@
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabText.Inverse" parent="@*android:style/Widget.Material.ActionBar.TabText" />
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabView" parent="@*android:style/Widget.Material.ActionBar.TabView" />
     <style name="Base.Widget.AppCompat.Light.PopupMenu" parent="@*android:style/Widget.Material.PopupMenu" />
-    <style name="Platform.V21.AppCompat.Light" parent="@*android:style/Theme.Material.NoActionBar">
-        <item name="android:textColorHintInverse">#ffbbbbbb</item>
-        <item name="android:textColorHint">#ffbbbbbb</item>
-        <item name="android:textColorLink">@*android:color/accent_material_dark</item>
-        <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-    </style>
-
-
     <style name="HomeTheme" parent="@*com.google.android.apps.googlevoice:style/BaseTheme">
         <item name="android:windowTranslucentNavigation">false</item>
         <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
@@ -30,21 +25,21 @@
         <item name="*com.google.android.apps.googlevoice:colorPrimary">@*android:color/primary_material_dark</item>
         <item name="*com.google.android.apps.googlevoice:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
     </style>
-
-
-    <style name="AppBlockedTheme" parent="@*com.google.android.apps.googlevoice:style/BaseTheme">
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
-        <item name="*com.google.android.apps.googlevoice:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
-    </style>
-    <style name="VoiceBuyFlowCustomTheme">
-        <item name="android:colorPrimary">@*android:color/primary_material_dark</item>
-    </style>
     <style name="InCallTheme" parent="@*com.google.android.apps.googlevoice:style/Theme.AppCompat">
         <item name="android:windowBackground">@null</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:textColor">@*android:color/white</item>
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:navigationBarColor">@*android:color/transparent</item>
+    </style>
+    <style name="Platform.V21.AppCompat.Light" parent="@*android:style/Theme.Material.NoActionBar">
+        <item name="android:textColorHintInverse">#ffbbbbbb</item>
+        <item name="android:textColorHint">#ffbbbbbb</item>
+        <item name="android:textColorLink">@*android:color/accent_material_dark</item>
+        <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+    </style>
+    <style name="VoiceBuyFlowCustomTheme">
+        <item name="android:colorPrimary">@*android:color/primary_material_dark</item>
     </style>
 </resources>

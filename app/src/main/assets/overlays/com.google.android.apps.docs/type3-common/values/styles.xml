@@ -1,41 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="ActionBarMenu" parent="@*android:style/Theme.Material" />
-
-
-
-    <style name="Base.TextAppearance.AppCompat.Inverse" parent="@*com.google.android.apps.docs:style/Base.TextAppearance.AppCompat">
-        <item name="android:textColor">?*android:textColorPrimary</item>
-        <item name="android:textColorHint">?*android:textColorHint</item>
-    </style>
-    <style name="Base.TextAppearance.AppCompat.Large.Inverse" parent="@*com.google.android.apps.docs:style/Base.TextAppearance.AppCompat.Large">
-        <item name="android:textColor">?*android:textColorPrimary</item>
-        <item name="android:textColorHint">?*android:textColorHint</item>
-    </style>
-    <style name="Base.TextAppearance.AppCompat.Medium.Inverse" parent="@*com.google.android.apps.docs:style/Base.TextAppearance.AppCompat.Medium">
-        <item name="android:textColor">?*android:textColorSecondary</item>
-        <item name="android:textColorHint">?*android:textColorHint</item>
-    </style>
-    <style name="Base.TextAppearance.AppCompat.Small.Inverse" parent="@*com.google.android.apps.docs:style/Base.TextAppearance.AppCompat.Small">
-        <item name="android:textColor">?*android:textColorTertiary</item>
-        <item name="android:textColorHint">?*android:textColorHint</item>
-    </style>
     <style name="Base.Theme.GoogleMaterial.Light" parent="@*com.google.android.apps.docs:style/Base.V14.Theme.GoogleMaterial.Light">
         <item name="android:colorPrimaryDark">@*android:color/primary_text_leanback_light</item>
         <item name="*com.google.android.apps.docs:colorPrimaryDark">@*android:color/primary_text_leanback_light</item>
         <item name="android:statusBarColor">@*android:color/primary_text_leanback_light</item>
-    </style>
-    <style name="Base.V7.Widget.AppCompat.AutoCompleteTextView" parent="@*android:style/Widget.AutoCompleteTextView">
-        <item name="android:textAppearance">?*android:textAppearanceMedium</item>
-        <item name="android:textColor">#ffbbbbbb</item>
-        <item name="android:background">@*com.google.android.apps.docs:drawable/abc_edit_text_material</item>
-        <item name="android:dropDownSelector">@*com.google.android.apps.docs:drawable/abc_list_selector_holo_dark</item>
-        <item name="android:popupBackground">@*com.google.android.apps.docs:drawable/abc_popup_background_mtrl_mult</item>
-    </style>
-    <style name="Base.V7.Widget.AppCompat.EditText" parent="@*android:style/Widget.EditText">
-        <item name="android:textAppearance">?*android:textAppearanceMedium</item>
-        <item name="android:textColor">#ffbbbbbb</item>
-        <item name="android:background">@*com.google.android.apps.docs:drawable/abc_edit_text_material</item>
     </style>
     <style name="BaseActionBarOverflow" parent="@*android:style/Widget.Holo.ActionButton.Overflow" />
     <style name="BaseAppTheme" parent="@*android:style/Theme.Holo" />
@@ -85,6 +54,7 @@
         <item name="android:actionModeCloseButtonStyle">@*com.google.android.apps.docs:style/OverlayActionBarCloseButtonStyle</item>
         <item name="android:actionModeStyle">@*com.google.android.apps.docs:style/OverlayActionBarStyleLight</item>
         <item name="android:actionBarDivider">@null</item>
+        <item name="android:statusBarColor">@*android:color/primary_text_leanback_light</item>
         <item name="*com.google.android.apps.docs:windowActionBar">false</item>
         <item name="*com.google.android.apps.docs:windowActionBarOverlay">true</item>
         <item name="*com.google.android.apps.docs:windowActionModeOverlay">true</item>
@@ -128,6 +98,7 @@
         <item name="android:inputType">textCapSentences|textMultiLine</item>
         <item name="android:imeOptions">actionDone</item>
         <item name="android:textCursorDrawable">@*android:drawable/light_header</item>
+        <item name="android:textAlignment">viewStart</item>
     </style>
     <style name="ds_compat_app_theme" parent="@*android:style/Theme.Material">
         <item name="android:windowContentOverlay">@*com.google.android.apps.docs:drawable/ds_actionbar_shadow</item>
@@ -149,11 +120,8 @@
         <item name="android:windowShowWallpaper">false</item>
     </style>
     <style name="HoloLikeButton" parent="@*android:style/Widget.Holo.Button.Borderless">
-        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textAppearance">?*android:textAppearanceMedium</item>
         <item name="android:textColor">#ffffffff</item>
-    </style>
-    <style name="HoloLikeButtonBar" parent="@*android:style/Holo.ButtonBar">
-        <item name="android:background">@*android:color/legacy_primary</item>
     </style>
     <style name="LegacyEmptyStateMessageTitleAppearance" parent="@*com.google.android.apps.docs:style/quantum_text_subhead_black">
         <item name="android:textColor">@*android:color/white</item>

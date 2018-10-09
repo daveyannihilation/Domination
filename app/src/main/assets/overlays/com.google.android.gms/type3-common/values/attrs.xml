@@ -29,7 +29,15 @@
     <attr name="chipGroupStyle" format="reference" />
     <attr name="chipStandaloneStyle" format="reference" />
     <attr name="chipStyle" format="reference" />
+    <attr name="colorOnBackground" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="colorOnError" format="color" />
+    <attr name="colorOnPrimary" format="color" />
+    <attr name="colorOnSecondary" format="color" />
+    <attr name="colorOnSurface" format="color" />
+    <attr name="colorPrimaryVariant" format="color" />
     <attr name="colorSecondary" format="color" />
+    <attr name="colorSecondaryVariant" format="color" />
+    <attr name="colorSurface" format="color" />
     <attr name="colorWalletActionBarBackground" format="color" />
     <attr name="colorWalletActionBarForeground" format="reference|color" />
     <attr name="colorWalletButtonHighlightPrimary" format="reference|color" />
@@ -43,7 +51,6 @@
     <attr name="colorWalletMaterialPrimary" format="reference|color" />
     <attr name="colorWalletNormalText" format="reference|color" />
     <attr name="colorWalletSubheaderBackground" format="reference|color" />
-    <attr name="colorWalletSubheaderText" format="reference|color" />
     <attr name="colorWalletToolbarControlHighlight" format="reference|color" />
     <attr name="color_iphonecircle" format="color" />
     <attr name="color_iphoneface" format="color" />
@@ -141,14 +148,22 @@
     <attr name="internalUicGoogleLogoColorHeroImageDrawable" format="reference" />
     <attr name="internalUicGoogleLogoHeroImageDrawable" format="reference" />
     <attr name="internalUicHeaderDisplayType" format="reference" />
+    <attr name="internalUicHeaderRegularDisplayType" format="reference" />
     <attr name="internalUicInfoDisplayType" format="reference" />
     <attr name="internalUicInfoIconDrawable" format="reference" />
+    <attr name="internalUicInfoIconRedDrawable" format="reference" />
     <attr name="internalUicInfoMessageImageSize" format="reference|dimension" />
     <attr name="internalUicInfoMessageLayout" format="reference|integer" />
     <attr name="internalUicInputDisplayType" format="reference" />
     <attr name="internalUicIsAppCompat" format="boolean" />
     <attr name="internalUicLargeCodeDisplayDisplayType" format="reference" />
     <attr name="internalUicLegalMessageLayout" format="reference|integer" />
+    <attr name="internalUicMarginTypeExtraSmall" format="dimension" />
+    <attr name="internalUicMarginTypeLarge" format="dimension" />
+    <attr name="internalUicMarginTypeMedium" format="dimension" />
+    <attr name="internalUicMarginTypeSmall" format="dimension" />
+    <attr name="internalUicMarginTypeXLarge" format="dimension" />
+    <attr name="internalUicMarginTypeXXLarge" format="dimension" />
     <attr name="internalUicMaterialFieldHiddenErrorViewVisibility">
         <enum name="gone" value="8" />
         <enum name="invisible" value="4" />
@@ -209,6 +224,7 @@
     <attr name="internalUicWebViewProgressBarId" format="reference" />
     <attr name="internalUicYodleeLinkedDrawable" format="reference" />
     <attr name="isLightTheme" format="boolean" />
+    <attr name="isMaterialTheme" format="boolean" />
     <attr name="layout_constraintBaseline_creator" format="integer" />
     <attr name="layout_constraintBaseline_toBaselineOf" format="reference">
         <enum name="parent" value="0" />
@@ -399,10 +415,9 @@
     <attr name="uicAlwaysInlineExpandLabel" format="boolean" />
     <attr name="uicCameraDrawable" format="reference" />
     <attr name="uicCameraDropDownDrawable" format="reference" />
+    <attr name="uicCardGenericDrawable" format="reference" />
     <attr name="uicCardLogoGridToggleButtonStartMargin" format="dimension" />
     <attr name="uicCardLogoGridToggleButtonTopMargin" format="dimension" />
-    <attr name="uicCardResolvedGenericDrawable" format="reference" />
-    <attr name="uicCardUnresolvedDrawable" format="reference" />
     <attr name="uicCircularButtonBackgroundColor" format="reference" />
     <attr name="uicClearDrawable" format="reference" />
     <attr name="uicClickableBackground" format="reference" />
@@ -747,12 +762,6 @@
         <flag name="bottom" value="0x00000008" />
         <flag name="top" value="0x00000002" />
     </attr>
-    <attr name="butterflyScaleType">
-        <enum name="fitHeight" value="3" />
-        <enum name="fitStage" value="0" />
-        <enum name="fitWidth" value="2" />
-        <enum name="scaleStage" value="1" />
-    </attr>
     <attr name="allowStacking" format="boolean" />
     <attr name="carFrxTitleSize" format="dimension" />
     <attr name="carFrxBodySize" format="dimension" />
@@ -778,14 +787,19 @@
     <attr name="chipCornerRadius" format="dimension" />
     <attr name="chipStrokeColor" format="color" />
     <attr name="chipStrokeWidth" format="dimension" />
+    <attr name="chipMinTouchTargetSize" format="dimension" />
+    <attr name="chipTouchTargetDelegate" format="reference" />
+    <attr name="chipIconVisible" format="boolean" />
     <attr name="chipIconEnabled" format="boolean" />
     <attr name="chipIcon" format="reference" />
     <attr name="chipIconTint" format="color" />
     <attr name="chipIconSize" format="dimension" />
+    <attr name="closeIconVisible" format="boolean" />
     <attr name="closeIconEnabled" format="boolean" />
     <attr name="closeIcon" format="reference" />
     <attr name="closeIconTint" format="color" />
     <attr name="closeIconSize" format="dimension" />
+    <attr name="checkedIconVisible" format="boolean" />
     <attr name="checkedIconEnabled" format="boolean" />
     <attr name="checkedIcon" format="reference" />
     <attr name="chipStartPadding" format="dimension" />
@@ -1103,6 +1117,8 @@
     <attr name="useCompatPadding" format="boolean" />
     <attr name="maxImageSize" format="dimension" />
     <attr name="behavior_autoHide" format="boolean" />
+    <attr name="itemSpacing" format="dimension" />
+    <attr name="lineSpacing" format="dimension" />
     <attr name="fontProviderAuthority" format="string" />
     <attr name="fontProviderPackage" format="string" />
     <attr name="fontProviderQuery" format="string" />
@@ -1245,6 +1261,7 @@
     <attr name="uiCompass" format="boolean" />
     <attr name="uiRotateGestures" format="boolean" />
     <attr name="uiScrollGestures" format="boolean" />
+    <attr name="uiScrollGesturesDuringRotateOrZoom" format="boolean" />
     <attr name="uiTiltGestures" format="boolean" />
     <attr name="uiZoomControls" format="boolean" />
     <attr name="uiZoomGestures" format="boolean" />
@@ -1265,8 +1282,6 @@
         <flag name="textStart" value="0x00000002" />
     </attr>
     <attr name="iconTint" format="color" />
-    <attr name="additionalPaddingStartForIcon" format="dimension" />
-    <attr name="additionalPaddingEndForIcon" format="dimension" />
     <attr name="cornerRadius" format="dimension" />
     <attr name="maxHeight" format="dimension" />
     <attr name="externalRouteEnabledDrawable" format="reference" />
@@ -1443,6 +1458,7 @@
     <attr name="fastScrollVerticalTrackDrawable" format="reference" />
     <attr name="fastScrollHorizontalThumbDrawable" format="reference" />
     <attr name="fastScrollHorizontalTrackDrawable" format="reference" />
+    <attr name="headerFraction" format="float" />
     <attr name="radius" format="dimension" />
     <attr name="clipEnabled" format="boolean" />
     <attr name="insetForeground" format="reference|color" />
@@ -1529,6 +1545,7 @@
     </attr>
     <attr name="windowXOffset" format="integer|dimension" />
     <attr name="windowYOffset" format="integer|dimension" />
+    <attr name="snackbarStyle" format="reference" />
     <attr name="snackbarButtonStyle" format="reference" />
     <attr name="maxActionInlineWidth" format="dimension" />
     <attr name="weights" format="reference" />
@@ -1942,6 +1959,9 @@
     <attr name="minButtonSpace" format="integer" />
     <attr name="udcButtonBarVerticalPadding" format="integer" />
     <attr name="udcButtonBarMinHeight" format="integer" />
+    <attr name="udcConsentSettingInfoStyle" format="string" />
+    <attr name="udcConsentTextStyle" format="string" />
+    <attr name="udcConsentFooterStyle" format="string" />
     <attr name="auth_setup_wizard_divider_color" format="reference" />
     <attr name="auth_setup_wizard_header_background" format="reference|color" />
     <attr name="auth_setup_wizard_header_foreground" format="reference" />

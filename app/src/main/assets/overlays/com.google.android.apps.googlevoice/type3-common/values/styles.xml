@@ -1,86 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="gf_PageHeader">
-        <item name="android:background">#ff000000</item>
+    <style name="ActionModeTextStyle" parent="@*com.google.android.apps.googlevoice:style/Base.TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@*android:color/white</item>
     </style>
-    <style name="gf_SectionHeader">
-        <item name="android:background">#ff000000</item>
-    </style>
-    <style name="LightThemeSelector" parent="@*android:style/Theme.DeviceDefault.Light" />
-    <style name="InCallTouchButton">
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:background">#ff000000</item>
-    </style>
-    <style name="InCallTouchButtonFaded">
-        <item name="android:background">#ff000000</item>
-    </style>
-    <style name="InCallTouchToggleButton">
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:background">#ff000000</item>
-    </style>
-    <style name="InCallTouchToggleButtonFaded">
-        <item name="android:background">#ff000000</item>
-    </style>
-    <style name="LightThemeNoActionBar" parent="@*android:style/Theme.NoTitleBar">
-        <item name="android:textColor">#ffffffff</item>
-    </style>
-    <style name="TranslucentThemeNoActionBar" parent="@*android:style/Theme.NoTitleBar">
-        <item name="android:textColor">#ffffffff</item>
+    <style name="AppBlockedTheme" parent="@*com.google.android.apps.googlevoice:style/BaseTheme">
         <item name="android:windowBackground">@*android:color/background_dark</item>
-        <item name="android:windowIsTranslucent">true</item>
+        <item name="*com.google.android.apps.googlevoice:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
     </style>
-    <style name="SettingsTheme" parent="@*android:style/Theme.DeviceDefault.Light" />
-    <style name="DialogTheme" parent="@*android:style/Theme.Dialog" />
-
-
+    <style name="ComplexPreferenceScreenTheme">
+        <item name="android:textSize">@*com.google.android.apps.googlevoice:dimen/preferences_primary_font_size</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:background">@*android:color/background_dark</item>
+    </style>
     <style name="ContactItemName">
         <item name="android:textSize">16.0sp</item>
-        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textColor">@*android:color/white</item>
         <item name="android:layout_marginLeft">70.0dip</item>
         <item name="android:layout_marginRight">10.0dip</item>
     </style>
     <style name="ContactItemText">
         <item name="android:textSize">16.0sp</item>
-        <item name="android:textColor">#ffdddddd</item>
+        <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
     </style>
     <style name="ConversationEventListItemName">
         <item name="android:textSize">14.0sp</item>
-        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textColor">@*android:color/white</item>
     </style>
     <style name="ConversationEventListItemTime">
         <item name="android:textSize">12.0sp</item>
-        <item name="android:textColor">#ffdddddd</item>
+        <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
     </style>
     <style name="ConversationListItemName">
         <item name="android:textSize">16.0sp</item>
-        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textColor">@*android:color/white</item>
         <item name="android:ellipsize">end</item>
         <item name="android:layout_marginLeft">@*com.google.android.apps.googlevoice:dimen/avatar_list_item_title_text_left_margin</item>
         <item name="android:layout_marginTop">@*com.google.android.apps.googlevoice:dimen/avatar_margin</item>
         <item name="android:singleLine">true</item>
-    </style>
-    <style name="DisambiguationItemPhoneLabel">
-        <item name="android:textSize">12.0sp</item>
-        <item name="android:textColor">#ffdddddd</item>
-    </style>
-    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light" />
-    <style name="SearchHistoryItemTest">
-        <item name="android:textSize">16.0sp</item>
-        <item name="android:textColor">#ffdddddd</item>
-        <item name="android:drawableLeft">@*com.google.android.apps.googlevoice:drawable/quantum_ic_history_grey600_24</item>
-        <item name="android:drawablePadding">20.0dip</item>
-        <item name="android:drawableStart">@*com.google.android.apps.googlevoice:drawable/quantum_ic_history_grey600_24</item>
-    </style>
-    <style name="SearchHistoryMoreSearches">
-        <item name="android:textSize">16.0sp</item>
-        <item name="android:textColor">#ffdddddd</item>
-        <item name="android:gravity">center</item>
-        <item name="android:textAllCaps">true</item>
-    </style>
-    <style name="SearchSectionTitle">
-        <item name="android:textSize">14.0sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">#ffdddddd</item>
     </style>
     <style name="HomeTheme" parent="@*com.google.android.apps.googlevoice:style/BaseTheme">
         <item name="*com.google.android.apps.googlevoice:windowActionModeOverlay">true</item>
@@ -96,41 +53,6 @@
         <item name="*com.google.android.apps.googlevoice:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
 	    <item name="android:windowShowWallpaper">false</item>		
         <item name="android:windowIsTranslucent">false</item>
-    </style>
-    <style name="ComplexPreferenceScreenTheme">
-        <item name="android:textSize">@*com.google.android.apps.googlevoice:dimen/preferences_primary_font_size</item>
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:background">@*android:color/background_dark</item>
-    </style>
-    <style name="AppBlockedTheme" parent="@*com.google.android.apps.googlevoice:style/BaseTheme">
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-        <item name="*com.google.android.apps.googlevoice:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
-    </style>
-    <style name="PreferenceTheme" parent="@*com.google.android.apps.googlevoice:style/BaseTheme">
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-        <item name="*com.google.android.apps.googlevoice:colorPrimary">@*android:color/primary_material_dark</item>
-        <item name="*com.google.android.apps.googlevoice:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
-    </style>
-    <style name="VerificationTheme" parent="@*com.google.android.apps.googlevoice:style/BaseTheme">
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-        <item name="android:windowNoTitle">true</item>
-    </style>
-
-
-    <style name="SignupTheme" parent="@*com.google.android.apps.googlevoice:style/BaseTheme">
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="*com.google.android.apps.googlevoice:colorPrimary">@*android:color/primary_material_dark</item>
-        <item name="*com.google.android.apps.googlevoice:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
-    </style>
-    <style name="QualitySurveyTitleStyle">
-        <item name="android:textSize">20.0sp</item>
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:fontFamily">sans-serif-medium</item>
-    </style>
-    <style name="ActionModeTextStyle" parent="@*com.google.android.apps.googlevoice:style/Base.TextAppearance.Widget.AppCompat.Toolbar.Title">
-        <item name="android:textSize">20.0sp</item>
-        <item name="android:textColor">@*android:color/white</item>
     </style>
     <style name="InCallTheme" parent="@*com.google.android.apps.googlevoice:style/Theme.AppCompat">
         <item name="android:windowBackground">@null</item>
@@ -150,8 +72,12 @@
         <item name="*com.google.android.apps.googlevoice:fadeInAnimationDurationMs">100</item>
         <item name="*com.google.android.apps.googlevoice:fadeOutAnimationDurationMs">80</item>
     </style>
-
-
+    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light" />
+    <style name="PreferenceTheme" parent="@*com.google.android.apps.googlevoice:style/BaseTheme">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="*com.google.android.apps.googlevoice:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.apps.googlevoice:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+    </style>
     <style name="ProgressDialogWithSpinnerOnly" parent="@*android:style/Theme.Holo.Dialog">
         <item name="android:textColorPrimary">@*android:color/white</item>
         <item name="android:windowBackground">@*com.google.android.apps.googlevoice:color/transparent_bg</item>
@@ -160,5 +86,38 @@
         <item name="android:textStyle">normal</item>
         <item name="android:textColor">@*android:color/white</item>
         <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="QualitySurveyTitleStyle">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="SearchHistoryItemTest">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ffdddddd</item>
+        <item name="android:drawableLeft">@*com.google.android.apps.googlevoice:drawable/quantum_ic_history_grey600_24</item>
+        <item name="android:drawablePadding">20.0dip</item>
+        <item name="android:drawableStart">@*com.google.android.apps.googlevoice:drawable/quantum_ic_history_grey600_24</item>
+    </style>
+    <style name="SearchHistoryMoreSearches">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="SearchSectionTitle">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
+    </style>
+    <style name="SignupTheme" parent="@*com.google.android.apps.googlevoice:style/BaseTheme">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="*com.google.android.apps.googlevoice:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.apps.googlevoice:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+    </style>
+    <style name="VerificationTheme" parent="@*com.google.android.apps.googlevoice:style/BaseTheme">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowNoTitle">true</item>
     </style>
 </resources>
