@@ -35,7 +35,7 @@
         <item name="android:windowShowWallpaper">true</item>
     </style>
     <style name="BugleTheme.DialogActivity" parent="@*com.google.android.apps.messaging:style/Theme.AppCompat.Light.Dialog">
-        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowNoTitle">true</item>
         <item name="android:background">@*android:color/background_floating_material_dark</item>
     </style>
     <style name="BugleTheme.DittoActivity" parent="@*com.google.android.apps.messaging:style/BugleTheme">
@@ -70,11 +70,16 @@
         <item name="*com.google.android.apps.messaging:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
     </style>
     <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light" />
-    <style name="PromoBannerButtonStyle" parent="@*com.google.android.apps.messaging:style/Widget.AppCompat.Button">
+    <style name="PromoBannerButtonStyle" parent="@*com.google.android.apps.messaging:style/Widget.AppCompat.Button.Borderless">
         <item name="android:textSize">@*com.google.android.apps.messaging:dimen/promo_button_text_size</item>
         <item name="android:textColor">@*android:color/white</item>
         <item name="android:background">@*com.google.android.apps.messaging:drawable/avatar_promo_button_background</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">@*com.google.android.apps.messaging:dimen/promo_button_height</item>
+        <item name="android:layout_marginTop">@*com.google.android.apps.messaging:dimen/promo_button_margin_top</item>
+        <item name="android:layout_marginBottom">@*com.google.android.apps.messaging:dimen/promo_button_margin_bottom</item>
+        <item name="android:minWidth">0.0dip</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
         <item name="android:paddingStart">@*com.google.android.apps.messaging:dimen/promo_button_padding_lr</item>
         <item name="android:paddingEnd">@*com.google.android.apps.messaging:dimen/promo_button_padding_lr</item>
     </style>

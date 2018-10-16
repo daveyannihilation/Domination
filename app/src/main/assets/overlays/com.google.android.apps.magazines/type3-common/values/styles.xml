@@ -76,7 +76,7 @@
     </style>
 
     <style name="GM2Button">
-        <item name="android:textSize">@*com.google.android.apps.magazines:dimen/text_display_M</item>
+        <item name="android:textSize">@*com.google.android.apps.magazines:dimen/text_display_S</item>
         <item name="android:textColor">@*android:color/white</item>
         <item name="android:gravity">center</item>
         <item name="android:background">@*com.google.android.apps.magazines:drawable/button_round_rect_bg</item>
@@ -84,8 +84,8 @@
         <item name="android:clickable">true</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">36.0dip</item>
-        <item name="android:textAllCaps">false</item>
-        <item name="android:fontFamily">@*com.google.android.apps.magazines:font/google_sans</item>
+        <item name="android:inputType">textCapSentences</item>
+        <item name="android:fontFamily">@*com.google.android.apps.magazines:font/google_sans_medium</item>
         <item name="android:paddingStart">24.0dip</item>
         <item name="android:paddingEnd">24.0dip</item>
     </style>
@@ -139,21 +139,12 @@
         <item name="*com.google.android.apps.magazines:customFont">ITALIC_CONDENSED_SANS</item>
     </style>
 
-    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.Holo" />
-
-
-    <style name="ShelfHeaderTitle" parent="@*com.google.android.apps.magazines:style/PlayClusterTitle">
-        <item name="android:textSize">@*com.google.android.apps.magazines:dimen/shelf_header_title</item>
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:ellipsize">end</item>
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:maxLines">7</item>
-        <item name="android:singleLine">false</item>
-        <item name="android:includeFontPadding">false</item>
-        <item name="android:textDirection">locale</item>
-        <item name="*com.google.android.apps.magazines:bindText">@*com.google.android.apps.magazines:id/ShelfHeader_title</item>
+    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="*com.google.android.apps.magazines:colorPrimary">@*android:color/secondary_text_leanback_light</item>
+        <item name="android:colorPrimary">@*android:color/secondary_text_leanback_light</item>
     </style>
+
+
 
     <style name="SponsoredArticleCardButtonText" parent="@*com.google.android.apps.magazines:style/PlayCardAction">
         <item name="android:textStyle">bold</item>
@@ -169,14 +160,7 @@
         <item name="android:paddingEnd">@*com.google.android.apps.magazines:dimen/card_inner_content_2x_padding</item>
     </style>
 
-    <style name="TextDialogText">
-        <item name="android:textSize">16.0sp</item>
-        <item name="android:textColor">@*android:color/white</item>
-    </style>
 
-    <style name="TextDialogText.Subtitle" parent="@*com.google.android.apps.magazines:style/TextDialogText">
-        <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
-    </style>
 
     <style name="Widget.Design.BottomSheet.Modal" parent="@*android:style/Widget">
         <item name="android:background">@*android:color/background_floating_material_dark</item>
@@ -249,5 +233,11 @@
     <style name="Widget.GoogleMaterial.ProductLockupView.Dark" parent="@*com.google.android.apps.magazines:style/Widget.GoogleMaterial.ProductLockupView">
         <item name="*com.google.android.apps.magazines:productNameTextColor">@*android:color/white</item>
         <item name="*com.google.android.apps.magazines:logoColor">standard</item>
+    </style>
+
+
+    <style name="NSCardView.CardSourceItemIcon" parent="@*com.google.android.apps.magazines:style/NSCardView">
+        <item name="*com.google.android.apps.magazines:cardBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.apps.magazines:cardElevation">@*com.google.android.apps.magazines:dimen/card_source_item_icon_elevation</item>
     </style>
 </resources>

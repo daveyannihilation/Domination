@@ -125,6 +125,7 @@
     </attr>
     <attr name="materialButtonStyle" format="reference" />
     <attr name="materialCardViewStyle" format="reference" />
+    <attr name="materialThemeOverlay" format="reference" />
     <attr name="mtrlColor" format="reference|color" />
     <attr name="mtrlColors" format="reference" />
     <attr name="navigationViewStyle" format="reference" />
@@ -151,6 +152,7 @@
     <attr name="showMotionSpec" format="reference" />
     <attr name="show_shuffle_button" format="boolean" />
     <attr name="show_timeout" format="integer" />
+    <attr name="sliceViewStyle" format="reference" />
     <attr name="strokeColor" format="color" />
     <attr name="strokeWidth" format="dimension" />
     <attr name="surface_type">
@@ -425,6 +427,8 @@
     <attr name="bindAction" format="reference" />
     <attr name="bindDrawableResId" format="reference" />
     <attr name="bindText" format="reference" />
+    <attr name="iconSize" format="reference|dimension" />
+    <attr name="iconMargin" format="reference|dimension" />
     <attr name="bindPadding" format="reference" />
     <attr name="bindMaxWidth" format="reference" />
     <attr name="bindHeight" format="reference" />
@@ -433,6 +437,10 @@
     <attr name="fabAlignmentMode">
         <enum name="end" value="1" />
         <enum name="center" value="0" />
+    </attr>
+    <attr name="fabAnimationMode">
+        <enum name="scale" value="0" />
+        <enum name="slide" value="1" />
     </attr>
     <attr name="fabCradleMargin" format="dimension" />
     <attr name="fabCradleRoundedCornerRadius" format="dimension" />
@@ -444,7 +452,6 @@
         <enum name="selected" value="0" />
         <enum name="unlabeled" value="2" />
     </attr>
-    <attr name="itemIconSize" format="dimension" />
     <attr name="itemTextAppearanceInactive" format="reference" />
     <attr name="itemTextAppearanceActive" format="reference" />
     <attr name="itemHorizontalTranslationEnabled" format="boolean" />
@@ -521,10 +528,16 @@
     <attr name="cardInsetEnd" format="dimension" />
     <attr name="cardInsetBottom" format="dimension" />
     <attr name="cardClipToOutline" format="boolean" />
-    <attr name="useEamesShadow" format="boolean" />
+    <attr name="shadowType">
+        <enum name="eames" value="1" />
+        <enum name="outline" value="2" />
+        <enum name="platform" value="0" />
+    </attr>
+    <attr name="outlineColor" format="color" />
     <attr name="summaryOn" format="string" />
     <attr name="summaryOff" format="string" />
     <attr name="disableDependentsState" format="boolean" />
+    <attr name="chipSurfaceColor" format="color" />
     <attr name="chipBackgroundColor" format="color" />
     <attr name="chipMinHeight" format="dimension" />
     <attr name="chipCornerRadius" format="dimension" />
@@ -978,7 +991,6 @@
     <attr name="latLngBoundsSouthWestLongitude" format="float" />
     <attr name="latLngBoundsNorthEastLatitude" format="float" />
     <attr name="latLngBoundsNorthEastLongitude" format="float" />
-    <attr name="iconSize" format="reference|dimension" />
     <attr name="iconPadding" format="dimension" />
     <attr name="iconGravity">
         <flag name="start" value="0x00000001" />
@@ -1025,9 +1037,9 @@
     <attr name="preserveIconSpacing" format="boolean" />
     <attr name="subMenuArrow" format="reference" />
     <attr name="loadAnimations">
+        <flag name="scale" value="0x00000004" />
         <flag name="fade" value="0x00000001" />
         <flag name="saturation" value="0x00000002" />
-        <flag name="scale" value="0x00000004" />
     </attr>
     <attr name="loadAnimationBehavior">
         <enum name="always" value="1" />
@@ -1050,6 +1062,7 @@
     <attr name="bindTextAlignment" format="reference" />
     <attr name="bindLineHeightMultiplier" format="reference" />
     <attr name="bindLineHeight" format="reference" />
+    <attr name="bindIgnoreThemeInversion" format="reference" />
     <attr name="isTransitionGroup" format="boolean" />
     <attr name="willNotDraw" format="boolean" />
     <attr name="disableShadow" format="boolean" />
@@ -1102,11 +1115,13 @@
     <attr name="headerLayout" format="reference" />
     <attr name="itemHorizontalPadding" format="dimension" />
     <attr name="itemIconPadding" format="dimension" />
+    <attr name="itemIconSize" format="dimension" />
     <attr name="defaultMarginsEnabled" format="boolean" />
     <attr name="hideNavigationIcon" format="boolean" />
     <attr name="searchPrefixText" format="string" />
     <attr name="useDrawerArrowDrawable" format="boolean" />
-    <attr name="fadeThroughMenuItems" format="boolean" />
+    <attr name="animateNavigationIcon" format="boolean" />
+    <attr name="animateMenuItems" format="boolean" />
     <attr name="autoShowKeyboard" format="boolean" />
     <attr name="requireMinWidth" format="boolean" />
     <attr name="requireMinHeight" format="boolean" />
@@ -1204,7 +1219,11 @@
     <attr name="hide_on_touch" format="boolean" />
     <attr name="hide_during_ads" format="boolean" />
     <attr name="auto_show" format="boolean" />
-    <attr name="show_buffering" format="boolean" />
+    <attr name="show_buffering">
+        <enum name="always" value="1" />
+        <enum name="never" value="0" />
+        <enum name="when_playing" value="2" />
+    </attr>
     <attr name="keep_content_on_player_reset" format="boolean" />
     <attr name="state_above_anchor" format="boolean" />
     <attr name="key" format="string" />
@@ -1330,6 +1349,20 @@
     <attr name="bindMaxWidthMultiplier" format="reference" />
     <attr name="bindMaxHeightMultiplier" format="reference" />
     <attr name="accountForPadding" format="boolean" />
+    <attr name="titleColor" format="color" />
+    <attr name="subtitleColor" format="color" />
+    <attr name="tintColor" format="color" />
+    <attr name="headerTitleSize" format="dimension" />
+    <attr name="headerSubtitleSize" format="dimension" />
+    <attr name="headerTextVerticalPadding" format="dimension" />
+    <attr name="titleSize" format="dimension" />
+    <attr name="subtitleSize" format="dimension" />
+    <attr name="textVerticalPadding" format="dimension" />
+    <attr name="gridTitleSize" format="dimension" />
+    <attr name="gridSubtitleSize" format="dimension" />
+    <attr name="gridTextVerticalPadding" format="dimension" />
+    <attr name="gridTopPadding" format="dimension" />
+    <attr name="gridBottomPadding" format="dimension" />
     <attr name="snackbarStyle" format="reference" />
     <attr name="snackbarButtonStyle" format="reference" />
     <attr name="maxActionInlineWidth" format="dimension" />
@@ -1446,8 +1479,8 @@
     </attr>
     <attr name="boxBackgroundMode">
         <enum name="none" value="0" />
-        <enum name="filled" value="1" />
         <enum name="outline" value="2" />
+        <enum name="filled" value="1" />
     </attr>
     <attr name="boxCollapsedPaddingTop" format="dimension" />
     <attr name="boxCornerRadiusTopStart" format="dimension" />
@@ -1460,6 +1493,9 @@
     <attr name="enforceMaterialTheme" format="boolean" />
     <attr name="enforceTextAppearance" format="boolean" />
     <attr name="labelTextColor" format="color" />
+    <attr name="sliderColor" format="color" />
+    <attr name="dotColor" format="color" />
+    <attr name="selectedDotDrawable" format="reference" />
     <attr name="titleTextAppearance" format="reference" />
     <attr name="subtitleTextAppearance" format="reference" />
     <attr name="titleMargin" format="dimension" />

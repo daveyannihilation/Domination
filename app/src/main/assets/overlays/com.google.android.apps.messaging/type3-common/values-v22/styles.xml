@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Base.V14.Theme.GoogleMaterial.Light" parent="@*com.google.android.apps.messaging:style/Platform.GoogleMaterial.Light">
+    <style name="Base.V14.Theme.GoogleMaterial.Light" parent="@*com.google.android.apps.messaging:style/Base.V14.Theme.GoogleMaterial.Light.Bridge">
         <item name="android:colorBackground">@*android:color/background_dark</item>
+        <item name="android:timePickerDialogTheme">@*com.google.android.apps.messaging:style/ThemeOverlay.GoogleMaterial.Dialog</item>
         <item name="android:datePickerDialogTheme">@*com.google.android.apps.messaging:style/ThemeOverlay.GoogleMaterial.Dialog</item>
         <item name="android:colorEdgeEffect">@*android:color/secondary_text_default_material_dark</item>
         <item name="android:windowLightStatusBar">false</item>
@@ -10,7 +11,6 @@
         <item name="*com.google.android.apps.messaging:bottomSheetDialogTheme">@*com.google.android.apps.messaging:style/Theme.GoogleMaterial.Light.BottomSheetDialog</item>
         <item name="*com.google.android.apps.messaging:chipStandaloneStyle">@*com.google.android.apps.messaging:style/Widget.GoogleMaterial.Chip.Input</item>
         <item name="*com.google.android.apps.messaging:chipStyle">@*com.google.android.apps.messaging:style/Widget.GoogleMaterial.Chip.Assistive</item>
-        <item name="*com.google.android.apps.messaging:colorSecondary">#ff1976d2</item>
         <item name="*com.google.android.apps.messaging:floatingActionButtonStyle">@*com.google.android.apps.messaging:style/Widget.GoogleMaterial.FloatingActionButton</item>
         <item name="*com.google.android.apps.messaging:materialButtonStyle">@*com.google.android.apps.messaging:style/Widget.GoogleMaterial.Button</item>
         <item name="*com.google.android.apps.messaging:materialCardViewStyle">@*com.google.android.apps.messaging:style/Widget.GoogleMaterial.CardView.Light</item>
@@ -19,54 +19,13 @@
         <item name="*com.google.android.apps.messaging:openSearchViewPrefixStyle">@*com.google.android.apps.messaging:style/Widget.GoogleMaterial.OpenSearchView.Prefix</item>
         <item name="*com.google.android.apps.messaging:openSearchViewStyle">@*com.google.android.apps.messaging:style/Widget.GoogleMaterial.OpenSearchView</item>
         <item name="*com.google.android.apps.messaging:productLockupViewStyle">@*com.google.android.apps.messaging:style/Widget.GoogleMaterial.ProductLockupView</item>
-        <item name="*com.google.android.apps.messaging:scrimBackground">@*com.google.android.apps.messaging:color/google_scrim</item>
         <item name="*com.google.android.apps.messaging:tabStyle">@*com.google.android.apps.messaging:style/Widget.GoogleMaterial.TabLayout</item>
-        <item name="*com.google.android.apps.messaging:textAppearanceBody1">@*com.google.android.apps.messaging:style/TextAppearance.GoogleMaterial.Body1</item>
-        <item name="*com.google.android.apps.messaging:textAppearanceBody2">@*com.google.android.apps.messaging:style/TextAppearance.GoogleMaterial.Body2</item>
-        <item name="*com.google.android.apps.messaging:textAppearanceButton">@*com.google.android.apps.messaging:style/TextAppearance.GoogleMaterial.Button</item>
-        <item name="*com.google.android.apps.messaging:textAppearanceCaption">@*com.google.android.apps.messaging:style/TextAppearance.GoogleMaterial.Caption</item>
-        <item name="*com.google.android.apps.messaging:textAppearanceHeadline1">@*com.google.android.apps.messaging:style/TextAppearance.GoogleMaterial.Headline1</item>
-        <item name="*com.google.android.apps.messaging:textAppearanceHeadline2">@*com.google.android.apps.messaging:style/TextAppearance.GoogleMaterial.Headline2</item>
-        <item name="*com.google.android.apps.messaging:textAppearanceHeadline3">@*com.google.android.apps.messaging:style/TextAppearance.GoogleMaterial.Headline3</item>
-        <item name="*com.google.android.apps.messaging:textAppearanceHeadline4">@*com.google.android.apps.messaging:style/TextAppearance.GoogleMaterial.Headline4</item>
-        <item name="*com.google.android.apps.messaging:textAppearanceHeadline5">@*com.google.android.apps.messaging:style/TextAppearance.GoogleMaterial.Headline5</item>
-        <item name="*com.google.android.apps.messaging:textAppearanceHeadline6">@*com.google.android.apps.messaging:style/TextAppearance.GoogleMaterial.Headline6</item>
-        <item name="*com.google.android.apps.messaging:textAppearanceOverline">@*com.google.android.apps.messaging:style/TextAppearance.GoogleMaterial.Overline</item>
-        <item name="*com.google.android.apps.messaging:textAppearanceSubtitle1">@*com.google.android.apps.messaging:style/TextAppearance.GoogleMaterial.Subtitle1</item>
-        <item name="*com.google.android.apps.messaging:textAppearanceSubtitle2">@*com.google.android.apps.messaging:style/TextAppearance.GoogleMaterial.Subtitle2</item>
-        <item name="*com.google.android.apps.messaging:textInputStyle">@*com.google.android.apps.messaging:style/Widget.Design.TextInputLayout</item>
+        <item name="*com.google.android.apps.messaging:textInputStyle">@*com.google.android.apps.messaging:style/Widget.GoogleMaterial.TextInputLayout.OutlinedBox</item>
         <item name="*com.google.android.apps.messaging:borderlessButtonStyle">@*com.google.android.apps.messaging:style/Widget.GoogleMaterial.TextButton</item>
         <item name="*com.google.android.apps.messaging:toolbarStyle">@*com.google.android.apps.messaging:style/Widget.GoogleMaterial.Toolbar</item>
-        <item name="*com.google.android.apps.messaging:colorPrimary">@*android:color/primary_material_dark</item>
-        <item name="*com.google.android.apps.messaging:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
-        <item name="*com.google.android.apps.messaging:colorBackgroundFloating">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.apps.messaging:alertDialogTheme">@*com.google.android.apps.messaging:style/ThemeOverlay.GoogleMaterial.Dialog.Alert</item>
         <item name="*com.google.android.apps.messaging:buttonStyle">@*com.google.android.apps.messaging:style/Widget.AppCompat.Button.Colored</item>
-        <item name="*com.google.android.apps.messaging:colorPrimaryLight">@*android:color/primary_material_dark</item>
-        <item name="*com.google.android.apps.messaging:colorSecondaryLight">#ff1976d2</item>
-        <item name="*com.google.android.apps.messaging:colorSecondaryDark">#ff1976d2</item>
-        <item name="*com.google.android.apps.messaging:colorPrimary50">@*android:color/primary_material_dark</item>
-        <item name="*com.google.android.apps.messaging:colorPrimary100">@*android:color/primary_material_dark</item>
-        <item name="*com.google.android.apps.messaging:colorPrimary500">@*android:color/primary_material_dark</item>
-        <item name="*com.google.android.apps.messaging:colorPrimary600">@*android:color/primary_material_dark</item>
-        <item name="*com.google.android.apps.messaging:colorPrimary700">@*android:color/primary_dark_material_dark</item>
-        <item name="*com.google.android.apps.messaging:colorPrimary800">@*android:color/primary_dark_material_dark</item>
-        <item name="*com.google.android.apps.messaging:colorPrimary900">@*android:color/primary_dark_material_dark</item>
-        <item name="*com.google.android.apps.messaging:colorSecondary50">#ff1976d2</item>
-        <item name="*com.google.android.apps.messaging:colorSecondary100">#ff1976d2</item>
-        <item name="*com.google.android.apps.messaging:colorSecondary500">#ff1976d2</item>
-        <item name="*com.google.android.apps.messaging:colorSecondary600">#ff1976d2</item>
-        <item name="*com.google.android.apps.messaging:colorSecondary700">#ff0d47a1</item>
-        <item name="*com.google.android.apps.messaging:colorSecondary800">#ff0d47a1</item>
-        <item name="*com.google.android.apps.messaging:colorSecondary900">#ff0d47a1</item>
-        <item name="*com.google.android.apps.messaging:textAppearanceDisplay1">@*com.google.android.apps.messaging:style/TextAppearance.GoogleMaterial.Display1</item>
-        <item name="*com.google.android.apps.messaging:textAppearanceDisplay2">@*com.google.android.apps.messaging:style/TextAppearance.GoogleMaterial.Display2</item>
-        <item name="*com.google.android.apps.messaging:textAppearanceDisplay3">@*com.google.android.apps.messaging:style/TextAppearance.GoogleMaterial.Display3</item>
-        <item name="*com.google.android.apps.messaging:textAppearanceSubhead1">@*com.google.android.apps.messaging:style/TextAppearance.GoogleMaterial.Subhead1</item>
-        <item name="*com.google.android.apps.messaging:textAppearanceSubhead2">@*com.google.android.apps.messaging:style/TextAppearance.GoogleMaterial.Subhead2</item>
-        <item name="*com.google.android.apps.messaging:textAppearanceSubtitleAlt1">@*com.google.android.apps.messaging:style/TextAppearance.GoogleMaterial.SubtitleAlt1</item>
-        <item name="*com.google.android.apps.messaging:textAppearanceSubtitleAlt2">@*com.google.android.apps.messaging:style/TextAppearance.GoogleMaterial.SubtitleAlt2</item>
-        <item name="*com.google.android.apps.messaging:textAppearanceButtonAlt">@*com.google.android.apps.messaging:style/TextAppearance.GoogleMaterial.ButtonAlt</item>
+        <item name="*com.google.android.apps.messaging:viewInflaterClass">android.support.design.theme.MaterialComponentsViewInflater</item>
         <item name="*com.google.android.apps.messaging:snackbarStyle">@*com.google.android.apps.messaging:style/Widget.GoogleMaterial.Snackbar</item>
         <item name="*com.google.android.apps.messaging:snackbarButtonStyle">@*com.google.android.apps.messaging:style/Widget.GoogleMaterial.TextButton.Snackbar</item>
     </style>

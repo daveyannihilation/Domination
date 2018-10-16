@@ -76,7 +76,12 @@
         <item name="android:windowIsTranslucent">false</item>
     </style>
     <style name="Photos.Archive.Assistant.Review" parent="@*com.google.android.apps.photos:style/Theme.Photos.NoTitle">
-        <item name="*com.google.android.apps.photos:colorPrimaryDark">@*com.google.android.apps.photos:color/photos_archive_assistant_status_bar_background</item>
+        <item name="android:homeAsUpIndicator">@*com.google.android.apps.photos:drawable/quantum_gm_ic_close_black_24</item>
+        <item name="android:actionMenuTextColor">@*com.google.android.apps.photos:color/quantum_googblue600</item>
+        <item name="*com.google.android.apps.photos:actionBarStyle">@*com.google.android.apps.photos:style/Photos.Archive.Assistant.Review.ActionBar</item>
+        <item name="*com.google.android.apps.photos:actionMenuTextColor">@*com.google.android.apps.photos:color/quantum_googblue600</item>
+        <item name="*com.google.android.apps.photos:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.apps.photos:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
         <item name="android:backgroundTint">@null</item>
     </style>
 
@@ -422,13 +427,33 @@
 
 
     <style name="photos_photoeditor_commonui_help_text_style" parent="@*com.google.android.apps.photos:style/TextAppearance.Photos.Body1">
+        <item name="android:textSize">12.0sp</item>
         <item name="android:textColor">@*android:color/white</item>
         <item name="android:layout_gravity">bottom|center</item>
         <item name="android:background">@*com.google.android.apps.photos:drawable/photos_photoeditor_commonui_help_text_background</item>
-        <item name="android:paddingLeft">8.0dip</item>
-        <item name="android:paddingTop">4.0dip</item>
-        <item name="android:paddingRight">8.0dip</item>
-        <item name="android:paddingBottom">4.0dip</item>
+        <item name="android:padding">8.0dip</item>
         <item name="android:visibility">gone</item>
+    </style>
+
+
+    <style name="AssistantCardIcon">
+        <item name="android:background">@*android:color/button_material_dark</item>
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:layout_weight">0.0</item>
+    </style>
+    <style name="photos_suggestedactions_editor_document_action_text">
+        <item name="android:textAppearance">@*com.google.android.apps.photos:style/TextAppearance.Photos.Subhead2</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:layout_marginLeft">16.0dip</item>
+        <item name="android:layout_marginRight">16.0dip</item>
+        <item name="android:minWidth">48.0dip</item>
+        <item name="android:drawablePadding">2.0dip</item>
     </style>
 </resources>
