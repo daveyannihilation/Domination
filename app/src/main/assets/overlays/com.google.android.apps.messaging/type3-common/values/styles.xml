@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="AvatarCreationBarBackButtonStyle" parent="@*com.google.android.apps.messaging:style/Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="*com.google.android.apps.messaging:tint">@*android:color/white</item>
+    </style>
+    <style name="AvatarCreationTitleTextStyle" parent="@*com.google.android.apps.messaging:style/TextAppearance.AppCompat">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@*com.google.android.apps.messaging:dimen/avatar_creation_title_margin_top</item>
+        <item name="android:fontFamily">@*com.google.android.apps.messaging:font/quicksand_bold</item>
+        <item name="android:layout_marginStart">@*com.google.android.apps.messaging:dimen/avatar_creation_text_margin</item>
+        <item name="android:layout_marginEnd">@*com.google.android.apps.messaging:dimen/avatar_creation_text_margin</item>
+    </style>
+    <style name="AvatarPromoBannerButtonStyle" parent="@*com.google.android.apps.messaging:style/Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">@*com.google.android.apps.messaging:dimen/avatar_promo_button_text_size</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:background">@*com.google.android.apps.messaging:drawable/avatar_promo_button_background</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@*com.google.android.apps.messaging:dimen/avatar_promo_button_height</item>
+        <item name="android:layout_marginTop">@*com.google.android.apps.messaging:dimen/avatar_promo_button_margin_top</item>
+        <item name="android:layout_marginBottom">@*com.google.android.apps.messaging:dimen/avatar_promo_button_margin_bottom</item>
+        <item name="android:minWidth">0.0dip</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:paddingStart">@*com.google.android.apps.messaging:dimen/avatar_promo_button_padding_lr</item>
+        <item name="android:paddingEnd">@*com.google.android.apps.messaging:dimen/avatar_promo_button_padding_lr</item>
+    </style>
     <style name="BugleBaseM2Theme" parent="@*com.google.android.apps.messaging:style/Theme.GoogleMaterial.Light">
         <item name="android:windowLightStatusBar">false</item>
         <item name="android:navigationBarColor">@*android:color/transparent</item>
@@ -50,17 +74,6 @@
         <item name="android:textSize">16.0sp</item>
         <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
     </style>
-    <style name="CreationBarBackButtonStyle" parent="@*com.google.android.apps.messaging:style/Widget.AppCompat.Toolbar.Button.Navigation">
-        <item name="*com.google.android.apps.messaging:tint">@*android:color/white</item>
-    </style>
-    <style name="CreationTitleTextStyle" parent="@*com.google.android.apps.messaging:style/TextAppearance.AppCompat">
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:gravity">center_horizontal</item>
-        <item name="android:layout_marginTop">@*com.google.android.apps.messaging:dimen/title_margin_top</item>
-        <item name="android:fontFamily">@*com.google.android.apps.messaging:font/quicksand_bold</item>
-        <item name="android:layout_marginStart">@*com.google.android.apps.messaging:dimen/text_margin</item>
-        <item name="android:layout_marginEnd">@*com.google.android.apps.messaging:dimen/text_margin</item>
-    </style>
     <style name="PhotoViewTheme" parent="@*com.google.android.apps.messaging:style/Theme.AppCompat">
         <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="android:windowContentOverlay">@null</item>
@@ -70,19 +83,6 @@
         <item name="*com.google.android.apps.messaging:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
     </style>
     <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light" />
-    <style name="PromoBannerButtonStyle" parent="@*com.google.android.apps.messaging:style/Widget.AppCompat.Button.Borderless">
-        <item name="android:textSize">@*com.google.android.apps.messaging:dimen/promo_button_text_size</item>
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:background">@*com.google.android.apps.messaging:drawable/avatar_promo_button_background</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">@*com.google.android.apps.messaging:dimen/promo_button_height</item>
-        <item name="android:layout_marginTop">@*com.google.android.apps.messaging:dimen/promo_button_margin_top</item>
-        <item name="android:layout_marginBottom">@*com.google.android.apps.messaging:dimen/promo_button_margin_bottom</item>
-        <item name="android:minWidth">0.0dip</item>
-        <item name="android:fontFamily">sans-serif-medium</item>
-        <item name="android:paddingStart">@*com.google.android.apps.messaging:dimen/promo_button_padding_lr</item>
-        <item name="android:paddingEnd">@*com.google.android.apps.messaging:dimen/promo_button_padding_lr</item>
-    </style>
     <style name="RecipientEditTextViewBase">
         <item name="android:textAppearance">?*android:textAppearanceMedium</item>
         <item name="android:background">@null</item>

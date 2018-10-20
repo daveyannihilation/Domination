@@ -72,21 +72,7 @@
     </style>
 
  
-    <style name="WebLinkAnnotationButton">
-        <item name="android:textSize">16.0sp</item>
-        <item name="android:textColor">#ffbbbbbb</item>
-        <item name="android:gravity">left</item>
-        <item name="android:background">?*android:selectableItemBackgroundBorderless</item>
-        <item name="android:paddingLeft">18.0dip</item>
-        <item name="android:paddingTop">10.0dip</item>
-        <item name="android:paddingRight">18.0dip</item>
-        <item name="android:paddingBottom">10.0dip</item>
-        <item name="android:visibility">gone</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginBottom">4.0dip</item>
-        <item name="android:layout_below">@*com.google.android.keep:id/annotations_list</item>
-    </style>
+
 
 
 
@@ -107,5 +93,54 @@
         <item name="android:gravity">center_vertical</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="ActionBarTitleFont" parent="@*com.google.android.keep:style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="Base.Theme.GoogleMaterial.Light" parent="@*com.google.android.keep:style/Base.V14.Theme.GoogleMaterial.Light">
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+    </style>
+    <style name="Base.Theme.GoogleMaterial.Light.Bridge" parent="@*com.google.android.keep:style/Base.V14.Theme.GoogleMaterial.Light.Bridge">
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+    </style>
+    <style name="ContextualToolbarTheme">
+        <item name="android:colorBackground">@*android:color/background_floating_material_dark</item>
+        <item name="android:background">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.keep:colorControlNormal">@*com.google.android.keep:color/google_blue600</item>
+        <item name="android:backgroundTint">@*android:color/background_floating_material_dark</item>
+    </style>
+    <style name="EmbeddedAccountMenuSideLayout">
+        <item name="android:background">@*android:color/background_floating_material_dark</item>
+        <item name="android:maxWidth">@*com.google.android.keep:dimen/og_nav_drawer_side_layout_width</item>
+        <item name="android:minWidth">@*com.google.android.keep:dimen/og_nav_drawer_side_layout_width</item>
+    </style>
+    <style name="LightToolbarStyle" parent="@*com.google.android.keep:style/ToolbarStyle">
+        <item name="android:background">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.keep:titleTextAppearance">@*com.google.android.keep:style/Heading6TextAppearance</item>
+    </style>
+    <style name="ToolbarTheme">
+        <item name="*com.google.android.keep:colorControlNormal">@*android:color/white</item>
+    </style>
+    <style name="ToolbarTitleTextAppearance" parent="@*com.google.android.keep:style/TextAppearance.GoogleMaterial.Toolbar.Title">
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="Widget.GoogleMaterial.DatePicker" parent="@*android:style/Widget.DeviceDefault.DatePicker">
+        <item name="android:headerBackground">@*com.google.android.keep:drawable/google_picker_header_with_divider</item>
+        <item name="android:dayOfWeekBackground">@*android:color/button_material_dark</item>
+    </style>
+    <style name="Widget.GoogleMaterial.ProductLockupView.Dark" parent="@*com.google.android.keep:style/Widget.GoogleMaterial.ProductLockupView">
+        <item name="*com.google.android.keep:productNameTextColor">@*android:color/white</item>
+        <item name="*com.google.android.keep:logoColor">light</item>
+    </style>
+    <style name="WidgetHeaderTitleStyle">
+        <item name="android:textAppearance">@*com.google.android.keep:style/Heading6TextAppearance</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:layout_gravity">center|left</item>
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:paddingTop">6.0dip</item>
+        <item name="android:paddingBottom">6.0dip</item>
     </style>
 </resources>

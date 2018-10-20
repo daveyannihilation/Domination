@@ -23,5 +23,7 @@
             <ViewStub android:id="@*com.google.android.contacts:id/assistants_header_stub" android:visibility="gone" android:layout="@*com.google.android.contacts:layout/list_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
         </android.support.design.appbar.AppBarLayout>
     </android.support.design.widget.CoordinatorLayout>
-    <android.support.design.widget.CoordinatorLayout android:layout_gravity="start" android:id="@*com.google.android.contacts:id/nav_view" android:background="@*android:color/background_floating_material_dark" android:fitsSystemWindows="true" android:clickable="true" android:layout_width="@*com.google.android.contacts:dimen/drawer_width" android:layout_height="fill_parent" />
+    <android.support.design.widget.CoordinatorLayout android:layout_gravity="start" android:id="@*com.google.android.contacts:id/nav_view" android:background="@*android:color/background_floating_material_dark" android:fitsSystemWindows="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <Space android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@*com.google.android.contacts:style/EmbeddedAccountMenuSideLayout" />
+    </android.support.design.widget.CoordinatorLayout>
 </android.support.v4.widget.DrawerLayout>

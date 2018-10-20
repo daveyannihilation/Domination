@@ -2,8 +2,6 @@
 <resources>
     <style name="ActionBarMenu" parent="@*android:style/Theme.Material" />
     <style name="Base.Theme.GoogleMaterial.Light" parent="@*com.google.android.apps.docs:style/Base.V14.Theme.GoogleMaterial.Light">
-        <item name="android:colorPrimaryDark">@*android:color/primary_text_leanback_light</item>
-        <item name="*com.google.android.apps.docs:colorPrimaryDark">@*android:color/primary_text_leanback_light</item>
         <item name="android:statusBarColor">@*android:color/primary_text_leanback_light</item>
     </style>
     <style name="BaseActionBarOverflow" parent="@*android:style/Widget.Holo.ActionButton.Overflow" />
@@ -45,13 +43,12 @@
     </style>
     <style name="CommonTheme" parent="@*com.google.android.apps.docs:style/VersionTheme">
         <item name="android:windowNoTitle">true</item>
-        <item name="android:actionBarStyle">@*com.google.android.apps.docs:style/OverlayActionBarStyle</item>
+        <item name="android:actionBarStyle">@*com.google.android.apps.docs:style/ToolbarStyle</item>
         <item name="android:actionModeBackground">@*android:color/secondary_text_leanback_light</item>
         <item name="android:actionModeCloseDrawable">@*com.google.android.apps.docs:drawable/back_grey</item>
         <item name="android:windowActionModeOverlay">true</item>
         <item name="android:windowActionBarOverlay">true</item>
         <item name="android:actionOverflowButtonStyle">@*com.google.android.apps.docs:style/OverlayActionBarOverflowStyle</item>
-        <item name="android:actionModeCloseButtonStyle">@*com.google.android.apps.docs:style/OverlayActionBarCloseButtonStyle</item>
         <item name="android:actionModeStyle">@*com.google.android.apps.docs:style/OverlayActionBarStyleLight</item>
         <item name="android:actionBarDivider">@null</item>
         <item name="android:statusBarColor">@*android:color/primary_text_leanback_light</item>
@@ -59,12 +56,12 @@
         <item name="*com.google.android.apps.docs:windowActionBarOverlay">true</item>
         <item name="*com.google.android.apps.docs:windowActionModeOverlay">true</item>
         <item name="*com.google.android.apps.docs:actionOverflowButtonStyle">@*com.google.android.apps.docs:style/OverlayActionBarOverflowStyle</item>
-        <item name="*com.google.android.apps.docs:actionBarStyle">@*com.google.android.apps.docs:style/OverlayActionBarStyle</item>
+        <item name="*com.google.android.apps.docs:actionBarStyle">@*com.google.android.apps.docs:style/ToolbarStyle</item>
         <item name="*com.google.android.apps.docs:actionBarDivider">@null</item>
         <item name="*com.google.android.apps.docs:actionModeStyle">@*com.google.android.apps.docs:style/OverlayActionBarStyleLight</item>
-        <item name="*com.google.android.apps.docs:actionModeCloseButtonStyle">@*com.google.android.apps.docs:style/OverlayActionBarCloseButtonStyle</item>
         <item name="*com.google.android.apps.docs:actionModeBackground">@*android:color/secondary_text_leanback_light</item>
         <item name="*com.google.android.apps.docs:actionModeCloseDrawable">@*com.google.android.apps.docs:drawable/back_grey</item>
+        <item name="*com.google.android.apps.docs:colorControlHighlight">@*android:color/white</item>
     </style>
     <style name="DetailInfoCard_Text.Secondary" parent="@*com.google.android.apps.docs:style/DetailInfoCard_Text">
         <item name="android:textSize">@*com.google.android.apps.docs:dimen/m_entry_text_size_tertiary</item>
@@ -139,11 +136,13 @@
         <item name="android:textColor">#ffdddddd</item>
         <item name="android:gravity">center</item>
     </style>
+    <style name="PeoplePredict.Text.LegacyBody" parent="@*com.google.android.apps.docs:style/PeoplePredict.Text">
+        <item name="android:textSize">@*com.google.android.apps.docs:dimen/m_text_size_subhead</item>
+        <item name="android:textColor">#ffdddddd</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
     <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.Material">
         <item name="android:windowShowWallpaper">false</item>
-        <item name="android:colorPrimaryDark">@*android:color/primary_text_leanback_light</item>
-        <item name="*com.google.android.apps.docs:colorPrimaryDark">@*android:color/primary_text_leanback_light</item>
-        <item name="android:statusBarColor">@*android:color/primary_text_leanback_light</item>
     </style>
     <style name="PreviewOpenInAnotherApp_container">
         <item name="android:layout_gravity">center</item>
@@ -154,6 +153,9 @@
     </style>
     <style name="ProgressBarSpinner" parent="@*android:style/Widget.Holo.ProgressBar.Large">
         <item name="android:indeterminateOnly">true</item>
+    </style>
+    <style name="RippleTheme">
+        <item name="*com.google.android.apps.docs:colorControlHighlight">@*android:color/ripple_material_dark</item>
     </style>
     <style name="SiteAccessOptionsDialogMessage.InfoTextAppearance" parent="@*com.google.android.apps.docs:style/SiteAccessOptionsDialogMessage">
         <item name="android:textSize">@*com.google.android.apps.docs:dimen/m_entry_text_size_secondary</item>
