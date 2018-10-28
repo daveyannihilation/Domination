@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <style name="Base.TextAppearance.AppCompat.Widget.Button.Inverse" parent="@*android:style/TextAppearance.Material.Widget.Button" />
-
+    <style name="CalendarGmTheme.NoActionBar" parent="@*com.google.android.calendar:style/CalendarGmTheme.NoActionBar.Base">
+        <item name="android:statusBarColor">@*android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
     <style name="CalendarTheme.WithActionBar" parent="@*com.google.android.calendar:style/CalendarTheme.WithActionBar_v21">
         <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
         <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="CardView" parent="@*com.google.android.calendar:style/Base.CardView">
+        <item name="*com.google.android.calendar:cardBackgroundColor">@*android:color/background_floating_material_dark</item>
     </style>
     <style name="DayPopUpTheme" parent="@*com.google.android.calendar:style/DayPopUpTheme_v21">
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
         <item name="android:windowLightStatusBar">false</item>
     </style>
-
-    <style name="PreferencesTheme" parent="@*com.google.android.calendar:style/PreferencesTheme_v21">
-        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+    <style name="DetailsTheme_v21" parent="@*com.google.android.calendar:style/DetailsThemeCommon">
+        <item name="android:windowIsFloating">@*com.google.android.calendar:bool/not_show_event_info_full_screen</item>
+        <item name="android:statusBarColor">@*android:color/transparent</item>
         <item name="android:windowLightStatusBar">false</item>
     </style>
     <style name="PreferenceTheme.Compat" parent="@*com.google.android.calendar:style/PreferenceTheme">
         <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
         <item name="android:windowLightStatusBar">false</item>
     </style>
-    <style name="CalendarGmTheme.NoActionBar" parent="@*com.google.android.calendar:style/CalendarGmTheme.NoActionBar.Base">
-        <item name="android:statusBarColor">@*android:color/transparent</item>
-        <item name="android:windowLightStatusBar">false</item>
-    </style>
-    <style name="DetailsTheme_v21" parent="@*com.google.android.calendar:style/DetailsThemeCommon">
-        <item name="android:windowIsFloating">@*com.google.android.calendar:bool/not_show_event_info_full_screen</item>
-        <item name="android:statusBarColor">@*android:color/transparent</item>
+    <style name="PreferencesTheme" parent="@*com.google.android.calendar:style/PreferencesTheme_v21">
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
         <item name="android:windowLightStatusBar">false</item>
     </style>
 </resources>

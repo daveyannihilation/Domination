@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<inset android:insetLeft="@*com.android.chrome:dimen/keyboard_accessory_half_padding" android:insetRight="@*com.android.chrome:dimen/keyboard_accessory_half_padding" android:insetTop="@*com.android.chrome:dimen/keyboard_accessory_padding" android:insetBottom="@*com.android.chrome:dimen/keyboard_accessory_padding"
+<layer-list
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <shape>
-        <solid android:color="@*android:color/secondary_text_leanback_light" />
-        <corners android:radius="2.0dip" />
-    </shape>
-</inset>
+    <item>
+        <shape>
+            <solid android:color="@*android:color/legacy_primary" />
+            <corners android:radius="@*com.android.chrome:dimen/keyboard_accessory_action_height" />
+        </shape>
+    </item>
+</layer-list>

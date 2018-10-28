@@ -4,7 +4,7 @@
     <com.whatsapp.ChatInfoLayout android:id="@*com.whatsapp:id/content" android:layout_width="fill_parent" android:layout_height="fill_parent">
         <ListView android:id="@*android:id/list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@*com.whatsapp:drawable/selector_orange_gradient" android:drawSelectorOnTop="true" android:cacheColorHint="@*android:color/transparent" android:divider="@null" android:dividerHeight="0.0dip" android:choiceMode="none" android:headerDividersEnabled="false" android:footerDividersEnabled="false" />
         <FrameLayout android:gravity="center_vertical" android:id="@*com.whatsapp:id/header" android:background="@*android:color/primary_material_dark" android:layout_width="fill_parent" android:layout_height="wrap_content">
-            <ImageView android:id="@*com.whatsapp:id/picture" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@*com.whatsapp:string/profile_photo" />
+            <com.whatsapp.WaImageView android:id="@*com.whatsapp:id/picture" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@*com.whatsapp:string/profile_photo" />
             <View android:layout_gravity="bottom" android:id="@*com.whatsapp:id/bottom_shade" android:layout_width="wrap_content" android:layout_height="96.0dip" />
             <View android:layout_gravity="top" android:id="@*com.whatsapp:id/top_shade" android:layout_width="wrap_content" android:layout_height="48.0dip" />
             <View android:id="@*com.whatsapp:id/photo_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
@@ -21,7 +21,7 @@
                 </LinearLayout>
                 <FrameLayout android:layout_gravity="bottom|center|right" android:layout_width="48.0dip" android:layout_height="@*com.whatsapp:dimen/abc_action_bar_default_height_material">
                     <ProgressBar android:layout_gravity="center" android:id="@*com.whatsapp:id/change_subject_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmall" />
-                    <ImageButton android:layout_gravity="center" android:id="@*com.whatsapp:id/change_subject_btn" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@*com.whatsapp:drawable/ic_action_edit_shadow" android:contentDescription="@*com.whatsapp:string/change_subject" style="@*com.whatsapp:style/ActionBarButtonStyle" />
+                    <com.whatsapp.WaImageButton android:layout_gravity="center" android:id="@*com.whatsapp:id/change_subject_btn" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@*com.whatsapp:drawable/ic_action_edit_shadow" android:contentDescription="@*com.whatsapp:string/change_subject" style="@*com.whatsapp:style/ActionBarButtonStyle" />
                 </FrameLayout>
             </LinearLayout>
         </FrameLayout>

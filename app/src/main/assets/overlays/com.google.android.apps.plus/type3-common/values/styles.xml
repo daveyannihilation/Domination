@@ -1,70 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="ActionBarStyle" parent="@*android:style/Widget.Material.ActionBar">
-        <item name="android:background">@*android:color/transparent</item>
+    <style name="Base.TextAppearance.GoogleMaterial.OpenSearch" parent="@*com.google.android.apps.plus:style/TextAppearance.AppCompat.Small">
+        <item name="android:textSize">@*com.google.android.apps.plus:dimen/google_opensearchbar_text_size</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:textColorHint">@*android:color/secondary_text_default_material_dark</item>
+        <item name="android:fontFamily">@*com.google.android.apps.plus:font/google_sans</item>
+        <item name="*com.google.android.apps.plus:fontFamily">@*com.google.android.apps.plus:font/google_sans</item>
     </style>
-    <style name="AppBaseTheme" parent="@*android:style/Theme.DeviceDefault.Light" />
-    <style name="DateTimePickerButton" parent="@*android:style/Widget.Material.Spinner">
-        <item name="android:textAppearance">?android:textAppearanceSmall</item>
-        <item name="android:paddingLeft">16.0dip</item>
-        <item name="android:paddingRight">16.0dip</item>
-        <item name="android:paddingStart">16.0dip</item>
-        <item name="android:paddingEnd">16.0dip</item>
-    </style>
-    <style name="FlatButtonBar">
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:background">@*android:color/button_material_dark</item>
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">50.0dip</item>
-    </style>
-    <style name="FlatButtonBorder">
-        <item name="android:background">@*android:color/background_floating_material_dark</item>
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">1.0dip</item>
-    </style>
-    <style name="FlatButtonSeparator">
-        <item name="android:background">#ffaaaaaa</item>
-        <item name="android:layout_width">1.0dip</item>
-        <item name="android:layout_height">fill_parent</item>
-        <item name="android:layout_marginTop">8.0dip</item>
-        <item name="android:layout_marginBottom">8.0dip</item>
-        <item name="android:maxHeight">56.0dip</item>
-    </style>
-    <style name="LearnMoreTourButtonStyle" parent="@*android:style/Widget.Material.Button.Borderless">
-        <item name="android:textSize">18.0sp</item>
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:ellipsize">marquee</item>
-        <item name="android:layout_marginLeft">24.0dip</item>
-        <item name="android:layout_marginRight">24.0dip</item>
-        <item name="android:minWidth">88.0dip</item>
-        <item name="android:minHeight">48.0dip</item>
-        <item name="android:singleLine">true</item>
-        <item name="android:textAllCaps">true</item>
-    </style>
-    <style name="Platform.ThemeOverlay.AppCompat" parent="@*android:style/Theme.DeviceDefault.Light">
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-    </style>
-    <style name="Platform.AppCompat" parent="@*android:style/Theme.DeviceDefault.Light">
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowActionBar">false</item>
-        <item name="android:backgroundTint">@null</item>
-    </style>
-    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light">
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowActionBar">false</item>
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-    </style>
-
-    <style name="Theme.EmeraldSea.Dialog" parent="@*android:style/Theme.Material.Dialog" />
-    <style name="Theme.EmeraldSea.Preference.Dialog" parent="@*android:style/Theme.Material.Dialog" />
-    <style name="Theme.Settings" parent="@*android:style/Theme.DeviceDefault.Light" />
-
-    <style name="UrawTheme" parent="@*com.google.android.apps.plus:style/Theme.AppCompat" />
-
-    <style name="Theme" parent="@*android:style/Theme.DeviceDefault.Light" />
-    <style name="Theme.AlertFragmentDialog" parent="@*android:style/Theme.Material.Dialog" />
-    <style name="Theme.AppInvite.Preview.Base" parent="@*android:style/Theme.NoTitleBar" />
     <style name="BottomBarItemHorizontal">
         <item name="android:textSize">@*com.google.android.apps.plus:dimen/text_size_12</item>
         <item name="android:textColor">#ffffffff</item>
@@ -87,6 +29,57 @@
         <item name="android:drawablePadding">@*com.google.android.apps.plus:dimen/navigation_bar_y_drawable_padding</item>
         <item name="android:backgroundTint">@null</item>
     </style>
+    <style name="BottomBarNotificationCounter">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">end|center|top</item>
+        <item name="android:background">@*com.google.android.apps.plus:drawable/bottom_bar_notification_count_background</item>
+        <item name="android:layout_width">8.0dip</item>
+        <item name="android:layout_height">8.0dip</item>
+        <item name="android:layout_marginTop">4.0dip</item>
+        <item name="android:layout_marginRight">2.0dip</item>
+        <item name="android:backgroundTint">@null</item>
+    </style>
+    <style name="bt_ToastBar">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@*com.google.android.apps.plus:drawable/bt_bg_toast</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@null</item>
+    </style>
+    <style name="CardView.Dark" parent="@*com.google.android.apps.plus:style/CardView">
+        <item name="*com.google.android.apps.plus:cardBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="android:backgroundTint">@null</item>
+    </style>
+    <style name="CardView.Light" parent="@*com.google.android.apps.plus:style/CardView">
+        <item name="*com.google.android.apps.plus:cardBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="android:backgroundTint">@null</item>
+    </style>
+    <style name="DateTimePickerButton" parent="@*android:style/Widget.Material.Spinner">
+        <item name="android:textAppearance">?*android:textAppearanceSmall</item>
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+        <item name="android:paddingStart">16.0dip</item>
+        <item name="android:paddingEnd">16.0dip</item>
+    </style>
+    <style name="FlatButtonBar">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@*android:color/button_material_dark</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50.0dip</item>
+    </style>
+    <style name="FlatButtonBorder">
+        <item name="android:background">#ffffffff</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0dip</item>
+    </style>
+    <style name="FlatButtonSeparator">
+        <item name="android:background">#00000000</item>
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginTop">8.0dip</item>
+        <item name="android:layout_marginBottom">8.0dip</item>
+        <item name="android:maxHeight">56.0dip</item>
+    </style>
     <style name="GooglePhotosPromoGetUpdateButton" parent="@*com.google.android.apps.plus:style/quantum_text_button_black">
         <item name="android:textColor">#ffffffff</item>
         <item name="android:layout_gravity">center_horizontal</item>
@@ -94,12 +87,43 @@
         <item name="android:layout_width">200.0dip</item>
         <item name="android:layout_height">36.0dip</item>
     </style>
+    <style name="LearnMoreTourButtonStyle" parent="@*android:style/Widget.Material.Button.Borderless">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:layout_marginLeft">24.0dip</item>
+        <item name="android:layout_marginRight">24.0dip</item>
+        <item name="android:minWidth">88.0dip</item>
+        <item name="android:minHeight">48.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
     <style name="PhotosBackupPromoPositiveButton" parent="@*com.google.android.apps.plus:style/quantum_text_button_black">
         <item name="android:textColor">#ffffffff</item>
         <item name="android:background">@*com.google.android.apps.plus:drawable/googblue500_button</item>
     </style>
+    <style name="PhotosPromoForeground" parent="@*com.google.android.apps.plus:style/Cast2dpShadow">
+        <item name="android:background">@*android:color/background_dark</item>
+        <item name="android:padding">24.0dip</item>
+    </style>
+    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light" />
+    <style name="PlusFab">
+        <item name="android:layout_margin">@*com.google.android.apps.plus:dimen/navigation_fab_margin</item>
+        <item name="android:src">@*com.google.android.apps.plus:drawable/quantum_ic_create_white_24</item>
+        <item name="android:backgroundTint">@null</item>
+    </style>
+    <style name="SpinnerItem">
+        <item name="android:textAppearance">@*com.google.android.apps.plus:style/quantum_text_body_2_black</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">start|center</item>
+        <item name="android:background">?*android:selectableItemBackground</item>
+        <item name="android:backgroundTint">@null</item>
+        <item name="android:paddingLeft">24.0dip</item>
+        <item name="android:paddingRight">24.0dip</item>
+        <item name="android:maxLines">1</item>
+    </style>
     <style name="Squares.LandingViewButton" parent="@*com.google.android.apps.plus:style/Squares">
-        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textAppearance">?*android:textAppearanceMedium</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">#ffffffff</item>
         <item name="android:layout_gravity">center_horizontal</item>
@@ -117,91 +141,17 @@
         <item name="android:layout_marginStart">@*com.google.android.apps.plus:dimen/square_card_padding</item>
         <item name="android:layout_marginEnd">@*com.google.android.apps.plus:dimen/square_card_padding</item>
     </style>
-    <style name="Theme.AppInvite.Preview" parent="@*com.google.android.apps.plus:style/Theme.AppInvite.Preview.Base">
-        <item name="android:colorBackground">@*android:color/background_floating_material_dark</item>
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-        <item name="android:windowIsTranslucent">true</item>
-    </style>
-
-
-    <style name="Theme.ActivityLog" parent="@*com.google.android.apps.plus:style/Theme.Settings.Preferences.Arkham">
-        <item name="android:actionModeCloseDrawable">@*com.google.android.apps.plus:drawable/quantum_ic_clear_white_24</item>
-        <item name="android:actionMenuTextColor">@*com.google.android.apps.plus:color/action_mode_menu_item_selector</item>
-        <item name="android:actionModeStyle">@*com.google.android.apps.plus:style/Style.ActivityLog.ActionMode</item>
-        <item name="*com.google.android.apps.plus:actionMenuTextColor">@*com.google.android.apps.plus:color/action_mode_menu_item_selector</item>
-        <item name="*com.google.android.apps.plus:actionModeStyle">@*com.google.android.apps.plus:style/Style.ActivityLog.ActionMode</item>
-        <item name="*com.google.android.apps.plus:actionModeCloseDrawable">@*com.google.android.apps.plus:drawable/quantum_ic_clear_white_24</item>
-        <item name="android:backgroundTint">@*android:color/background_dark</item>
-    </style>
-
-    <style name="BottomBarNotificationCounter">
-        <item name="android:gravity">center</item>
-        <item name="android:layout_gravity">end|center|top</item>
-        <item name="android:background">@*com.google.android.apps.plus:drawable/bottom_bar_notification_count_background</item>
-        <item name="android:layout_width">8.0dip</item>
-        <item name="android:layout_height">8.0dip</item>
-        <item name="android:layout_marginTop">4.0dip</item>
-        <item name="android:layout_marginRight">2.0dip</item>
-        <item name="android:backgroundTint">@null</item>
-    </style>
-    <style name="Theme.Plus.Launcher" parent="@*com.google.android.apps.plus:style/Theme.Arkham.Overlay.NoShadow">
-        <item name="android:windowBackground">@*com.google.android.apps.plus:drawable/quantum_launchscreen_google_plus</item>
-        <item name="*com.google.android.apps.plus:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
-        <item name="android:backgroundTint">@null</item>
-        <item name="android:windowShowWallpaper">false</item>
-    </style>
-    <style name="Theme.Plus.Launcher.NoActionBar" parent="@*com.google.android.apps.plus:style/Theme.Arkham.NoActionBar">
-        <item name="android:windowBackground">@*com.google.android.apps.plus:drawable/quantum_launchscreen_google_plus</item>
-        <item name="*com.google.android.apps.plus:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
-        <item name="android:backgroundTint">@null</item>
-        <item name="android:windowShowWallpaper">false</item>
-    </style>
-    <style name="bt_ToastBar">
-        <item name="android:orientation">horizontal</item>
-        <item name="android:background">@*com.google.android.apps.plus:drawable/bt_bg_toast</item>
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:backgroundTint">@null</item>
-    </style>
-    <style name="CardView.Dark" parent="@*com.google.android.apps.plus:style/CardView">
-        <item name="*com.google.android.apps.plus:cardBackgroundColor">@*android:color/background_floating_material_dark</item>
-        <item name="android:backgroundTint">@null</item>
-    </style>
-    <style name="CardView.Light" parent="@*com.google.android.apps.plus:style/CardView">
-        <item name="*com.google.android.apps.plus:cardBackgroundColor">@*android:color/background_floating_material_dark</item>
-        <item name="android:backgroundTint">@null</item>
-    </style>
-
-
-    <style name="TextStyle.SocialButtons.ButtonSideText" parent="@*com.google.android.apps.plus:style/TextStyle.Regular">
-        <item name="android:textSize">@*com.google.android.apps.plus:dimen/textsize_12</item>
-        <item name="android:textColor">@*com.google.android.apps.plus:color/quantum_grey700</item>
-    </style>
-    <style name="Theme.Arkham.WhiteActionBarTheme" parent="@*com.google.android.apps.plus:style/ThemeOverlay.AppCompat.Dark.ActionBar">
-        <item name="android:autoCompleteTextViewStyle">@*com.google.android.apps.plus:style/Theme.Arkham.ActionBar.WhiteSearchViewAutoComplete</item>
-        <item name="*com.google.android.apps.plus:colorControlHighlight">@*com.google.android.apps.plus:color/quantum_grey600</item>
-    </style>
-    <style name="Theme.Ingest" parent="@*com.google.android.apps.plus:style/Theme.AppCompat">
-        <item name="android:icon">@*android:color/transparent</item>
-        <item name="android:windowBackground">@*android:color/background_dark</item>
+    <style name="StreamOneUpBase" parent="@*com.google.android.apps.plus:style/Theme.Arkham.Overlay">
+        <item name="android:windowFrame">@null</item>
         <item name="android:windowContentOverlay">@null</item>
-        <item name="android:textColor">@*com.google.android.apps.plus:color/quantum_grey600</item>
-        <item name="android:logo">@*android:color/transparent</item>
-        <item name="android:actionBarStyle">@*com.google.android.apps.plus:style/Theme.Ingest.ActionBar</item>
-        <item name="android:actionModeCloseDrawable">@*com.google.android.apps.plus:drawable/quantum_ic_clear_white_24</item>
-        <item name="android:homeAsUpIndicator">@*com.google.android.apps.plus:drawable/quantum_ic_arrow_back_grey600_24</item>
-        <item name="android:actionMenuTextColor">@*com.google.android.apps.plus:color/quantum_white_text</item>
-        <item name="android:actionModeStyle">@*com.google.android.apps.plus:style/Theme.Ingest.ActionModeActionBar</item>
-        <item name="*com.google.android.apps.plus:actionBarStyle">@*com.google.android.apps.plus:style/Theme.Ingest.ActionBar</item>
-        <item name="*com.google.android.apps.plus:actionBarSize">@*com.google.android.apps.plus:dimen/actionbar_menuitem_height</item>
-        <item name="*com.google.android.apps.plus:actionMenuTextColor">@*com.google.android.apps.plus:color/quantum_white_text</item>
-        <item name="*com.google.android.apps.plus:actionModeStyle">@*com.google.android.apps.plus:style/Theme.Ingest.ActionModeActionBar</item>
-        <item name="*com.google.android.apps.plus:actionModeCloseDrawable">@*com.google.android.apps.plus:drawable/quantum_ic_clear_white_24</item>
-        <item name="*com.google.android.apps.plus:homeAsUpIndicator">@*com.google.android.apps.plus:drawable/quantum_ic_arrow_back_grey600_24</item>
-        <item name="*com.google.android.apps.plus:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="android:cacheColorHint">@*android:color/background_dark</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowSoftInputMode">stateHidden</item>
+        <item name="android:alertDialogTheme">@*com.google.android.apps.plus:style/Theme.Arkham.AlertDialogTheme</item>
+        <item name="android:colorAccent">@*com.google.android.apps.plus:color/quantum_googblue</item>
+        <item name="*com.google.android.apps.plus:colorAccent">@*com.google.android.apps.plus:color/quantum_googblue</item>
+        <item name="*com.google.android.apps.plus:alertDialogTheme">@*com.google.android.apps.plus:style/Theme.Arkham.AlertDialogTheme</item>
     </style>
-
-
     <style name="TextStyle.CommentCard.AuthorName.GreySpam" parent="@*com.google.android.apps.plus:style/TextStyle.CommentCard.AuthorName">
         <item name="android:textColor">#ffffffff</item>
     </style>
@@ -212,6 +162,10 @@
         <item name="android:textSize">@*com.google.android.apps.plus:dimen/textsize_12</item>
         <item name="android:textColor">#ffdddddd</item>
     </style>
+    <style name="TextStyle.SocialButtons.ButtonSideText" parent="@*com.google.android.apps.plus:style/TextStyle.Regular">
+        <item name="android:textSize">@*com.google.android.apps.plus:dimen/textsize_12</item>
+        <item name="android:textColor">@*com.google.android.apps.plus:color/quantum_grey700</item>
+    </style>
     <style name="TextStyle.SocialPost.ModeratorBadge" parent="@*com.google.android.apps.plus:style/TextStyle.Regular">
         <item name="android:textSize">@*com.google.android.apps.plus:dimen/textsize_14</item>
         <item name="android:textColor">#ffdddddd</item>
@@ -220,56 +174,32 @@
         <item name="android:textSize">@*com.google.android.apps.plus:dimen/textsize_12</item>
         <item name="android:textColor">#ffdddddd</item>
     </style>
-    <style name="SpinnerItem">
-        <item name="android:textAppearance">@*com.google.android.apps.plus:style/quantum_text_body_2_black</item>
-        <item name="android:ellipsize">end</item>
-        <item name="android:gravity">start|center</item>
-        <item name="android:background">?*android:selectableItemBackground</item>
-        <item name="android:backgroundTint">@null</item>
-        <item name="android:paddingLeft">24.0dip</item>
-        <item name="android:paddingRight">24.0dip</item>
-        <item name="android:maxLines">1</item>
+    <style name="Theme" parent="@*android:style/Theme.DeviceDefault.Light" />
+    <style name="Theme.ActivityLog" parent="@*com.google.android.apps.plus:style/Theme.Settings.Preferences.Arkham">
+        <item name="android:actionModeCloseDrawable">@*com.google.android.apps.plus:drawable/quantum_ic_clear_white_24</item>
+        <item name="android:actionMenuTextColor">@*com.google.android.apps.plus:color/action_mode_menu_item_selector</item>
+        <item name="android:actionModeStyle">@*com.google.android.apps.plus:style/Style.ActivityLog.ActionMode</item>
+        <item name="*com.google.android.apps.plus:actionMenuTextColor">@*com.google.android.apps.plus:color/action_mode_menu_item_selector</item>
+        <item name="*com.google.android.apps.plus:actionModeStyle">@*com.google.android.apps.plus:style/Style.ActivityLog.ActionMode</item>
+        <item name="*com.google.android.apps.plus:actionModeCloseDrawable">@*com.google.android.apps.plus:drawable/quantum_ic_clear_white_24</item>
+        <item name="android:backgroundTint">@*android:color/background_dark</item>
     </style>
+    <style name="Theme.AlertFragmentDialog" parent="@*android:style/Theme.Material.Dialog" />
+    <style name="Theme.AppInvite.Preview" parent="@*com.google.android.apps.plus:style/Theme.AppInvite.Preview.Base">
+        <item name="android:colorBackground">@*android:color/background_floating_material_dark</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="Theme.AppInvite.Preview.Base" parent="@*android:style/Theme.NoTitleBar" />
     <style name="Theme.Arkham.ActionBar.DropDown" parent="@*com.google.android.apps.plus:style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
-        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textAppearance">?*android:textAppearanceMedium</item>
         <item name="android:textColor">@*android:color/white</item>
         <item name="android:background">@*com.google.android.apps.plus:drawable/arkham_spinner</item>
         <item name="android:backgroundTint">@null</item>
     </style>
-    <style name="Theme.Arkham.White.ActionBar" parent="@*com.google.android.apps.plus:style/Theme.Arkham.ActionBar">
-        <item name="android:background">@*android:color/primary_material_dark</item>
-        <item name="android:titleTextStyle">@*com.google.android.apps.plus:style/Theme.Arkham.ActionBar.TitleTextStyle</item>
-        <item name="android:homeAsUpIndicator">@*com.google.android.apps.plus:drawable/quantum_ic_close_grey600_24</item>
-        <item name="*com.google.android.apps.plus:titleTextStyle">@*com.google.android.apps.plus:style/Theme.Arkham.ActionBar.TitleTextStyle</item>
-        <item name="*com.google.android.apps.plus:background">@*android:color/primary_material_dark</item>
-        <item name="*com.google.android.apps.plus:contentInsetStart">0.0dip</item>
-        <item name="*com.google.android.apps.plus:homeAsUpIndicator">@*com.google.android.apps.plus:drawable/quantum_ic_close_grey600_24</item>
-    </style>
-    <style name="Theme.Arkham.WithWhiteActionBar" parent="@*com.google.android.apps.plus:style/Theme.Arkham">
-        <item name="android:windowBackground">@*android:color/primary_material_dark</item>
-        <item name="android:windowContentOverlay">@*com.google.android.apps.plus:drawable/actionbar_shadow</item>
-        <item name="android:actionBarStyle">@*com.google.android.apps.plus:style/Theme.Arkham.ActionBar</item>
-        <item name="android:actionMenuTextAppearance">@*com.google.android.apps.plus:style/Theme.Arkham.ActionBar.MenuButtonTextStyle</item>
-        <item name="android:actionMenuTextColor">@*com.google.android.apps.plus:color/white_actionbar_done_button_color</item>
-        <item name="*com.google.android.apps.plus:actionBarStyle">@*com.google.android.apps.plus:style/Theme.Arkham.ActionBar</item>
-        <item name="*com.google.android.apps.plus:actionMenuTextAppearance">@*com.google.android.apps.plus:style/Theme.Arkham.ActionBar.MenuButtonTextStyle</item>
-        <item name="*com.google.android.apps.plus:actionMenuTextColor">@*com.google.android.apps.plus:color/white_actionbar_done_button_color</item>
-        <item name="*com.google.android.apps.plus:colorPrimary">@*android:color/primary_material_dark</item>
-        <item name="*com.google.android.apps.plus:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
-    </style>
     <style name="Theme.Arkham.NormalWhite.ActionBar.WithTabs" parent="@*com.google.android.apps.plus:style/Theme.Arkham.NormalWhite.ActionBar">
         <item name="android:background">@*android:color/primary_material_dark</item>
         <item name="*com.google.android.apps.plus:background">@*android:color/primary_material_dark</item>
-    </style>
-    <style name="Theme.Arkham.NormalWhite.ActionBarWithShadow" parent="@*com.google.android.apps.plus:style/Theme.Arkham.ActionBar">
-        <item name="android:background">@*android:color/primary_material_dark</item>
-        <item name="android:titleTextStyle">@*com.google.android.apps.plus:style/Theme.Arkham.ActionBar.BlackText</item>
-        <item name="android:subtitleTextStyle">@*com.google.android.apps.plus:style/Theme.Arkham.NormalWhite.ActionBar.SubtitleText</item>
-        <item name="android:homeAsUpIndicator">@*com.google.android.apps.plus:drawable/quantum_ic_arrow_back_grey600_24</item>
-        <item name="*com.google.android.apps.plus:titleTextStyle">@*com.google.android.apps.plus:style/Theme.Arkham.ActionBar.BlackText</item>
-        <item name="*com.google.android.apps.plus:subtitleTextStyle">@*com.google.android.apps.plus:style/Theme.Arkham.NormalWhite.ActionBar.SubtitleText</item>
-        <item name="*com.google.android.apps.plus:background">@*android:color/primary_material_dark</item>
-        <item name="*com.google.android.apps.plus:homeAsUpIndicator">@*com.google.android.apps.plus:drawable/quantum_ic_arrow_back_grey600_24</item>
     </style>
     <style name="Theme.Arkham.NormalWhiteActionBar" parent="@*com.google.android.apps.plus:style/Theme.Arkham">
         <item name="android:windowBackground">@*android:color/background_dark</item>
@@ -281,20 +211,40 @@
         <item name="*com.google.android.apps.plus:colorPrimary">@*android:color/primary_material_dark</item>
         <item name="*com.google.android.apps.plus:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
     </style>
-    <style name="PhotosPromoForeground" parent="@*com.google.android.apps.plus:style/Cast2dpShadow">
-        <item name="android:background">@*android:color/background_dark</item>
-        <item name="android:padding">24.0dip</item>
+    <style name="Theme.Arkham.NormalWhite.ActionBarWithShadow" parent="@*com.google.android.apps.plus:style/Theme.Arkham.ActionBar">
+        <item name="android:background">@*android:color/primary_material_dark</item>
+        <item name="android:titleTextStyle">@*com.google.android.apps.plus:style/Theme.Arkham.ActionBar.BlackText</item>
+        <item name="android:subtitleTextStyle">@*com.google.android.apps.plus:style/Theme.Arkham.NormalWhite.ActionBar.SubtitleText</item>
+        <item name="android:homeAsUpIndicator">@*com.google.android.apps.plus:drawable/quantum_ic_arrow_back_grey600_24</item>
+        <item name="*com.google.android.apps.plus:titleTextStyle">@*com.google.android.apps.plus:style/Theme.Arkham.ActionBar.BlackText</item>
+        <item name="*com.google.android.apps.plus:subtitleTextStyle">@*com.google.android.apps.plus:style/Theme.Arkham.NormalWhite.ActionBar.SubtitleText</item>
+        <item name="*com.google.android.apps.plus:background">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.apps.plus:homeAsUpIndicator">@*com.google.android.apps.plus:drawable/quantum_ic_arrow_back_grey600_24</item>
     </style>
-    <style name="StreamOneUpBase" parent="@*com.google.android.apps.plus:style/Theme.Arkham.Overlay">
-        <item name="android:windowFrame">@null</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:cacheColorHint">@*android:color/background_dark</item>
-        <item name="android:windowFullscreen">false</item>
-        <item name="android:windowSoftInputMode">stateHidden</item>
-        <item name="android:alertDialogTheme">@*com.google.android.apps.plus:style/Theme.Arkham.AlertDialogTheme</item>
-        <item name="android:colorAccent">@*com.google.android.apps.plus:color/quantum_googblue</item>
-        <item name="*com.google.android.apps.plus:colorAccent">@*com.google.android.apps.plus:color/quantum_googblue</item>
-        <item name="*com.google.android.apps.plus:alertDialogTheme">@*com.google.android.apps.plus:style/Theme.Arkham.AlertDialogTheme</item>
+    <style name="Theme.Arkham.White.ActionBar" parent="@*com.google.android.apps.plus:style/Theme.Arkham.ActionBar">
+        <item name="android:background">@*android:color/primary_material_dark</item>
+        <item name="android:titleTextStyle">@*com.google.android.apps.plus:style/Theme.Arkham.ActionBar.TitleTextStyle</item>
+        <item name="android:homeAsUpIndicator">@*com.google.android.apps.plus:drawable/quantum_ic_close_grey600_24</item>
+        <item name="*com.google.android.apps.plus:titleTextStyle">@*com.google.android.apps.plus:style/Theme.Arkham.ActionBar.TitleTextStyle</item>
+        <item name="*com.google.android.apps.plus:background">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.apps.plus:contentInsetStart">0.0dip</item>
+        <item name="*com.google.android.apps.plus:homeAsUpIndicator">@*com.google.android.apps.plus:drawable/quantum_ic_close_grey600_24</item>
+    </style>
+    <style name="Theme.Arkham.WhiteActionBarTheme" parent="@*com.google.android.apps.plus:style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:autoCompleteTextViewStyle">@*com.google.android.apps.plus:style/Theme.Arkham.ActionBar.WhiteSearchViewAutoComplete</item>
+        <item name="*com.google.android.apps.plus:colorControlHighlight">@*android:color/secondary_text_default_material_dark</item>
+    </style>
+    <style name="Theme.Arkham.WithWhiteActionBar" parent="@*com.google.android.apps.plus:style/Theme.Arkham">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowContentOverlay">@*com.google.android.apps.plus:drawable/actionbar_shadow</item>
+        <item name="android:actionBarStyle">@*com.google.android.apps.plus:style/Theme.Arkham.ActionBar</item>
+        <item name="android:actionMenuTextAppearance">@*com.google.android.apps.plus:style/Theme.Arkham.ActionBar.MenuButtonTextStyle</item>
+        <item name="android:actionMenuTextColor">@*com.google.android.apps.plus:color/white_actionbar_done_button_color</item>
+        <item name="*com.google.android.apps.plus:actionBarStyle">@*com.google.android.apps.plus:style/Theme.Arkham.ActionBar</item>
+        <item name="*com.google.android.apps.plus:actionMenuTextAppearance">@*com.google.android.apps.plus:style/Theme.Arkham.ActionBar.MenuButtonTextStyle</item>
+        <item name="*com.google.android.apps.plus:actionMenuTextColor">@*com.google.android.apps.plus:color/white_actionbar_done_button_color</item>
+        <item name="*com.google.android.apps.plus:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.apps.plus:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
     </style>
     <style name="Theme.CollexionBannerPhotoPicker.ActionBar" parent="@*com.google.android.apps.plus:style/Theme.Arkham.ActionBar">
         <item name="android:background">@*android:color/primary_material_dark</item>
@@ -322,6 +272,27 @@
         <item name="*com.google.android.apps.plus:background">@*android:color/primary_material_dark</item>
         <item name="*com.google.android.apps.plus:homeAsUpIndicator">@*com.google.android.apps.plus:drawable/quantum_ic_arrow_back_black_24</item>
     </style>
+    <style name="Theme.EmeraldSea.Dialog" parent="@*android:style/Theme.Material.Dialog" />
+    <style name="Theme.EmeraldSea.Preference.Dialog" parent="@*android:style/Theme.Material.Dialog" />
+    <style name="Theme.Ingest" parent="@*com.google.android.apps.plus:style/Theme.AppCompat">
+        <item name="android:icon">@*android:color/transparent</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textColor">@*com.google.android.apps.plus:color/quantum_grey600</item>
+        <item name="android:logo">@*android:color/transparent</item>
+        <item name="android:actionBarStyle">@*com.google.android.apps.plus:style/Theme.Ingest.ActionBar</item>
+        <item name="android:actionModeCloseDrawable">@*com.google.android.apps.plus:drawable/quantum_ic_clear_white_24</item>
+        <item name="android:homeAsUpIndicator">@*com.google.android.apps.plus:drawable/quantum_ic_arrow_back_grey600_24</item>
+        <item name="android:actionMenuTextColor">@*com.google.android.apps.plus:color/quantum_white_text</item>
+        <item name="android:actionModeStyle">@*com.google.android.apps.plus:style/Theme.Ingest.ActionModeActionBar</item>
+        <item name="*com.google.android.apps.plus:actionBarStyle">@*com.google.android.apps.plus:style/Theme.Ingest.ActionBar</item>
+        <item name="*com.google.android.apps.plus:actionBarSize">@*com.google.android.apps.plus:dimen/actionbar_menuitem_height</item>
+        <item name="*com.google.android.apps.plus:actionMenuTextColor">@*com.google.android.apps.plus:color/quantum_white_text</item>
+        <item name="*com.google.android.apps.plus:actionModeStyle">@*com.google.android.apps.plus:style/Theme.Ingest.ActionModeActionBar</item>
+        <item name="*com.google.android.apps.plus:actionModeCloseDrawable">@*com.google.android.apps.plus:drawable/quantum_ic_clear_white_24</item>
+        <item name="*com.google.android.apps.plus:homeAsUpIndicator">@*com.google.android.apps.plus:drawable/quantum_ic_arrow_back_grey600_24</item>
+        <item name="*com.google.android.apps.plus:colorPrimary">@*android:color/primary_material_dark</item>
+    </style>
     <style name="Theme.Ingest.ActionBar" parent="@*com.google.android.apps.plus:style/Widget.AppCompat.ActionBar">
         <item name="android:background">@*android:color/primary_material_dark</item>
         <item name="android:displayOptions">showHome|showTitle</item>
@@ -345,7 +316,7 @@
         <item name="*com.google.android.apps.plus:actionOverflowButtonStyle">@*com.google.android.apps.plus:style/Theme.Photos.Material.ActionBar.Overflow</item>
         <item name="*com.google.android.apps.plus:actionBarStyle">@*com.google.android.apps.plus:style/Theme.Photos.Material.ActionBar</item>
         <item name="*com.google.android.apps.plus:actionBarSize">@*com.google.android.apps.plus:dimen/action_bar_menu_item_height</item>
-        <item name="*com.google.android.apps.plus:actionMenuTextColor">?android:textColorPrimary</item>
+        <item name="*com.google.android.apps.plus:actionMenuTextColor">?*android:textColorPrimary</item>
         <item name="*com.google.android.apps.plus:actionModeStyle">@*com.google.android.apps.plus:style/Theme.Photos.Material.ActionModeActionBar</item>
         <item name="*com.google.android.apps.plus:actionModeCloseDrawable">@*com.google.android.apps.plus:drawable/quantum_ic_clear_white_24</item>
         <item name="*com.google.android.apps.plus:homeAsUpIndicator">@*com.google.android.apps.plus:drawable/quantum_ic_arrow_back_grey600_24</item>
@@ -368,6 +339,24 @@
         <item name="*com.google.android.apps.plus:supportRingtonePreferenceStyle">@*com.google.android.apps.plus:style/SupportPreference.RingtonePreference</item>
         <item name="*com.google.android.apps.plus:supportPreferencePanelStyle">@*com.google.android.apps.plus:style/SupportPreferencePanel</item>
     </style>
+    <style name="Theme.Plus.Launcher" parent="@*com.google.android.apps.plus:style/Theme.Arkham.Overlay.NoShadow">
+        <item name="android:windowBackground">@*com.google.android.apps.plus:drawable/quantum_launchscreen_google_plus</item>
+        <item name="*com.google.android.apps.plus:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="android:backgroundTint">@null</item>
+        <item name="android:windowShowWallpaper">false</item>
+    </style>
+    <style name="Theme.Plus.Launcher.NoActionBar" parent="@*com.google.android.apps.plus:style/Theme.Arkham.NoActionBar">
+        <item name="android:windowBackground">@*com.google.android.apps.plus:drawable/quantum_launchscreen_google_plus</item>
+        <item name="*com.google.android.apps.plus:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="android:backgroundTint">@null</item>
+        <item name="android:windowShowWallpaper">false</item>
+    </style>
+    <style name="Theme.Plus.SpinnerBlack" parent="@*com.google.android.apps.plus:style/Theme.Arkham">
+        <item name="*com.google.android.apps.plus:colorControlNormal">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.apps.plus:colorControlActivated">@*android:color/white</item>
+        <item name="*com.google.android.apps.plus:colorControlHighlight">@*android:color/white</item>
+    </style>
+    <style name="Theme.Settings" parent="@*android:style/Theme.DeviceDefault.Light" />
     <style name="Theme.Settings.Preferences.Arkham" parent="@*com.google.android.apps.plus:style/Theme.Arkham.NormalWhiteActionBar">
         <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="android:actionBarSize">@*com.google.android.apps.plus:dimen/action_bar_menu_item_height</item>
@@ -387,35 +376,13 @@
         <item name="*com.google.android.apps.plus:supportPreferencePanelStyle">@*com.google.android.apps.plus:style/SupportPreferencePanel</item>
         <item name="*com.google.android.apps.plus:supportSwitchPreferenceStyle">@*com.google.android.apps.plus:style/SupportPreference.SwitchPreference</item>
     </style>
-    <style name="Theme.Square.Edit" parent="@*com.google.android.apps.plus:style/Theme.Square">
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-        <item name="*com.google.android.apps.plus:colorAccent">@*com.google.android.apps.plus:color/quantum_googblue</item>
-    </style>
-    <style name="PlusFab">
-        <item name="android:layout_margin">@*com.google.android.apps.plus:dimen/navigation_fab_margin</item>
-        <item name="android:src">@*com.google.android.apps.plus:drawable/quantum_ic_create_white_24</item>
-        <item name="android:backgroundTint">@null</item>
-    </style>
-
-
-    <style name="Theme.Plus.SpinnerBlack" parent="@*com.google.android.apps.plus:style/Theme.Arkham">
-        <item name="*com.google.android.apps.plus:colorControlNormal">@*android:color/secondary_text_default_material_dark</item>
-        <item name="*com.google.android.apps.plus:colorControlActivated">@*android:color/white</item>
-        <item name="*com.google.android.apps.plus:colorControlHighlight">@*android:color/white</item>
-    </style>
     <style name="Theme.SpinnerBlack" parent="@*com.google.android.apps.plus:style/Theme.Arkham">
         <item name="*com.google.android.apps.plus:colorControlNormal">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.apps.plus:colorControlActivated">@*android:color/white</item>
         <item name="*com.google.android.apps.plus:colorControlHighlight">@*android:color/white</item>
     </style>
-
-
-    <style name="Base.TextAppearance.GoogleMaterial.OpenSearch" parent="@*com.google.android.apps.plus:style/TextAppearance.AppCompat.Small">
-        <item name="android:textSize">@*com.google.android.apps.plus:dimen/google_opensearchbar_text_size</item>
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:textColorHint">@*android:color/secondary_text_default_material_dark</item>
-        <item name="android:fontFamily">@*com.google.android.apps.plus:font/google_sans</item>
-        <item name="*com.google.android.apps.plus:fontFamily">@*com.google.android.apps.plus:font/google_sans</item>
+    <style name="Theme.Square.Edit" parent="@*com.google.android.apps.plus:style/Theme.Square">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="*com.google.android.apps.plus:colorAccent">@*com.google.android.apps.plus:color/quantum_googblue</item>
     </style>
-
 </resources>

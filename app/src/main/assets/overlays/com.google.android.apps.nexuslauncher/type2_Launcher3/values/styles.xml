@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="AllAppsEmptySearchBackground">
+        <item name="android:colorForeground">@*com.android.launcher3:color/all_apps_bg_hand_fill</item>
+        <item name="android:colorControlHighlight">#ffffffff</item>
+        <item name="android:colorPrimary">@*android:color/primary_material_dark</item>
+    </style>
+    <style name="AllAppsEmptySearchBackground.Dark" parent="@*com.android.launcher3:style/AllAppsEmptySearchBackground">
+        <item name="android:colorForeground">@*com.android.launcher3:color/all_apps_bg_hand_fill_dark</item>
+        <item name="android:colorControlHighlight">#ffffffff</item>
+        <item name="android:colorPrimary">@*android:color/primary_material_dark</item>
+    </style>
     <style name="BaseLauncherTheme" parent="@*android:style/Theme.Material.NoActionBar">
         <item name="android:windowBackground">@*android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>
@@ -8,9 +18,6 @@
         <item name="android:keyboardLayout">@*com.android.launcher3:layout/search_container_all_apps</item>
         <item name="android:colorEdgeEffect">#ffffffff</item>
     </style>
-
-
-
     <style name="BaseLauncherThemeWithCustomAttrs" parent="@*com.android.launcher3:style/BaseLauncherTheme">
         <item name="*com.android.launcher3:allAppsScrimColor">#33000000</item>
         <item name="*com.android.launcher3:allAppsNavBarScrimColor">#80000000</item>
@@ -35,14 +42,6 @@
         <item name="android:colorPrimaryDark">#cc000000</item>
         <item name="android:colorAccent">#ff1976d2</item>
     </style>
-    <style name="LauncherThemeDarkText" parent="@*com.android.launcher3:style/LauncherTheme">
-        <item name="*com.android.launcher3:isWorkspaceDarkText">false</item>
-        <item name="*com.android.launcher3:workspaceTextColor">#ffffffff</item>
-        <item name="*com.android.launcher3:workspaceShadowColor">@*android:color/transparent</item>
-        <item name="*com.android.launcher3:workspaceAmbientShadowColor">@*android:color/transparent</item>
-        <item name="*com.android.launcher3:workspaceKeyShadowColor">@*android:color/transparent</item>
-        <item name="*com.android.launcher3:workspaceStatusBarScrim">@null</item>
-    </style>
     <style name="LauncherThemeDark" parent="@*com.android.launcher3:style/LauncherTheme">
         <item name="android:textColorPrimary">#ffffffff</item>
         <item name="android:textColorSecondary">#ffffffff</item>
@@ -60,15 +59,12 @@
         <item name="*com.android.launcher3:isMainColorDark">true</item>
         <item name="*com.android.launcher3:widgetsTheme">@*com.android.launcher3:style/WidgetContainerTheme.Dark</item>
     </style>
-    <style name="AllAppsEmptySearchBackground">
-        <item name="android:colorForeground">@*com.android.launcher3:color/all_apps_bg_hand_fill</item>
-        <item name="android:colorControlHighlight">#ffffffff</item>
-        <item name="android:colorPrimary">@*android:color/primary_material_dark</item>
+    <style name="LauncherThemeDarkText" parent="@*com.android.launcher3:style/LauncherTheme">
+        <item name="*com.android.launcher3:isWorkspaceDarkText">false</item>
+        <item name="*com.android.launcher3:workspaceTextColor">#ffffffff</item>
+        <item name="*com.android.launcher3:workspaceShadowColor">@*android:color/transparent</item>
+        <item name="*com.android.launcher3:workspaceAmbientShadowColor">@*android:color/transparent</item>
+        <item name="*com.android.launcher3:workspaceKeyShadowColor">@*android:color/transparent</item>
+        <item name="*com.android.launcher3:workspaceStatusBarScrim">@null</item>
     </style>
-    <style name="AllAppsEmptySearchBackground.Dark" parent="@*com.android.launcher3:style/AllAppsEmptySearchBackground">
-        <item name="android:colorForeground">@*com.android.launcher3:color/all_apps_bg_hand_fill_dark</item>
-        <item name="android:colorControlHighlight">#ffffffff</item>
-        <item name="android:colorPrimary">@*android:color/primary_material_dark</item>
-    </style>
-
 </resources>

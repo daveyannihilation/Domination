@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="AllAppsEmptySearchBackground">
+        <item name="android:colorForeground">@*com.google.android.apps.nexuslauncher:color/all_apps_bg_hand_fill</item>
+        <item name="android:colorControlHighlight">#ffffffff</item>
+        <item name="android:colorPrimary">@*android:color/primary_material_dark</item>
+    </style>
+    <style name="AllAppsEmptySearchBackground.Dark" parent="@*com.google.android.apps.nexuslauncher:style/AllAppsEmptySearchBackground">
+        <item name="android:colorForeground">@*com.google.android.apps.nexuslauncher:color/all_apps_bg_hand_fill_dark</item>
+        <item name="android:colorControlHighlight">#ffffffff</item>
+        <item name="android:colorPrimary">@*android:color/primary_material_dark</item>
+    </style>
     <style name="BaseLauncherTheme" parent="@*android:style/Theme.Material.NoActionBar">
         <item name="android:windowBackground">@*android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>
@@ -8,9 +18,6 @@
         <item name="android:keyboardLayout">@*com.google.android.apps.nexuslauncher:layout/search_container_all_apps</item>
         <item name="android:colorEdgeEffect">#ffffffff</item>
     </style>
-
-
-
     <style name="BaseLauncherThemeWithCustomAttrs" parent="@*com.google.android.apps.nexuslauncher:style/BaseLauncherTheme">
         <item name="*com.google.android.apps.nexuslauncher:allAppsScrimColor">#33000000</item>
         <item name="*com.google.android.apps.nexuslauncher:allAppsNavBarScrimColor">#80000000</item>
@@ -25,14 +32,6 @@
         <item name="*com.google.android.apps.nexuslauncher:workspaceKeyShadowColor">#44000000</item>
         <item name="*com.google.android.apps.nexuslauncher:workspaceStatusBarScrim">@*com.google.android.apps.nexuslauncher:drawable/workspace_bg</item>
         <item name="*com.google.android.apps.nexuslauncher:widgetsTheme">@*com.google.android.apps.nexuslauncher:style/WidgetContainerTheme</item>
-    </style>
-    <style name="LauncherThemeDarkText" parent="@*com.google.android.apps.nexuslauncher:style/LauncherTheme">
-        <item name="*com.google.android.apps.nexuslauncher:isWorkspaceDarkText">false</item>
-        <item name="*com.google.android.apps.nexuslauncher:workspaceTextColor">#ffffffff</item>
-        <item name="*com.google.android.apps.nexuslauncher:workspaceShadowColor">@*android:color/transparent</item>
-        <item name="*com.google.android.apps.nexuslauncher:workspaceAmbientShadowColor">@*android:color/transparent</item>
-        <item name="*com.google.android.apps.nexuslauncher:workspaceKeyShadowColor">@*android:color/transparent</item>
-        <item name="*com.google.android.apps.nexuslauncher:workspaceStatusBarScrim">@null</item>
     </style>
     <style name="LauncherThemeDark" parent="@*com.google.android.apps.nexuslauncher:style/LauncherTheme">
         <item name="android:textColorPrimary">#ffffffff</item>
@@ -49,15 +48,12 @@
         <item name="*com.google.android.apps.nexuslauncher:isMainColorDark">true</item>
         <item name="*com.google.android.apps.nexuslauncher:widgetsTheme">@*com.google.android.apps.nexuslauncher:style/WidgetContainerTheme.Dark</item>
     </style>
-    <style name="AllAppsEmptySearchBackground">
-        <item name="android:colorForeground">@*com.google.android.apps.nexuslauncher:color/all_apps_bg_hand_fill</item>
-        <item name="android:colorControlHighlight">#ffffffff</item>
-        <item name="android:colorPrimary">@*android:color/primary_material_dark</item>
+    <style name="LauncherThemeDarkText" parent="@*com.google.android.apps.nexuslauncher:style/LauncherTheme">
+        <item name="*com.google.android.apps.nexuslauncher:isWorkspaceDarkText">false</item>
+        <item name="*com.google.android.apps.nexuslauncher:workspaceTextColor">#ffffffff</item>
+        <item name="*com.google.android.apps.nexuslauncher:workspaceShadowColor">@*android:color/transparent</item>
+        <item name="*com.google.android.apps.nexuslauncher:workspaceAmbientShadowColor">@*android:color/transparent</item>
+        <item name="*com.google.android.apps.nexuslauncher:workspaceKeyShadowColor">@*android:color/transparent</item>
+        <item name="*com.google.android.apps.nexuslauncher:workspaceStatusBarScrim">@null</item>
     </style>
-    <style name="AllAppsEmptySearchBackground.Dark" parent="@*com.google.android.apps.nexuslauncher:style/AllAppsEmptySearchBackground">
-        <item name="android:colorForeground">@*com.google.android.apps.nexuslauncher:color/all_apps_bg_hand_fill_dark</item>
-        <item name="android:colorControlHighlight">#ffffffff</item>
-        <item name="android:colorPrimary">@*android:color/primary_material_dark</item>
-    </style>
-
 </resources>

@@ -8,9 +8,9 @@
         </LinearLayout>
         <FrameLayout android:id="@*com.whatsapp:id/quoted_message_holder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@*com.whatsapp:style/QuotedFrame" />
         <FrameLayout android:id="@*com.whatsapp:id/map_frame" android:padding="@*com.whatsapp:dimen/conversation_video_thumb_padding" android:layout_width="fill_parent" android:layout_height="147.0dip">
-            <ImageView android:id="@*com.whatsapp:id/thumb" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <com.whatsapp.WaImageView android:id="@*com.whatsapp:id/thumb" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
             <com.whatsapp.location.WaMapView android:id="@*com.whatsapp:id/map_holder" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-            <Button android:id="@*com.whatsapp:id/thumb_button" android:background="@*com.whatsapp:drawable/selector_orange_gradient" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.whatsapp.WaButton android:id="@*com.whatsapp:id/thumb_button" android:background="@*com.whatsapp:drawable/selector_orange_gradient" android:layout_width="fill_parent" android:layout_height="fill_parent" />
             <View android:background="@*com.whatsapp:drawable/balloon_incoming_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" />
             <ProgressBar android:layout_gravity="bottom|center|left" android:id="@*com.whatsapp:id/progress_bar" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="8.0dip" />
         </FrameLayout>
@@ -23,5 +23,5 @@
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-    <ImageView android:id="@*com.whatsapp:id/forward" style="@*com.whatsapp:style/ForwardButton" />
+    <com.whatsapp.WaImageView android:id="@*com.whatsapp:id/forward" style="@*com.whatsapp:style/ForwardButton" />
 </merge>
