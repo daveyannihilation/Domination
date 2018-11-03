@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_selected="true" android:color="#ff1976d2" />
-    <item android:state_enabled="true" android:color="@*android:color/legacy_primary" />
-    <item android:color="@*android:color/secondary_text_leanback_light" />
+    <item android:state_enabled="false" android:color="@*android:color/secondary_text_leanback_light" android:alpha="@*com.chrome.dev:dimen/default_disabled_alpha" />
+    <item android:state_focused="true" android:state_selected="true" android:color="@*com.chrome.dev:color/modern_blue_600" android:alpha="@*com.chrome.dev:dimen/chip_background_selected_focused_alpha" />
+    <item android:state_selected="true" android:color="#ff1976d2" android:alpha="@*com.chrome.dev:dimen/chip_background_selected_alpha" />
+    <item android:state_focused="true" android:color="@*android:color/dim_foreground_light" android:alpha="@*com.chrome.dev:dimen/default_focused_alpha" />
+    <item android:color="@*android:color/legacy_primary" />
 </selector>

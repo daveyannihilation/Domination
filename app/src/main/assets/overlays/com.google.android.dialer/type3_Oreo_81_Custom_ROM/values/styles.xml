@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="BottomRowIcon.Spam" parent="@*com.google.android.dialer:style/BottomRowIcon">
+        <item name="*com.google.android.dialer:colorControlNormal">@*android:color/secondary_text_default_material_dark</item>
+    </style>
     <style name="ButtonTheme">
         <item name="android:colorControlHighlight">#33ffffff</item>
     </style>
@@ -15,118 +18,6 @@
         <item name="*com.google.android.dialer:cardCornerRadius">8.0dip</item>
         <item name="*com.google.android.dialer:cardElevation">0.0dip</item>
         <item name="*com.google.android.dialer:cardMaxElevation">6.0dip</item>
-    </style>
-    <style name="DialerButtonTextStyle" parent="@*android:style/TextAppearance.Material.Widget.Button">
-        <item name="android:textColor">#ffffffff</item>
-    </style>
-    <style name="DialerFlatButtonStyle" parent="@*android:style/Widget.Material.Button">
-        <item name="android:textAppearance">@*com.google.android.dialer:style/Dialer.TextAppearance.SubHeader2</item>
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:background">?*android:selectableItemBackground</item>
-        <item name="android:minHeight">36.0dip</item>
-        <item name="android:paddingStart">@*com.google.android.dialer:dimen/button_horizontal_padding</item>
-        <item name="android:paddingEnd">@*com.google.android.dialer:dimen/button_horizontal_padding</item>
-    </style>
-    <style name="Dialer.Incall.TextAppearance.Message" parent="@*com.google.android.dialer:style/Dialer.Incall.TextAppearance">
-        <item name="android:textSize">24.0sp</item>
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:fontFamily">sans-serif</item>
-    </style>
-    <style name="Dialer.Incall.TextAppearance.RttMessage" parent="@*com.google.android.dialer:style/Dialer.Incall.TextAppearance">
-        <item name="android:textSize">16.0sp</item>
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:fontFamily">sans-serif</item>
-    </style>
-    <style name="Dialpad.Themed" parent="@*com.google.android.dialer:style/Dialpad">
-        <item name="*com.google.android.dialer:dialpad_text_color">#ffffffff</item>
-        <item name="*com.google.android.dialer:dialpad_text_color_primary">@*android:color/white</item>
-        <item name="*com.google.android.dialer:dialpad_text_color_secondary">#ffdddddd</item>
-        <item name="*com.google.android.dialer:dialpad_background">@*android:color/background_dark</item>
-    </style>
-    <style name="DialtactsActionBarTabTextStyle" parent="@*android:style/Widget.Material.ActionBar.TabText">
-        <item name="android:textColor">@*android:color/white</item>
-    </style>
-
-    <style name="ErrorActionStyle" parent="@*com.google.android.dialer:style/Dialer.TextAppearance.SubHeader2">
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:gravity">end|center</item>
-        <item name="android:padding">8.0dip</item>
-        <item name="android:focusable">true</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">48.0dip</item>
-        <item name="android:minHeight">48.0dip</item>
-        <item name="android:singleLine">true</item>
-        <item name="android:layout_marginStart">8.0dip</item>
-        <item name="android:layout_marginEnd">8.0dip</item>
-    </style>
-    <style name="HistoryItemBottomSheet.Base" parent="@*com.google.android.dialer:style/Theme.Design.Light.BottomSheetDialog">
-        <item name="android:windowTranslucentStatus">false</item>
-        <item name="android:windowTranslucentNavigation">false</item>
-        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
-        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
-    </style>
-
-    <style name="ListViewStyle" parent="@*android:style/Widget.Material.ListView">
-        <item name="android:overScrollMode">always</item>
-    </style>
-
-    <style name="MainActionModeStyle" parent="@*com.google.android.dialer:style/Widget.AppCompat.ActionMode">
-        <item name="*com.google.android.dialer:titleTextStyle">@*com.google.android.dialer:style/Dialer.TextAppearance.Header1</item>
-        <item name="*com.google.android.dialer:background">@*android:color/background_floating_material_dark</item>
-    </style>
-    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light" />
-
-    <style name="RaisedErrorActionStyle" parent="@*com.google.android.dialer:style/Widget.AppCompat.Button.Colored">
-        <item name="android:textSize">14.0sp</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">@*com.google.android.dialer:dimen/call_log_action_height</item>
-        <item name="android:colorButtonNormal">#ff1976d2</item>
-    </style>
-
-    <style name="SettingsStyle" parent="@*com.google.android.dialer:style/Dialer.ThemeBase.NoActionBar">
-        <item name="android:textColorPrimary">@*com.google.android.dialer:color/settings_text_color_primary</item>
-        <item name="android:textColorSecondary">@*com.google.android.dialer:color/settings_text_color_secondary</item>
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-        <item name="android:colorAccent">#ff1976d2</item>
-    </style>
-    <style name="SettingsStyle.Dark" parent="@*com.google.android.dialer:style/Dialer.Dark.ThemeBase.NoActionBar">
-        <item name="android:textColorPrimary">@*com.google.android.dialer:color/settings_text_color_primary</item>
-        <item name="android:textColorSecondary">@*com.google.android.dialer:color/settings_text_color_secondary</item>
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-        <item name="android:colorAccent">#ff1976d2</item>
-    </style>
-    <style name="TextActionStyle">
-        <item name="android:textColor">#ff1976d2</item>
-        <item name="android:gravity">end|center</item>
-        <item name="android:focusable">true</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">@*com.google.android.dialer:dimen/call_log_action_height</item>
-        <item name="android:singleLine">true</item>
-        <item name="android:textAllCaps">true</item>
-        <item name="android:fontFamily">sans-serif-medium</item>
-        <item name="android:paddingStart">@*com.google.android.dialer:dimen/call_log_action_horizontal_padding</item>
-        <item name="android:paddingEnd">@*com.google.android.dialer:dimen/call_log_action_horizontal_padding</item>
-    </style>
-    <style name="Theme.CallSubjectDialogTheme" parent="@*android:style/Theme.Material.Dialog">
-        <item name="android:windowBackground">@*android:color/transparent</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowIsFloating">true</item>
-        <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">fill_parent</item>
-        <item name="android:windowFullscreen">false</item>
-        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
-        <item name="android:windowElevation">0.0dip</item>
-    </style>
-    <style name="TosLinkStyle">
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:fontFamily">sans-serif-medium</item>
-    </style>
-
-
-    <style name="BottomRowIcon.Spam" parent="@*com.google.android.dialer:style/BottomRowIcon">
-        <item name="*com.google.android.dialer:colorControlNormal">@*android:color/secondary_text_default_material_dark</item>
     </style>
     <style name="Dialer.Dark.ThemeBase" parent="@*com.google.android.dialer:style/Dialer.Dark">
         <item name="android:colorBackground">@*android:color/background_dark</item>
@@ -205,6 +96,96 @@
         <item name="android:textColorPrimary">@*com.google.android.dialer:color/dialer_primary_text_color</item>
         <item name="android:colorBackgroundFloating">@*android:color/background_floating_material_dark</item>
     </style>
+    <style name="DialerFlatButtonStyle" parent="@*android:style/Widget.Material.Button">
+        <item name="android:textAppearance">@*com.google.android.dialer:style/Dialer.TextAppearance.SubHeader2</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">?*android:selectableItemBackground</item>
+        <item name="android:minHeight">36.0dip</item>
+        <item name="android:paddingStart">@*com.google.android.dialer:dimen/button_horizontal_padding</item>
+        <item name="android:paddingEnd">@*com.google.android.dialer:dimen/button_horizontal_padding</item>
+    </style>
+    <style name="Dialer.Incall.TextAppearance.Message" parent="@*com.google.android.dialer:style/Dialer.Incall.TextAppearance">
+        <item name="android:textSize">24.0sp</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="Dialpad.Themed" parent="@*com.google.android.dialer:style/Dialpad">
+        <item name="*com.google.android.dialer:dialpad_text_color">#ffffffff</item>
+        <item name="*com.google.android.dialer:dialpad_text_color_primary">@*android:color/white</item>
+        <item name="*com.google.android.dialer:dialpad_text_color_secondary">#ffdddddd</item>
+        <item name="*com.google.android.dialer:dialpad_background">@*android:color/background_dark</item>
+    </style>
+    <style name="DialtactsActionBarTabTextStyle" parent="@*android:style/Widget.Material.ActionBar.TabText">
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="ErrorActionStyle" parent="@*com.google.android.dialer:style/Dialer.TextAppearance.SubHeader2">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:gravity">end|center</item>
+        <item name="android:padding">8.0dip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">48.0dip</item>
+        <item name="android:minHeight">48.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginStart">8.0dip</item>
+        <item name="android:layout_marginEnd">8.0dip</item>
+    </style>
+    <style name="HistoryItemBottomSheet.Base" parent="@*com.google.android.dialer:style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+    </style>
+    <style name="ListViewStyle" parent="@*android:style/Widget.Material.ListView">
+        <item name="android:overScrollMode">always</item>
+    </style>
+    <style name="MainActionModeStyle" parent="@*com.google.android.dialer:style/Widget.AppCompat.ActionMode">
+        <item name="*com.google.android.dialer:titleTextStyle">@*com.google.android.dialer:style/Dialer.TextAppearance.Header1</item>
+        <item name="*com.google.android.dialer:background">@*android:color/background_floating_material_dark</item>
+    </style>
+    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light" />
+    <style name="RaisedErrorActionStyle" parent="@*com.google.android.dialer:style/Widget.AppCompat.Button.Colored">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@*com.google.android.dialer:dimen/call_log_action_height</item>
+        <item name="android:colorButtonNormal">#ff1976d2</item>
+    </style>
+    <style name="SettingsStyle" parent="@*com.google.android.dialer:style/Dialer.ThemeBase.NoActionBar">
+        <item name="android:textColorPrimary">@*com.google.android.dialer:color/settings_text_color_primary</item>
+        <item name="android:textColorSecondary">@*com.google.android.dialer:color/settings_text_color_secondary</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:colorAccent">#ff1976d2</item>
+    </style>
+    <style name="SettingsStyle.Dark" parent="@*com.google.android.dialer:style/Dialer.Dark.ThemeBase.NoActionBar">
+        <item name="android:textColorPrimary">@*com.google.android.dialer:color/settings_text_color_primary</item>
+        <item name="android:textColorSecondary">@*com.google.android.dialer:color/settings_text_color_secondary</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:colorAccent">#ff1976d2</item>
+    </style>
+    <style name="TextActionStyle">
+        <item name="android:textColor">#ff1976d2</item>
+        <item name="android:gravity">end|center</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@*com.google.android.dialer:dimen/call_log_action_height</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:paddingStart">@*com.google.android.dialer:dimen/call_log_action_horizontal_padding</item>
+        <item name="android:paddingEnd">@*com.google.android.dialer:dimen/call_log_action_horizontal_padding</item>
+    </style>
+    <style name="Theme.CallSubjectDialogTheme" parent="@*android:style/Theme.Material.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+        <item name="android:windowElevation">0.0dip</item>
+    </style>
     <style name="Theme.InCallScreen" parent="@*com.google.android.dialer:style/Dialer.Dark.ThemeBase.NoActionBar">
         <item name="android:windowBackground">@*android:color/background_floating_material_dark</item>
         <item name="android:windowAnimationStyle">@null</item>
@@ -217,5 +198,9 @@
         <item name="android:windowLightStatusBar">false</item>
         <item name="android:windowShowWallpaper">true</item>
 	    <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+    <style name="TosLinkStyle">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
     </style>
 </resources>

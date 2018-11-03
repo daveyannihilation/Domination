@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@*com.chrome.dev:id/control_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ViewStub android:id="@*com.chrome.dev:id/omnibox_results_container_stub" android:background="@*android:color/secondary_text_leanback_light" android:layout="@*com.chrome.dev:layout/omnibox_results_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+<android.support.design.widget.CoordinatorLayout android:id="@*com.chrome.dev:id/control_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:chrome="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@*com.chrome.dev:id/omnibox_results_container_stub" android:background="@*android:color/secondary_text_leanback_light" android:layout="@*com.chrome.dev:layout/omnibox_results_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@*com.chrome.dev:dimen/toolbar_height_no_shadow" chrome:layout_anchor="@*com.chrome.dev:id/toolbar" chrome:layout_anchorGravity="start|bottom|center" />
     <FrameLayout android:id="@*com.chrome.dev:id/toolbar" android:background="@*android:color/secondary_text_leanback_light" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@*com.chrome.dev:dimen/toolbar_height_no_shadow" android:paddingStart="@*com.chrome.dev:dimen/toolbar_edge_padding" android:paddingEnd="@*com.chrome.dev:dimen/toolbar_edge_padding">
         <org.chromium.chrome.browser.searchwidget.SearchActivityLocationBarLayout android:layout_gravity="center_vertical" android:id="@*com.chrome.dev:id/search_location_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@*com.chrome.dev:dimen/location_bar_vertical_margin" android:layout_marginBottom="@*com.chrome.dev:dimen/location_bar_vertical_margin" android:paddingStart="@*com.chrome.dev:dimen/location_bar_lateral_padding" android:paddingEnd="@*com.chrome.dev:dimen/location_bar_lateral_padding" />
     </FrameLayout>
     <FrameLayout android:id="@*com.chrome.dev:id/bottom_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-</FrameLayout>
+</android.support.design.widget.CoordinatorLayout>
