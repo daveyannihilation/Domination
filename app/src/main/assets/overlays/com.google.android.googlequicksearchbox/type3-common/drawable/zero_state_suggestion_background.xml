@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@*com.google.android.googlequicksearchbox:dimen/zero_state_suggestion_corner_radius" />
+            <stroke android:width="@*com.google.android.googlequicksearchbox:dimen/zero_state_suggestion_border_width" android:color="@*com.google.android.googlequicksearchbox:color/zero_state_suggestion_border_color" />
+        </shape>
+    </item>
+    <item>
+        <ripple android:color="@*com.google.android.googlequicksearchbox:color/zero_state_suggestion_selected_background_color">
+            <item android:id="@*android:id/mask">
+                <shape android:shape="rectangle">
+                    <corners android:radius="@*com.google.android.googlequicksearchbox:dimen/zero_state_suggestion_corner_radius" />
+                    <solid android:color="@*android:color/background_floating_material_dark" />
+                </shape>
+            </item>
+        </ripple>
+    </item>
+</layer-list>

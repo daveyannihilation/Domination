@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light" />
-
-    <style name="Theme.Camera" parent="@*android:style/Theme.DeviceDefault.Light">
-        <item name="android:colorBackground">@*com.android.camera2:color/camera_gray_background</item>
-        <item name="android:windowBackground">@*com.android.camera2:drawable/cover</item>
-        <item name="android:windowTitleSize">0.0dip</item>
-        <item name="android:windowFullscreen">true</item>
-        <item name="android:colorBackgroundCacheHint">@*com.android.camera2:color/camera_gray_background</item>
-        <item name="android:windowActionBar">false</item>
-        <item name="android:actionBarStyle">@*com.android.camera2:style/Camera.ActionBar</item>
-        <item name="android:windowActionBarOverlay">true</item>
+    <style name="bt_SpeedDialItemTitle">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@*com.android.camera2:drawable/fab_text_label_background</item>
+        <item name="android:paddingLeft">9.0dip</item>
+        <item name="android:paddingRight">9.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">26.0dip</item>
+        <item name="android:layout_marginRight">14.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textIsSelectable">false</item>
     </style>
-
-    <style name="Theme.BurstEditor.Toolbar.Popup" parent="@*android:style/ThemeOverlay.Material" />
     <style name="Camera.ActionBar" parent="@*android:style/Widget.Material.ActionBar">
         <item name="android:background">@*com.android.camera2:drawable/actionbar_translucent</item>
         <item name="android:paddingRight">16.0dip</item>
@@ -34,31 +35,24 @@
         <item name="android:textStyle">normal</item>
         <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
     </style>
-
+    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light" />
+    <style name="Theme.BurstEditor.Toolbar.Popup" parent="@*android:style/ThemeOverlay.Material" />
+    <style name="Theme.Camera" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:colorBackground">@*com.android.camera2:color/camera_gray_background</item>
+        <item name="android:windowBackground">@*com.android.camera2:drawable/cover</item>
+        <item name="android:windowTitleSize">0.0dip</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:colorBackgroundCacheHint">@*com.android.camera2:color/camera_gray_background</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:actionBarStyle">@*com.android.camera2:style/Camera.ActionBar</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+    <style name="Theme.CameraActivityLayout" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:layout_width">fill_parent</item>
+    </style>
     <style name="Theme.CameraSettings" parent="@*android:style/Theme.DeviceDefault.Light">
         <item name="android:preferenceCategoryStyle">@*com.android.camera2:style/PreferenceCategoryStyle</item>
         <item name="android:windowFullscreen">true</item>
         <item name="android:actionBarStyle">@*com.android.camera2:style/Settings.ActionBar</item>
     </style>
-    <style name="Theme.CameraActivityLayout" parent="@*android:style/Theme.DeviceDefault.Light">
-        <item name="android:layout_width">fill_parent</item>
-    </style>
-
-    <style name="bt_SpeedDialItemTitle">
-        <item name="android:textSize">14.0dip</item>
-        <item name="android:typeface">sans</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:layout_gravity">center_vertical</item>
-        <item name="android:background">@*com.android.camera2:drawable/fab_text_label_background</item>
-        <item name="android:paddingLeft">9.0dip</item>
-        <item name="android:paddingRight">9.0dip</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">26.0dip</item>
-        <item name="android:layout_marginRight">14.0dip</item>
-        <item name="android:singleLine">true</item>
-        <item name="android:textIsSelectable">false</item>
-    </style>
-
 </resources>

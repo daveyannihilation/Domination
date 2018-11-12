@@ -4,31 +4,19 @@
     <style name="Base.TextAppearance.AppCompat.Large.Inverse" parent="@*android:style/TextAppearance.Material.Large" />
     <style name="Base.TextAppearance.AppCompat.Medium.Inverse" parent="@*android:style/TextAppearance.Material.Medium" />
     <style name="Base.TextAppearance.AppCompat.Small.Inverse" parent="@*android:style/TextAppearance.Material.Small" />
-    <style name="Theme.AppInvite.Preview.Base" parent="@*android:style/Theme.Material.DialogWhenLarge.NoActionBar" />
     <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse" parent="@*android:style/TextAppearance.Material.Widget.ActionBar.Subtitle" />
     <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse" parent="@*android:style/TextAppearance.Material.Widget.ActionBar.Title" />
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabText" parent="@*android:style/Widget.Material.ActionBar.TabText" />
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabText.Inverse" parent="@*android:style/Widget.Material.ActionBar.TabText" />
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabView" parent="@*android:style/Widget.Material.ActionBar.TabView" />
     <style name="Base.Widget.AppCompat.Light.PopupMenu" parent="@*android:style/Widget.Material.PopupMenu" />
-    <style name="PlayDrawerSelectedText" parent="@*com.google.android.music:style/PlayDrawerBaseText">
-        <item name="android:background">#ff555555</item>
-        <item name="android:foreground">@*com.google.android.music:drawable/play_highlight_overlay_light</item>
+    <style name="MusicActivityTheme.Launcher" parent="@*com.google.android.music:style/MusicActivityTheme">
+        <item name="android:windowBackground">@*com.google.android.music:drawable/splashscreen_logo</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowShowWallpaper">false</item>
     </style>
-
-    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light">
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:textColorLink">@*android:color/accent_material_dark</item>
-        <item name="android:windowActionBar">false</item>
-        <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
-    </style>
-    <style name="Platform.V21.AppCompat.Light" parent="@*android:style/Theme.Material.NoActionBar">
-        <item name="android:textColorHintInverse">#ffbbbbbb</item>
-        <item name="android:textColorHint">#ffbbbbbb</item>
-        <item name="android:textColorLink">@*android:color/accent_material_dark</item>
-        <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
-    </style>
-
     <style name="NowCard.ModuleTitle" parent="@*com.google.android.music:style/NowCard">
         <item name="android:textSize">@*com.google.android.music:dimen/now_card_module_title_size</item>
         <item name="android:textColor">#ffffffff</item>
@@ -38,16 +26,17 @@
         <item name="android:fontFamily">sans-serif-medium</item>
         <item name="android:letterSpacing">0.05</item>
     </style>
-
-
-
-    <style name="MusicActivityTheme.Launcher" parent="@*com.google.android.music:style/MusicActivityTheme">
-        <item name="android:windowBackground">@*com.google.android.music:drawable/splashscreen_logo</item>
-        <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
-        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
-        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
-        <item name="android:windowShowWallpaper">false</item>
+    <style name="Platform.V21.AppCompat.Light" parent="@*android:style/Theme.Material.NoActionBar">
+        <item name="android:textColorHintInverse">#ffbbbbbb</item>
+        <item name="android:textColorHint">#ffbbbbbb</item>
+        <item name="android:textColorLink">@*android:color/accent_material_dark</item>
+        <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
     </style>
+    <style name="PlayDrawerSelectedText" parent="@*com.google.android.music:style/PlayDrawerBaseText">
+        <item name="android:background">#ff555555</item>
+        <item name="android:foreground">@*com.google.android.music:drawable/play_highlight_overlay_light</item>
+    </style>
+    <style name="Theme.AppInvite.Preview.Base" parent="@*android:style/Theme.Material.DialogWhenLarge.NoActionBar" />
     <style name="Tutorial.ProgressBar.WhiteSpinner" parent="@*com.google.android.music:style/Tutorial.ProgressBar">
         <item name="android:indeterminateTint">#ffffffff</item>
     </style>

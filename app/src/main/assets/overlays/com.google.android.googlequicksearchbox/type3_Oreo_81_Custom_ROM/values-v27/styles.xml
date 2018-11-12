@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <style name="BottomSheetDialog" parent="@*com.google.android.googlequicksearchbox:style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@*android:color/transparent</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:navigationBarDividerColor">@*android:color/primary_dark_material_dark</item>
+    </style>
+    <style name="OpaHQActivity.Theme" parent="@*com.google.android.googlequicksearchbox:style/OpaHQActivity.Theme.Base">
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+    <style name="StandaloneZeroState.Theme" parent="@*com.google.android.googlequicksearchbox:style/StandaloneZeroState.Theme.Base">
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+    <style name="SuwThemeGlifV3.Light" parent="@*com.google.android.googlequicksearchbox:style/SuwBaseThemeGlifV3.Light">
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:navigationBarDividerColor">@*android:color/primary_dark_material_dark</item>
+    </style>
+    <style name="Theme.AssistantSettings" parent="@*com.google.android.googlequicksearchbox:style/Theme.AssistantSettings.Base">
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+    <style name="Theme.AssistantSettings.NoActionBar" parent="@*com.google.android.googlequicksearchbox:style/Theme.AssistantSettings">
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="*com.google.android.googlequicksearchbox:windowActionBar">false</item>
+        <item name="*com.google.android.googlequicksearchbox:windowNoTitle">true</item>
+    </style>
+    <style name="Theme.DynamicHost" parent="@*com.google.android.googlequicksearchbox:style/Theme.Shim">
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:navigationBarDividerColor">@*android:color/primary_dark_material_dark</item>
+    </style>
     <style name="Theme.Gsa" parent="@*com.google.android.googlequicksearchbox:style/Theme.Shim.Light">
         <item name="android:textColorHighlight">@*com.google.android.googlequicksearchbox:color/qp_highlight</item>
         <item name="android:actionBarStyle">@*com.google.android.googlequicksearchbox:style/Gsa</item>
@@ -20,31 +56,20 @@
         <item name="*com.google.android.googlequicksearchbox:vogPromptColor">@*com.google.android.googlequicksearchbox:color/qp_text_b2</item>
         <item name="*com.google.android.googlequicksearchbox:vogPromptTextStyle">2</item>
     </style>
-
-
-    <style name="Theme.DynamicHost" parent="@*com.google.android.googlequicksearchbox:style/Theme.Shim">
-        <item name="android:windowDisablePreview">true</item>
+    <style name="Theme.GoogleMaterial.Light" parent="@*com.google.android.googlequicksearchbox:style/Base.Theme.GoogleMaterial.Light">
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+    <style name="Theme.GoogleMaterial.Light.BottomSheetDialog" parent="@*com.google.android.googlequicksearchbox:style/Base.Theme.GoogleMaterial.Light.BottomSheetDialog">
         <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
         <item name="android:windowLightNavigationBar">false</item>
         <item name="android:navigationBarDividerColor">@*android:color/primary_dark_material_dark</item>
     </style>
-
-
-    <style name="OpaHQActivity.Theme" parent="@*com.google.android.googlequicksearchbox:style/OpaHQActivity.Theme.Base">
+    <style name="Theme.Gsa.Hub" parent="@*com.google.android.googlequicksearchbox:style/Theme.Gsa.Hub.Base">
         <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
         <item name="android:windowLightNavigationBar">false</item>
-    </style>
-    <style name="Theme.AssistantSettings" parent="@*com.google.android.googlequicksearchbox:style/Theme.AssistantSettings.Base">
-        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
-        <item name="android:windowLightNavigationBar">false</item>
-    </style>
-
-
-    <style name="Theme.AssistantSettings.NoActionBar" parent="@*com.google.android.googlequicksearchbox:style/Theme.AssistantSettings">
-        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
-        <item name="android:windowLightNavigationBar">false</item>
-        <item name="*com.google.android.googlequicksearchbox:windowActionBar">false</item>
-        <item name="*com.google.android.googlequicksearchbox:windowNoTitle">true</item>
+        <item name="android:navigationBarDividerColor">@*android:color/primary_dark_material_dark</item>
     </style>
     <style name="TransparentMonetActivity">
         <item name="android:windowBackground">@*android:color/transparent</item>
@@ -57,38 +82,6 @@
         <item name="android:windowActionBar">false</item>
         <item name="android:statusBarColor">@*android:color/transparent</item>
         <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
-        <item name="android:windowLightNavigationBar">false</item>
-        <item name="android:navigationBarDividerColor">@*android:color/primary_dark_material_dark</item>
-    </style>
-    <style name="SuwThemeGlifV3.Light" parent="@*com.google.android.googlequicksearchbox:style/SuwBaseThemeGlifV3.Light">
-        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
-        <item name="android:windowLightNavigationBar">false</item>
-        <item name="android:navigationBarDividerColor">@*android:color/primary_dark_material_dark</item>
-    </style>
-
-
-
-
-
-    <style name="BottomSheetDialog" parent="@*com.google.android.googlequicksearchbox:style/Theme.Design.Light.BottomSheetDialog">
-        <item name="android:windowBackground">@*android:color/transparent</item>
-        <item name="android:windowIsFloating">false</item>
-        <item name="android:statusBarColor">@*android:color/transparent</item>
-        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
-        <item name="android:windowLightStatusBar">false</item>
-        <item name="android:windowLightNavigationBar">false</item>
-        <item name="android:navigationBarDividerColor">@*android:color/primary_dark_material_dark</item>
-    </style>
-
-
-    <style name="StandaloneZeroState.Theme" parent="@*com.google.android.googlequicksearchbox:style/StandaloneZeroState.Theme.Base">
-        <item name="android:windowLightNavigationBar">false</item>
-    </style>
-
-
-    <style name="Theme.Gsa.Hub" parent="@*com.google.android.googlequicksearchbox:style/Theme.Gsa.Hub.Base">
-        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
-        <item name="android:windowLightStatusBar">false</item>
         <item name="android:windowLightNavigationBar">false</item>
         <item name="android:navigationBarDividerColor">@*android:color/primary_dark_material_dark</item>
     </style>
