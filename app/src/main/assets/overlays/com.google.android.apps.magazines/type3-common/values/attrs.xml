@@ -149,6 +149,9 @@
     <attr name="rewind_increment" format="integer" />
     <attr name="rippleColor" format="color" />
     <attr name="scrimBackground" format="reference|color" />
+    <attr name="shapeAppearanceLargeComponent" format="reference" />
+    <attr name="shapeAppearanceMediumComponent" format="reference" />
+    <attr name="shapeAppearanceSmallComponent" format="reference" />
     <attr name="showMotionSpec" format="reference" />
     <attr name="show_shuffle_button" format="boolean" />
     <attr name="show_timeout" format="integer" />
@@ -177,6 +180,7 @@
     <attr name="textAppearanceSubtitle2" format="reference" />
     <attr name="textInputStyle" format="reference" />
     <attr name="title" format="string" />
+    <attr name="useMaterialThemeColors" format="boolean" />
     <attr name="zoom" format="fraction" />
     <attr name="accessibilityClassOverride">
         <enum name="none" value="0" />
@@ -240,6 +244,7 @@
     <attr name="durationMillis" format="integer" />
     <attr name="expanded" format="boolean" />
     <attr name="liftOnScroll" format="boolean" />
+    <attr name="liftOnScrollTargetViewId" format="reference" />
     <attr name="state_collapsed" format="boolean" />
     <attr name="state_collapsible" format="boolean" />
     <attr name="state_lifted" format="boolean" />
@@ -511,6 +516,7 @@
         <enum name="pager" value="1" />
     </attr>
     <attr name="bindTintColor" format="reference" />
+    <attr name="enableDimming" format="boolean" />
     <attr name="cardBackgroundColor" format="color" />
     <attr name="cardCornerRadius" format="dimension" />
     <attr name="cardElevation" format="dimension" />
@@ -923,7 +929,6 @@
     <attr name="textAppearanceSubhead2" format="reference" />
     <attr name="textAppearanceSubtitleAlt1" format="reference" />
     <attr name="textAppearanceSubtitleAlt2" format="reference" />
-    <attr name="textAppearanceButtonAlt" format="reference" />
     <attr name="numCards" format="integer" />
     <attr name="layoutSpanStyle" format="reference" />
     <attr name="layoutSpans" format="string" />
@@ -998,6 +1003,8 @@
     </attr>
     <attr name="iconTint" format="color" />
     <attr name="cornerRadius" format="reference|dimension" />
+    <attr name="shapeAppearance" format="reference" />
+    <attr name="shapeAppearanceOverlay" format="reference" />
     <attr name="alphabeticModifiers">
         <flag name="ALT" value="0x00000002" />
         <flag name="CTRL" value="0x00001000" />
@@ -1093,7 +1100,7 @@
     <attr name="maxWidth" format="dimension" />
     <attr name="bindAnimationJson" format="reference" />
     <attr name="bindIsLooping" format="reference" />
-    <attr name="shuffleOnItemAdd" format="boolean" />
+    <attr name="fastLoadingAnimations" format="boolean" />
     <attr name="textSize" format="reference|dimension" />
     <attr name="customFont" format="string" />
     <attr name="shadowColor" format="color" />
@@ -1289,6 +1296,7 @@
     <attr name="lockupSizingMode">
         <enum name="normal" value="1" />
         <enum name="auto" value="0" />
+        <enum name="custom" value="-1" />
         <enum name="small" value="2" />
     </attr>
     <attr name="bindRating" format="reference" />
@@ -1327,6 +1335,31 @@
     <attr name="gapSize" format="reference|dimension" />
     <attr name="primaryColor" format="reference|color" />
     <attr name="secondaryColor" format="reference|color" />
+    <attr name="cornerSize" format="dimension" />
+    <attr name="cornerSizeTopLeft" format="dimension" />
+    <attr name="cornerSizeTopRight" format="dimension" />
+    <attr name="cornerSizeBottomRight" format="dimension" />
+    <attr name="cornerSizeBottomLeft" format="dimension" />
+    <attr name="cornerFamily">
+        <enum name="cut" value="1" />
+        <enum name="rounded" value="0" />
+    </attr>
+    <attr name="cornerFamilyTopLeft">
+        <enum name="cut" value="1" />
+        <enum name="rounded" value="0" />
+    </attr>
+    <attr name="cornerFamilyTopRight">
+        <enum name="cut" value="1" />
+        <enum name="rounded" value="0" />
+    </attr>
+    <attr name="cornerFamilyBottomRight">
+        <enum name="cut" value="1" />
+        <enum name="rounded" value="0" />
+    </attr>
+    <attr name="cornerFamilyBottomLeft">
+        <enum name="cut" value="1" />
+        <enum name="rounded" value="0" />
+    </attr>
     <attr name="buttonSize" format="reference">
         <enum name="standard" value="0" />
         <enum name="icon_only" value="2" />
@@ -1366,6 +1399,10 @@
     <attr name="snackbarStyle" format="reference" />
     <attr name="snackbarButtonStyle" format="reference" />
     <attr name="maxActionInlineWidth" format="dimension" />
+    <attr name="animationMode">
+        <enum name="slide" value="0" />
+        <enum name="fade" value="1" />
+    </attr>
     <attr name="interiorPadding" format="dimension" />
     <attr name="edgePadding" format="dimension" />
     <attr name="numColumns" format="integer" />

@@ -42,6 +42,9 @@
     <attr name="alertDialogCenterButtons" format="boolean" />
     <attr name="alertDialogStyle" format="reference" />
     <attr name="alertDialogTheme" format="reference" />
+    <attr name="alertDialogTitleIconStyle" format="reference" />
+    <attr name="alertDialogTitlePanelStyle" format="reference" />
+    <attr name="alertDialogTitleTextStyle" format="reference" />
     <attr name="alignContent">
         <enum name="center" value="2" />
         <enum name="flex_end" value="1" />
@@ -71,6 +74,12 @@
         <flag name="SYM" value="0x00000004" />
     </attr>
     <attr name="ambientEnabled" format="boolean" />
+    <attr name="animateMenuItems" format="boolean" />
+    <attr name="animateNavigationIcon" format="boolean" />
+    <attr name="animationMode">
+        <enum name="fade" value="1" />
+        <enum name="slide" value="0" />
+    </attr>
     <attr name="aplosAreaAlpha" format="integer" />
     <attr name="aplosAxisBaselineSize" format="dimension" />
     <attr name="aplosAxisFontSize" format="dimension" />
@@ -376,7 +385,32 @@
     <attr name="contentScrim" format="color" />
     <attr name="controlBackground" format="reference" />
     <attr name="coordinatorLayoutStyle" format="reference" />
+    <attr name="cornerFamily">
+        <enum name="cut" value="1" />
+        <enum name="rounded" value="0" />
+    </attr>
+    <attr name="cornerFamilyBottomLeft">
+        <enum name="cut" value="1" />
+        <enum name="rounded" value="0" />
+    </attr>
+    <attr name="cornerFamilyBottomRight">
+        <enum name="cut" value="1" />
+        <enum name="rounded" value="0" />
+    </attr>
+    <attr name="cornerFamilyTopLeft">
+        <enum name="cut" value="1" />
+        <enum name="rounded" value="0" />
+    </attr>
+    <attr name="cornerFamilyTopRight">
+        <enum name="cut" value="1" />
+        <enum name="rounded" value="0" />
+    </attr>
     <attr name="cornerRadius" format="dimension" />
+    <attr name="cornerSize" format="dimension" />
+    <attr name="cornerSizeBottomLeft" format="dimension" />
+    <attr name="cornerSizeBottomRight" format="dimension" />
+    <attr name="cornerSizeTopLeft" format="dimension" />
+    <attr name="cornerSizeTopRight" format="dimension" />
     <attr name="counterEnabled" format="boolean" />
     <attr name="counterMaxLength" format="integer" />
     <attr name="counterOverflowTextAppearance" format="reference" />
@@ -472,7 +506,6 @@
         <enum name="mini" value="1" />
         <enum name="normal" value="0" />
     </attr>
-    <attr name="fadeThroughMenuItems" format="boolean" />
     <attr name="fastScrollEnabled" format="boolean" />
     <attr name="fastScrollHorizontalThumbDrawable" format="reference" />
     <attr name="fastScrollHorizontalTrackDrawable" format="reference" />
@@ -761,6 +794,7 @@
     <attr name="layout_scrollInterpolator" format="reference" />
     <attr name="layout_wrapBefore" format="boolean" />
     <attr name="liftOnScroll" format="boolean" />
+    <attr name="liftOnScrollTargetViewId" format="reference" />
     <attr name="lineHeight" format="dimension" />
     <attr name="lineSpacing" format="dimension" />
     <attr name="listChoiceBackgroundIndicator" format="reference" />
@@ -777,6 +811,7 @@
     <attr name="liteMode" format="boolean" />
     <attr name="lockupSizingMode">
         <enum name="auto" value="0" />
+        <enum name="custom" value="-1" />
         <enum name="normal" value="1" />
         <enum name="small" value="2" />
     </attr>
@@ -905,6 +940,11 @@
     <attr name="selectable" format="boolean" />
     <attr name="selectableItemBackground" format="reference" />
     <attr name="selectableItemBackgroundBorderless" format="reference" />
+    <attr name="shapeAppearance" format="reference" />
+    <attr name="shapeAppearanceLargeComponent" format="reference" />
+    <attr name="shapeAppearanceMediumComponent" format="reference" />
+    <attr name="shapeAppearanceOverlay" format="reference" />
+    <attr name="shapeAppearanceSmallComponent" format="reference" />
     <attr name="shouldDisableView" format="boolean" />
     <attr name="showAsAction">
         <flag name="always" value="0x00000002" />
@@ -1030,7 +1070,6 @@
     <attr name="textAppearanceBody1" format="reference" />
     <attr name="textAppearanceBody2" format="reference" />
     <attr name="textAppearanceButton" format="reference" />
-    <attr name="textAppearanceButtonAlt" format="reference" />
     <attr name="textAppearanceCaption" format="reference" />
     <attr name="textAppearanceDisplay1" format="reference" />
     <attr name="textAppearanceDisplay2" format="reference" />
@@ -1132,6 +1171,7 @@
     <attr name="uri" format="string" />
     <attr name="useCompatPadding" format="boolean" />
     <attr name="useDrawerArrowDrawable" format="boolean" />
+    <attr name="useMaterialThemeColors" format="boolean" />
     <attr name="useViewLifecycle" format="boolean" />
     <attr name="viewInflaterClass" format="string" />
     <attr name="voiceIcon" format="reference" />

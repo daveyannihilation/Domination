@@ -5,6 +5,9 @@
     <color name="abc_search_url_text_selected">#ffffffff</color>
     <color name="accent_material_dark">@*android:color/accent_material_dark</color>
     <color name="accent_material_light">@*android:color/accent_material_dark</color>
+    <color name="account_menu_divider_color">@*android:color/transparent</color>
+    <color name="account_menu_footer_ripple_color">@*android:color/ripple_material_dark</color>
+    <color name="account_menu_footer_text_color">@*android:color/secondary_text_default_material_dark</color>
     <color name="account_text_color">@*android:color/white</color>
     <color name="action_bar_background">@*android:color/primary_material_dark</color>
     <color name="action_bar_text">@*android:color/white</color>
@@ -88,8 +91,6 @@
     <color name="back_of_card_font_color">#ffffffff</color>
     <color name="back_of_card_navigation_line_color">@*android:color/primary_dark_material_dark</color>
     <color name="background">@*android:color/background_dark</color>
-    <color name="background_dark_color">@*android:color/background_dark</color>
-    <color name="background_dark_header_color">@*android:color/background_floating_material_dark</color>
     <color name="background_flare_color_array_item_1">#231976d2</color>
     <color name="background_flare_color_array_item_10">#25fbc02d</color>
     <color name="background_flare_color_array_item_11">#23512da8</color>
@@ -125,6 +126,8 @@
     <color name="bottom_dialog_flat_button_pressed">#ff555555</color>
     <color name="bottom_dialog_raised_button">#ff1976d2</color>
     <color name="bottom_dialog_raised_button_pressed">#ff0d47a1</color>
+    <color name="bottom_drawer_background_color">@*android:color/background_floating_material_dark</color>
+    <color name="bottom_drawer_scrim_color">#99000000</color>
     <color name="breadcrumb_background">#ff1976d2</color>
     <color name="breadcrumb_foreground">#b2ffffff</color>
     <color name="breadcrumb_foreground_selected">#ffffffff</color>
@@ -191,7 +194,6 @@
     <color name="chatui_solid_background_fill">@*android:color/background_dark</color>
     <color name="chatui_solid_background_fill_dark_mode">@*android:color/background_dark</color>
     <color name="chatui_solid_background_fill_v2">@*android:color/background_dark</color>
-    <color name="chatui_status_bar_opaque">@*android:color/primary_dark_material_dark</color>
     <color name="chatui_status_bar_opaque_v2">@*android:color/primary_dark_material_dark</color>
     <color name="chatui_status_bar_translucent">@*android:color/transparent</color>
     <color name="chatui_suggestion_background">@*android:color/background_dark</color>
@@ -246,7 +248,7 @@
     <color name="collections_google_grey900">#ffdddddd</color>
     <color name="collections_google_red">#ffd32f2f</color>
     <color name="collections_google_yellow">#fffbc02d</color>
-    <color name="color_layer_alpha">#99000000</color>
+    <color name="collections_item_video_duration_background_color">#80000000</color>
     <color name="color_pill_fill">@*android:color/button_material_dark</color>
     <color name="color_pill_outline">#ffffffff</color>
     <color name="common_google_signin_btn_text_dark_default">#ffffffff</color>
@@ -290,7 +292,6 @@
     <color name="dark_theme_color_pill_fill">@*android:color/button_material_dark</color>
     <color name="dark_theme_color_pill_outline">#ffffffff</color>
     <color name="dark_theme_header_color">#ffffffff</color>
-    <color name="dark_theme_icon_color">#ffffffff</color>
     <color name="dark_theme_pill_ripple_color">#4dffffff</color>
     <color name="darker_blue">#ff0d47a1</color>
     <color name="darker_gray">#ffdddddd</color>
@@ -308,7 +309,6 @@
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80bebebe</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
-    <color name="dim_foreground_material_light">#ffbebebe</color>
     <color name="disabled_text_corpus_bar">#61ffffff</color>
     <color name="divider">#00000000</color>
     <color name="divider_color">#00000000</color>
@@ -375,6 +375,7 @@
     <color name="folder_edge_effect_color">#ffffffff</color>
     <color name="foreground_material_dark">#ffffffff</color>
     <color name="foreground_material_light">#ffffffff</color>
+    <color name="form_main_view_title_color">#ff1976d2</color>
     <color name="frame_thumbnail_default_color">@*android:color/button_material_dark</color>
     <color name="fuse_ui_confirm_button_color">#ff1976d2</color>
     <color name="fuse_ui_confirm_button_pressed_color">#ff0d47a1</color>
@@ -417,7 +418,6 @@
     <color name="google_blue900">#ff0d47a1</color>
     <color name="google_blue_500">#ff1976d2</color>
     <color name="google_blue_700">#ff1976d2</color>
-    <color name="google_divider">#00000000</color>
     <color name="google_green">#ff338e3c</color>
     <color name="google_green_500">#ff388e3c</color>
     <color name="google_grey100">#ff555555</color>
@@ -498,8 +498,6 @@
     <color name="hq_suggestion_text">#ffffffff</color>
     <color name="hq_suggestion_text_v1p5">#ffdddddd</color>
     <color name="hub_settings_bar_divider">#00000000</color>
-    <color name="hub_settings_preference_bar_divider">#00000000</color>
-    <color name="hub_settings_text_color">#ffffffff</color>
     <color name="ic_mic_color">#ffffffff</color>
     <color name="ic_orb_listening">#ffd32f2f</color>
     <color name="ic_orb_loading">@*android:color/button_material_dark</color>
@@ -560,11 +558,25 @@
     <color name="interest_picker_searchview">#b3ffffff</color>
     <color name="interest_picker_searchview_hint">#ffaaaaaa</color>
     <color name="interpreter_background">@*android:color/background_dark</color>
+    <color name="interpreter_black_text">#ffffffff</color>
+    <color name="interpreter_blue">#ff1976d2</color>
+    <color name="interpreter_green">#ff388e3c</color>
+    <color name="interpreter_grey_text">#ffdddddd</color>
     <color name="interpreter_intro_separator">#00000000</color>
     <color name="interpreter_intro_text">#ffdddddd</color>
+    <color name="interpreter_lang_toggle_box_inactive">@*android:color/button_material_dark</color>
+    <color name="interpreter_lang_toggle_box_stroke">@*android:color/white</color>
+    <color name="interpreter_source_box_active">#4d1976d2</color>
+    <color name="interpreter_source_main">#ff1976d2</color>
     <color name="interpreter_source_mic_background">#ff1976d2</color>
+    <color name="interpreter_stroke">#ffffffff</color>
+    <color name="interpreter_target_box_active">#4d388e3c</color>
+    <color name="interpreter_target_main">#ff388e3c</color>
     <color name="interpreter_target_mic_background">#ff388e3c</color>
+    <color name="interpreter_text_main_color_dark">@*android:color/white</color>
+    <color name="interpreter_text_main_color_light">@*android:color/white</color>
     <color name="interpreter_title">#ffffffff</color>
+    <color name="interpreter_white">@*android:color/background_dark</color>
     <color name="ipa_divider_background">#00000000</color>
     <color name="ipa_plate_app_header_text_color">#ddffffff</color>
     <color name="ipa_plate_card_text">#ddffffff</color>
@@ -599,9 +611,9 @@
     <color name="line_dark">#00000000</color>
     <color name="linkTextColor">#ff1976d2</color>
     <color name="link_text">#ff1976d2</color>
-    <color name="link_text_hub">#ff1976d2</color>
     <color name="link_text_other_state">#42ffffff</color>
     <color name="list_color">#ffdddddd</color>
+    <color name="list_item_highlight_color">#ff1976d2</color>
     <color name="list_popup_tap_highlight">#ff555555</color>
     <color name="list_primary_color">#ffffffff</color>
     <color name="list_primary_selected_color">#ff1976d2</color>
@@ -692,7 +704,6 @@
     <color name="momo_dark_status_nav_bar_protection">#80000000</color>
     <color name="momo_light_status_nav_bar_protection">#80000000</color>
     <color name="momo_nav_bar_protection">#80000000</color>
-    <color name="momo_status_bar_protection">#c2000000</color>
     <color name="monet_viewer_fullscreen_background">@*android:color/background_dark</color>
     <color name="monet_viewer_product_in_stock">#ff388e3c</color>
     <color name="monet_viewer_product_unavailable">#ffd32f2f</color>
@@ -711,6 +722,14 @@
     <color name="now_product_tutorial_button_bar_2">#ffe64a19</color>
     <color name="now_product_tutorial_button_bar_3">#ff00796b</color>
     <color name="numbers_text_color">#ffffffff</color>
+    <color name="og_account_text_color">@*android:color/secondary_text_default_material_dark</color>
+    <color name="og_background">@*android:color/background_floating_material_dark</color>
+    <color name="og_bottom_drawer_handle_color">@*android:color/white</color>
+    <color name="og_default_icon_color">@*android:color/white</color>
+    <color name="og_item_disabled_icon_color">#ffaaaaaa</color>
+    <color name="og_item_disabled_text_color">#ffaaaaaa</color>
+    <color name="og_item_text_color">@*android:color/secondary_text_default_material_dark</color>
+    <color name="og_no_selected_account_header_color">#ff1976d2</color>
     <color name="onboarding_suggestion_header_background">@*android:color/background_floating_material_dark</color>
     <color name="opa_background">@*android:color/background_floating_material_dark</color>
     <color name="opa_button_tint">#ff1976d2</color>
@@ -739,6 +758,7 @@
     <color name="opt_in_status_bar_color">@*android:color/primary_dark_material_dark</color>
     <color name="outline_background_color">#00ffffff</color>
     <color name="outline_color">#ffffffff</color>
+    <color name="overlay_button_background">#22000000</color>
     <color name="overlay_color">#cc000000</color>
     <color name="overlay_dark_background">@*android:color/background_dark</color>
     <color name="overlay_dark_foreground">#ffffffff</color>
@@ -749,7 +769,6 @@
     <color name="photo_crop_dim_color">#cc000000</color>
     <color name="photo_crop_highlight_color">#ffffffff</color>
     <color name="photo_fragment_gradient_start">#80000000</color>
-    <color name="photo_status_bar_black">#d9000000</color>
     <color name="pill_ripple_color">#4dffffff</color>
     <color name="pixel_apps_search_suggestion_divider">#00000000</color>
     <color name="place_autocomplete_prediction_primary_text">#ffffffff</color>
@@ -808,9 +827,7 @@
     <color name="qp_selected_gray">#ff555555</color>
     <color name="qp_star_rating_orange">#ffe64a19</color>
     <color name="qp_status_green">#ff388e3c</color>
-    <color name="qp_status_green_dark">#ff1b5e20</color>
     <color name="qp_status_none">@*android:color/primary_material_dark</color>
-    <color name="qp_status_none_dark">@*android:color/primary_dark_material_dark</color>
     <color name="qp_status_red">#ffd32f2f</color>
     <color name="qp_status_red_dark">#ffb71c1c</color>
     <color name="qp_status_yellow">#fffbc02d</color>
@@ -1028,7 +1045,6 @@
     <color name="star_rating_bar_secondary_text">#ffdddddd</color>
     <color name="status_bar_background">@*android:color/primary_dark_material_dark</color>
     <color name="status_bar_color">@*android:color/primary_dark_material_dark</color>
-    <color name="status_bar_color_dark">@*android:color/primary_dark_material_dark</color>
     <color name="stroke_color">#ffffffff</color>
     <color name="suggest_header_primary_text_normal">#ffffffff</color>
     <color name="suggest_text_disabled">#80ffffff</color>
@@ -1095,7 +1111,7 @@
     <color name="text_decoration_fallback">#ffffffff</color>
     <color name="text_disabled_color">#ffaaaaaa</color>
     <color name="text_grey">#ffdddddd</color>
-    <color name="text_label_field_error_color">#ff1976d2</color>
+    <color name="text_label_field_error_color">#ffd32f2f</color>
     <color name="text_shadow">#dd000000</color>
     <color name="theme_dark_background">@*android:color/background_dark</color>
     <color name="third_party_header_text">#ffffffff</color>
@@ -1135,7 +1151,6 @@
     <color name="topapps_category_sports">#ff388e3c</color>
     <color name="topapps_category_technology">#ff455a64</color>
     <color name="topapps_category_travel">#ffe64a19</color>
-    <color name="topapps_circle_border_color">#ffffffff</color>
     <color name="topdeck_accessibility_background">#8a000000</color>
     <color name="topdeck_background">#66000000</color>
     <color name="topdeck_text_color">#ffffffff</color>
