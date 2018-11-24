@@ -17,13 +17,13 @@
     <android.support.design.widget.CoordinatorLayout android:id="@*com.google.android.apps.googlevoice:id/snackbar_holder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
     <FrameLayout android:id="@*com.google.android.apps.googlevoice:id/attachment_picker" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@*com.google.android.apps.googlevoice:id/snackbar_holder" />
     <android.support.design.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <android.support.design.widget.AppBarLayout android:id="@*com.google.android.apps.googlevoice:id/appbarlayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.design.appbar.AppBarLayout android:id="@*com.google.android.apps.googlevoice:id/appbarlayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
             <android.support.v7.widget.Toolbar android:theme="@*com.google.android.apps.googlevoice:style/ActionBarTheme" android:id="@*com.google.android.apps.googlevoice:id/toolbar" android:background="@*android:color/primary_material_dark" android:layout_width="fill_parent" android:layout_height="@*com.google.android.apps.googlevoice:dimen/abc_action_bar_default_height_material">
                 <ImageView android:id="@*com.google.android.apps.googlevoice:id/blocked_icon" android:paddingTop="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@*com.google.android.apps.googlevoice:drawable/quantum_ic_block_white_24" android:importantForAccessibility="no" />
                 <TextView android:textAppearance="@*com.google.android.apps.googlevoice:style/ToolbarStyle" android:ellipsize="end" android:id="@*com.google.android.apps.googlevoice:id/toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
             </android.support.v7.widget.Toolbar>
             <include layout="@*com.google.android.apps.googlevoice:layout/alerts_root" />
-        </android.support.design.widget.AppBarLayout>
+        </android.support.design.appbar.AppBarLayout>
     </android.support.design.widget.CoordinatorLayout>
     <com.google.android.apps.voice.common.ui.InterceptTouchView android:id="@*com.google.android.apps.googlevoice:id/curtain" android:background="@*com.google.android.apps.googlevoice:color/semitransparent_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
     <com.google.android.libraries.material.progress.MaterialProgressBar android:id="@*com.google.android.apps.googlevoice:id/loading_messages_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@*com.google.android.apps.googlevoice:style/Widget.GoogleLib.Progress.Circular.Indeterminate.Small" />

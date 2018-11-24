@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.Slack.ui.fileviewer.widgets.ImageFileFullPreview android:id="@*com.Slack:id/image_file_full_preview" android:background="@*android:color/background_dark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.Slack.ui.widgets.SingleViewContainer android:id="@*com.Slack:id/preview_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@*com.Slack:id/fallback_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@*com.Slack:string/a11y_fullsize_image" />
+        <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView android:id="@*com.Slack:id/subsampled_full_size_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@*com.Slack:string/a11y_fullsize_image" />
+    </com.Slack.ui.widgets.SingleViewContainer>
+    <com.Slack.ui.widgets.SlackProgressBar android:layout_gravity="center" android:id="@*com.Slack:id/progress_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@*com.Slack:string/a11y_loading" />
+</com.Slack.ui.fileviewer.widgets.ImageFileFullPreview>

@@ -96,9 +96,11 @@
         <item name="*com.google.android.googlequicksearchbox:productLockupViewStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.ProductLockupView</item>
         <item name="*com.google.android.googlequicksearchbox:tabStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.TabLayout</item>
         <item name="*com.google.android.googlequicksearchbox:textInputStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.TextInputLayout.OutlinedBox</item>
+        <item name="*com.google.android.googlequicksearchbox:actionOverflowMenuStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.PopupMenu.Overflow</item>
         <item name="*com.google.android.googlequicksearchbox:actionBarStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.Light.ActionBar.Solid</item>
         <item name="*com.google.android.googlequicksearchbox:borderlessButtonStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.TextButton</item>
         <item name="*com.google.android.googlequicksearchbox:toolbarStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.Toolbar</item>
+        <item name="*com.google.android.googlequicksearchbox:popupMenuStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.PopupMenu</item>
         <item name="*com.google.android.googlequicksearchbox:alertDialogTheme">@*com.google.android.googlequicksearchbox:style/ThemeOverlay.GoogleMaterial.Dialog.Alert</item>
         <item name="*com.google.android.googlequicksearchbox:buttonStyle">@*com.google.android.googlequicksearchbox:style/Widget.AppCompat.Button.Colored</item>
         <item name="*com.google.android.googlequicksearchbox:checkboxStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.CompoundButton.CheckBox</item>
@@ -184,12 +186,14 @@
         <item name="*com.google.android.googlequicksearchbox:textAppearanceSubtitle1">@*com.google.android.googlequicksearchbox:style/TextAppearance.GoogleMaterial.Subtitle1</item>
         <item name="*com.google.android.googlequicksearchbox:textAppearanceSubtitle2">@*com.google.android.googlequicksearchbox:style/TextAppearance.GoogleMaterial.Subtitle2</item>
         <item name="*com.google.android.googlequicksearchbox:textInputStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.TextInputLayout.OutlinedBox</item>
+        <item name="*com.google.android.googlequicksearchbox:actionOverflowMenuStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.PopupMenu.Overflow</item>
         <item name="*com.google.android.googlequicksearchbox:actionBarStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.Light.ActionBar.Solid</item>
         <item name="*com.google.android.googlequicksearchbox:textAppearanceLargePopupMenu">@*com.google.android.googlequicksearchbox:style/TextAppearance.GoogleMaterial.Body1</item>
         <item name="*com.google.android.googlequicksearchbox:textAppearanceSmallPopupMenu">@*com.google.android.googlequicksearchbox:style/TextAppearance.GoogleMaterial.Body1</item>
         <item name="*com.google.android.googlequicksearchbox:buttonBarButtonStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.TextButton.Dialog</item>
         <item name="*com.google.android.googlequicksearchbox:borderlessButtonStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.TextButton</item>
         <item name="*com.google.android.googlequicksearchbox:toolbarStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.Toolbar</item>
+        <item name="*com.google.android.googlequicksearchbox:popupMenuStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.PopupMenu</item>
         <item name="*com.google.android.googlequicksearchbox:colorPrimary">@*android:color/primary_material_dark</item>
         <item name="*com.google.android.googlequicksearchbox:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
         <item name="*com.google.android.googlequicksearchbox:alertDialogTheme">@*com.google.android.googlequicksearchbox:style/ThemeOverlay.GoogleMaterial.Dialog.Alert</item>
@@ -297,6 +301,19 @@
         <item name="android:padding">64.0dip</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="collections_sharing_button_style">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">@*com.google.android.googlequicksearchbox:drawable/collections_new_collections_button_background</item>
+        <item name="android:drawablePadding">8.0dip</item>
+        <item name="android:lineSpacingExtra">4.0sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:drawableStart">@*com.google.android.googlequicksearchbox:drawable/quantum_ic_share_googblue_18</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:paddingStart">12.0dip</item>
+        <item name="android:paddingEnd">16.0dip</item>
     </style>
     <style name="collections_tertiary_action_button_style">
         <item name="android:textSize">14.0sp</item>
@@ -422,11 +439,6 @@
         <item name="android:colorBackground">@*android:color/background_floating_material_dark</item>
         <item name="android:textColor">@*android:color/white</item>
     </style>
-    <style name="hub_preference_header" parent="@*com.google.android.googlequicksearchbox:style/qp_h5">
-        <item name="android:colorBackground">@*android:color/background_floating_material_dark</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@*android:color/white</item>
-    </style>
     <style name="HubSettingsListSeparatorTextViewStyle" parent="@*android:style/Widget.TextView">
         <item name="android:colorBackground">@*android:color/background_floating_material_dark</item>
         <item name="android:textAppearance">@*com.google.android.googlequicksearchbox:style/hub_preference_header</item>
@@ -548,13 +560,6 @@
         <item name="android:textSize">16.0sp</item>
         <item name="android:textColor">#ffdddddd</item>
         <item name="android:itemBackground">@*com.google.android.googlequicksearchbox:drawable/monet_viewer_list_popup_tap_highlight</item>
-    </style>
-    <style name="monet_viewer_related_longpress_action_text">
-        <item name="android:textSize">12.0sp</item>
-        <item name="android:textColor">#ffdddddd</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">4.0dip</item>
     </style>
     <style name="MoreOrLessIcon">
         <item name="android:layout_gravity">center|right|top</item>
@@ -917,12 +922,6 @@
         <item name="android:textSize">12.0sp</item>
         <item name="android:textColor">#ffdddddd</item>
         <item name="android:fontFamily">roboto-regular</item>
-    </style>
-    <style name="UDATextInputStyle" parent="@*com.google.android.googlequicksearchbox:style/TextAppearance.AppCompat">
-        <item name="android:textSize">20.0sp</item>
-        <item name="android:textColorHint">#ffbbbbbb</item>
-        <item name="*com.google.android.googlequicksearchbox:colorControlNormal">@*android:color/secondary_text_default_material_dark</item>
-        <item name="*com.google.android.googlequicksearchbox:colorControlActivated">@*com.google.android.googlequicksearchbox:color/quantum_googblue700</item>
     </style>
     <style name="UniversalSuggestionAnswerTextLarge">
         <item name="android:textSize">@*com.google.android.googlequicksearchbox:dimen/universal_suggestion_answer_text_large_size</item>
