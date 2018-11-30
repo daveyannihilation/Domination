@@ -48,12 +48,26 @@
         <item name="*com.google.android.apps.wellbeing:toolbarStyle">@*com.google.android.apps.wellbeing:style/Widget.GoogleMaterial.Toolbar</item>
         <item name="*com.google.android.apps.wellbeing:viewInflaterClass">android.support.design.theme.MaterialComponentsViewInflater</item>
     </style>
+    <style name="Base.V14.ThemeOverlay.GoogleMaterial.Dialog.Picker" parent="@*com.google.android.apps.wellbeing:style/ThemeOverlay.GoogleMaterial.Dialog">
+        <item name="android:textColorPrimary">@*android:color/white</item>
+        <item name="android:textColorSecondary">@*android:color/secondary_text_default_material_dark</item>
+        <item name="android:buttonBarButtonStyle">@*com.google.android.apps.wellbeing:style/Widget.GoogleMaterial.TextButton.Dialog</item>
+        <item name="*com.google.android.apps.wellbeing:dialogCornerRadius">@*com.google.android.apps.wellbeing:dimen/google_dialog_corner_radius</item>
+    </style>
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabText" parent="@*android:style/Widget.Material.ActionBar.TabText" />
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabText.Inverse" parent="@*android:style/Widget.Material.ActionBar.TabText" />
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabView" parent="@*android:style/Widget.Material.ActionBar.TabView" />
     <style name="Base.Widget.AppCompat.Light.PopupMenu" parent="@*android:style/Widget.Material.PopupMenu" />
     <style name="CardView" parent="@*com.google.android.apps.wellbeing:style/Base.CardView">
         <item name="*com.google.android.apps.wellbeing:cardBackgroundColor">@*android:color/background_floating_material_dark</item>
+    </style>
+    <style name="DurationNumberPicker" parent="@*android:style/Widget.Material.NumberPicker">
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:layout_marginBottom">8.0dip</item>
+        <item name="android:headerBackground">@*android:color/background_floating_material_dark</item>
+        <item name="android:numbersTextColor">@*android:color/white</item>
+        <item name="android:numbersSelectorColor">@*android:color/dim_foreground_light</item>
     </style>
     <style name="Platform.V21.AppCompat.Light" parent="@*android:style/Theme.Material.NoActionBar">
         <item name="android:textColorHintInverse">#ffbbbbbb</item>
@@ -92,5 +106,9 @@
     <style name="Widget.GoogleMaterial.ProductLockupView.Dark" parent="@*com.google.android.apps.wellbeing:style/Widget.GoogleMaterial.ProductLockupView">
         <item name="*com.google.android.apps.wellbeing:logoColor">light</item>
         <item name="*com.google.android.apps.wellbeing:productNameTextColor">@*android:color/white</item>
+    </style>
+    <style name="Widget.GoogleMaterial.TimePicker" parent="@*android:style/Widget.Material.TimePicker">
+        <item name="android:headerBackground">@*com.google.android.apps.wellbeing:drawable/google_picker_header_with_divider</item>
+        <item name="android:numbersBackgroundColor">@*android:color/background_floating_material_dark</item>
     </style>
 </resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector>
+            <item android:state_pressed="false">
+                <shape android:shape="rectangle">
+                    <corners android:radius="@*com.google.android.apps.chromecast.app:dimen/circle_outline_grey_radius" />
+                    <stroke android:width="@*com.google.android.apps.chromecast.app:dimen/circle_outline_grey_stroke_width" android:color="@*android:color/white" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+    <item>
+        <selector>
+            <item android:state_pressed="true">
+                <shape android:shape="rectangle">
+                    <corners android:radius="@*com.google.android.apps.chromecast.app:dimen/circle_outline_grey_radius" />
+                    <solid android:color="@*android:color/dim_foreground_light" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</layer-list>

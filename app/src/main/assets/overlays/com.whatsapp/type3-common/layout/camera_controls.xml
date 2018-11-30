@@ -24,4 +24,8 @@
         <View android:layout_gravity="bottom" android:id="@*com.whatsapp:id/footer_transition" android:layout_width="fill_parent" android:layout_height="0.0dip" />
         <View android:layout_gravity="bottom|center|right" android:id="@*com.whatsapp:id/send_button_transition" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginRight="44.0dip" />
     </com.whatsapp.camera.CameraLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@*com.whatsapp:id/recording_info" android:background="@*com.whatsapp:drawable/camera_info_background" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingRight="12.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <com.whatsapp.CircularProgressBar android:layout_gravity="center_vertical" android:id="@*com.whatsapp:id/recording_progress" android:layout_width="18.0sp" android:layout_height="18.0sp" android:indeterminate="false" android:indeterminateOnly="false" app:cpbBackground="#ffd32f2f" app:cpbColor="@*android:color/white" app:cpbFill="#ffd32f2f" app:cpbStrokeWidthFactor="4.0" />
+        <com.whatsapp.WaTextView android:textColor="@*android:color/white" android:id="@*com.whatsapp:id/recording_time" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0:00" />
+    </LinearLayout>
 </com.whatsapp.MainChildCoordinatorLayout>

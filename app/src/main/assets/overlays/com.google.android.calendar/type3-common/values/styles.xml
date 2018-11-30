@@ -177,6 +177,12 @@
         <item name="*com.google.android.calendar:titleTextAppearance">@*com.google.android.calendar:style/TextAppearance.Toolbar.GoogleMaterial</item>
         <item name="*com.google.android.calendar:navigationIcon">@*com.google.android.calendar:drawable/quantum_gm_ic_arrow_back_gm_grey_24</item>
     </style>
+    <style name="EventInfoActionBar" parent="@*android:style/ThemeOverlay.Material">
+        <item name="android:actionOverflowButtonStyle">@*com.google.android.calendar:style/EventInfoActionBarOverflow</item>
+    </style>
+    <style name="EventInfoActionBarOverflow" parent="@*android:style/Widget.Material.ActionButton.Overflow">
+        <item name="android:src">@*com.google.android.calendar:drawable/ic_overflow_white_34</item>
+    </style>
     <style name="FindTimeSubTitle">
         <item name="android:background">@*android:color/background_floating_material_dark</item>
         <item name="android:paddingLeft">@*com.google.android.calendar:dimen/find_time_filter_header_horizontal_padding</item>
@@ -263,7 +269,7 @@
         <item name="android:textColor">#ffffffff</item>
     </style>
     <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light" />
-    <style name="PreferencesThemeBase" parent="@*android:style/Theme.Material" />
+    <style name="PreferencesThemeBase" parent="@*android:style/Theme.DeviceDefault.Light" />
     <style name="TextAppearance.AddNoteHeaderLabel" parent="@*com.google.android.calendar:style/TextAppearance">
         <item name="android:textSize">@*com.google.android.calendar:dimen/propose_time_add_note_header_text_size</item>
         <item name="android:textColor">@*android:color/white</item>

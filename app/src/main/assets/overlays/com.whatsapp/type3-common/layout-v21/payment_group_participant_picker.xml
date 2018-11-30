@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@*android:color/background_dark" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@*android:color/background_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@*com.whatsapp:dimen/actionbar_elevation">
+        <include layout="@*com.whatsapp:layout/toolbar" />
+        <FrameLayout android:id="@*com.whatsapp:id/search_holder" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@*com.whatsapp:dimen/abc_action_bar_default_height_material" />
+    </FrameLayout>
+    <ListView android:id="@*com.whatsapp:id/group_participant_picker_list" android:paddingLeft="@*com.whatsapp:dimen/contact_list_padding_left" android:paddingRight="@*com.whatsapp:dimen/contact_list_padding_right" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@*android:color/transparent" android:divider="@null" android:dividerHeight="0.0dip" />
+</LinearLayout>
