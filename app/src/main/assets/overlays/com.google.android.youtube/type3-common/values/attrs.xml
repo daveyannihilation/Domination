@@ -65,7 +65,6 @@
     <attr name="connectionShelfInviteButtonDisabled" format="reference" />
     <attr name="connectionShelfInviteButtonEnabled" format="reference" />
     <attr name="constraintSet" format="reference" />
-    <attr name="controller_layout_id" format="reference" />
     <attr name="coordinatorLayoutStyle" format="reference" />
     <attr name="createLiveIcon" format="reference" />
     <attr name="createPostIcon" format="reference" />
@@ -76,7 +75,6 @@
     <attr name="drawerArrowStyle" format="reference" />
     <attr name="editLocationTheme" format="reference" />
     <attr name="expandButtonIcon" format="reference" />
-    <attr name="fastforward_increment" format="integer" />
     <attr name="flex" format="float" />
     <attr name="flex_alignItems">
         <enum name="auto" value="0" />
@@ -224,6 +222,7 @@
     <attr name="liveChatActionPanelChipBackground" format="reference|color" />
     <attr name="liveChatActionPanelChipBackgroundOverlimit" format="reference|color" />
     <attr name="liveChatAutoModHighlightBar" format="reference" />
+    <attr name="liveChatContentsBackground" format="reference|color" />
     <attr name="liveChatEmojiPickerActiveIconColor" format="reference|color" />
     <attr name="liveChatMetadataBackground" format="reference" />
     <attr name="liveChatMetadataItemIconColor" format="reference|color" />
@@ -236,6 +235,7 @@
     <attr name="liveChatStickerOpenedFromTickerBackground" format="reference" />
     <attr name="liveChatTierSeekbarTick" format="reference" />
     <attr name="liveChatVerifiedAuthorName" format="reference|color" />
+    <attr name="liveChatVerifiedBadgeChipBackground" format="reference|color" />
     <attr name="liveChatViewerEngagementMessageBackground" format="reference" />
     <attr name="loadingFrameErrorDrawable" format="reference" />
     <attr name="loadingFrameTextColor" format="reference" />
@@ -255,6 +255,7 @@
     <attr name="mediaRouteStopDrawable" format="reference" />
     <attr name="mediaRouteTheme" format="reference" />
     <attr name="mediaRouteTvIconDrawable" format="reference" />
+    <attr name="minTouchTargetSize" format="dimension" />
     <attr name="mtrlColor" format="reference|color" />
     <attr name="mtrlColors" format="reference" />
     <attr name="navigationBarColor" format="reference|color" />
@@ -276,25 +277,11 @@
     <attr name="phoneEntrySendCodeButtonBackground" format="reference|color" />
     <attr name="pivotBarCountBadgeBackground" format="reference|color" />
     <attr name="pivotBarDotBadgeBackground" format="reference|color" />
-    <attr name="player_layout_id" format="reference" />
     <attr name="postSubscribeBarBackground" format="reference|color" />
     <attr name="radioButtonTextColorSelector" format="reference|color" />
     <attr name="reelEditChooseFilterBackground" format="reference|color" />
     <attr name="reelsLockupStroke" format="reference" />
     <attr name="reelsLockupThumbnailStroke" format="reference" />
-    <attr name="repeat_toggle_modes">
-        <flag name="all" value="0x00000002" />
-        <flag name="none" value="0x00000000" />
-        <flag name="one" value="0x00000001" />
-    </attr>
-    <attr name="resize_mode">
-        <enum name="fill" value="3" />
-        <enum name="fit" value="0" />
-        <enum name="fixed_height" value="2" />
-        <enum name="fixed_width" value="1" />
-        <enum name="zoom" value="4" />
-    </attr>
-    <attr name="rewind_increment" format="integer" />
     <attr name="rippleColor" format="color" />
     <attr name="scrimBackground" format="reference|color" />
     <attr name="selectableItemBackgroundSolid" format="reference|color" />
@@ -305,17 +292,9 @@
     <attr name="shareSelectableNameColor" format="reference|color" />
     <attr name="shareUserAreaBackground" format="reference" />
     <attr name="showMotionSpec" format="reference" />
-    <attr name="show_shuffle_button" format="boolean" />
-    <attr name="show_timeout" format="integer" />
     <attr name="standaloneBadgeBackground" format="reference|color" />
     <attr name="standaloneCollectionBadgeBackground" format="reference|color" />
     <attr name="standaloneRedBadgeBackground" format="reference|color" />
-    <attr name="surface_type">
-        <enum name="none" value="0" />
-        <enum name="spherical_view" value="3" />
-        <enum name="surface_view" value="1" />
-        <enum name="texture_view" value="2" />
-    </attr>
     <attr name="tabStyle" format="reference" />
     <attr name="textAppearanceBody1" format="reference" />
     <attr name="textAppearanceBody1Inverse" format="reference" />
@@ -472,13 +451,13 @@
     <attr name="layout_gravity">
         <enum name="center" value="17" />
         <enum name="none" value="0" />
-        <enum name="fill" value="119" />
         <enum name="bottom" value="80" />
         <enum name="center_horizontal" value="1" />
         <enum name="center_vertical" value="16" />
         <enum name="clip_horizontal" value="8" />
         <enum name="clip_vertical" value="128" />
         <enum name="end" value="8388613" />
+        <enum name="fill" value="119" />
         <enum name="fill_horizontal" value="7" />
         <enum name="fill_vertical" value="112" />
         <enum name="left" value="3" />
@@ -775,7 +754,6 @@
     <attr name="chipStrokeColor" format="color" />
     <attr name="chipStrokeWidth" format="dimension" />
     <attr name="chipMinTouchTargetSize" format="dimension" />
-    <attr name="chipTouchTargetDelegate" format="reference" />
     <attr name="ensureMinTouchTargetSize" format="boolean" />
     <attr name="chipIconVisible" format="boolean" />
     <attr name="chipIconEnabled" format="boolean" />
@@ -889,13 +867,13 @@
     <attr name="layout_keyline" format="integer" />
     <attr name="layout_anchorGravity">
         <flag name="center" value="0x00000011" />
-        <flag name="fill" value="0x00000077" />
         <flag name="bottom" value="0x00000050" />
         <flag name="center_horizontal" value="0x00000001" />
         <flag name="center_vertical" value="0x00000010" />
         <flag name="clip_horizontal" value="0x00000008" />
         <flag name="clip_vertical" value="0x00000080" />
         <flag name="end" value="0x00800005" />
+        <flag name="fill" value="0x00000077" />
         <flag name="fill_horizontal" value="0x00000007" />
         <flag name="fill_vertical" value="0x00000070" />
         <flag name="left" value="0x00000003" />
@@ -966,19 +944,6 @@
         <enum name="overshoot" value="0" />
     </attr>
     <attr name="textSize" format="float" />
-    <attr name="bar_height" format="dimension" />
-    <attr name="touch_target_height" format="dimension" />
-    <attr name="ad_marker_width" format="dimension" />
-    <attr name="scrubber_enabled_size" format="dimension" />
-    <attr name="scrubber_disabled_size" format="dimension" />
-    <attr name="scrubber_dragged_size" format="dimension" />
-    <attr name="scrubber_drawable" format="reference" />
-    <attr name="played_color" format="color" />
-    <attr name="scrubber_color" format="color" />
-    <attr name="buffered_color" format="color" />
-    <attr name="unplayed_color" format="color" />
-    <attr name="ad_marker_color" format="color" />
-    <attr name="played_ad_marker_color" format="color" />
     <attr name="dialogTitle" format="string" />
     <attr name="dialogMessage" format="string" />
     <attr name="dialogIcon" format="reference" />
@@ -1315,19 +1280,6 @@
     <attr name="timeTextColor" format="color" />
     <attr name="scrubberMinSize" format="dimension" />
     <attr name="scrubberMaxSize" format="dimension" />
-    <attr name="use_artwork" format="boolean" />
-    <attr name="shutter_background_color" format="color" />
-    <attr name="default_artwork" format="reference" />
-    <attr name="use_controller" format="boolean" />
-    <attr name="hide_on_touch" format="boolean" />
-    <attr name="hide_during_ads" format="boolean" />
-    <attr name="auto_show" format="boolean" />
-    <attr name="show_buffering">
-        <enum name="always" value="1" />
-        <enum name="never" value="0" />
-        <enum name="when_playing" value="2" />
-    </attr>
-    <attr name="keep_content_on_player_reset" format="boolean" />
     <attr name="seasonsViewId" format="reference" />
     <attr name="renderThumbnailAsSquare" format="boolean" />
     <attr name="labelTextSize" format="dimension" />
@@ -1506,6 +1458,7 @@
         <enum name="slide" value="0" />
         <enum name="fade" value="1" />
     </attr>
+    <attr name="backgroundOverlayColorAlpha" format="float" />
     <attr name="actionTextColorAlpha" format="float" />
     <attr name="spinnerTag" format="string" />
     <attr name="stickyHeaderRecyclerView" format="reference" />

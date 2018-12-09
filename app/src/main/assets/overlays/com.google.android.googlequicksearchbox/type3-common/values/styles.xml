@@ -75,8 +75,8 @@
         <item name="android:textColor">#ffdddddd</item>
     </style>
     <style name="Base.V14.Theme.GoogleMaterial.Light" parent="@*com.google.android.googlequicksearchbox:style/Base.V14.Theme.GoogleMaterial.Light.Bridge">
-        <item name="android:colorBackground">@*android:color/background_dark</item>
-        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:colorBackground">@*com.google.android.googlequicksearchbox:color/google_default_color_background</item>
+        <item name="android:windowBackground">@*com.google.android.googlequicksearchbox:color/google_default_color_background</item>
         <item name="android:timePickerDialogTheme">@*com.google.android.googlequicksearchbox:style/ThemeOverlay.GoogleMaterial.Dialog</item>
         <item name="android:datePickerDialogTheme">@*com.google.android.googlequicksearchbox:style/ThemeOverlay.GoogleMaterial.Dialog</item>
         <item name="android:colorEdgeEffect">@*android:color/secondary_text_default_material_dark</item>
@@ -106,12 +106,21 @@
         <item name="*com.google.android.googlequicksearchbox:checkboxStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.CompoundButton.CheckBox</item>
         <item name="*com.google.android.googlequicksearchbox:radioButtonStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.CompoundButton.RadioButton</item>
         <item name="*com.google.android.googlequicksearchbox:switchStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.CompoundButton.Switch</item>
+        <item name="*com.google.android.googlequicksearchbox:colorError">@*com.google.android.googlequicksearchbox:color/google_default_color_error</item>
         <item name="*com.google.android.googlequicksearchbox:viewInflaterClass">android.support.design.theme.MaterialComponentsViewInflater</item>
         <item name="*com.google.android.googlequicksearchbox:snackbarStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.Snackbar</item>
         <item name="*com.google.android.googlequicksearchbox:snackbarButtonStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.TextButton.Snackbar</item>
     </style>
     <style name="Base.V14.Theme.GoogleMaterial.Light.Bridge" parent="@*com.google.android.googlequicksearchbox:style/Platform.GoogleMaterial.Light.Bridge">
-        <item name="*com.google.android.googlequicksearchbox:colorSecondary">@*com.google.android.googlequicksearchbox:color/google_blue600</item>
+        <item name="*com.google.android.googlequicksearchbox:colorOnBackground">@*com.google.android.googlequicksearchbox:color/google_default_color_on_background</item>
+        <item name="*com.google.android.googlequicksearchbox:colorOnError">@*com.google.android.googlequicksearchbox:color/google_default_color_on_error</item>
+        <item name="*com.google.android.googlequicksearchbox:colorOnPrimary">@*com.google.android.googlequicksearchbox:color/google_default_color_on_primary</item>
+        <item name="*com.google.android.googlequicksearchbox:colorOnSecondary">@*com.google.android.googlequicksearchbox:color/google_default_color_on_secondary</item>
+        <item name="*com.google.android.googlequicksearchbox:colorOnSurface">@*com.google.android.googlequicksearchbox:color/google_default_color_on_surface</item>
+        <item name="*com.google.android.googlequicksearchbox:colorPrimaryVariant">@*com.google.android.googlequicksearchbox:color/google_default_color_primary_variant</item>
+        <item name="*com.google.android.googlequicksearchbox:colorSecondary">@*com.google.android.googlequicksearchbox:color/google_default_color_secondary</item>
+        <item name="*com.google.android.googlequicksearchbox:colorSecondaryVariant">@*com.google.android.googlequicksearchbox:color/google_default_color_secondary_variant</item>
+        <item name="*com.google.android.googlequicksearchbox:colorSurface">@*com.google.android.googlequicksearchbox:color/google_default_color_surface</item>
         <item name="*com.google.android.googlequicksearchbox:scrimBackground">@*com.google.android.googlequicksearchbox:color/google_scrim</item>
         <item name="*com.google.android.googlequicksearchbox:textAppearanceBody1">@*com.google.android.googlequicksearchbox:style/TextAppearance.GoogleMaterial.Body1</item>
         <item name="*com.google.android.googlequicksearchbox:textAppearanceBody2">@*com.google.android.googlequicksearchbox:style/TextAppearance.GoogleMaterial.Body2</item>
@@ -126,26 +135,11 @@
         <item name="*com.google.android.googlequicksearchbox:textAppearanceOverline">@*com.google.android.googlequicksearchbox:style/TextAppearance.GoogleMaterial.Overline</item>
         <item name="*com.google.android.googlequicksearchbox:textAppearanceSubtitle1">@*com.google.android.googlequicksearchbox:style/TextAppearance.GoogleMaterial.Subtitle1</item>
         <item name="*com.google.android.googlequicksearchbox:textAppearanceSubtitle2">@*com.google.android.googlequicksearchbox:style/TextAppearance.GoogleMaterial.Subtitle2</item>
-        <item name="*com.google.android.googlequicksearchbox:colorPrimary">@*android:color/primary_material_dark</item>
-        <item name="*com.google.android.googlequicksearchbox:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.googlequicksearchbox:colorPrimary">@*com.google.android.googlequicksearchbox:color/google_default_color_primary</item>
+        <item name="*com.google.android.googlequicksearchbox:colorPrimaryDark">@*com.google.android.googlequicksearchbox:color/google_default_color_primary_dark</item>
         <item name="*com.google.android.googlequicksearchbox:colorAccent">@*com.google.android.googlequicksearchbox:color/google_blue500</item>
-        <item name="*com.google.android.googlequicksearchbox:colorPrimaryLight">@*android:color/white</item>
-        <item name="*com.google.android.googlequicksearchbox:colorSecondaryLight">@*com.google.android.googlequicksearchbox:color/google_blue500</item>
-        <item name="*com.google.android.googlequicksearchbox:colorSecondaryDark">@*com.google.android.googlequicksearchbox:color/google_blue900</item>
-        <item name="*com.google.android.googlequicksearchbox:colorPrimary50">@*android:color/white</item>
-        <item name="*com.google.android.googlequicksearchbox:colorPrimary100">@*android:color/white</item>
-        <item name="*com.google.android.googlequicksearchbox:colorPrimary500">@*android:color/white</item>
-        <item name="*com.google.android.googlequicksearchbox:colorPrimary600">@*android:color/white</item>
-        <item name="*com.google.android.googlequicksearchbox:colorPrimary700">@*android:color/white</item>
-        <item name="*com.google.android.googlequicksearchbox:colorPrimary800">@*android:color/white</item>
-        <item name="*com.google.android.googlequicksearchbox:colorPrimary900">@*android:color/white</item>
-        <item name="*com.google.android.googlequicksearchbox:colorSecondary50">@*com.google.android.googlequicksearchbox:color/google_blue50</item>
-        <item name="*com.google.android.googlequicksearchbox:colorSecondary100">@*com.google.android.googlequicksearchbox:color/google_blue100</item>
-        <item name="*com.google.android.googlequicksearchbox:colorSecondary500">@*com.google.android.googlequicksearchbox:color/google_blue500</item>
-        <item name="*com.google.android.googlequicksearchbox:colorSecondary600">@*com.google.android.googlequicksearchbox:color/google_blue600</item>
-        <item name="*com.google.android.googlequicksearchbox:colorSecondary700">@*com.google.android.googlequicksearchbox:color/google_blue700</item>
-        <item name="*com.google.android.googlequicksearchbox:colorSecondary800">@*com.google.android.googlequicksearchbox:color/google_blue800</item>
-        <item name="*com.google.android.googlequicksearchbox:colorSecondary900">@*com.google.android.googlequicksearchbox:color/google_blue900</item>
+        <item name="*com.google.android.googlequicksearchbox:colorSecondary50">@*com.google.android.googlequicksearchbox:color/google_default_color_secondary_50</item>
+        <item name="*com.google.android.googlequicksearchbox:colorSecondary100">@*com.google.android.googlequicksearchbox:color/google_default_color_secondary_100</item>
         <item name="*com.google.android.googlequicksearchbox:textAppearanceDisplay1">@*com.google.android.googlequicksearchbox:style/TextAppearance.GoogleMaterial.Display1</item>
         <item name="*com.google.android.googlequicksearchbox:textAppearanceDisplay2">@*com.google.android.googlequicksearchbox:style/TextAppearance.GoogleMaterial.Display2</item>
         <item name="*com.google.android.googlequicksearchbox:textAppearanceDisplay3">@*com.google.android.googlequicksearchbox:style/TextAppearance.GoogleMaterial.Display3</item>
@@ -155,13 +149,21 @@
         <item name="*com.google.android.googlequicksearchbox:textAppearanceSubtitleAlt2">@*com.google.android.googlequicksearchbox:style/TextAppearance.GoogleMaterial.SubtitleAlt2</item>
     </style>
     <style name="Base.V14.Theme.GoogleMaterial.Light.Dialog" parent="@*com.google.android.googlequicksearchbox:style/Platform.GoogleMaterial.Light.Dialog">
-        <item name="android:colorBackground">@*android:color/background_floating_material_dark</item>
+        <item name="android:colorBackground">@*com.google.android.googlequicksearchbox:color/google_default_color_background</item>
         <item name="android:colorEdgeEffect">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.googlequicksearchbox:bottomAppBarStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.BottomAppBar</item>
         <item name="*com.google.android.googlequicksearchbox:bottomNavigationStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.BottomNavigationView</item>
         <item name="*com.google.android.googlequicksearchbox:chipStandaloneStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.Chip.Input</item>
         <item name="*com.google.android.googlequicksearchbox:chipStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.Chip.Assistive</item>
-        <item name="*com.google.android.googlequicksearchbox:colorSecondary">@*com.google.android.googlequicksearchbox:color/google_blue600</item>
+        <item name="*com.google.android.googlequicksearchbox:colorOnBackground">@*com.google.android.googlequicksearchbox:color/google_default_color_on_background</item>
+        <item name="*com.google.android.googlequicksearchbox:colorOnError">@*com.google.android.googlequicksearchbox:color/google_default_color_on_error</item>
+        <item name="*com.google.android.googlequicksearchbox:colorOnPrimary">@*com.google.android.googlequicksearchbox:color/google_default_color_on_primary</item>
+        <item name="*com.google.android.googlequicksearchbox:colorOnSecondary">@*com.google.android.googlequicksearchbox:color/google_default_color_on_secondary</item>
+        <item name="*com.google.android.googlequicksearchbox:colorOnSurface">@*com.google.android.googlequicksearchbox:color/google_default_color_on_surface</item>
+        <item name="*com.google.android.googlequicksearchbox:colorPrimaryVariant">@*com.google.android.googlequicksearchbox:color/google_default_color_primary_variant</item>
+        <item name="*com.google.android.googlequicksearchbox:colorSecondary">@*com.google.android.googlequicksearchbox:color/google_default_color_secondary</item>
+        <item name="*com.google.android.googlequicksearchbox:colorSecondaryVariant">@*com.google.android.googlequicksearchbox:color/google_default_color_secondary_variant</item>
+        <item name="*com.google.android.googlequicksearchbox:colorSurface">@*com.google.android.googlequicksearchbox:color/google_default_color_surface</item>
         <item name="*com.google.android.googlequicksearchbox:floatingActionButtonStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.FloatingActionButton</item>
         <item name="*com.google.android.googlequicksearchbox:materialButtonStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.Button</item>
         <item name="*com.google.android.googlequicksearchbox:materialCardViewStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.CardView.Light</item>
@@ -194,30 +196,16 @@
         <item name="*com.google.android.googlequicksearchbox:borderlessButtonStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.TextButton</item>
         <item name="*com.google.android.googlequicksearchbox:toolbarStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.Toolbar</item>
         <item name="*com.google.android.googlequicksearchbox:popupMenuStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.PopupMenu</item>
-        <item name="*com.google.android.googlequicksearchbox:colorPrimary">@*android:color/primary_material_dark</item>
-        <item name="*com.google.android.googlequicksearchbox:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.googlequicksearchbox:colorPrimary">@*com.google.android.googlequicksearchbox:color/google_default_color_primary</item>
+        <item name="*com.google.android.googlequicksearchbox:colorPrimaryDark">@*com.google.android.googlequicksearchbox:color/google_default_color_primary_dark</item>
         <item name="*com.google.android.googlequicksearchbox:alertDialogTheme">@*com.google.android.googlequicksearchbox:style/ThemeOverlay.GoogleMaterial.Dialog.Alert</item>
         <item name="*com.google.android.googlequicksearchbox:buttonStyle">@*com.google.android.googlequicksearchbox:style/Widget.AppCompat.Button.Colored</item>
         <item name="*com.google.android.googlequicksearchbox:checkboxStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.CompoundButton.CheckBox</item>
         <item name="*com.google.android.googlequicksearchbox:radioButtonStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.CompoundButton.RadioButton</item>
         <item name="*com.google.android.googlequicksearchbox:switchStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.CompoundButton.Switch</item>
-        <item name="*com.google.android.googlequicksearchbox:colorPrimaryLight">@*android:color/white</item>
-        <item name="*com.google.android.googlequicksearchbox:colorSecondaryLight">@*com.google.android.googlequicksearchbox:color/google_blue500</item>
-        <item name="*com.google.android.googlequicksearchbox:colorSecondaryDark">@*com.google.android.googlequicksearchbox:color/google_blue900</item>
-        <item name="*com.google.android.googlequicksearchbox:colorPrimary50">@*android:color/white</item>
-        <item name="*com.google.android.googlequicksearchbox:colorPrimary100">@*android:color/white</item>
-        <item name="*com.google.android.googlequicksearchbox:colorPrimary500">@*android:color/white</item>
-        <item name="*com.google.android.googlequicksearchbox:colorPrimary600">@*android:color/white</item>
-        <item name="*com.google.android.googlequicksearchbox:colorPrimary700">@*android:color/white</item>
-        <item name="*com.google.android.googlequicksearchbox:colorPrimary800">@*android:color/white</item>
-        <item name="*com.google.android.googlequicksearchbox:colorPrimary900">@*android:color/white</item>
-        <item name="*com.google.android.googlequicksearchbox:colorSecondary50">@*com.google.android.googlequicksearchbox:color/google_blue50</item>
-        <item name="*com.google.android.googlequicksearchbox:colorSecondary100">@*com.google.android.googlequicksearchbox:color/google_blue100</item>
-        <item name="*com.google.android.googlequicksearchbox:colorSecondary500">@*com.google.android.googlequicksearchbox:color/google_blue500</item>
-        <item name="*com.google.android.googlequicksearchbox:colorSecondary600">@*com.google.android.googlequicksearchbox:color/google_blue600</item>
-        <item name="*com.google.android.googlequicksearchbox:colorSecondary700">@*com.google.android.googlequicksearchbox:color/google_blue700</item>
-        <item name="*com.google.android.googlequicksearchbox:colorSecondary800">@*com.google.android.googlequicksearchbox:color/google_blue800</item>
-        <item name="*com.google.android.googlequicksearchbox:colorSecondary900">@*com.google.android.googlequicksearchbox:color/google_blue900</item>
+        <item name="*com.google.android.googlequicksearchbox:colorError">@*com.google.android.googlequicksearchbox:color/google_default_color_error</item>
+        <item name="*com.google.android.googlequicksearchbox:colorSecondary50">@*com.google.android.googlequicksearchbox:color/google_default_color_secondary_50</item>
+        <item name="*com.google.android.googlequicksearchbox:colorSecondary100">@*com.google.android.googlequicksearchbox:color/google_default_color_secondary_100</item>
         <item name="*com.google.android.googlequicksearchbox:textAppearanceDisplay1">@*com.google.android.googlequicksearchbox:style/TextAppearance.GoogleMaterial.Display1</item>
         <item name="*com.google.android.googlequicksearchbox:textAppearanceDisplay2">@*com.google.android.googlequicksearchbox:style/TextAppearance.GoogleMaterial.Display2</item>
         <item name="*com.google.android.googlequicksearchbox:textAppearanceDisplay3">@*com.google.android.googlequicksearchbox:style/TextAppearance.GoogleMaterial.Display3</item>
@@ -512,7 +500,6 @@
     </style>
     <style name="LineOneText">
         <item name="android:textAppearance">@*com.google.android.googlequicksearchbox:style/LineOneTextAppearance</item>
-        <item name="android:ellipsize">end</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:duplicateParentState">true</item>
         <item name="android:scrollHorizontally">false</item>
@@ -587,7 +574,7 @@
         <item name="android:backgroundTint">@null</item>
     </style>
     <style name="Opa.Button.Flat" parent="@*com.google.android.googlequicksearchbox:style/Widget.AppCompat.Button.Borderless">
-        <item name="android:textColor">@*com.google.android.googlequicksearchbox:color/opa_button_tint_selector</item>
+        <item name="android:textColor">@*com.google.android.googlequicksearchbox:color/opa_button_tint</item>
         <item name="android:background">@*android:color/button_material_dark</item>
         <item name="android:padding">0.0dip</item>
         <item name="android:includeFontPadding">false</item>
@@ -755,23 +742,10 @@
         <item name="android:background">@*android:color/background_floating_material_dark</item>
         <item name="android:elevation">@*com.google.android.googlequicksearchbox:dimen/suw_glif_card_elevation</item>
     </style>
-    <style name="SuwThemeGlifV2" parent="@*com.google.android.googlequicksearchbox:style/SuwThemeGlif">
-        <item name="android:colorBackground">@*com.google.android.googlequicksearchbox:color/suw_glif_background_color_dark</item>
-        <item name="android:editTextStyle">@*com.google.android.googlequicksearchbox:style/SuwEditText</item>
-        <item name="android:alertDialogTheme">@*com.google.android.googlequicksearchbox:style/SuwAlertDialogTheme</item>
-        <item name="*com.google.android.googlequicksearchbox:suwDividerInsetEnd">@*com.google.android.googlequicksearchbox:dimen/suw_glif_margin_sides</item>
-        <item name="*com.google.android.googlequicksearchbox:suwDividerInsetStart">@*com.google.android.googlequicksearchbox:dimen/suw_glif_margin_sides</item>
-        <item name="*com.google.android.googlequicksearchbox:suwDividerInsetStartNoIcon">@*com.google.android.googlequicksearchbox:dimen/suw_glif_margin_sides</item>
-        <item name="*com.google.android.googlequicksearchbox:suwEditTextBackgroundColor">@*com.google.android.googlequicksearchbox:color/suw_glif_edit_text_bg_light_color</item>
-        <item name="*com.google.android.googlequicksearchbox:suwGlifHeaderGravity">center_horizontal</item>
-        <item name="*com.google.android.googlequicksearchbox:suwScrollIndicators">bottom|top</item>
-        <item name="*com.google.android.googlequicksearchbox:suwBackgroundPatterned">false</item>
-        <item name="*com.google.android.googlequicksearchbox:suwBackgroundBaseColor">@*android:color/background_floating_material_dark</item>
-    </style>
-    <style name="SuwThemeGlifV2.Light" parent="@*com.google.android.googlequicksearchbox:style/SuwThemeGlif">
+    <style name="SuwThemeGlifV2.Light" parent="@*com.google.android.googlequicksearchbox:style/SuwThemeGlif.Light">
         <item name="android:colorBackground">@*com.google.android.googlequicksearchbox:color/suw_glif_background_color_light</item>
         <item name="android:editTextStyle">@*com.google.android.googlequicksearchbox:style/SuwEditText</item>
-        <item name="android:alertDialogTheme">@*com.google.android.googlequicksearchbox:style/SuwAlertDialogTheme</item>
+        <item name="android:alertDialogTheme">@*com.google.android.googlequicksearchbox:style/SuwAlertDialogTheme.Light</item>
         <item name="*com.google.android.googlequicksearchbox:suwDividerInsetEnd">@*com.google.android.googlequicksearchbox:dimen/suw_glif_margin_sides</item>
         <item name="*com.google.android.googlequicksearchbox:suwDividerInsetStart">@*com.google.android.googlequicksearchbox:dimen/suw_glif_margin_sides</item>
         <item name="*com.google.android.googlequicksearchbox:suwDividerInsetStartNoIcon">@*com.google.android.googlequicksearchbox:dimen/suw_glif_margin_sides</item>

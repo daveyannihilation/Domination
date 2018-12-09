@@ -58,9 +58,11 @@
         <item name="*com.google.android.dialer:colorDividerLine">@*android:color/transparent</item>
         <item name="*com.google.android.dialer:colorIcon">@*com.google.android.dialer:color/dialer_dark_theme_icon_color</item>
         <item name="*com.google.android.dialer:colorIconDisabled">#ffaaaaaa</item>
+        <item name="*com.google.android.dialer:colorIconEnabledRippleInCall">@*com.google.android.dialer:color/dialer_dark_theme_incall_ripple_checked</item>
         <item name="*com.google.android.dialer:colorIconInCall">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.dialer:colorIconOnUnthemedDarkBackground">@*android:color/white</item>
         <item name="*com.google.android.dialer:colorIconOnUnthemedLightBackground">@*android:color/white</item>
+        <item name="*com.google.android.dialer:colorIconRippleInCall">@*com.google.android.dialer:color/dialer_dark_theme_incall_ripple</item>
         <item name="*com.google.android.dialer:colorMobileOriginatingChatBackground">@*com.google.android.dialer:color/google_blue_300</item>
         <item name="*com.google.android.dialer:colorMobileOriginatingChatText">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.dialer:colorMobileTerminatingChatBackground">@*android:color/primary_text_leanback_light</item>
@@ -76,6 +78,27 @@
         <item name="*com.google.android.dialer:colorAccent">@*com.google.android.dialer:color/dialer_dark_theme_color</item>
         <item name="*com.google.android.dialer:colorControlActivated">@*android:color/white</item>
         <item name="*com.google.android.dialer:alertDialogTheme">@*com.google.android.dialer:style/AlertDialogTheme.Dark</item>
+    </style>
+    <style name="Dialer.Incall.SpeakEasySuggestions" parent="@*com.google.android.dialer:style/Dialer.TextAppearance.SubHeader">
+        <item name="android:background">@*com.google.android.dialer:drawable/speakeasy_suggestive_chip_background</item>
+        <item name="android:paddingTop">@*com.google.android.dialer:dimen/speakeasy_suggestions_button_padding_top_and_bottom</item>
+        <item name="android:paddingBottom">@*com.google.android.dialer:dimen/speakeasy_suggestions_button_padding_top_and_bottom</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@*com.google.android.dialer:dimen/speakeasy_suggestions_button_height</item>
+        <item name="android:drawablePadding">@*com.google.android.dialer:dimen/speakeasy_suggestions_button_padding_between_text_and_icons</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_marginStart">@*com.google.android.dialer:dimen/speakeasy_suggestions_button_start_margin</item>
+        <item name="android:drawableTint">@*android:color/white</item>
+    </style>
+    <style name="Dialer.Incall.SpeakEasySuggestions.ReplyButton" parent="@*com.google.android.dialer:style/Dialer.Incall.SpeakEasySuggestions">
+        <item name="android:background">@*com.google.android.dialer:drawable/speakeasy_suggestive_chip_background</item>
+        <item name="android:drawableLeft">@*com.google.android.dialer:drawable/quantum_gm_ic_record_voice_over_black_24</item>
+        <item name="android:drawableTint">@*android:color/white</item>
+    </style>
+    <style name="Dialer.Incall.TextAppearance.Message" parent="@*com.google.android.dialer:style/Dialer.Incall.TextAppearance">
+        <item name="android:textSize">24.0sp</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:fontFamily">sans-serif</item>
     </style>
     <style name="Dialer.ThemeBase" parent="@*com.google.android.dialer:style/Dialer">
         <item name="android:colorBackground">@*android:color/background_dark</item>
@@ -100,9 +123,11 @@
         <item name="*com.google.android.dialer:colorDividerLine">@*android:color/transparent</item>
         <item name="*com.google.android.dialer:colorIcon">@*com.google.android.dialer:color/dialer_light_theme_icon_color</item>
         <item name="*com.google.android.dialer:colorIconDisabled">#ffaaaaaa</item>
+        <item name="*com.google.android.dialer:colorIconEnabledRippleInCall">@*com.google.android.dialer:color/dialer_light_theme_incall_ripple_checked</item>
         <item name="*com.google.android.dialer:colorIconInCall">@*android:color/white</item>
         <item name="*com.google.android.dialer:colorIconOnUnthemedDarkBackground">@*android:color/white</item>
         <item name="*com.google.android.dialer:colorIconOnUnthemedLightBackground">@*android:color/white</item>
+        <item name="*com.google.android.dialer:colorIconRippleInCall">@*com.google.android.dialer:color/dialer_light_theme_incall_ripple_checked</item>
         <item name="*com.google.android.dialer:colorMobileOriginatingChatBackground">@*android:color/background_dark</item>
         <item name="*com.google.android.dialer:colorMobileOriginatingChatText">#ff1976d2</item>
         <item name="*com.google.android.dialer:colorMobileTerminatingChatBackground">@*android:color/background_dark</item>
@@ -143,27 +168,6 @@
         <item name="android:minHeight">36.0dip</item>
         <item name="android:paddingStart">@*com.google.android.dialer:dimen/button_horizontal_padding</item>
         <item name="android:paddingEnd">@*com.google.android.dialer:dimen/button_horizontal_padding</item>
-    </style>
-    <style name="Dialer.Incall.SpeakEasySuggestions" parent="@*com.google.android.dialer:style/Dialer.TextAppearance.SubHeader">
-        <item name="android:background">@*com.google.android.dialer:drawable/speakeasy_suggestive_chip_background</item>
-        <item name="android:paddingTop">@*com.google.android.dialer:dimen/speakeasy_suggestions_button_padding_top_and_bottom</item>
-        <item name="android:paddingBottom">@*com.google.android.dialer:dimen/speakeasy_suggestions_button_padding_top_and_bottom</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">@*com.google.android.dialer:dimen/speakeasy_suggestions_button_height</item>
-        <item name="android:drawablePadding">@*com.google.android.dialer:dimen/speakeasy_suggestions_button_padding_between_text_and_icons</item>
-        <item name="android:textAllCaps">false</item>
-        <item name="android:layout_marginStart">@*com.google.android.dialer:dimen/speakeasy_suggestions_button_start_margin</item>
-        <item name="android:drawableTint">@*android:color/white</item>
-    </style>
-    <style name="Dialer.Incall.SpeakEasySuggestions.ReplyButton" parent="@*com.google.android.dialer:style/Dialer.Incall.SpeakEasySuggestions">
-        <item name="android:background">@*com.google.android.dialer:drawable/speakeasy_suggestive_chip_background</item>
-        <item name="android:drawableLeft">@*com.google.android.dialer:drawable/quantum_gm_ic_record_voice_over_black_24</item>
-        <item name="android:drawableTint">@*android:color/white</item>
-    </style>
-    <style name="Dialer.Incall.TextAppearance.Message" parent="@*com.google.android.dialer:style/Dialer.Incall.TextAppearance">
-        <item name="android:textSize">24.0sp</item>
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:fontFamily">sans-serif</item>
     </style>
     <style name="Dialpad.Themed" parent="@*com.google.android.dialer:style/Dialpad">
         <item name="*com.google.android.dialer:dialpad_text_color">#ffffffff</item>

@@ -28,9 +28,11 @@
         <item name="*com.google.android.apps.photos:productLockupViewStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.ProductLockupView</item>
         <item name="*com.google.android.apps.photos:tabStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.TabLayout</item>
         <item name="*com.google.android.apps.photos:textInputStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.TextInputLayout.OutlinedBox</item>
+        <item name="*com.google.android.apps.photos:actionOverflowMenuStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.PopupMenu.Overflow</item>
         <item name="*com.google.android.apps.photos:actionBarStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.Light.ActionBar.Solid</item>
         <item name="*com.google.android.apps.photos:borderlessButtonStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.TextButton</item>
         <item name="*com.google.android.apps.photos:toolbarStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.Toolbar</item>
+        <item name="*com.google.android.apps.photos:popupMenuStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.PopupMenu</item>
         <item name="*com.google.android.apps.photos:alertDialogTheme">@*com.google.android.apps.photos:style/ThemeOverlay.GoogleMaterial.Dialog.Alert</item>
         <item name="*com.google.android.apps.photos:buttonStyle">@*com.google.android.apps.photos:style/Widget.AppCompat.Button.Colored</item>
         <item name="*com.google.android.apps.photos:checkboxStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.CompoundButton.CheckBox</item>
@@ -41,7 +43,9 @@
         <item name="*com.google.android.apps.photos:snackbarButtonStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.TextButton.Snackbar</item>
     </style>
     <style name="Base.V14.Theme.GoogleMaterial.Light.Bridge" parent="@*com.google.android.apps.photos:style/Platform.GoogleMaterial.Light.Bridge">
+        <item name="*com.google.android.apps.photos:colorPrimaryVariant">@*android:color/primary_material_dark</item>
         <item name="*com.google.android.apps.photos:colorSecondary">@*com.google.android.apps.photos:color/google_blue600</item>
+        <item name="*com.google.android.apps.photos:colorSecondaryVariant">@*com.google.android.apps.photos:color/google_blue500</item>
         <item name="*com.google.android.apps.photos:scrimBackground">@*com.google.android.apps.photos:color/google_scrim</item>
         <item name="*com.google.android.apps.photos:textAppearanceBody1">@*com.google.android.apps.photos:style/TextAppearance.GoogleMaterial.Body1</item>
         <item name="*com.google.android.apps.photos:textAppearanceBody2">@*com.google.android.apps.photos:style/TextAppearance.GoogleMaterial.Body2</item>
@@ -59,23 +63,8 @@
         <item name="*com.google.android.apps.photos:colorPrimary">@*android:color/primary_material_dark</item>
         <item name="*com.google.android.apps.photos:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
         <item name="*com.google.android.apps.photos:colorAccent">@*com.google.android.apps.photos:color/google_blue500</item>
-        <item name="*com.google.android.apps.photos:colorPrimaryLight">@*android:color/white</item>
-        <item name="*com.google.android.apps.photos:colorSecondaryLight">@*com.google.android.apps.photos:color/google_blue500</item>
-        <item name="*com.google.android.apps.photos:colorSecondaryDark">@*com.google.android.apps.photos:color/google_blue900</item>
-        <item name="*com.google.android.apps.photos:colorPrimary50">@*android:color/white</item>
-        <item name="*com.google.android.apps.photos:colorPrimary100">@*android:color/white</item>
-        <item name="*com.google.android.apps.photos:colorPrimary500">@*android:color/white</item>
-        <item name="*com.google.android.apps.photos:colorPrimary600">@*android:color/white</item>
-        <item name="*com.google.android.apps.photos:colorPrimary700">@*android:color/white</item>
-        <item name="*com.google.android.apps.photos:colorPrimary800">@*android:color/white</item>
-        <item name="*com.google.android.apps.photos:colorPrimary900">@*android:color/white</item>
         <item name="*com.google.android.apps.photos:colorSecondary50">@*com.google.android.apps.photos:color/google_blue50</item>
         <item name="*com.google.android.apps.photos:colorSecondary100">@*com.google.android.apps.photos:color/google_blue100</item>
-        <item name="*com.google.android.apps.photos:colorSecondary500">@*com.google.android.apps.photos:color/google_blue500</item>
-        <item name="*com.google.android.apps.photos:colorSecondary600">@*com.google.android.apps.photos:color/google_blue600</item>
-        <item name="*com.google.android.apps.photos:colorSecondary700">@*com.google.android.apps.photos:color/google_blue700</item>
-        <item name="*com.google.android.apps.photos:colorSecondary800">@*com.google.android.apps.photos:color/google_blue800</item>
-        <item name="*com.google.android.apps.photos:colorSecondary900">@*com.google.android.apps.photos:color/google_blue900</item>
         <item name="*com.google.android.apps.photos:textAppearanceDisplay1">@*com.google.android.apps.photos:style/TextAppearance.GoogleMaterial.Display1</item>
         <item name="*com.google.android.apps.photos:textAppearanceDisplay2">@*com.google.android.apps.photos:style/TextAppearance.GoogleMaterial.Display2</item>
         <item name="*com.google.android.apps.photos:textAppearanceDisplay3">@*com.google.android.apps.photos:style/TextAppearance.GoogleMaterial.Display3</item>
@@ -90,7 +79,9 @@
         <item name="*com.google.android.apps.photos:bottomNavigationStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.BottomNavigationView</item>
         <item name="*com.google.android.apps.photos:chipStandaloneStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.Chip.Input</item>
         <item name="*com.google.android.apps.photos:chipStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.Chip.Assistive</item>
+        <item name="*com.google.android.apps.photos:colorPrimaryVariant">@*android:color/primary_material_dark</item>
         <item name="*com.google.android.apps.photos:colorSecondary">@*com.google.android.apps.photos:color/google_blue600</item>
+        <item name="*com.google.android.apps.photos:colorSecondaryVariant">@*com.google.android.apps.photos:color/google_blue500</item>
         <item name="*com.google.android.apps.photos:floatingActionButtonStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.FloatingActionButton</item>
         <item name="*com.google.android.apps.photos:materialButtonStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.Button</item>
         <item name="*com.google.android.apps.photos:materialCardViewStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.CardView.Light</item>
@@ -115,12 +106,14 @@
         <item name="*com.google.android.apps.photos:textAppearanceSubtitle1">@*com.google.android.apps.photos:style/TextAppearance.GoogleMaterial.Subtitle1</item>
         <item name="*com.google.android.apps.photos:textAppearanceSubtitle2">@*com.google.android.apps.photos:style/TextAppearance.GoogleMaterial.Subtitle2</item>
         <item name="*com.google.android.apps.photos:textInputStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.TextInputLayout.OutlinedBox</item>
+        <item name="*com.google.android.apps.photos:actionOverflowMenuStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.PopupMenu.Overflow</item>
         <item name="*com.google.android.apps.photos:actionBarStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.Light.ActionBar.Solid</item>
         <item name="*com.google.android.apps.photos:textAppearanceLargePopupMenu">@*com.google.android.apps.photos:style/TextAppearance.GoogleMaterial.Body1</item>
         <item name="*com.google.android.apps.photos:textAppearanceSmallPopupMenu">@*com.google.android.apps.photos:style/TextAppearance.GoogleMaterial.Body1</item>
         <item name="*com.google.android.apps.photos:buttonBarButtonStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.TextButton.Dialog</item>
         <item name="*com.google.android.apps.photos:borderlessButtonStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.TextButton</item>
         <item name="*com.google.android.apps.photos:toolbarStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.Toolbar</item>
+        <item name="*com.google.android.apps.photos:popupMenuStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.PopupMenu</item>
         <item name="*com.google.android.apps.photos:colorPrimary">@*android:color/primary_material_dark</item>
         <item name="*com.google.android.apps.photos:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
         <item name="*com.google.android.apps.photos:alertDialogTheme">@*com.google.android.apps.photos:style/ThemeOverlay.GoogleMaterial.Dialog.Alert</item>
@@ -128,22 +121,8 @@
         <item name="*com.google.android.apps.photos:checkboxStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.CompoundButton.CheckBox</item>
         <item name="*com.google.android.apps.photos:radioButtonStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.CompoundButton.RadioButton</item>
         <item name="*com.google.android.apps.photos:switchStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.CompoundButton.Switch</item>
-        <item name="*com.google.android.apps.photos:colorPrimaryLight">@*android:color/white</item>
-        <item name="*com.google.android.apps.photos:colorSecondaryLight">@*com.google.android.apps.photos:color/google_blue500</item>
-        <item name="*com.google.android.apps.photos:colorSecondaryDark">@*com.google.android.apps.photos:color/google_blue900</item>
-        <item name="*com.google.android.apps.photos:colorPrimary100">@*android:color/white</item>
-        <item name="*com.google.android.apps.photos:colorPrimary500">@*android:color/white</item>
-        <item name="*com.google.android.apps.photos:colorPrimary600">@*android:color/white</item>
-        <item name="*com.google.android.apps.photos:colorPrimary700">@*android:color/white</item>
-        <item name="*com.google.android.apps.photos:colorPrimary800">@*android:color/white</item>
-        <item name="*com.google.android.apps.photos:colorPrimary900">@*android:color/white</item>
         <item name="*com.google.android.apps.photos:colorSecondary50">@*com.google.android.apps.photos:color/google_blue50</item>
         <item name="*com.google.android.apps.photos:colorSecondary100">@*com.google.android.apps.photos:color/google_blue100</item>
-        <item name="*com.google.android.apps.photos:colorSecondary500">@*com.google.android.apps.photos:color/google_blue500</item>
-        <item name="*com.google.android.apps.photos:colorSecondary600">@*com.google.android.apps.photos:color/google_blue600</item>
-        <item name="*com.google.android.apps.photos:colorSecondary700">@*com.google.android.apps.photos:color/google_blue700</item>
-        <item name="*com.google.android.apps.photos:colorSecondary800">@*com.google.android.apps.photos:color/google_blue800</item>
-        <item name="*com.google.android.apps.photos:colorSecondary900">@*com.google.android.apps.photos:color/google_blue900</item>
         <item name="*com.google.android.apps.photos:textAppearanceDisplay1">@*com.google.android.apps.photos:style/TextAppearance.GoogleMaterial.Display1</item>
         <item name="*com.google.android.apps.photos:textAppearanceDisplay2">@*com.google.android.apps.photos:style/TextAppearance.GoogleMaterial.Display2</item>
         <item name="*com.google.android.apps.photos:textAppearanceDisplay3">@*com.google.android.apps.photos:style/TextAppearance.GoogleMaterial.Display3</item>
@@ -172,12 +151,12 @@
         <item name="android:layout_marginBottom">@*com.google.android.apps.photos:dimen/photos_floatingsearchbar_bottom_margin</item>
         <item name="android:layout_marginStart">@*com.google.android.apps.photos:dimen/photos_floatingsearchbar_cardui_horizontal_margin</item>
         <item name="android:layout_marginEnd">@*com.google.android.apps.photos:dimen/photos_floatingsearchbar_cardui_horizontal_margin</item>
-        <item name="*com.google.android.apps.photos:strokeWidth">0.0dip</item>
         <item name="*com.google.android.apps.photos:cardBackgroundColor">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.apps.photos:cardCornerRadius">@*com.google.android.apps.photos:dimen/photos_floatingsearchbar_cardui_corner_radius</item>
         <item name="*com.google.android.apps.photos:cardElevation">@*com.google.android.apps.photos:dimen/photos_floatingsearchbar_cardui_default_elevation</item>
         <item name="*com.google.android.apps.photos:cardMaxElevation">@*com.google.android.apps.photos:dimen/photos_floatingsearchbar_cardui_max_elevation</item>
         <item name="*com.google.android.apps.photos:cardUseCompatPadding">true</item>
+        <item name="*com.google.android.apps.photos:strokeWidth">0.0dip</item>
     </style>
     <style name="GvrDialogTheme" parent="@*android:style/Theme.Holo.Dialog">
         <item name="android:windowBackground">@*android:color/transparent</item>
@@ -306,10 +285,10 @@
     </style>
     <style name="SearchBarView">
         <item name="android:backgroundTint">@null</item>
-        <item name="*com.google.android.apps.photos:strokeWidth">0.0dip</item>
         <item name="*com.google.android.apps.photos:cardBackgroundColor">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.apps.photos:cardElevation">@*com.google.android.apps.photos:dimen/photos_floatingsearchbar_autocomplete_default_elevation</item>
         <item name="*com.google.android.apps.photos:cardMaxElevation">@*com.google.android.apps.photos:dimen/photos_floatingsearchbar_autocomplete_max_elevation</item>
+        <item name="*com.google.android.apps.photos:strokeWidth">0.0dip</item>
     </style>
     <style name="sendkit_ui_white_tint">
         <item name="*com.google.android.apps.photos:colorControlNormal">@*android:color/white</item>
