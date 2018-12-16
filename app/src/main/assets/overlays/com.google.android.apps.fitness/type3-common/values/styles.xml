@@ -10,6 +10,7 @@
         <item name="android:datePickerDialogTheme">@*com.google.android.apps.fitness:style/ThemeOverlay.GoogleMaterial.Dialog</item>
         <item name="android:colorEdgeEffect">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.apps.fitness:actionBarStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.Light.ActionBar.Solid</item>
+        <item name="*com.google.android.apps.fitness:actionOverflowMenuStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.PopupMenu.Overflow</item>
         <item name="*com.google.android.apps.fitness:alertDialogTheme">@*com.google.android.apps.fitness:style/ThemeOverlay.GoogleMaterial.Dialog.Alert</item>
         <item name="*com.google.android.apps.fitness:borderlessButtonStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.TextButton</item>
         <item name="*com.google.android.apps.fitness:bottomAppBarStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.BottomAppBar</item>
@@ -20,6 +21,7 @@
         <item name="*com.google.android.apps.fitness:chipGroupStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.ChipGroup</item>
         <item name="*com.google.android.apps.fitness:chipStandaloneStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.Chip.Input</item>
         <item name="*com.google.android.apps.fitness:chipStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.Chip.Assistive</item>
+        <item name="*com.google.android.apps.fitness:colorError">@*com.google.android.apps.fitness:color/google_default_color_error</item>
         <item name="*com.google.android.apps.fitness:floatingActionButtonStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.FloatingActionButton</item>
         <item name="*com.google.android.apps.fitness:materialButtonStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.Button</item>
         <item name="*com.google.android.apps.fitness:materialCardViewStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.CardView.Light</item>
@@ -27,6 +29,7 @@
         <item name="*com.google.android.apps.fitness:openSearchBarStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.OpenSearchBar</item>
         <item name="*com.google.android.apps.fitness:openSearchViewPrefixStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.OpenSearchView.Prefix</item>
         <item name="*com.google.android.apps.fitness:openSearchViewStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.OpenSearchView</item>
+        <item name="*com.google.android.apps.fitness:popupMenuStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.PopupMenu</item>
         <item name="*com.google.android.apps.fitness:productLockupViewStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.ProductLockupView</item>
         <item name="*com.google.android.apps.fitness:radioButtonStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.CompoundButton.RadioButton</item>
         <item name="*com.google.android.apps.fitness:snackbarButtonStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.TextButton.Snackbar</item>
@@ -39,26 +42,19 @@
     </style>
     <style name="Base.V14.Theme.GoogleMaterial.Light.Bridge" parent="@*com.google.android.apps.fitness:style/Platform.GoogleMaterial.Light.Bridge">
         <item name="*com.google.android.apps.fitness:colorAccent">@*com.google.android.apps.fitness:color/google_blue500</item>
-        <item name="*com.google.android.apps.fitness:colorPrimary">@*android:color/primary_material_dark</item>
-        <item name="*com.google.android.apps.fitness:colorPrimary100">@*android:color/white</item>
-        <item name="*com.google.android.apps.fitness:colorPrimary50">@*android:color/white</item>
-        <item name="*com.google.android.apps.fitness:colorPrimary500">@*android:color/white</item>
-        <item name="*com.google.android.apps.fitness:colorPrimary600">@*android:color/white</item>
-        <item name="*com.google.android.apps.fitness:colorPrimary700">@*android:color/white</item>
-        <item name="*com.google.android.apps.fitness:colorPrimary800">@*android:color/white</item>
-        <item name="*com.google.android.apps.fitness:colorPrimary900">@*android:color/white</item>
-        <item name="*com.google.android.apps.fitness:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
-        <item name="*com.google.android.apps.fitness:colorPrimaryLight">@*android:color/white</item>
-        <item name="*com.google.android.apps.fitness:colorSecondary">@*com.google.android.apps.fitness:color/google_blue600</item>
-        <item name="*com.google.android.apps.fitness:colorSecondary100">@*com.google.android.apps.fitness:color/google_blue100</item>
-        <item name="*com.google.android.apps.fitness:colorSecondary50">@*com.google.android.apps.fitness:color/google_blue500</item>
-        <item name="*com.google.android.apps.fitness:colorSecondary500">@*com.google.android.apps.fitness:color/google_blue500</item>
-        <item name="*com.google.android.apps.fitness:colorSecondary600">@*com.google.android.apps.fitness:color/google_blue600</item>
-        <item name="*com.google.android.apps.fitness:colorSecondary700">@*com.google.android.apps.fitness:color/google_blue700</item>
-        <item name="*com.google.android.apps.fitness:colorSecondary800">@*com.google.android.apps.fitness:color/google_blue800</item>
-        <item name="*com.google.android.apps.fitness:colorSecondary900">@*com.google.android.apps.fitness:color/google_blue900</item>
-        <item name="*com.google.android.apps.fitness:colorSecondaryDark">@*com.google.android.apps.fitness:color/google_blue900</item>
-        <item name="*com.google.android.apps.fitness:colorSecondaryLight">@*com.google.android.apps.fitness:color/google_blue500</item>
+        <item name="*com.google.android.apps.fitness:colorOnBackground">@*com.google.android.apps.fitness:color/google_default_color_on_background</item>
+        <item name="*com.google.android.apps.fitness:colorOnError">@*com.google.android.apps.fitness:color/google_default_color_on_error</item>
+        <item name="*com.google.android.apps.fitness:colorOnPrimary">@*com.google.android.apps.fitness:color/google_default_color_on_primary</item>
+        <item name="*com.google.android.apps.fitness:colorOnSecondary">@*com.google.android.apps.fitness:color/google_default_color_on_secondary</item>
+        <item name="*com.google.android.apps.fitness:colorOnSurface">@*com.google.android.apps.fitness:color/google_default_color_on_surface</item>
+        <item name="*com.google.android.apps.fitness:colorPrimary">@*com.google.android.apps.fitness:color/google_default_color_primary</item>
+        <item name="*com.google.android.apps.fitness:colorPrimaryDark">@*com.google.android.apps.fitness:color/google_default_color_primary_dark</item>
+        <item name="*com.google.android.apps.fitness:colorPrimaryVariant">@*com.google.android.apps.fitness:color/google_default_color_primary_variant</item>
+        <item name="*com.google.android.apps.fitness:colorSecondary">@*com.google.android.apps.fitness:color/google_default_color_secondary</item>
+        <item name="*com.google.android.apps.fitness:colorSecondary100">@*com.google.android.apps.fitness:color/google_default_color_secondary_100</item>
+        <item name="*com.google.android.apps.fitness:colorSecondary50">@*com.google.android.apps.fitness:color/google_default_color_secondary_50</item>
+        <item name="*com.google.android.apps.fitness:colorSecondaryVariant">@*com.google.android.apps.fitness:color/google_default_color_secondary_variant</item>
+        <item name="*com.google.android.apps.fitness:colorSurface">@*com.google.android.apps.fitness:color/google_default_color_surface</item>
         <item name="*com.google.android.apps.fitness:scrimBackground">@*com.google.android.apps.fitness:color/google_scrim</item>
         <item name="*com.google.android.apps.fitness:textAppearanceBody1">@*com.google.android.apps.fitness:style/TextAppearance.GoogleMaterial.Body1</item>
         <item name="*com.google.android.apps.fitness:textAppearanceBody2">@*com.google.android.apps.fitness:style/TextAppearance.GoogleMaterial.Body2</item>
@@ -85,6 +81,7 @@
         <item name="android:colorBackground">@*android:color/background_floating_material_dark</item>
         <item name="android:colorEdgeEffect">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.apps.fitness:actionBarStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.Light.ActionBar.Solid</item>
+        <item name="*com.google.android.apps.fitness:actionOverflowMenuStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.PopupMenu.Overflow</item>
         <item name="*com.google.android.apps.fitness:alertDialogTheme">@*com.google.android.apps.fitness:style/ThemeOverlay.GoogleMaterial.Dialog.Alert</item>
         <item name="*com.google.android.apps.fitness:borderlessButtonStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.TextButton</item>
         <item name="*com.google.android.apps.fitness:bottomAppBarStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.BottomAppBar</item>
@@ -94,26 +91,20 @@
         <item name="*com.google.android.apps.fitness:checkboxStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.CompoundButton.CheckBox</item>
         <item name="*com.google.android.apps.fitness:chipStandaloneStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.Chip.Input</item>
         <item name="*com.google.android.apps.fitness:chipStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.Chip.Assistive</item>
-        <item name="*com.google.android.apps.fitness:colorPrimary">@*android:color/primary_material_dark</item>
-        <item name="*com.google.android.apps.fitness:colorPrimary100">@*android:color/white</item>
-        <item name="*com.google.android.apps.fitness:colorPrimary50">@*android:color/white</item>
-        <item name="*com.google.android.apps.fitness:colorPrimary500">@*android:color/white</item>
-        <item name="*com.google.android.apps.fitness:colorPrimary600">@*android:color/white</item>
-        <item name="*com.google.android.apps.fitness:colorPrimary700">@*android:color/white</item>
-        <item name="*com.google.android.apps.fitness:colorPrimary800">@*android:color/white</item>
-        <item name="*com.google.android.apps.fitness:colorPrimary900">@*android:color/white</item>
-        <item name="*com.google.android.apps.fitness:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
-        <item name="*com.google.android.apps.fitness:colorPrimaryLight">@*android:color/white</item>
-        <item name="*com.google.android.apps.fitness:colorSecondary">@*com.google.android.apps.fitness:color/google_blue600</item>
-        <item name="*com.google.android.apps.fitness:colorSecondary100">@*com.google.android.apps.fitness:color/google_blue100</item>
-        <item name="*com.google.android.apps.fitness:colorSecondary50">@*com.google.android.apps.fitness:color/google_blue500</item>
-        <item name="*com.google.android.apps.fitness:colorSecondary500">@*com.google.android.apps.fitness:color/google_blue500</item>
-        <item name="*com.google.android.apps.fitness:colorSecondary600">@*com.google.android.apps.fitness:color/google_blue600</item>
-        <item name="*com.google.android.apps.fitness:colorSecondary700">@*com.google.android.apps.fitness:color/google_blue700</item>
-        <item name="*com.google.android.apps.fitness:colorSecondary800">@*com.google.android.apps.fitness:color/google_blue800</item>
-        <item name="*com.google.android.apps.fitness:colorSecondary900">@*com.google.android.apps.fitness:color/google_blue900</item>
-        <item name="*com.google.android.apps.fitness:colorSecondaryDark">@*com.google.android.apps.fitness:color/google_blue900</item>
-        <item name="*com.google.android.apps.fitness:colorSecondaryLight">@*com.google.android.apps.fitness:color/google_blue500</item>
+        <item name="*com.google.android.apps.fitness:colorError">@*com.google.android.apps.fitness:color/google_default_color_error</item>
+        <item name="*com.google.android.apps.fitness:colorOnBackground">@*com.google.android.apps.fitness:color/google_default_color_on_background</item>
+        <item name="*com.google.android.apps.fitness:colorOnError">@*com.google.android.apps.fitness:color/google_default_color_on_error</item>
+        <item name="*com.google.android.apps.fitness:colorOnPrimary">@*com.google.android.apps.fitness:color/google_default_color_on_primary</item>
+        <item name="*com.google.android.apps.fitness:colorOnSecondary">@*com.google.android.apps.fitness:color/google_default_color_on_secondary</item>
+        <item name="*com.google.android.apps.fitness:colorOnSurface">@*com.google.android.apps.fitness:color/google_default_color_on_surface</item>
+        <item name="*com.google.android.apps.fitness:colorPrimary">@*com.google.android.apps.fitness:color/google_default_color_primary</item>
+        <item name="*com.google.android.apps.fitness:colorPrimaryDark">@*com.google.android.apps.fitness:color/google_default_color_primary_dark</item>
+        <item name="*com.google.android.apps.fitness:colorPrimaryVariant">@*com.google.android.apps.fitness:color/google_default_color_primary_variant</item>
+        <item name="*com.google.android.apps.fitness:colorSecondary">@*com.google.android.apps.fitness:color/google_default_color_secondary</item>
+        <item name="*com.google.android.apps.fitness:colorSecondary100">@*com.google.android.apps.fitness:color/google_default_color_secondary_100</item>
+        <item name="*com.google.android.apps.fitness:colorSecondary50">@*com.google.android.apps.fitness:color/google_default_color_secondary_50</item>
+        <item name="*com.google.android.apps.fitness:colorSecondaryVariant">@*com.google.android.apps.fitness:color/google_default_color_secondary_variant</item>
+        <item name="*com.google.android.apps.fitness:colorSurface">@*com.google.android.apps.fitness:color/google_default_color_surface</item>
         <item name="*com.google.android.apps.fitness:floatingActionButtonStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.FloatingActionButton</item>
         <item name="*com.google.android.apps.fitness:materialButtonStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.Button</item>
         <item name="*com.google.android.apps.fitness:materialCardViewStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.CardView.Light</item>
@@ -121,6 +112,7 @@
         <item name="*com.google.android.apps.fitness:openSearchBarStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.OpenSearchBar</item>
         <item name="*com.google.android.apps.fitness:openSearchViewPrefixStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.OpenSearchView.Prefix</item>
         <item name="*com.google.android.apps.fitness:openSearchViewStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.OpenSearchView</item>
+        <item name="*com.google.android.apps.fitness:popupMenuStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.PopupMenu</item>
         <item name="*com.google.android.apps.fitness:productLockupViewStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.ProductLockupView</item>
         <item name="*com.google.android.apps.fitness:radioButtonStyle">@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.CompoundButton.RadioButton</item>
         <item name="*com.google.android.apps.fitness:scrimBackground">@*com.google.android.apps.fitness:color/google_scrim</item>
@@ -199,10 +191,9 @@
         <item name="*com.google.android.apps.fitness:colorControlNormal">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.apps.fitness:colorPrimary">@*android:color/primary_material_dark</item>
         <item name="*com.google.android.apps.fitness:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
-        <item name="*com.google.android.apps.fitness:colorPrimaryLight">@*android:color/white</item>
+        <item name="*com.google.android.apps.fitness:colorPrimaryVariant">@*android:color/white</item>
         <item name="*com.google.android.apps.fitness:colorSecondary">@*com.google.android.apps.fitness:color/fit_blue</item>
-        <item name="*com.google.android.apps.fitness:colorSecondaryDark">@*com.google.android.apps.fitness:color/google_blue900</item>
-        <item name="*com.google.android.apps.fitness:colorSecondaryLight">@*com.google.android.apps.fitness:color/fit_blue_fill</item>
+        <item name="*com.google.android.apps.fitness:colorSecondaryVariant">@*com.google.android.apps.fitness:color/google_blue500</item>
         <item name="*com.google.android.apps.fitness:dialogCornerRadius">@*com.google.android.apps.fitness:dimen/google_dialog_corner_radius</item>
         <item name="*com.google.android.apps.fitness:expandedToolbarHeight">@*com.google.android.apps.fitness:dimen/expanded_toolbar_height</item>
         <item name="*com.google.android.apps.fitness:floatingActionButtonStyle">@*com.google.android.apps.fitness:style/Widget.Fit.FloatingActionButton</item>
@@ -278,7 +269,7 @@
     <style name="Widget.GoogleMaterial.FloatingActionButton" parent="@*com.google.android.apps.fitness:style/Widget.MaterialComponents.FloatingActionButton">
         <item name="*com.google.android.apps.fitness:backgroundTint">@*android:color/button_material_dark</item>
         <item name="*com.google.android.apps.fitness:elevation">@*com.google.android.apps.fitness:dimen/google_fab_elevation</item>
-        <item name="*com.google.android.apps.fitness:enforceMaterialTheme">false</item>
+        <item name="*com.google.android.apps.fitness:enforceMaterialTheme">true</item>
         <item name="*com.google.android.apps.fitness:hoveredFocusedTranslationZ">@*com.google.android.apps.fitness:dimen/google_fab_translation_z_hovered_focused</item>
         <item name="*com.google.android.apps.fitness:pressedTranslationZ">@*com.google.android.apps.fitness:dimen/google_fab_translation_z_pressed</item>
         <item name="*com.google.android.apps.fitness:rippleColor">@*android:color/ripple_material_dark</item>
@@ -288,7 +279,7 @@
     </style>
     <style name="Widget.GoogleMaterial.TabLayout" parent="@*com.google.android.apps.fitness:style/Widget.MaterialComponents.TabLayout">
         <item name="android:background">@*android:color/background_floating_material_dark</item>
-        <item name="*com.google.android.apps.fitness:enforceMaterialTheme">false</item>
+        <item name="*com.google.android.apps.fitness:enforceMaterialTheme">true</item>
         <item name="*com.google.android.apps.fitness:enforceTextAppearance">false</item>
         <item name="*com.google.android.apps.fitness:tabIconTint">@*com.google.android.apps.fitness:color/google_tabs_icon_color_selector</item>
         <item name="*com.google.android.apps.fitness:tabIndicator">@*com.google.android.apps.fitness:drawable/google_tabs_rounded_line_indicator</item>
@@ -304,6 +295,7 @@
     </style>
     <style name="Widget.MaterialComponents.CardView" parent="@*com.google.android.apps.fitness:style/CardView">
         <item name="*com.google.android.apps.fitness:cardBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.apps.fitness:cardCornerRadius">@*com.google.android.apps.fitness:dimen/mtrl_card_corner_radius</item>
         <item name="*com.google.android.apps.fitness:cardElevation">@*com.google.android.apps.fitness:dimen/mtrl_card_elevation</item>
         <item name="*com.google.android.apps.fitness:enforceMaterialTheme">true</item>
     </style>

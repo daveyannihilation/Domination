@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <attr name="alertDialogTitleIconStyle" format="reference" />
+    <attr name="alertDialogTitlePanelStyle" format="reference" />
+    <attr name="alertDialogTitleTextStyle" format="reference" />
     <attr name="bottomAppBarStyle" format="reference" />
     <attr name="bottomNavigationStyle" format="reference" />
     <attr name="bottomSheetDialogTheme" format="reference" />
@@ -12,8 +15,14 @@
     <attr name="colorOnBackground" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="colorOnError" format="color" />
     <attr name="colorOnPrimary" format="color" />
+    <attr name="colorOnPrimaryDisabled" format="color" />
+    <attr name="colorOnPrimaryEmphasisHighType" format="color" />
+    <attr name="colorOnPrimaryEmphasisMedium" format="color" />
     <attr name="colorOnSecondary" format="color" />
     <attr name="colorOnSurface" format="color" />
+    <attr name="colorOnSurfaceDisabled" format="color" />
+    <attr name="colorOnSurfaceEmphasisHighType" format="color" />
+    <attr name="colorOnSurfaceEmphasisMedium" format="color" />
     <attr name="colorPrimaryVariant" format="color" />
     <attr name="colorSecondary" format="color" />
     <attr name="colorSecondaryVariant" format="color" />
@@ -413,6 +422,23 @@
     <attr name="behavior_skipCollapsed" format="boolean" />
     <attr name="behavior_fitToContents" format="boolean" />
     <attr name="allowStacking" format="boolean" />
+    <attr name="buttonHeight" format="dimension" />
+    <attr name="fillWidthWhenVertical" format="boolean" />
+    <attr name="customTextAlignment" format="boolean" />
+    <attr name="forceVerticalLayout" format="boolean" />
+    <attr name="minChildWidth" format="dimension" />
+    <attr name="horizontalPaddingStart" format="dimension" />
+    <attr name="horizontalPaddingTop" format="dimension" />
+    <attr name="horizontalPaddingEnd" format="dimension" />
+    <attr name="horizontalPaddingBottom" format="dimension" />
+    <attr name="horizontalPadding" format="dimension" />
+    <attr name="horizontalSpacing" format="dimension" />
+    <attr name="verticalPaddingStart" format="dimension" />
+    <attr name="verticalPaddingTop" format="dimension" />
+    <attr name="verticalPaddingEnd" format="dimension" />
+    <attr name="verticalPaddingBottom" format="dimension" />
+    <attr name="verticalPadding" format="dimension" />
+    <attr name="verticalSpacing" format="dimension" />
     <attr name="textSizeMaxDp" format="dimension" />
     <attr name="cardBackgroundColor" format="color" />
     <attr name="cardCornerRadius" format="dimension" />
@@ -425,6 +451,9 @@
     <attr name="contentPaddingRight" format="dimension" />
     <attr name="contentPaddingTop" format="dimension" />
     <attr name="contentPaddingBottom" format="dimension" />
+    <attr name="summaryOn" format="string" />
+    <attr name="summaryOff" format="string" />
+    <attr name="disableDependentsState" format="boolean" />
     <attr name="chipSurfaceColor" format="color" />
     <attr name="chipBackgroundColor" format="color" />
     <attr name="chipMinHeight" format="dimension" />
@@ -581,6 +610,12 @@
         <enum name="googleMaterial2" value="2" />
         <enum name="material" value="1" />
     </attr>
+    <attr name="dialogTitle" format="string" />
+    <attr name="dialogMessage" format="string" />
+    <attr name="dialogIcon" format="reference" />
+    <attr name="positiveButtonText" format="string" />
+    <attr name="negativeButtonText" format="string" />
+    <attr name="dialogLayout" format="reference" />
     <attr name="color" format="color" />
     <attr name="spinBars" format="boolean" />
     <attr name="drawableSize" format="dimension" />
@@ -789,6 +824,16 @@
         <flag name="fill" value="0x00000077" />
         <flag name="fill_horizontal" value="0x00000007" />
     </attr>
+    <attr name="containerBackgroundColor" format="color" />
+    <attr name="containerShadowColor" format="color" />
+    <attr name="arrowLength" format="dimension" />
+    <attr name="arrowStartRoundLength" format="dimension" />
+    <attr name="arrowBaseWidth" format="dimension" />
+    <attr name="containerPadding" format="dimension" />
+    <attr name="containerMargin" format="dimension" />
+    <attr name="containerCornerRadius" format="dimension" />
+    <attr name="containerShadowRadius" format="dimension" />
+    <attr name="containerShadowOffset" format="dimension" />
     <attr name="inputEnabled" format="boolean" />
     <attr name="sourceClass">
         <enum name="contact" value="1" />
@@ -810,6 +855,8 @@
         <flag name="middle" value="0x00000002" />
     </attr>
     <attr name="dividerPadding" format="dimension" />
+    <attr name="entries" format="reference" />
+    <attr name="entryValues" format="reference" />
     <attr name="imageAspectRatioAdjust">
         <enum name="none" value="0" />
         <enum name="adjust_height" value="2" />
@@ -846,6 +893,7 @@
     <attr name="uiCompass" format="boolean" />
     <attr name="uiRotateGestures" format="boolean" />
     <attr name="uiScrollGestures" format="boolean" />
+    <attr name="uiScrollGesturesDuringRotateOrZoom" format="boolean" />
     <attr name="uiTiltGestures" format="boolean" />
     <attr name="uiZoomControls" format="boolean" />
     <attr name="uiZoomGestures" format="boolean" />
@@ -865,9 +913,10 @@
         <flag name="textStart" value="0x00000002" />
     </attr>
     <attr name="iconTint" format="color" />
-    <attr name="cornerRadius" format="reference|dimension" />
+    <attr name="cornerRadius" format="dimension" />
     <attr name="shapeAppearance" format="reference" />
     <attr name="shapeAppearanceOverlay" format="reference" />
+    <attr name="maxHeight" format="dimension" />
     <attr name="alphabeticModifiers">
         <flag name="ALT" value="0x00000002" />
         <flag name="CTRL" value="0x00001000" />
@@ -934,6 +983,49 @@
     <attr name="layout_aspectRatio" format="fraction" />
     <attr name="overlapAnchor" format="boolean" />
     <attr name="state_above_anchor" format="boolean" />
+    <attr name="key" format="string" />
+    <attr name="summary" format="string" />
+    <attr name="order" format="integer" />
+    <attr name="fragment" format="string" />
+    <attr name="widgetLayout" format="reference" />
+    <attr name="enabled" format="boolean" />
+    <attr name="selectable" format="boolean" />
+    <attr name="dependency" format="string" />
+    <attr name="persistent" format="boolean" />
+    <attr name="defaultValue" format="reference|string|integer|boolean|float" />
+    <attr name="shouldDisableView" format="boolean" />
+    <attr name="allowDividerAbove" format="boolean" />
+    <attr name="allowDividerBelow" format="boolean" />
+    <attr name="singleLineTitle" format="boolean" />
+    <attr name="iconSpaceReserved" format="boolean" />
+    <attr name="isPreferenceVisible" format="boolean" />
+    <attr name="allowDividerAfterLastItem" format="boolean" />
+    <attr name="orderingFromXml" format="boolean" />
+    <attr name="initialExpandedChildrenCount" format="integer" />
+    <attr name="maxWidth" format="dimension" />
+    <attr name="preferenceTheme" format="reference" />
+    <attr name="preferenceScreenStyle" format="reference" />
+    <attr name="preferenceActivityStyle" format="reference" />
+    <attr name="preferenceFragmentStyle" format="reference" />
+    <attr name="preferenceFragmentCompatStyle" format="reference" />
+    <attr name="preferenceCategoryStyle" format="reference" />
+    <attr name="preferenceStyle" format="reference" />
+    <attr name="preferenceInformationStyle" format="reference" />
+    <attr name="checkBoxPreferenceStyle" format="reference" />
+    <attr name="yesNoPreferenceStyle" format="reference" />
+    <attr name="dialogPreferenceStyle" format="reference" />
+    <attr name="editTextPreferenceStyle" format="reference" />
+    <attr name="ringtonePreferenceStyle" format="reference" />
+    <attr name="dropdownPreferenceStyle" format="reference" />
+    <attr name="preferenceLayoutChild" format="reference" />
+    <attr name="preferencePanelStyle" format="reference" />
+    <attr name="preferenceHeaderPanelStyle" format="reference" />
+    <attr name="preferenceListStyle" format="reference" />
+    <attr name="preferenceFragmentListStyle" format="reference" />
+    <attr name="preferenceFragmentPaddingSide" format="dimension" />
+    <attr name="switchPreferenceStyle" format="reference" />
+    <attr name="switchPreferenceCompatStyle" format="reference" />
+    <attr name="seekBarPreferenceStyle" format="reference" />
     <attr name="productNameTextColor" format="color" />
     <attr name="logoColor">
         <enum name="dark" value="1" />
@@ -1026,6 +1118,10 @@
         <enum name="omnibox_title_section" value="5" />
         <enum name="omnibox_url_section" value="4" />
     </attr>
+    <attr name="min" format="integer" />
+    <attr name="seekBarIncrement" format="integer" />
+    <attr name="adjustable" format="boolean" />
+    <attr name="showSeekBarValue" format="boolean" />
     <attr name="cornerSize" format="dimension" />
     <attr name="cornerSizeTopLeft" format="dimension" />
     <attr name="cornerSizeTopRight" format="dimension" />
@@ -1069,6 +1165,7 @@
         <enum name="slide" value="0" />
         <enum name="fade" value="1" />
     </attr>
+    <attr name="actionTextColorAlpha" format="float" />
     <attr name="maxLevelRadius" format="reference|dimension" />
     <attr name="minLevelRadius" format="reference|dimension" />
     <attr name="primaryColor" format="color" />
@@ -1098,6 +1195,8 @@
     <attr name="switchPadding" format="dimension" />
     <attr name="splitTrack" format="boolean" />
     <attr name="showText" format="boolean" />
+    <attr name="switchTextOn" format="string" />
+    <attr name="switchTextOff" format="string" />
     <attr name="tabIndicatorColor" format="color" />
     <attr name="tabIndicatorHeight" format="dimension" />
     <attr name="tabContentStart" format="dimension" />
@@ -1278,4 +1377,8 @@
         <enum name="monochrome" value="2" />
         <enum name="android_pay" value="3" />
     </attr>
+    <attr name="zoomInScaleFactor" format="float" />
+    <attr name="zoomAnimationDurationMs" format="integer" />
+    <attr name="flingInitialVelocityFactor" format="float" />
+    <attr name="flingNegativeAcceleration" format="float" />
 </resources>

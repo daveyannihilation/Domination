@@ -121,6 +121,7 @@
         <item name="*com.google.android.googlequicksearchbox:colorSecondary">@*com.google.android.googlequicksearchbox:color/google_default_color_secondary</item>
         <item name="*com.google.android.googlequicksearchbox:colorSecondaryVariant">@*com.google.android.googlequicksearchbox:color/google_default_color_secondary_variant</item>
         <item name="*com.google.android.googlequicksearchbox:colorSurface">@*com.google.android.googlequicksearchbox:color/google_default_color_surface</item>
+        <item name="*com.google.android.googlequicksearchbox:minTouchTargetSize">@*com.google.android.googlequicksearchbox:dimen/google_min_touch_target_size</item>
         <item name="*com.google.android.googlequicksearchbox:scrimBackground">@*com.google.android.googlequicksearchbox:color/google_scrim</item>
         <item name="*com.google.android.googlequicksearchbox:textAppearanceBody1">@*com.google.android.googlequicksearchbox:style/TextAppearance.GoogleMaterial.Body1</item>
         <item name="*com.google.android.googlequicksearchbox:textAppearanceBody2">@*com.google.android.googlequicksearchbox:style/TextAppearance.GoogleMaterial.Body2</item>
@@ -140,6 +141,9 @@
         <item name="*com.google.android.googlequicksearchbox:colorAccent">@*com.google.android.googlequicksearchbox:color/google_blue500</item>
         <item name="*com.google.android.googlequicksearchbox:colorSecondary50">@*com.google.android.googlequicksearchbox:color/google_default_color_secondary_50</item>
         <item name="*com.google.android.googlequicksearchbox:colorSecondary100">@*com.google.android.googlequicksearchbox:color/google_default_color_secondary_100</item>
+        <item name="*com.google.android.googlequicksearchbox:colorSecondary700">@*com.google.android.googlequicksearchbox:color/google_default_color_secondary_700</item>
+        <item name="*com.google.android.googlequicksearchbox:colorOnSurfaceVariant">@*com.google.android.googlequicksearchbox:color/google_default_color_on_surface_variant</item>
+        <item name="*com.google.android.googlequicksearchbox:colorHairline">@*com.google.android.googlequicksearchbox:color/google_default_color_hairline</item>
         <item name="*com.google.android.googlequicksearchbox:textAppearanceDisplay1">@*com.google.android.googlequicksearchbox:style/TextAppearance.GoogleMaterial.Display1</item>
         <item name="*com.google.android.googlequicksearchbox:textAppearanceDisplay2">@*com.google.android.googlequicksearchbox:style/TextAppearance.GoogleMaterial.Display2</item>
         <item name="*com.google.android.googlequicksearchbox:textAppearanceDisplay3">@*com.google.android.googlequicksearchbox:style/TextAppearance.GoogleMaterial.Display3</item>
@@ -167,6 +171,7 @@
         <item name="*com.google.android.googlequicksearchbox:floatingActionButtonStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.FloatingActionButton</item>
         <item name="*com.google.android.googlequicksearchbox:materialButtonStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.Button</item>
         <item name="*com.google.android.googlequicksearchbox:materialCardViewStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.CardView.Light</item>
+        <item name="*com.google.android.googlequicksearchbox:minTouchTargetSize">@*com.google.android.googlequicksearchbox:dimen/google_min_touch_target_size</item>
         <item name="*com.google.android.googlequicksearchbox:navigationViewStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.NavigationView</item>
         <item name="*com.google.android.googlequicksearchbox:openSearchBarStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.OpenSearchBar</item>
         <item name="*com.google.android.googlequicksearchbox:openSearchViewPrefixStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.OpenSearchView.Prefix</item>
@@ -613,22 +618,6 @@
         <item name="android:lineSpacingMultiplier">@*com.google.android.googlequicksearchbox:dimen/qp_h1_line_spacing_multiplier</item>
         <item name="android:fontFamily">sans-serif</item>
     </style>
-    <style name="opt_in_wizard_header_headline" parent="@*com.google.android.googlequicksearchbox:style/opt_in_wizard_item">
-        <item name="android:textSize">@*com.google.android.googlequicksearchbox:dimen/qp_opt_in_header_headline_text_size</item>
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:fontFamily">sans-serif</item>
-    </style>
-    <style name="opt_in_wizard_header_subheader" parent="@*com.google.android.googlequicksearchbox:style/opt_in_wizard_item">
-        <item name="android:textSize">@*com.google.android.googlequicksearchbox:dimen/qp_opt_in_header_subheader_text_size</item>
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:fontFamily">sans-serif</item>
-    </style>
-    <style name="opt_in_wizard_subheader" parent="@*com.google.android.googlequicksearchbox:style/opt_in_wizard_item">
-        <item name="android:textSize">@*com.google.android.googlequicksearchbox:dimen/qp_opt_in_subheader_text_size</item>
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:lineSpacingMultiplier">@*com.google.android.googlequicksearchbox:dimen/qp_h4_line_spacing_multiplier</item>
-        <item name="android:fontFamily">sans-serif</item>
-    </style>
     <style name="OverflowMenuTheme" parent="@*android:style/Theme.Holo">
         <item name="android:background">@*android:color/background_floating_material_dark</item>
     </style>
@@ -659,9 +648,6 @@
     <style name="qp_card_module">
         <item name="android:minHeight">@*com.google.android.googlequicksearchbox:dimen/qp_min_module_height</item>
         <item name="android:backgroundTint">@*android:color/background_floating_material_dark</item>
-    </style>
-    <style name="qp_grey_icon" parent="@*com.google.android.googlequicksearchbox:style/qp_icon_no_tint">
-        <item name="android:tint">#ffffffff</item>
     </style>
     <style name="qp_icon" parent="@*com.google.android.googlequicksearchbox:style/qp_icon_no_tint">
         <item name="android:tint">#ffffffff</item>

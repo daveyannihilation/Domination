@@ -92,12 +92,6 @@
         <flag name="SYM" value="0x00000004" />
     </attr>
     <attr name="analyticsTag" format="string" />
-    <attr name="angle">
-        <enum name="cw_0" value="0" />
-        <enum name="cw_180" value="180" />
-        <enum name="cw_270" value="270" />
-        <enum name="cw_90" value="90" />
-    </attr>
     <attr name="animateFirstImage" format="boolean" />
     <attr name="animationEnabled" format="boolean" />
     <attr name="animationMaxTime" format="integer" />
@@ -124,7 +118,6 @@
         <enum name="none" value="0" />
         <enum name="uniform" value="1" />
     </attr>
-    <attr name="auto_start" format="boolean" />
     <attr name="autohide_keyboard" format="boolean" />
     <attr name="avatarSize" format="dimension" />
     <attr name="avatarWidth" format="dimension" />
@@ -161,7 +154,6 @@
         <enum name="start" value="5" />
         <enum name="top" value="2" />
     </attr>
-    <attr name="base_alpha" format="float" />
     <attr name="behavior_autoHide" format="boolean" />
     <attr name="behavior_hideable" format="boolean" />
     <attr name="behavior_overlapTop" format="dimension" />
@@ -501,8 +493,6 @@
     <attr name="drawingview_stroke_width" format="dimension" />
     <attr name="dropDownListViewStyle" format="reference" />
     <attr name="dropdownListPreferredItemHeight" format="dimension" />
-    <attr name="dropoff" format="float" />
-    <attr name="duration" format="integer" />
     <attr name="edgeRadius" format="dimension" />
     <attr name="editTextBackground" format="reference" />
     <attr name="editTextColor" format="reference|color" />
@@ -584,8 +574,6 @@
     <attr name="fittingTextSize" format="dimension" />
     <attr name="fixedTabBarStyle" format="reference" />
     <attr name="fixedTabBarTextColor" format="color" />
-    <attr name="fixed_height" format="dimension" />
-    <attr name="fixed_width" format="dimension" />
     <attr name="focusOnTouch" format="boolean" />
     <attr name="followButtonStyle" format="string" />
     <attr name="font" format="reference" />
@@ -707,7 +695,6 @@
     <attr name="innerPadding" format="dimension" />
     <attr name="innerSpacing" format="dimension" />
     <attr name="insetForeground" format="reference|color" />
-    <attr name="intensity" format="float" />
     <attr name="interval_ms" format="integer" />
     <attr name="inversePrimaryButtonStyle" format="reference" />
     <attr name="inverseSecondaryButtonStyle" format="reference" />
@@ -1108,7 +1095,6 @@
     <attr name="queryHint" format="string" />
     <attr name="quickBackExperimentParameter" format="string" />
     <attr name="quickCaptureControllerAllowCameraTooltip" format="boolean" />
-    <attr name="quickCaptureControllerBottomShadowDrawable" format="reference" />
     <attr name="quickCaptureControllerCameraSwitchButton" format="reference" />
     <attr name="quickCaptureControllerCaptureStateTransitionAnimationsEnabled" format="boolean" />
     <attr name="quickCaptureControllerDirectReplyHeaderBackground" format="reference|color" />
@@ -1118,9 +1104,7 @@
     <attr name="quickCaptureControllerGalleryButton" format="reference" />
     <attr name="quickCaptureControllerGalleryButtonCircular" format="boolean" />
     <attr name="quickCaptureControllerGalleryButtonSize" format="reference" />
-    <attr name="quickCaptureControllerShadowHeight" format="dimension" />
     <attr name="quickCaptureControllerShutterButtonSize" format="reference|dimension" />
-    <attr name="quickCaptureControllerTopShadowDrawable" format="reference" />
     <attr name="quickCaptureFormatPickerIconTintColor" format="reference|color" />
     <attr name="quickCaptureFormatPickerIndicatorVisible" format="boolean" />
     <attr name="quickCaptureVerticalTransitionAndBlackBackgroundEnabled" format="boolean" />
@@ -1137,14 +1121,6 @@
     <attr name="reelItemBottomPadding" format="reference|dimension" />
     <attr name="reelItemLabelViewTextSize" format="reference|dimension" />
     <attr name="reelOptionsAllowFeedCreation" format="boolean" />
-    <attr name="relative_height" format="float" />
-    <attr name="relative_width" format="float" />
-    <attr name="repeat_count" format="integer" />
-    <attr name="repeat_delay" format="integer" />
-    <attr name="repeat_mode">
-        <enum name="restart" value="1" />
-        <enum name="reverse" value="2" />
-    </attr>
     <attr name="retryType">
         <enum name="icon" value="1" />
         <enum name="text" value="0" />
@@ -1229,10 +1205,37 @@
     <attr name="shadowColor" format="color" />
     <attr name="shadowRadius" format="dimension" />
     <attr name="shadow_radius" format="dimension" />
-    <attr name="shape">
+    <attr name="shimmer_auto_start" format="boolean" />
+    <attr name="shimmer_base_alpha" format="float" />
+    <attr name="shimmer_base_color" format="color" />
+    <attr name="shimmer_clip_to_children" format="boolean" />
+    <attr name="shimmer_colored" format="boolean" />
+    <attr name="shimmer_direction">
+        <enum name="bottom_to_top" value="3" />
+        <enum name="left_to_right" value="0" />
+        <enum name="right_to_left" value="2" />
+        <enum name="top_to_bottom" value="1" />
+    </attr>
+    <attr name="shimmer_dropoff" format="float" />
+    <attr name="shimmer_duration" format="integer" />
+    <attr name="shimmer_fixed_height" format="dimension" />
+    <attr name="shimmer_fixed_width" format="dimension" />
+    <attr name="shimmer_height_ratio" format="float" />
+    <attr name="shimmer_highlight_alpha" format="float" />
+    <attr name="shimmer_highlight_color" format="color" />
+    <attr name="shimmer_intensity" format="float" />
+    <attr name="shimmer_repeat_count" format="integer" />
+    <attr name="shimmer_repeat_delay" format="integer" />
+    <attr name="shimmer_repeat_mode">
+        <enum name="restart" value="1" />
+        <enum name="reverse" value="2" />
+    </attr>
+    <attr name="shimmer_shape">
         <enum name="linear" value="0" />
         <enum name="radial" value="1" />
     </attr>
+    <attr name="shimmer_tilt" format="float" />
+    <attr name="shimmer_width_ratio" format="float" />
     <attr name="shouldHideAllComments" format="boolean" />
     <attr name="shouldMinimizeAllComments" format="boolean" />
     <attr name="shouldShowFollowBack" format="boolean" />
@@ -1292,7 +1295,6 @@
     <attr name="state_grey" format="boolean" />
     <attr name="statusBarBackground" format="reference" />
     <attr name="statusBarScrim" format="color" />
-    <attr name="storySendButtonGradientDrawable" format="reference" />
     <attr name="strokeColor" format="reference|color" />
     <attr name="strokeColour" format="color" />
     <attr name="strokeIncludesPadding" format="boolean" />
@@ -1405,7 +1407,6 @@
         <enum name="src_in" value="5" />
         <enum name="src_over" value="3" />
     </attr>
-    <attr name="tilt" format="float" />
     <attr name="tint" format="color" />
     <attr name="tintColor" format="reference|color" />
     <attr name="tintMode">

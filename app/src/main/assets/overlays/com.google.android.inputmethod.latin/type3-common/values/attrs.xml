@@ -5,9 +5,9 @@
     <attr name="AutocompleteQueryIcon" format="reference" />
     <attr name="BaseKeyboardBodyHeight" format="dimension" />
     <attr name="BgAccessPointIcon" format="reference" />
+    <attr name="BgAccessPointIconBackground" format="reference" />
     <attr name="BgAccessPointPanelItem" format="reference" />
     <attr name="BgAccessPointsMenuAlpha" format="float" />
-    <attr name="BgAccessPointsPanel" format="reference" />
     <attr name="BgActionPopupBackground" format="reference" />
     <attr name="BgActionPopupItemSelector" format="reference" />
     <attr name="BgCandidate" format="reference" />
@@ -98,6 +98,10 @@
     <attr name="BgTranslateBoard" format="reference" />
     <attr name="CategoryTextLabelColor" format="reference" />
     <attr name="CategoryTextLabelSelectorDrawable" format="reference" />
+    <attr name="ClipboardHeaderBackKeyPaddingStart" format="dimension" />
+    <attr name="ClipboardHeaderEditKeyMarginEnd" format="dimension" />
+    <attr name="ClipboardHeaderIconMinWidth" format="dimension" />
+    <attr name="ClipboardHeaderLabelMarginStart" format="dimension" />
     <attr name="CloseIcon" format="reference" />
     <attr name="ColorBigPanelSeparator" format="reference" />
     <attr name="ColorBigPanelSeparatorOpaque" format="reference" />
@@ -167,6 +171,9 @@
     <attr name="EmojiHandwritingHintColor" format="color" />
     <attr name="EmojiHandwritingHintIcon" format="reference" />
     <attr name="HeaderBarHorizontalMargin" format="dimension" />
+    <attr name="HeaderBarHorizontalMarginM2" format="dimension" />
+    <attr name="HeaderBarHorizontalPaddingM2" format="dimension" />
+    <attr name="HeaderBarTopMarginM2" format="dimension" />
     <attr name="Icon9KeyShiftUnderline" format="reference" />
     <attr name="Icon9KeyShiftUnderlineHighlight" format="reference" />
     <attr name="Icon9KeyZhShift" format="reference" />
@@ -218,6 +225,7 @@
     <attr name="IconHelpDisplayed" format="reference" />
     <attr name="IconHideKeyboard" format="reference" />
     <attr name="IconImeActionBack" format="reference" />
+    <attr name="IconImeActionBackForPreview" format="reference" />
     <attr name="IconImeActionBackMorse" format="reference" />
     <attr name="IconImeActionMarginBottom" format="dimension" />
     <attr name="IconIndicMoreAlpha" format="integer" />
@@ -353,10 +361,18 @@
     <attr name="SearchCardCornerRadius" format="reference" />
     <attr name="SearchCardDivider" format="reference" />
     <attr name="SearchCardDividerDark" format="reference" />
+    <attr name="SearchCardElevation" format="reference" />
     <attr name="SearchCardGreenTextColor" format="reference" />
+    <attr name="SearchCardTextActionColor" format="reference" />
     <attr name="SuggestionsStripAccessPointKeyWidth" format="dimension" />
     <attr name="SuggestionsStripHorizontalMargin" format="dimension" />
+    <attr name="ThemeListingCandidateActionLowerSpaceWeight" format="float" />
+    <attr name="ThemeListingCandidateActionUpperSpaceWeight" format="float" />
+    <attr name="ThemeListingCandidateActionWeight" format="float" />
     <attr name="VideoCardDurationCornerRadius" format="reference" />
+    <attr name="alertDialogTitleIconStyle" format="reference" />
+    <attr name="alertDialogTitlePanelStyle" format="reference" />
+    <attr name="alertDialogTitleTextStyle" format="reference" />
     <attr name="bottomAppBarStyle" format="reference" />
     <attr name="bottomNavigationStyle" format="reference" />
     <attr name="bottomSheetDialogTheme" format="reference" />
@@ -369,8 +385,14 @@
     <attr name="colorOnBackground" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="colorOnError" format="color" />
     <attr name="colorOnPrimary" format="color" />
+    <attr name="colorOnPrimaryDisabled" format="color" />
+    <attr name="colorOnPrimaryEmphasisHighType" format="color" />
+    <attr name="colorOnPrimaryEmphasisMedium" format="color" />
     <attr name="colorOnSecondary" format="color" />
     <attr name="colorOnSurface" format="color" />
+    <attr name="colorOnSurfaceDisabled" format="color" />
+    <attr name="colorOnSurfaceEmphasisHighType" format="color" />
+    <attr name="colorOnSurfaceEmphasisMedium" format="color" />
     <attr name="colorPrimaryVariant" format="color" />
     <attr name="colorSecondary" format="color" />
     <attr name="colorSecondaryVariant" format="color" />
@@ -486,8 +508,6 @@
     <attr name="shapeAppearanceMediumComponent" format="reference" />
     <attr name="shapeAppearanceSmallComponent" format="reference" />
     <attr name="showMotionSpec" format="reference" />
-    <attr name="strokeColor" format="color" />
-    <attr name="strokeWidth" format="dimension" />
     <attr name="tabStyle" format="reference" />
     <attr name="textAppearanceBody1" format="reference" />
     <attr name="textAppearanceBody2" format="reference" />
@@ -792,6 +812,7 @@
     <attr name="chipStrokeWidth" format="dimension" />
     <attr name="chipMinTouchTargetSize" format="dimension" />
     <attr name="chipTouchTargetDelegate" format="reference" />
+    <attr name="ensureMinTouchTargetSize" format="boolean" />
     <attr name="chipIconVisible" format="boolean" />
     <attr name="chipIconEnabled" format="boolean" />
     <attr name="chipIcon" format="reference" />
@@ -942,79 +963,8 @@
     </attr>
     <attr name="paramName" format="string" />
     <attr name="paramValue" format="string" />
-    <attr name="flexDirection">
-        <enum name="column" value="2" />
-        <enum name="column_reverse" value="3" />
-        <enum name="row" value="0" />
-        <enum name="row_reverse" value="1" />
-    </attr>
-    <attr name="flexWrap">
-        <enum name="wrap" value="1" />
-        <enum name="nowrap" value="0" />
-        <enum name="wrap_reverse" value="2" />
-    </attr>
-    <attr name="justifyContent">
-        <enum name="center" value="2" />
-        <enum name="flex_end" value="1" />
-        <enum name="flex_start" value="0" />
-        <enum name="space_around" value="4" />
-        <enum name="space_between" value="3" />
-        <enum name="space_evenly" value="5" />
-    </attr>
-    <attr name="alignItems">
-        <enum name="center" value="2" />
-        <enum name="flex_end" value="1" />
-        <enum name="flex_start" value="0" />
-        <enum name="baseline" value="3" />
-        <enum name="stretch" value="4" />
-    </attr>
-    <attr name="alignContent">
-        <enum name="center" value="2" />
-        <enum name="flex_end" value="1" />
-        <enum name="flex_start" value="0" />
-        <enum name="space_around" value="4" />
-        <enum name="space_between" value="3" />
-        <enum name="stretch" value="5" />
-    </attr>
-    <attr name="dividerDrawable" format="reference" />
-    <attr name="dividerDrawableHorizontal" format="reference" />
-    <attr name="dividerDrawableVertical" format="reference" />
-    <attr name="showDivider">
-        <flag name="none" value="0x00000000" />
-        <flag name="end" value="0x00000004" />
-        <flag name="beginning" value="0x00000001" />
-        <flag name="middle" value="0x00000002" />
-    </attr>
-    <attr name="showDividerHorizontal">
-        <flag name="none" value="0x00000000" />
-        <flag name="end" value="0x00000004" />
-        <flag name="beginning" value="0x00000001" />
-        <flag name="middle" value="0x00000002" />
-    </attr>
-    <attr name="showDividerVertical">
-        <flag name="none" value="0x00000000" />
-        <flag name="end" value="0x00000004" />
-        <flag name="beginning" value="0x00000001" />
-        <flag name="middle" value="0x00000002" />
-    </attr>
-    <attr name="maxLine" format="integer" />
-    <attr name="layout_order" format="integer" />
-    <attr name="layout_flexGrow" format="float" />
-    <attr name="layout_flexShrink" format="float" />
-    <attr name="layout_flexBasisPercent" format="fraction" />
-    <attr name="layout_alignSelf">
-        <enum name="center" value="2" />
-        <enum name="auto" value="-1" />
-        <enum name="flex_end" value="1" />
-        <enum name="flex_start" value="0" />
-        <enum name="baseline" value="3" />
-        <enum name="stretch" value="4" />
-    </attr>
-    <attr name="layout_minWidth" format="dimension" />
-    <attr name="layout_minHeight" format="dimension" />
-    <attr name="layout_maxWidth" format="dimension" />
-    <attr name="layout_maxHeight" format="dimension" />
-    <attr name="layout_wrapBefore" format="boolean" />
+    <attr name="flagIf" format="reference" />
+    <attr name="flagIfNot" format="reference" />
     <attr name="fabSize">
         <enum name="normal" value="0" />
         <enum name="auto" value="-1" />
@@ -1077,29 +1027,8 @@
         <enum name="thing_proto" value="9" />
     </attr>
     <attr name="sectionContent" format="string" />
-    <attr name="colorPrimaryLight" format="color" />
-    <attr name="colorSecondaryLight" format="color" />
-    <attr name="colorSecondaryDark" format="color" />
-    <attr name="colorPrimary50" format="color" />
-    <attr name="colorPrimary100" format="color" />
-    <attr name="colorPrimary200" format="color" />
-    <attr name="colorPrimary300" format="color" />
-    <attr name="colorPrimary400" format="color" />
-    <attr name="colorPrimary500" format="color" />
-    <attr name="colorPrimary600" format="color" />
-    <attr name="colorPrimary700" format="color" />
-    <attr name="colorPrimary800" format="color" />
-    <attr name="colorPrimary900" format="color" />
     <attr name="colorSecondary50" format="color" />
     <attr name="colorSecondary100" format="color" />
-    <attr name="colorSecondary200" format="color" />
-    <attr name="colorSecondary300" format="color" />
-    <attr name="colorSecondary400" format="color" />
-    <attr name="colorSecondary500" format="color" />
-    <attr name="colorSecondary600" format="color" />
-    <attr name="colorSecondary700" format="color" />
-    <attr name="colorSecondary800" format="color" />
-    <attr name="colorSecondary900" format="color" />
     <attr name="textAppearanceDisplay1" format="reference" />
     <attr name="textAppearanceDisplay2" format="reference" />
     <attr name="textAppearanceDisplay3" format="reference" />
@@ -1221,6 +1150,8 @@
     <attr name="OneHandedKeyboardBottomShadow" format="dimension" />
     <attr name="defaultMarginsEnabled" format="boolean" />
     <attr name="hideNavigationIcon" format="boolean" />
+    <attr name="strokeColor" format="color" />
+    <attr name="strokeWidth" format="dimension" />
     <attr name="searchPrefixText" format="string" />
     <attr name="useDrawerArrowDrawable" format="boolean" />
     <attr name="animateNavigationIcon" format="boolean" />
@@ -1379,6 +1310,7 @@
         <enum name="slide" value="0" />
         <enum name="fade" value="1" />
     </attr>
+    <attr name="actionTextColorAlpha" format="float" />
     <attr name="DelayPressEffect" format="boolean" />
     <attr name="deadZoneLeft" format="dimension" />
     <attr name="deadZoneRight" format="dimension" />
@@ -1458,15 +1390,20 @@
     <attr name="hintEnabled" format="boolean" />
     <attr name="hintAnimationEnabled" format="boolean" />
     <attr name="hintTextAppearance" format="reference" />
+    <attr name="hintTextColor" format="color" />
     <attr name="helperText" format="string" />
     <attr name="helperTextEnabled" format="boolean" />
     <attr name="helperTextTextAppearance" format="reference" />
+    <attr name="helperTextTextColor" format="color" />
     <attr name="errorEnabled" format="boolean" />
     <attr name="errorTextAppearance" format="reference" />
+    <attr name="errorTextColor" format="color" />
     <attr name="counterEnabled" format="boolean" />
     <attr name="counterMaxLength" format="integer" />
     <attr name="counterTextAppearance" format="reference" />
+    <attr name="counterTextColor" format="reference" />
     <attr name="counterOverflowTextAppearance" format="reference" />
+    <attr name="counterOverflowTextColor" format="reference" />
     <attr name="passwordToggleEnabled" format="boolean" />
     <attr name="passwordToggleDrawable" format="reference" />
     <attr name="passwordToggleContentDescription" format="string" />
