@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ActionBar.Transparent.TMessages.Item" parent="@*android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="ActionBar.Transparent.TMessages.Start" parent="@*android:style/Widget.Holo.ActionBar">
+        <item name="android:background">#ff1976d2</item>
+        <item name="android:title"></item>
+        <item name="android:logo">@*org.telegram.messenger:drawable/transparent</item>
+    </style>
+    <style name="MyTextViewStyle" parent="@*android:style/Widget.Holo.TextView" />
+    <style name="Theme.TMessages" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:colorBackground">@*android:color/background_floating_material_dark</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:listViewStyle">@*org.telegram.messenger:style/Theme.TMessages.ListView</item>
+        <item name="android:textViewStyle">@*org.telegram.messenger:style/MyTextViewStyle</item>
+        <item name="android:itemTextAppearance">@*org.telegram.messenger:style/ActionBar.Transparent.TMessages.Item</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionBarOverlay">false</item>
+        <item name="android:listChoiceBackgroundIndicator">@*org.telegram.messenger:drawable/list_selector_ex</item>
+        <item name="android:actionBarItemBackground">@*org.telegram.messenger:drawable/bar_selector_style</item>
+    </style>
+    <style name="Theme.TMessages.ListView" parent="@*android:style/Widget.ListView">
+        <item name="android:fadingEdge">none</item>
+        <item name="android:listSelector">@*org.telegram.messenger:drawable/list_selector_ex</item>
+        <item name="android:divider">@*android:color/transparent</item>
+        <item name="android:dividerHeight">0.0dip</item>
+    </style>
+    <style name="Theme.TMessages.Start" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:colorBackground">@*android:color/background_floating_material_dark</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textViewStyle">@*org.telegram.messenger:style/MyTextViewStyle</item>
+        <item name="android:actionBarStyle">@*org.telegram.messenger:style/ActionBar.Transparent.TMessages.Start</item>
+    </style>
+</resources>
