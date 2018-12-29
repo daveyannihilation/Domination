@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@*com.instagram.android:id/question_view_container" android:background="@*android:color/background_dark" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@*com.instagram.android:id/questionList" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@*android:color/transparent" android:dividerHeight="0.0px" />
+    <View android:id="@*com.instagram.android:id/button_divider" style="@*com.instagram.android:style/Widget.Instagram.Divider" />
+    <EditText android:gravity="top" android:id="@*com.instagram.android:id/edit_text" android:background="@*android:color/background_dark" android:paddingTop="@*com.instagram.android:dimen/question_comment_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@*com.instagram.android:dimen/question_comment_height" android:hint="@*com.instagram.android:string/question_edit_text_hint" android:inputType="textAutoCorrect|textCapSentences|textMultiLine" />
+    <include layout="@*com.instagram.android:layout/answers_action_button_view" />
+</LinearLayout>
