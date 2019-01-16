@@ -365,14 +365,6 @@
         <item name="android:includeFontPadding">false</item>
         <item name="android:textCursorDrawable">@null</item>
     </style>
-    <style name="SavedCollectionGridItem">
-        <item name="android:background">@*com.instagram.android:color/image_placeholder</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">fill_parent</item>
-        <item name="android:scaleType">centerCrop</item>
-        <item name="*com.instagram.android:strokeColor">@*android:color/white</item>
-        <item name="*com.instagram.android:strokeWidth">@*com.instagram.android:dimen/save_home_thumbnail_stroke_width</item>
-    </style>
     <style name="Section" parent="@*com.instagram.android:style/TitleButtonPrimary">
         <item name="android:textSize">@*com.instagram.android:dimen/font_medium_xlarge</item>
         <item name="android:textColor">@*android:color/white</item>
@@ -404,6 +396,14 @@
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowTranslucentNavigation">true</item>
     </style>
+    <style name="ThumbnailGridItem">
+        <item name="android:background">@*android:color/background_floating_material_dark</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="*com.instagram.android:strokeColor">@*android:color/white</item>
+        <item name="*com.instagram.android:strokeWidth">@*com.instagram.android:dimen/thumbnail_stroke_width</item>
+    </style>
     <style name="TimeSpentSectionTitleText">
         <item name="android:textSize">@*com.instagram.android:dimen/font_medium_xlarge</item>
         <item name="android:textColor">@*android:color/white</item>
@@ -431,6 +431,16 @@
         <item name="android:textSize">@*com.instagram.android:dimen/font_medium</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="UnifiedFollowListTabLayout">
+        <item name="android:theme">@*com.instagram.android:style/UnifiedFollowListTabLayoutTheme</item>
+        <item name="android:background">@*android:color/background_floating_material_dark</item>
+        <item name="*com.instagram.android:tabIndicatorColor">@*android:color/white</item>
+        <item name="*com.instagram.android:tabIndicatorHeight">@*com.instagram.android:dimen/segmented_underline_width_whiteout</item>
+        <item name="*com.instagram.android:tabPaddingEnd">@*com.instagram.android:dimen/tab_bar_start_end_padding</item>
+        <item name="*com.instagram.android:tabPaddingStart">@*com.instagram.android:dimen/tab_bar_start_end_padding</item>
+        <item name="*com.instagram.android:tabSelectedTextColor">@*android:color/white</item>
+        <item name="*com.instagram.android:tabTextColor">@*com.instagram.android:color/view_switcher_text_whiteout</item>
     </style>
     <style name="VideoCallTheme" parent="@*com.instagram.android:style/InstagramTheme.Fullscreen">
         <item name="*com.instagram.android:windowBackgroundColor">@*android:color/background_dark</item>

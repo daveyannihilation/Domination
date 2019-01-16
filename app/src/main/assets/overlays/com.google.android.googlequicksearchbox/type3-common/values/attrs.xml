@@ -4,9 +4,6 @@
     <attr name="accountExpandCloseDrawable" format="reference" />
     <attr name="accountExpandDividerDrawable" format="reference" />
     <attr name="accountExpandOpenDrawable" format="reference" />
-    <attr name="alertDialogTitleIconStyle" format="reference" />
-    <attr name="alertDialogTitlePanelStyle" format="reference" />
-    <attr name="alertDialogTitleTextStyle" format="reference" />
     <attr name="assistant_setting_payments_list_divider_right_padding" format="dimension" />
     <attr name="assistant_setting_payments_list_item_left_right_padding" format="dimension" />
     <attr name="assistant_setting_payments_setup_template_top_padding" format="dimension" />
@@ -344,9 +341,12 @@
     <attr name="verticalItemMargin" format="reference|dimension" />
     <attr name="vogPromptColor" format="reference|color" />
     <attr name="vogPromptTextStyle" format="integer" />
+    <attr name="indent_divider" format="boolean" />
     <attr name="discSize" format="dimension" />
     <attr name="avatarSize" format="dimension" />
     <attr name="imageViewSize" format="dimension" />
+    <attr name="allowBadges" format="boolean" />
+    <attr name="allowRings" format="boolean" />
     <attr name="navigationMode">
         <enum name="listMode" value="1" />
         <enum name="normal" value="0" />
@@ -600,6 +600,15 @@
     <attr name="state_audioFilled" format="boolean" />
     <attr name="state_audioPlaying" format="boolean" />
     <attr name="state_audioPaused" format="boolean" />
+    <attr name="autoResizeText_resizeStepUnit">
+        <enum name="unitDip" value="1" />
+        <enum name="unitIn" value="4" />
+        <enum name="unitMm" value="5" />
+        <enum name="unitPt" value="3" />
+        <enum name="unitPx" value="0" />
+        <enum name="unitSp" value="2" />
+    </attr>
+    <attr name="autoResizeText_minTextSize" format="dimension" />
     <attr name="revealBackground" format="reference" />
     <attr name="lineSpacing" format="dimension" />
     <attr name="baselineToTop" format="dimension" />
@@ -661,6 +670,9 @@
         <enum name="liveAudio" value="1" />
         <enum name="user" value="8388608" />
     </attr>
+    <attr name="categoryLayout" format="reference" />
+    <attr name="categoryPadding" format="reference|dimension" />
+    <attr name="startExpanded" format="boolean" />
     <attr name="cellWidth" format="dimension" />
     <attr name="cellHeight" format="dimension" />
     <attr name="widthGap" format="dimension" />
@@ -677,7 +689,7 @@
     <attr name="back_color" format="reference|integer|color" />
     <attr name="back_max_scale" format="reference|float" />
     <attr name="flip_duration_ms" format="integer" />
-    <attr name="radius" format="dimension" />
+    <attr name="radius" format="reference|dimension" />
     <attr name="chipSurfaceColor" format="color" />
     <attr name="chipBackgroundColor" format="color" />
     <attr name="chipMinHeight" format="dimension" />
@@ -1140,8 +1152,8 @@
     <attr name="itemSubtitle" format="reference" />
     <attr name="itemIcon" format="reference" />
     <attr name="itemActionType">
-        <enum name="none" value="0" />
         <enum name="icon" value="2" />
+        <enum name="none" value="0" />
         <enum name="toggle" value="1" />
     </attr>
     <attr name="itemActionIcon" format="reference" />
@@ -1228,6 +1240,14 @@
     <attr name="latLngBoundsSouthWestLongitude" format="float" />
     <attr name="latLngBoundsNorthEastLatitude" format="float" />
     <attr name="latLngBoundsNorthEastLongitude" format="float" />
+    <attr name="backgroundInsetStart" format="dimension" />
+    <attr name="backgroundInsetTop" format="dimension" />
+    <attr name="backgroundInsetEnd" format="dimension" />
+    <attr name="backgroundInsetBottom" format="dimension" />
+    <attr name="materialAlertDialogTitlePanelStyle" format="reference" />
+    <attr name="materialAlertDialogTitleIconStyle" format="reference" />
+    <attr name="materialAlertDialogTitleTextStyle" format="reference" />
+    <attr name="materialAlertDialogTheme" format="reference" />
     <attr name="iconSize" format="dimension" />
     <attr name="iconPadding" format="dimension" />
     <attr name="iconGravity">
@@ -1548,6 +1568,7 @@
     <attr name="headerTitleSize" format="dimension" />
     <attr name="headerSubtitleSize" format="dimension" />
     <attr name="headerTextVerticalPadding" format="dimension" />
+    <attr name="headerDividerPadding" format="dimension" />
     <attr name="titleSize" format="dimension" />
     <attr name="subtitleSize" format="dimension" />
     <attr name="textVerticalPadding" format="dimension" />
