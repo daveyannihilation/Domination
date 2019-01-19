@@ -273,11 +273,15 @@
     <attr name="notificationsOccasionalIcon" format="reference" />
     <attr name="notificationsOffIcon" format="reference" />
     <attr name="offlineStorageBarBackground" format="reference|color" />
+    <attr name="openSearchBarStyle" format="reference" />
+    <attr name="openSearchViewPrefixStyle" format="reference" />
+    <attr name="openSearchViewStyle" format="reference" />
     <attr name="overlayRoundedRectangle" format="reference|color" />
     <attr name="phoneEntrySendCodeButtonBackground" format="reference|color" />
     <attr name="pivotBarCountBadgeBackground" format="reference|color" />
     <attr name="pivotBarDotBadgeBackground" format="reference|color" />
     <attr name="postSubscribeBarBackground" format="reference|color" />
+    <attr name="productLockupViewStyle" format="reference" />
     <attr name="radioButtonTextColorSelector" format="reference|color" />
     <attr name="reelEditChooseFilterBackground" format="reference|color" />
     <attr name="reelsLockupStroke" format="reference" />
@@ -398,6 +402,7 @@
     <attr name="ytTextAppearanceDisplay2" format="reference" />
     <attr name="ytTextAppearanceLabel" format="reference" />
     <attr name="ytTextAppearanceTitle1" format="reference" />
+    <attr name="ytTextAppearanceTitle2" format="reference" />
     <attr name="ytTextDisabled" format="reference|color" />
     <attr name="ytTextError" format="reference|color" />
     <attr name="ytTextPrimary" format="reference|color" />
@@ -482,6 +487,10 @@
     <attr name="listItemLayout" format="reference" />
     <attr name="showTitle" format="boolean" />
     <attr name="buttonIconDimen" format="dimension" />
+    <attr name="minIntervalSeconds" format="integer" />
+    <attr name="logoSpriteDrawable" format="reference" />
+    <attr name="frameCount" format="integer" />
+    <attr name="durationMillis" format="integer" />
     <attr name="expanded" format="boolean" />
     <attr name="liftOnScroll" format="boolean" />
     <attr name="liftOnScrollTargetViewId" format="reference" />
@@ -1104,6 +1113,18 @@
         <enum name="thing_proto" value="9" />
     </attr>
     <attr name="sectionContent" format="string" />
+    <attr name="colorSecondary50" format="color" />
+    <attr name="colorSecondary100" format="color" />
+    <attr name="colorSecondary700" format="color" />
+    <attr name="colorOnSurfaceVariant" format="color" />
+    <attr name="colorHairline" format="color" />
+    <attr name="textAppearanceDisplay1" format="reference" />
+    <attr name="textAppearanceDisplay2" format="reference" />
+    <attr name="textAppearanceDisplay3" format="reference" />
+    <attr name="textAppearanceSubhead1" format="reference" />
+    <attr name="textAppearanceSubhead2" format="reference" />
+    <attr name="textAppearanceSubtitleAlt1" format="reference" />
+    <attr name="textAppearanceSubtitleAlt2" format="reference" />
     <attr name="inputEnabled" format="boolean" />
     <attr name="sourceClass">
         <enum name="contact" value="1" />
@@ -1199,6 +1220,7 @@
     </attr>
     <attr name="iconTint" format="color" />
     <attr name="cornerRadius" format="dimension" />
+    <attr name="cardForegroundColor" format="color" />
     <attr name="shapeAppearance" format="reference" />
     <attr name="shapeAppearanceOverlay" format="reference" />
     <attr name="externalRouteEnabledDrawable" format="reference" />
@@ -1272,6 +1294,14 @@
     <attr name="disabledDrawable" format="reference" />
     <attr name="globalTint" format="reference|color" />
     <attr name="defaultTint" format="reference|color" />
+    <attr name="defaultMarginsEnabled" format="boolean" />
+    <attr name="defaultScrollFlagsEnabled" format="boolean" />
+    <attr name="hideNavigationIcon" format="boolean" />
+    <attr name="searchPrefixText" format="string" />
+    <attr name="useDrawerArrowDrawable" format="boolean" />
+    <attr name="animateNavigationIcon" format="boolean" />
+    <attr name="animateMenuItems" format="boolean" />
+    <attr name="autoShowKeyboard" format="boolean" />
     <attr name="background_dark" format="color" />
     <attr name="border_color" format="color" />
     <attr name="border_color_dark" format="color" />
@@ -1343,6 +1373,19 @@
     <attr name="switchPreferenceStyle" format="reference" />
     <attr name="switchPreferenceCompatStyle" format="reference" />
     <attr name="seekBarPreferenceStyle" format="reference" />
+    <attr name="productNameTextColor" format="color" />
+    <attr name="logoColor">
+        <enum name="dark" value="1" />
+        <enum name="light" value="2" />
+        <enum name="grey" value="3" />
+        <enum name="standard" value="0" />
+    </attr>
+    <attr name="lockupSizingMode">
+        <enum name="auto" value="0" />
+        <enum name="normal" value="1" />
+        <enum name="custom" value="-1" />
+        <enum name="small" value="2" />
+    </attr>
     <attr name="quantumFabColor" format="color" />
     <attr name="quantumFabRippleColor" format="color" />
     <attr name="quantumSize">
@@ -1433,8 +1476,8 @@
         <enum name="rounded" value="0" />
     </attr>
     <attr name="buttonSize" format="reference">
-        <enum name="icon_only" value="2" />
         <enum name="standard" value="0" />
+        <enum name="icon_only" value="2" />
         <enum name="wide" value="1" />
     </attr>
     <attr name="colorScheme" format="reference">
@@ -1763,9 +1806,9 @@
     <attr name="underlineColor" format="color" />
     <attr name="underlineWidth" format="dimension" />
     <attr name="mtrlSize">
+        <enum name="small" value="1" />
         <enum name="medium" value="2" />
         <enum name="large" value="3" />
-        <enum name="small" value="1" />
     </attr>
     <attr name="mtrlIndeterminateProgressStyle">
         <enum name="linear" value="1" />
