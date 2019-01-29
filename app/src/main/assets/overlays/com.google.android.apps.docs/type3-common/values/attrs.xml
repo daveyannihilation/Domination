@@ -4,14 +4,12 @@
     <attr name="accountExpandCloseDrawable" format="reference" />
     <attr name="accountExpandDividerDrawable" format="reference" />
     <attr name="accountExpandOpenDrawable" format="reference" />
-    <attr name="alertDialogTitleIconStyle" format="reference" />
-    <attr name="alertDialogTitlePanelStyle" format="reference" />
-    <attr name="alertDialogTitleTextStyle" format="reference" />
     <attr name="bottomAppBarStyle" format="reference" />
     <attr name="bottomNavigationStyle" format="reference" />
     <attr name="bottomSheetDialogTheme" format="reference" />
     <attr name="bottomSheetStyle" format="reference" />
     <attr name="cardViewStyle" format="reference" />
+    <attr name="checkedIcon" format="reference" />
     <attr name="chipGroupStyle" format="reference" />
     <attr name="chipStandaloneStyle" format="reference" />
     <attr name="chipStyle" format="reference" />
@@ -30,6 +28,7 @@
     <attr name="colorSecondary" format="color" />
     <attr name="colorSecondaryVariant" format="color" />
     <attr name="colorSurface" format="color" />
+    <attr name="commentsHeaderTextAppearance" format="reference|color" />
     <attr name="constraintSet" format="reference" />
     <attr name="coordinatorLayoutStyle" format="reference" />
     <attr name="dimWhenUnavailable" format="boolean" />
@@ -165,9 +164,12 @@
     <attr name="title" format="string" />
     <attr name="useLegacyDetailPanelDesign" format="boolean" />
     <attr name="useMaterialThemeColors" format="boolean" />
+    <attr name="indent_divider" format="boolean" />
     <attr name="discSize" format="dimension" />
     <attr name="avatarSize" format="dimension" />
     <attr name="imageViewSize" format="dimension" />
+    <attr name="allowBadges" format="boolean" />
+    <attr name="allowRings" format="boolean" />
     <attr name="navigationMode">
         <enum name="listMode" value="1" />
         <enum name="normal" value="0" />
@@ -465,7 +467,6 @@
     <attr name="closeIconSize" format="dimension" />
     <attr name="checkedIconVisible" format="boolean" />
     <attr name="checkedIconEnabled" format="boolean" />
-    <attr name="checkedIcon" format="reference" />
     <attr name="chipStartPadding" format="dimension" />
     <attr name="iconStartPadding" format="dimension" />
     <attr name="iconEndPadding" format="dimension" />
@@ -608,6 +609,79 @@
     <attr name="paramName" format="string" />
     <attr name="paramValue" format="string" />
     <attr name="aspectRatio" format="float" />
+    <attr name="flexDirection">
+        <enum name="column" value="2" />
+        <enum name="column_reverse" value="3" />
+        <enum name="row" value="0" />
+        <enum name="row_reverse" value="1" />
+    </attr>
+    <attr name="flexWrap">
+        <enum name="wrap" value="1" />
+        <enum name="nowrap" value="0" />
+        <enum name="wrap_reverse" value="2" />
+    </attr>
+    <attr name="justifyContent">
+        <enum name="center" value="2" />
+        <enum name="flex_end" value="1" />
+        <enum name="flex_start" value="0" />
+        <enum name="space_around" value="4" />
+        <enum name="space_between" value="3" />
+        <enum name="space_evenly" value="5" />
+    </attr>
+    <attr name="alignItems">
+        <enum name="center" value="2" />
+        <enum name="flex_end" value="1" />
+        <enum name="flex_start" value="0" />
+        <enum name="baseline" value="3" />
+        <enum name="stretch" value="4" />
+    </attr>
+    <attr name="alignContent">
+        <enum name="center" value="2" />
+        <enum name="flex_end" value="1" />
+        <enum name="flex_start" value="0" />
+        <enum name="space_around" value="4" />
+        <enum name="space_between" value="3" />
+        <enum name="stretch" value="5" />
+    </attr>
+    <attr name="dividerDrawable" format="reference" />
+    <attr name="dividerDrawableHorizontal" format="reference" />
+    <attr name="dividerDrawableVertical" format="reference" />
+    <attr name="showDivider">
+        <flag name="none" value="0x00000000" />
+        <flag name="end" value="0x00000004" />
+        <flag name="beginning" value="0x00000001" />
+        <flag name="middle" value="0x00000002" />
+    </attr>
+    <attr name="showDividerHorizontal">
+        <flag name="none" value="0x00000000" />
+        <flag name="end" value="0x00000004" />
+        <flag name="beginning" value="0x00000001" />
+        <flag name="middle" value="0x00000002" />
+    </attr>
+    <attr name="showDividerVertical">
+        <flag name="none" value="0x00000000" />
+        <flag name="end" value="0x00000004" />
+        <flag name="beginning" value="0x00000001" />
+        <flag name="middle" value="0x00000002" />
+    </attr>
+    <attr name="maxLine" format="integer" />
+    <attr name="layout_order" format="integer" />
+    <attr name="layout_flexGrow" format="float" />
+    <attr name="layout_flexShrink" format="float" />
+    <attr name="layout_flexBasisPercent" format="fraction" />
+    <attr name="layout_alignSelf">
+        <enum name="center" value="2" />
+        <enum name="auto" value="-1" />
+        <enum name="flex_end" value="1" />
+        <enum name="flex_start" value="0" />
+        <enum name="baseline" value="3" />
+        <enum name="stretch" value="4" />
+    </attr>
+    <attr name="layout_minWidth" format="dimension" />
+    <attr name="layout_minHeight" format="dimension" />
+    <attr name="layout_maxWidth" format="dimension" />
+    <attr name="layout_maxHeight" format="dimension" />
+    <attr name="layout_wrapBefore" format="boolean" />
     <attr name="fabSize">
         <enum name="normal" value="0" />
         <enum name="auto" value="-1" />
@@ -645,6 +719,7 @@
     <attr name="profileSize" format="dimension" />
     <attr name="profileSrc" format="reference" />
     <attr name="showRing" format="boolean" />
+    <attr name="increaseProfileSizeWithoutRing" format="boolean" />
     <attr name="searchEnabled" format="boolean" />
     <attr name="searchLabel" format="string" />
     <attr name="settingsDescription" format="string" />
@@ -704,6 +779,14 @@
     </attr>
     <attr name="imageAspectRatio" format="float" />
     <attr name="circleCrop" format="boolean" />
+    <attr name="backgroundInsetStart" format="dimension" />
+    <attr name="backgroundInsetTop" format="dimension" />
+    <attr name="backgroundInsetEnd" format="dimension" />
+    <attr name="backgroundInsetBottom" format="dimension" />
+    <attr name="materialAlertDialogTitlePanelStyle" format="reference" />
+    <attr name="materialAlertDialogTitleIconStyle" format="reference" />
+    <attr name="materialAlertDialogTitleTextStyle" format="reference" />
+    <attr name="materialAlertDialogTheme" format="reference" />
     <attr name="iconSize" format="dimension" />
     <attr name="iconPadding" format="dimension" />
     <attr name="iconGravity">
@@ -712,6 +795,7 @@
     </attr>
     <attr name="iconTint" format="color" />
     <attr name="cornerRadius" format="dimension" />
+    <attr name="cardForegroundColor" format="color" />
     <attr name="shapeAppearance" format="reference" />
     <attr name="shapeAppearanceOverlay" format="reference" />
     <attr name="alphabeticModifiers">

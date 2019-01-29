@@ -4,9 +4,6 @@
     <style name="Base.Theme.GoogleMaterial.Light" parent="@*com.google.android.apps.docs:style/Base.V14.Theme.GoogleMaterial.Light">
         <item name="android:statusBarColor">@*android:color/primary_text_leanback_light</item>
     </style>
-    <style name="Base.Theme.GoogleMaterial.Light.Bridge" parent="@*com.google.android.apps.docs:style/Base.V14.Theme.GoogleMaterial.Light.Bridge">
-        <item name="android:statusBarColor">@*android:color/primary_text_leanback_light</item>
-    </style>
     <style name="Base.V14.Theme.GoogleMaterial.Light" parent="@*com.google.android.apps.docs:style/Base.V14.Theme.GoogleMaterial.Light.Bridge">
         <item name="android:colorBackground">@*android:color/primary_text_leanback_light</item>
         <item name="android:windowBackground">@*android:color/primary_text_leanback_light</item>
@@ -21,7 +18,7 @@
         <item name="*com.google.android.apps.docs:chipStyle">@*com.google.android.apps.docs:style/Widget.GoogleMaterial.Chip.Assistive</item>
         <item name="*com.google.android.apps.docs:floatingActionButtonStyle">@*com.google.android.apps.docs:style/Widget.GoogleMaterial.FloatingActionButton</item>
         <item name="*com.google.android.apps.docs:materialButtonStyle">@*com.google.android.apps.docs:style/Widget.GoogleMaterial.Button</item>
-        <item name="*com.google.android.apps.docs:materialCardViewStyle">@*com.google.android.apps.docs:style/Widget.GoogleMaterial.CardView.Light</item>
+        <item name="*com.google.android.apps.docs:materialCardViewStyle">@*com.google.android.apps.docs:style/Widget.GoogleMaterial.CardView</item>
         <item name="*com.google.android.apps.docs:navigationViewStyle">@*com.google.android.apps.docs:style/Widget.GoogleMaterial.NavigationView</item>
         <item name="*com.google.android.apps.docs:openSearchBarStyle">@*com.google.android.apps.docs:style/Widget.GoogleMaterial.OpenSearchBar</item>
         <item name="*com.google.android.apps.docs:openSearchViewPrefixStyle">@*com.google.android.apps.docs:style/Widget.GoogleMaterial.OpenSearchView.Prefix</item>
@@ -34,6 +31,9 @@
         <item name="*com.google.android.apps.docs:borderlessButtonStyle">@*com.google.android.apps.docs:style/Widget.GoogleMaterial.TextButton</item>
         <item name="*com.google.android.apps.docs:toolbarStyle">@*com.google.android.apps.docs:style/Widget.GoogleMaterial.Toolbar</item>
         <item name="*com.google.android.apps.docs:popupMenuStyle">@*com.google.android.apps.docs:style/Widget.GoogleMaterial.PopupMenu</item>
+        <item name="*com.google.android.apps.docs:colorPrimary">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.apps.docs:colorPrimaryDark">@*android:color/primary_text_leanback_light</item>
+        <item name="*com.google.android.apps.docs:colorAccent">@*com.google.android.apps.docs:color/google_blue500</item>
         <item name="*com.google.android.apps.docs:alertDialogTheme">@*com.google.android.apps.docs:style/ThemeOverlay.GoogleMaterial.Dialog.Alert</item>
         <item name="*com.google.android.apps.docs:buttonStyle">@*com.google.android.apps.docs:style/Widget.AppCompat.Button.Colored</item>
         <item name="*com.google.android.apps.docs:checkboxStyle">@*com.google.android.apps.docs:style/Widget.GoogleMaterial.CompoundButton.CheckBox</item>
@@ -41,6 +41,7 @@
         <item name="*com.google.android.apps.docs:switchStyle">@*com.google.android.apps.docs:style/Widget.GoogleMaterial.CompoundButton.Switch</item>
         <item name="*com.google.android.apps.docs:colorError">@*com.google.android.apps.docs:color/google_default_color_error</item>
         <item name="*com.google.android.apps.docs:viewInflaterClass">android.support.design.theme.MaterialComponentsViewInflater</item>
+        <item name="*com.google.android.apps.docs:materialAlertDialogTheme">@*com.google.android.apps.docs:style/ThemeOverlay.GoogleMaterial.MaterialAlertDialog</item>
         <item name="*com.google.android.apps.docs:snackbarStyle">@*com.google.android.apps.docs:style/Widget.GoogleMaterial.Snackbar</item>
         <item name="*com.google.android.apps.docs:snackbarButtonStyle">@*com.google.android.apps.docs:style/Widget.GoogleMaterial.TextButton.Snackbar</item>
     </style>
@@ -69,13 +70,10 @@
         <item name="*com.google.android.apps.docs:textAppearanceOverline">@*com.google.android.apps.docs:style/TextAppearance.GoogleMaterial.Overline</item>
         <item name="*com.google.android.apps.docs:textAppearanceSubtitle1">@*com.google.android.apps.docs:style/TextAppearance.GoogleMaterial.Subtitle1</item>
         <item name="*com.google.android.apps.docs:textAppearanceSubtitle2">@*com.google.android.apps.docs:style/TextAppearance.GoogleMaterial.Subtitle2</item>
-        <item name="*com.google.android.apps.docs:colorPrimary">@*android:color/secondary_text_leanback_light</item>
-        <item name="*com.google.android.apps.docs:colorPrimaryDark">@*android:color/primary_text_leanback_light</item>
-        <item name="*com.google.android.apps.docs:colorAccent">@*com.google.android.apps.docs:color/google_blue500</item>
         <item name="*com.google.android.apps.docs:colorSecondary50">@*com.google.android.apps.docs:color/google_blue50</item>
         <item name="*com.google.android.apps.docs:colorSecondary100">@*com.google.android.apps.docs:color/google_blue100</item>
         <item name="*com.google.android.apps.docs:colorSecondary700">@*com.google.android.apps.docs:color/google_blue700</item>
-        <item name="*com.google.android.apps.docs:colorOnSurfaceVariant">@*android:color/secondary_text_leanback_light</item>
+        <item name="*com.google.android.apps.docs:colorOnSurfaceVariant">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.apps.docs:colorHairline">@*android:color/transparent</item>
         <item name="*com.google.android.apps.docs:textAppearanceDisplay1">@*com.google.android.apps.docs:style/TextAppearance.GoogleMaterial.Display1</item>
         <item name="*com.google.android.apps.docs:textAppearanceDisplay2">@*com.google.android.apps.docs:style/TextAppearance.GoogleMaterial.Display2</item>
@@ -103,7 +101,7 @@
         <item name="*com.google.android.apps.docs:colorSurface">@*android:color/secondary_text_leanback_light</item>
         <item name="*com.google.android.apps.docs:floatingActionButtonStyle">@*com.google.android.apps.docs:style/Widget.GoogleMaterial.FloatingActionButton</item>
         <item name="*com.google.android.apps.docs:materialButtonStyle">@*com.google.android.apps.docs:style/Widget.GoogleMaterial.Button</item>
-        <item name="*com.google.android.apps.docs:materialCardViewStyle">@*com.google.android.apps.docs:style/Widget.GoogleMaterial.CardView.Light</item>
+        <item name="*com.google.android.apps.docs:materialCardViewStyle">@*com.google.android.apps.docs:style/Widget.GoogleMaterial.CardView</item>
         <item name="*com.google.android.apps.docs:minTouchTargetSize">@*com.google.android.apps.docs:dimen/google_min_touch_target_size</item>
         <item name="*com.google.android.apps.docs:navigationViewStyle">@*com.google.android.apps.docs:style/Widget.GoogleMaterial.NavigationView</item>
         <item name="*com.google.android.apps.docs:openSearchBarStyle">@*com.google.android.apps.docs:style/Widget.GoogleMaterial.OpenSearchBar</item>
@@ -144,6 +142,9 @@
         <item name="*com.google.android.apps.docs:colorError">@*com.google.android.apps.docs:color/google_default_color_error</item>
         <item name="*com.google.android.apps.docs:colorSecondary50">@*com.google.android.apps.docs:color/google_blue50</item>
         <item name="*com.google.android.apps.docs:colorSecondary100">@*com.google.android.apps.docs:color/google_blue100</item>
+        <item name="*com.google.android.apps.docs:colorSecondary700">@*com.google.android.apps.docs:color/google_default_color_secondary_700</item>
+        <item name="*com.google.android.apps.docs:colorOnSurfaceVariant">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.apps.docs:colorHairline">@*android:color/white</item>
         <item name="*com.google.android.apps.docs:textAppearanceDisplay1">@*com.google.android.apps.docs:style/TextAppearance.GoogleMaterial.Display1</item>
         <item name="*com.google.android.apps.docs:textAppearanceDisplay2">@*com.google.android.apps.docs:style/TextAppearance.GoogleMaterial.Display2</item>
         <item name="*com.google.android.apps.docs:textAppearanceDisplay3">@*com.google.android.apps.docs:style/TextAppearance.GoogleMaterial.Display3</item>
@@ -151,6 +152,7 @@
         <item name="*com.google.android.apps.docs:textAppearanceSubhead2">@*com.google.android.apps.docs:style/TextAppearance.GoogleMaterial.Subhead2</item>
         <item name="*com.google.android.apps.docs:textAppearanceSubtitleAlt1">@*com.google.android.apps.docs:style/TextAppearance.GoogleMaterial.SubtitleAlt1</item>
         <item name="*com.google.android.apps.docs:textAppearanceSubtitleAlt2">@*com.google.android.apps.docs:style/TextAppearance.GoogleMaterial.SubtitleAlt2</item>
+        <item name="*com.google.android.apps.docs:materialAlertDialogTheme">@*com.google.android.apps.docs:style/ThemeOverlay.GoogleMaterial.MaterialAlertDialog</item>
         <item name="*com.google.android.apps.docs:snackbarStyle">@*com.google.android.apps.docs:style/Widget.GoogleMaterial.Snackbar</item>
         <item name="*com.google.android.apps.docs:snackbarButtonStyle">@*com.google.android.apps.docs:style/Widget.GoogleMaterial.TextButton.Snackbar</item>
     </style>
@@ -339,5 +341,13 @@
         <item name="*com.google.android.apps.docs:behavior_peekHeight">auto</item>
         <item name="*com.google.android.apps.docs:behavior_hideable">true</item>
         <item name="*com.google.android.apps.docs:behavior_skipCollapsed">false</item>
+        <item name="*com.google.android.apps.docs:shapeAppearance">@null</item>
+        <item name="*com.google.android.apps.docs:shapeAppearanceOverlay">@null</item>
+        <item name="*com.google.android.apps.docs:enforceMaterialTheme">false</item>
+        <item name="*com.google.android.apps.docs:backgroundTint">@*android:color/secondary_text_leanback_light</item>
+    </style>
+    <style name="Widget.GoogleMaterial.ProductLockupView.Dark" parent="@*com.google.android.apps.docs:style/Widget.GoogleMaterial.ProductLockupView">
+        <item name="*com.google.android.apps.docs:productNameTextColor">@*android:color/white</item>
+        <item name="*com.google.android.apps.docs:logoColor">light</item>
     </style>
 </resources>

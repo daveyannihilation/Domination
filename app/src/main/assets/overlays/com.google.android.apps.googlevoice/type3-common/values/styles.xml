@@ -8,12 +8,21 @@
         <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="*com.google.android.apps.googlevoice:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
     </style>
-    <style name="BaseTheme" parent="@*com.google.android.apps.googlevoice:style/Theme.AppCompat.Light.NoActionBar">
+    <style name="BaseTheme" parent="@*com.google.android.apps.googlevoice:style/Theme.MaterialComponents.Light.NoActionBar.Bridge">
         <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="android:radioButtonStyle">@*com.google.android.apps.googlevoice:style/RadioButton</item>
+        <item name="*com.google.android.apps.googlevoice:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.apps.googlevoice:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
         <item name="*com.google.android.apps.googlevoice:colorAccent">@*com.google.android.apps.googlevoice:color/app_accent_color</item>
+        <item name="*com.google.android.apps.googlevoice:preferenceCategoryStyle">@*com.google.android.apps.googlevoice:style/PreferenceCategoryStyle</item>
         <item name="*com.google.android.apps.googlevoice:preferenceStyle">@*com.google.android.apps.googlevoice:style/PreferenceStyle</item>
         <item name="*com.google.android.apps.googlevoice:switchPreferenceCompatStyle">@*com.google.android.apps.googlevoice:style/SwitchPreferenceCompatStyle</item>
+    </style>
+    <style name="BottomNavigation" parent="@*com.google.android.apps.googlevoice:style/Widget.Design.BottomNavigationView">
+        <item name="*com.google.android.apps.googlevoice:labelVisibilityMode">labeled</item>
+        <item name="*com.google.android.apps.googlevoice:itemIconTint">@*com.google.android.apps.googlevoice:color/tab_color_selector</item>
+        <item name="*com.google.android.apps.googlevoice:itemTextColor">@*com.google.android.apps.googlevoice:color/tab_color_selector</item>
+        <item name="*com.google.android.apps.googlevoice:backgroundTint">@*android:color/background_floating_material_dark</item>
     </style>
     <style name="ComplexPreferenceScreenTheme">
         <item name="android:textSize">@*com.google.android.apps.googlevoice:dimen/preferences_primary_font_size</item>
@@ -51,13 +60,10 @@
         <item name="*com.google.android.apps.googlevoice:actionModeStyle">@*com.google.android.apps.googlevoice:style/VoiceActionModeBar</item>
         <item name="*com.google.android.apps.googlevoice:actionModeBackground">@*com.google.android.apps.googlevoice:color/quantum_googblue</item>
         <item name="*com.google.android.apps.googlevoice:actionModeCloseDrawable">@*com.google.android.apps.googlevoice:drawable/quantum_ic_close_white_24</item>
-        <item name="*com.google.android.apps.googlevoice:colorPrimary">@*android:color/primary_material_dark</item>
-        <item name="*com.google.android.apps.googlevoice:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
         <item name="android:windowBackground">@*android:color/background_dark</item>
     </style>
     <style name="HomeTheme.Launcher" parent="@*com.google.android.apps.googlevoice:style/HomeTheme">
         <item name="android:windowBackground">@*com.google.android.apps.googlevoice:drawable/quantum_launchscreen_google_voice</item>
-        <item name="*com.google.android.apps.googlevoice:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
 	    <item name="android:windowShowWallpaper">false</item>		
         <item name="android:windowIsTranslucent">false</item>
     </style>
@@ -80,11 +86,6 @@
         <item name="*com.google.android.apps.googlevoice:fadeOutAnimationDurationMs">80</item>
     </style>
     <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light" />
-    <style name="PreferenceTheme" parent="@*com.google.android.apps.googlevoice:style/BaseTheme">
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-        <item name="*com.google.android.apps.googlevoice:colorPrimary">@*android:color/primary_material_dark</item>
-        <item name="*com.google.android.apps.googlevoice:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
-    </style>
     <style name="ProgressDialogWithSpinnerOnly" parent="@*android:style/Theme.Holo.Dialog">
         <item name="android:textColorPrimary">@*android:color/white</item>
         <item name="android:windowBackground">@*com.google.android.apps.googlevoice:color/transparent_bg</item>

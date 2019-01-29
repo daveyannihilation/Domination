@@ -57,11 +57,6 @@
     <attr name="edgeGlowSize" format="integer" />
     <attr name="enabledBackgroundColor" format="reference|color" />
     <attr name="fadeImageIfLoadedFromCache" format="boolean" />
-    <attr name="fadingMode">
-        <enum name="fade_in" value="0" />
-        <enum name="fade_out" value="1" />
-        <enum name="fade_out_in" value="2" />
-    </attr>
     <attr name="fastforward_increment" format="integer" />
     <attr name="floatingActionButtonStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="forceFullHeight" format="boolean" />
@@ -600,15 +595,6 @@
     <attr name="state_audioFilled" format="boolean" />
     <attr name="state_audioPlaying" format="boolean" />
     <attr name="state_audioPaused" format="boolean" />
-    <attr name="autoResizeText_resizeStepUnit">
-        <enum name="unitDip" value="1" />
-        <enum name="unitIn" value="4" />
-        <enum name="unitMm" value="5" />
-        <enum name="unitPt" value="3" />
-        <enum name="unitPx" value="0" />
-        <enum name="unitSp" value="2" />
-    </attr>
-    <attr name="autoResizeText_minTextSize" format="dimension" />
     <attr name="revealBackground" format="reference" />
     <attr name="lineSpacing" format="dimension" />
     <attr name="baselineToTop" format="dimension" />
@@ -725,12 +711,11 @@
     <attr name="singleLine" format="boolean" />
     <attr name="singleSelection" format="boolean" />
     <attr name="checkedChip" format="reference" />
-    <attr name="backgroundColor" format="color" />
+    <attr name="backgroundColor" format="reference|color" />
     <attr name="cutout_radius" format="reference|dimension" />
     <attr name="layout_cutoutOffsetX" format="dimension" />
     <attr name="layout_cutoutOffsetY" format="dimension" />
     <attr name="shapeElevation" format="reference|integer" />
-    <attr name="glowDurationInMillis" format="integer" />
     <attr name="expandedTitleMargin" format="dimension" />
     <attr name="expandedTitleMarginStart" format="dimension" />
     <attr name="expandedTitleMarginTop" format="dimension" />
@@ -834,8 +819,6 @@
     <attr name="semanticallySearchable" format="boolean" />
     <attr name="documentMaxAgeSecs" format="integer" />
     <attr name="perAccountTemplate" format="boolean" />
-    <attr name="transitionDuration" format="integer" />
-    <attr name="transitionEnabled" format="boolean" />
     <attr name="checkableFlipComponentStyle" format="reference" />
     <attr name="windowTransitionStyle">
         <enum name="none" value="2" />
@@ -1097,41 +1080,6 @@
     <attr name="textAppearanceSubhead2" format="reference" />
     <attr name="textAppearanceSubtitleAlt1" format="reference" />
     <attr name="textAppearanceSubtitleAlt2" format="reference" />
-    <attr name="orientation">
-        <enum name="horizontal" value="0" />
-        <enum name="vertical" value="1" />
-    </attr>
-    <attr name="rowCount" format="integer" />
-    <attr name="columnCount" format="integer" />
-    <attr name="useDefaultMargins" format="boolean" />
-    <attr name="alignmentMode">
-        <enum name="alignBounds" value="0" />
-        <enum name="alignMargins" value="1" />
-    </attr>
-    <attr name="rowOrderPreserved" format="boolean" />
-    <attr name="columnOrderPreserved" format="boolean" />
-    <attr name="layout_row" format="integer" />
-    <attr name="layout_rowSpan" format="integer" />
-    <attr name="layout_rowWeight" format="float" />
-    <attr name="layout_column" format="integer" />
-    <attr name="layout_columnSpan" format="integer" />
-    <attr name="layout_columnWeight" format="float" />
-    <attr name="layout_gravity">
-        <flag name="end" value="0x00800005" />
-        <flag name="fill" value="0x00000077" />
-        <flag name="center_horizontal" value="0x00000001" />
-        <flag name="fill_horizontal" value="0x00000007" />
-        <flag name="left" value="0x00000003" />
-        <flag name="right" value="0x00000005" />
-        <flag name="start" value="0x00800003" />
-        <flag name="bottom" value="0x00000050" />
-        <flag name="top" value="0x00000030" />
-        <flag name="center" value="0x00000011" />
-        <flag name="center_vertical" value="0x00000010" />
-        <flag name="fill_vertical" value="0x00000070" />
-        <flag name="clip_horizontal" value="0x00000008" />
-        <flag name="clip_vertical" value="0x00000080" />
-    </attr>
     <attr name="headerTitle" format="reference" />
     <attr name="headerMessage" format="reference" />
     <attr name="headerIcon" format="reference" />
@@ -1256,6 +1204,7 @@
     </attr>
     <attr name="iconTint" format="color" />
     <attr name="cornerRadius" format="dimension" />
+    <attr name="cardForegroundColor" format="color" />
     <attr name="shapeAppearance" format="reference" />
     <attr name="shapeAppearanceOverlay" format="reference" />
     <attr name="alphabeticModifiers">
@@ -1438,13 +1387,6 @@
         <enum name="signIn" value="0" />
         <enum name="waa" value="1" />
     </attr>
-    <attr name="appearAnimator" format="reference" />
-    <attr name="disappearAnimator" format="reference" />
-    <attr name="shadowAlpha" format="float" />
-    <attr name="rating" format="float" />
-    <attr name="foregroundColor" format="color" />
-    <attr name="starGap" format="dimension" />
-    <attr name="starDrawable" format="reference" />
     <attr name="ratio" format="float" />
     <attr name="listeningColor" format="reference" />
     <attr name="loadingColor" format="reference" />
@@ -1586,7 +1528,7 @@
     </attr>
     <attr name="backgroundOverlayColorAlpha" format="float" />
     <attr name="actionTextColorAlpha" format="float" />
-    <attr name="maxSize" format="dimension" />
+    <attr name="rating" format="float" />
     <attr name="range" format="integer" />
     <attr name="star_height" format="dimension" />
     <attr name="star_color" format="color" />
@@ -1596,6 +1538,7 @@
     <attr name="compact_mode" format="boolean" />
     <attr name="text_size" format="dimension" />
     <attr name="text_color" format="color" />
+    <attr name="columnCount" format="integer" />
     <attr name="layout_headerOffsetX" format="dimension" />
     <attr name="layout_headerOffsetY" format="dimension" />
     <attr name="layout_stickToBottom" format="boolean" />
@@ -1690,7 +1633,6 @@
     </attr>
     <attr name="tabRippleColor" format="color" />
     <attr name="tabUnboundedRipple" format="boolean" />
-    <attr name="state_light" format="boolean" />
     <attr name="hintEnabled" format="boolean" />
     <attr name="hintAnimationEnabled" format="boolean" />
     <attr name="hintTextAppearance" format="reference" />
@@ -1759,16 +1701,6 @@
     <attr name="logoDescription" format="string" />
     <attr name="titleTextColor" format="color" />
     <attr name="subtitleTextColor" format="color" />
-    <attr name="directionMode">
-        <enum name="direction_decrease" value="1" />
-        <enum name="direction_increase" value="0" />
-        <enum name="direction_increase_decrease" value="2" />
-    </attr>
-    <attr name="dimension">
-        <enum name="x" value="0" />
-        <enum name="xy" value="2" />
-        <enum name="y" value="1" />
-    </attr>
     <attr name="finalText" format="string" />
     <attr name="textStyleResId" format="reference" />
     <attr name="textInDuration" format="integer" />

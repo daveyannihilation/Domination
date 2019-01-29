@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <attr name="alertDialogTitleIconStyle" format="reference" />
-    <attr name="alertDialogTitlePanelStyle" format="reference" />
-    <attr name="alertDialogTitleTextStyle" format="reference" />
     <attr name="bottomAppBarStyle" format="reference" />
     <attr name="bottomNavigationStyle" format="reference" />
     <attr name="bottomSheetDialogTheme" format="reference" />
@@ -26,6 +23,7 @@
     <attr name="colorSecondary" format="color" />
     <attr name="colorSecondaryVariant" format="color" />
     <attr name="colorSurface" format="color" />
+    <attr name="constraintSet" format="reference" />
     <attr name="coordinatorLayoutStyle" format="reference" />
     <attr name="drawerArrowStyle" format="reference" />
     <attr name="floatingActionButtonStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
@@ -33,6 +31,94 @@
     <attr name="hideMotionSpec" format="reference" />
     <attr name="isLightTheme" format="boolean" />
     <attr name="isMaterialTheme" format="boolean" />
+    <attr name="layout_constraintBaseline_creator" format="integer" />
+    <attr name="layout_constraintBaseline_toBaselineOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintBottom_creator" format="integer" />
+    <attr name="layout_constraintBottom_toBottomOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintBottom_toTopOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintDimensionRatio" format="string" />
+    <attr name="layout_constraintEnd_toEndOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintEnd_toStartOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintGuide_begin" format="dimension" />
+    <attr name="layout_constraintGuide_end" format="dimension" />
+    <attr name="layout_constraintGuide_percent" format="float" />
+    <attr name="layout_constraintHeight_default">
+        <enum name="spread" value="0" />
+        <enum name="wrap" value="1" />
+    </attr>
+    <attr name="layout_constraintHeight_max" format="dimension" />
+    <attr name="layout_constraintHeight_min" format="dimension" />
+    <attr name="layout_constraintHorizontal_bias" format="float" />
+    <attr name="layout_constraintHorizontal_chainStyle">
+        <enum name="spread" value="0" />
+        <enum name="packed" value="2" />
+        <enum name="spread_inside" value="1" />
+    </attr>
+    <attr name="layout_constraintHorizontal_weight" format="float" />
+    <attr name="layout_constraintLeft_creator" format="integer" />
+    <attr name="layout_constraintLeft_toLeftOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintLeft_toRightOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintRight_creator" format="integer" />
+    <attr name="layout_constraintRight_toLeftOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintRight_toRightOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintStart_toEndOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintStart_toStartOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintTop_creator" format="integer" />
+    <attr name="layout_constraintTop_toBottomOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintTop_toTopOf" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
+    <attr name="layout_constraintVertical_bias" format="float" />
+    <attr name="layout_constraintVertical_chainStyle">
+        <enum name="spread" value="0" />
+        <enum name="packed" value="2" />
+        <enum name="spread_inside" value="1" />
+    </attr>
+    <attr name="layout_constraintVertical_weight" format="float" />
+    <attr name="layout_constraintWidth_default">
+        <enum name="spread" value="0" />
+        <enum name="wrap" value="1" />
+    </attr>
+    <attr name="layout_constraintWidth_max" format="dimension" />
+    <attr name="layout_constraintWidth_min" format="dimension" />
+    <attr name="layout_editor_absoluteX" format="dimension" />
+    <attr name="layout_editor_absoluteY" format="dimension" />
+    <attr name="layout_goneMarginBottom" format="dimension" />
+    <attr name="layout_goneMarginEnd" format="dimension" />
+    <attr name="layout_goneMarginLeft" format="dimension" />
+    <attr name="layout_goneMarginRight" format="dimension" />
+    <attr name="layout_goneMarginStart" format="dimension" />
+    <attr name="layout_goneMarginTop" format="dimension" />
+    <attr name="layout_optimizationLevel">
+        <flag name="all" value="0x00000002" />
+        <flag name="basic" value="0x00000004" />
+        <flag name="chains" value="0x00000008" />
+        <flag name="none" value="0x00000001" />
+    </attr>
     <attr name="materialButtonStyle" format="reference" />
     <attr name="materialCardViewStyle" format="reference" />
     <attr name="materialThemeOverlay" format="reference" />
@@ -67,15 +153,21 @@
     <attr name="textInputStyle" format="reference" />
     <attr name="title" format="string" />
     <attr name="useMaterialThemeColors" format="boolean" />
+    <attr name="indent_divider" format="boolean" />
+    <attr name="discSize" format="dimension" />
+    <attr name="avatarSize" format="dimension" />
+    <attr name="imageViewSize" format="dimension" />
+    <attr name="allowBadges" format="boolean" />
+    <attr name="allowRings" format="boolean" />
     <attr name="navigationMode">
         <enum name="listMode" value="1" />
         <enum name="normal" value="0" />
         <enum name="tabMode" value="2" />
     </attr>
     <attr name="displayOptions">
+        <flag name="none" value="0x00000000" />
         <flag name="disableHome" value="0x00000020" />
         <flag name="homeAsUp" value="0x00000004" />
-        <flag name="none" value="0x00000000" />
         <flag name="showCustom" value="0x00000010" />
         <flag name="showHome" value="0x00000002" />
         <flag name="showTitle" value="0x00000008" />
@@ -460,6 +552,7 @@
         <enum name="top" value="48" />
     </attr>
     <attr name="layout_dodgeInsetEdges">
+        <flag name="all" value="0x00000077" />
         <flag name="none" value="0x00000000" />
         <flag name="end" value="0x00800005" />
         <flag name="bottom" value="0x00000050" />
@@ -467,7 +560,6 @@
         <flag name="right" value="0x00000005" />
         <flag name="start" value="0x00800003" />
         <flag name="top" value="0x00000030" />
-        <flag name="all" value="0x00000077" />
     </attr>
     <attr name="windowTransitionStyle">
         <enum name="none" value="2" />
@@ -537,6 +629,18 @@
     <attr name="ttcIndex" format="integer" />
     <attr name="foregroundInsidePadding" format="boolean" />
     <attr name="maxHeightPercentage" format="float" />
+    <attr name="colorSecondary50" format="color" />
+    <attr name="colorSecondary100" format="color" />
+    <attr name="colorSecondary700" format="color" />
+    <attr name="colorOnSurfaceVariant" format="color" />
+    <attr name="colorHairline" format="color" />
+    <attr name="textAppearanceDisplay1" format="reference" />
+    <attr name="textAppearanceDisplay2" format="reference" />
+    <attr name="textAppearanceDisplay3" format="reference" />
+    <attr name="textAppearanceSubhead1" format="reference" />
+    <attr name="textAppearanceSubhead2" format="reference" />
+    <attr name="textAppearanceSubtitleAlt1" format="reference" />
+    <attr name="textAppearanceSubtitleAlt2" format="reference" />
     <attr name="orientation">
         <enum name="horizontal" value="0" />
         <enum name="vertical" value="1" />
@@ -592,8 +696,8 @@
     <attr name="imageAspectRatio" format="float" />
     <attr name="circleCrop" format="boolean" />
     <attr name="mapType">
-        <enum name="normal" value="1" />
         <enum name="none" value="0" />
+        <enum name="normal" value="1" />
         <enum name="hybrid" value="4" />
         <enum name="satellite" value="2" />
         <enum name="terrain" value="3" />
@@ -620,6 +724,14 @@
     <attr name="latLngBoundsSouthWestLongitude" format="float" />
     <attr name="latLngBoundsNorthEastLatitude" format="float" />
     <attr name="latLngBoundsNorthEastLongitude" format="float" />
+    <attr name="backgroundInsetStart" format="dimension" />
+    <attr name="backgroundInsetTop" format="dimension" />
+    <attr name="backgroundInsetEnd" format="dimension" />
+    <attr name="backgroundInsetBottom" format="dimension" />
+    <attr name="materialAlertDialogTitlePanelStyle" format="reference" />
+    <attr name="materialAlertDialogTitleIconStyle" format="reference" />
+    <attr name="materialAlertDialogTitleTextStyle" format="reference" />
+    <attr name="materialAlertDialogTheme" format="reference" />
     <attr name="iconSize" format="dimension" />
     <attr name="iconPadding" format="dimension" />
     <attr name="iconGravity">
@@ -789,6 +901,7 @@
     <attr name="seekBarIncrement" format="integer" />
     <attr name="adjustable" format="boolean" />
     <attr name="showSeekBarValue" format="boolean" />
+    <attr name="expandable" format="boolean" />
     <attr name="cornerSize" format="dimension" />
     <attr name="cornerSizeTopLeft" format="dimension" />
     <attr name="cornerSizeTopRight" format="dimension" />
