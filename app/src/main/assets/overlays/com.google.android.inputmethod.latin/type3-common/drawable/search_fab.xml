@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape android:shape="oval"
+<ripple android:color="@*android:color/ripple_material_dark"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@*android:color/button_material_dark" />
-</shape>
+    <item android:id="@*android:id/mask">
+        <shape android:shape="oval">
+            <solid android:color="@*android:color/button_material_dark" />
+        </shape>
+    </item>
+    <item android:id="@*android:id/background">
+        <shape android:shape="oval">
+            <solid android:color="@*android:color/button_material_dark" />
+        </shape>
+    </item>
+</ripple>

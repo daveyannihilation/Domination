@@ -13,8 +13,6 @@
         <item name="android:textColorTertiary">?ytTextDisabled</item>
         <item name="android:textColorTertiaryInverse">?ytText3Inverse</item>
         <item name="android:actionBarSize">@*com.google.android.youtube:dimen/theme_main_action_bar_size</item>
-        <item name="android:dialogTheme">@*com.google.android.youtube:style/Theme.YouTube.Dark.Dialog</item>
-        <item name="android:alertDialogTheme">@*com.google.android.youtube:style/Theme.YouTube.Dark.Dialog</item>
         <item name="*com.google.android.youtube:adHintText">@*com.google.android.youtube:color/ads_hint_text_dark</item>
         <item name="*com.google.android.youtube:adHintTextIncomplete">@*com.google.android.youtube:color/ads_hint_text_incomplete_dark</item>
         <item name="*com.google.android.youtube:backgroundPrimary">@*android:color/background_dark</item>
@@ -97,7 +95,6 @@
         <item name="*com.google.android.youtube:actionBarStyle">@*com.google.android.youtube:style/Widget.YouTube.ActionBar</item>
         <item name="*com.google.android.youtube:actionBarTheme">@*com.google.android.youtube:style/ThemeOverlay.YouTube.ActionBar.Dark</item>
         <item name="*com.google.android.youtube:actionBarSize">@*com.google.android.youtube:dimen/theme_main_action_bar_size</item>
-        <item name="*com.google.android.youtube:dialogTheme">@*com.google.android.youtube:style/Theme.YouTube.Dark.Dialog</item>
         <item name="*com.google.android.youtube:borderlessButtonStyle">?selectableItemBackgroundBorderless</item>
         <item name="*com.google.android.youtube:toolbarStyle">@*com.google.android.youtube:style/ThemeOverlay.YouTube.Toolbar</item>
         <item name="*com.google.android.youtube:listPopupWindowStyle">@*com.google.android.youtube:style/Widget.YouTube.Light.ListPopupWindow</item>
@@ -106,6 +103,10 @@
         <item name="*com.google.android.youtube:colorAccent">@*com.google.android.youtube:color/color_brand_accent</item>
         <item name="*com.google.android.youtube:colorControlHighlight">@*com.google.android.youtube:color/ripple_material_dark</item>
         <item name="*com.google.android.youtube:alertDialogTheme">@*com.google.android.youtube:style/Theme.YouTube.Dark.Dialog</item>
+    </style>
+    <style name="Base.Theme.YouTube.Dark.Dialog" parent="@*com.google.android.youtube:style/Theme.AppCompat.Dialog">
+        <item name="android:background">@*android:color/secondary_text_leanback_light</item>
+        <item name="android:colorBackground">@*android:color/secondary_text_leanback_light</item>
     </style>
     <style name="Base.ThemeOverlay.AppCompat.ActionBar" parent="@*com.google.android.youtube:style/Base.ThemeOverlay.AppCompat">
         <item name="*com.google.android.youtube:searchViewStyle">@*com.google.android.youtube:style/Widget.AppCompat.SearchView.ActionBar</item>

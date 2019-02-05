@@ -12,6 +12,7 @@
     <attr name="BgActionPopupItemSelector" format="reference" />
     <attr name="BgCandidate" format="reference" />
     <attr name="BgCandidateLastColumn" format="reference" />
+    <attr name="BgClipboardItemBoardPopupButtonPressed" format="color" />
     <attr name="BgComposingText" format="reference" />
     <attr name="BgDigitKeyboardLeftPanel" format="reference" />
     <attr name="BgDragConfirmationDropZone" format="reference" />
@@ -322,6 +323,7 @@
     <attr name="IsLightTheme" format="boolean" />
     <attr name="KeyboardBodyHeight" format="dimension" />
     <attr name="KeyboardBottomTabWeight" format="float" />
+    <attr name="KeyboardBottomTabWeightM2" format="float" />
     <attr name="KeyboardBottomWeight" format="float" />
     <attr name="KeyboardCandidateBodyPaddingTop" format="dimension" />
     <attr name="KeyboardInnerPadding" format="dimension" />
@@ -346,6 +348,8 @@
     <attr name="PopupBubbleCenteredArrayLayout" format="reference" />
     <attr name="PopupBubbleCoversSoftKey" format="boolean" />
     <attr name="PopupBubbleLayout" format="reference" />
+    <attr name="PopupBubbleRectangularAutoCenteredLayout" format="reference" />
+    <attr name="PopupBubbleRectangularAutoCenteredSmallLayout" format="reference" />
     <attr name="PopupBubbleRectangularCoversSoftKey" format="boolean" />
     <attr name="PopupBubbleRectangularLabelSmallLayout" format="reference" />
     <attr name="PopupBubbleRectangularLayout" format="reference" />
@@ -370,9 +374,6 @@
     <attr name="ThemeListingCandidateActionUpperSpaceWeight" format="float" />
     <attr name="ThemeListingCandidateActionWeight" format="float" />
     <attr name="VideoCardDurationCornerRadius" format="reference" />
-    <attr name="alertDialogTitleIconStyle" format="reference" />
-    <attr name="alertDialogTitlePanelStyle" format="reference" />
-    <attr name="alertDialogTitleTextStyle" format="reference" />
     <attr name="bottomAppBarStyle" format="reference" />
     <attr name="bottomNavigationStyle" format="reference" />
     <attr name="bottomSheetDialogTheme" format="reference" />
@@ -497,6 +498,7 @@
     <attr name="materialButtonStyle" format="reference" />
     <attr name="materialCardViewStyle" format="reference" />
     <attr name="materialThemeOverlay" format="reference" />
+    <attr name="minTouchTargetSize" format="dimension" />
     <attr name="navigationViewStyle" format="reference" />
     <attr name="openSearchBarStyle" format="reference" />
     <attr name="openSearchViewPrefixStyle" format="reference" />
@@ -811,7 +813,6 @@
     <attr name="chipStrokeColor" format="color" />
     <attr name="chipStrokeWidth" format="dimension" />
     <attr name="chipMinTouchTargetSize" format="dimension" />
-    <attr name="chipTouchTargetDelegate" format="reference" />
     <attr name="ensureMinTouchTargetSize" format="boolean" />
     <attr name="chipIconVisible" format="boolean" />
     <attr name="chipIconEnabled" format="boolean" />
@@ -1029,6 +1030,9 @@
     <attr name="sectionContent" format="string" />
     <attr name="colorSecondary50" format="color" />
     <attr name="colorSecondary100" format="color" />
+    <attr name="colorSecondary700" format="color" />
+    <attr name="colorOnSurfaceVariant" format="color" />
+    <attr name="colorHairline" format="color" />
     <attr name="textAppearanceDisplay1" format="reference" />
     <attr name="textAppearanceDisplay2" format="reference" />
     <attr name="textAppearanceDisplay3" format="reference" />
@@ -1078,6 +1082,14 @@
     </attr>
     <attr name="lottie_colorFilter" format="color" />
     <attr name="lottie_scale" format="float" />
+    <attr name="backgroundInsetStart" format="dimension" />
+    <attr name="backgroundInsetTop" format="dimension" />
+    <attr name="backgroundInsetEnd" format="dimension" />
+    <attr name="backgroundInsetBottom" format="dimension" />
+    <attr name="materialAlertDialogTitlePanelStyle" format="reference" />
+    <attr name="materialAlertDialogTitleIconStyle" format="reference" />
+    <attr name="materialAlertDialogTitleTextStyle" format="reference" />
+    <attr name="materialAlertDialogTheme" format="reference" />
     <attr name="iconSize" format="dimension" />
     <attr name="iconPadding" format="dimension" />
     <attr name="iconGravity">
@@ -1149,6 +1161,7 @@
     <attr name="OneHandedKeyboardSizeRatio" format="float" />
     <attr name="OneHandedKeyboardBottomShadow" format="dimension" />
     <attr name="defaultMarginsEnabled" format="boolean" />
+    <attr name="defaultScrollFlagsEnabled" format="boolean" />
     <attr name="hideNavigationIcon" format="boolean" />
     <attr name="strokeColor" format="color" />
     <attr name="strokeWidth" format="dimension" />
@@ -1310,6 +1323,7 @@
         <enum name="slide" value="0" />
         <enum name="fade" value="1" />
     </attr>
+    <attr name="backgroundOverlayColorAlpha" format="float" />
     <attr name="actionTextColorAlpha" format="float" />
     <attr name="DelayPressEffect" format="boolean" />
     <attr name="deadZoneLeft" format="dimension" />

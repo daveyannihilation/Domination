@@ -4,6 +4,16 @@
     <style name="AvatarCreationBarBackButtonStyle" parent="@*com.google.android.inputmethod.latin:style/Widget.AppCompat.Toolbar.Button.Navigation">
         <item name="*com.google.android.inputmethod.latin:tint">@*android:color/white</item>
     </style>
+    <style name="AvatarCreationM2Theme" parent="@*com.google.android.inputmethod.latin:style/Theme.GoogleMaterial.Light.NoActionBar.Bridge">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.inputmethod.latin:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.inputmethod.latin:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.inputmethod.latin:colorAccent">@*com.google.android.inputmethod.latin:color/google_blue500</item>
+        <item name="*com.google.android.inputmethod.latin:alertDialogTheme">@*com.google.android.inputmethod.latin:style/ThemeOverlay.GoogleMaterial.Dialog.Alert</item>
+        <item name="*com.google.android.inputmethod.latin:snackbarStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.Snackbar</item>
+        <item name="*com.google.android.inputmethod.latin:snackbarButtonStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.TextButton.Snackbar</item>
+    </style>
     <style name="AvatarCreationTitleTextStyle" parent="@*com.google.android.inputmethod.latin:style/TextAppearance.AppCompat">
         <item name="android:textColor">@*android:color/white</item>
         <item name="android:gravity">center_horizontal</item>
@@ -37,263 +47,6 @@
     </style>
     <style name="Base.Theme.GoogleMaterial.Light" parent="@*com.google.android.inputmethod.latin:style/Base.V14.Theme.GoogleMaterial.Light">
         <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
-    </style>
-    <style name="Base.Theme.GoogleMaterial.Light.Bridge" parent="@*com.google.android.inputmethod.latin:style/Base.V14.Theme.GoogleMaterial.Light.Bridge">
-        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
-    </style>
-    <style name="Base.V14.Theme.GoogleMaterial.Dark" parent="@*com.google.android.inputmethod.latin:style/Base.V14.Theme.GoogleMaterial.Dark.Bridge">
-        <item name="android:colorBackground">@*android:color/background_dark</item>
-        <item name="android:timePickerDialogTheme">@*com.google.android.inputmethod.latin:style/ThemeOverlay.GoogleMaterial.Dialog</item>
-        <item name="android:datePickerDialogTheme">@*com.google.android.inputmethod.latin:style/ThemeOverlay.GoogleMaterial.Dialog</item>
-        <item name="android:colorEdgeEffect">@*android:color/secondary_text_default_material_dark</item>
-        <item name="*com.google.android.inputmethod.latin:bottomAppBarStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.BottomAppBar</item>
-        <item name="*com.google.android.inputmethod.latin:bottomNavigationStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.BottomNavigationView</item>
-        <item name="*com.google.android.inputmethod.latin:bottomSheetDialogTheme">@*com.google.android.inputmethod.latin:style/Theme.GoogleMaterial.Dark.BottomSheetDialog</item>
-        <item name="*com.google.android.inputmethod.latin:chipStandaloneStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.Chip.Input</item>
-        <item name="*com.google.android.inputmethod.latin:chipStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.Chip.Assistive</item>
-        <item name="*com.google.android.inputmethod.latin:floatingActionButtonStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.FloatingActionButton</item>
-        <item name="*com.google.android.inputmethod.latin:materialButtonStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.Button</item>
-        <item name="*com.google.android.inputmethod.latin:materialCardViewStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.CardView.Dark</item>
-        <item name="*com.google.android.inputmethod.latin:navigationViewStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.NavigationView</item>
-        <item name="*com.google.android.inputmethod.latin:openSearchBarStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.OpenSearchBar.Dark</item>
-        <item name="*com.google.android.inputmethod.latin:openSearchViewPrefixStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.OpenSearchView.Prefix</item>
-        <item name="*com.google.android.inputmethod.latin:openSearchViewStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.OpenSearchView.Dark</item>
-        <item name="*com.google.android.inputmethod.latin:productLockupViewStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.ProductLockupView.Dark</item>
-        <item name="*com.google.android.inputmethod.latin:tabStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.TabLayout</item>
-        <item name="*com.google.android.inputmethod.latin:textInputStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.TextInputLayout.OutlinedBox</item>
-        <item name="*com.google.android.inputmethod.latin:actionOverflowMenuStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.PopupMenu.Overflow</item>
-        <item name="*com.google.android.inputmethod.latin:actionBarStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.ActionBar.Solid</item>
-        <item name="*com.google.android.inputmethod.latin:borderlessButtonStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.TextButton</item>
-        <item name="*com.google.android.inputmethod.latin:toolbarStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.Toolbar</item>
-        <item name="*com.google.android.inputmethod.latin:popupMenuStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.PopupMenu</item>
-        <item name="*com.google.android.inputmethod.latin:alertDialogTheme">@*com.google.android.inputmethod.latin:style/ThemeOverlay.GoogleMaterial.Dialog.Alert</item>
-        <item name="*com.google.android.inputmethod.latin:buttonStyle">@*com.google.android.inputmethod.latin:style/Widget.AppCompat.Button.Colored</item>
-        <item name="*com.google.android.inputmethod.latin:checkboxStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.CompoundButton.CheckBox</item>
-        <item name="*com.google.android.inputmethod.latin:radioButtonStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.CompoundButton.RadioButton</item>
-        <item name="*com.google.android.inputmethod.latin:switchStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.CompoundButton.Switch</item>
-        <item name="*com.google.android.inputmethod.latin:viewInflaterClass">android.support.design.theme.MaterialComponentsViewInflater</item>
-        <item name="*com.google.android.inputmethod.latin:snackbarStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.Snackbar</item>
-        <item name="*com.google.android.inputmethod.latin:snackbarButtonStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.TextButton.Snackbar</item>
-    </style>
-    <style name="Base.V14.Theme.GoogleMaterial.Dark.Bridge" parent="@*com.google.android.inputmethod.latin:style/Platform.GoogleMaterial.Dark.Bridge">
-        <item name="*com.google.android.inputmethod.latin:colorPrimaryVariant">@*android:color/primary_material_dark</item>
-        <item name="*com.google.android.inputmethod.latin:colorSecondary">@*com.google.android.inputmethod.latin:color/google_dark_blue500</item>
-        <item name="*com.google.android.inputmethod.latin:colorSecondaryVariant">@*com.google.android.inputmethod.latin:color/google_dark_blue500</item>
-        <item name="*com.google.android.inputmethod.latin:scrimBackground">@*com.google.android.inputmethod.latin:color/google_scrim</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceBody1">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Body1</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceBody2">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Body2</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceButton">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Button</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceCaption">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Caption</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceHeadline1">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Headline1</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceHeadline2">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Headline2</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceHeadline3">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Headline3</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceHeadline4">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Headline4</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceHeadline5">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Headline5</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceHeadline6">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Headline6</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceOverline">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Overline</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceSubtitle1">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Subtitle1</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceSubtitle2">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Subtitle2</item>
-        <item name="*com.google.android.inputmethod.latin:colorPrimary">@*android:color/primary_material_dark</item>
-        <item name="*com.google.android.inputmethod.latin:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
-        <item name="*com.google.android.inputmethod.latin:colorAccent">@*com.google.android.inputmethod.latin:color/google_dark_blue500</item>
-        <item name="*com.google.android.inputmethod.latin:colorSecondary50">@*com.google.android.inputmethod.latin:color/google_dark_blue50</item>
-        <item name="*com.google.android.inputmethod.latin:colorSecondary100">@*com.google.android.inputmethod.latin:color/google_dark_blue100</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceDisplay1">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Display1</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceDisplay2">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Display2</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceDisplay3">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Display3</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceSubhead1">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Subhead1</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceSubhead2">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Subhead2</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceSubtitleAlt1">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.SubtitleAlt1</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceSubtitleAlt2">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.SubtitleAlt2</item>
-    </style>
-    <style name="Base.V14.Theme.GoogleMaterial.Dark.Dialog" parent="@*com.google.android.inputmethod.latin:style/Platform.GoogleMaterial.Dark.Dialog">
-        <item name="android:colorBackground">@*android:color/background_floating_material_dark</item>
-        <item name="android:colorEdgeEffect">@*android:color/secondary_text_default_material_dark</item>
-        <item name="*com.google.android.inputmethod.latin:bottomAppBarStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.BottomAppBar</item>
-        <item name="*com.google.android.inputmethod.latin:bottomNavigationStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.BottomNavigationView</item>
-        <item name="*com.google.android.inputmethod.latin:chipStandaloneStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.Chip.Input</item>
-        <item name="*com.google.android.inputmethod.latin:chipStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.Chip.Assistive</item>
-        <item name="*com.google.android.inputmethod.latin:colorPrimaryVariant">@*android:color/primary_material_dark</item>
-        <item name="*com.google.android.inputmethod.latin:colorSecondary">@*com.google.android.inputmethod.latin:color/google_dark_blue600</item>
-        <item name="*com.google.android.inputmethod.latin:colorSecondaryVariant">@*com.google.android.inputmethod.latin:color/google_dark_blue500</item>
-        <item name="*com.google.android.inputmethod.latin:floatingActionButtonStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.FloatingActionButton</item>
-        <item name="*com.google.android.inputmethod.latin:materialButtonStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.Button</item>
-        <item name="*com.google.android.inputmethod.latin:materialCardViewStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.CardView.Dark</item>
-        <item name="*com.google.android.inputmethod.latin:navigationViewStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.NavigationView</item>
-        <item name="*com.google.android.inputmethod.latin:openSearchBarStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.OpenSearchBar.Dark</item>
-        <item name="*com.google.android.inputmethod.latin:openSearchViewPrefixStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.OpenSearchView.Prefix</item>
-        <item name="*com.google.android.inputmethod.latin:openSearchViewStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.OpenSearchView.Dark</item>
-        <item name="*com.google.android.inputmethod.latin:productLockupViewStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.ProductLockupView.Dark</item>
-        <item name="*com.google.android.inputmethod.latin:scrimBackground">@*com.google.android.inputmethod.latin:color/google_scrim</item>
-        <item name="*com.google.android.inputmethod.latin:tabStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.TabLayout</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceBody1">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Body1</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceBody2">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Body2</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceButton">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Button</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceCaption">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Caption</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceHeadline1">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Headline1</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceHeadline2">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Headline2</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceHeadline3">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Headline3</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceHeadline4">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Headline4</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceHeadline5">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Headline5</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceHeadline6">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Headline6</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceOverline">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Overline</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceSubtitle1">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Subtitle1</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceSubtitle2">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Subtitle2</item>
-        <item name="*com.google.android.inputmethod.latin:textInputStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.TextInputLayout.OutlinedBox</item>
-        <item name="*com.google.android.inputmethod.latin:actionOverflowMenuStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.PopupMenu.Overflow</item>
-        <item name="*com.google.android.inputmethod.latin:actionBarStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.ActionBar.Solid</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceLargePopupMenu">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Body1</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceSmallPopupMenu">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Body1</item>
-        <item name="*com.google.android.inputmethod.latin:buttonBarButtonStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.TextButton.Dialog</item>
-        <item name="*com.google.android.inputmethod.latin:borderlessButtonStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.TextButton</item>
-        <item name="*com.google.android.inputmethod.latin:toolbarStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.Toolbar</item>
-        <item name="*com.google.android.inputmethod.latin:popupMenuStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.PopupMenu</item>
-        <item name="*com.google.android.inputmethod.latin:colorPrimary">@*android:color/primary_material_dark</item>
-        <item name="*com.google.android.inputmethod.latin:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
-        <item name="*com.google.android.inputmethod.latin:alertDialogTheme">@*com.google.android.inputmethod.latin:style/ThemeOverlay.GoogleMaterial.Dialog.Alert</item>
-        <item name="*com.google.android.inputmethod.latin:buttonStyle">@*com.google.android.inputmethod.latin:style/Widget.AppCompat.Button.Colored</item>
-        <item name="*com.google.android.inputmethod.latin:checkboxStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.CompoundButton.CheckBox</item>
-        <item name="*com.google.android.inputmethod.latin:radioButtonStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.CompoundButton.RadioButton</item>
-        <item name="*com.google.android.inputmethod.latin:switchStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.CompoundButton.Switch</item>
-        <item name="*com.google.android.inputmethod.latin:colorSecondary50">@*com.google.android.inputmethod.latin:color/google_dark_blue50</item>
-        <item name="*com.google.android.inputmethod.latin:colorSecondary100">@*com.google.android.inputmethod.latin:color/google_dark_blue100</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceDisplay1">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Display1</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceDisplay2">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Display2</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceDisplay3">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Display3</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceSubhead1">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Subhead1</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceSubhead2">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Subhead2</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceSubtitleAlt1">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.SubtitleAlt1</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceSubtitleAlt2">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.SubtitleAlt2</item>
-        <item name="*com.google.android.inputmethod.latin:snackbarStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.Snackbar</item>
-        <item name="*com.google.android.inputmethod.latin:snackbarButtonStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.TextButton.Snackbar</item>
-    </style>
-    <style name="Base.V14.Theme.GoogleMaterial.Light" parent="@*com.google.android.inputmethod.latin:style/Base.V14.Theme.GoogleMaterial.Light.Bridge">
-        <item name="android:colorBackground">@*android:color/background_dark</item>
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-        <item name="android:timePickerDialogTheme">@*com.google.android.inputmethod.latin:style/ThemeOverlay.GoogleMaterial.Dialog</item>
-        <item name="android:datePickerDialogTheme">@*com.google.android.inputmethod.latin:style/ThemeOverlay.GoogleMaterial.Dialog</item>
-        <item name="android:colorEdgeEffect">@*android:color/secondary_text_default_material_dark</item>
-        <item name="*com.google.android.inputmethod.latin:bottomAppBarStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.BottomAppBar</item>
-        <item name="*com.google.android.inputmethod.latin:bottomNavigationStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.BottomNavigationView</item>
-        <item name="*com.google.android.inputmethod.latin:bottomSheetDialogTheme">@*com.google.android.inputmethod.latin:style/Theme.GoogleMaterial.Light.BottomSheetDialog</item>
-        <item name="*com.google.android.inputmethod.latin:chipGroupStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.ChipGroup</item>
-        <item name="*com.google.android.inputmethod.latin:chipStandaloneStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.Chip.Input</item>
-        <item name="*com.google.android.inputmethod.latin:chipStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.Chip.Assistive</item>
-        <item name="*com.google.android.inputmethod.latin:floatingActionButtonStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.FloatingActionButton</item>
-        <item name="*com.google.android.inputmethod.latin:materialButtonStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.Button</item>
-        <item name="*com.google.android.inputmethod.latin:materialCardViewStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.CardView.Light</item>
-        <item name="*com.google.android.inputmethod.latin:navigationViewStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.NavigationView</item>
-        <item name="*com.google.android.inputmethod.latin:openSearchBarStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.OpenSearchBar</item>
-        <item name="*com.google.android.inputmethod.latin:openSearchViewPrefixStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.OpenSearchView.Prefix</item>
-        <item name="*com.google.android.inputmethod.latin:openSearchViewStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.OpenSearchView</item>
-        <item name="*com.google.android.inputmethod.latin:productLockupViewStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.ProductLockupView</item>
-        <item name="*com.google.android.inputmethod.latin:tabStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.TabLayout</item>
-        <item name="*com.google.android.inputmethod.latin:textInputStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.TextInputLayout.OutlinedBox</item>
-        <item name="*com.google.android.inputmethod.latin:actionOverflowMenuStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.PopupMenu.Overflow</item>
-        <item name="*com.google.android.inputmethod.latin:actionBarStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.Light.ActionBar.Solid</item>
-        <item name="*com.google.android.inputmethod.latin:borderlessButtonStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.TextButton</item>
-        <item name="*com.google.android.inputmethod.latin:toolbarStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.Toolbar</item>
-        <item name="*com.google.android.inputmethod.latin:popupMenuStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.PopupMenu</item>
-        <item name="*com.google.android.inputmethod.latin:alertDialogTheme">@*com.google.android.inputmethod.latin:style/ThemeOverlay.GoogleMaterial.Dialog.Alert</item>
-        <item name="*com.google.android.inputmethod.latin:buttonStyle">@*com.google.android.inputmethod.latin:style/Widget.AppCompat.Button.Colored</item>
-        <item name="*com.google.android.inputmethod.latin:checkboxStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.CompoundButton.CheckBox</item>
-        <item name="*com.google.android.inputmethod.latin:radioButtonStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.CompoundButton.RadioButton</item>
-        <item name="*com.google.android.inputmethod.latin:switchStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.CompoundButton.Switch</item>
-        <item name="*com.google.android.inputmethod.latin:viewInflaterClass">android.support.design.theme.MaterialComponentsViewInflater</item>
-        <item name="*com.google.android.inputmethod.latin:snackbarStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.Snackbar</item>
-        <item name="*com.google.android.inputmethod.latin:snackbarButtonStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.TextButton.Snackbar</item>
-    </style>
-    <style name="Base.V14.Theme.GoogleMaterial.Light.Bridge" parent="@*com.google.android.inputmethod.latin:style/Platform.GoogleMaterial.Light.Bridge">
-        <item name="*com.google.android.inputmethod.latin:colorPrimaryVariant">@*android:color/primary_material_dark</item>
-        <item name="*com.google.android.inputmethod.latin:colorSecondary">@*com.google.android.inputmethod.latin:color/google_blue600</item>
-        <item name="*com.google.android.inputmethod.latin:colorSecondaryVariant">@*com.google.android.inputmethod.latin:color/google_blue500</item>
-        <item name="*com.google.android.inputmethod.latin:scrimBackground">@*com.google.android.inputmethod.latin:color/google_scrim</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceBody1">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Body1</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceBody2">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Body2</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceButton">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Button</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceCaption">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Caption</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceHeadline1">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Headline1</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceHeadline2">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Headline2</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceHeadline3">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Headline3</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceHeadline4">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Headline4</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceHeadline5">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Headline5</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceHeadline6">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Headline6</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceOverline">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Overline</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceSubtitle1">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Subtitle1</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceSubtitle2">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Subtitle2</item>
-        <item name="*com.google.android.inputmethod.latin:colorPrimary">@*android:color/primary_material_dark</item>
-        <item name="*com.google.android.inputmethod.latin:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
-        <item name="*com.google.android.inputmethod.latin:colorAccent">@*com.google.android.inputmethod.latin:color/google_blue600</item>
-        <item name="*com.google.android.inputmethod.latin:colorSecondary50">@*com.google.android.inputmethod.latin:color/google_blue50</item>
-        <item name="*com.google.android.inputmethod.latin:colorSecondary100">@*com.google.android.inputmethod.latin:color/google_blue100</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceDisplay1">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Display1</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceDisplay2">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Display2</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceDisplay3">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Display3</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceSubhead1">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Subhead1</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceSubhead2">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Subhead2</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceSubtitleAlt1">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.SubtitleAlt1</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceSubtitleAlt2">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.SubtitleAlt2</item>
-    </style>
-    <style name="Base.V14.Theme.GoogleMaterial.Light.Dialog" parent="@*com.google.android.inputmethod.latin:style/Platform.GoogleMaterial.Light.Dialog">
-        <item name="android:colorBackground">@*android:color/background_floating_material_dark</item>
-        <item name="android:colorEdgeEffect">@*android:color/secondary_text_default_material_dark</item>
-        <item name="*com.google.android.inputmethod.latin:bottomAppBarStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.BottomAppBar</item>
-        <item name="*com.google.android.inputmethod.latin:bottomNavigationStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.BottomNavigationView</item>
-        <item name="*com.google.android.inputmethod.latin:chipStandaloneStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.Chip.Input</item>
-        <item name="*com.google.android.inputmethod.latin:chipStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.Chip.Assistive</item>
-        <item name="*com.google.android.inputmethod.latin:colorPrimaryVariant">@*android:color/primary_material_dark</item>
-        <item name="*com.google.android.inputmethod.latin:colorSecondary">@*com.google.android.inputmethod.latin:color/google_blue600</item>
-        <item name="*com.google.android.inputmethod.latin:colorSecondaryVariant">@*com.google.android.inputmethod.latin:color/google_blue500</item>
-        <item name="*com.google.android.inputmethod.latin:floatingActionButtonStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.FloatingActionButton</item>
-        <item name="*com.google.android.inputmethod.latin:materialButtonStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.Button</item>
-        <item name="*com.google.android.inputmethod.latin:materialCardViewStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.CardView.Light</item>
-        <item name="*com.google.android.inputmethod.latin:navigationViewStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.NavigationView</item>
-        <item name="*com.google.android.inputmethod.latin:openSearchBarStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.OpenSearchBar</item>
-        <item name="*com.google.android.inputmethod.latin:openSearchViewPrefixStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.OpenSearchView.Prefix</item>
-        <item name="*com.google.android.inputmethod.latin:openSearchViewStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.OpenSearchView</item>
-        <item name="*com.google.android.inputmethod.latin:productLockupViewStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.ProductLockupView</item>
-        <item name="*com.google.android.inputmethod.latin:scrimBackground">@*com.google.android.inputmethod.latin:color/google_scrim</item>
-        <item name="*com.google.android.inputmethod.latin:tabStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.TabLayout</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceBody1">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Body1</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceBody2">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Body2</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceButton">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Button</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceCaption">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Caption</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceHeadline1">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Headline1</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceHeadline2">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Headline2</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceHeadline3">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Headline3</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceHeadline4">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Headline4</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceHeadline5">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Headline5</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceHeadline6">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Headline6</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceOverline">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Overline</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceSubtitle1">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Subtitle1</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceSubtitle2">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Subtitle2</item>
-        <item name="*com.google.android.inputmethod.latin:textInputStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.TextInputLayout.OutlinedBox</item>
-        <item name="*com.google.android.inputmethod.latin:actionOverflowMenuStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.PopupMenu.Overflow</item>
-        <item name="*com.google.android.inputmethod.latin:actionBarStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.Light.ActionBar.Solid</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceLargePopupMenu">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Body1</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceSmallPopupMenu">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Body1</item>
-        <item name="*com.google.android.inputmethod.latin:buttonBarButtonStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.TextButton.Dialog</item>
-        <item name="*com.google.android.inputmethod.latin:borderlessButtonStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.TextButton</item>
-        <item name="*com.google.android.inputmethod.latin:toolbarStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.Toolbar</item>
-        <item name="*com.google.android.inputmethod.latin:popupMenuStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.PopupMenu</item>
-        <item name="*com.google.android.inputmethod.latin:colorPrimary">@*android:color/primary_material_dark</item>
-        <item name="*com.google.android.inputmethod.latin:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
-        <item name="*com.google.android.inputmethod.latin:alertDialogTheme">@*com.google.android.inputmethod.latin:style/ThemeOverlay.GoogleMaterial.Dialog.Alert</item>
-        <item name="*com.google.android.inputmethod.latin:buttonStyle">@*com.google.android.inputmethod.latin:style/Widget.AppCompat.Button.Colored</item>
-        <item name="*com.google.android.inputmethod.latin:checkboxStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.CompoundButton.CheckBox</item>
-        <item name="*com.google.android.inputmethod.latin:radioButtonStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.CompoundButton.RadioButton</item>
-        <item name="*com.google.android.inputmethod.latin:switchStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.CompoundButton.Switch</item>
-        <item name="*com.google.android.inputmethod.latin:colorSecondary50">@*com.google.android.inputmethod.latin:color/google_blue50</item>
-        <item name="*com.google.android.inputmethod.latin:colorSecondary100">@*com.google.android.inputmethod.latin:color/google_blue100</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceDisplay1">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Display1</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceDisplay2">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Display2</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceDisplay3">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Display3</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceSubhead1">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Subhead1</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceSubhead2">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Subhead2</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceSubtitleAlt1">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.SubtitleAlt1</item>
-        <item name="*com.google.android.inputmethod.latin:textAppearanceSubtitleAlt2">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.SubtitleAlt2</item>
-        <item name="*com.google.android.inputmethod.latin:snackbarStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.Snackbar</item>
-        <item name="*com.google.android.inputmethod.latin:snackbarButtonStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.TextButton.Snackbar</item>
     </style>
     <style name="CardViewerQueryText">
         <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/search_box_font_size</item>
@@ -421,11 +174,6 @@
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
-    <style name="RateUsDialogButton" parent="@*com.google.android.inputmethod.latin:style/KeyboardOverlayButton">
-        <item name="android:textColor">#ff1976d2</item>
-        <item name="android:background">@*com.google.android.inputmethod.latin:drawable/bg_rate_us_dialog_button</item>
-        <item name="android:layout_margin">@*com.google.android.inputmethod.latin:dimen/dialog_rate_us_button_margin</item>
-    </style>
     <style name="RateUsDialogTheme" parent="@*com.google.android.inputmethod.latin:style/Theme.AppCompat.Light.Dialog.Alert">
         <item name="android:windowBackground">@*android:color/background_dark</item>
     </style>
@@ -552,6 +300,10 @@
         <item name="*com.google.android.inputmethod.latin:behavior_peekHeight">auto</item>
         <item name="*com.google.android.inputmethod.latin:behavior_hideable">true</item>
         <item name="*com.google.android.inputmethod.latin:behavior_skipCollapsed">false</item>
+        <item name="*com.google.android.inputmethod.latin:shapeAppearance">@null</item>
+        <item name="*com.google.android.inputmethod.latin:shapeAppearanceOverlay">@null</item>
+        <item name="*com.google.android.inputmethod.latin:enforceMaterialTheme">false</item>
+        <item name="*com.google.android.inputmethod.latin:backgroundTint">@*android:color/background_floating_material_dark</item>
     </style>
     <style name="Widget.GoogleMaterial.FloatingActionButton" parent="@*com.google.android.inputmethod.latin:style/Widget.MaterialComponents.FloatingActionButton">
         <item name="*com.google.android.inputmethod.latin:rippleColor">@*com.google.android.inputmethod.latin:color/google_fab_ripple_color</item>

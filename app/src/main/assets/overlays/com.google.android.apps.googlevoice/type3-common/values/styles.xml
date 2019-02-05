@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="ActionModeTextStyle" parent="@*com.google.android.apps.googlevoice:style/Base.TextAppearance.Widget.AppCompat.Toolbar.Title">
-        <item name="android:textSize">20.0sp</item>
-        <item name="android:textColor">@*android:color/white</item>
-    </style>
-    <style name="AppBlockedTheme" parent="@*com.google.android.apps.googlevoice:style/BaseTheme">
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-        <item name="*com.google.android.apps.googlevoice:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
-    </style>
-    <style name="BaseTheme" parent="@*com.google.android.apps.googlevoice:style/Theme.MaterialComponents.Light.NoActionBar.Bridge">
+    <style name="BaseTheme" parent="@*com.google.android.apps.googlevoice:style/Theme.GoogleMaterial.Dark.NoActionBar">
         <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="android:radioButtonStyle">@*com.google.android.apps.googlevoice:style/RadioButton</item>
+        <item name="*com.google.android.apps.googlevoice:colorSecondary">@*com.google.android.apps.googlevoice:color/app_accent_color</item>
+        <item name="*com.google.android.apps.googlevoice:colorSecondaryVariant">@*com.google.android.apps.googlevoice:color/app_accent_color</item>
         <item name="*com.google.android.apps.googlevoice:colorPrimary">@*android:color/primary_material_dark</item>
         <item name="*com.google.android.apps.googlevoice:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
         <item name="*com.google.android.apps.googlevoice:colorAccent">@*com.google.android.apps.googlevoice:color/app_accent_color</item>
         <item name="*com.google.android.apps.googlevoice:preferenceCategoryStyle">@*com.google.android.apps.googlevoice:style/PreferenceCategoryStyle</item>
         <item name="*com.google.android.apps.googlevoice:preferenceStyle">@*com.google.android.apps.googlevoice:style/PreferenceStyle</item>
         <item name="*com.google.android.apps.googlevoice:switchPreferenceCompatStyle">@*com.google.android.apps.googlevoice:style/SwitchPreferenceCompatStyle</item>
+        <item name="*com.google.android.apps.googlevoice:snackbarButtonStyle">@*com.google.android.apps.googlevoice:style/SnackbarButtonStyle</item>
     </style>
-    <style name="BottomNavigation" parent="@*com.google.android.apps.googlevoice:style/Widget.Design.BottomNavigationView">
-        <item name="*com.google.android.apps.googlevoice:labelVisibilityMode">labeled</item>
-        <item name="*com.google.android.apps.googlevoice:itemIconTint">@*com.google.android.apps.googlevoice:color/tab_color_selector</item>
-        <item name="*com.google.android.apps.googlevoice:itemTextColor">@*com.google.android.apps.googlevoice:color/tab_color_selector</item>
+    <style name="BottomNavigation" parent="@*com.google.android.apps.googlevoice:style/Widget.GoogleMaterial.BottomNavigationView">
+        <item name="*com.google.android.apps.googlevoice:labelVisibilityMode">selected</item>
         <item name="*com.google.android.apps.googlevoice:backgroundTint">@*android:color/background_floating_material_dark</item>
     </style>
     <style name="ComplexPreferenceScreenTheme">
@@ -29,14 +22,7 @@
         <item name="android:textColor">@*android:color/white</item>
         <item name="android:background">@*android:color/background_dark</item>
     </style>
-    <style name="ContactItemName">
-        <item name="android:textSize">16.0sp</item>
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:layout_marginLeft">70.0dip</item>
-        <item name="android:layout_marginRight">10.0dip</item>
-    </style>
-    <style name="ContactItemText">
-        <item name="android:textSize">16.0sp</item>
+    <style name="ContactItemText" parent="@*com.google.android.apps.googlevoice:style/BodyStyle">
         <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
     </style>
     <style name="ConversationEventListItemName">
@@ -55,16 +41,21 @@
         <item name="android:layout_marginTop">@*com.google.android.apps.googlevoice:dimen/avatar_margin</item>
         <item name="android:singleLine">true</item>
     </style>
+    <style name="FloatingActionButtonStyle" parent="@*com.google.android.apps.googlevoice:style/Widget.GoogleMaterial.FloatingActionButton">
+        <item name="*com.google.android.apps.googlevoice:rippleColor">@*android:color/ripple_material_dark</item>
+        <item name="*com.google.android.apps.googlevoice:tint">@*android:color/white</item>
+        <item name="*com.google.android.apps.googlevoice:backgroundTint">@*com.google.android.apps.googlevoice:color/app_accent_color</item>
+    </style>
     <style name="HomeTheme" parent="@*com.google.android.apps.googlevoice:style/BaseTheme">
+        <item name="android:actionModeBackground">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.apps.googlevoice:windowActionModeOverlay">true</item>
-        <item name="*com.google.android.apps.googlevoice:actionModeStyle">@*com.google.android.apps.googlevoice:style/VoiceActionModeBar</item>
-        <item name="*com.google.android.apps.googlevoice:actionModeBackground">@*com.google.android.apps.googlevoice:color/quantum_googblue</item>
-        <item name="*com.google.android.apps.googlevoice:actionModeCloseDrawable">@*com.google.android.apps.googlevoice:drawable/quantum_ic_close_white_24</item>
+        <item name="*com.google.android.apps.googlevoice:actionModeStyle">@*com.google.android.apps.googlevoice:style/ActionModeStyle</item>
+        <item name="*com.google.android.apps.googlevoice:actionModeCloseDrawable">@*com.google.android.apps.googlevoice:drawable/action_mode_close</item>
         <item name="android:windowBackground">@*android:color/background_dark</item>
     </style>
     <style name="HomeTheme.Launcher" parent="@*com.google.android.apps.googlevoice:style/HomeTheme">
         <item name="android:windowBackground">@*com.google.android.apps.googlevoice:drawable/quantum_launchscreen_google_voice</item>
-	    <item name="android:windowShowWallpaper">false</item>		
+	    <item name="android:windowShowWallpaper">false</item>
         <item name="android:windowIsTranslucent">false</item>
     </style>
     <style name="InCallTheme" parent="@*com.google.android.apps.googlevoice:style/Theme.AppCompat">
@@ -123,6 +114,9 @@
         <item name="android:windowNoTitle">true</item>
         <item name="*com.google.android.apps.googlevoice:colorPrimary">@*android:color/primary_material_dark</item>
         <item name="*com.google.android.apps.googlevoice:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+    </style>
+    <style name="ThemeOverlay.AppCompat.Light" parent="@*com.google.android.apps.googlevoice:style/Base.ThemeOverlay.AppCompat.Light">
+        <item name="*com.google.android.apps.googlevoice:colorPrimary">@*android:color/primary_material_dark</item>
     </style>
     <style name="VerificationTheme" parent="@*com.google.android.apps.googlevoice:style/BaseTheme">
         <item name="android:windowBackground">@*android:color/background_dark</item>
