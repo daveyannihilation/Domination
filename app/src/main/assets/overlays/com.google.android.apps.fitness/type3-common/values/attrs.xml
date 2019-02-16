@@ -43,12 +43,11 @@
     <attr name="alertDialogCenterButtons" format="boolean" />
     <attr name="alertDialogStyle" format="reference" />
     <attr name="alertDialogTheme" format="reference" />
-    <attr name="alertDialogTitleIconStyle" format="reference" />
-    <attr name="alertDialogTitlePanelStyle" format="reference" />
-    <attr name="alertDialogTitleTextStyle" format="reference" />
+    <attr name="allowBadges" format="boolean" />
     <attr name="allowDividerAbove" format="boolean" />
     <attr name="allowDividerAfterLastItem" format="boolean" />
     <attr name="allowDividerBelow" format="boolean" />
+    <attr name="allowRings" format="boolean" />
     <attr name="allowStacking" format="boolean" />
     <attr name="alpha" format="float" />
     <attr name="alphabeticModifiers">
@@ -78,6 +77,10 @@
     <attr name="avatarSize" format="dimension" />
     <attr name="background" format="reference" />
     <attr name="backgroundColor" format="color" />
+    <attr name="backgroundInsetBottom" format="dimension" />
+    <attr name="backgroundInsetEnd" format="dimension" />
+    <attr name="backgroundInsetStart" format="dimension" />
+    <attr name="backgroundInsetTop" format="dimension" />
     <attr name="backgroundOverlayColorAlpha" format="float" />
     <attr name="backgroundSplit" format="reference|color" />
     <attr name="backgroundStacked" format="reference|color" />
@@ -150,6 +153,7 @@
     <attr name="cardBackgroundColor" format="color" />
     <attr name="cardCornerRadius" format="dimension" />
     <attr name="cardElevation" format="dimension" />
+    <attr name="cardForegroundColor" format="color" />
     <attr name="cardMaxElevation" format="dimension" />
     <attr name="cardPreventCornerOverlap" format="boolean" />
     <attr name="cardUseCompatPadding" format="boolean" />
@@ -205,6 +209,7 @@
     <attr name="checkedChip" format="reference" />
     <attr name="checkedIcon" format="reference" />
     <attr name="checkedIconEnabled" format="boolean" />
+    <attr name="checkedIconTint" format="color" />
     <attr name="checkedIconVisible" format="boolean" />
     <attr name="checkedTextViewStyle" format="reference" />
     <attr name="chipBackgroundColor" format="color" />
@@ -260,6 +265,7 @@
     <attr name="colorControlHighlight" format="color" />
     <attr name="colorControlNormal" format="color" />
     <attr name="colorError" format="reference|color" />
+    <attr name="colorHairline" format="color" />
     <attr name="colorOnBackground" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="colorOnError" format="color" />
     <attr name="colorOnPrimary" format="color" />
@@ -271,12 +277,14 @@
     <attr name="colorOnSurfaceDisabled" format="color" />
     <attr name="colorOnSurfaceEmphasisHighType" format="color" />
     <attr name="colorOnSurfaceEmphasisMedium" format="color" />
+    <attr name="colorOnSurfaceVariant" format="color" />
     <attr name="colorPrimary" format="color" />
     <attr name="colorPrimaryDark" format="color" />
     <attr name="colorPrimaryVariant" format="color" />
     <attr name="colorSecondary" format="color" />
     <attr name="colorSecondary100" format="color" />
     <attr name="colorSecondary50" format="color" />
+    <attr name="colorSecondary700" format="color" />
     <attr name="colorSecondaryVariant" format="color" />
     <attr name="colorSurface" format="color" />
     <attr name="colorSwitchThumbNormal" format="color" />
@@ -332,6 +340,7 @@
     <attr name="customNavigationLayout" format="reference" />
     <attr name="defaultMarginsEnabled" format="boolean" />
     <attr name="defaultQueryHint" format="string" />
+    <attr name="defaultScrollFlagsEnabled" format="boolean" />
     <attr name="defaultValue" format="reference|string|integer|boolean|float" />
     <attr name="dependency" format="string" />
     <attr name="dialogCornerRadius" format="dimension" />
@@ -698,6 +707,10 @@
         <enum name="satellite" value="2" />
         <enum name="terrain" value="3" />
     </attr>
+    <attr name="materialAlertDialogTheme" format="reference" />
+    <attr name="materialAlertDialogTitleIconStyle" format="reference" />
+    <attr name="materialAlertDialogTitlePanelStyle" format="reference" />
+    <attr name="materialAlertDialogTitleTextStyle" format="reference" />
     <attr name="materialButtonStyle" format="reference" />
     <attr name="materialCardViewStyle" format="reference" />
     <attr name="materialThemeOverlay" format="reference" />
@@ -709,7 +722,30 @@
     <attr name="measureWithLargestChild" format="boolean" />
     <attr name="menu" format="reference" />
     <attr name="min" format="integer" />
+    <attr name="minTouchTargetSize" format="dimension" />
+    <attr name="mtrlColor" format="reference|color" />
+    <attr name="mtrlColors" format="reference" />
+    <attr name="mtrlDeterminateProgressStyle">
+        <enum name="circular" value="0" />
+        <enum name="linear" value="1" />
+    </attr>
+    <attr name="mtrlIndeterminateProgressStyle">
+        <enum name="circular" value="0" />
+        <enum name="linear" value="1" />
+        <enum name="linearReverse" value="2" />
+    </attr>
+    <attr name="mtrlLinearBarHeight" format="reference|dimension" />
     <attr name="mtrlLinearBarInset" format="reference|dimension" />
+    <attr name="mtrlLinearGrowFrom">
+        <enum name="bottom" value="0" />
+        <enum name="off" value="2" />
+        <enum name="top" value="1" />
+    </attr>
+    <attr name="mtrlSize">
+        <enum name="large" value="3" />
+        <enum name="medium" value="2" />
+        <enum name="small" value="1" />
+    </attr>
     <attr name="multiChoiceItemLayout" format="reference" />
     <attr name="navigationContentDescription" format="string" />
     <attr name="navigationIcon" format="reference" />
@@ -1045,4 +1081,39 @@
     <attr name="windowMinWidthMinor" format="dimension|fraction" />
     <attr name="windowNoTitle" format="boolean" />
     <attr name="zOrderOnTop" format="boolean" />
+    <item type="attr" name="APKTOOL_DUMMY_32">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_33">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_38">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_68">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_c6">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_ed">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_133">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_142">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_14d">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_168">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_16b">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_174">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_187">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_188">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_189">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_18d">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_18f">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_19b">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_1f4">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_205">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_22e">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_232">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_234">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_235">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_236">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_237">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_238">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_243">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_249">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_24c">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_253">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_274">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_2e1">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_310">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_321">false</item>
 </resources>

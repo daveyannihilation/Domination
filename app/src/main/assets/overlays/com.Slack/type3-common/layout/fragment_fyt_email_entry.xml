@@ -15,10 +15,7 @@
                 </ViewFlipper>
             </LinearLayout>
         </ScrollView>
-        <TextView android:id="@*com.Slack:id/next_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@*com.Slack:dimen/standard_margin" android:text="@*com.Slack:string/btn_next" android:layout_alignParentBottom="true" style="@*com.Slack:style/FlatButton.Blue" />
+        <android.support.design.button.MaterialButton android:id="@*com.Slack:id/next_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@*com.Slack:dimen/standard_margin" android:text="@*com.Slack:string/btn_next" android:layout_alignParentBottom="true" style="@*com.Slack:style/SlackKit.Button.Large.Blue" />
     </RelativeLayout>
-    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <include layout="@*com.Slack:layout/onboarding_toolbar" />
-        <com.Slack.ui.widgets.SlackProgressBar android:layout_gravity="end" android:id="@*com.Slack:id/progress_bar" android:visibility="invisible" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="@*com.Slack:dimen/standard_margin_half" android:layout_marginEnd="@*com.Slack:dimen/standard_margin" />
-    </LinearLayout>
+    <com.Slack.ui.widgets.SlackProgressBar android:layout_gravity="end" android:id="@*com.Slack:id/progress_bar" android:visibility="invisible" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="@*com.Slack:dimen/standard_margin_half" android:layout_marginEnd="@*com.Slack:dimen/standard_margin" />
 </android.support.design.widget.CoordinatorLayout>

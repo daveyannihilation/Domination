@@ -57,8 +57,54 @@
     <attr name="drawerArrowStyle" format="reference" />
     <attr name="edgeGlowSize" format="integer" />
     <attr name="enabledBackgroundColor" format="reference|color" />
+    <attr name="extendedFloatingActionButtonStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="fadeImageIfLoadedFromCache" format="boolean" />
     <attr name="fastforward_increment" format="integer" />
+    <attr name="flex" format="float" />
+    <attr name="flex_alignItems">
+        <enum name="auto" value="0" />
+        <enum name="center" value="2" />
+        <enum name="flexEnd" value="3" />
+        <enum name="flexStart" value="1" />
+        <enum name="stretch" value="4" />
+    </attr>
+    <attr name="flex_alignSelf">
+        <enum name="auto" value="0" />
+        <enum name="center" value="2" />
+        <enum name="flexEnd" value="3" />
+        <enum name="flexStart" value="1" />
+        <enum name="stretch" value="4" />
+    </attr>
+    <attr name="flex_bottom" format="dimension" />
+    <attr name="flex_direction">
+        <enum name="column" value="0" />
+        <enum name="columnReverse" value="1" />
+        <enum name="row" value="2" />
+        <enum name="rowReverse" value="3" />
+    </attr>
+    <attr name="flex_justifyContent">
+        <enum name="center" value="1" />
+        <enum name="flexEnd" value="2" />
+        <enum name="flexStart" value="0" />
+        <enum name="spaceAround" value="4" />
+        <enum name="spaceBetween" value="3" />
+    </attr>
+    <attr name="flex_layoutDirection">
+        <enum name="inherit" value="0" />
+        <enum name="ltr" value="1" />
+        <enum name="rtl" value="2" />
+    </attr>
+    <attr name="flex_left" format="dimension" />
+    <attr name="flex_positionType">
+        <enum name="absolute" value="1" />
+        <enum name="relative" value="0" />
+    </attr>
+    <attr name="flex_right" format="dimension" />
+    <attr name="flex_top" format="dimension" />
+    <attr name="flex_wrap">
+        <enum name="nowrap" value="0" />
+        <enum name="wrap" value="1" />
+    </attr>
     <attr name="floatingActionButtonStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="forceFullHeight" format="boolean" />
     <attr name="height" format="dimension" />
@@ -105,8 +151,8 @@
     <attr name="layout_constraintGuide_end" format="dimension" />
     <attr name="layout_constraintGuide_percent" format="float" />
     <attr name="layout_constraintHeight_default">
-        <enum name="spread" value="0" />
         <enum name="wrap" value="1" />
+        <enum name="spread" value="0" />
     </attr>
     <attr name="layout_constraintHeight_max" format="dimension" />
     <attr name="layout_constraintHeight_min" format="dimension" />
@@ -152,8 +198,8 @@
     </attr>
     <attr name="layout_constraintVertical_weight" format="float" />
     <attr name="layout_constraintWidth_default">
-        <enum name="spread" value="0" />
         <enum name="wrap" value="1" />
+        <enum name="spread" value="0" />
     </attr>
     <attr name="layout_constraintWidth_max" format="dimension" />
     <attr name="layout_constraintWidth_min" format="dimension" />
@@ -569,8 +615,8 @@
     <attr name="valueTextAppearance" format="reference" />
     <attr name="descriptionTextAppearance" format="reference" />
     <attr name="textGravity">
-        <enum name="bottom" value="0" />
         <enum name="center" value="1" />
+        <enum name="bottom" value="0" />
     </attr>
     <attr name="decimalPattern" format="string" />
     <attr name="valueFormat" format="reference" />
@@ -601,8 +647,8 @@
     <attr name="baselineToTop" format="dimension" />
     <attr name="baselineToBottom" format="dimension" />
     <attr name="fabAlignmentMode">
-        <enum name="end" value="1" />
         <enum name="center" value="0" />
+        <enum name="end" value="1" />
     </attr>
     <attr name="fabAnimationMode">
         <enum name="scale" value="0" />
@@ -729,6 +775,7 @@
     <attr name="scrimVisibleHeightTrigger" format="dimension" />
     <attr name="scrimAnimationDuration" format="integer" />
     <attr name="collapsedTitleGravity">
+        <flag name="center" value="0x00000011" />
         <flag name="end" value="0x00800005" />
         <flag name="center_horizontal" value="0x00000001" />
         <flag name="left" value="0x00000003" />
@@ -736,11 +783,11 @@
         <flag name="start" value="0x00800003" />
         <flag name="bottom" value="0x00000050" />
         <flag name="top" value="0x00000030" />
-        <flag name="center" value="0x00000011" />
         <flag name="center_vertical" value="0x00000010" />
         <flag name="fill_vertical" value="0x00000070" />
     </attr>
     <attr name="expandedTitleGravity">
+        <flag name="center" value="0x00000011" />
         <flag name="end" value="0x00800005" />
         <flag name="center_horizontal" value="0x00000001" />
         <flag name="left" value="0x00000003" />
@@ -748,7 +795,6 @@
         <flag name="start" value="0x00800003" />
         <flag name="bottom" value="0x00000050" />
         <flag name="top" value="0x00000030" />
-        <flag name="center" value="0x00000011" />
         <flag name="center_vertical" value="0x00000010" />
         <flag name="fill_vertical" value="0x00000070" />
     </attr>
@@ -777,6 +823,7 @@
     <attr name="layout_anchor" format="reference" />
     <attr name="layout_keyline" format="integer" />
     <attr name="layout_anchorGravity">
+        <flag name="center" value="0x00000011" />
         <flag name="end" value="0x00800005" />
         <flag name="fill" value="0x00000077" />
         <flag name="center_horizontal" value="0x00000001" />
@@ -786,7 +833,6 @@
         <flag name="start" value="0x00800003" />
         <flag name="bottom" value="0x00000050" />
         <flag name="top" value="0x00000030" />
-        <flag name="center" value="0x00000011" />
         <flag name="center_vertical" value="0x00000010" />
         <flag name="fill_vertical" value="0x00000070" />
         <flag name="clip_horizontal" value="0x00000008" />
@@ -862,6 +908,7 @@
     <attr name="imageSrc" format="reference" />
     <attr name="text" format="reference" />
     <attr name="hasDefaultImage" format="boolean" />
+    <attr name="behavior_autoShrink" format="boolean" />
     <attr name="key" format="string" />
     <attr name="value" format="string" />
     <attr name="className" format="string" />
@@ -878,13 +925,13 @@
     <attr name="aspectRatio" format="float" />
     <attr name="flexDirection">
         <enum name="column" value="2" />
-        <enum name="column_reverse" value="3" />
         <enum name="row" value="0" />
+        <enum name="column_reverse" value="3" />
         <enum name="row_reverse" value="1" />
     </attr>
     <attr name="flexWrap">
-        <enum name="wrap" value="1" />
         <enum name="nowrap" value="0" />
+        <enum name="wrap" value="1" />
         <enum name="wrap_reverse" value="2" />
     </attr>
     <attr name="justifyContent">
@@ -897,18 +944,18 @@
     </attr>
     <attr name="alignItems">
         <enum name="center" value="2" />
+        <enum name="stretch" value="4" />
         <enum name="flex_end" value="1" />
         <enum name="flex_start" value="0" />
         <enum name="baseline" value="3" />
-        <enum name="stretch" value="4" />
     </attr>
     <attr name="alignContent">
         <enum name="center" value="2" />
+        <enum name="stretch" value="5" />
         <enum name="flex_end" value="1" />
         <enum name="flex_start" value="0" />
         <enum name="space_around" value="4" />
         <enum name="space_between" value="3" />
-        <enum name="stretch" value="5" />
     </attr>
     <attr name="dividerDrawable" format="reference" />
     <attr name="dividerDrawableHorizontal" format="reference" />
@@ -937,12 +984,12 @@
     <attr name="layout_flexShrink" format="float" />
     <attr name="layout_flexBasisPercent" format="fraction" />
     <attr name="layout_alignSelf">
-        <enum name="center" value="2" />
         <enum name="auto" value="-1" />
+        <enum name="center" value="2" />
+        <enum name="stretch" value="4" />
         <enum name="flex_end" value="1" />
         <enum name="flex_start" value="0" />
         <enum name="baseline" value="3" />
-        <enum name="stretch" value="4" />
     </attr>
     <attr name="layout_minWidth" format="dimension" />
     <attr name="layout_minHeight" format="dimension" />
@@ -950,8 +997,8 @@
     <attr name="layout_maxHeight" format="dimension" />
     <attr name="layout_wrapBefore" format="boolean" />
     <attr name="fabSize">
-        <enum name="normal" value="0" />
         <enum name="auto" value="-1" />
+        <enum name="normal" value="0" />
         <enum name="mini" value="1" />
     </attr>
     <attr name="fabCustomSize" format="dimension" />
@@ -1020,8 +1067,8 @@
         <enum name="auto" value="-1" />
     </attr>
     <attr name="layout_flmLineWrap">
-        <flag name="wrap" value="0x00000002" />
         <flag name="auto" value="0x00000000" />
+        <flag name="wrap" value="0x00000002" />
         <flag name="clear_flows" value="0x00000008" />
         <flag name="in_current_flow" value="0x00000004" />
         <flag name="no_grid" value="0x00000001" />
@@ -1048,6 +1095,10 @@
     <attr name="fontVariationSettings" format="string" />
     <attr name="ttcIndex" format="integer" />
     <attr name="foregroundInsidePadding" format="boolean" />
+    <attr name="profileSize" format="dimension" />
+    <attr name="profileSrc" format="reference" />
+    <attr name="showRing" format="boolean" />
+    <attr name="increaseProfileSizeWithoutRing" format="boolean" />
     <attr name="searchEnabled" format="boolean" />
     <attr name="searchLabel" format="string" />
     <attr name="settingsDescription" format="string" />
@@ -1131,9 +1182,9 @@
     <attr name="fixedAspectRatio" format="float" />
     <attr name="showPlaceholderBackground" format="boolean" />
     <attr name="imageScrollPosition">
+        <enum name="center" value="0" />
         <enum name="bottom" value="1" />
         <enum name="top" value="-1" />
-        <enum name="center" value="0" />
     </attr>
     <attr name="hideOnNullImage" format="boolean" />
     <attr name="measureWithLargestChild" format="boolean" />
@@ -1386,8 +1437,8 @@
         <enum name="standard" value="0" />
     </attr>
     <attr name="lockupSizingMode">
-        <enum name="normal" value="1" />
         <enum name="auto" value="0" />
+        <enum name="normal" value="1" />
         <enum name="custom" value="-1" />
         <enum name="small" value="2" />
     </attr>
@@ -1605,10 +1656,10 @@
     <attr name="tabBackground" format="reference" />
     <attr name="tabIndicator" format="reference" />
     <attr name="tabIndicatorGravity">
-        <enum name="bottom" value="0" />
-        <enum name="top" value="2" />
         <enum name="center" value="1" />
         <enum name="stretch" value="3" />
+        <enum name="bottom" value="0" />
+        <enum name="top" value="2" />
     </attr>
     <attr name="tabIndicatorAnimationDuration" format="integer" />
     <attr name="tabIndicatorFullWidth" format="boolean" />
@@ -1617,8 +1668,8 @@
         <enum name="scrollable" value="0" />
     </attr>
     <attr name="tabGravity">
-        <enum name="fill" value="0" />
         <enum name="center" value="1" />
+        <enum name="fill" value="0" />
     </attr>
     <attr name="tabInlineLabel" format="boolean" />
     <attr name="tabMinWidth" format="dimension" />
@@ -1783,9 +1834,9 @@
         <enum name="android_pay" value="3" />
     </attr>
     <attr name="imageScroll">
+        <enum name="center" value="0" />
         <enum name="bottom" value="1" />
         <enum name="top" value="-1" />
-        <enum name="center" value="0" />
     </attr>
     <attr name="defaultScreen" format="integer" />
     <attr name="cellCountX" format="integer" />

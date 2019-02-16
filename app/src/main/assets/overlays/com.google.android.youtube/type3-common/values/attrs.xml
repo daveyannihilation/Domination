@@ -74,6 +74,7 @@
     <attr name="drawerArrowStyle" format="reference" />
     <attr name="editLocationTheme" format="reference" />
     <attr name="expandButtonIcon" format="reference" />
+    <attr name="extendedFloatingActionButtonStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="flex" format="float" />
     <attr name="flex_alignItems">
         <enum name="auto" value="0" />
@@ -235,6 +236,7 @@
     <attr name="liveChatShimmerLoadingFrameShimmerStartColor" format="reference" />
     <attr name="liveChatStickerOpenedFromTickerBackground" format="reference" />
     <attr name="liveChatTierSeekbarTick" format="reference" />
+    <attr name="liveChatTooltipTextColor" format="reference|color" />
     <attr name="liveChatVerifiedAuthorName" format="reference|color" />
     <attr name="liveChatVerifiedBadgeChipBackground" format="reference|color" />
     <attr name="liveChatViewerEngagementMessageBackground" format="reference" />
@@ -348,8 +350,10 @@
     <attr name="ytCloudChipCheckboxBackground" format="reference|color" />
     <attr name="ytCloudChipDefaultBackground" format="reference|color" />
     <attr name="ytCloudChipDisabledBackground" format="reference|color" />
+    <attr name="ytCloudChipHomeFilterGhostBackground" format="reference|color" />
     <attr name="ytCloudChipHomeFilterSelectedBackground" format="reference|color" />
     <attr name="ytCloudChipHomeFilterUnselectedBackground" format="reference|color" />
+    <attr name="ytCloudChipHomeFilterUnselectedTextColor" format="reference|color" />
     <attr name="ytCloudChipPrimaryBackground" format="reference|color" />
     <attr name="ytErrorBackground" format="reference|color" />
     <attr name="ytFilledButtonText" format="reference|color" />
@@ -689,6 +693,14 @@
     <attr name="behavior_hideable" format="boolean" />
     <attr name="behavior_skipCollapsed" format="boolean" />
     <attr name="behavior_fitToContents" format="boolean" />
+    <attr name="behavior_saveFlags">
+        <flag name="all" value="0xffffffff" />
+        <flag name="none" value="0x00000000" />
+        <flag name="fitToContents" value="0x00000002" />
+        <flag name="hideable" value="0x00000004" />
+        <flag name="peekHeight" value="0x00000001" />
+        <flag name="skipCollapsed" value="0x00000008" />
+    </attr>
     <attr name="allowStacking" format="boolean" />
     <attr name="buttonHeight" format="dimension" />
     <attr name="fillWidthWhenVertical" format="boolean" />
@@ -980,6 +992,7 @@
     <attr name="edit_location_suggestion_text_color" format="color" />
     <attr name="edit_location_suggestion_text_highlight_color" format="color" />
     <attr name="edit_location_divider_color" format="color" />
+    <attr name="behavior_autoShrink" format="boolean" />
     <attr name="itemSize" format="dimension" />
     <attr name="itemOffset" format="dimension" />
     <attr name="facePileStrokeWidth" format="dimension" />
@@ -1208,10 +1221,11 @@
     <attr name="backgroundInsetTop" format="dimension" />
     <attr name="backgroundInsetEnd" format="dimension" />
     <attr name="backgroundInsetBottom" format="dimension" />
+    <attr name="materialAlertDialogTheme" format="reference" />
     <attr name="materialAlertDialogTitlePanelStyle" format="reference" />
     <attr name="materialAlertDialogTitleIconStyle" format="reference" />
     <attr name="materialAlertDialogTitleTextStyle" format="reference" />
-    <attr name="materialAlertDialogTheme" format="reference" />
+    <attr name="materialAlertDialogBodyTextStyle" format="reference" />
     <attr name="iconSize" format="dimension" />
     <attr name="iconPadding" format="dimension" />
     <attr name="iconGravity">
@@ -1222,6 +1236,7 @@
     <attr name="cornerRadius" format="dimension" />
     <attr name="cardForegroundColor" format="color" />
     <attr name="checkedIconTint" format="color" />
+    <attr name="state_dragged" format="boolean" />
     <attr name="shapeAppearance" format="reference" />
     <attr name="shapeAppearanceOverlay" format="reference" />
     <attr name="externalRouteEnabledDrawable" format="reference" />
@@ -1800,6 +1815,7 @@
     </attr>
     <attr name="ytSansFont">
         <enum name="none" value="-1" />
+        <enum name="bold" value="1" />
         <enum name="medium" value="0" />
     </attr>
     <attr name="hyperlinksClickable" format="boolean" />

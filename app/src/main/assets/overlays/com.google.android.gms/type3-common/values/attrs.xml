@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <attr name="CardEntryContainer" format="reference" />
+    <attr name="CardEntryIcon" format="reference" />
+    <attr name="CardEntrySubtext" format="reference" />
+    <attr name="CardEntryText" format="reference" />
+    <attr name="HeaderAvatarTheme" format="reference" />
+    <attr name="HeaderBlockedAvatar" format="reference" />
+    <attr name="HeaderDefaultAvatar" format="reference" />
+    <attr name="HeaderDefaultAvatarSize" format="dimension" />
+    <attr name="HeaderDomainIcon" format="reference" />
+    <attr name="QuickActionBar" format="reference" />
+    <attr name="QuickActionButton" format="reference" />
     <attr name="accountOptionDefaultImage" format="reference" />
     <attr name="accountOptionExpandIconEndAligned" format="boolean" />
     <attr name="accountOptionImageSize" format="reference|dimension" />
@@ -35,8 +46,14 @@
     <attr name="colorOnBackground" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="colorOnError" format="color" />
     <attr name="colorOnPrimary" format="color" />
+    <attr name="colorOnPrimaryDisabled" format="color" />
+    <attr name="colorOnPrimaryEmphasisHighType" format="color" />
+    <attr name="colorOnPrimaryEmphasisMedium" format="color" />
     <attr name="colorOnSecondary" format="color" />
     <attr name="colorOnSurface" format="color" />
+    <attr name="colorOnSurfaceDisabled" format="color" />
+    <attr name="colorOnSurfaceEmphasisHighType" format="color" />
+    <attr name="colorOnSurfaceEmphasisMedium" format="color" />
     <attr name="colorPrimaryVariant" format="color" />
     <attr name="colorSecondary" format="color" />
     <attr name="colorSecondaryVariant" format="color" />
@@ -72,7 +89,6 @@
     <attr name="drawableWalletAddPadded" format="reference" />
     <attr name="drawableWalletButtonBackground" format="reference" />
     <attr name="drawableWalletCollapse" format="reference" />
-    <attr name="drawableWalletExpand" format="reference" />
     <attr name="drawableWalletFlatButtonBackground" format="reference" />
     <attr name="drawableWalletLogoText" format="reference" />
     <attr name="drawerArrowStyle" format="reference" />
@@ -217,6 +233,7 @@
     <attr name="internalUicShowKeyboardDelayMs" format="integer" />
     <attr name="internalUicSubHeaderDisplayType" format="reference" />
     <attr name="internalUicSubHeaderPrimaryDisplayType" format="reference" />
+    <attr name="internalUicSubtitle2DisplayType" format="reference" />
     <attr name="internalUicTooltipDialogUseDefaultDialogButtons" format="boolean" />
     <attr name="internalUicUrlLinkDisplayType">
         <enum name="externalBrowser" value="2" />
@@ -339,6 +356,56 @@
     <attr name="mediaRouteStopDrawable" format="reference" />
     <attr name="mediaRouteTheme" format="reference" />
     <attr name="mediaRouteTvIconDrawable" format="reference" />
+    <attr name="mgAccountCircleOutlineVdTheme24" format="reference" />
+    <attr name="mgAvatarPlaceholder" format="reference" />
+    <attr name="mgBackground" format="reference" />
+    <attr name="mgBottomNavItemColorState" format="reference" />
+    <attr name="mgBottomNavMenuDrawerItemHighlight" format="reference" />
+    <attr name="mgCardBorder" format="reference" />
+    <attr name="mgCardRoundedRipple" format="reference" />
+    <attr name="mgCarouselRoundedRipple" format="reference" />
+    <attr name="mgChevron" format="reference" />
+    <attr name="mgCircleRipple" format="reference" />
+    <attr name="mgDivider" format="reference" />
+    <attr name="mgError" format="reference" />
+    <attr name="mgHairline" format="reference" />
+    <attr name="mgLegacyBackground0Percent" format="reference" />
+    <attr name="mgLegacyBackground75Percent" format="reference" />
+    <attr name="mgLegacyBackground85Percent" format="reference" />
+    <attr name="mgLegacyFill100" format="reference" />
+    <attr name="mgLegacyFill400" format="reference" />
+    <attr name="mgLegacyFill500" format="reference" />
+    <attr name="mgLegacyFillSecondary200" format="reference" />
+    <attr name="mgLegacyFillSecondary300" format="reference" />
+    <attr name="mgLegacyForeground35Percent" format="reference" />
+    <attr name="mgLegacyForegroundSolid" format="reference" />
+    <attr name="mgLegacyHighlightSecondary300" format="reference" />
+    <attr name="mgLegacyLinkText" format="reference" />
+    <attr name="mgLegacyRippleHighlight" format="reference" />
+    <attr name="mgOnBackground" format="reference" />
+    <attr name="mgOnError" format="reference" />
+    <attr name="mgOnPrimary" format="reference" />
+    <attr name="mgOnSecondary" format="reference" />
+    <attr name="mgOnSurface" format="reference" />
+    <attr name="mgOnboardingIndicatorDot" format="reference" />
+    <attr name="mgOverlayEnd" format="reference" />
+    <attr name="mgPlaceholder" format="reference" />
+    <attr name="mgPrimary" format="reference" />
+    <attr name="mgPrimaryVariant" format="reference" />
+    <attr name="mgPrimaryVariant2" format="reference" />
+    <attr name="mgProfilePictureEdit" format="reference" />
+    <attr name="mgProgressDrawable" format="reference" />
+    <attr name="mgPwmRoundedRectangle" format="reference" />
+    <attr name="mgQuantumIcArrowForwardAutoRtl" format="reference" />
+    <attr name="mgRipple" format="reference" />
+    <attr name="mgRippleRoundedBottom" format="reference" />
+    <attr name="mgRippleRoundedTop" format="reference" />
+    <attr name="mgSecondary" format="reference" />
+    <attr name="mgSecondaryVariant" format="reference" />
+    <attr name="mgSurface" format="reference" />
+    <attr name="mgTopNavTabSelectedIndicator" format="reference" />
+    <attr name="mgVerticalSpace" format="reference" />
+    <attr name="minTouchTargetSize" format="dimension" />
     <attr name="mtrlColor" format="reference|color" />
     <attr name="mtrlColors" format="reference" />
     <attr name="navigationViewStyle" format="reference" />
@@ -353,7 +420,6 @@
     <attr name="shapeAppearanceSmallComponent" format="reference" />
     <attr name="showMotionSpec" format="reference" />
     <attr name="sliceViewStyle" format="reference" />
-    <attr name="strokeColor" format="color" />
     <attr name="styleLineItemSubValueText" format="reference" />
     <attr name="styleWidgetWalletFormSpinner" format="reference" />
     <attr name="styleWidgetWalletSpinner" format="reference" />
@@ -425,6 +491,7 @@
     <attr name="title" format="string" />
     <attr name="toolbarBackground" format="reference" />
     <attr name="toolbarPopupTheme" format="reference" />
+    <attr name="toolbarSideMargin" format="dimension" />
     <attr name="toolbarTheme" format="reference" />
     <attr name="uicAlwaysInlineExpandLabel" format="boolean" />
     <attr name="uicCameraDrawable" format="reference" />
@@ -506,6 +573,9 @@
     <attr name="showNegativeDialogButton" format="boolean" />
     <attr name="showDialogWhenTurningOn" format="boolean" />
     <attr name="showDialogWhenTurningOff" format="boolean" />
+    <attr name="discSize" format="dimension" />
+    <attr name="avatarSize" format="dimension" />
+    <attr name="imageViewSize" format="dimension" />
     <attr name="navigationMode">
         <enum name="listMode" value="1" />
         <enum name="normal" value="0" />
@@ -812,7 +882,7 @@
     <attr name="chipStrokeColor" format="color" />
     <attr name="chipStrokeWidth" format="dimension" />
     <attr name="chipMinTouchTargetSize" format="dimension" />
-    <attr name="chipTouchTargetDelegate" format="reference" />
+    <attr name="ensureMinTouchTargetSize" format="boolean" />
     <attr name="chipIconVisible" format="boolean" />
     <attr name="chipIconEnabled" format="boolean" />
     <attr name="chipIcon" format="reference" />
@@ -1184,29 +1254,11 @@
     </attr>
     <attr name="sectionContent" format="string" />
     <attr name="globalSearchIcon" format="reference" />
-    <attr name="colorPrimaryLight" format="color" />
-    <attr name="colorSecondaryLight" format="color" />
-    <attr name="colorSecondaryDark" format="color" />
-    <attr name="colorPrimary50" format="color" />
-    <attr name="colorPrimary100" format="color" />
-    <attr name="colorPrimary200" format="color" />
-    <attr name="colorPrimary300" format="color" />
-    <attr name="colorPrimary400" format="color" />
-    <attr name="colorPrimary500" format="color" />
-    <attr name="colorPrimary600" format="color" />
-    <attr name="colorPrimary700" format="color" />
-    <attr name="colorPrimary800" format="color" />
-    <attr name="colorPrimary900" format="color" />
     <attr name="colorSecondary50" format="color" />
     <attr name="colorSecondary100" format="color" />
-    <attr name="colorSecondary200" format="color" />
-    <attr name="colorSecondary300" format="color" />
-    <attr name="colorSecondary400" format="color" />
-    <attr name="colorSecondary500" format="color" />
-    <attr name="colorSecondary600" format="color" />
     <attr name="colorSecondary700" format="color" />
-    <attr name="colorSecondary800" format="color" />
-    <attr name="colorSecondary900" format="color" />
+    <attr name="colorOnSurfaceVariant" format="color" />
+    <attr name="colorHairline" format="color" />
     <attr name="textAppearanceDisplay1" format="reference" />
     <attr name="textAppearanceDisplay2" format="reference" />
     <attr name="textAppearanceDisplay3" format="reference" />
@@ -1298,6 +1350,10 @@
     <attr name="latLngBoundsSouthWestLongitude" format="float" />
     <attr name="latLngBoundsNorthEastLatitude" format="float" />
     <attr name="latLngBoundsNorthEastLongitude" format="float" />
+    <attr name="backgroundInsetStart" format="dimension" />
+    <attr name="backgroundInsetTop" format="dimension" />
+    <attr name="backgroundInsetEnd" format="dimension" />
+    <attr name="backgroundInsetBottom" format="dimension" />
     <attr name="iconSize" format="dimension" />
     <attr name="iconPadding" format="dimension" />
     <attr name="iconGravity">
@@ -1366,7 +1422,9 @@
         <enum name="my_google" value="3" />
     </attr>
     <attr name="defaultMarginsEnabled" format="boolean" />
+    <attr name="defaultScrollFlagsEnabled" format="boolean" />
     <attr name="hideNavigationIcon" format="boolean" />
+    <attr name="strokeColor" format="color" />
     <attr name="searchPrefixText" format="string" />
     <attr name="useDrawerArrowDrawable" format="boolean" />
     <attr name="animateNavigationIcon" format="boolean" />
@@ -1605,6 +1663,8 @@
         <enum name="slide" value="0" />
         <enum name="fade" value="1" />
     </attr>
+    <attr name="backgroundOverlayColorAlpha" format="float" />
+    <attr name="actionTextColorAlpha" format="float" />
     <attr name="weights" format="reference" />
     <attr name="columnSizes" format="reference" />
     <attr name="max_offset" format="dimension" />
@@ -1704,15 +1764,20 @@
     <attr name="hintEnabled" format="boolean" />
     <attr name="hintAnimationEnabled" format="boolean" />
     <attr name="hintTextAppearance" format="reference" />
+    <attr name="hintTextColor" format="color" />
     <attr name="helperText" format="string" />
     <attr name="helperTextEnabled" format="boolean" />
     <attr name="helperTextTextAppearance" format="reference" />
+    <attr name="helperTextTextColor" format="color" />
     <attr name="errorEnabled" format="boolean" />
     <attr name="errorTextAppearance" format="reference" />
+    <attr name="errorTextColor" format="color" />
     <attr name="counterEnabled" format="boolean" />
     <attr name="counterMaxLength" format="integer" />
     <attr name="counterTextAppearance" format="reference" />
+    <attr name="counterTextColor" format="reference" />
     <attr name="counterOverflowTextAppearance" format="reference" />
+    <attr name="counterOverflowTextColor" format="reference" />
     <attr name="passwordToggleEnabled" format="boolean" />
     <attr name="passwordToggleDrawable" format="reference" />
     <attr name="passwordToggleContentDescription" format="string" />
@@ -1910,8 +1975,14 @@
     <attr name="internalUicFieldLabelMinHeight" format="reference|dimension" />
     <attr name="internalUicFieldMarginTop" format="reference|dimension" />
     <attr name="internalUicFieldMarginBottom" format="reference|dimension" />
+    <attr name="internalUicFieldPaddingTop" format="reference|dimension" />
+    <attr name="internalUicFieldPaddingBottom" format="reference|dimension" />
     <attr name="internalUicFieldErrorTextAppearance" format="reference" />
     <attr name="internalUicFieldDescriptionTextAppearance" format="reference" />
+    <attr name="internalUicMaterialFieldBackgroundType">
+        <enum name="none" value="0" />
+        <enum name="outline" value="1" />
+    </attr>
     <attr name="internalUicOtpFieldRootLayout" format="reference" />
     <attr name="internalUicIconOffsetWhenCollapsed" format="dimension" />
     <attr name="internalUicIconOffsetWhenExpanded" format="dimension" />
@@ -2019,6 +2090,16 @@
     <attr name="udcConsentSettingInfoStyle" format="string" />
     <attr name="udcConsentTextStyle" format="string" />
     <attr name="udcConsentFooterStyle" format="string" />
+    <attr name="googleMaterialBackground" format="reference|color" />
+    <attr name="googleMaterialTextColor" format="reference|color" />
+    <attr name="googleMaterialHighlightTextColor" format="reference|color" />
+    <attr name="googleMaterialLinkTextColor" format="reference|color" />
+    <attr name="googleMaterialSettingTextColor" format="reference|color" />
+    <attr name="googleMaterialNegativeBtnTextColor" format="reference|color" />
+    <attr name="googleMaterialPositiveBtnTextColor" format="reference|color" />
+    <attr name="googleMaterialPositiveBtnColor" format="reference|color" />
+    <attr name="googleMaterialIllustrationBackground" format="reference|color" />
+    <attr name="googleMaterialIllustrationCornerRadius" format="dimension" />
     <attr name="auth_setup_wizard_divider_color" format="reference" />
     <attr name="auth_setup_wizard_header_background" format="reference|color" />
     <attr name="auth_setup_wizard_header_foreground" format="reference" />

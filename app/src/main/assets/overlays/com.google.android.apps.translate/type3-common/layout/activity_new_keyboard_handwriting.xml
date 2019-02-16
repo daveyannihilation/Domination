@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout android:orientation="vertical" android:background="@*com.google.android.apps.translate:color/activity_background" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <android.support.v7.widget.CardView android:id="@*com.google.android.apps.translate:id/language_picker_card_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardCornerRadius="0.0dip" app:cardElevation="3.0dip">
+    <androidx.cardview.widget.CardView android:id="@*com.google.android.apps.translate:id/language_picker_card_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardCornerRadius="0.0dip" app:cardElevation="3.0dip">
         <com.google.android.apps.translate.widget.LanguagePicker android:gravity="center_vertical" android:id="@*com.google.android.apps.translate:id/language_picker" android:layout_width="fill_parent" android:layout_height="@*com.google.android.apps.translate:dimen/subheader_height" android:layout_alignParentTop="true" />
-    </android.support.v7.widget.CardView>
-    <android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@*com.google.android.apps.translate:id/language_picker_card_view" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:cardCornerRadius="2.0dip" app:cardElevation="2.0dip" app:cardUseCompatPadding="true">
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@*com.google.android.apps.translate:id/language_picker_card_view" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:cardCornerRadius="2.0dip" app:cardElevation="2.0dip" app:cardUseCompatPadding="true">
         <LinearLayout android:orientation="vertical" android:id="@*com.google.android.apps.translate:id/input_result_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
             <RelativeLayout android:id="@*com.google.android.apps.translate:id/input_area" android:background="@*com.google.android.apps.translate:drawable/bg_input_area" android:layout_width="fill_parent" android:layout_height="@*com.google.android.apps.translate:dimen/subheader_height" android:paddingStart="16.0dip">
                 <ImageView android:id="@*com.google.android.apps.translate:id/back_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@*com.google.android.apps.translate:drawable/quantum_ic_arrow_back_grey600_24" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
@@ -18,5 +18,5 @@
             </RelativeLayout>
             <com.google.android.apps.translate.widget.SuggestionList android:id="@*com.google.android.apps.translate:id/result_container" android:background="@*com.google.android.apps.translate:color/activity_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@*com.google.android.apps.translate:dimen/suggestion_list_top_margin" />
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 </RelativeLayout>

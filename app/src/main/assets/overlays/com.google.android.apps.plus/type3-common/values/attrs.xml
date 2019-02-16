@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <attr name="alertDialogTitleIconStyle" format="reference" />
-    <attr name="alertDialogTitlePanelStyle" format="reference" />
-    <attr name="alertDialogTitleTextStyle" format="reference" />
     <attr name="bottomAppBarStyle" format="reference" />
     <attr name="bottomNavigationStyle" format="reference" />
     <attr name="bottomSheetDialogTheme" format="reference" />
     <attr name="bottomSheetStyle" format="reference" />
     <attr name="cardViewStyle" format="reference" />
+    <attr name="checkedIcon" format="reference" />
     <attr name="chipGroupStyle" format="reference" />
     <attr name="chipStandaloneStyle" format="reference" />
     <attr name="chipStyle" format="reference" />
@@ -137,6 +135,7 @@
     <attr name="mediaRouteStopDrawable" format="reference" />
     <attr name="mediaRouteTheme" format="reference" />
     <attr name="mediaRouteTvIconDrawable" format="reference" />
+    <attr name="minTouchTargetSize" format="dimension" />
     <attr name="mtrlColor" format="reference|color" />
     <attr name="mtrlColors" format="reference" />
     <attr name="navigationViewStyle" format="reference" />
@@ -150,8 +149,6 @@
     <attr name="shapeAppearanceMediumComponent" format="reference" />
     <attr name="shapeAppearanceSmallComponent" format="reference" />
     <attr name="showMotionSpec" format="reference" />
-    <attr name="strokeColor" format="color" />
-    <attr name="strokeWidth" format="dimension" />
     <attr name="tabStyle" format="reference" />
     <attr name="textAppearanceBody1" format="reference" />
     <attr name="textAppearanceBody2" format="reference" />
@@ -454,7 +451,7 @@
     <attr name="chipStrokeColor" format="color" />
     <attr name="chipStrokeWidth" format="dimension" />
     <attr name="chipMinTouchTargetSize" format="dimension" />
-    <attr name="chipTouchTargetDelegate" format="reference" />
+    <attr name="ensureMinTouchTargetSize" format="boolean" />
     <attr name="chipIconVisible" format="boolean" />
     <attr name="chipIconEnabled" format="boolean" />
     <attr name="chipIcon" format="reference" />
@@ -467,7 +464,6 @@
     <attr name="closeIconSize" format="dimension" />
     <attr name="checkedIconVisible" format="boolean" />
     <attr name="checkedIconEnabled" format="boolean" />
-    <attr name="checkedIcon" format="reference" />
     <attr name="chipStartPadding" format="dimension" />
     <attr name="iconStartPadding" format="dimension" />
     <attr name="iconEndPadding" format="dimension" />
@@ -607,79 +603,6 @@
     <attr name="layout_y" format="integer" />
     <attr name="layout_center_horizontal_bound" format="integer" />
     <attr name="layout_center_vertical_bound" format="integer" />
-    <attr name="flexDirection">
-        <enum name="column" value="2" />
-        <enum name="column_reverse" value="3" />
-        <enum name="row" value="0" />
-        <enum name="row_reverse" value="1" />
-    </attr>
-    <attr name="flexWrap">
-        <enum name="wrap" value="1" />
-        <enum name="nowrap" value="0" />
-        <enum name="wrap_reverse" value="2" />
-    </attr>
-    <attr name="justifyContent">
-        <enum name="center" value="2" />
-        <enum name="flex_end" value="1" />
-        <enum name="flex_start" value="0" />
-        <enum name="space_around" value="4" />
-        <enum name="space_between" value="3" />
-        <enum name="space_evenly" value="5" />
-    </attr>
-    <attr name="alignItems">
-        <enum name="center" value="2" />
-        <enum name="flex_end" value="1" />
-        <enum name="flex_start" value="0" />
-        <enum name="baseline" value="3" />
-        <enum name="stretch" value="4" />
-    </attr>
-    <attr name="alignContent">
-        <enum name="center" value="2" />
-        <enum name="flex_end" value="1" />
-        <enum name="flex_start" value="0" />
-        <enum name="space_around" value="4" />
-        <enum name="space_between" value="3" />
-        <enum name="stretch" value="5" />
-    </attr>
-    <attr name="dividerDrawable" format="reference" />
-    <attr name="dividerDrawableHorizontal" format="reference" />
-    <attr name="dividerDrawableVertical" format="reference" />
-    <attr name="showDivider">
-        <flag name="none" value="0x00000000" />
-        <flag name="end" value="0x00000004" />
-        <flag name="beginning" value="0x00000001" />
-        <flag name="middle" value="0x00000002" />
-    </attr>
-    <attr name="showDividerHorizontal">
-        <flag name="none" value="0x00000000" />
-        <flag name="end" value="0x00000004" />
-        <flag name="beginning" value="0x00000001" />
-        <flag name="middle" value="0x00000002" />
-    </attr>
-    <attr name="showDividerVertical">
-        <flag name="none" value="0x00000000" />
-        <flag name="end" value="0x00000004" />
-        <flag name="beginning" value="0x00000001" />
-        <flag name="middle" value="0x00000002" />
-    </attr>
-    <attr name="maxLine" format="integer" />
-    <attr name="layout_order" format="integer" />
-    <attr name="layout_flexGrow" format="float" />
-    <attr name="layout_flexShrink" format="float" />
-    <attr name="layout_flexBasisPercent" format="fraction" />
-    <attr name="layout_alignSelf">
-        <enum name="center" value="2" />
-        <enum name="auto" value="-1" />
-        <enum name="flex_end" value="1" />
-        <enum name="flex_start" value="0" />
-        <enum name="baseline" value="3" />
-        <enum name="stretch" value="4" />
-    </attr>
-    <attr name="layout_minWidth" format="dimension" />
-    <attr name="layout_minHeight" format="dimension" />
-    <attr name="layout_maxWidth" format="dimension" />
-    <attr name="layout_maxHeight" format="dimension" />
-    <attr name="layout_wrapBefore" format="boolean" />
     <attr name="fabSize">
         <enum name="normal" value="0" />
         <enum name="auto" value="-1" />
@@ -715,29 +638,11 @@
     <attr name="ttcIndex" format="integer" />
     <attr name="foregroundInsidePadding" format="boolean" />
     <attr name="maxHeightPercentage" format="float" />
-    <attr name="colorPrimaryLight" format="color" />
-    <attr name="colorSecondaryLight" format="color" />
-    <attr name="colorSecondaryDark" format="color" />
-    <attr name="colorPrimary50" format="color" />
-    <attr name="colorPrimary100" format="color" />
-    <attr name="colorPrimary200" format="color" />
-    <attr name="colorPrimary300" format="color" />
-    <attr name="colorPrimary400" format="color" />
-    <attr name="colorPrimary500" format="color" />
-    <attr name="colorPrimary600" format="color" />
-    <attr name="colorPrimary700" format="color" />
-    <attr name="colorPrimary800" format="color" />
-    <attr name="colorPrimary900" format="color" />
     <attr name="colorSecondary50" format="color" />
     <attr name="colorSecondary100" format="color" />
-    <attr name="colorSecondary200" format="color" />
-    <attr name="colorSecondary300" format="color" />
-    <attr name="colorSecondary400" format="color" />
-    <attr name="colorSecondary500" format="color" />
-    <attr name="colorSecondary600" format="color" />
     <attr name="colorSecondary700" format="color" />
-    <attr name="colorSecondary800" format="color" />
-    <attr name="colorSecondary900" format="color" />
+    <attr name="colorOnSurfaceVariant" format="color" />
+    <attr name="colorHairline" format="color" />
     <attr name="textAppearanceDisplay1" format="reference" />
     <attr name="textAppearanceDisplay2" format="reference" />
     <attr name="textAppearanceDisplay3" format="reference" />
@@ -823,6 +728,14 @@
     <attr name="zOrderOnTop" format="boolean" />
     <attr name="uiMapToolbar" format="boolean" />
     <attr name="ambientEnabled" format="boolean" />
+    <attr name="backgroundInsetStart" format="dimension" />
+    <attr name="backgroundInsetTop" format="dimension" />
+    <attr name="backgroundInsetEnd" format="dimension" />
+    <attr name="backgroundInsetBottom" format="dimension" />
+    <attr name="materialAlertDialogTitlePanelStyle" format="reference" />
+    <attr name="materialAlertDialogTitleIconStyle" format="reference" />
+    <attr name="materialAlertDialogTitleTextStyle" format="reference" />
+    <attr name="materialAlertDialogTheme" format="reference" />
     <attr name="iconSize" format="dimension" />
     <attr name="iconPadding" format="dimension" />
     <attr name="iconGravity">
@@ -831,6 +744,7 @@
     </attr>
     <attr name="iconTint" format="color" />
     <attr name="cornerRadius" format="dimension" />
+    <attr name="cardForegroundColor" format="color" />
     <attr name="shapeAppearance" format="reference" />
     <attr name="shapeAppearanceOverlay" format="reference" />
     <attr name="externalRouteEnabledDrawable" format="reference" />
@@ -896,7 +810,10 @@
     <attr name="itemIconPadding" format="dimension" />
     <attr name="itemIconSize" format="dimension" />
     <attr name="defaultMarginsEnabled" format="boolean" />
+    <attr name="defaultScrollFlagsEnabled" format="boolean" />
     <attr name="hideNavigationIcon" format="boolean" />
+    <attr name="strokeColor" format="color" />
+    <attr name="strokeWidth" format="dimension" />
     <attr name="searchPrefixText" format="string" />
     <attr name="useDrawerArrowDrawable" format="boolean" />
     <attr name="animateNavigationIcon" format="boolean" />
@@ -1064,6 +981,7 @@
         <enum name="slide" value="0" />
         <enum name="fade" value="1" />
     </attr>
+    <attr name="backgroundOverlayColorAlpha" format="float" />
     <attr name="actionTextColorAlpha" format="float" />
     <attr name="title" format="string" />
     <attr name="titleRightMargin" format="dimension" />
