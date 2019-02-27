@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="Base.Theme.Photos" parent="@*com.google.android.apps.photos:style/Base.Theme.Photos.DayNight">
+        <item name="android:icon">@*android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:logo">@*android:color/transparent</item>
+        <item name="android:actionBarStyle">@*com.google.android.apps.photos:style/Widget.Photos.ActionBar</item>
+        <item name="android:actionModeCloseDrawable">@*com.google.android.apps.photos:drawable/quantum_gm_ic_clear_vd_theme_24</item>
+        <item name="android:dialogTheme">@*com.google.android.apps.photos:style/Theme.Photos.Dialog</item>
+        <item name="android:alertDialogTheme">@*com.google.android.apps.photos:style/Theme.Photos.Dialog</item>
+        <item name="android:actionMenuTextAppearance">@*com.google.android.apps.photos:style/TextAppearance.Photos.Subhead2</item>
+        <item name="android:actionMenuTextColor">@*android:color/white</item>
+        <item name="android:actionModeStyle">@*com.google.android.apps.photos:style/Widget.Photos.ActionMode.ActionBar</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="*com.google.android.apps.photos:floatingActionButtonStyle">@*com.google.android.apps.photos:style/Widget.Photos.FloatingActionButton</item>
+        <item name="*com.google.android.apps.photos:mediaRouteTheme">@*com.google.android.apps.photos:style/Theme.Photos.Dialog.MediaRoute</item>
+        <item name="*com.google.android.apps.photos:textInputStyle">@*com.google.android.apps.photos:style/Widget.Design.TextInputLayout</item>
+        <item name="*com.google.android.apps.photos:actionOverflowButtonStyle">@*com.google.android.apps.photos:style/Widget.Photos.ActionBar.Overflow</item>
+        <item name="*com.google.android.apps.photos:actionBarStyle">@*com.google.android.apps.photos:style/Widget.Photos.ActionBar</item>
+        <item name="*com.google.android.apps.photos:actionBarTheme">@*com.google.android.apps.photos:style/ThemeOverlay.Photos.ActionBar</item>
+        <item name="*com.google.android.apps.photos:actionBarSize">56.0dip</item>
+        <item name="*com.google.android.apps.photos:actionModeStyle">@*com.google.android.apps.photos:style/Widget.Photos.ActionMode.ActionBar</item>
+        <item name="*com.google.android.apps.photos:actionModeCloseDrawable">@*com.google.android.apps.photos:drawable/quantum_gm_ic_clear_vd_theme_24</item>
+        <item name="*com.google.android.apps.photos:borderlessButtonStyle">@*com.google.android.apps.photos:style/Widget.Photos.Button.Borderless</item>
+        <item name="*com.google.android.apps.photos:alertDialogTheme">@*com.google.android.apps.photos:style/Theme.Photos.Dialog</item>
+        <item name="*com.google.android.apps.photos:colorPrimary">@*android:color/secondary_text_leanback_light</item>
+    </style>
     <style name="Base.V14.Theme.GoogleMaterial.Light" parent="@*com.google.android.apps.photos:style/Base.V14.Theme.GoogleMaterial.Light.Bridge">
         <item name="android:colorBackground">@*android:color/background_dark</item>
         <item name="android:windowBackground">@*android:color/background_dark</item>
@@ -12,6 +37,7 @@
         <item name="*com.google.android.apps.photos:bottomSheetDialogTheme">@*com.google.android.apps.photos:style/Theme.GoogleMaterial.Light.BottomSheetDialog</item>
         <item name="*com.google.android.apps.photos:chipStandaloneStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.Chip.Input</item>
         <item name="*com.google.android.apps.photos:chipStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.Chip.Assistive</item>
+        <item name="*com.google.android.apps.photos:extendedFloatingActionButtonStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.ExtendedFloatingActionButton.Icon</item>
         <item name="*com.google.android.apps.photos:floatingActionButtonStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.FloatingActionButton</item>
         <item name="*com.google.android.apps.photos:materialButtonStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.Button</item>
         <item name="*com.google.android.apps.photos:materialCardViewStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.CardView</item>
@@ -40,32 +66,5 @@
         <item name="*com.google.android.apps.photos:materialAlertDialogTheme">@*com.google.android.apps.photos:style/ThemeOverlay.GoogleMaterial.MaterialAlertDialog</item>
         <item name="*com.google.android.apps.photos:snackbarStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.Snackbar</item>
         <item name="*com.google.android.apps.photos:snackbarButtonStyle">@*com.google.android.apps.photos:style/Widget.GoogleMaterial.TextButton.Snackbar</item>
-    </style>
-    <style name="Theme.Photos.Base" parent="@*com.google.android.apps.photos:style/Theme.GoogleMaterial.Light">
-        <item name="android:icon">@*android:color/transparent</item>
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:logo">@*android:color/transparent</item>
-        <item name="android:actionBarStyle">@*com.google.android.apps.photos:style/Widget.Photos.ActionBar</item>
-        <item name="android:actionModeBackground">@*android:color/background_floating_material_dark</item>
-        <item name="android:actionModeCloseDrawable">@*com.google.android.apps.photos:drawable/quantum_gm_ic_clear_vd_theme_24</item>
-        <item name="android:dialogTheme">@*com.google.android.apps.photos:style/Theme.Photos.Dialog</item>
-        <item name="android:alertDialogTheme">@*com.google.android.apps.photos:style/Theme.Photos.Dialog</item>
-        <item name="android:actionMenuTextAppearance">@*com.google.android.apps.photos:style/TextAppearance.Photos.Subhead2</item>
-        <item name="android:actionMenuTextColor">@*android:color/white</item>
-        <item name="android:actionModeStyle">@*com.google.android.apps.photos:style/Widget.Photos.ActionMode.ActionBar</item>
-        <item name="android:windowActivityTransitions">true</item>
-        <item name="*com.google.android.apps.photos:floatingActionButtonStyle">@*com.google.android.apps.photos:style/Widget.Photos.FloatingActionButton</item>
-        <item name="*com.google.android.apps.photos:tabBackgroundColor">@*android:color/background_floating_material_dark</item>
-        <item name="*com.google.android.apps.photos:textInputStyle">@*com.google.android.apps.photos:style/Widget.Design.TextInputLayout</item>
-        <item name="*com.google.android.apps.photos:actionOverflowButtonStyle">@*com.google.android.apps.photos:style/Widget.Photos.ActionBar.Overflow</item>
-        <item name="*com.google.android.apps.photos:actionBarStyle">@*com.google.android.apps.photos:style/Widget.Photos.ActionBar</item>
-        <item name="*com.google.android.apps.photos:actionBarTheme">@*com.google.android.apps.photos:style/ThemeOverlay.Photos.ActionBar</item>
-        <item name="*com.google.android.apps.photos:actionBarSize">56.0dip</item>
-        <item name="*com.google.android.apps.photos:actionModeStyle">@*com.google.android.apps.photos:style/Widget.Photos.ActionMode.ActionBar</item>
-        <item name="*com.google.android.apps.photos:actionModeBackground">@*android:color/background_floating_material_dark</item>
-        <item name="*com.google.android.apps.photos:actionModeCloseDrawable">@*com.google.android.apps.photos:drawable/quantum_gm_ic_clear_vd_theme_24</item>
-        <item name="*com.google.android.apps.photos:borderlessButtonStyle">@*com.google.android.apps.photos:style/Widget.Photos.Button.Borderless</item>
-        <item name="*com.google.android.apps.photos:colorPrimary">@*android:color/secondary_text_leanback_light</item>
     </style>
 </resources>

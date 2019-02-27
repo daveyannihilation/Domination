@@ -63,7 +63,9 @@
         <enum name="fade" value="1" />
         <enum name="slide" value="0" />
     </attr>
+    <attr name="arrowBaseWidth" format="dimension" />
     <attr name="arrowHeadLength" format="dimension" />
+    <attr name="arrowLength" format="dimension" />
     <attr name="arrowShaftLength" format="dimension" />
     <attr name="autoCompleteTextViewStyle" format="reference" />
     <attr name="autoSizeMaxTextSize" format="dimension" />
@@ -95,17 +97,28 @@
     </attr>
     <attr name="barLength" format="dimension" />
     <attr name="behavior_autoHide" format="boolean" />
+    <attr name="behavior_autoShrink" format="boolean" />
     <attr name="behavior_fitToContents" format="boolean" />
     <attr name="behavior_hideable" format="boolean" />
     <attr name="behavior_overlapTop" format="dimension" />
     <attr name="behavior_peekHeight" format="dimension">
         <enum name="auto" value="-1" />
     </attr>
+    <attr name="behavior_saveFlags">
+        <flag name="all" value="0xffffffff" />
+        <flag name="fitToContents" value="0x00000002" />
+        <flag name="hideable" value="0x00000004" />
+        <flag name="none" value="0x00000000" />
+        <flag name="peekHeight" value="0x00000001" />
+        <flag name="skipCollapsed" value="0x00000008" />
+    </attr>
     <attr name="behavior_skipCollapsed" format="boolean" />
     <attr name="borderWidth" format="dimension" />
     <attr name="borderlessButtonStyle" format="reference" />
     <attr name="bottomAppBarStyle" format="reference" />
+    <attr name="bottomLeftRadius" format="dimension" />
     <attr name="bottomNavigationStyle" format="reference" />
+    <attr name="bottomRightRadius" format="dimension" />
     <attr name="bottomSheetDialogTheme" format="reference" />
     <attr name="bottomSheetStyle" format="reference" />
     <attr name="boxBackgroundColor" format="color" />
@@ -158,8 +171,10 @@
     <attr name="cardPreventCornerOverlap" format="boolean" />
     <attr name="cardUseCompatPadding" format="boolean" />
     <attr name="cardViewStyle" format="reference" />
+    <attr name="chart_axis_primary_color" format="color" />
+    <attr name="chart_axis_secondary_color" format="color" />
+    <attr name="chart_axis_style" format="reference" />
     <attr name="chart_axis_thickness" format="dimension" />
-    <attr name="chart_background_color" format="color" />
     <attr name="chart_bar_corner_radius" format="dimension" />
     <attr name="chart_bar_padding" format="dimension" />
     <attr name="chart_bubble_spacing" format="dimension" />
@@ -172,22 +187,17 @@
     <attr name="chart_data_light_color" format="color" />
     <attr name="chart_data_shade_color" format="color" />
     <attr name="chart_data_style" format="reference" />
+    <attr name="chart_data_text_primary_color" format="color" />
+    <attr name="chart_data_text_secondary_color" format="color" />
     <attr name="chart_fixed_bubble_size" format="dimension" />
     <attr name="chart_grid_thickness" format="dimension" />
-    <attr name="chart_highlight_color" format="color" />
     <attr name="chart_label_width" format="dimension" />
-    <attr name="chart_layer_style" format="reference" />
     <attr name="chart_marker_color" format="color" />
     <attr name="chart_max_bubble_alpha" format="integer" />
     <attr name="chart_max_bubble_size" format="dimension" />
     <attr name="chart_min_bubble_alpha" format="integer" />
     <attr name="chart_min_bubble_size" format="dimension" />
     <attr name="chart_min_image_size" format="dimension" />
-    <attr name="chart_primary_color" format="color" />
-    <attr name="chart_primary_color_strong" format="color" />
-    <attr name="chart_secondary_alpha" format="integer" />
-    <attr name="chart_secondary_color" format="color" />
-    <attr name="chart_secondary_color_strong" format="color" />
     <attr name="chart_soft_gap_alpha" format="integer" />
     <attr name="chart_soft_gap_dash_len" format="dimension" />
     <attr name="chart_stroke_large" format="dimension" />
@@ -196,9 +206,8 @@
     <attr name="chart_stroke_smaller" format="dimension" />
     <attr name="chart_stroke_style" format="reference" />
     <attr name="chart_stroke_xsmall" format="dimension" />
-    <attr name="chart_text_display_style" format="reference" />
     <attr name="chart_text_size" format="dimension" />
-    <attr name="chart_value_display_style" format="reference" />
+    <attr name="chart_xaxis_highlight_color" format="color" />
     <attr name="chart_xaxis_label_pos" format="dimension" />
     <attr name="chart_xaxis_marker_len" format="dimension" />
     <attr name="chart_yaxis_highlight_alpha" format="integer" />
@@ -290,6 +299,13 @@
     <attr name="colorSwitchThumbNormal" format="color" />
     <attr name="commitIcon" format="reference" />
     <attr name="constraintSet" format="reference" />
+    <attr name="containerBackgroundColor" format="color" />
+    <attr name="containerCornerRadius" format="dimension" />
+    <attr name="containerMargin" format="dimension" />
+    <attr name="containerPadding" format="dimension" />
+    <attr name="containerShadowColor" format="color" />
+    <attr name="containerShadowOffset" format="dimension" />
+    <attr name="containerShadowRadius" format="dimension" />
     <attr name="contentDescription" format="string" />
     <attr name="contentInsetEnd" format="dimension" />
     <attr name="contentInsetEndWithActions" format="dimension" />
@@ -415,6 +431,7 @@
     <attr name="expandedTitleMarginTop" format="dimension" />
     <attr name="expandedTitleTextAppearance" format="reference" />
     <attr name="expandedToolbarHeight" format="dimension" />
+    <attr name="extendedFloatingActionButtonStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="fabAnimationMode">
         <enum name="scale" value="0" />
         <enum name="slide" value="1" />
@@ -498,6 +515,7 @@
     <attr name="imageViewSize" format="dimension" />
     <attr name="indeterminateProgressStyle" format="reference" />
     <attr name="initialExpandedChildrenCount" format="integer" />
+    <attr name="insetForeground" format="reference|color" />
     <attr name="isLightTheme" format="boolean" />
     <attr name="isMaterialTheme" format="boolean" />
     <attr name="isPreferenceVisible" format="boolean" />
@@ -509,6 +527,7 @@
     <attr name="itemIconTint" format="color" />
     <attr name="itemPadding" format="dimension" />
     <attr name="itemSpacing" format="dimension" />
+    <attr name="itemTextAppearance" format="reference" />
     <attr name="itemTextAppearanceActive" format="reference" />
     <attr name="itemTextAppearanceInactive" format="reference" />
     <attr name="itemTextColor" format="color" />
@@ -707,6 +726,7 @@
         <enum name="satellite" value="2" />
         <enum name="terrain" value="3" />
     </attr>
+    <attr name="materialAlertDialogBodyTextStyle" format="reference" />
     <attr name="materialAlertDialogTheme" format="reference" />
     <attr name="materialAlertDialogTitleIconStyle" format="reference" />
     <attr name="materialAlertDialogTitlePanelStyle" format="reference" />
@@ -866,6 +886,7 @@
     <attr name="stackFromEnd" format="boolean" />
     <attr name="state_collapsed" format="boolean" />
     <attr name="state_collapsible" format="boolean" />
+    <attr name="state_dragged" format="boolean" />
     <attr name="state_liftable" format="boolean" />
     <attr name="state_lifted" format="boolean" />
     <attr name="statusBarBackground" format="reference|color" />
@@ -1044,6 +1065,8 @@
     <attr name="tooltip_text_size" format="dimension" />
     <attr name="tooltip_tip_height" format="dimension" />
     <attr name="tooltip_tip_width" format="dimension" />
+    <attr name="topLeftRadius" format="dimension" />
+    <attr name="topRightRadius" format="dimension" />
     <attr name="track" format="reference" />
     <attr name="trackTint" format="color" />
     <attr name="trackTintMode">
@@ -1083,37 +1106,51 @@
     <attr name="zOrderOnTop" format="boolean" />
     <item type="attr" name="APKTOOL_DUMMY_32">false</item>
     <item type="attr" name="APKTOOL_DUMMY_33">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_38">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_68">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_c6">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_ed">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_133">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_142">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3a">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_6c">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_6f">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_c9">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_f0">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_122">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_13e">false</item>
     <item type="attr" name="APKTOOL_DUMMY_14d">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_168">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_16b">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_174">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_187">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_188">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_159">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_165">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_173">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_176">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_179">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_182">false</item>
     <item type="attr" name="APKTOOL_DUMMY_189">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_18a">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_18b">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_18c">false</item>
     <item type="attr" name="APKTOOL_DUMMY_18d">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_18f">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_18e">false</item>
     <item type="attr" name="APKTOOL_DUMMY_19b">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_1f4">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_205">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_22e">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_232">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_234">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_235">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_236">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_237">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_238">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_243">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_249">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_19c">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_19d">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_1a1">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_208">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_21a">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_21b">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_244">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_248">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_24a">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_24b">false</item>
     <item type="attr" name="APKTOOL_DUMMY_24c">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_253">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_274">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_2e1">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_310">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_321">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_24d">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_24e">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_259">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_25f">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_262">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_269">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_28a">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_328">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_32c">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_32d">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_32e">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_32f">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_330">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_331">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_33f">false</item>
 </resources>

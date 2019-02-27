@@ -16,6 +16,7 @@
     <style name="BaseTheme" parent="@*com.google.android.apps.googlevoice:style/Theme.GoogleMaterial.Dark.NoActionBar">
         <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="android:radioButtonStyle">@*com.google.android.apps.googlevoice:style/RadioButton</item>
+        <item name="android:popupMenuStyle">@*com.google.android.apps.googlevoice:style/Widget.GoogleMaterial.PopupMenu</item>
         <item name="android:textDirection">anyRtl</item>
         <item name="android:colorButtonNormal">@*com.google.android.apps.googlevoice:color/app_accent_color</item>
         <item name="*com.google.android.apps.googlevoice:colorSecondary">@*com.google.android.apps.googlevoice:color/app_accent_color</item>
@@ -41,6 +42,13 @@
         <item name="android:textColorLink">@*android:color/accent_material_dark</item>
         <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
         <item name="android:windowBackground">@*android:color/background_dark</item>
+    </style>
+    <style name="ThemeOverlay.GoogleMaterial.Light.BottomSheetDialog" parent="@*com.google.android.apps.googlevoice:style/ThemeOverlay.MaterialComponents.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@*com.google.android.apps.googlevoice:style/Animation.MaterialComponents.BottomSheetDialog</item>
+        <item name="android:statusBarColor">@*android:color/transparent</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.apps.googlevoice:bottomSheetStyle">@*com.google.android.apps.googlevoice:style/Widget.GoogleMaterial.BottomSheet.Modal</item>
     </style>
     <style name="VoiceBuyFlowCustomTheme">
         <item name="android:colorPrimary">@*android:color/primary_material_dark</item>

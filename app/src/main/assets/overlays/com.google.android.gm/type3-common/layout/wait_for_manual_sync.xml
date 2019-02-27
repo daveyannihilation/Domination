@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@*com.google.android.gm:color/list_background_color" android:padding="@*com.google.android.gm:dimen/wait_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+<LinearLayout android:orientation="vertical" android:background="@*com.google.android.gm:color/list_background_color" android:padding="@*com.google.android.gm:dimen/wait_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@*com.google.android.gm:style/WaitForManualSyncStyle"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@*com.google.android.gm:string/not_synced_title" style="@*com.google.android.gm:style/WaitFragmentTitle" />
-    <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@*com.google.android.gm:string/wait_for_manual_sync_body" android:layout_weight="1.0" />
-    <Button android:id="@*com.google.android.gm:id/manual_sync" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="@*com.google.android.gm:string/manual_sync" />
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@*com.google.android.gm:string/not_synced_title" style="@*com.google.android.gm:style/WaitFragmentTitleStyle" />
+    <TextView android:text="@*com.google.android.gm:string/wait_for_manual_sync_body" style="@*com.google.android.gm:style/WaitForManualSyncTextStyle" />
+    <Button android:id="@*com.google.android.gm:id/manual_sync" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@*com.google.android.gm:string/manual_sync" style="@*com.google.android.gm:style/WaitForManualSyncButtonStyle" />
     <Button android:id="@*com.google.android.gm:id/change_sync_settings" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@*com.google.android.gm:string/change_sync_settings" />
 </LinearLayout>

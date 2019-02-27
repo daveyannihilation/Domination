@@ -3,11 +3,11 @@
     <style name="AbstractComposeArea">
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:background">@*android:color/background_dark</item>
-        <item name="android:paddingLeft">@*com.google.android.gm:dimen/compose_area_start_padding</item>
-        <item name="android:paddingRight">@*com.google.android.gm:dimen/compose_area_end_padding</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">fill_parent</item>
         <item name="android:animateLayoutChanges">true</item>
+        <item name="android:paddingStart">@*com.google.android.gm:dimen/compose_area_start_padding</item>
+        <item name="android:paddingEnd">@*com.google.android.gm:dimen/compose_area_end_padding</item>
     </style>
     <style name="AbstractVacationResponderComposeArea">
         <item name="android:layout_gravity">center_horizontal</item>
@@ -25,10 +25,10 @@
     <style name="CalendarPromotionStyle">
         <item name="android:gravity">center_horizontal</item>
         <item name="android:background">@*android:color/background_dark</item>
-        <item name="android:paddingRight">20.0dip</item>
         <item name="android:paddingBottom">20.0dip</item>
         <item name="android:layout_margin">@*com.google.android.gm:dimen/calendar_promotion_layout_margin</item>
         <item name="android:minHeight">60.0dip</item>
+        <item name="android:paddingEnd">20.0dip</item>
     </style>
     <style name="CalendarPromotionText">
         <item name="android:textSize">14.0sp</item>
@@ -36,8 +36,9 @@
         <item name="android:paddingTop">@*com.google.android.gm:dimen/calendar_promotion_summary_padding</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_toRightOf">@*com.google.android.gm:id/calendar_icon</item>
         <item name="android:fontFamily">@*com.google.android.gm:string/calendar_promotion_font_regular</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:layout_toEndOf">@*com.google.android.gm:id/calendar_icon</item>
     </style>
     <style name="CalendarPromotionTitle">
         <item name="android:textSize">14.0sp</item>
@@ -46,8 +47,9 @@
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">20.0dip</item>
-        <item name="android:layout_toRightOf">@*com.google.android.gm:id/calendar_icon</item>
         <item name="android:fontFamily">@*com.google.android.gm:string/calendar_promotion_font_medium</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:layout_toEndOf">@*com.google.android.gm:id/calendar_icon</item>
     </style>
     <style name="ComposeFieldLayout">
         <item name="android:orientation">horizontal</item>
@@ -63,7 +65,7 @@
         <item name="android:shadowDy">1.3</item>
         <item name="android:shadowRadius">8.0</item>
     </style>
-    <style name="ComposeTheme" parent="@*com.google.android.gm:style/ColoredNavBarGeneralTheme">
+    <style name="ComposeThemeBase" parent="@*com.google.android.gm:style/ColoredNavBarGeneralTheme">
         <item name="android:colorBackground">@*android:color/background_dark</item>
         <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="android:dropDownListViewStyle">@*com.google.android.gm:style/ComposeDropdownListViewStyle</item>
@@ -71,6 +73,24 @@
         <item name="*com.google.android.gm:popupMenuStyle">@*com.google.android.gm:style/PopupMenu</item>
     </style>
     <style name="ConversationListFadeBase" parent="@*android:style/Widget.Holo.ListView" />
+    <style name="DatePickerStyle" parent="@*com.google.android.gm:style/Widget.GoogleMaterial.DatePicker">
+        <item name="android:headerBackground">@*android:color/background_floating_material_dark</item>
+    </style>
+    <style name="GmailGoogleMaterialActionBar" parent="@*com.google.android.gm:style/ThemeOverlay.GoogleMaterial.ActionBar">
+        <item name="android:textColorPrimary">@*com.google.android.gm:color/google_blue600</item>
+        <item name="android:textColor">@*com.google.android.gm:color/primary_text_color_grey</item>
+        <item name="android:background">@*android:color/transparent</item>
+        <item name="*com.google.android.gm:colorAccent">@*android:color/white</item>
+        <item name="*com.google.android.gm:colorControlNormal">@*com.google.android.gm:color/secondary_text_color_grey</item>
+        <item name="*com.google.android.gm:titleTextColor">@*com.google.android.gm:color/google_red600</item>
+    </style>
+    <style name="GmailGoogleMaterialDatePickerDialogTheme" parent="@*com.google.android.gm:style/ThemeOverlay.GoogleMaterial.Dialog">
+        <item name="android:textColorPrimary">@*com.google.android.gm:color/primary_text_color_grey</item>
+        <item name="android:textColorPrimaryInverse">@*android:color/white</item>
+        <item name="android:windowBackground">@*com.google.android.gm:drawable/dialog_background</item>
+        <item name="android:buttonBarButtonStyle">@*com.google.android.gm:style/GmailGoogleMaterialButtonBarStyle</item>
+        <item name="android:datePickerStyle">@*com.google.android.gm:style/DatePickerStyle</item>
+    </style>
     <style name="GmailTheme.NoActionBar" parent="@*android:style/Theme.Material.NoActionBar" />
     <style name="GmailTheme.NoActionBar.WelcomeTour" parent="@*com.google.android.gm:style/GmailTheme.NoActionBar">
         <item name="android:windowBackground">@*android:color/background_dark</item>
@@ -78,15 +98,16 @@
     <style name="LabelSyncTheme" parent="@*android:style/Theme.Holo.Dialog" />
     <style name="MailActivityTheme" parent="@*com.google.android.gm:style/ColoredNavBarMailActivityTheme">
         <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowTitleStyle">@*com.google.android.gm:style/GmailDialogTitleTextAppearance</item>
+        <item name="android:alertDialogTheme">@*com.google.android.gm:style/AlertDialogTheme</item>
+        <item name="android:borderlessButtonStyle">@*com.google.android.gm:style/GmailGoogleMaterialBorderlessButtonStyle</item>
+        <item name="*com.google.android.gm:drawerArrowStyle">@*com.google.android.gm:style/Widget.AppCompat.DrawerArrowToggle</item>
         <item name="*com.google.android.gm:windowActionModeOverlay">true</item>
-        <item name="*com.google.android.gm:actionBarPopupTheme">@*com.google.android.gm:style/ThemeOverlay.AppCompat.Light</item>
-        <item name="*com.google.android.gm:actionModeBackground">@*com.google.android.gm:color/action_mode_background</item>
         <item name="*com.google.android.gm:popupMenuStyle">@*com.google.android.gm:style/MessageHeaderPopupStyle</item>
         <item name="*com.google.android.gm:colorPrimary">@*com.google.android.gm:color/primary_color</item>
         <item name="*com.google.android.gm:colorPrimaryDark">@*com.google.android.gm:color/primary_dark_color</item>
-        <item name="*com.google.android.gm:colorAccent">@*com.google.android.gm:color/accent_blue</item>
+        <item name="*com.google.android.gm:colorControlNormal">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.gm:alertDialogTheme">@*com.google.android.gm:style/AlertDialogTheme</item>
-        <item name="*com.google.android.gm:drawerArrowStyle">@*com.google.android.gm:style/ActionBarDrawerArrowDrawableStyle</item>
     </style>
     <style name="NotificationPrimaryText">
         <item name="android:textColor">#ffffffff</item>
@@ -95,8 +116,10 @@
     <style name="Promo.Text" parent="@*com.google.android.gm:style/Promo">
         <item name="android:textSize">@*com.google.android.gm:dimen/promo_body_text_size</item>
         <item name="android:textColor">#ffd32f2f</item>
-        <item name="android:layout_marginLeft">@*com.google.android.gm:dimen/promo_inner_padding</item>
-        <item name="android:layout_marginRight">@*com.google.android.gm:dimen/promo_inner_padding</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:layout_marginStart">@*com.google.android.gm:dimen/promo_inner_padding</item>
+        <item name="android:layout_marginEnd">@*com.google.android.gm:dimen/promo_inner_padding</item>
     </style>
     <style name="RecipientComposeFieldLayout" parent="@*com.google.android.gm:style/ComposeFieldLayout">
         <item name="android:orientation">vertical</item>
@@ -114,6 +137,8 @@
         <item name="android:minHeight">@*com.google.android.gm:dimen/chip_height</item>
         <item name="android:popupBackground">@*android:color/background_floating_material_dark</item>
         <item name="android:inputType">textEmailAddress|textMultiLine</item>
+        <item name="android:textDirection">locale</item>
+        <item name="android:textAlignment">viewStart</item>
     </style>
     <style name="RichTeaserPromoBadgeStyle">
         <item name="android:textSize">14.0sp</item>
@@ -140,6 +165,9 @@
         <item name="*com.google.android.gm:suwScrollIndicators">bottom|top</item>
         <item name="*com.google.android.gm:suwBackgroundPatterned">false</item>
         <item name="*com.google.android.gm:suwBackgroundBaseColor">@*android:color/background_floating_material_dark</item>
+    </style>
+    <style name="TimePickerStyle" parent="@*com.google.android.gm:style/Widget.GoogleMaterial.TimePicker">
+        <item name="android:headerBackground">@*android:color/background_floating_material_dark</item>
     </style>
     <style name="ToRecipientEditTextViewStyle" parent="@*com.google.android.gm:style/RecipientEditTextViewStyle">
         <item name="android:layout_width">0.0dip</item>
@@ -171,6 +199,16 @@
         <item name="android:textColor">#ffffffff</item>
         <item name="android:layout_marginBottom">8.0dip</item>
     </style>
+    <style name="Widget.Design.BottomSheet.Modal" parent="@*android:style/Widget">
+        <item name="android:background">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gm:behavior_peekHeight">auto</item>
+        <item name="*com.google.android.gm:behavior_hideable">true</item>
+        <item name="*com.google.android.gm:behavior_skipCollapsed">false</item>
+        <item name="*com.google.android.gm:shapeAppearance">@null</item>
+        <item name="*com.google.android.gm:shapeAppearanceOverlay">@null</item>
+        <item name="*com.google.android.gm:enforceMaterialTheme">false</item>
+        <item name="*com.google.android.gm:backgroundTint">@*android:color/background_floating_material_dark</item>
+    </style>
     <style name="Widget.Design.FloatingActionButton" parent="@*android:style/Widget">
         <item name="android:background">@*com.google.android.gm:drawable/design_fab_background</item>
         <item name="android:focusable">true</item>
@@ -185,5 +223,9 @@
         <item name="*com.google.android.gm:showMotionSpec">@*com.google.android.gm:animator/design_fab_show_motion_spec</item>
         <item name="*com.google.android.gm:hideMotionSpec">@*com.google.android.gm:animator/design_fab_hide_motion_spec</item>
         <item name="*com.google.android.gm:backgroundTint">@*com.google.android.gm:color/primary_color</item>
+    </style>
+    <style name="WidgetConversationListFade" parent="@*com.google.android.gm:style/ConversationListFadeBase">
+        <item name="android:background">@*android:color/background_dark</item>
+        <item name="android:divider">@null</item>
     </style>
 </resources>

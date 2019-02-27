@@ -6,11 +6,14 @@
     <style name="Base.TextAppearance.AppCompat.Small.Inverse" parent="@*android:style/TextAppearance.Material.Small" />
     <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse" parent="@*android:style/TextAppearance.Material.Widget.ActionBar.Subtitle" />
     <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse" parent="@*android:style/TextAppearance.Material.Widget.ActionBar.Title" />
+    <style name="Base.Theme.GoogleMaterial.Light" parent="@*com.google.android.gm:style/Base.V14.Theme.GoogleMaterial.Light">
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+    </style>
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabText" parent="@*android:style/Widget.Material.ActionBar.TabText" />
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabText.Inverse" parent="@*android:style/Widget.Material.ActionBar.TabText" />
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabView" parent="@*android:style/Widget.Material.ActionBar.TabView" />
     <style name="Base.Widget.AppCompat.Light.PopupMenu" parent="@*android:style/Widget.Material.PopupMenu" />
-    <style name="ComposeTheme" parent="@*com.google.android.gm:style/ColoredNavBarGeneralTheme">
+    <style name="ComposeThemeBase" parent="@*com.google.android.gm:style/ColoredNavBarGeneralTheme">
         <item name="android:colorBackground">@*android:color/background_dark</item>
         <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="android:dropDownListViewStyle">@*com.google.android.gm:style/ComposeDropdownListViewStyle</item>
@@ -20,6 +23,18 @@
     </style>
     <style name="ColoredNavBarGmailTheme" parent="@*android:style/Theme.Material.NoActionBar" />
     <style name="ConversationListFadeBase" parent="@*android:style/Widget.Material.ListView" />
+    <style name="GmailGoogleMaterialButtonBarStyle" parent="@*com.google.android.gm:style/ButtonBarStyleBase">
+        <item name="android:colorAccent">@*android:color/white</item>
+    </style>
+    <style name="GmailGoogleMaterialDatePickerDialogTheme" parent="@*com.google.android.gm:style/ThemeOverlay.GoogleMaterial.Dialog">
+        <item name="android:textColorPrimary">@*com.google.android.gm:color/primary_text_color_grey</item>
+        <item name="android:textColorPrimaryInverse">@*android:color/white</item>
+        <item name="android:windowBackground">@*com.google.android.gm:drawable/dialog_background</item>
+        <item name="android:buttonBarButtonStyle">@*com.google.android.gm:style/GmailGoogleMaterialButtonBarStyle</item>
+        <item name="android:datePickerStyle">@*com.google.android.gm:style/DatePickerStyle</item>
+        <item name="android:colorAccent">@*com.google.android.gm:color/google_blue600</item>
+        <item name="android:timePickerStyle">@*com.google.android.gm:style/TimePickerStyle</item>
+    </style>
     <style name="GmailTheme.NoActionBar" parent="@*com.google.android.gm:style/ColoredNavBarGmailTheme">
         <item name="android:colorPrimary">@*com.google.android.gm:color/primary_color</item>
         <item name="android:colorPrimaryDark">@*com.google.android.gm:color/primary_dark_color</item>
@@ -32,18 +47,23 @@
     </style>
     <style name="MailActivityTheme" parent="@*com.google.android.gm:style/ColoredNavBarMailActivityTheme">
         <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowTitleStyle">@*com.google.android.gm:style/GmailDialogTitleTextAppearance</item>
+        <item name="android:alertDialogTheme">@*com.google.android.gm:style/AlertDialogTheme</item>
+        <item name="android:borderlessButtonStyle">@*com.google.android.gm:style/GmailGoogleMaterialBorderlessButtonStyle</item>
+        <item name="android:colorAccent">@*com.google.android.gm:color/google_blue600</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:statusBarColor">@*com.google.android.gm:color/mail_activity_status_bar_color</item>
+        <item name="android:navigationBarColor">@*com.google.android.gm:color/navigation_bar_color</item>
+        <item name="android:timePickerDialogTheme">@*com.google.android.gm:style/GmailGoogleMaterialTimePickerDialogTheme</item>
+        <item name="android:datePickerDialogTheme">@*com.google.android.gm:style/GmailGoogleMaterialDatePickerDialogTheme</item>
         <item name="android:colorEdgeEffect">@*com.google.android.gm:color/edge_effect_color</item>
+        <item name="*com.google.android.gm:drawerArrowStyle">@*com.google.android.gm:style/Widget.AppCompat.DrawerArrowToggle</item>
         <item name="*com.google.android.gm:windowActionModeOverlay">true</item>
-        <item name="*com.google.android.gm:actionBarPopupTheme">@*com.google.android.gm:style/ThemeOverlay.AppCompat.Light</item>
-        <item name="*com.google.android.gm:actionModeBackground">@*android:color/primary_material_dark</item>
         <item name="*com.google.android.gm:popupMenuStyle">@*com.google.android.gm:style/MessageHeaderPopupStyle</item>
         <item name="*com.google.android.gm:colorPrimary">@*com.google.android.gm:color/primary_color</item>
         <item name="*com.google.android.gm:colorPrimaryDark">@*com.google.android.gm:color/primary_dark_color</item>
-        <item name="*com.google.android.gm:colorAccent">@*com.google.android.gm:color/accent_blue</item>
+        <item name="*com.google.android.gm:colorControlNormal">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.gm:alertDialogTheme">@*com.google.android.gm:style/AlertDialogTheme</item>
-        <item name="*com.google.android.gm:drawerArrowStyle">@*com.google.android.gm:style/ActionBarDrawerArrowDrawableStyle</item>
     </style>
     <style name="NotificationPrimaryText">
         <item name="android:textColor">#ffffffff</item>
@@ -69,5 +89,24 @@
         <item name="android:colorPrimaryDark">@*com.google.android.gm:color/primary_dark_color</item>
         <item name="android:colorAccent">@*com.google.android.gm:color/accent_blue</item>
         <item name="android:colorEdgeEffect">@*com.google.android.gm:color/edge_effect_color</item>
+    </style>
+    <style name="Widget.Design.BottomSheet.Modal" parent="@*android:style/Widget">
+        <item name="android:background">@*android:color/background_floating_material_dark</item>
+        <item name="android:elevation">@*com.google.android.gm:dimen/design_bottom_sheet_modal_elevation</item>
+        <item name="*com.google.android.gm:behavior_peekHeight">auto</item>
+        <item name="*com.google.android.gm:behavior_hideable">true</item>
+        <item name="*com.google.android.gm:behavior_skipCollapsed">false</item>
+        <item name="*com.google.android.gm:shapeAppearance">@null</item>
+        <item name="*com.google.android.gm:shapeAppearanceOverlay">@null</item>
+        <item name="*com.google.android.gm:enforceMaterialTheme">false</item>
+        <item name="*com.google.android.gm:backgroundTint">@*android:color/background_floating_material_dark</item>
+    </style>
+    <style name="Widget.GoogleMaterial.DatePicker" parent="@*android:style/Widget.DeviceDefault.DatePicker">
+        <item name="android:headerBackground">@*com.google.android.gm:drawable/google_picker_header_with_divider</item>
+        <item name="android:dayOfWeekBackground">@*android:color/button_material_dark</item>
+    </style>
+    <style name="Widget.GoogleMaterial.TimePicker" parent="@android:style/Widget.Material.TimePicker">
+        <item name="android:headerBackground">@*com.google.android.gm:drawable/google_picker_header_with_divider</item>
+        <item name="android:numbersBackgroundColor">@*android:color/background_floating_material_dark</item>
     </style>
 </resources>

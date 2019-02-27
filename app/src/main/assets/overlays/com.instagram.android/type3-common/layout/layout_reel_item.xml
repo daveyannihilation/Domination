@@ -4,7 +4,7 @@
     <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
         <ViewStub android:id="@*com.instagram.android:id/reel_viewer_tall_android_top_bar_stub" android:layout="@*com.instagram.android:layout/reel_viewer_tall_android_top_bar" android:layout_width="fill_parent" android:layout_height="@*com.instagram.android:dimen/reel_viewer_tall_android_top_bar_max_height" />
         <ViewStub android:id="@*com.instagram.android:id/reel_viewer_zero_rating_data_banner_stub" android:layout="@*com.instagram.android:layout/zero_rating_data_banner" android:layout_width="fill_parent" android:layout_height="@*com.instagram.android:dimen/zero_rating_data_banner_height" />
-        <com.instagram.reels.viewer.ReelViewGroup android:id="@*com.instagram.android:id/reel_mention_overlay" android:background="@*android:color/background_dark" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.instagram.reels.viewer.ReelViewGroup android:id="@*com.instagram.android:id/reel_view_group" android:background="@*android:color/background_dark" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
             <com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout android:id="@*com.instagram.android:id/reel_viewer_media_layout" android:background="@*android:color/background_floating_material_dark" android:layout_width="fill_parent" android:layout_height="fill_parent">
                 <com.instagram.common.ui.widget.framelayout.MediaFrameLayout android:id="@*com.instagram.android:id/reel_viewer_media_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:forceFullWidth="true">
                     <com.instagram.ui.widget.textureview.ScalingTextureView android:id="@*com.instagram.android:id/reel_viewer_texture_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
@@ -18,6 +18,7 @@
                 <ViewStub android:id="@*com.instagram.android:id/reel_product_share_stub" android:layout="@*com.instagram.android:layout/reel_product_share" android:layout_width="wrap_content" android:layout_height="wrap_content" />
                 <ViewStub android:id="@*com.instagram.android:id/reel_poll_stub" android:layout="@*com.instagram.android:layout/reel_poll" android:layout_width="wrap_content" android:layout_height="wrap_content" />
                 <ViewStub android:id="@*com.instagram.android:id/reel_question_sticker_stub" android:layout="@*com.instagram.android:layout/reel_question_sticker" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ViewStub android:id="@*com.instagram.android:id/reel_quiz_sticker_stub" android:layout="@*com.instagram.android:layout/reel_quiz_sticker" android:layout_width="wrap_content" android:layout_height="wrap_content" />
                 <ViewStub android:id="@*com.instagram.android:id/reel_slider_sticker_stub" android:layout="@*com.instagram.android:layout/reel_slider_sticker" android:layout_width="wrap_content" android:layout_height="wrap_content" />
                 <ViewStub android:id="@*com.instagram.android:id/reel_countdown_sticker_stub" android:layout="@*com.instagram.android:layout/reel_countdown_sticker" android:layout_width="wrap_content" android:layout_height="wrap_content" />
                 <View android:id="@*com.instagram.android:id/reel_viewer_top_shadow" android:background="@*com.instagram.android:drawable/reel_viewer_shadow_top" android:layout_width="fill_parent" android:layout_height="@*com.instagram.android:dimen/reel_viewer_top_shadow_height" />
@@ -49,10 +50,7 @@
                 <ViewStub android:id="@*com.instagram.android:id/reel_identifier_overlay_stub" android:layout="@*com.instagram.android:layout/reel_identifier_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
                 <ViewStub android:layout_gravity="center" android:id="@*com.instagram.android:id/video_play_button_stub" android:layout="@*com.instagram.android:layout/view_media_play_button_simple" android:layout_width="108.0dip" android:layout_height="108.0dip" />
             </com.instagram.ui.widget.roundedcornerlayout.RoundedCornerFrameLayout>
-            <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@*com.instagram.android:id/reel_item_toolbar_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
-                <ViewStub android:layout_gravity="center_horizontal" android:id="@*com.instagram.android:id/reel_item_mention_reshare_button_stub" android:padding="@*com.instagram.android:dimen/row_text_padding" android:layout="@*com.instagram.android:layout/reel_item_mention_reshare_button" android:layout_width="wrap_content" android:layout_height="@*com.instagram.android:dimen/reel_item_mention_reshare_button_height" />
-                <include layout="@*com.instagram.android:layout/layout_reel_item_toolbar" />
-            </LinearLayout>
+            <include layout="@*com.instagram.android:layout/layout_reel_item_toolbar" />
         </com.instagram.reels.viewer.ReelViewGroup>
     </LinearLayout>
     <ViewStub android:id="@*com.instagram.android:id/reel_viewer_suggested_highlight_end_card_stub" android:layout="@*com.instagram.android:layout/reel_viewer_suggested_highlight_end_card" android:layout_width="fill_parent" android:layout_height="fill_parent" />
