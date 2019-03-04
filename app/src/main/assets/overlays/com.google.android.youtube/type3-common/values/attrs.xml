@@ -242,6 +242,7 @@
     <attr name="liveChatViewerEngagementMessageBackground" format="reference" />
     <attr name="loadingFrameErrorDrawable" format="reference" />
     <attr name="loadingFrameTextColor" format="reference" />
+    <attr name="materialButtonOutlinedStyle" format="reference" />
     <attr name="materialButtonStyle" format="reference" />
     <attr name="materialCardViewStyle" format="reference" />
     <attr name="materialThemeOverlay" format="reference" />
@@ -413,6 +414,8 @@
     <attr name="ytTextAppearanceTitle2" format="reference" />
     <attr name="ytTextDisabled" format="reference|color" />
     <attr name="ytTextError" format="reference|color" />
+    <attr name="ytTextPrimary" format="reference|color" />
+    <attr name="ytTextSecondary" format="reference|color" />
     <attr name="ytThemedBlue" format="reference|color" />
     <attr name="ytThemedGreen" format="reference|color" />
     <attr name="ytTimestampBackground" format="reference|color" />
@@ -1167,6 +1170,8 @@
     <attr name="dividerPadding" format="dimension" />
     <attr name="entries" format="reference" />
     <attr name="entryValues" format="reference" />
+    <attr name="hintText" format="reference" />
+    <attr name="drawableStart" format="reference" />
     <attr name="emptyViewLayout" format="reference" />
     <attr name="progressViewLayout" format="reference" />
     <attr name="errorViewLayout" format="reference" />
@@ -1654,11 +1659,15 @@
     <attr name="counterTextColor" format="reference" />
     <attr name="counterOverflowTextAppearance" format="reference" />
     <attr name="counterOverflowTextColor" format="reference" />
-    <attr name="passwordToggleEnabled" format="boolean" />
-    <attr name="passwordToggleDrawable" format="reference" />
-    <attr name="passwordToggleContentDescription" format="string" />
-    <attr name="passwordToggleTint" format="color" />
-    <attr name="passwordToggleTintMode">
+    <attr name="endIconMode">
+        <enum name="none" value="0" />
+        <enum name="clear_text" value="2" />
+        <enum name="password_toggle" value="1" />
+    </attr>
+    <attr name="endIconDrawable" format="reference" />
+    <attr name="endIconContentDescription" format="string" />
+    <attr name="endIconTint" format="color" />
+    <attr name="endIconTintMode">
         <enum name="multiply" value="14" />
         <enum name="screen" value="15" />
         <enum name="src_atop" value="9" />
@@ -1678,6 +1687,17 @@
     <attr name="boxStrokeColor" format="color" />
     <attr name="boxBackgroundColor" format="color" />
     <attr name="boxStrokeWidth" format="dimension" />
+    <attr name="passwordToggleEnabled" format="boolean" />
+    <attr name="passwordToggleDrawable" format="reference" />
+    <attr name="passwordToggleContentDescription" format="string" />
+    <attr name="passwordToggleTint" format="color" />
+    <attr name="passwordToggleTintMode">
+        <enum name="multiply" value="14" />
+        <enum name="screen" value="15" />
+        <enum name="src_atop" value="9" />
+        <enum name="src_in" value="5" />
+        <enum name="src_over" value="3" />
+    </attr>
     <attr name="enforceMaterialTheme" format="boolean" />
     <attr name="enforceTextAppearance" format="boolean" />
     <attr name="titleTextAppearance" format="reference" />
@@ -1712,11 +1732,6 @@
     <attr name="interceptSideScroll" format="boolean" />
     <attr name="user_mention_search_view_delete_icon" format="reference" />
     <attr name="user_mention_search_view_back_icon" format="reference" />
-    <attr name="user_mention_search_view_divider_color" format="color" />
-    <attr name="user_mention_search_view_results_background_color" format="color" />
-    <attr name="user_mention_search_view_no_results_text" format="color" />
-    <attr name="ytTextPrimary" format="color" />
-    <attr name="ytTextSecondary" format="color" />
     <attr name="codeTextSize" format="dimension" />
     <attr name="codeTextColor" format="color" />
     <attr name="underlineThicknessActive" format="dimension" />

@@ -9,8 +9,10 @@
             </LinearLayout>
             <FrameLayout android:id="@*com.whatsapp:id/quoted_message_holder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@*com.whatsapp:style/QuotedFrame" />
             <FrameLayout android:padding="@*com.whatsapp:dimen/conversation_video_thumb_padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
-                <FrameLayout android:id="@*com.whatsapp:id/video_containter" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-                <view android:id="@*com.whatsapp:id/thumb" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" class="com.whatsapp.conversationrow.ConversationRowVideo$RowVideoView" />
+                <FrameLayout android:id="@*com.whatsapp:id/media_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <FrameLayout android:id="@*com.whatsapp:id/video_containter" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <view android:id="@*com.whatsapp:id/thumb" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" class="com.whatsapp.conversationrow.ConversationRowVideo$RowVideoView" />
+                </FrameLayout>
                 <com.whatsapp.WaImageView android:layout_gravity="bottom|center|left" android:id="@*com.whatsapp:id/gif_attribution" android:paddingLeft="10.0dip" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
                 <FrameLayout android:layout_gravity="center" android:id="@*com.whatsapp:id/control_frame" android:background="@*com.whatsapp:drawable/download_background" android:layout_width="wrap_content" android:layout_height="wrap_content">
                     <com.whatsapp.CircularProgressBar android:layout_gravity="center" android:id="@*com.whatsapp:id/progress_bar" android:visibility="gone" android:layout_width="64.0dip" android:layout_height="64.0dip" android:indeterminateOnly="false" android:indeterminateTint="@*android:color/white" android:indeterminateTintMode="src_atop" />

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@*com.google.android.gm:layout/toolbar_with_search" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="?*android:windowContentOverlay">
+        <com.android.mail.ui.TwoPaneLayout android:id="@*com.google.android.gm:id/two_pane_activity" android:background="@*android:color/background_floating_material_dark" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foregroundGravity="fill_horizontal|center|top">
+            <FrameLayout android:layout_gravity="left" android:id="@*com.google.android.gm:id/drawer" android:layout_width="@*com.google.android.gm:dimen/two_pane_drawer_width_open" android:layout_height="fill_parent">
+                <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@*com.google.android.gm:layout/drawer_fragment" />
+            </FrameLayout>
+            <FrameLayout android:layout_gravity="left" android:id="@*com.google.android.gm:id/content_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:touchscreenBlocksFocus="true">
+                <FrameLayout android:id="@*com.google.android.gm:id/conversation_list_place_holder" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <FrameLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <include layout="@*com.google.android.gm:layout/floating_action_button" />
+                    <include layout="@*com.google.android.gm:layout/floating_actions" />
+                    <include layout="@*com.google.android.gm:layout/survey_holder" />
+                    <include layout="@*com.google.android.gm:layout/search_suggestion_list" />
+                    <FrameLayout android:layout_gravity="bottom|center|left" android:id="@*com.google.android.gm:id/gig_ribbon" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="100.0dip" android:translationX="-22.0dip" android:translationY="22.0dip" android:rotation="45.0">
+                        <include layout="@*com.google.android.gm:layout/gig_ribbon" />
+                    </FrameLayout>
+                </FrameLayout>
+            </FrameLayout>
+            <com.android.mail.ui.ConversationViewFrame android:layout_gravity="left" android:id="@*com.google.android.gm:id/conversation_frame" android:layout_width="0.0dip" android:layout_height="fill_parent" style="@*com.google.android.gm:style/ConversationViewForegroundShadowStyle">
+                <FrameLayout android:id="@*com.google.android.gm:id/conversation_pane" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:layout_gravity="center" android:id="@*com.google.android.gm:id/conversation_pane_no_message_view" android:visibility="gone" android:layout_width="@*com.google.android.gm:dimen/empty_state_icon_size" android:layout_height="@*com.google.android.gm:dimen/empty_state_icon_size" />
+                    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@*com.google.android.gm:layout/item_pager" />
+                    <include android:id="@*com.google.android.gm:id/topic_item_pager" android:visibility="gone" layout="@*com.google.android.gm:layout/item_pager" />
+                </FrameLayout>
+                <FrameLayout android:id="@*com.google.android.gm:id/miscellaneous_pane" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <include android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@*com.google.android.gm:layout/conversation_toolbar_view" />
+            </com.android.mail.ui.ConversationViewFrame>
+        </com.android.mail.ui.TwoPaneLayout>
+        <View android:id="@*com.google.android.gm:id/feature_highlight_overlay" android:background="@*com.google.android.gm:color/feature_highlight_overlay_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

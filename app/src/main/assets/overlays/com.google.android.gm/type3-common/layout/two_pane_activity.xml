@@ -2,7 +2,7 @@
 <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <include layout="@*com.google.android.gm:layout/toolbar_with_search" />
-    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="?android:windowContentOverlay">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="?*android:windowContentOverlay">
         <com.android.mail.ui.TwoPaneLayout android:id="@*com.google.android.gm:id/two_pane_activity" android:background="@*android:color/background_floating_material_dark" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foregroundGravity="fill_horizontal|center|top">
             <FrameLayout android:layout_gravity="left" android:id="@*com.google.android.gm:id/drawer" android:layout_width="@*com.google.android.gm:dimen/two_pane_drawer_width_open" android:layout_height="fill_parent">
                 <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@*com.google.android.gm:layout/drawer_fragment" />

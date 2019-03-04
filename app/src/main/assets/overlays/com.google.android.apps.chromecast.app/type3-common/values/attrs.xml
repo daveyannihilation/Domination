@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <attr name="alertDialogTitleIconStyle" format="reference" />
-    <attr name="alertDialogTitlePanelStyle" format="reference" />
-    <attr name="alertDialogTitleTextStyle" format="reference" />
     <attr name="bottomAppBarStyle" format="reference" />
     <attr name="bottomNavigationStyle" format="reference" />
     <attr name="bottomSheetDialogTheme" format="reference" />
     <attr name="bottomSheetStyle" format="reference" />
     <attr name="cardViewStyle" format="reference" />
     <attr name="castExpandedControllerToolbarStyle" format="reference" />
+    <attr name="checkedIcon" format="reference" />
     <attr name="chipGroupStyle" format="reference" />
     <attr name="chipStandaloneStyle" format="reference" />
     <attr name="chipStyle" format="reference" />
@@ -138,6 +136,9 @@
     <attr name="mediaRouteStopDrawable" format="reference" />
     <attr name="mediaRouteTheme" format="reference" />
     <attr name="mediaRouteTvIconDrawable" format="reference" />
+    <attr name="minTouchTargetSize" format="dimension" />
+    <attr name="mtrlColor" format="reference|color" />
+    <attr name="mtrlColors" format="reference" />
     <attr name="navigationViewStyle" format="reference" />
     <attr name="openSearchBarStyle" format="reference" />
     <attr name="openSearchViewPrefixStyle" format="reference" />
@@ -211,9 +212,12 @@
     <attr name="textInputStyle" format="reference" />
     <attr name="title" format="string" />
     <attr name="useMaterialThemeColors" format="boolean" />
+    <attr name="indent_divider" format="boolean" />
     <attr name="discSize" format="dimension" />
     <attr name="avatarSize" format="dimension" />
     <attr name="imageViewSize" format="dimension" />
+    <attr name="allowBadges" format="boolean" />
+    <attr name="allowRings" format="boolean" />
     <attr name="navigationMode">
         <enum name="listMode" value="1" />
         <enum name="normal" value="0" />
@@ -551,6 +555,9 @@
     <attr name="castSeekBarProgressDrawable" format="reference" />
     <attr name="castSeekBarThumbDrawable" format="reference" />
     <attr name="castSeekBarProgressAndThumbColor" format="color" />
+    <attr name="castSeekBarSecondaryProgressColor" format="color" />
+    <attr name="castSeekBarUnseekableProgressColor" format="color" />
+    <attr name="castSeekBarTooltipBackgroundColor" format="color" />
     <attr name="castExpandedControllerLoadingIndicatorColor" format="color" />
     <attr name="castAdBreakMarkerColor" format="color" />
     <attr name="castAdLabelColor" format="color" />
@@ -559,6 +566,8 @@
     <attr name="castAdInProgressTextColor" format="color" />
     <attr name="castAdInProgressLabelTextAppearance" format="reference" />
     <attr name="castLiveIndicatorColor" format="color" />
+    <attr name="castAdInProgressText" format="reference|string" />
+    <attr name="castDefaultAdPosterUrl" format="reference|string" />
     <attr name="castBackgroundColor" format="reference|color" />
     <attr name="castButtonBackgroundColor" format="reference|color" />
     <attr name="castButtonTextAppearance" format="reference" />
@@ -608,7 +617,6 @@
     <attr name="chipStrokeColor" format="color" />
     <attr name="chipStrokeWidth" format="dimension" />
     <attr name="chipMinTouchTargetSize" format="dimension" />
-    <attr name="chipTouchTargetDelegate" format="reference" />
     <attr name="ensureMinTouchTargetSize" format="boolean" />
     <attr name="chipIconVisible" format="boolean" />
     <attr name="chipIconEnabled" format="boolean" />
@@ -622,7 +630,6 @@
     <attr name="closeIconSize" format="dimension" />
     <attr name="checkedIconVisible" format="boolean" />
     <attr name="checkedIconEnabled" format="boolean" />
-    <attr name="checkedIcon" format="reference" />
     <attr name="chipStartPadding" format="dimension" />
     <attr name="iconStartPadding" format="dimension" />
     <attr name="iconEndPadding" format="dimension" />
@@ -853,8 +860,15 @@
     <attr name="fontVariationSettings" format="string" />
     <attr name="ttcIndex" format="integer" />
     <attr name="foregroundInsidePadding" format="boolean" />
+    <attr name="profileSize" format="dimension" />
+    <attr name="profileSrc" format="reference" />
+    <attr name="showRing" format="boolean" />
+    <attr name="increaseProfileSizeWithoutRing" format="boolean" />
     <attr name="colorSecondary50" format="color" />
     <attr name="colorSecondary100" format="color" />
+    <attr name="colorSecondary700" format="color" />
+    <attr name="colorOnSurfaceVariant" format="color" />
+    <attr name="colorHairline" format="color" />
     <attr name="textAppearanceDisplay1" format="reference" />
     <attr name="textAppearanceDisplay2" format="reference" />
     <attr name="textAppearanceDisplay3" format="reference" />
@@ -936,6 +950,14 @@
     <attr name="latLngBoundsSouthWestLongitude" format="float" />
     <attr name="latLngBoundsNorthEastLatitude" format="float" />
     <attr name="latLngBoundsNorthEastLongitude" format="float" />
+    <attr name="backgroundInsetStart" format="dimension" />
+    <attr name="backgroundInsetTop" format="dimension" />
+    <attr name="backgroundInsetEnd" format="dimension" />
+    <attr name="backgroundInsetBottom" format="dimension" />
+    <attr name="materialAlertDialogTitlePanelStyle" format="reference" />
+    <attr name="materialAlertDialogTitleIconStyle" format="reference" />
+    <attr name="materialAlertDialogTitleTextStyle" format="reference" />
+    <attr name="materialAlertDialogTheme" format="reference" />
     <attr name="iconPadding" format="dimension" />
     <attr name="iconGravity">
         <flag name="start" value="0x00000001" />
@@ -943,6 +965,8 @@
     </attr>
     <attr name="iconTint" format="color" />
     <attr name="cornerRadius" format="dimension" />
+    <attr name="cardForegroundColor" format="color" />
+    <attr name="checkedIconTint" format="color" />
     <attr name="shapeAppearance" format="reference" />
     <attr name="shapeAppearanceOverlay" format="reference" />
     <attr name="maxHeight" format="dimension" />
@@ -996,6 +1020,7 @@
     <attr name="itemIconPadding" format="dimension" />
     <attr name="itemIconSize" format="dimension" />
     <attr name="defaultMarginsEnabled" format="boolean" />
+    <attr name="defaultScrollFlagsEnabled" format="boolean" />
     <attr name="hideNavigationIcon" format="boolean" />
     <attr name="strokeColor" format="color" />
     <attr name="strokeWidth" format="dimension" />
@@ -1315,4 +1340,25 @@
         <enum name="large" value="-4" />
     </attr>
     <attr name="com_facebook_is_cropped" format="boolean" />
+    <attr name="mtrlSize">
+        <enum name="small" value="1" />
+        <enum name="large" value="3" />
+        <enum name="medium" value="2" />
+    </attr>
+    <attr name="mtrlIndeterminateProgressStyle">
+        <enum name="circular" value="0" />
+        <enum name="linear" value="1" />
+        <enum name="linearReverse" value="2" />
+    </attr>
+    <attr name="mtrlDeterminateProgressStyle">
+        <enum name="circular" value="0" />
+        <enum name="linear" value="1" />
+    </attr>
+    <attr name="mtrlLinearGrowFrom">
+        <enum name="bottom" value="0" />
+        <enum name="top" value="1" />
+        <enum name="off" value="2" />
+    </attr>
+    <attr name="mtrlLinearBarHeight" format="reference|dimension" />
+    <attr name="mtrlLinearBarInset" format="reference|dimension" />
 </resources>
