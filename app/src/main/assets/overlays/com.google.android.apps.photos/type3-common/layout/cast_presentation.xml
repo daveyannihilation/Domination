@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@*com.google.android.apps.photos:id/photos_cast_impl_pinwheel" android:paddingBottom="20.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@*com.google.android.apps.photos:drawable/pinwheel_no_star" android:layout_centerInParent="true" />
+        <ImageView android:id="@*com.google.android.apps.photos:id/photos_cast_impl_pinwheel_star" android:paddingBottom="20.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@*com.google.android.apps.photos:drawable/pinwheel_star" android:layout_alignLeft="@*com.google.android.apps.photos:id/photos_cast_impl_pinwheel" android:layout_alignTop="@*com.google.android.apps.photos:id/photos_cast_impl_pinwheel" />
+        <ImageView android:id="@*com.google.android.apps.photos:id/photos_cast_impl_logo" android:paddingBottom="40.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@*com.google.android.apps.photos:drawable/intro_google_logo" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ViewSwitcher android:id="@*com.google.android.apps.photos:id/photos_cast_impl_switcher" android:background="@*android:color/primary_text_leanback_light" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:inAnimation="@*com.google.android.apps.photos:anim/zoom_fade_in" android:outAnimation="@*com.google.android.apps.photos:anim/slide_out_left">
+        <include layout="@*com.google.android.apps.photos:layout/cast_photo" />
+        <include layout="@*com.google.android.apps.photos:layout/cast_photo" />
+    </ViewSwitcher>
+</merge>

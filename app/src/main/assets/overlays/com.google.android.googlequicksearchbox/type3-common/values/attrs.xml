@@ -232,6 +232,7 @@
     <attr name="levelBaseDrawable" format="reference" />
     <attr name="levelColors" format="reference|color" />
     <attr name="levelColors_v2" format="reference|color" />
+    <attr name="materialButtonOutlinedStyle" format="reference" />
     <attr name="materialButtonStyle" format="reference" />
     <attr name="materialCardViewStyle" format="reference" />
     <attr name="materialThemeOverlay" format="reference" />
@@ -455,6 +456,7 @@
         <flag name="enterAlways" value="0x00000004" />
         <flag name="enterAlwaysCollapsed" value="0x00000008" />
         <flag name="exitUntilCollapsed" value="0x00000002" />
+        <flag name="noScroll" value="0x00000000" />
         <flag name="scroll" value="0x00000001" />
         <flag name="snap" value="0x00000010" />
         <flag name="snapMargins" value="0x00000020" />
@@ -1733,6 +1735,8 @@
     <attr name="counterOverflowTextColor" format="reference" />
     <attr name="endIconMode">
         <enum name="none" value="0" />
+        <enum name="custom" value="-1" />
+        <enum name="clear_text" value="2" />
         <enum name="password_toggle" value="1" />
     </attr>
     <attr name="endIconDrawable" format="reference" />

@@ -122,6 +122,7 @@
         <flag name="chains" value="0x00000008" />
         <flag name="none" value="0x00000001" />
     </attr>
+    <attr name="materialButtonOutlinedStyle" format="reference" />
     <attr name="materialButtonStyle" format="reference" />
     <attr name="materialCardViewStyle" format="reference" />
     <attr name="materialThemeOverlay" format="reference" />
@@ -141,6 +142,7 @@
     <attr name="mtrlColor" format="reference|color" />
     <attr name="mtrlColors" format="reference" />
     <attr name="navigationViewStyle" format="reference" />
+    <attr name="ogAccountParticleStyle" format="reference" />
     <attr name="openSearchBarStyle" format="reference" />
     <attr name="openSearchViewPrefixStyle" format="reference" />
     <attr name="openSearchViewStyle" format="reference" />
@@ -171,11 +173,17 @@
     <attr name="title" format="string" />
     <attr name="useMaterialThemeColors" format="boolean" />
     <attr name="indent_divider" format="boolean" />
+    <attr name="displayNameTextAppearance" format="reference" />
+    <attr name="accountNameTextAppearance" format="reference" />
+    <attr name="disabledAccountHelpIconTint" format="color" />
     <attr name="discSize" format="dimension" />
     <attr name="avatarSize" format="dimension" />
+    <attr name="maxDiscContentSize" format="dimension" />
     <attr name="imageViewSize" format="dimension" />
     <attr name="allowBadges" format="boolean" />
     <attr name="allowRings" format="boolean" />
+    <attr name="discMinTouchTargetSize" format="dimension" />
+    <attr name="ensureDiscMinTouchTargetSize" format="boolean" />
     <attr name="navigationMode">
         <enum name="listMode" value="1" />
         <enum name="normal" value="0" />
@@ -242,6 +250,7 @@
         <flag name="enterAlways" value="0x00000004" />
         <flag name="enterAlwaysCollapsed" value="0x00000008" />
         <flag name="exitUntilCollapsed" value="0x00000002" />
+        <flag name="noScroll" value="0x00000000" />
         <flag name="scroll" value="0x00000001" />
         <flag name="snap" value="0x00000010" />
         <flag name="snapMargins" value="0x00000020" />
@@ -1048,6 +1057,7 @@
         <enum name="light" value="1" />
     </attr>
     <attr name="scopeUris" format="reference|string" />
+    <attr name="overlapPadding" format="boolean" />
     <attr name="snackbarStyle" format="reference" />
     <attr name="snackbarButtonStyle" format="reference" />
     <attr name="maxActionInlineWidth" format="dimension" />
@@ -1187,11 +1197,16 @@
     <attr name="counterTextColor" format="reference" />
     <attr name="counterOverflowTextAppearance" format="reference" />
     <attr name="counterOverflowTextColor" format="reference" />
-    <attr name="passwordToggleEnabled" format="boolean" />
-    <attr name="passwordToggleDrawable" format="reference" />
-    <attr name="passwordToggleContentDescription" format="string" />
-    <attr name="passwordToggleTint" format="color" />
-    <attr name="passwordToggleTintMode">
+    <attr name="endIconMode">
+        <enum name="none" value="0" />
+        <enum name="custom" value="-1" />
+        <enum name="clear_text" value="2" />
+        <enum name="password_toggle" value="1" />
+    </attr>
+    <attr name="endIconDrawable" format="reference" />
+    <attr name="endIconContentDescription" format="string" />
+    <attr name="endIconTint" format="color" />
+    <attr name="endIconTintMode">
         <enum name="multiply" value="14" />
         <enum name="screen" value="15" />
         <enum name="src_atop" value="9" />
@@ -1211,6 +1226,17 @@
     <attr name="boxStrokeColor" format="color" />
     <attr name="boxBackgroundColor" format="color" />
     <attr name="boxStrokeWidth" format="dimension" />
+    <attr name="passwordToggleEnabled" format="boolean" />
+    <attr name="passwordToggleDrawable" format="reference" />
+    <attr name="passwordToggleContentDescription" format="string" />
+    <attr name="passwordToggleTint" format="color" />
+    <attr name="passwordToggleTintMode">
+        <enum name="multiply" value="14" />
+        <enum name="screen" value="15" />
+        <enum name="src_atop" value="9" />
+        <enum name="src_in" value="5" />
+        <enum name="src_over" value="3" />
+    </attr>
     <attr name="buttonSelectableBackground" format="reference" />
     <attr name="listSelector" format="reference" />
     <attr name="enforceMaterialTheme" format="boolean" />
