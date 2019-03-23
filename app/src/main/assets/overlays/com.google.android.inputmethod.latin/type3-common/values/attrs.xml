@@ -379,6 +379,7 @@
     <attr name="bottomSheetDialogTheme" format="reference" />
     <attr name="bottomSheetStyle" format="reference" />
     <attr name="cardViewStyle" format="reference" />
+    <attr name="checkedIcon" format="reference" />
     <attr name="chipGroupStyle" format="reference" />
     <attr name="chipStandaloneStyle" format="reference" />
     <attr name="chipStyle" format="reference" />
@@ -401,6 +402,7 @@
     <attr name="constraintSet" format="reference" />
     <attr name="coordinatorLayoutStyle" format="reference" />
     <attr name="drawerArrowStyle" format="reference" />
+    <attr name="extendedFloatingActionButtonStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="floatingActionButtonStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="height" format="dimension" />
     <attr name="hideMotionSpec" format="reference" />
@@ -790,6 +792,14 @@
     <attr name="behavior_hideable" format="boolean" />
     <attr name="behavior_skipCollapsed" format="boolean" />
     <attr name="behavior_fitToContents" format="boolean" />
+    <attr name="behavior_saveFlags">
+        <flag name="all" value="0xffffffff" />
+        <flag name="none" value="0x00000000" />
+        <flag name="fitToContents" value="0x00000002" />
+        <flag name="hideable" value="0x00000004" />
+        <flag name="peekHeight" value="0x00000001" />
+        <flag name="skipCollapsed" value="0x00000008" />
+    </attr>
     <attr name="allowStacking" format="boolean" />
     <attr name="cardBackgroundColor" format="color" />
     <attr name="cardCornerRadius" format="dimension" />
@@ -826,7 +836,6 @@
     <attr name="closeIconSize" format="dimension" />
     <attr name="checkedIconVisible" format="boolean" />
     <attr name="checkedIconEnabled" format="boolean" />
-    <attr name="checkedIcon" format="reference" />
     <attr name="chipStartPadding" format="dimension" />
     <attr name="iconStartPadding" format="dimension" />
     <attr name="iconEndPadding" format="dimension" />
@@ -962,6 +971,7 @@
         <enum name="defaultStrategy" value="0" />
         <enum name="nonExistent" value="2" />
     </attr>
+    <attr name="behavior_autoShrink" format="boolean" />
     <attr name="paramName" format="string" />
     <attr name="paramValue" format="string" />
     <attr name="flagIf" format="reference" />
@@ -1086,10 +1096,11 @@
     <attr name="backgroundInsetTop" format="dimension" />
     <attr name="backgroundInsetEnd" format="dimension" />
     <attr name="backgroundInsetBottom" format="dimension" />
+    <attr name="materialAlertDialogTheme" format="reference" />
     <attr name="materialAlertDialogTitlePanelStyle" format="reference" />
     <attr name="materialAlertDialogTitleIconStyle" format="reference" />
     <attr name="materialAlertDialogTitleTextStyle" format="reference" />
-    <attr name="materialAlertDialogTheme" format="reference" />
+    <attr name="materialAlertDialogBodyTextStyle" format="reference" />
     <attr name="iconSize" format="dimension" />
     <attr name="iconPadding" format="dimension" />
     <attr name="iconGravity">
@@ -1098,6 +1109,9 @@
     </attr>
     <attr name="iconTint" format="color" />
     <attr name="cornerRadius" format="dimension" />
+    <attr name="cardForegroundColor" format="color" />
+    <attr name="checkedIconTint" format="color" />
+    <attr name="state_dragged" format="boolean" />
     <attr name="CoversSoftKey" format="boolean" />
     <attr name="PopupDistance" format="dimension" />
     <attr name="shapeAppearance" format="reference" />

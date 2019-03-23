@@ -148,6 +148,41 @@
         <item name="android:layout_weight">800.0</item>
         <item name="android:lineSpacingMultiplier">@*com.google.android.inputmethod.latin:dimen/native_language_hint_line_spacing_multiplier</item>
     </style>
+    <style name="OffOverlayContent" parent="@*com.google.android.inputmethod.latin:style/Label">
+        <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/off_overlay_title_content_size</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">4</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginStart">@*com.google.android.inputmethod.latin:dimen/off_overlay_content_margin_horizontal</item>
+        <item name="android:layout_marginEnd">@*com.google.android.inputmethod.latin:dimen/off_overlay_content_margin_horizontal</item>
+    </style>
+    <style name="OffOverlayTitle" parent="@*com.google.android.inputmethod.latin:style/Label">
+        <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/off_overlay_title_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@*com.google.android.inputmethod.latin:dimen/off_overlay_title_margin_bottom</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginStart">@*com.google.android.inputmethod.latin:dimen/off_overlay_title_margin_horizontal</item>
+        <item name="android:layout_marginEnd">@*com.google.android.inputmethod.latin:dimen/off_overlay_title_margin_horizontal</item>
+    </style>
+    <style name="OptInFirstPageTitle">
+        <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/opt_in_first_page_title_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@*com.google.android.inputmethod.latin:dimen/opt_in_first_page_title_margin_bottom</item>
+        <item name="android:layout_alignParentStart">true</item>
+    </style>
     <style name="PermissionNoticeContentText">
         <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/permission_notice_content_text_size</item>
         <item name="android:textColor">#ffdddddd</item>
@@ -177,6 +212,26 @@
     <style name="RateUsDialogTheme" parent="@*com.google.android.inputmethod.latin:style/Theme.AppCompat.Light.Dialog.Alert">
         <item name="android:windowBackground">@*android:color/background_dark</item>
     </style>
+    <style name="ReceivingActivityDescription">
+        <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/sharing_dialog_title_font_size</item>
+        <item name="android:textColor">#ffdddddd</item>
+        <item name="android:textColorLink">@*com.google.android.inputmethod.latin:color/blue_color</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">1.5</item>
+    </style>
+    <style name="ReceivingDialogDescription">
+        <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/sharing_dialog_title_font_size</item>
+        <item name="android:textColor">#ffdddddd</item>
+        <item name="android:textColorLink">@*com.google.android.inputmethod.latin:color/blue_color</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:paddingLeft">@*com.google.android.inputmethod.latin:dimen/sharing_dialog_content_padding</item>
+        <item name="android:paddingRight">@*com.google.android.inputmethod.latin:dimen/sharing_dialog_content_padding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">1.5</item>
+    </style>
     <style name="SearchHeaderInnerView">
         <item name="android:orientation">vertical</item>
         <item name="android:id">@*com.google.android.inputmethod.latin:id/search_header_inner_view</item>
@@ -200,6 +255,36 @@
     </style>
     <style name="SettingsButtonBorderlessColored" parent="@*android:style/Widget.Material.Button.Borderless" />
     <style name="SettingsTheme" parent="@*android:style/Theme.DeviceDefault.Light" />
+    <style name="SharingActivityText">
+        <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/sharing_activity_text_font_size</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+    <style name="SharingDescription">
+        <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/gboard_sharing_description_font_size</item>
+        <item name="android:textColor">#ffdddddd</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:paddingLeft">@*com.google.android.inputmethod.latin:dimen/sharing_dialog_content_padding</item>
+        <item name="android:paddingRight">@*com.google.android.inputmethod.latin:dimen/sharing_dialog_content_padding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@*com.google.android.inputmethod.latin:dimen/gboard_sharing_description_padding_top</item>
+        <item name="android:lineSpacingMultiplier">1.5</item>
+    </style>
+    <style name="SharingDialogTitle">
+        <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/sharing_dialog_title_font_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@*com.google.android.inputmethod.latin:dimen/sharing_dialog_title_padding_top</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:fontFamily">sans-medium</item>
+    </style>
     <style name="SignInCard">
         <item name="android:gravity">center_horizontal</item>
         <item name="android:orientation">vertical</item>

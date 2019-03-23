@@ -3,7 +3,8 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
         <FrameLayout android:id="@*com.whatsapp:id/search_toolbar_container" android:background="@*android:color/primary_material_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@*com.whatsapp:dimen/actionbar_elevation">
-            <include layout="@*com.whatsapp:layout/toolbar" />
+            <android.support.v7.widget.Toolbar android:id="@*com.whatsapp:id/toolbar" android:background="@*com.whatsapp:color/primary" android:layout_width="fill_parent" android:layout_height="@*com.whatsapp:dimen/abc_action_bar_default_height_material" android:minHeight="@*com.whatsapp:dimen/abc_action_bar_default_height_material" app:popupTheme="@*com.whatsapp:style/ThemeOverlay.AppCompat" app:theme="@*com.whatsapp:style/Toolbar"
+              xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />
             <FrameLayout android:id="@*com.whatsapp:id/search_holder" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@*com.whatsapp:dimen/abc_action_bar_default_height_material" />
         </FrameLayout>
         <ListView android:id="@*android:id/list" android:paddingBottom="90.0dip" android:clipToPadding="false" android:persistentDrawingCache="scrolling" android:alwaysDrawnWithCache="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@*android:color/transparent" android:divider="@*com.whatsapp:drawable/audio_picker_list_divider" android:dividerHeight="0.5dip" android:layout_below="@*com.whatsapp:id/search_toolbar_container" android:headerDividersEnabled="false" android:footerDividersEnabled="false" />

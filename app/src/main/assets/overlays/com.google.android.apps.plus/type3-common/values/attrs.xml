@@ -121,6 +121,7 @@
         <flag name="chains" value="0x00000008" />
         <flag name="none" value="0x00000001" />
     </attr>
+    <attr name="materialButtonOutlinedStyle" format="reference" />
     <attr name="materialButtonStyle" format="reference" />
     <attr name="materialCardViewStyle" format="reference" />
     <attr name="materialThemeOverlay" format="reference" />
@@ -229,6 +230,7 @@
         <flag name="enterAlways" value="0x00000004" />
         <flag name="enterAlwaysCollapsed" value="0x00000008" />
         <flag name="exitUntilCollapsed" value="0x00000002" />
+        <flag name="noScroll" value="0x00000000" />
         <flag name="scroll" value="0x00000001" />
         <flag name="snap" value="0x00000010" />
         <flag name="snapMargins" value="0x00000020" />
@@ -421,6 +423,7 @@
         <enum name="selected" value="0" />
         <enum name="unlabeled" value="2" />
     </attr>
+    <attr name="itemRippleColor" format="color" />
     <attr name="itemTextAppearanceInactive" format="reference" />
     <attr name="itemTextAppearanceActive" format="reference" />
     <attr name="itemHorizontalTranslationEnabled" format="boolean" />
@@ -648,6 +651,9 @@
     <attr name="ttcIndex" format="integer" />
     <attr name="foregroundInsidePadding" format="boolean" />
     <attr name="maxHeightPercentage" format="float" />
+    <attr name="colorPrimaryGoogle" format="color" />
+    <attr name="colorPrimaryVariantGoogle" format="color" />
+    <attr name="colorOnPrimaryGoogle" format="color" />
     <attr name="colorSecondary50" format="color" />
     <attr name="colorSecondary100" format="color" />
     <attr name="colorSecondary700" format="color" />
@@ -1137,11 +1143,16 @@
     <attr name="counterTextColor" format="reference" />
     <attr name="counterOverflowTextAppearance" format="reference" />
     <attr name="counterOverflowTextColor" format="reference" />
-    <attr name="passwordToggleEnabled" format="boolean" />
-    <attr name="passwordToggleDrawable" format="reference" />
-    <attr name="passwordToggleContentDescription" format="string" />
-    <attr name="passwordToggleTint" format="color" />
-    <attr name="passwordToggleTintMode">
+    <attr name="endIconMode">
+        <enum name="none" value="0" />
+        <enum name="custom" value="-1" />
+        <enum name="clear_text" value="2" />
+        <enum name="password_toggle" value="1" />
+    </attr>
+    <attr name="endIconDrawable" format="reference" />
+    <attr name="endIconContentDescription" format="string" />
+    <attr name="endIconTint" format="color" />
+    <attr name="endIconTintMode">
         <enum name="multiply" value="14" />
         <enum name="screen" value="15" />
         <enum name="src_atop" value="9" />
@@ -1161,6 +1172,17 @@
     <attr name="boxStrokeColor" format="color" />
     <attr name="boxBackgroundColor" format="color" />
     <attr name="boxStrokeWidth" format="dimension" />
+    <attr name="passwordToggleEnabled" format="boolean" />
+    <attr name="passwordToggleDrawable" format="reference" />
+    <attr name="passwordToggleContentDescription" format="string" />
+    <attr name="passwordToggleTint" format="color" />
+    <attr name="passwordToggleTintMode">
+        <enum name="multiply" value="14" />
+        <enum name="screen" value="15" />
+        <enum name="src_atop" value="9" />
+        <enum name="src_in" value="5" />
+        <enum name="src_over" value="3" />
+    </attr>
     <attr name="hideIcon" format="boolean" />
     <attr name="hideSeparator" format="boolean" />
     <attr name="hideChevron" format="boolean" />
@@ -1174,6 +1196,7 @@
     <attr name="iconPaddingBottom" format="dimension" />
     <attr name="iconPaddingRight" format="dimension" />
     <attr name="iconMinWidth" format="dimension" />
+    <attr name="isDasher" format="boolean" />
     <attr name="buttonBarStylePlus" format="reference" />
     <attr name="buttonBarButtonStylePlus" format="reference" />
     <attr name="editAudienceBackground" format="reference" />

@@ -26,6 +26,7 @@
     <attr name="colorSurface" format="color" />
     <attr name="coordinatorLayoutStyle" format="reference" />
     <attr name="drawerArrowStyle" format="reference" />
+    <attr name="extendedFloatingActionButtonStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="floatingActionButtonStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="height" format="dimension" />
     <attr name="hideMotionSpec" format="reference" />
@@ -44,6 +45,7 @@
     <attr name="hwrSpaceContentDescription" format="string" />
     <attr name="isLightTheme" format="boolean" />
     <attr name="isMaterialTheme" format="boolean" />
+    <attr name="materialButtonOutlinedStyle" format="reference" />
     <attr name="materialButtonStyle" format="reference" />
     <attr name="materialCardViewStyle" format="reference" />
     <attr name="materialThemeOverlay" format="reference" />
@@ -141,6 +143,7 @@
         <flag name="enterAlways" value="0x00000004" />
         <flag name="enterAlwaysCollapsed" value="0x00000008" />
         <flag name="exitUntilCollapsed" value="0x00000002" />
+        <flag name="noScroll" value="0x00000000" />
         <flag name="scroll" value="0x00000001" />
         <flag name="snap" value="0x00000010" />
         <flag name="snapMargins" value="0x00000020" />
@@ -327,6 +330,14 @@
     <attr name="behavior_hideable" format="boolean" />
     <attr name="behavior_skipCollapsed" format="boolean" />
     <attr name="behavior_fitToContents" format="boolean" />
+    <attr name="behavior_saveFlags">
+        <flag name="none" value="0x00000000" />
+        <flag name="all" value="0xffffffff" />
+        <flag name="fitToContents" value="0x00000002" />
+        <flag name="hideable" value="0x00000004" />
+        <flag name="peekHeight" value="0x00000001" />
+        <flag name="skipCollapsed" value="0x00000008" />
+    </attr>
     <attr name="barColor" format="color" />
     <attr name="barHeight" format="dimension" />
     <attr name="detentWidth" format="dimension" />
@@ -480,12 +491,12 @@
     <attr name="layout_dodgeInsetEdges">
         <flag name="none" value="0x00000000" />
         <flag name="end" value="0x00800005" />
+        <flag name="all" value="0x00000077" />
         <flag name="bottom" value="0x00000050" />
         <flag name="left" value="0x00000003" />
         <flag name="right" value="0x00000005" />
         <flag name="start" value="0x00800003" />
         <flag name="top" value="0x00000030" />
-        <flag name="all" value="0x00000077" />
     </attr>
     <attr name="innerLayout" format="reference" />
     <attr name="color" format="color" />
@@ -508,6 +519,7 @@
         <enum name="src_in" value="5" />
         <enum name="src_over" value="3" />
     </attr>
+    <attr name="behavior_autoShrink" format="boolean" />
     <attr name="aspectRatio" format="float" />
     <attr name="flexDirection">
         <enum name="column" value="2" />
@@ -642,6 +654,9 @@
     <attr name="strokeColorRecognized" format="color" />
     <attr name="strokeColorPreviouslyRecognized" format="color" />
     <attr name="disablePinButton" format="boolean" />
+    <attr name="pickerTextColor" format="reference|color" />
+    <attr name="hideCarets" format="boolean" />
+    <attr name="showAutoSwapToast" format="boolean" />
     <attr name="measureWithLargestChild" format="boolean" />
     <attr name="showDividers">
         <flag name="none" value="0x00000000" />
@@ -661,10 +676,11 @@
     <attr name="backgroundInsetTop" format="dimension" />
     <attr name="backgroundInsetEnd" format="dimension" />
     <attr name="backgroundInsetBottom" format="dimension" />
+    <attr name="materialAlertDialogTheme" format="reference" />
     <attr name="materialAlertDialogTitlePanelStyle" format="reference" />
     <attr name="materialAlertDialogTitleIconStyle" format="reference" />
     <attr name="materialAlertDialogTitleTextStyle" format="reference" />
-    <attr name="materialAlertDialogTheme" format="reference" />
+    <attr name="materialAlertDialogBodyTextStyle" format="reference" />
     <attr name="iconSize" format="dimension" />
     <attr name="iconPadding" format="dimension" />
     <attr name="iconGravity">
@@ -675,6 +691,7 @@
     <attr name="cornerRadius" format="dimension" />
     <attr name="cardForegroundColor" format="color" />
     <attr name="checkedIconTint" format="color" />
+    <attr name="state_dragged" format="boolean" />
     <attr name="shapeAppearance" format="reference" />
     <attr name="shapeAppearanceOverlay" format="reference" />
     <attr name="maxHeight" format="dimension" />
@@ -909,11 +926,16 @@
     <attr name="counterTextColor" format="reference" />
     <attr name="counterOverflowTextAppearance" format="reference" />
     <attr name="counterOverflowTextColor" format="reference" />
-    <attr name="passwordToggleEnabled" format="boolean" />
-    <attr name="passwordToggleDrawable" format="reference" />
-    <attr name="passwordToggleContentDescription" format="string" />
-    <attr name="passwordToggleTint" format="color" />
-    <attr name="passwordToggleTintMode">
+    <attr name="endIconMode">
+        <enum name="none" value="0" />
+        <enum name="custom" value="-1" />
+        <enum name="clear_text" value="2" />
+        <enum name="password_toggle" value="1" />
+    </attr>
+    <attr name="endIconDrawable" format="reference" />
+    <attr name="endIconContentDescription" format="string" />
+    <attr name="endIconTint" format="color" />
+    <attr name="endIconTintMode">
         <enum name="multiply" value="14" />
         <enum name="screen" value="15" />
         <enum name="src_atop" value="9" />
@@ -933,6 +955,17 @@
     <attr name="boxStrokeColor" format="color" />
     <attr name="boxBackgroundColor" format="color" />
     <attr name="boxStrokeWidth" format="dimension" />
+    <attr name="passwordToggleEnabled" format="boolean" />
+    <attr name="passwordToggleDrawable" format="reference" />
+    <attr name="passwordToggleContentDescription" format="string" />
+    <attr name="passwordToggleTint" format="color" />
+    <attr name="passwordToggleTintMode">
+        <enum name="multiply" value="14" />
+        <enum name="screen" value="15" />
+        <enum name="src_atop" value="9" />
+        <enum name="src_in" value="5" />
+        <enum name="src_over" value="3" />
+    </attr>
     <attr name="enforceMaterialTheme" format="boolean" />
     <attr name="enforceTextAppearance" format="boolean" />
     <attr name="mask" format="reference" />

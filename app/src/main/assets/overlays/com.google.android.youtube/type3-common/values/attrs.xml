@@ -29,8 +29,6 @@
     <attr name="cardViewStyle" format="reference" />
     <attr name="castExpandedControllerToolbarStyle" format="reference" />
     <attr name="channelListSubMenuAvatarStatus" format="reference" />
-    <attr name="channelNotificationPreferencesOffIcon" format="reference" />
-    <attr name="channelNotificationPreferencesOnIcon" format="reference" />
     <attr name="checkedIcon" format="reference" />
     <attr name="chipGroupStyle" format="reference" />
     <attr name="chipStandaloneStyle" format="reference" />
@@ -244,6 +242,7 @@
     <attr name="loadingFrameTextColor" format="reference" />
     <attr name="materialButtonOutlinedStyle" format="reference" />
     <attr name="materialButtonStyle" format="reference" />
+    <attr name="materialButtonToggleGroupStyle" format="reference" />
     <attr name="materialCardViewStyle" format="reference" />
     <attr name="materialThemeOverlay" format="reference" />
     <attr name="mdxIcMic" format="reference" />
@@ -271,11 +270,6 @@
     <attr name="navigationBarDividerSize" format="dimension" />
     <attr name="navigationBarStyle" format="reference" />
     <attr name="navigationViewStyle" format="reference" />
-    <attr name="notificationsActiveIcon" format="reference" />
-    <attr name="notificationsIcon" format="reference" />
-    <attr name="notificationsNoneIcon" format="reference" />
-    <attr name="notificationsOccasionalIcon" format="reference" />
-    <attr name="notificationsOffIcon" format="reference" />
     <attr name="offlineStorageBarBackground" format="reference|color" />
     <attr name="openSearchBarStyle" format="reference" />
     <attr name="openSearchViewPrefixStyle" format="reference" />
@@ -331,7 +325,6 @@
     <attr name="textInputStyle" format="reference" />
     <attr name="title" format="string" />
     <attr name="useMaterialThemeColors" format="boolean" />
-    <attr name="userMentionSearchViewTheme" format="reference" />
     <attr name="youtubeRedOriginalsButtonRedIcon" format="reference" />
     <attr name="yt10PercentLayer" format="reference|color" />
     <attr name="ytBadgeBackground1" format="reference|color" />
@@ -376,6 +369,8 @@
     <attr name="ytOverlayBackgroundMedium" format="reference|color" />
     <attr name="ytOverlayButtonActive" format="reference|color" />
     <attr name="ytOverlayButtonInactive" format="reference|color" />
+    <attr name="ytOverlayButtonPrimary" format="reference|color" />
+    <attr name="ytOverlayButtonSecondary" format="reference|color" />
     <attr name="ytOverlayIconActiveCallToAction" format="reference|color" />
     <attr name="ytOverlayIconActiveOther" format="reference|color" />
     <attr name="ytOverlayIconDisabled" format="reference|color" />
@@ -497,6 +492,7 @@
     <attr name="showTitle" format="boolean" />
     <attr name="buttonIconDimen" format="dimension" />
     <attr name="minIntervalSeconds" format="integer" />
+    <attr name="logoPlaceholderDrawable" format="reference" />
     <attr name="logoSpriteDrawable" format="reference" />
     <attr name="frameCount" format="integer" />
     <attr name="durationMillis" format="integer" />
@@ -511,6 +507,7 @@
         <flag name="enterAlways" value="0x00000004" />
         <flag name="enterAlwaysCollapsed" value="0x00000008" />
         <flag name="exitUntilCollapsed" value="0x00000002" />
+        <flag name="noScroll" value="0x00000000" />
         <flag name="scroll" value="0x00000001" />
         <flag name="snap" value="0x00000010" />
         <flag name="snapMargins" value="0x00000020" />
@@ -688,6 +685,7 @@
         <enum name="selected" value="0" />
         <enum name="unlabeled" value="2" />
     </attr>
+    <attr name="itemRippleColor" format="color" />
     <attr name="itemTextAppearanceInactive" format="reference" />
     <attr name="itemTextAppearanceActive" format="reference" />
     <attr name="itemHorizontalTranslationEnabled" format="boolean" />
@@ -997,6 +995,14 @@
     <attr name="edit_location_suggestion_text_color" format="color" />
     <attr name="edit_location_suggestion_text_highlight_color" format="color" />
     <attr name="edit_location_divider_color" format="color" />
+    <attr name="cornerRadius" format="dimension" />
+    <attr name="hasShadow" format="boolean" />
+    <attr name="maxEmojiCount" format="integer" />
+    <attr name="emojiReplaceStrategy">
+        <enum name="all" value="1" />
+        <enum name="defaultStrategy" value="0" />
+        <enum name="nonExistent" value="2" />
+    </attr>
     <attr name="behavior_autoShrink" format="boolean" />
     <attr name="itemSize" format="dimension" />
     <attr name="itemOffset" format="dimension" />
@@ -1131,6 +1137,9 @@
         <enum name="thing_proto" value="9" />
     </attr>
     <attr name="sectionContent" format="string" />
+    <attr name="colorPrimaryGoogle" format="color" />
+    <attr name="colorPrimaryVariantGoogle" format="color" />
+    <attr name="colorOnPrimaryGoogle" format="color" />
     <attr name="colorSecondary50" format="color" />
     <attr name="colorSecondary100" format="color" />
     <attr name="colorSecondary700" format="color" />
@@ -1240,7 +1249,7 @@
         <flag name="textStart" value="0x00000002" />
     </attr>
     <attr name="iconTint" format="color" />
-    <attr name="cornerRadius" format="dimension" />
+    <attr name="checkedButton" format="reference" />
     <attr name="cardForegroundColor" format="color" />
     <attr name="checkedIconTint" format="color" />
     <attr name="state_dragged" format="boolean" />
@@ -1426,6 +1435,9 @@
     <attr name="fastScrollVerticalTrackDrawable" format="reference" />
     <attr name="fastScrollHorizontalThumbDrawable" format="reference" />
     <attr name="fastScrollHorizontalTrackDrawable" format="reference" />
+    <attr name="itemCount" format="integer" />
+    <attr name="itemGap" format="dimension" />
+    <attr name="itemPeekAmount" format="dimension" />
     <attr name="corners" format="dimension" />
     <attr name="cornerStartBottom" format="dimension" />
     <attr name="cornerEndBottom" format="dimension" />
@@ -1661,6 +1673,7 @@
     <attr name="counterOverflowTextColor" format="reference" />
     <attr name="endIconMode">
         <enum name="none" value="0" />
+        <enum name="custom" value="-1" />
         <enum name="clear_text" value="2" />
         <enum name="password_toggle" value="1" />
     </attr>
