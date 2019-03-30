@@ -27,6 +27,8 @@
     <attr name="constraintSet" format="reference" />
     <attr name="coordinatorLayoutStyle" format="reference" />
     <attr name="drawerArrowStyle" format="reference" />
+    <attr name="elevationOverlaysColor" format="color" />
+    <attr name="elevationOverlaysEnabled" format="boolean" />
     <attr name="extendedFloatingActionButtonStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="floatingActionButtonStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="height" format="dimension" />
@@ -123,13 +125,21 @@
     </attr>
     <attr name="materialButtonOutlinedStyle" format="reference" />
     <attr name="materialButtonStyle" format="reference" />
+    <attr name="materialButtonToggleGroupStyle" format="reference" />
     <attr name="materialCardViewStyle" format="reference" />
+    <attr name="materialDatePickerDialogTheme" format="reference" />
+    <attr name="materialDatePickerStyle" format="reference" />
+    <attr name="materialDateRangePickerDialogTheme" format="reference" />
+    <attr name="materialDateRangePickerStyle" format="reference" />
     <attr name="materialThemeOverlay" format="reference" />
     <attr name="mediaRouteAudioTrackDrawable" format="reference" />
+    <attr name="mediaRouteBodyTextAppearance" format="reference" />
     <attr name="mediaRouteButtonStyle" format="reference" />
     <attr name="mediaRouteCloseDrawable" format="reference" />
     <attr name="mediaRouteControlPanelThemeOverlay" format="reference" />
     <attr name="mediaRouteDefaultIconDrawable" format="reference" />
+    <attr name="mediaRouteDividerColor" format="color" />
+    <attr name="mediaRouteHeaderTextAppearance" format="reference" />
     <attr name="mediaRoutePauseDrawable" format="reference" />
     <attr name="mediaRoutePlayDrawable" format="reference" />
     <attr name="mediaRouteSpeakerGroupIconDrawable" format="reference" />
@@ -151,6 +161,7 @@
     <attr name="shapeAppearanceMediumComponent" format="reference" />
     <attr name="shapeAppearanceSmallComponent" format="reference" />
     <attr name="showMotionSpec" format="reference" />
+    <attr name="singleSelection" format="boolean" />
     <attr name="tabStyle" format="reference" />
     <attr name="textAppearanceBody1" format="reference" />
     <attr name="textAppearanceBody2" format="reference" />
@@ -216,6 +227,7 @@
     <attr name="showTitle" format="boolean" />
     <attr name="buttonIconDimen" format="dimension" />
     <attr name="minIntervalSeconds" format="integer" />
+    <attr name="logoPlaceholderDrawable" format="reference" />
     <attr name="logoSpriteDrawable" format="reference" />
     <attr name="frameCount" format="integer" />
     <attr name="durationMillis" format="integer" />
@@ -257,6 +269,7 @@
         <enum name="src_over" value="3" />
     </attr>
     <attr name="textAllCaps" format="reference|boolean" />
+    <attr name="textLocale" format="string" />
     <attr name="autoSizeTextType">
         <enum name="none" value="0" />
         <enum name="uniform" value="1" />
@@ -269,6 +282,13 @@
     <attr name="lineHeight" format="dimension" />
     <attr name="firstBaselineToTopHeight" format="dimension" />
     <attr name="lastBaselineToBottomHeight" format="dimension" />
+    <attr name="fontVariationSettings" format="string" />
+    <attr name="drawableLeftCompat" format="reference" />
+    <attr name="drawableTopCompat" format="reference" />
+    <attr name="drawableRightCompat" format="reference" />
+    <attr name="drawableBottomCompat" format="reference" />
+    <attr name="drawableStartCompat" format="reference" />
+    <attr name="drawableEndCompat" format="reference" />
     <attr name="windowActionBar" format="boolean" />
     <attr name="windowNoTitle" format="boolean" />
     <attr name="windowActionBarOverlay" format="boolean" />
@@ -345,6 +365,8 @@
     <attr name="listPreferredItemHeightLarge" format="dimension" />
     <attr name="listPreferredItemPaddingLeft" format="dimension" />
     <attr name="listPreferredItemPaddingRight" format="dimension" />
+    <attr name="listPreferredItemPaddingStart" format="dimension" />
+    <attr name="listPreferredItemPaddingEnd" format="dimension" />
     <attr name="dropDownListViewStyle" format="reference" />
     <attr name="listPopupWindowStyle" format="reference" />
     <attr name="textAppearanceListItem" format="reference" />
@@ -390,6 +412,8 @@
     <attr name="tooltipForegroundColor" format="reference|color" />
     <attr name="colorError" format="reference|color" />
     <attr name="viewInflaterClass" format="string" />
+    <attr name="listChoiceIndicatorMultipleAnimated" format="reference" />
+    <attr name="listChoiceIndicatorSingleAnimated" format="reference" />
     <attr name="autoResizeText_resizeStepUnit">
         <enum name="unitDip" value="1" />
         <enum name="unitIn" value="4" />
@@ -488,7 +512,6 @@
     <attr name="chipSpacingHorizontal" format="dimension" />
     <attr name="chipSpacingVertical" format="dimension" />
     <attr name="singleLine" format="boolean" />
-    <attr name="singleSelection" format="boolean" />
     <attr name="checkedChip" format="reference" />
     <attr name="maxLines" format="integer" />
     <attr name="allowChipModification" format="boolean" />
@@ -543,6 +566,7 @@
     </attr>
     <attr name="layout_minorSpan" format="integer" />
     <attr name="layout_majorSpan" format="integer" />
+    <attr name="buttonCompat" format="reference" />
     <attr name="buttonTint" format="color" />
     <attr name="buttonTintMode">
         <enum name="add" value="16" />
@@ -610,6 +634,7 @@
     <attr name="barLength" format="dimension" />
     <attr name="thickness" format="dimension" />
     <attr name="leafDescendantWidth" format="dimension" />
+    <attr name="useSimpleSummaryProvider" format="boolean" />
     <attr name="entrySummaries" format="reference" />
     <attr name="layout_x" format="integer" />
     <attr name="layout_y" format="integer" />
@@ -647,7 +672,6 @@
     </attr>
     <attr name="font" format="reference" />
     <attr name="fontWeight" format="integer" />
-    <attr name="fontVariationSettings" format="string" />
     <attr name="ttcIndex" format="integer" />
     <attr name="foregroundInsidePadding" format="boolean" />
     <attr name="maxHeightPercentage" format="float" />
@@ -767,12 +791,14 @@
     </attr>
     <attr name="iconTint" format="color" />
     <attr name="cornerRadius" format="dimension" />
+    <attr name="checkedButton" format="reference" />
     <attr name="cardForegroundColor" format="color" />
     <attr name="checkedIconTint" format="color" />
     <attr name="state_dragged" format="boolean" />
     <attr name="shapeAppearance" format="reference" />
     <attr name="shapeAppearanceOverlay" format="reference" />
     <attr name="externalRouteEnabledDrawable" format="reference" />
+    <attr name="externalRouteEnabledDrawableStatic" format="reference" />
     <attr name="mediaRouteButtonTint" format="color" />
     <attr name="mediaViewStyle" format="reference" />
     <attr name="gifOverlayIcon" format="reference" />
@@ -863,12 +889,14 @@
     <attr name="singleLineTitle" format="boolean" />
     <attr name="iconSpaceReserved" format="boolean" />
     <attr name="isPreferenceVisible" format="boolean" />
+    <attr name="enableCopying" format="boolean" />
     <attr name="allowDividerAfterLastItem" format="boolean" />
     <attr name="orderingFromXml" format="boolean" />
     <attr name="initialExpandedChildrenCount" format="integer" />
     <attr name="maxWidth" format="dimension" />
     <attr name="maxHeight" format="dimension" />
     <attr name="preferenceTheme" format="reference" />
+    <attr name="preferenceCategoryTitleTextAppearance" format="reference" />
     <attr name="preferenceScreenStyle" format="reference" />
     <attr name="preferenceActivityStyle" format="reference" />
     <attr name="preferenceFragmentStyle" format="reference" />
@@ -1042,6 +1070,8 @@
     <attr name="supportShouldDisableView" format="boolean" />
     <attr name="supportTitleTextAppearance" format="reference" />
     <attr name="supportSummaryTextAppearance" format="reference" />
+    <attr name="supportTitleDisabledTextAppearance" format="reference" />
+    <attr name="supportSummaryDisabledTextAppearance" format="reference" />
     <attr name="supportOrderingFromXml" format="boolean" />
     <attr name="supportPaddingSize" format="integer" />
     <attr name="supportTextSize" format="integer" />

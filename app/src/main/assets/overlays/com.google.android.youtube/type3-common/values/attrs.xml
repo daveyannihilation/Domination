@@ -70,7 +70,12 @@
     <attr name="defaultItemSelector" format="reference" />
     <attr name="downloadsPageEmptyIcon" format="reference" />
     <attr name="drawerArrowStyle" format="reference" />
+    <attr name="dynamic_sticker_background" format="color" />
+    <attr name="dynamic_sticker_text_color" format="color" />
+    <attr name="dynamic_sticker_title_text_color" format="color" />
     <attr name="editLocationTheme" format="reference" />
+    <attr name="elevationOverlaysColor" format="color" />
+    <attr name="elevationOverlaysEnabled" format="boolean" />
     <attr name="expandButtonIcon" format="reference" />
     <attr name="extendedFloatingActionButtonStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="flex" format="float" />
@@ -240,17 +245,26 @@
     <attr name="liveChatViewerEngagementMessageBackground" format="reference" />
     <attr name="loadingFrameErrorDrawable" format="reference" />
     <attr name="loadingFrameTextColor" format="reference" />
+    <attr name="location_sticker_icon" format="reference" />
+    <attr name="loggedOutLibrary" format="reference|color" />
     <attr name="materialButtonOutlinedStyle" format="reference" />
     <attr name="materialButtonStyle" format="reference" />
     <attr name="materialButtonToggleGroupStyle" format="reference" />
     <attr name="materialCardViewStyle" format="reference" />
+    <attr name="materialDatePickerDialogTheme" format="reference" />
+    <attr name="materialDatePickerStyle" format="reference" />
+    <attr name="materialDateRangePickerDialogTheme" format="reference" />
+    <attr name="materialDateRangePickerStyle" format="reference" />
     <attr name="materialThemeOverlay" format="reference" />
     <attr name="mdxIcMic" format="reference" />
     <attr name="mediaRouteAudioTrackDrawable" format="reference" />
+    <attr name="mediaRouteBodyTextAppearance" format="reference" />
     <attr name="mediaRouteButtonStyle" format="reference" />
     <attr name="mediaRouteCloseDrawable" format="reference" />
     <attr name="mediaRouteControlPanelThemeOverlay" format="reference" />
     <attr name="mediaRouteDefaultIconDrawable" format="reference" />
+    <attr name="mediaRouteDividerColor" format="color" />
+    <attr name="mediaRouteHeaderTextAppearance" format="reference" />
     <attr name="mediaRoutePauseDrawable" format="reference" />
     <attr name="mediaRoutePlayDrawable" format="reference" />
     <attr name="mediaRouteSpeakerGroupIconDrawable" format="reference" />
@@ -296,6 +310,7 @@
     <attr name="shareSelectableNameColor" format="reference|color" />
     <attr name="shareUserAreaBackground" format="reference" />
     <attr name="showMotionSpec" format="reference" />
+    <attr name="singleSelection" format="boolean" />
     <attr name="standaloneBadgeBackground" format="reference|color" />
     <attr name="standaloneCollectionBadgeBackground" format="reference|color" />
     <attr name="standaloneRedBadgeBackground" format="reference|color" />
@@ -325,6 +340,8 @@
     <attr name="textInputStyle" format="reference" />
     <attr name="title" format="string" />
     <attr name="useMaterialThemeColors" format="boolean" />
+    <attr name="user_mention_sticker_icon" format="reference" />
+    <attr name="watchHistoryPausedIcon" format="reference" />
     <attr name="youtubeRedOriginalsButtonRedIcon" format="reference" />
     <attr name="yt10PercentLayer" format="reference|color" />
     <attr name="ytBadgeBackground1" format="reference|color" />
@@ -347,6 +364,9 @@
     <attr name="ytCloudChipCheckboxBackground" format="reference|color" />
     <attr name="ytCloudChipDefaultBackground" format="reference|color" />
     <attr name="ytCloudChipDisabledBackground" format="reference|color" />
+    <attr name="ytCloudChipFilterGhostBackground" format="reference|color" />
+    <attr name="ytCloudChipFilterSelectedBackground" format="reference|color" />
+    <attr name="ytCloudChipFilterUnselectedBackground" format="reference|color" />
     <attr name="ytCloudChipHomeFilterGhostBackground" format="reference|color" />
     <attr name="ytCloudChipHomeFilterSelectedBackground" format="reference|color" />
     <attr name="ytCloudChipHomeFilterUnselectedBackground" format="reference|color" />
@@ -379,7 +399,6 @@
     <attr name="ytOverlayTextSecondary" format="reference|color" />
     <attr name="ytOverlayTextTertiary" format="reference|color" />
     <attr name="ytPremiumWordmarkHeader" format="reference" />
-    <attr name="ytSelectedNavIcon" format="reference|color" />
     <attr name="ytSelectedNavText" format="reference|color" />
     <attr name="ytSeparator" format="reference|color" />
     <attr name="ytSpinnerItemBackground" format="reference|color" />
@@ -410,12 +429,16 @@
     <attr name="ytTextDisabled" format="reference|color" />
     <attr name="ytTextError" format="reference|color" />
     <attr name="ytTextPrimary" format="reference|color" />
+    <attr name="ytTextPrimaryInverse" format="reference|color" />
     <attr name="ytTextSecondary" format="reference|color" />
+    <attr name="ytThemeType">
+        <enum name="dark" value="1" />
+        <enum name="light" value="0" />
+    </attr>
     <attr name="ytThemedBlue" format="reference|color" />
     <attr name="ytThemedGreen" format="reference|color" />
     <attr name="ytTimestampBackground" format="reference|color" />
     <attr name="ytTouchResponse" format="reference|color" />
-    <attr name="ytUnselectedNavIcon" format="reference|color" />
     <attr name="ytWordmarkHeader" format="reference" />
     <attr name="backgroundViewId" format="reference" />
     <attr name="footerViewId" format="reference" />
@@ -534,6 +557,7 @@
         <enum name="src_over" value="3" />
     </attr>
     <attr name="textAllCaps" format="reference|boolean" />
+    <attr name="textLocale" format="string" />
     <attr name="autoSizeTextType">
         <enum name="none" value="0" />
         <enum name="uniform" value="1" />
@@ -546,6 +570,13 @@
     <attr name="lineHeight" format="dimension" />
     <attr name="firstBaselineToTopHeight" format="dimension" />
     <attr name="lastBaselineToBottomHeight" format="dimension" />
+    <attr name="fontVariationSettings" format="string" />
+    <attr name="drawableLeftCompat" format="reference" />
+    <attr name="drawableTopCompat" format="reference" />
+    <attr name="drawableRightCompat" format="reference" />
+    <attr name="drawableBottomCompat" format="reference" />
+    <attr name="drawableStartCompat" format="reference" />
+    <attr name="drawableEndCompat" format="reference" />
     <attr name="windowActionBar" format="boolean" />
     <attr name="windowNoTitle" format="boolean" />
     <attr name="windowActionBarOverlay" format="boolean" />
@@ -622,6 +653,8 @@
     <attr name="listPreferredItemHeightLarge" format="dimension" />
     <attr name="listPreferredItemPaddingLeft" format="dimension" />
     <attr name="listPreferredItemPaddingRight" format="dimension" />
+    <attr name="listPreferredItemPaddingStart" format="dimension" />
+    <attr name="listPreferredItemPaddingEnd" format="dimension" />
     <attr name="dropDownListViewStyle" format="reference" />
     <attr name="listPopupWindowStyle" format="reference" />
     <attr name="textAppearanceListItem" format="reference" />
@@ -667,6 +700,8 @@
     <attr name="tooltipForegroundColor" format="reference|color" />
     <attr name="colorError" format="reference|color" />
     <attr name="viewInflaterClass" format="string" />
+    <attr name="listChoiceIndicatorMultipleAnimated" format="reference" />
+    <attr name="listChoiceIndicatorSingleAnimated" format="reference" />
     <attr name="fabAlignmentMode">
         <enum name="center" value="0" />
         <enum name="end" value="1" />
@@ -805,7 +840,6 @@
     <attr name="chipSpacingHorizontal" format="dimension" />
     <attr name="chipSpacingVertical" format="dimension" />
     <attr name="singleLine" format="boolean" />
-    <attr name="singleSelection" format="boolean" />
     <attr name="checkedChip" format="reference" />
     <attr name="chooseFilterLayout">
         <enum name="camera" value="1" />
@@ -871,6 +905,7 @@
     <attr name="translucentSecondaryColor" format="color" />
     <attr name="alpha" format="float" />
     <attr name="referencePadding" format="dimension" />
+    <attr name="buttonCompat" format="reference" />
     <attr name="buttonTint" format="color" />
     <attr name="buttonTintMode">
         <enum name="add" value="16" />
@@ -995,6 +1030,7 @@
     <attr name="edit_location_suggestion_text_color" format="color" />
     <attr name="edit_location_suggestion_text_highlight_color" format="color" />
     <attr name="edit_location_divider_color" format="color" />
+    <attr name="useSimpleSummaryProvider" format="boolean" />
     <attr name="cornerRadius" format="dimension" />
     <attr name="hasShadow" format="boolean" />
     <attr name="maxEmojiCount" format="integer" />
@@ -1114,7 +1150,6 @@
     </attr>
     <attr name="font" format="reference" />
     <attr name="fontWeight" format="integer" />
-    <attr name="fontVariationSettings" format="string" />
     <attr name="ttcIndex" format="integer" />
     <attr name="foregroundInsidePadding" format="boolean" />
     <attr name="searchEnabled" format="boolean" />
@@ -1181,6 +1216,8 @@
     <attr name="entryValues" format="reference" />
     <attr name="hintText" format="reference" />
     <attr name="drawableStart" format="reference" />
+    <attr name="setButtonContentDescription" format="reference" />
+    <attr name="clearButtonContentDescription" format="reference" />
     <attr name="emptyViewLayout" format="reference" />
     <attr name="progressViewLayout" format="reference" />
     <attr name="errorViewLayout" format="reference" />
@@ -1256,6 +1293,7 @@
     <attr name="shapeAppearance" format="reference" />
     <attr name="shapeAppearanceOverlay" format="reference" />
     <attr name="externalRouteEnabledDrawable" format="reference" />
+    <attr name="externalRouteEnabledDrawableStatic" format="reference" />
     <attr name="mediaRouteButtonTint" format="color" />
     <attr name="alphabeticModifiers">
         <flag name="ALT" value="0x00000002" />
@@ -1377,12 +1415,14 @@
     <attr name="singleLineTitle" format="boolean" />
     <attr name="iconSpaceReserved" format="boolean" />
     <attr name="isPreferenceVisible" format="boolean" />
+    <attr name="enableCopying" format="boolean" />
     <attr name="allowDividerAfterLastItem" format="boolean" />
     <attr name="orderingFromXml" format="boolean" />
     <attr name="initialExpandedChildrenCount" format="integer" />
     <attr name="maxWidth" format="dimension" />
     <attr name="maxHeight" format="dimension" />
     <attr name="preferenceTheme" format="reference" />
+    <attr name="preferenceCategoryTitleTextAppearance" format="reference" />
     <attr name="preferenceScreenStyle" format="reference" />
     <attr name="preferenceActivityStyle" format="reference" />
     <attr name="preferenceFragmentStyle" format="reference" />
@@ -1671,6 +1711,16 @@
     <attr name="counterTextColor" format="reference" />
     <attr name="counterOverflowTextAppearance" format="reference" />
     <attr name="counterOverflowTextColor" format="reference" />
+    <attr name="startIconDrawable" format="reference" />
+    <attr name="startIconContentDescription" format="string" />
+    <attr name="startIconTint" format="color" />
+    <attr name="startIconTintMode">
+        <enum name="multiply" value="14" />
+        <enum name="screen" value="15" />
+        <enum name="src_atop" value="9" />
+        <enum name="src_in" value="5" />
+        <enum name="src_over" value="3" />
+    </attr>
     <attr name="endIconMode">
         <enum name="none" value="0" />
         <enum name="custom" value="-1" />

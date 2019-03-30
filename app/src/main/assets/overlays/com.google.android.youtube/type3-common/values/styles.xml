@@ -48,6 +48,7 @@
         <item name="*com.google.android.youtube:liveChatShimmerLoadingFrameShimmerStartColor">@*com.google.android.youtube:color/shimmer_background_color</item>
         <item name="*com.google.android.youtube:loadingFrameErrorDrawable">@*com.google.android.youtube:drawable/quantum_ic_error_outline_white_36</item>
         <item name="*com.google.android.youtube:loadingFrameTextColor">@*android:color/white</item>
+        <item name="*com.google.android.youtube:loggedOutLibrary">@*com.google.android.youtube:drawable/ic_logged_out_library_dark</item>
         <item name="*com.google.android.youtube:navigationBarStyle">@*com.google.android.youtube:style/NavigationBar.Dark</item>
         <item name="*com.google.android.youtube:offlineStorageBarBackground">@*com.google.android.youtube:drawable/offline_storage_bar_background_dark</item>
         <item name="*com.google.android.youtube:overlayRoundedRectangle">@*com.google.android.youtube:drawable/overlay_rounded_rectangle_dark</item>
@@ -78,10 +79,14 @@
         <item name="*com.google.android.youtube:textAppearanceSubheadInverse">@*com.google.android.youtube:style/TextAppearance.YouTube.Subhead</item>
         <item name="*com.google.android.youtube:textAppearanceTitle">@*com.google.android.youtube:style/TextAppearance.YouTube.Title</item>
         <item name="*com.google.android.youtube:textAppearanceTitleInverse">@*com.google.android.youtube:style/TextAppearance.YouTube.Title</item>
+        <item name="*com.google.android.youtube:watchHistoryPausedIcon">@*com.google.android.youtube:drawable/ic_watch_history_paused_dark</item>
         <item name="*com.google.android.youtube:youtubeRedOriginalsButtonRedIcon">@*com.google.android.youtube:drawable/quantum_ic_movie_creation_white_24</item>
         <item name="*com.google.android.youtube:ytCloudChipCheckboxBackground">@*com.google.android.youtube:drawable/chip_cloud_chip_checkbox_background_dark</item>
         <item name="*com.google.android.youtube:ytCloudChipDefaultBackground">@*com.google.android.youtube:drawable/chip_cloud_chip_default_background_dark</item>
         <item name="*com.google.android.youtube:ytCloudChipDisabledBackground">@*com.google.android.youtube:drawable/chip_cloud_chip_disabled_background_dark</item>
+        <item name="*com.google.android.youtube:ytCloudChipFilterGhostBackground">@*com.google.android.youtube:drawable/chip_cloud_chip_filter_ghost_background_dark</item>
+        <item name="*com.google.android.youtube:ytCloudChipFilterSelectedBackground">@*com.google.android.youtube:drawable/chip_cloud_chip_filter_selected_background_dark</item>
+        <item name="*com.google.android.youtube:ytCloudChipFilterUnselectedBackground">@*com.google.android.youtube:drawable/chip_cloud_chip_filter_unselected_background_dark</item>
         <item name="*com.google.android.youtube:ytCloudChipHomeFilterGhostBackground">@*com.google.android.youtube:drawable/chip_cloud_chip_home_filter_ghost_background_dark</item>
         <item name="*com.google.android.youtube:ytCloudChipHomeFilterSelectedBackground">@*com.google.android.youtube:drawable/chip_cloud_chip_home_filter_selected_background_dark</item>
         <item name="*com.google.android.youtube:ytCloudChipHomeFilterUnselectedBackground">@*com.google.android.youtube:drawable/chip_cloud_chip_home_filter_unselected_background_dark</item>
@@ -139,10 +144,12 @@
         <item name="*com.google.android.youtube:colorControlNormal">@*android:color/white</item>
         <item name="*com.google.android.youtube:colorControlHighlight">@*com.google.android.youtube:color/ripple_material_dark</item>
     </style>
-    <style name="LandscapeDivider">
-        <item name="android:background">#00000000</item>
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">0.0dip</item>
+    <style name="NormalDynamicSticker">
+        <item name="*com.google.android.youtube:dynamic_sticker_background">@*com.google.android.youtube:color/dynamic_sticker_bg_light</item>
+        <item name="*com.google.android.youtube:dynamic_sticker_text_color">@*android:color/white</item>
+        <item name="*com.google.android.youtube:dynamic_sticker_title_text_color">@*android:color/white</item>
+        <item name="*com.google.android.youtube:location_sticker_icon">@*com.google.android.youtube:drawable/ic_location_red_24dp</item>
+        <item name="*com.google.android.youtube:hasShadow">true</item>
     </style>
     <style name="PlayerCastMediaRouteButton" parent="@*com.google.android.youtube:style/Widget.MediaRouter.MediaRouteButton">
         <item name="android:background">@*android:color/legacy_primary</item>
@@ -195,7 +202,7 @@
         <item name="*com.google.android.youtube:ytBrandButtonBackground">@*com.google.android.youtube:color/yt_youtube_red</item>
         <item name="*com.google.android.youtube:ytBrandIconActive">@*android:color/white</item>
         <item name="*com.google.android.youtube:ytBrandIconInactive">@*android:color/secondary_text_default_material_dark</item>
-        <item name="*com.google.android.youtube:ytBrandLinkText">@*android:color/white</item>
+        <item name="*com.google.android.youtube:ytBrandLinkText">@*com.google.android.youtube:color/yt_youtube_red</item>
         <item name="*com.google.android.youtube:ytBrandRed">@*com.google.android.youtube:color/yt_youtube_red</item>
         <item name="*com.google.android.youtube:ytButtonChipBackgroundHover">@*com.google.android.youtube:color/yt_white1_opacity20</item>
         <item name="*com.google.android.youtube:ytCallToActionInverse">@*com.google.android.youtube:color/yt_dark_blue</item>
@@ -226,7 +233,6 @@
         <item name="*com.google.android.youtube:ytOverlayTextPrimary">@*android:color/white</item>
         <item name="*com.google.android.youtube:ytOverlayTextSecondary">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.youtube:ytOverlayTextTertiary">@*com.google.android.youtube:color/yt_white1_opacity30</item>
-        <item name="*com.google.android.youtube:ytSelectedNavIcon">@*com.google.android.youtube:color/yt_selected_nav_icon_dark</item>
         <item name="*com.google.android.youtube:ytSelectedNavText">@*com.google.android.youtube:color/yt_selected_nav_label_dark</item>
         <item name="*com.google.android.youtube:ytSeparator">@*com.google.android.youtube:color/yt_separator_dark</item>
         <item name="*com.google.android.youtube:ytStaticAdYellow">@*com.google.android.youtube:color/yt_yellow</item>
@@ -256,12 +262,13 @@
         <item name="*com.google.android.youtube:ytTextDisabled">@*com.google.android.youtube:color/yt_grey4</item>
         <item name="*com.google.android.youtube:ytTextError">@*com.google.android.youtube:color/yt_youtube_red</item>
         <item name="*com.google.android.youtube:ytTextPrimary">@*android:color/white</item>
+        <item name="*com.google.android.youtube:ytTextPrimaryInverse">@*com.google.android.youtube:color/yt_black4</item>
         <item name="*com.google.android.youtube:ytTextSecondary">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.youtube:ytThemedBlue">@*com.google.android.youtube:color/yt_light_blue</item>
         <item name="*com.google.android.youtube:ytThemedGreen">@*com.google.android.youtube:color/yt_light_green</item>
+        <item name="*com.google.android.youtube:ytThemeType">dark</item>
         <item name="*com.google.android.youtube:ytTimestampBackground">@*com.google.android.youtube:color/yt_black_pure_opacity60</item>
         <item name="*com.google.android.youtube:ytTouchResponse">@*android:color/white</item>
-        <item name="*com.google.android.youtube:ytUnselectedNavIcon">@*android:color/secondary_text_default_material_dark</item>
     </style>
     <style name="Themed.YouTube.LiveChat.Dark" parent="@*com.google.android.youtube:style/Themed.YouTube.Dark.AppCompat">
         <item name="*com.google.android.youtube:liveChatActionButtonBackground">@*com.google.android.youtube:drawable/live_chat_action_button_background_grey_dark</item>
@@ -282,6 +289,7 @@
     </style>
     <style name="Widget.MediaRouter.MediaRouteButton" parent="@*com.google.android.youtube:style/Widget.AppCompat.ActionButton">
         <item name="*com.google.android.youtube:externalRouteEnabledDrawable">@*com.google.android.youtube:drawable/mr_button_dark</item>
+        <item name="*com.google.android.youtube:externalRouteEnabledDrawableStatic">@*com.google.android.youtube:drawable/mr_button_dark_static</item>
         <item name="android:background">@*android:color/legacy_primary</item>
         <item name="android:backgroundTint">@*android:color/transparent</item>
     </style>
