@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="ActionBarMenu" parent="@*android:style/Theme.Material" />
     <style name="Base.Theme.GoogleMaterial.Light" parent="@*com.google.android.apps.docs:style/Base.V14.Theme.GoogleMaterial.Light">
-        <item name="android:statusBarColor">@*android:color/primary_text_leanback_light</item>
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
     </style>
     <style name="BaseActionBar" parent="@*android:style/Widget.Material.ActionBar.Solid">
         <item name="android:background">@*com.google.android.apps.docs:drawable/action_bar_background</item>
@@ -11,11 +10,11 @@
         <item name="android:elevation">0.0dip</item>
     </style>
     <style name="BaseActionBarOverflow" parent="@*android:style/Widget.Material.ActionButton.Overflow" />
-    <style name="BaseAppTheme" parent="@*android:style/Theme.Material">
+    <style name="BaseAppTheme" parent="@*android:style/Theme.DeviceDefault.Light">
         <item name="android:buttonStyle">@*com.google.android.apps.docs:style/BaseButton</item>
         <item name="android:windowContentTransitions">true</item>
-        <item name="android:colorPrimary">@*com.google.android.apps.docs:color/m_app_primary</item>
-        <item name="android:colorPrimaryDark">@*com.google.android.apps.docs:color/m_app_secondary</item>
+        <item name="android:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
         <item name="android:colorAccent">@*com.google.android.apps.docs:color/m_app_accent</item>
     </style>
     <style name="BaseAutoCompleteTextView" parent="@*android:style/Widget.Material.AutoCompleteTextView" />
@@ -35,7 +34,7 @@
     <style name="BaseDialogThemeWhenLarge" parent="@*android:style/Theme.Material.DialogWhenLarge">
         <item name="android:colorAccent">@*com.google.android.apps.docs:color/m_app_accent</item>
     </style>
-    <style name="BaseWebViewTheme" parent="@*android:style/Theme.Material" />
+    <style name="BaseWebViewTheme" parent="@*android:style/Theme.DeviceDefault.Light" />
     <style name="BlackTitledDialog" parent="@*android:style/Theme.Holo.Dialog">
         <item name="android:windowBackground">@*android:color/transparent</item>
         <item name="android:windowContentOverlay">@null</item>
@@ -43,33 +42,48 @@
         <item name="android:windowMinWidthMajor">@*android:dimen/dialog_min_width_major</item>
         <item name="android:windowMinWidthMinor">@*android:dimen/dialog_min_width_minor</item>
     </style>
-    <style name="CakemixTheme.Projector" parent="@*android:style/Theme.Material">
+    <style name="CakemixTheme.AppCompatActivity.NoActionBar.Carbon" parent="@*com.google.android.apps.docs:style/CakemixTheme.AppCompatActivity.NoActionBar">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+    </style>
+    <style name="CakemixTheme.Projector" parent="@*android:style/Theme.DeviceDefault.Light">
         <item name="android:actionBarStyle">@*com.google.android.apps.docs:style/ProjectorActionBar</item>
+    </style>
+    <style name="CakemixTheme.SplashScreen" parent="@*com.google.android.apps.docs:style/Theme.GoogleMaterial.DayNight.NoActionBar">
+        <item name="android:windowBackground">@*com.google.android.apps.docs:drawable/quantum_launchscreen_drive</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowShowWallpaper">false</item>
     </style>
     <style name="CarouselOverlay" parent="@*com.google.android.apps.docs:style/CakemixTheme.DocListActivity">
         <item name="android:colorEdgeEffect">#ffdddddd</item>
     </style>
     <style name="CommonTheme" parent="@*com.google.android.apps.docs:style/VersionTheme">
         <item name="android:windowNoTitle">true</item>
-        <item name="android:actionBarStyle">@*com.google.android.apps.docs:style/ToolbarStyle</item>
-        <item name="android:actionModeBackground">@*android:color/secondary_text_leanback_light</item>
-        <item name="android:actionModeCloseDrawable">@*com.google.android.apps.docs:drawable/back_grey_gm2</item>
+        <item name="android:actionBarStyle">@*com.google.android.apps.docs:style/OverlayActionBarStyle</item>
+        <item name="android:actionModeBackground">@*android:color/background_floating_material_dark</item>
+        <item name="android:actionModeCloseDrawable">@*com.google.android.apps.docs:drawable/action_mode_back_grey_gm2</item>
         <item name="android:windowActionModeOverlay">true</item>
         <item name="android:windowActionBarOverlay">true</item>
         <item name="android:actionOverflowButtonStyle">@*com.google.android.apps.docs:style/OverlayActionBarOverflowStyle</item>
         <item name="android:actionModeStyle">@*com.google.android.apps.docs:style/OverlayActionBarStyleLight</item>
         <item name="android:actionBarDivider">@null</item>
-        <item name="android:statusBarColor">@*android:color/primary_text_leanback_light</item>
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
         <item name="*com.google.android.apps.docs:windowActionBar">false</item>
         <item name="*com.google.android.apps.docs:windowActionBarOverlay">true</item>
         <item name="*com.google.android.apps.docs:windowActionModeOverlay">true</item>
         <item name="*com.google.android.apps.docs:actionOverflowButtonStyle">@*com.google.android.apps.docs:style/OverlayActionBarOverflowStyle</item>
-        <item name="*com.google.android.apps.docs:actionBarStyle">@*com.google.android.apps.docs:style/ToolbarStyle</item>
+        <item name="*com.google.android.apps.docs:actionBarStyle">@*com.google.android.apps.docs:style/OverlayActionBarStyle</item>
         <item name="*com.google.android.apps.docs:actionBarDivider">@null</item>
         <item name="*com.google.android.apps.docs:actionModeStyle">@*com.google.android.apps.docs:style/OverlayActionBarStyleLight</item>
-        <item name="*com.google.android.apps.docs:actionModeBackground">@*android:color/secondary_text_leanback_light</item>
-        <item name="*com.google.android.apps.docs:actionModeCloseDrawable">@*com.google.android.apps.docs:drawable/back_grey_gm2</item>
+        <item name="*com.google.android.apps.docs:actionModeBackground">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.apps.docs:actionModeCloseDrawable">@*com.google.android.apps.docs:drawable/action_mode_back_grey_gm2</item>
         <item name="*com.google.android.apps.docs:colorControlHighlight">@*android:color/white</item>
+    </style>
+    <style name="DetailCard.Header.TeamDrive" parent="@*com.google.android.apps.docs:style/DetailCard.Header">
+        <item name="android:background">@*android:color/background_floating_material_dark</item>
+        <item name="android:paddingTop">@*com.google.android.apps.docs:dimen/m_grid_2x</item>
+        <item name="android:paddingBottom">@*com.google.android.apps.docs:dimen/m_grid_2x</item>
     </style>
     <style name="DetailInfoCard_Text.Secondary" parent="@*com.google.android.apps.docs:style/DetailInfoCard_Text">
         <item name="android:textSize">@*com.google.android.apps.docs:dimen/m_entry_text_size_tertiary</item>
@@ -78,24 +92,24 @@
         <item name="android:layout_weight">0.47</item>
     </style>
     <style name="DevFlagsAppTheme" parent="@*com.google.android.apps.docs:style/CakemixTheme.AppCompatActivity.NoActionBar">
-        <item name="android:statusBarColor">@*android:color/primary_text_leanback_light</item>
-        <item name="*com.google.android.apps.docs:colorPrimary">@*android:color/secondary_text_leanback_light</item>
-        <item name="*com.google.android.apps.docs:colorPrimaryDark">@*android:color/primary_text_leanback_light</item>
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.apps.docs:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.apps.docs:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
         <item name="*com.google.android.apps.docs:colorAccent">@*com.google.android.apps.docs:color/quantum_googred500</item>
     </style>
     <style name="DevImpressionsAppTheme" parent="@*com.google.android.apps.docs:style/CakemixTheme.AppCompatActivity.NoActionBar">
-        <item name="android:statusBarColor">@*android:color/primary_text_leanback_light</item>
-        <item name="*com.google.android.apps.docs:colorPrimary">@*android:color/secondary_text_leanback_light</item>
-        <item name="*com.google.android.apps.docs:colorPrimaryDark">@*android:color/primary_text_leanback_light</item>
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.apps.docs:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.apps.docs:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
         <item name="*com.google.android.apps.docs:colorAccent">@*com.google.android.apps.docs:color/quantum_googred500</item>
     </style>
     <style name="DialogTitleBlack" parent="@*android:style/TextAppearance.DialogWindowTitle">
-        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textColor">@*android:color/white</item>
     </style>
     <style name="Discussion.Widget.TextView" parent="">
         <item name="android:textAppearance">@*com.google.android.apps.docs:style/discussion_edit_text_style</item>
         <item name="android:gravity">top</item>
-        <item name="android:background">@*android:color/secondary_text_leanback_light</item>
+        <item name="android:background">@*android:color/background_floating_material_dark</item>
         <item name="android:focusable">true</item>
         <item name="android:cursorVisible">true</item>
         <item name="android:maxLength">2048</item>
@@ -106,25 +120,6 @@
         <item name="android:textCursorDrawable">@*android:drawable/light_header</item>
         <item name="android:textAlignment">viewStart</item>
     </style>
-    <style name="ds_compat_app_theme" parent="@*android:style/Theme.Material">
-        <item name="android:windowContentOverlay">@*com.google.android.apps.docs:drawable/ds_actionbar_shadow</item>
-        <item name="android:windowTitleSize">@*com.google.android.apps.docs:dimen/ds_actionbar_compat_height</item>
-        <item name="android:windowTitleBackgroundStyle">@*com.google.android.apps.docs:style/ds_action_bar_compat</item>
-        <item name="*com.google.android.apps.docs:ds_actionbar_compat_title_style">@*com.google.android.apps.docs:style/ds_action_bar_compat_title</item>
-        <item name="*com.google.android.apps.docs:ds_actionbar_compat_item_style">@*com.google.android.apps.docs:style/ds_action_bar_compat_item</item>
-        <item name="*com.google.android.apps.docs:ds_actionbar_compat_item_home_style">@*com.google.android.apps.docs:style/ds_action_bar_compat_home_item</item>
-        <item name="android:windowShowWallpaper">false</item>
-    </style>
-    <style name="ds_scanner_base_theme" parent="@*android:style/Theme.Material">
-        <item name="android:windowBackground">@*android:color/primary_text_leanback_light</item>
-        <item name="android:windowShowWallpaper">false</item>
-    </style>
-    <style name="ds_scanner_capture_theme" parent="@*android:style/Theme.Material">
-        <item name="android:windowBackground">@*android:color/primary_text_leanback_light</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowFullscreen">true</item>
-        <item name="android:windowShowWallpaper">false</item>
-    </style>
     <style name="HoloLikeButton" parent="@*android:style/Widget.Holo.Button.Borderless">
         <item name="android:textAppearance">?*android:textAppearanceMedium</item>
         <item name="android:textColor">#ffffffff</item>
@@ -132,16 +127,38 @@
     <style name="LegacyEmptyStateMessageTitleAppearance" parent="@*com.google.android.apps.docs:style/quantum_text_subhead_black">
         <item name="android:textColor">@*android:color/white</item>
     </style>
+    <style name="LegacyEmptyStateTheme">
+        <item name="*com.google.android.apps.docs:emptyStateIconSize">72.0dip</item>
+        <item name="*com.google.android.apps.docs:emptyStateTitleTextAppearance">@*com.google.android.apps.docs:style/LegacyEmptyStateMessageTitleAppearance</item>
+        <item name="*com.google.android.apps.docs:emptyStateMessageTextAppearance">@*com.google.android.apps.docs:style/LegacyEmptyStateMessageTextAppearance</item>
+        <item name="*com.google.android.apps.docs:emptyStateIconBackgroundVisibility">0</item>
+        <item name="*com.google.android.apps.docs:emptyStateIconTintColor">@*android:color/white</item>
+        <item name="*com.google.android.apps.docs:doclistEmptyState">@*com.google.android.apps.docs:drawable/doclist_empty_background_logo</item>
+        <item name="*com.google.android.apps.docs:offlineEmptyState">@*com.google.android.apps.docs:drawable/quantum_ic_offline_pin_grey600_48</item>
+        <item name="*com.google.android.apps.docs:recentsEmptyState">@*com.google.android.apps.docs:drawable/quantum_ic_schedule_grey600_48</item>
+        <item name="*com.google.android.apps.docs:searchEmptyState">@*com.google.android.apps.docs:drawable/doclist_empty_background_logo</item>
+        <item name="*com.google.android.apps.docs:sharedEmptyState">@*com.google.android.apps.docs:drawable/quantum_ic_group_grey600_48</item>
+        <item name="*com.google.android.apps.docs:starredEmptyState">@*com.google.android.apps.docs:drawable/quantum_ic_grade_grey600_48</item>
+        <item name="*com.google.android.apps.docs:noTeamDrivesEmptyState">@*com.google.android.apps.docs:drawable/quantum_ic_team_drive_grey600_48</item>
+        <item name="*com.google.android.apps.docs:emptyTeamDriveEmptyState">@*com.google.android.apps.docs:drawable/quantum_ic_folder_grey600_48</item>
+        <item name="*com.google.android.apps.docs:trashEmptyState">@*com.google.android.apps.docs:drawable/ic_trash_empty_state</item>
+        <item name="*com.google.android.apps.docs:devicesEmptyState">@*com.google.android.apps.docs:drawable/quantum_ic_devices_grey600_48</item>
+        <item name="*com.google.android.apps.docs:backupsEmptyState">@*com.google.android.apps.docs:drawable/quantum_ic_cloud_grey600_48</item>
+        <item name="*com.google.android.apps.docs:driveEmptyState">@*com.google.android.apps.docs:drawable/quantum_ic_drive_grey600_48</item>
+    </style>
     <style name="MediaViewerText.TimeGm2" parent="@*com.google.android.apps.docs:style/MediaViewerText">
         <item name="android:textSize">12.0sp</item>
         <item name="android:textColor">@*android:color/white</item>
     </style>
+    <style name="OpaqueTheme" parent="@*com.google.android.apps.docs:style/CommonTheme">
+        <item name="android:windowBackground">@*android:color/primary_text_leanback_light</item>
+    </style>
     <style name="OverlayActionBarStyleLight" parent="@*com.google.android.apps.docs:style/Widget.AppCompat.ActionBar.Solid">
-        <item name="android:background">@*android:color/secondary_text_leanback_light</item>
+        <item name="android:background">@*android:color/primary_material_dark</item>
         <item name="android:height">@*com.google.android.apps.docs:dimen/viewer_action_bar_height</item>
         <item name="android:elevation">5.0dip</item>
         <item name="*com.google.android.apps.docs:height">@*com.google.android.apps.docs:dimen/viewer_action_bar_height</item>
-        <item name="*com.google.android.apps.docs:background">@*android:color/secondary_text_leanback_light</item>
+        <item name="*com.google.android.apps.docs:background">@*android:color/primary_material_dark</item>
     </style>
     <style name="PageIndicatorStyle">
         <item name="android:textSize">14.0sp</item>
@@ -154,12 +171,10 @@
         <item name="android:textColor">#ffdddddd</item>
         <item name="android:fontFamily">sans-serif</item>
     </style>
-    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.Material">
-        <item name="android:windowShowWallpaper">false</item>
-    </style>
+    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light" />
     <style name="PreviewOpenInAnotherApp_container">
         <item name="android:layout_gravity">center</item>
-        <item name="android:background">@*android:color/primary_text_leanback_light</item>
+        <item name="android:background">@*android:color/background_dark</item>
         <item name="android:padding">16.0dip</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -172,6 +187,11 @@
     <style name="ProgressBarSpinner" parent="@*android:style/Widget.Material.ProgressBar.Large">
         <item name="android:indeterminateOnly">true</item>
     </style>
+    <style name="ProjectorActionBar" parent="@*android:style/Widget.Holo.ActionBar.Solid">
+        <item name="android:icon">@*com.google.android.apps.docs:drawable/hack_empty_actionbar_icon</item>
+        <item name="android:height">@*com.google.android.apps.docs:dimen/action_bar_height</item>
+        <item name="android:titleTextStyle">@*com.google.android.apps.docs:style/ProjectorActionBarText</item>
+    </style>
     <style name="RippleTheme">
         <item name="*com.google.android.apps.docs:colorControlHighlight">@*android:color/ripple_material_dark</item>
     </style>
@@ -180,7 +200,30 @@
         <item name="android:textStyle">italic</item>
         <item name="android:textColor">#ffdddddd</item>
     </style>
-    <style name="Upload.Button.Spinner" parent="@*android:style/Widget.Holo.Spinner">
+    <style name="TextAppearance.Design.Snackbar.Message" parent="@*android:style/TextAppearance">
+        <item name="android:textSize">@*com.google.android.apps.docs:dimen/design_snackbar_text_size</item>
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="ThemeOverlay.Discussions.GoogleMaterial" parent="">
+        <item name="*com.google.android.apps.docs:backArrowImageSrc">@*com.google.android.apps.docs:drawable/quantum_gm_ic_arrow_back_gm_grey_24</item>
+        <item name="*com.google.android.apps.docs:closeImageSrc">@*com.google.android.apps.docs:drawable/quantum_gm_ic_close_gm_grey_24</item>
+        <item name="*com.google.android.apps.docs:commentsButtonBarDivider">@null</item>
+        <item name="*com.google.android.apps.docs:commentsHeaderTextAppearance">@*com.google.android.apps.docs:style/TextAppearance.GoogleMaterial.Headline6</item>
+        <item name="*com.google.android.apps.docs:deleteImageSrc">@*com.google.android.apps.docs:drawable/quantum_gm_ic_delete_gm_grey_24</item>
+        <item name="*com.google.android.apps.docs:dropDownImageSrc">@*com.google.android.apps.docs:drawable/quantum_gm_ic_arrow_drop_down_gm_grey_18</item>
+        <item name="*com.google.android.apps.docs:editCommentButtonStyle">@*com.google.android.apps.docs:style/Discussion.Widget.Button.EditComment</item>
+        <item name="*com.google.android.apps.docs:editImageSrc">@*com.google.android.apps.docs:drawable/quantum_gm_ic_edit_gm_grey_24</item>
+        <item name="*com.google.android.apps.docs:headerAuthorTextStyle">@*com.google.android.apps.docs:style/TextAppearance.Discussions.AuthorHeader</item>
+        <item name="*com.google.android.apps.docs:headerDateTextStyle">@*com.google.android.apps.docs:style/TextAppearance.Discussions.DateHeader</item>
+        <item name="*com.google.android.apps.docs:oneDiscussionHeaderBackground">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.apps.docs:oneDiscussionHeaderTextButtonAppearance">@*com.google.android.apps.docs:style/TextAppearance.Discussions.TextButton</item>
+        <item name="*com.google.android.apps.docs:sendImageSrc">@*com.google.android.apps.docs:drawable/quantum_gm_ic_send_gm_grey_24</item>
+    </style>
+    <style name="ThemeOverlay.GoogleMaterial.Snackbar" parent="">
+        <item name="*com.google.android.apps.docs:colorOnSurface">@*android:color/background_floating_material_dark</item>
+    </style>
+    <style name="Upload.Button.Spinner.Daynight" parent="@*android:style/Widget.Holo.Spinner">
+        <item name="android:spinnerItemStyle">@*com.google.android.apps.docs:style/Upload.SpinnerItem</item>
         <item name="android:textSize">@*com.google.android.apps.docs:dimen/m_text_size_body</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -190,14 +233,13 @@
         <item name="android:layout_marginStart">0.0dip</item>
         <item name="android:layout_marginEnd">0.0dip</item>
     </style>
-    <style name="UrawTheme" parent="@*com.google.android.apps.docs:style/Theme.AppCompat" />
     <style name="WelcomeThemeBase" parent="@*android:style/Theme.Holo.NoActionBar">
         <item name="android:windowBackground">@*android:color/transparent</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
     </style>
     <style name="Widget.Design.BottomSheet.Modal" parent="@*android:style/Widget">
-        <item name="android:background">@*android:color/secondary_text_leanback_light</item>
+        <item name="android:background">@*android:color/background_floating_material_dark</item>
         <item name="android:elevation">@*com.google.android.apps.docs:dimen/design_bottom_sheet_modal_elevation</item>
         <item name="*com.google.android.apps.docs:behavior_peekHeight">auto</item>
         <item name="*com.google.android.apps.docs:behavior_hideable">true</item>
@@ -205,10 +247,40 @@
         <item name="*com.google.android.apps.docs:shapeAppearance">@null</item>
         <item name="*com.google.android.apps.docs:shapeAppearanceOverlay">@null</item>
         <item name="*com.google.android.apps.docs:enforceMaterialTheme">false</item>
-        <item name="*com.google.android.apps.docs:backgroundTint">@*android:color/secondary_text_leanback_light</item>
+        <item name="*com.google.android.apps.docs:backgroundTint">@*android:color/background_floating_material_dark</item>
     </style>
     <style name="Widget.GoogleMaterial.ProductLockupView.Dark" parent="@*com.google.android.apps.docs:style/Widget.GoogleMaterial.ProductLockupView">
         <item name="*com.google.android.apps.docs:productNameTextColor">@*android:color/white</item>
         <item name="*com.google.android.apps.docs:logoColor">light</item>
+    </style>
+    <style name="discussion_author_name_text_style_dark" parent="@*com.google.android.apps.docs:style/discussion_author_name_text_style">
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="ds_compat_app_theme" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowContentOverlay">@*com.google.android.apps.docs:drawable/ds_actionbar_shadow</item>
+        <item name="android:windowTitleSize">@*com.google.android.apps.docs:dimen/ds_actionbar_compat_height</item>
+        <item name="android:windowTitleBackgroundStyle">@*com.google.android.apps.docs:style/ds_action_bar_compat</item>
+        <item name="*com.google.android.apps.docs:ds_actionbar_compat_title_style">@*com.google.android.apps.docs:style/ds_action_bar_compat_title</item>
+        <item name="*com.google.android.apps.docs:ds_actionbar_compat_item_style">@*com.google.android.apps.docs:style/ds_action_bar_compat_item</item>
+        <item name="*com.google.android.apps.docs:ds_actionbar_compat_item_home_style">@*com.google.android.apps.docs:style/ds_action_bar_compat_home_item</item>
+    </style>
+    <style name="ds_rename_dialog_button">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:background">@*com.google.android.apps.docs:drawable/ds_state_selector_background</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="ds_scanner_base_theme" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+    </style>
+    <style name="ds_scanner_capture_theme" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="ds_scanner_editor_theme" parent="@*com.google.android.apps.docs:style/ds_compat_app_theme">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
     </style>
 </resources>

@@ -10,6 +10,7 @@
     <attr name="chipGroupStyle" format="reference" />
     <attr name="chipStandaloneStyle" format="reference" />
     <attr name="chipStyle" format="reference" />
+    <attr name="chipViewStyle" format="reference" />
     <attr name="colorOnBackground" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="colorOnError" format="color" />
     <attr name="colorOnPrimary" format="color" />
@@ -28,6 +29,7 @@
     <attr name="constraintSet" format="reference" />
     <attr name="coordinatorLayoutStyle" format="reference" />
     <attr name="drawerArrowStyle" format="reference" />
+    <attr name="extendedFloatingActionButtonStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="floatingActionButtonStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="height" format="dimension" />
     <attr name="hideMotionSpec" format="reference" />
@@ -121,8 +123,14 @@
         <flag name="chains" value="0x00000008" />
         <flag name="none" value="0x00000001" />
     </attr>
+    <attr name="materialButtonOutlinedStyle" format="reference" />
     <attr name="materialButtonStyle" format="reference" />
+    <attr name="materialButtonToggleGroupStyle" format="reference" />
     <attr name="materialCardViewStyle" format="reference" />
+    <attr name="materialDatePickerDialogTheme" format="reference" />
+    <attr name="materialDatePickerStyle" format="reference" />
+    <attr name="materialDateRangePickerDialogTheme" format="reference" />
+    <attr name="materialDateRangePickerStyle" format="reference" />
     <attr name="materialThemeOverlay" format="reference" />
     <attr name="mediaRouteAudioTrackDrawable" format="reference" />
     <attr name="mediaRouteButtonStyle" format="reference" />
@@ -140,16 +148,18 @@
     <attr name="mtrlColor" format="reference|color" />
     <attr name="mtrlColors" format="reference" />
     <attr name="navigationViewStyle" format="reference" />
+    <attr name="ogAccountMenuStyle" format="reference" />
+    <attr name="ogAccountParticleStyle" format="reference" />
     <attr name="openSearchBarStyle" format="reference" />
     <attr name="openSearchViewPrefixStyle" format="reference" />
     <attr name="openSearchViewStyle" format="reference" />
     <attr name="productLockupViewStyle" format="reference" />
-    <attr name="rippleColor" format="color" />
     <attr name="scrimBackground" format="reference|color" />
     <attr name="shapeAppearanceLargeComponent" format="reference" />
     <attr name="shapeAppearanceMediumComponent" format="reference" />
     <attr name="shapeAppearanceSmallComponent" format="reference" />
     <attr name="showMotionSpec" format="reference" />
+    <attr name="singleSelection" format="boolean" />
     <attr name="suwButtonAllCaps" format="boolean" />
     <attr name="suwButtonCornerRadius" format="dimension" />
     <attr name="suwButtonFontFamily" format="reference|string" />
@@ -212,12 +222,24 @@
     <attr name="textInputStyle" format="reference" />
     <attr name="title" format="string" />
     <attr name="useMaterialThemeColors" format="boolean" />
+    <attr name="chipBackgroundColor" format="color" />
+    <attr name="chipRippleColor" format="color" />
+    <attr name="chipStrokeColor" format="color" />
+    <attr name="chipTextColor" format="color" />
+    <attr name="policyRippleColor" format="color" />
+    <attr name="policyTextColor" format="color" />
     <attr name="indent_divider" format="boolean" />
+    <attr name="displayNameTextAppearance" format="reference" />
+    <attr name="accountNameTextAppearance" format="reference" />
+    <attr name="disabledAccountHelpIconTint" format="color" />
     <attr name="discSize" format="dimension" />
     <attr name="avatarSize" format="dimension" />
+    <attr name="maxDiscContentSize" format="dimension" />
     <attr name="imageViewSize" format="dimension" />
     <attr name="allowBadges" format="boolean" />
     <attr name="allowRings" format="boolean" />
+    <attr name="discMinTouchTargetSize" format="dimension" />
+    <attr name="ensureDiscMinTouchTargetSize" format="boolean" />
     <attr name="navigationMode">
         <enum name="listMode" value="1" />
         <enum name="normal" value="0" />
@@ -267,6 +289,7 @@
     <attr name="showTitle" format="boolean" />
     <attr name="buttonIconDimen" format="dimension" />
     <attr name="minIntervalSeconds" format="integer" />
+    <attr name="logoPlaceholderDrawable" format="reference" />
     <attr name="logoSpriteDrawable" format="reference" />
     <attr name="frameCount" format="integer" />
     <attr name="durationMillis" format="integer" />
@@ -282,6 +305,7 @@
         <flag name="enterAlways" value="0x00000004" />
         <flag name="enterAlwaysCollapsed" value="0x00000008" />
         <flag name="exitUntilCollapsed" value="0x00000002" />
+        <flag name="noScroll" value="0x00000000" />
         <flag name="scroll" value="0x00000001" />
         <flag name="snap" value="0x00000010" />
         <flag name="snapMargins" value="0x00000020" />
@@ -499,6 +523,7 @@
         <enum name="selected" value="0" />
         <enum name="unlabeled" value="2" />
     </attr>
+    <attr name="itemRippleColor" format="color" />
     <attr name="itemTextAppearanceInactive" format="reference" />
     <attr name="itemTextAppearanceActive" format="reference" />
     <attr name="itemHorizontalTranslationEnabled" format="boolean" />
@@ -508,6 +533,14 @@
     <attr name="behavior_hideable" format="boolean" />
     <attr name="behavior_skipCollapsed" format="boolean" />
     <attr name="behavior_fitToContents" format="boolean" />
+    <attr name="behavior_saveFlags">
+        <flag name="all" value="0xffffffff" />
+        <flag name="none" value="0x00000000" />
+        <flag name="fitToContents" value="0x00000002" />
+        <flag name="hideable" value="0x00000004" />
+        <flag name="peekHeight" value="0x00000001" />
+        <flag name="skipCollapsed" value="0x00000008" />
+    </attr>
     <attr name="max_width" format="dimension" />
     <attr name="max_height" format="dimension" />
     <attr name="allowStacking" format="boolean" />
@@ -611,10 +644,8 @@
     <attr name="flip_duration_ms" format="integer" />
     <attr name="radius" format="reference|dimension" />
     <attr name="chipSurfaceColor" format="color" />
-    <attr name="chipBackgroundColor" format="color" />
     <attr name="chipMinHeight" format="dimension" />
     <attr name="chipCornerRadius" format="dimension" />
-    <attr name="chipStrokeColor" format="color" />
     <attr name="chipStrokeWidth" format="dimension" />
     <attr name="chipMinTouchTargetSize" format="dimension" />
     <attr name="ensureMinTouchTargetSize" format="boolean" />
@@ -642,7 +673,6 @@
     <attr name="chipSpacingHorizontal" format="dimension" />
     <attr name="chipSpacingVertical" format="dimension" />
     <attr name="singleLine" format="boolean" />
-    <attr name="singleSelection" format="boolean" />
     <attr name="checkedChip" format="reference" />
     <attr name="centerHorizontal" format="boolean" />
     <attr name="showScrim" format="boolean" />
@@ -744,6 +774,18 @@
     <attr name="castMiniControllerStyle" format="reference" />
     <attr name="castExpandedControllerStyle" format="reference" />
     <attr name="checkableFlipComponentStyle" format="reference" />
+    <attr name="windowTransitionStyle">
+        <enum name="none" value="2" />
+        <enum name="slide" value="1" />
+    </attr>
+    <attr name="toolbarTextColorStyle">
+        <enum name="dark" value="2" />
+        <enum name="light" value="1" />
+    </attr>
+    <attr name="customThemeStyle">
+        <enum name="googleMaterial2" value="2" />
+        <enum name="material" value="1" />
+    </attr>
     <attr name="color" format="color" />
     <attr name="spinBars" format="boolean" />
     <attr name="drawableSize" format="dimension" />
@@ -752,6 +794,7 @@
     <attr name="arrowShaftLength" format="dimension" />
     <attr name="barLength" format="dimension" />
     <attr name="thickness" format="dimension" />
+    <attr name="behavior_autoShrink" format="boolean" />
     <attr name="width_to_height_ratio" format="float" />
     <attr name="flexDirection">
         <enum name="column" value="2" />
@@ -864,6 +907,9 @@
     <attr name="profileSrc" format="reference" />
     <attr name="showRing" format="boolean" />
     <attr name="increaseProfileSizeWithoutRing" format="boolean" />
+    <attr name="colorPrimaryGoogle" format="color" />
+    <attr name="colorPrimaryVariantGoogle" format="color" />
+    <attr name="colorOnPrimaryGoogle" format="color" />
     <attr name="colorSecondary50" format="color" />
     <attr name="colorSecondary100" format="color" />
     <attr name="colorSecondary700" format="color" />
@@ -954,10 +1000,11 @@
     <attr name="backgroundInsetTop" format="dimension" />
     <attr name="backgroundInsetEnd" format="dimension" />
     <attr name="backgroundInsetBottom" format="dimension" />
+    <attr name="materialAlertDialogTheme" format="reference" />
     <attr name="materialAlertDialogTitlePanelStyle" format="reference" />
     <attr name="materialAlertDialogTitleIconStyle" format="reference" />
     <attr name="materialAlertDialogTitleTextStyle" format="reference" />
-    <attr name="materialAlertDialogTheme" format="reference" />
+    <attr name="materialAlertDialogBodyTextStyle" format="reference" />
     <attr name="iconPadding" format="dimension" />
     <attr name="iconGravity">
         <flag name="start" value="0x00000001" />
@@ -965,8 +1012,10 @@
     </attr>
     <attr name="iconTint" format="color" />
     <attr name="cornerRadius" format="dimension" />
+    <attr name="checkedButton" format="reference" />
     <attr name="cardForegroundColor" format="color" />
     <attr name="checkedIconTint" format="color" />
+    <attr name="state_dragged" format="boolean" />
     <attr name="shapeAppearance" format="reference" />
     <attr name="shapeAppearanceOverlay" format="reference" />
     <attr name="maxHeight" format="dimension" />
@@ -1045,13 +1094,15 @@
     <attr name="layout_marginStartPercent" format="fraction" />
     <attr name="layout_marginEndPercent" format="fraction" />
     <attr name="layout_aspectRatio" format="fraction" />
+    <attr name="rippleColor" format="color" />
+    <attr name="textColor" format="color" />
     <attr name="overlapAnchor" format="boolean" />
     <attr name="state_above_anchor" format="boolean" />
     <attr name="productNameTextColor" format="color" />
     <attr name="logoColor">
         <enum name="dark" value="1" />
-        <enum name="grey" value="3" />
         <enum name="light" value="2" />
+        <enum name="grey" value="3" />
         <enum name="standard" value="0" />
     </attr>
     <attr name="lockupSizingMode">
@@ -1244,11 +1295,16 @@
     <attr name="counterTextColor" format="reference" />
     <attr name="counterOverflowTextAppearance" format="reference" />
     <attr name="counterOverflowTextColor" format="reference" />
-    <attr name="passwordToggleEnabled" format="boolean" />
-    <attr name="passwordToggleDrawable" format="reference" />
-    <attr name="passwordToggleContentDescription" format="string" />
-    <attr name="passwordToggleTint" format="color" />
-    <attr name="passwordToggleTintMode">
+    <attr name="endIconMode">
+        <enum name="none" value="0" />
+        <enum name="custom" value="-1" />
+        <enum name="clear_text" value="2" />
+        <enum name="password_toggle" value="1" />
+    </attr>
+    <attr name="endIconDrawable" format="reference" />
+    <attr name="endIconContentDescription" format="string" />
+    <attr name="endIconTint" format="color" />
+    <attr name="endIconTintMode">
         <enum name="multiply" value="14" />
         <enum name="screen" value="15" />
         <enum name="src_atop" value="9" />
@@ -1268,6 +1324,17 @@
     <attr name="boxStrokeColor" format="color" />
     <attr name="boxBackgroundColor" format="color" />
     <attr name="boxStrokeWidth" format="dimension" />
+    <attr name="passwordToggleEnabled" format="boolean" />
+    <attr name="passwordToggleDrawable" format="reference" />
+    <attr name="passwordToggleContentDescription" format="string" />
+    <attr name="passwordToggleTint" format="color" />
+    <attr name="passwordToggleTintMode">
+        <enum name="multiply" value="14" />
+        <enum name="screen" value="15" />
+        <enum name="src_atop" value="9" />
+        <enum name="src_in" value="5" />
+        <enum name="src_over" value="3" />
+    </attr>
     <attr name="enforceMaterialTheme" format="boolean" />
     <attr name="enforceTextAppearance" format="boolean" />
     <attr name="titleTextAppearance" format="reference" />
@@ -1302,6 +1369,62 @@
         <enum name="src_atop" value="9" />
         <enum name="src_in" value="5" />
         <enum name="src_over" value="3" />
+    </attr>
+    <attr name="appTheme">
+        <enum name="holo_dark" value="0" />
+        <enum name="holo_light" value="1" />
+    </attr>
+    <attr name="environment">
+        <enum name="production" value="1" />
+        <enum name="sandbox" value="0" />
+        <enum name="strict_sandbox" value="2" />
+        <enum name="test" value="3" />
+    </attr>
+    <attr name="fragmentStyle" format="reference" />
+    <attr name="fragmentMode">
+        <enum name="buyButton" value="1" />
+        <enum name="selectionDetails" value="2" />
+    </attr>
+    <attr name="buyButtonHeight" format="dimension">
+        <enum name="wrap_content" value="-2" />
+        <enum name="match_parent" value="-1" />
+    </attr>
+    <attr name="buyButtonWidth" format="dimension">
+        <enum name="wrap_content" value="-2" />
+        <enum name="match_parent" value="-1" />
+    </attr>
+    <attr name="buyButtonText">
+        <enum name="book_now" value="3" />
+        <enum name="buy_now" value="2" />
+        <enum name="buy_with" value="5" />
+        <enum name="buy_with_google" value="1" />
+        <enum name="donate_with" value="7" />
+        <enum name="donate_with_google" value="4" />
+        <enum name="logo_only" value="6" />
+    </attr>
+    <attr name="buyButtonAppearance">
+        <enum name="android_pay_dark" value="4" />
+        <enum name="android_pay_light" value="5" />
+        <enum name="android_pay_light_with_border" value="6" />
+        <enum name="classic" value="1" />
+        <enum name="google_wallet_classic" value="1" />
+        <enum name="google_wallet_grayscale" value="2" />
+        <enum name="google_wallet_monochrome" value="3" />
+        <enum name="grayscale" value="2" />
+        <enum name="monochrome" value="3" />
+    </attr>
+    <attr name="maskedWalletDetailsTextAppearance" format="reference" />
+    <attr name="maskedWalletDetailsHeaderTextAppearance" format="reference" />
+    <attr name="maskedWalletDetailsBackground" format="reference|color" />
+    <attr name="maskedWalletDetailsButtonTextAppearance" format="reference" />
+    <attr name="maskedWalletDetailsButtonBackground" format="reference|color" />
+    <attr name="maskedWalletDetailsLogoTextColor" format="color" />
+    <attr name="maskedWalletDetailsLogoImageType">
+        <enum name="classic" value="1" />
+        <enum name="google_wallet_classic" value="1" />
+        <enum name="google_wallet_monochrome" value="2" />
+        <enum name="monochrome" value="2" />
+        <enum name="android_pay" value="3" />
     </attr>
     <attr name="use_divider" format="boolean" />
     <attr name="com_facebook_foreground_color" format="color" />

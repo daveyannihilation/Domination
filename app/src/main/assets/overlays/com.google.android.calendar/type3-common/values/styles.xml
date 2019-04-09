@@ -1,33 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="ActionBar" parent="@*android:style/Widget.Material.ActionBar.Solid" />
-    <style name="CalendarGmTheme.NoActionBar" parent="@*com.google.android.calendar:style/CalendarGmTheme.NoActionBar.Base">
+    <style name="Base.Theme.GoogleMaterial.Light" parent="@*com.google.android.calendar:style/Base.V14.Theme.GoogleMaterial.Light">
         <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
     </style>
-    <style name="CalendarGmTheme.NoActionBar.Base" parent="@*com.google.android.calendar:style/Theme.GoogleMaterial.Light.NoActionBar.Bridge">
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-        <item name="android:scrollbarSize">4.0dip</item>
-        <item name="android:scrollbarThumbHorizontal">@*com.google.android.calendar:drawable/scrollbar_thumb</item>
-        <item name="android:scrollbarThumbVertical">@*com.google.android.calendar:drawable/scrollbar_thumb</item>
-        <item name="android:startYear">1970</item>
-        <item name="android:endYear">2036</item>
-        <item name="android:datePickerStyle">@*com.google.android.calendar:style/Widget.GoogleMaterial.DatePicker</item>
-        <item name="android:colorPrimary">@*com.google.android.calendar:color/google_blue600</item>
-        <item name="android:timePickerStyle">@*com.google.android.calendar:style/Widget.GoogleMaterial.TimePicker</item>
-        <item name="android:timePickerDialogTheme">@*com.google.android.calendar:style/ThemeOverlay.GoogleMaterial.Dialog.Picker</item>
-        <item name="android:datePickerDialogTheme">@*com.google.android.calendar:style/ThemeOverlay.GoogleMaterial.Dialog.Picker</item>
-        <item name="android:colorEdgeEffect">@*android:color/secondary_text_default_material_dark</item>
-        <item name="*com.google.android.calendar:actionOverflowMenuStyle">@*com.google.android.calendar:style/Widget.MaterialComponents.PopupMenu.Overflow</item>
-        <item name="*com.google.android.calendar:dialogCornerRadius">@*com.google.android.calendar:dimen/dialog_corner_radius</item>
-        <item name="*com.google.android.calendar:popupMenuStyle">@*com.google.android.calendar:style/Widget.MaterialComponents.PopupMenu</item>
-        <item name="*com.google.android.calendar:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
-        <item name="*com.google.android.calendar:colorAccent">@*com.google.android.calendar:color/google_blue500</item>
-        <item name="*com.google.android.calendar:colorControlNormal">@*android:color/secondary_text_default_material_dark</item>
-        <item name="*com.google.android.calendar:colorControlActivated">@*com.google.android.calendar:color/google_blue600</item>
-        <item name="*com.google.android.calendar:colorControlHighlight">@*android:color/white</item>
-        <item name="*com.google.android.calendar:alertDialogTheme">@*com.google.android.calendar:style/ThemeOverlay.Calendar.Dialog.Alert</item>
-        <item name="*com.google.android.calendar:snackbarStyle">@*com.google.android.calendar:style/Widget.GoogleMaterial.Snackbar</item>
-        <item name="*com.google.android.calendar:snackbarButtonStyle">@*com.google.android.calendar:style/Widget.GoogleMaterial.TextButton.Snackbar</item>
+    <style name="CalendarGmTheme.NoActionBar" parent="@*com.google.android.calendar:style/CalendarGmTheme.NoActionBar.Base">
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
     </style>
     <style name="CalendarGmTheme.NoActionBar.LaunchScreen" parent="@*com.google.android.calendar:style/CalendarGmTheme.NoActionBar">
         <item name="android:windowBackground">@*com.google.android.calendar:drawable/quantum_launchscreen_calendar</item>
@@ -157,15 +135,6 @@
     </style>
     <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light" />
     <style name="PreferencesThemeBase" parent="@*android:style/Theme.DeviceDefault.Light" />
-    <style name="TextAppearance.AddNoteHeaderLabel" parent="@*com.google.android.calendar:style/TextAppearance">
-        <item name="android:textSize">@*com.google.android.calendar:dimen/propose_time_add_note_header_text_size</item>
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:layout_gravity">center_vertical</item>
-    </style>
-    <style name="TextAppearance.ConfirmDialogContent" parent="@*com.google.android.calendar:style/TextAppearance">
-        <item name="android:textSize">@*com.google.android.calendar:dimen/propose_time_confirm_content_text_size</item>
-        <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
-    </style>
     <style name="TextAppearance.EditEvent" parent="@*com.google.android.calendar:style/TextAppearance">
         <item name="android:textAppearance">?android:textAppearanceMedium</item>
         <item name="android:textSize">18.0sp</item>
@@ -219,10 +188,6 @@
         <item name="*com.google.android.calendar:enforceMaterialTheme">false</item>
         <item name="*com.google.android.calendar:backgroundTint">@*android:color/background_floating_material_dark</item>
     </style>
-    <style name="Widget.GoogleMaterial.DatePicker" parent="@*android:style/Widget.DeviceDefault.DatePicker">
-        <item name="android:headerBackground">@*com.google.android.calendar:drawable/google_picker_header_with_divider</item>
-        <item name="android:dayOfWeekBackground">@*android:color/background_floating_material_dark</item>
-    </style>
     <style name="Widget.GoogleMaterial.FloatingActionButton" parent="@*com.google.android.calendar:style/Widget.MaterialComponents.FloatingActionButton">
         <item name="*com.google.android.calendar:rippleColor">@*android:color/ripple_material_dark</item>
         <item name="*com.google.android.calendar:elevation">@*com.google.android.calendar:dimen/google_fab_elevation</item>
@@ -233,6 +198,10 @@
         <item name="*com.google.android.calendar:shapeAppearanceOverlay">@*com.google.android.calendar:style/ShapeAppearanceOverlay.GoogleMaterial.FloatingActionButton</item>
         <item name="*com.google.android.calendar:enforceMaterialTheme">true</item>
         <item name="*com.google.android.calendar:backgroundTint">@*android:color/button_material_dark</item>
+    </style>
+    <style name="Widget.GoogleMaterial.ProductLockupView.Dark" parent="@*com.google.android.calendar:style/Widget.GoogleMaterial.ProductLockupView">
+        <item name="*com.google.android.calendar:productNameTextColor">@*android:color/white</item>
+        <item name="*com.google.android.calendar:logoColor">light</item>
     </style>
     <style name="Widget.GoogleMaterial.TabLayout" parent="@*com.google.android.calendar:style/Widget.MaterialComponents.TabLayout">
         <item name="android:background">@*android:color/primary_material_dark</item>

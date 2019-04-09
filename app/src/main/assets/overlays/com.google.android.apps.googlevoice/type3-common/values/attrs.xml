@@ -121,6 +121,7 @@
         <flag name="chains" value="0x00000008" />
         <flag name="none" value="0x00000001" />
     </attr>
+    <attr name="materialButtonOutlinedStyle" format="reference" />
     <attr name="materialButtonStyle" format="reference" />
     <attr name="materialCardViewStyle" format="reference" />
     <attr name="materialThemeOverlay" format="reference" />
@@ -128,11 +129,12 @@
     <attr name="mtrlColor" format="reference|color" />
     <attr name="mtrlColors" format="reference" />
     <attr name="navigationViewStyle" format="reference" />
+    <attr name="ogAccountMenuStyle" format="reference" />
+    <attr name="ogAccountParticleStyle" format="reference" />
     <attr name="openSearchBarStyle" format="reference" />
     <attr name="openSearchViewPrefixStyle" format="reference" />
     <attr name="openSearchViewStyle" format="reference" />
     <attr name="productLockupViewStyle" format="reference" />
-    <attr name="rippleColor" format="color" />
     <attr name="scrimBackground" format="reference|color" />
     <attr name="shapeAppearanceLargeComponent" format="reference" />
     <attr name="shapeAppearanceMediumComponent" format="reference" />
@@ -155,7 +157,16 @@
     <attr name="textInputStyle" format="reference" />
     <attr name="title" format="string" />
     <attr name="useMaterialThemeColors" format="boolean" />
+    <attr name="chipBackgroundColor" format="color" />
+    <attr name="chipRippleColor" format="color" />
+    <attr name="chipStrokeColor" format="color" />
+    <attr name="chipTextColor" format="color" />
+    <attr name="policyRippleColor" format="color" />
+    <attr name="policyTextColor" format="color" />
     <attr name="indent_divider" format="boolean" />
+    <attr name="displayNameTextAppearance" format="reference" />
+    <attr name="accountNameTextAppearance" format="reference" />
+    <attr name="disabledAccountHelpIconTint" format="color" />
     <attr name="discSize" format="dimension" />
     <attr name="avatarSize" format="dimension" />
     <attr name="maxDiscContentSize" format="dimension" />
@@ -230,6 +241,7 @@
         <flag name="enterAlways" value="0x00000004" />
         <flag name="enterAlwaysCollapsed" value="0x00000008" />
         <flag name="exitUntilCollapsed" value="0x00000002" />
+        <flag name="noScroll" value="0x00000000" />
         <flag name="scroll" value="0x00000001" />
         <flag name="snap" value="0x00000010" />
         <flag name="snapMargins" value="0x00000020" />
@@ -412,6 +424,7 @@
         <enum name="selected" value="0" />
         <enum name="unlabeled" value="2" />
     </attr>
+    <attr name="itemRippleColor" format="color" />
     <attr name="itemTextAppearanceInactive" format="reference" />
     <attr name="itemTextAppearanceActive" format="reference" />
     <attr name="itemHorizontalTranslationEnabled" format="boolean" />
@@ -446,10 +459,8 @@
     <attr name="summaryOff" format="string" />
     <attr name="disableDependentsState" format="boolean" />
     <attr name="chipSurfaceColor" format="color" />
-    <attr name="chipBackgroundColor" format="color" />
     <attr name="chipMinHeight" format="dimension" />
     <attr name="chipCornerRadius" format="dimension" />
-    <attr name="chipStrokeColor" format="color" />
     <attr name="chipStrokeWidth" format="dimension" />
     <attr name="chipMinTouchTargetSize" format="dimension" />
     <attr name="ensureMinTouchTargetSize" format="boolean" />
@@ -642,6 +653,9 @@
     <attr name="ttcIndex" format="integer" />
     <attr name="foregroundInsidePadding" format="boolean" />
     <attr name="maxHeightPercentage" format="float" />
+    <attr name="colorPrimaryGoogle" format="color" />
+    <attr name="colorPrimaryVariantGoogle" format="color" />
+    <attr name="colorOnPrimaryGoogle" format="color" />
     <attr name="colorSecondary50" format="color" />
     <attr name="colorSecondary100" format="color" />
     <attr name="colorSecondary700" format="color" />
@@ -830,6 +844,8 @@
     <attr name="animateNavigationIcon" format="boolean" />
     <attr name="animateMenuItems" format="boolean" />
     <attr name="autoShowKeyboard" format="boolean" />
+    <attr name="rippleColor" format="color" />
+    <attr name="textColor" format="color" />
     <attr name="overlapAnchor" format="boolean" />
     <attr name="state_above_anchor" format="boolean" />
     <attr name="key" format="string" />
@@ -1053,6 +1069,8 @@
     <attr name="counterOverflowTextColor" format="reference" />
     <attr name="endIconMode">
         <enum name="none" value="0" />
+        <enum name="custom" value="-1" />
+        <enum name="clear_text" value="2" />
         <enum name="password_toggle" value="1" />
     </attr>
     <attr name="endIconDrawable" format="reference" />
