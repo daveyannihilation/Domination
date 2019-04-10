@@ -33,6 +33,7 @@
     <attr name="drawerArrowStyle" format="reference" />
     <attr name="elevationOverlaysColor" format="color" />
     <attr name="elevationOverlaysEnabled" format="boolean" />
+    <attr name="ensureMinTouchTargetSize" format="boolean" />
     <attr name="extendedFloatingActionButtonStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="floatingActionButtonStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="forceFullHeight" format="boolean" />
@@ -283,6 +284,7 @@
         <enum name="src_over" value="3" />
     </attr>
     <attr name="textAllCaps" format="reference|boolean" />
+    <attr name="textLocale" format="string" />
     <attr name="autoSizeTextType">
         <enum name="none" value="0" />
         <enum name="uniform" value="1" />
@@ -295,6 +297,13 @@
     <attr name="lineHeight" format="dimension" />
     <attr name="firstBaselineToTopHeight" format="dimension" />
     <attr name="lastBaselineToBottomHeight" format="dimension" />
+    <attr name="fontVariationSettings" format="string" />
+    <attr name="drawableLeftCompat" format="reference" />
+    <attr name="drawableTopCompat" format="reference" />
+    <attr name="drawableRightCompat" format="reference" />
+    <attr name="drawableBottomCompat" format="reference" />
+    <attr name="drawableStartCompat" format="reference" />
+    <attr name="drawableEndCompat" format="reference" />
     <attr name="windowActionBar" format="boolean" />
     <attr name="windowNoTitle" format="boolean" />
     <attr name="windowActionBarOverlay" format="boolean" />
@@ -371,6 +380,8 @@
     <attr name="listPreferredItemHeightLarge" format="dimension" />
     <attr name="listPreferredItemPaddingLeft" format="dimension" />
     <attr name="listPreferredItemPaddingRight" format="dimension" />
+    <attr name="listPreferredItemPaddingStart" format="dimension" />
+    <attr name="listPreferredItemPaddingEnd" format="dimension" />
     <attr name="dropDownListViewStyle" format="reference" />
     <attr name="listPopupWindowStyle" format="reference" />
     <attr name="textAppearanceListItem" format="reference" />
@@ -416,6 +427,8 @@
     <attr name="tooltipForegroundColor" format="reference|color" />
     <attr name="colorError" format="reference|color" />
     <attr name="viewInflaterClass" format="string" />
+    <attr name="listChoiceIndicatorMultipleAnimated" format="reference" />
+    <attr name="listChoiceIndicatorSingleAnimated" format="reference" />
     <attr name="fabAlignmentMode">
         <enum name="center" value="0" />
         <enum name="end" value="1" />
@@ -444,6 +457,7 @@
     <attr name="behavior_hideable" format="boolean" />
     <attr name="behavior_skipCollapsed" format="boolean" />
     <attr name="behavior_fitToContents" format="boolean" />
+    <attr name="behavior_halfExpandedRatio" format="reference|float" />
     <attr name="behavior_saveFlags">
         <flag name="all" value="0xffffffff" />
         <flag name="none" value="0x00000000" />
@@ -475,7 +489,6 @@
     <attr name="chipCornerRadius" format="dimension" />
     <attr name="chipStrokeWidth" format="dimension" />
     <attr name="chipMinTouchTargetSize" format="dimension" />
-    <attr name="ensureMinTouchTargetSize" format="boolean" />
     <attr name="chipIconVisible" format="boolean" />
     <attr name="chipIconEnabled" format="boolean" />
     <attr name="chipIcon" format="reference" />
@@ -554,6 +567,7 @@
     <attr name="ink_active_diameter" format="dimension" />
     <attr name="ink_inactive_diameter" format="dimension" />
     <attr name="alpha" format="float" />
+    <attr name="buttonCompat" format="reference" />
     <attr name="buttonTint" format="color" />
     <attr name="buttonTintMode">
         <enum name="add" value="16" />
@@ -619,6 +633,8 @@
     <attr name="arrowShaftLength" format="dimension" />
     <attr name="barLength" format="dimension" />
     <attr name="thickness" format="dimension" />
+    <attr name="extendMotionSpec" format="reference" />
+    <attr name="shrinkMotionSpec" format="reference" />
     <attr name="behavior_autoShrink" format="boolean" />
     <attr name="paramName" format="string" />
     <attr name="paramValue" format="string" />
@@ -653,7 +669,6 @@
     </attr>
     <attr name="font" format="reference" />
     <attr name="fontWeight" format="integer" />
-    <attr name="fontVariationSettings" format="string" />
     <attr name="ttcIndex" format="integer" />
     <attr name="foregroundInsidePadding" format="boolean" />
     <attr name="profileSize" format="dimension" />
@@ -1092,6 +1107,16 @@
     <attr name="counterTextColor" format="reference" />
     <attr name="counterOverflowTextAppearance" format="reference" />
     <attr name="counterOverflowTextColor" format="reference" />
+    <attr name="startIconDrawable" format="reference" />
+    <attr name="startIconContentDescription" format="string" />
+    <attr name="startIconTint" format="color" />
+    <attr name="startIconTintMode">
+        <enum name="multiply" value="14" />
+        <enum name="screen" value="15" />
+        <enum name="src_atop" value="9" />
+        <enum name="src_in" value="5" />
+        <enum name="src_over" value="3" />
+    </attr>
     <attr name="endIconMode">
         <enum name="none" value="0" />
         <enum name="custom" value="-1" />

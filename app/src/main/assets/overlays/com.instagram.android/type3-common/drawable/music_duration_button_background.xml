@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape android:shape="rectangle"
+<layer-list
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="#1a000000" />
-    <stroke android:width="@*com.instagram.android:dimen/music_editor_duration_button_border_width" android:color="@*android:color/white" />
-    <corners android:radius="@*com.instagram.android:dimen/music_editor_rounded_time_view_corner_radius" />
-</shape>
+    <item android:left="@*com.instagram.android:dimen/music_editor_controls_duration_button_drawable_inset" android:top="@*com.instagram.android:dimen/music_editor_controls_duration_button_drawable_inset" android:right="@*com.instagram.android:dimen/music_editor_controls_duration_button_drawable_inset" android:bottom="@*com.instagram.android:dimen/music_editor_controls_duration_button_drawable_inset">
+        <shape android:shape="oval">
+            <solid android:color="#1a000000" />
+            <stroke android:width="@*com.instagram.android:dimen/music_editor_duration_button_border_width" android:color="@*android:color/white" />
+        </shape>
+    </item>
+</layer-list>
