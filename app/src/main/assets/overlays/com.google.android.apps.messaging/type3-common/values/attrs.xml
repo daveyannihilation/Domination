@@ -5,6 +5,7 @@
     <attr name="actionBarTitleTextColorM2" format="reference|color" />
     <attr name="addContactBannerIconM2" format="reference|color" />
     <attr name="alertDialogTitleColor" format="reference|color" />
+    <attr name="assistantCardPlaceHolderColor" format="reference|color" />
     <attr name="attachmentFilePreviewBorderM2" format="reference|color" />
     <attr name="attachmentFilePreviewBubbleM2" format="reference|color" />
     <attr name="attachmentFilePreviewBubbleSelectedM2" format="reference|color" />
@@ -38,8 +39,6 @@
     <attr name="c2oGifBrowserAttributionTextColor" format="reference|color" />
     <attr name="c2oGifBrowserCategorySelectedBackgroundColorM2" format="reference|color" />
     <attr name="c2oGifBrowserClearButtonColor" format="reference|color" />
-    <attr name="c2oGifBrowserTenorBannerLinkColor" format="reference|color" />
-    <attr name="c2oGifBrowserTenorBannerTextColor" format="reference|color" />
     <attr name="c2oGridTopBorderM2" format="reference|color" />
     <attr name="c2oItemBackground" format="reference|color" />
     <attr name="c2oOpenGalleryButtonBackgroundColor" format="reference|color" />
@@ -99,6 +98,7 @@
     <attr name="conversationListPopupTitleTextColorM2" format="reference|color" />
     <attr name="conversationListPromptNegativeButtonTextColorM2" format="reference|color" />
     <attr name="conversationListPromptPositiveButtonBackgroundM2" format="reference|color" />
+    <attr name="conversationListPromptPositiveButtonTextColorM2" format="reference|color" />
     <attr name="conversationListTimestamp" format="reference|color" />
     <attr name="conversationNameEditBoxHintM2" format="reference|color" />
     <attr name="conversationSettingsListDividerM2" format="reference|color" />
@@ -110,6 +110,7 @@
     <attr name="dialogBodyTextColorM2" format="reference|color" />
     <attr name="dialogSecondaryBodyTextColorM2" format="reference|color" />
     <attr name="drawerArrowStyle" format="reference" />
+    <attr name="extendedFloatingActionButtonStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="fabColorM2" format="reference|color" />
     <attr name="fileAttachmentPrimaryTextM2" format="reference|color" />
     <attr name="fileAttachmentSecondaryText" format="reference|color" />
@@ -263,6 +264,7 @@
     <attr name="searchChipBackgroundColor" format="reference" />
     <attr name="searchIconTintColor" format="reference|color" />
     <attr name="searchViewTextHintM2" format="reference|color" />
+    <attr name="sendButtonColor" format="reference|color" />
     <attr name="settingsListTextPrimary" format="reference|color" />
     <attr name="settingsListTextSecondary" format="reference|color" />
     <attr name="shapeAppearanceLargeComponent" format="reference" />
@@ -593,6 +595,14 @@
     <attr name="behavior_hideable" format="boolean" />
     <attr name="behavior_skipCollapsed" format="boolean" />
     <attr name="behavior_fitToContents" format="boolean" />
+    <attr name="behavior_saveFlags">
+        <flag name="all" value="0xffffffff" />
+        <flag name="none" value="0x00000000" />
+        <flag name="fitToContents" value="0x00000002" />
+        <flag name="hideable" value="0x00000004" />
+        <flag name="peekHeight" value="0x00000001" />
+        <flag name="skipCollapsed" value="0x00000008" />
+    </attr>
     <attr name="allowStacking" format="boolean" />
     <attr name="buttonHeight" format="dimension" />
     <attr name="fillWidthWhenVertical" format="boolean" />
@@ -801,6 +811,7 @@
         <enum name="defaultStrategy" value="0" />
         <enum name="nonExistent" value="2" />
     </attr>
+    <attr name="behavior_autoShrink" format="boolean" />
     <attr name="paramName" format="string" />
     <attr name="paramValue" format="string" />
     <attr name="fabSize">
@@ -993,10 +1004,11 @@
     <attr name="backgroundInsetTop" format="dimension" />
     <attr name="backgroundInsetEnd" format="dimension" />
     <attr name="backgroundInsetBottom" format="dimension" />
+    <attr name="materialAlertDialogTheme" format="reference" />
     <attr name="materialAlertDialogTitlePanelStyle" format="reference" />
     <attr name="materialAlertDialogTitleIconStyle" format="reference" />
     <attr name="materialAlertDialogTitleTextStyle" format="reference" />
-    <attr name="materialAlertDialogTheme" format="reference" />
+    <attr name="materialAlertDialogBodyTextStyle" format="reference" />
     <attr name="iconPadding" format="dimension" />
     <attr name="iconGravity">
         <flag name="start" value="0x00000001" />
@@ -1006,6 +1018,7 @@
     <attr name="cornerRadius" format="dimension" />
     <attr name="cardForegroundColor" format="color" />
     <attr name="checkedIconTint" format="color" />
+    <attr name="state_dragged" format="boolean" />
     <attr name="shapeAppearance" format="reference" />
     <attr name="shapeAppearanceOverlay" format="reference" />
     <attr name="maxHeight" format="dimension" />
@@ -1361,11 +1374,15 @@
     <attr name="counterTextColor" format="reference" />
     <attr name="counterOverflowTextAppearance" format="reference" />
     <attr name="counterOverflowTextColor" format="reference" />
-    <attr name="passwordToggleEnabled" format="boolean" />
-    <attr name="passwordToggleDrawable" format="reference" />
-    <attr name="passwordToggleContentDescription" format="string" />
-    <attr name="passwordToggleTint" format="color" />
-    <attr name="passwordToggleTintMode">
+    <attr name="endIconMode">
+        <enum name="none" value="0" />
+        <enum name="clear_text" value="2" />
+        <enum name="password_toggle" value="1" />
+    </attr>
+    <attr name="endIconDrawable" format="reference" />
+    <attr name="endIconContentDescription" format="string" />
+    <attr name="endIconTint" format="color" />
+    <attr name="endIconTintMode">
         <enum name="multiply" value="14" />
         <enum name="screen" value="15" />
         <enum name="src_atop" value="9" />
@@ -1385,6 +1402,17 @@
     <attr name="boxStrokeColor" format="color" />
     <attr name="boxBackgroundColor" format="color" />
     <attr name="boxStrokeWidth" format="dimension" />
+    <attr name="passwordToggleEnabled" format="boolean" />
+    <attr name="passwordToggleDrawable" format="reference" />
+    <attr name="passwordToggleContentDescription" format="string" />
+    <attr name="passwordToggleTint" format="color" />
+    <attr name="passwordToggleTintMode">
+        <enum name="multiply" value="14" />
+        <enum name="screen" value="15" />
+        <enum name="src_atop" value="9" />
+        <enum name="src_in" value="5" />
+        <enum name="src_over" value="3" />
+    </attr>
     <attr name="enforceMaterialTheme" format="boolean" />
     <attr name="enforceTextAppearance" format="boolean" />
     <attr name="titleTextAppearance" format="reference" />
