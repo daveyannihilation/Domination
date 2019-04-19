@@ -10,7 +10,7 @@
         <item name="*com.google.android.inputmethod.latin:colorPrimary">@*android:color/primary_material_dark</item>
         <item name="*com.google.android.inputmethod.latin:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
         <item name="*com.google.android.inputmethod.latin:colorAccent">@*com.google.android.inputmethod.latin:color/google_blue500</item>
-        <item name="*com.google.android.inputmethod.latin:alertDialogTheme">@*com.google.android.inputmethod.latin:style/ThemeOverlay.GoogleMaterial.Dialog.Alert</item>
+        <item name="*com.google.android.inputmethod.latin:materialAlertDialogTheme">@*com.google.android.inputmethod.latin:style/ThemeOverlay.GoogleMaterial.MaterialAlertDialog</item>
         <item name="*com.google.android.inputmethod.latin:snackbarStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.Snackbar</item>
         <item name="*com.google.android.inputmethod.latin:snackbarButtonStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.TextButton.Snackbar</item>
     </style>
@@ -149,30 +149,23 @@
         <item name="android:lineSpacingMultiplier">@*com.google.android.inputmethod.latin:dimen/native_language_hint_line_spacing_multiplier</item>
     </style>
     <style name="OffOverlayContent" parent="@*com.google.android.inputmethod.latin:style/Label">
-        <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/off_overlay_title_content_size</item>
+        <item name="android:textSize">?*ClipboardOffOverlayContentTextSize</item>
         <item name="android:textColor">@*android:color/white</item>
         <item name="android:gravity">center</item>
         <item name="android:visibility">visible</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:maxLines">4</item>
-        <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:layout_centerVertical">true</item>
-        <item name="android:layout_marginStart">@*com.google.android.inputmethod.latin:dimen/off_overlay_content_margin_horizontal</item>
-        <item name="android:layout_marginEnd">@*com.google.android.inputmethod.latin:dimen/off_overlay_content_margin_horizontal</item>
+        <item name="android:maxLines">10</item>
     </style>
     <style name="OffOverlayTitle" parent="@*com.google.android.inputmethod.latin:style/Label">
-        <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/off_overlay_title_text_size</item>
+        <item name="android:textSize">?*ClipboardOffOverlayTitleTextSize</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@*android:color/white</item>
         <item name="android:visibility">visible</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginBottom">@*com.google.android.inputmethod.latin:dimen/off_overlay_title_margin_bottom</item>
-        <item name="android:maxLines">2</item>
-        <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:layout_marginStart">@*com.google.android.inputmethod.latin:dimen/off_overlay_title_margin_horizontal</item>
-        <item name="android:layout_marginEnd">@*com.google.android.inputmethod.latin:dimen/off_overlay_title_margin_horizontal</item>
+        <item name="android:maxLines">4</item>
     </style>
     <style name="OptInFirstPageTitle">
         <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/opt_in_first_page_title_text_size</item>
@@ -226,11 +219,11 @@
         <item name="android:textColor">#ffdddddd</item>
         <item name="android:textColorLink">@*com.google.android.inputmethod.latin:color/blue_color</item>
         <item name="android:layout_gravity">center_horizontal</item>
-        <item name="android:paddingLeft">@*com.google.android.inputmethod.latin:dimen/sharing_dialog_content_padding</item>
-        <item name="android:paddingRight">@*com.google.android.inputmethod.latin:dimen/sharing_dialog_content_padding</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:lineSpacingMultiplier">1.5</item>
+        <item name="android:paddingStart">@*com.google.android.inputmethod.latin:dimen/sharing_dialog_content_padding</item>
+        <item name="android:paddingEnd">@*com.google.android.inputmethod.latin:dimen/sharing_dialog_content_padding</item>
     </style>
     <style name="SearchHeaderInnerView">
         <item name="android:orientation">vertical</item>
@@ -267,12 +260,12 @@
         <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/gboard_sharing_description_font_size</item>
         <item name="android:textColor">#ffdddddd</item>
         <item name="android:layout_gravity">center_horizontal</item>
-        <item name="android:paddingLeft">@*com.google.android.inputmethod.latin:dimen/sharing_dialog_content_padding</item>
-        <item name="android:paddingRight">@*com.google.android.inputmethod.latin:dimen/sharing_dialog_content_padding</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">@*com.google.android.inputmethod.latin:dimen/gboard_sharing_description_padding_top</item>
         <item name="android:lineSpacingMultiplier">1.5</item>
+        <item name="android:paddingStart">@*com.google.android.inputmethod.latin:dimen/sharing_dialog_content_padding</item>
+        <item name="android:paddingEnd">@*com.google.android.inputmethod.latin:dimen/sharing_dialog_content_padding</item>
     </style>
     <style name="SharingDialogTitle">
         <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/sharing_dialog_title_font_size</item>
@@ -285,27 +278,11 @@
         <item name="android:lineSpacingMultiplier">1.2</item>
         <item name="android:fontFamily">sans-medium</item>
     </style>
-    <style name="SignInCard">
-        <item name="android:gravity">center_horizontal</item>
-        <item name="android:orientation">vertical</item>
-        <item name="android:background">@*android:color/background_floating_material_dark</item>
-        <item name="android:layout_alignParentBottom">true</item>
-    </style>
     <style name="StickerButton">
         <item name="android:background">@*android:color/button_material_dark</item>
         <item name="android:layout_width">@*com.google.android.inputmethod.latin:dimen/sticker_category_item_size</item>
         <item name="android:layout_height">@*com.google.android.inputmethod.latin:dimen/sticker_category_item_size</item>
         <item name="android:scaleType">center</item>
-    </style>
-    <style name="StickerCardViewWrapperM2">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="*com.google.android.inputmethod.latin:cardBackgroundColor">@*android:color/background_floating_material_dark</item>
-        <item name="*com.google.android.inputmethod.latin:cardCornerRadius">4.0dip</item>
-        <item name="*com.google.android.inputmethod.latin:cardElevation">0.0dip</item>
-        <item name="*com.google.android.inputmethod.latin:cardMaxElevation">0.0dip</item>
-        <item name="*com.google.android.inputmethod.latin:cardUseCompatPadding">false</item>
-        <item name="*com.google.android.inputmethod.latin:cardPreventCornerOverlap">false</item>
     </style>
     <style name="ThemeDetailsApplyButtonHolder">
         <item name="android:background">@*android:color/button_material_dark</item>

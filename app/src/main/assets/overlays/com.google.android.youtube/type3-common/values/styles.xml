@@ -113,6 +113,18 @@
         <item name="android:background">@*android:color/secondary_text_leanback_light</item>
         <item name="android:colorBackground">@*android:color/secondary_text_leanback_light</item>
     </style>
+    <style name="Base.Theme.YouTube.Launcher" parent="@*com.google.android.youtube:style/Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowBackground">@*com.google.android.youtube:drawable/quantum_launchscreen_youtube</item>
+        <item name="android:windowShowWallpaper">false</item>
+        <item name="android:statusBarColor">@*android:color/primary_text_leanback_light</item>
+        <item name="android:navigationBarColor">@*android:color/primary_text_leanback_light</item>
+    </style>
+    <style name="Base.Theme.YouTube.Launcher.Dark" parent="@*com.google.android.youtube:style/Base.Theme.YouTube.Launcher">
+        <item name="*com.google.android.youtube:colorPrimaryDark">@*android:color/primary_text_leanback_light</item>
+        <item name="android:windowShowWallpaper">false</item>
+        <item name="android:statusBarColor">@*android:color/primary_text_leanback_light</item>
+        <item name="android:navigationBarColor">@*android:color/primary_text_leanback_light</item>
+    </style>
     <style name="Base.ThemeOverlay.AppCompat.ActionBar" parent="@*com.google.android.youtube:style/Base.ThemeOverlay.AppCompat">
         <item name="*com.google.android.youtube:searchViewStyle">@*com.google.android.youtube:style/Widget.AppCompat.SearchView.ActionBar</item>
         <item name="*com.google.android.youtube:colorControlNormal">@*android:color/white</item>
@@ -164,8 +176,7 @@
         <item name="*com.google.android.youtube:quantumFabRippleColor">#22ffffff</item>
         <item name="*com.google.android.youtube:quantumSize">normal</item>
     </style>
-    <style name="Theme.YouTube.Launcher" parent="@*com.google.android.youtube:style/Theme.YouTube.Light.NoActionBar">
-        <item name="android:windowBackground">@*com.google.android.youtube:drawable/quantum_launchscreen_youtube</item>
+    <style name="Theme.YouTube.Launcher" parent="@*com.google.android.youtube:style/Base.Theme.YouTube.Launcher.Dark">
         <item name="*com.google.android.youtube:colorPrimaryDark">@*android:color/primary_text_leanback_light</item>
         <item name="android:windowShowWallpaper">false</item>
         <item name="android:statusBarColor">@*android:color/primary_text_leanback_light</item>
@@ -206,6 +217,7 @@
         <item name="*com.google.android.youtube:ytBrandLinkText">@*com.google.android.youtube:color/yt_youtube_red</item>
         <item name="*com.google.android.youtube:ytBrandRed">@*com.google.android.youtube:color/yt_youtube_red</item>
         <item name="*com.google.android.youtube:ytButtonChipBackgroundHover">@*com.google.android.youtube:color/yt_white1_opacity20</item>
+        <item name="*com.google.android.youtube:ytCallToAction">@*com.google.android.youtube:color/yt_light_blue</item>
         <item name="*com.google.android.youtube:ytCallToActionInverse">@*com.google.android.youtube:color/yt_dark_blue</item>
         <item name="*com.google.android.youtube:ytChipBackground">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.youtube:ytErrorBackground">@*com.google.android.youtube:color/yt_white2</item>

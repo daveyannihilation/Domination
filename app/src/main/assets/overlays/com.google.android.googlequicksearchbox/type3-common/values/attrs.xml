@@ -4,6 +4,7 @@
     <attr name="accountExpandCloseDrawable" format="reference" />
     <attr name="accountExpandDividerDrawable" format="reference" />
     <attr name="accountExpandOpenDrawable" format="reference" />
+    <attr name="appBarLayoutStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="assistant_setting_payments_list_divider_right_padding" format="dimension" />
     <attr name="assistant_setting_payments_list_item_left_right_padding" format="dimension" />
     <attr name="assistant_setting_payments_setup_template_top_padding" format="dimension" />
@@ -395,10 +396,14 @@
     <attr name="verticalItemMargin" format="reference|dimension" />
     <attr name="vogPromptColor" format="reference|color" />
     <attr name="vogPromptTextStyle" format="integer" />
+    <attr name="actionTextColor" format="color" />
+    <attr name="backgroundColor" format="reference|color" />
     <attr name="chipBackgroundColor" format="color" />
     <attr name="chipRippleColor" format="color" />
     <attr name="chipStrokeColor" format="color" />
     <attr name="chipTextColor" format="color" />
+    <attr name="dividerColor" format="color" />
+    <attr name="iconColor" format="color" />
     <attr name="policyRippleColor" format="color" />
     <attr name="policyTextColor" format="color" />
     <attr name="embeddedNoSelectedAccountTitleColor" format="color" />
@@ -416,6 +421,7 @@
     <attr name="discMinTouchTargetSize" format="dimension" />
     <attr name="ensureDiscMinTouchTargetSize" format="boolean" />
     <attr name="defaultAvatarColor" format="color" />
+    <attr name="badgeWrapperColor" format="color" />
     <attr name="navigationMode">
         <enum name="listMode" value="1" />
         <enum name="normal" value="0" />
@@ -669,12 +675,14 @@
     <attr name="arcTrackHighlightWidth" format="dimension" />
     <attr name="arcTrackColor" format="color" />
     <attr name="arcTrackHighlightColor" format="color" />
+    <attr name="arcTrackHighlightHighColor" format="color" />
     <attr name="arcTrackHighlightStartColor" format="color" />
     <attr name="arcTrackHighlightEndColor" format="color" />
     <attr name="arcThumbColor" format="color" />
     <attr name="arcThumbInnerColor" format="color" />
     <attr name="arcThumbSize" format="dimension" />
     <attr name="arcThumbHighlightColor" format="color" />
+    <attr name="arcThumbHighlightHighColor" format="color" />
     <attr name="arcThumbHighlightSize" format="dimension" />
     <attr name="arcValueUpContentDescription" format="string" />
     <attr name="arcValueDownContentDescription" format="string" />
@@ -715,6 +723,7 @@
     <attr name="behavior_hideable" format="boolean" />
     <attr name="behavior_skipCollapsed" format="boolean" />
     <attr name="behavior_fitToContents" format="boolean" />
+    <attr name="behavior_halfExpandedRatio" format="reference|float" />
     <attr name="behavior_saveFlags">
         <flag name="none" value="0x00000000" />
         <flag name="all" value="0xffffffff" />
@@ -804,7 +813,6 @@
     <attr name="chipSpacingVertical" format="dimension" />
     <attr name="singleLine" format="boolean" />
     <attr name="checkedChip" format="reference" />
-    <attr name="backgroundColor" format="reference|color" />
     <attr name="cutout_radius" format="reference|dimension" />
     <attr name="layout_cutoutOffsetX" format="dimension" />
     <attr name="layout_cutoutOffsetY" format="dimension" />
@@ -958,6 +966,8 @@
     <attr name="text" format="reference" />
     <attr name="useSimpleSummaryProvider" format="boolean" />
     <attr name="hasDefaultImage" format="boolean" />
+    <attr name="extendMotionSpec" format="reference" />
+    <attr name="shrinkMotionSpec" format="reference" />
     <attr name="behavior_autoShrink" format="boolean" />
     <attr name="key" format="string" />
     <attr name="value" format="string" />
@@ -1209,7 +1219,7 @@
     </attr>
     <attr name="itemActionIcon" format="reference" />
     <attr name="opaTitle" format="reference" />
-    <attr name="message" format="reference" />
+    <attr name="opaMessage" format="reference" />
     <attr name="messageSecondParagraph" format="reference" />
     <attr name="annotation" format="reference" />
     <attr name="illustration" format="reference" />
@@ -1379,6 +1389,7 @@
     <attr name="itemIconPadding" format="dimension" />
     <attr name="itemIconSize" format="dimension" />
     <attr name="multiline" format="boolean" />
+    <attr name="message" format="string" />
     <attr name="contentResId" format="reference" />
     <attr name="defaultMarginsEnabled" format="boolean" />
     <attr name="defaultScrollFlagsEnabled" format="boolean" />
@@ -1756,6 +1767,9 @@
     </attr>
     <attr name="tabRippleColor" format="color" />
     <attr name="tabUnboundedRipple" format="boolean" />
+    <attr name="certificate" format="string" />
+    <attr name="floatingToolbarForegroundColor" format="reference|color" />
+    <attr name="floatingToolbarPopupBackgroundDrawable" format="reference" />
     <attr name="hintEnabled" format="boolean" />
     <attr name="hintAnimationEnabled" format="boolean" />
     <attr name="hintTextAppearance" format="reference" />
@@ -1950,6 +1964,7 @@
         <enum name="top" value="1" />
         <enum name="off" value="2" />
     </attr>
+    <attr name="mtrlTrackColor" format="reference|color" />
     <attr name="mtrlLinearBarHeight" format="reference|dimension" />
     <attr name="mtrlLinearBarInset" format="reference|dimension" />
 </resources>

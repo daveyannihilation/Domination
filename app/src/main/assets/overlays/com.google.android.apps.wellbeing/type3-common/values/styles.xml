@@ -7,6 +7,10 @@
     <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse" parent="@*android:style/TextAppearance.Material.Widget.ActionBar.Subtitle" />
     <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse" parent="@*android:style/TextAppearance.Material.Widget.ActionBar.Title" />
     <style name="Base.TextAppearance.AppCompat.Widget.Button.Inverse" parent="@*android:style/TextAppearance.Material.Widget.Button" />
+    <style name="Base.Theme.SystemSettings" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:colorControlNormal">@*android:color/accent_material_dark</item>
+        <item name="*com.google.android.apps.wellbeing:titleTextColor">@*android:color/accent_material_dark</item>
+    </style>
     <style name="Base.V14.ThemeOverlay.GoogleMaterial.Dialog.Picker" parent="@*com.google.android.apps.wellbeing:style/ThemeOverlay.GoogleMaterial.Dialog">
         <item name="android:textColorPrimary">@*android:color/white</item>
         <item name="android:textColorSecondary">@*android:color/secondary_text_default_material_dark</item>
@@ -47,14 +51,7 @@
         <item name="android:windowLightNavigationBar">false</item>
         <item name="android:navigationBarDividerColor">@*android:color/primary_dark_material_dark</item>
     </style>
-    <style name="Theme.SystemSettings" parent="@*android:style/Theme.DeviceDefault.Light">
-        <item name="android:colorControlNormal">@*com.google.android.apps.wellbeing:color/google_blue500</item>
-        <item name="*com.google.android.apps.wellbeing:titleTextColor">@*com.google.android.apps.wellbeing:color/google_blue500</item>
-    </style>
-    <style name="WellbeingDialog" parent="@*com.google.android.apps.wellbeing:style/ThemeOverlay.GoogleMaterial.Dialog.Alert">
-        <item name="*com.google.android.apps.wellbeing:colorBackgroundFloating">@*android:color/background_floating_material_dark</item>
-    </style>
-    <style name="WellbeingPopup" parent="@*com.google.android.apps.wellbeing:style/Theme.SystemSettings">
+    <style name="WellbeingPopup" parent="@*com.google.android.apps.wellbeing:style/Base.Theme.SystemSettings">
         <item name="*com.google.android.apps.wellbeing:colorSurface">@*android:color/background_floating_material_dark</item>
     </style>
     <style name="Widget.Design.BottomSheet.Modal" parent="@*android:style/Widget">

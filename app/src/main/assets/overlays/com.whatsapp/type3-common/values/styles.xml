@@ -50,6 +50,13 @@
         <item name="android:layout_centerInParent">true</item>
         <item name="android:textAllCaps">true</item>
     </style>
+    <style name="DatePickerDialog" parent="@*com.whatsapp:style/ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="android:headerBackground">#ff388e3c</item>
+        <item name="android:datePickerStyle">@*com.whatsapp:style/SpinnerDatePicker</item>
+        <item name="*com.whatsapp:colorControlActivated">@*com.whatsapp:color/accent</item>
+        <item name="*com.whatsapp:colorControlHighlight">@*com.whatsapp:color/accent</item>
+        <item name="*com.whatsapp:showTitle">false</item>
+    </style>
     <style name="DescribeProblemInlineLink" parent="@*android:style/Widget.TextView">
         <item name="android:textSize">14.0sp</item>
         <item name="android:textColor">#ff1976d2</item>
@@ -195,6 +202,10 @@
         <item name="*com.whatsapp:toolbarStyle">@*com.whatsapp:style/Widget.Styled.Toolbar</item>
         <item name="*com.whatsapp:windowActionModeOverlay">true</item>
     </style>
+    <style name="Theme.App.Bloks" parent="@*com.whatsapp:style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="*com.whatsapp:colorPrimary">@*com.whatsapp:color/accent</item>
+    </style>
     <style name="Theme.App.ChatInfo" parent="@*com.whatsapp:style/Theme.App">
         <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="android:backgroundTint">@*android:color/background_dark</item>
@@ -218,9 +229,12 @@
     </style>
     <style name="Theme.App.SettingsLight" parent="@*com.whatsapp:style/Theme.Prefs">
         <item name="*com.whatsapp:settingsBackgroundColor">@*android:color/background_dark</item>
+        <item name="*com.whatsapp:settingsButtonStyle">@*com.whatsapp:style/WhatsAppButton.Green</item>
         <item name="*com.whatsapp:settingsDividerColor">@*android:color/transparent</item>
+        <item name="*com.whatsapp:settingsGrayButtonColor">@*com.whatsapp:color/settings_gray_edit_btn</item>
         <item name="*com.whatsapp:settingsIconColor">@*android:color/white</item>
         <item name="*com.whatsapp:settingsProfilePhotoOutlineColor">@*android:color/white</item>
+        <item name="*com.whatsapp:settingsRadioButtonStyle">@*com.whatsapp:style/RadioButton</item>
         <item name="*com.whatsapp:settingsSubtitleTextColor">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.whatsapp:settingsTitleTextColor">@*android:color/white</item>
     </style>
