@@ -159,12 +159,6 @@
         <item name="android:paddingStart">8.0dip</item>
         <item name="android:paddingEnd">16.0dip</item>
     </style>
-    <style name="Lens.Activity.Theme.FullScreenDialog" parent="@*com.google.android.googlequicksearchbox:style/Theme.MaterialComponents.Light">
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:windowFullscreen">false</item>
-    </style>
     <style name="Lens.Suggestion" parent="@*android:style/TextAppearance.Medium">
         <item name="android:textSize">14.0sp</item>
         <item name="android:textColor">#ffffffff</item>
@@ -197,23 +191,6 @@
         <item name="android:shadowDx">2.0</item>
         <item name="android:shadowDy">2.0</item>
         <item name="android:shadowRadius">2.0</item>
-    </style>
-    <style name="MessageSenderFromOthersText">
-        <item name="android:textSize">12.0sp</item>
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:lineSpacingExtra">4.0sp</item>
-        <item name="android:fontFamily">Roboto</item>
-    </style>
-    <style name="MessageSenderFromYouText">
-        <item name="android:textSize">12.0sp</item>
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:fontFamily">Roboto</item>
-    </style>
-    <style name="MessageText">
-        <item name="android:textSize">@*com.google.android.googlequicksearchbox:dimen/message_text_size</item>
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:lineSpacingExtra">4.0sp</item>
-        <item name="android:fontFamily">@*com.google.android.googlequicksearchbox:string/message_snippet_font</item>
     </style>
     <style name="MoreOrLessIcon">
         <item name="android:layout_gravity">center|right|top</item>
@@ -396,6 +373,13 @@
         <item name="android:popupMenuStyle">@*com.google.android.googlequicksearchbox:style/KeepPopupMenuStyle</item>
         <item name="android:backgroundTint">@null</item>
     </style>
+    <style name="Theme.Lens.FullScreenDialog" parent="@*com.google.android.googlequicksearchbox:style/Theme.Lens">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="*com.google.android.googlequicksearchbox:buttonBarNegativeButtonStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.StrokedButton</item>
+    </style>
     <style name="Theme.OptIn.UOS" parent="@*com.google.android.googlequicksearchbox:style/Theme.Velvet">
         <item name="android:windowBackground">@*android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>
@@ -431,9 +415,6 @@
         <item name="*com.google.android.googlequicksearchbox:vogPromptTextStyle">2</item>
         <item name="android:backgroundTint">@null</item>
     </style>
-    <style name="Theme.SearchNow" parent="@*com.google.android.googlequicksearchbox:style/Theme.Velvet">
-        <item name="android:backgroundTint">@*android:color/background_dark</item>
-    </style>
     <style name="Theme.Shim.Light" parent="@*android:style/Theme.Holo" />
     <style name="Theme.Shim.Light.Dialog" parent="@*android:style/Theme.Holo.Dialog" />
     <style name="Theme.Shim.Light.NoActionBar" parent="@*android:style/Theme.Holo.NoActionBar" />
@@ -447,14 +428,28 @@
         <item name="android:navigationBarColor">@*android:color/transparent</item>
         <item name="android:backgroundTint">@null</item>
     </style>
-    <style name="Theme.Velvet" parent="@*com.google.android.googlequicksearchbox:style/Theme.Gsa">
+    <style name="Theme.Velvet" parent="@*com.google.android.googlequicksearchbox:style/Theme.AppCompat.NoActionBar">
         <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="android:windowNoTitle">true</item>
+        <item name="android:textColorHighlight">@*com.google.android.googlequicksearchbox:color/qp_highlight</item>
         <item name="android:windowDisablePreview">true</item>
         <item name="android:windowSoftInputMode">adjustPan|stateUnchanged</item>
         <item name="android:windowActionBar">false</item>
+        <item name="android:actionBarStyle">@*com.google.android.googlequicksearchbox:style/Gsa</item>
+        <item name="android:alertDialogTheme">@*com.google.android.googlequicksearchbox:style/Theme.Gsa.Dialog</item>
+        <item name="android:textColorHighlightInverse">@*com.google.android.googlequicksearchbox:color/qp_highlight</item>
+        <item name="android:colorControlActivated">@*com.google.android.googlequicksearchbox:color/qp_blue</item>
+        <item name="android:colorPrimary">@*com.google.android.googlequicksearchbox:color/qp_blue</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="android:colorAccent">@*com.google.android.googlequicksearchbox:color/qp_blue</item>
         <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.googlequicksearchbox:qpActionIconAlpha">1.0</item>
+        <item name="*com.google.android.googlequicksearchbox:qpActionIconTint">@*android:color/white</item>
         <item name="*com.google.android.googlequicksearchbox:qpCardElevation">@*com.google.android.googlequicksearchbox:dimen/card_elevation</item>
+        <item name="*com.google.android.googlequicksearchbox:qpH1FontFamily">sans-serif-light</item>
+        <item name="*com.google.android.googlequicksearchbox:qpH1TextSize">@*com.google.android.googlequicksearchbox:dimen/qp_h1_text_size</item>
+        <item name="*com.google.android.googlequicksearchbox:vogPromptColor">@*com.google.android.googlequicksearchbox:color/qp_text_b2</item>
+        <item name="*com.google.android.googlequicksearchbox:vogPromptTextStyle">2</item>
         <item name="android:shadowColor">@*android:color/white</item>
         <item name="android:shadowDx">2.0</item>
         <item name="android:shadowDy">2.0</item>
@@ -507,12 +502,6 @@
         <item name="*com.google.android.googlequicksearchbox:logoColor">light</item>
     </style>
     <style name="Widget.Shim.Light.ActionBar" parent="@*android:style/Widget.Holo.ActionBar" />
-    <style name="WidgetMaterial" parent="@*android:style/Theme.DeviceDefault.Light">
-        <item name="android:windowBackground">@*android:color/transparent</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowShowWallpaper">true</item>
-        <item name="android:colorBackgroundCacheHint">@null</item>
-    </style>
     <style name="YourPeopleSettingsAnnotation">
         <item name="android:background">@*android:color/background_dark</item>
     </style>

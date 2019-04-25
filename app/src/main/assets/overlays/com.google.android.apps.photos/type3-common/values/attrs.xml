@@ -17,6 +17,7 @@
     <attr name="colorOnPrimaryEmphasisHighType" format="color" />
     <attr name="colorOnPrimaryEmphasisMedium" format="color" />
     <attr name="colorOnPrimaryGoogle" format="color" />
+    <attr name="colorOnPrimaryRippleGoogle" format="color" />
     <attr name="colorOnSecondary" format="color" />
     <attr name="colorOnSurface" format="color" />
     <attr name="colorOnSurfaceDisabled" format="color" />
@@ -24,12 +25,10 @@
     <attr name="colorOnSurfaceEmphasisMedium" format="color" />
     <attr name="colorOnSurfaceVariant" format="color" />
     <attr name="colorPrimaryGoogle" format="color" />
+    <attr name="colorPrimaryStateGoogle" format="color" />
     <attr name="colorPrimaryVariant" format="color" />
     <attr name="colorPrimaryVariantGoogle" format="color" />
     <attr name="colorSecondary" format="color" />
-    <attr name="colorSecondary100" format="color" />
-    <attr name="colorSecondary50" format="color" />
-    <attr name="colorSecondary700" format="color" />
     <attr name="colorSecondaryVariant" format="color" />
     <attr name="colorSurface" format="color" />
     <attr name="constraintSet" format="reference" />
@@ -162,6 +161,7 @@
     <attr name="ogAccountMenuStyle" format="reference" />
     <attr name="ogAccountParticleDiscStyle" format="reference" />
     <attr name="ogAccountParticleStyle" format="reference" />
+    <attr name="ogGoogleMaterialBottomDrawerStyle" format="reference" />
     <attr name="openSearchBarStyle" format="reference" />
     <attr name="openSearchViewPrefixStyle" format="reference" />
     <attr name="openSearchViewStyle" format="reference" />
@@ -196,18 +196,19 @@
     <attr name="textAppearanceSubtitleAlt1" format="reference" />
     <attr name="textAppearanceSubtitleAlt2" format="reference" />
     <attr name="textInputStyle" format="reference" />
-    <attr name="actionTextColor" format="color" />
-    <attr name="backgroundColor" format="color" />
     <attr name="accountMenuChipBackgroundColor" format="color" />
     <attr name="accountMenuChipRippleColor" format="color" />
     <attr name="accountMenuChipStrokeColor" format="color" />
     <attr name="accountMenuChipTextColor" format="color" />
+    <attr name="actionTextColor" format="color" />
+    <attr name="backgroundColor" format="color" />
+    <attr name="bottomDrawerHandleColor" format="color" />
     <attr name="dividerColor" format="color" />
+    <attr name="elevatedHeaderColor" format="color" />
+    <attr name="embeddedNoSelectedAccountTitleColor" format="color" />
     <attr name="iconColor" format="color" />
     <attr name="policyRippleColor" format="color" />
     <attr name="policyTextColor" format="color" />
-    <attr name="embeddedNoSelectedAccountTitleColor" format="color" />
-    <attr name="elevatedHeaderColor" format="color" />
     <attr name="indent_divider" format="boolean" />
     <attr name="displayNameTextAppearance" format="reference" />
     <attr name="accountNameTextAppearance" format="reference" />
@@ -222,6 +223,7 @@
     <attr name="ensureDiscMinTouchTargetSize" format="boolean" />
     <attr name="defaultAvatarColor" format="color" />
     <attr name="badgeWrapperColor" format="color" />
+    <attr name="avatarBorderRingColor" format="color" />
     <attr name="navigationMode">
         <enum name="listMode" value="1" />
         <enum name="normal" value="0" />
@@ -281,6 +283,7 @@
     <attr name="expanded" format="boolean" />
     <attr name="liftOnScroll" format="boolean" />
     <attr name="liftOnScrollTargetViewId" format="reference" />
+    <attr name="statusBarForeground" format="color" />
     <attr name="state_collapsed" format="boolean" />
     <attr name="state_collapsible" format="boolean" />
     <attr name="state_lifted" format="boolean" />
@@ -336,6 +339,15 @@
     <attr name="drawableBottomCompat" format="reference" />
     <attr name="drawableStartCompat" format="reference" />
     <attr name="drawableEndCompat" format="reference" />
+    <attr name="drawableTint" format="color" />
+    <attr name="drawableTintMode">
+        <enum name="add" value="16" />
+        <enum name="multiply" value="14" />
+        <enum name="screen" value="15" />
+        <enum name="src_atop" value="9" />
+        <enum name="src_in" value="5" />
+        <enum name="src_over" value="3" />
+    </attr>
     <attr name="windowActionBar" format="boolean" />
     <attr name="windowNoTitle" format="boolean" />
     <attr name="windowActionBarOverlay" format="boolean" />
@@ -478,6 +490,9 @@
     </attr>
     <attr name="unselectedChipBackgroundColor" format="color" />
     <attr name="unselectedChipTextColor" format="color" />
+    <attr name="badgeTextColor" format="color" />
+    <attr name="maxCharacterCount" format="integer" />
+    <attr name="number" format="integer" />
     <attr name="titleColor" format="color" />
     <attr name="backgroundTint" format="color" />
     <attr name="fabAlignmentMode">
@@ -845,6 +860,8 @@
         <enum name="thing_proto" value="9" />
     </attr>
     <attr name="sectionContent" format="string" />
+    <attr name="googleMaterialBottomDrawerBackgroundColor" format="color" />
+    <attr name="googleMaterialBottomDrawerHandleColor" format="color" />
     <attr name="inputEnabled" format="boolean" />
     <attr name="sourceClass">
         <enum name="contact" value="1" />
@@ -986,6 +1003,7 @@
     <attr name="headerLayout" format="reference" />
     <attr name="itemHorizontalPadding" format="dimension" />
     <attr name="itemIconPadding" format="dimension" />
+    <attr name="itemMaxLines" format="integer" />
     <attr name="defaultMarginsEnabled" format="boolean" />
     <attr name="defaultScrollFlagsEnabled" format="boolean" />
     <attr name="hideNavigationIcon" format="boolean" />
@@ -1202,6 +1220,7 @@
     <attr name="tabIndicatorAnimationDuration" format="integer" />
     <attr name="tabIndicatorFullWidth" format="boolean" />
     <attr name="tabMode">
+        <enum name="auto" value="2" />
         <enum name="fixed" value="1" />
         <enum name="scrollable" value="0" />
     </attr>
