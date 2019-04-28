@@ -7,9 +7,9 @@
         <include android:id="@*com.whatsapp:id/gif_picker_header" layout="@*com.whatsapp:layout/gif_picker_header" />
         <include android:id="@*com.whatsapp:id/emoji_group_layout" layout="@*com.whatsapp:layout/emoji_picker_header" />
         <FrameLayout android:background="@*com.whatsapp:color/emoji_popup_body" android:layout_width="fill_parent" android:layout_height="fill_parent">
-            <android.support.v4.view.ViewPager android:id="@*com.whatsapp:id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-            <android.support.v4.view.ViewPager android:id="@*com.whatsapp:id/sticker_pager" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-            <android.support.v4.view.ViewPager android:id="@*com.whatsapp:id/gif_pager" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <androidx.viewpager.widget.ViewPager android:id="@*com.whatsapp:id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <androidx.viewpager.widget.ViewPager android:id="@*com.whatsapp:id/sticker_pager" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <androidx.viewpager.widget.ViewPager android:id="@*com.whatsapp:id/gif_pager" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
             <View android:id="@*com.whatsapp:id/fallback_divider" android:background="#00000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:alpha="0.1" />
         </FrameLayout>
     </LinearLayout>
@@ -29,7 +29,7 @@
     </FrameLayout>
     <FrameLayout android:id="@*com.whatsapp:id/gif_trending" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
         <View android:background="#00000000" android:layout_width="fill_parent" android:layout_height="0.0dip" />
-        <android.support.v7.widget.RecyclerView android:id="@*com.whatsapp:id/gif_trending_grid" android:background="@*android:color/background_floating_material_dark" android:paddingLeft="4.0dip" android:paddingTop="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@*com.whatsapp:id/gif_trending_grid" android:background="@*android:color/background_floating_material_dark" android:paddingLeft="4.0dip" android:paddingTop="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
     </FrameLayout>
     <FrameLayout android:id="@*com.whatsapp:id/footer_toolbar_cont" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="@*com.whatsapp:dimen/picker_footer_height" android:layout_alignParentBottom="true">
         <com.whatsapp.EmojiPopupFooter android:id="@*com.whatsapp:id/footer_toolbar" android:background="@*com.whatsapp:color/emoji_popup_header" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">

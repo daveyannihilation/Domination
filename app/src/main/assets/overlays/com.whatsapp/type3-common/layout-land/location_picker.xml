@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.whatsapp.EmojiPopupLayout android:id="@*com.whatsapp:id/main" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="vertical" android:id="@*com.whatsapp:id/location_picker" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true">
+    <LinearLayout android:orientation="vertical" android:id="@*com.whatsapp:id/location_picker" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+      xmlns:android="http://schemas.android.com/apk/res/android">
         <FrameLayout android:background="@*android:color/background_dark" android:layout_width="fill_parent" android:layout_height="wrap_content">
             <include layout="@*com.whatsapp:layout/toolbar" />
             <FrameLayout android:id="@*com.whatsapp:id/search_holder" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@*com.whatsapp:dimen/abc_action_bar_default_height_material" />
@@ -65,9 +66,9 @@
                     <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@*com.whatsapp:id/comment_entry" android:layout_alignParentTop="true">
                         <RadioGroup android:layout_gravity="center" android:orientation="vertical" android:id="@*com.whatsapp:id/duration" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checkedButton="@*com.whatsapp:id/duration_60_min">
                             <RadioButton android:textSize="15.0sp" android:textColor="@*com.whatsapp:color/selector_live_location_duration" android:gravity="center" android:id="@*com.whatsapp:id/duration_15_min" android:background="@*com.whatsapp:drawable/btn_live_location" android:layout_width="fill_parent" android:layout_height="fill_parent" android:button="@*android:color/transparent" />
-                            <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="8.0dip" />
+                            <androidx.legacy.widget.Space android:layout_width="fill_parent" android:layout_height="8.0dip" />
                             <RadioButton android:textSize="15.0sp" android:textColor="@*com.whatsapp:color/selector_live_location_duration" android:gravity="center" android:id="@*com.whatsapp:id/duration_60_min" android:background="@*com.whatsapp:drawable/btn_live_location" android:layout_width="fill_parent" android:layout_height="fill_parent" android:button="@*android:color/transparent" />
-                            <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="8.0dip" />
+                            <androidx.legacy.widget.Space android:layout_width="fill_parent" android:layout_height="8.0dip" />
                             <RadioButton android:textSize="15.0sp" android:textColor="@*com.whatsapp:color/selector_live_location_duration" android:gravity="center" android:id="@*com.whatsapp:id/duration_480_min" android:background="@*com.whatsapp:drawable/btn_live_location" android:layout_width="fill_parent" android:layout_height="fill_parent" android:button="@*android:color/transparent" />
                         </RadioGroup>
                     </FrameLayout>
