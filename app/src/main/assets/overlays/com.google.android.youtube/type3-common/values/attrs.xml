@@ -51,6 +51,7 @@
     <attr name="colorOnPrimaryEmphasisHighType" format="color" />
     <attr name="colorOnPrimaryEmphasisMedium" format="color" />
     <attr name="colorOnPrimaryGoogle" format="color" />
+    <attr name="colorOnPrimaryRippleGoogle" format="color" />
     <attr name="colorOnSecondary" format="color" />
     <attr name="colorOnSurface" format="color" />
     <attr name="colorOnSurfaceDisabled" format="color" />
@@ -59,6 +60,7 @@
     <attr name="colorOnSurfaceVariant" format="color" />
     <attr name="colorPrimaryAlternate" format="reference" />
     <attr name="colorPrimaryGoogle" format="color" />
+    <attr name="colorPrimaryStateGoogle" format="color" />
     <attr name="colorPrimaryVariant" format="color" />
     <attr name="colorPrimaryVariantGoogle" format="color" />
     <attr name="colorSecondary" format="color" />
@@ -393,6 +395,7 @@
     <attr name="ytOverlayBackgroundHeavy" format="reference|color" />
     <attr name="ytOverlayBackgroundLight" format="reference|color" />
     <attr name="ytOverlayBackgroundMedium" format="reference|color" />
+    <attr name="ytOverlayBackgroundMediumLight" format="reference|color" />
     <attr name="ytOverlayButtonActive" format="reference|color" />
     <attr name="ytOverlayButtonInactive" format="reference|color" />
     <attr name="ytOverlayButtonPrimary" format="reference|color" />
@@ -584,6 +587,15 @@
     <attr name="drawableBottomCompat" format="reference" />
     <attr name="drawableStartCompat" format="reference" />
     <attr name="drawableEndCompat" format="reference" />
+    <attr name="drawableTint" format="color" />
+    <attr name="drawableTintMode">
+        <enum name="add" value="16" />
+        <enum name="multiply" value="14" />
+        <enum name="screen" value="15" />
+        <enum name="src_atop" value="9" />
+        <enum name="src_in" value="5" />
+        <enum name="src_over" value="3" />
+    </attr>
     <attr name="windowActionBar" format="boolean" />
     <attr name="windowNoTitle" format="boolean" />
     <attr name="windowActionBarOverlay" format="boolean" />
@@ -709,6 +721,10 @@
     <attr name="viewInflaterClass" format="string" />
     <attr name="listChoiceIndicatorMultipleAnimated" format="reference" />
     <attr name="listChoiceIndicatorSingleAnimated" format="reference" />
+    <attr name="backgroundColor" format="color" />
+    <attr name="badgeTextColor" format="color" />
+    <attr name="maxCharacterCount" format="integer" />
+    <attr name="number" format="integer" />
     <attr name="backgroundTint" format="color" />
     <attr name="fabAlignmentMode">
         <enum name="center" value="0" />
@@ -1291,7 +1307,9 @@
     <attr name="iconSize" format="dimension" />
     <attr name="iconPadding" format="dimension" />
     <attr name="iconGravity">
+        <flag name="end" value="0x00000003" />
         <flag name="start" value="0x00000001" />
+        <flag name="textEnd" value="0x00000004" />
         <flag name="textStart" value="0x00000002" />
     </attr>
     <attr name="iconTint" format="color" />
@@ -1653,6 +1671,7 @@
     <attr name="tabIndicatorAnimationDuration" format="integer" />
     <attr name="tabIndicatorFullWidth" format="boolean" />
     <attr name="tabMode">
+        <enum name="auto" value="2" />
         <enum name="fixed" value="1" />
         <enum name="scrollable" value="0" />
     </attr>
