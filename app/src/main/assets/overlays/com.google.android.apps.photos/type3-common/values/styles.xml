@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="AssistantCardBackground">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+	    <item name="android:backgroundTint">@*android:color/background_floating_material_dark</item>
+    </style>
     <style name="AssistantCardIcon">
         <item name="android:background">@*android:color/button_material_dark</item>
         <item name="android:layout_width">wrap_content</item>
@@ -15,6 +20,18 @@
     </style>
     <style name="Base.Theme.GoogleMaterial.Light" parent="@*com.google.android.apps.photos:style/Base.V14.Theme.GoogleMaterial.Light">
         <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+    </style>
+    <style name="Base.Theme.Photos.Dark" parent="@*com.google.android.apps.photos:style/Theme.GoogleMaterial.Dark">
+        <item name="android:textColorPrimary">@*com.google.android.apps.photos:color/photos_theme_color_text_primary_dark</item>
+        <item name="android:textColorSecondary">@*com.google.android.apps.photos:color/photos_theme_color_text_secondary_dark</item>
+        <item name="*com.google.android.apps.photos:colorSurface">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.apps.photos:elevationOverlaysEnabled">true</item>
+        <item name="*com.google.android.apps.photos:isPhotosDarkTheme">true</item>
+        <item name="*com.google.android.apps.photos:ogAccountMenuStyle">@*com.google.android.apps.photos:style/OneGoogle.AccountMenu.Dark</item>
+        <item name="*com.google.android.apps.photos:ogAccountParticleDiscStyle">@*com.google.android.apps.photos:style/OneGoogle.AccountParticleDisc.Dark</item>
+        <item name="*com.google.android.apps.photos:ogAccountParticleStyle">@*com.google.android.apps.photos:style/OneGoogle.AccountParticle.Dark</item>
+        <item name="*com.google.android.apps.photos:photosTextColorPrimaryVariant">@*com.google.android.apps.photos:color/photos_theme_color_text_primary_dark</item>
+        <item name="*com.google.android.apps.photos:photosTextColorSecondaryVariant">@*com.google.android.apps.photos:color/photos_theme_color_text_secondary_dark</item>
     </style>
     <style name="Base.Theme.Photos.Light" parent="@*com.google.android.apps.photos:style/Theme.GoogleMaterial.Dark">
         <item name="android:textColorPrimary">@*com.google.android.apps.photos:color/photos_theme_color_text_primary_dark</item>
@@ -39,6 +56,21 @@
         <item name="*com.google.android.apps.photos:actionOverflowButtonStyle">@*com.google.android.apps.photos:style/Widget.Photos.ActionBar.Inverse.Overflow</item>
         <item name="*com.google.android.apps.photos:homeAsUpIndicator">@*com.google.android.apps.photos:drawable/quantum_ic_arrow_back_white_24</item>
         <item name="*com.google.android.apps.photos:colorControlHighlight">@*android:color/white</item>
+    </style>
+    <style name="BaseTabButton" parent="@*com.google.android.apps.photos:style/Widget.Photos.Button.Borderless">
+        <item name="android:textColor">@*com.google.android.apps.photos:color/photos_tabbar_text_icon_color</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">bottom|center</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingTop">6.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:paddingBottom">6.0dip</item>
+        <item name="android:layout_height">@*com.google.android.apps.photos:dimen/photos_tabbar_height</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:insetTop">0.0dip</item>
+        <item name="android:insetBottom">0.0dip</item>
+        <item name="*com.google.android.apps.photos:iconPadding">0.0dip</item>
+	    <item name="android:backgroundTint">@*android:color/button_material_dark</item>
     </style>
     <style name="Creation.Save.Button" parent="@*com.google.android.apps.photos:style/Widget.GoogleMaterial.TextButton">
         <item name="android:textAppearance">@*com.google.android.apps.photos:style/TextAppearance.Photos.Subhead2</item>
@@ -94,22 +126,18 @@
     <style name="Photos.Search.PeopleLabeling.Header" parent="">
         <item name="android:background">@*android:color/background_floating_material_dark</item>
     </style>
-    <style name="Platform.AppCompat" parent="@*android:style/Theme.DeviceDefault.Light">
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowActionBar">false</item>
-        <item name="android:windowBackground">@*android:color/background_dark</item>		
-        <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
-        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
-        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+    <style name="PhotosActionableToastText">
+        <item name="android:textAppearance">@*com.google.android.apps.photos:style/TextAppearance.Photos.Body2</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@*com.google.android.apps.photos:dimen/bt_toastbar_horizontal_padding</item>
+        <item name="android:paddingRight">@*com.google.android.apps.photos:dimen/bt_toastbar_horizontal_padding</item>
+        <item name="android:maxLines">@*com.google.android.apps.photos:integer/photos_actionabletoast_text_max_lines</item>
+        <item name="android:lineSpacingMultiplier">@*com.google.android.apps.photos:dimen/bt_toastbar_line_spacing_multiplier</item>
+        <item name="android:inputType">textMultiLine|textNoSuggestions</item>
     </style>
-    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light">
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowActionBar">false</item>
-        <item name="android:windowBackground">@*android:color/background_dark</item>		
-        <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
-        <item name="android:colorAccent">@*android:color/accent_material_dark</item>
-        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
-    </style>
+    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light" />
     <style name="SearchBarView">
         <item name="android:backgroundTint">@null</item>
         <item name="*com.google.android.apps.photos:cardBackgroundColor">@*android:color/background_floating_material_dark</item>
@@ -150,9 +178,9 @@
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:logo">@*android:color/transparent</item>
         <item name="android:homeAsUpIndicator">@*com.google.android.apps.photos:drawable/quantum_gm_ic_arrow_back_vd_theme_24</item>
-        <item name="*com.google.android.apps.photos:actionMenuTextColor">?*android:textColorPrimary</item>
+        <item name="*com.google.android.apps.photos:actionMenuTextColor">@*android:color/white</item>
         <item name="*com.google.android.apps.photos:homeAsUpIndicator">@*com.google.android.apps.photos:drawable/quantum_gm_ic_arrow_back_vd_theme_24</item>
-        <item name="*com.google.android.apps.photos:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.apps.photos:colorPrimary">@*android:color/white</item>
         <item name="*com.google.android.apps.photos:supportPreferenceCategoryStyle">@*com.google.android.apps.photos:style/Photos.SupportPreference.Category</item>
         <item name="*com.google.android.apps.photos:supportPreferenceScreenStyle">@*com.google.android.apps.photos:style/SupportPreference.PreferenceScreen</item>
         <item name="*com.google.android.apps.photos:supportPreferenceFragmentStyle">@*com.google.android.apps.photos:style/SupportPreferenceFragment</item>
@@ -203,7 +231,25 @@
         <item name="*com.google.android.apps.photos:colorPrimary">@*android:color/primary_material_dark</item>
         <item name="*com.google.android.apps.photos:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
     </style>
+    <style name="Theme.Photos.PhotoEditor.Base" parent="@*com.google.android.apps.photos:style/Theme.AppCompat">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:backgroundTint">@*android:color/background_dark</item>
+        <item name="*com.google.android.apps.photos:windowActionBar">false</item>
+        <item name="*com.google.android.apps.photos:windowNoTitle">true</item>
+        <item name="*com.google.android.apps.photos:windowActionBarOverlay">true</item>
+        <item name="*com.google.android.apps.photos:windowActionModeOverlay">true</item>
+        <item name="*com.google.android.apps.photos:actionBarStyle">@*com.google.android.apps.photos:style/Theme.Photos.PhotoEditor.ActionBar.Transparent</item>
+        <item name="*com.google.android.apps.photos:borderlessButtonStyle">@*com.google.android.apps.photos:style/Widget.AppCompat.Button.Borderless</item>
+    </style>
     <style name="Theme.Photos.Settings.Preferences" parent="@*com.google.android.apps.photos:style/Theme.Photos">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="android:actionBarStyle">@*com.google.android.apps.photos:style/Photos.SupportPreference.ActionBar</item>
         <item name="*com.google.android.apps.photos:actionBarStyle">@*com.google.android.apps.photos:style/Photos.SupportPreference.ActionBar</item>
         <item name="*com.google.android.apps.photos:supportPreferenceCategoryStyle">@*com.google.android.apps.photos:style/Photos.SupportPreference.Category</item>
@@ -235,6 +281,10 @@
     </style>
     <style name="ThemeOverlay.Photos.DayNight.White" parent="@*com.google.android.apps.photos:style/ThemeOverlay.Photos.DayNight">
         <item name="*com.google.android.apps.photos:colorControlNormal">@*android:color/white</item>
+    </style>
+    <style name="VideoPlayerSeekbar" parent="@*android:style/Widget.SeekBar">
+        <item name="android:thumb">@*com.google.android.apps.photos:drawable/seekbar_thumb</item>
+        <item name="android:backgroundTint">@null</item>
     </style>
     <style name="Widget.Design.BottomSheet.Modal" parent="@*android:style/Widget">
         <item name="android:background">@*android:color/background_floating_material_dark</item>
@@ -275,9 +325,13 @@
     <style name="Widget.Photos.Button.TextButton.PhotoBar" parent="@*com.google.android.apps.photos:style/Widget.MaterialComponents.Button.TextButton">
         <item name="android:textColor">@*android:color/white</item>
     </style>
-    <style name="Widget.Photos.SuggestedActionsEditorCancelButton" parent="@*com.google.android.apps.photos:style/Widget.GoogleMaterial.Button">
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="*com.google.android.apps.photos:rippleColor">@*android:color/white</item>
+    <style name="Widget.Photos.FloatingActionButton" parent="@*com.google.android.apps.photos:style/Widget.GoogleMaterial.FloatingActionButton">
+        <item name="*com.google.android.apps.photos:tint">@*android:color/white</item>
+        <item name="*com.google.android.apps.photos:backgroundTint">@*android:color/button_material_dark</item>
+        <item name="android:backgroundTint">@null</item>
+    </style>
+    <style name="Widget.Photos.SuggestedActionsEditorSaveButton" parent="@*com.google.android.apps.photos:style/Widget.GoogleMaterial.Button">
+        <item name="android:textColor">@*com.google.android.apps.photos:color/suggestion_editor_save_button_text</item>
         <item name="*com.google.android.apps.photos:backgroundTint">@*android:color/button_material_dark</item>
     </style>
     <style name="editor_filled_button" parent="@*com.google.android.apps.photos:style/Widget.GoogleMaterial.Button">
@@ -356,6 +410,12 @@
         <item name="android:layout_marginRight">16.0dip</item>
         <item name="android:minWidth">48.0dip</item>
         <item name="android:drawablePadding">2.0dip</item>
+    </style>
+    <style name="quantum_text_button_white" parent="@*com.google.android.apps.photos:style/quantum_text_white_light">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:backgroundTint">@null</item>
     </style>
     <style name="sendkit_ui_white_tint">
         <item name="*com.google.android.apps.photos:colorControlNormal">@*android:color/white</item>
