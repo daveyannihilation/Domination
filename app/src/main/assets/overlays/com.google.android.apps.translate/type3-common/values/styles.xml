@@ -6,6 +6,9 @@
         <item name="android:windowBackground">@*com.google.android.apps.translate:drawable/quantum_launchscreen_translate</item>
         <item name="*com.google.android.apps.translate:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
     </style>
+    <style name="Base.Theme.GoogleMaterial.Light" parent="@*com.google.android.apps.translate:style/Base.V14.Theme.GoogleMaterial.Light">
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+    </style>
     <style name="OpticsDialogTheme" parent="@*com.google.android.apps.translate:style/Theme.GoogleMaterial.Dark.NoActionBar.Bridge">
         <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="android:windowFullscreen">true</item>
@@ -22,6 +25,14 @@
         <item name="android:windowIsTranslucent">true</item>
     </style>
     <style name="Theme.AppInvite.Preview.Base" parent="@*android:style/Theme.NoTitleBar" />
+    <style name="ThemeOverlay.GoogleMaterial.Light.BottomSheetDialog" parent="@*com.google.android.apps.translate:style/ThemeOverlay.MaterialComponents.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@*com.google.android.apps.translate:style/Animation.MaterialComponents.BottomSheetDialog</item>
+        <item name="android:statusBarColor">@*android:color/transparent</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.apps.translate:bottomSheetStyle">@*com.google.android.apps.translate:style/Widget.GoogleMaterial.BottomSheet.Modal</item>
+        <item name="*com.google.android.apps.translate:materialButtonStyle">@*com.google.android.apps.translate:style/Widget.GoogleMaterial.Button</item>
+    </style>
     <style name="WhiteDialogTheme" parent="@*com.google.android.apps.translate:style/Theme.AppCompat.Light.Dialog">
         <item name="*com.google.android.apps.translate:windowActionBar">false</item>
         <item name="*com.google.android.apps.translate:windowNoTitle">true</item>
@@ -39,13 +50,14 @@
     </style>
     <style name="Widget.Design.BottomSheet.Modal" parent="@*android:style/Widget">
         <item name="android:background">@*android:color/background_floating_material_dark</item>
+        <item name="android:elevation">@*com.google.android.apps.translate:dimen/design_bottom_sheet_modal_elevation</item>
+        <item name="*com.google.android.apps.translate:backgroundTint">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.apps.translate:behavior_peekHeight">auto</item>
         <item name="*com.google.android.apps.translate:behavior_hideable">true</item>
         <item name="*com.google.android.apps.translate:behavior_skipCollapsed">false</item>
         <item name="*com.google.android.apps.translate:shapeAppearance">@null</item>
         <item name="*com.google.android.apps.translate:shapeAppearanceOverlay">@null</item>
         <item name="*com.google.android.apps.translate:enforceMaterialTheme">false</item>
-        <item name="*com.google.android.apps.translate:backgroundTint">@*android:color/background_floating_material_dark</item>
     </style>
     <style name="growthkit_feature_highlight_black">
         <item name="android:textColor">#ffffffff</item>
