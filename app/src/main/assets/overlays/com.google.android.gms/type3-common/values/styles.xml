@@ -2,13 +2,24 @@
 <resources>
     <style name="ActivityStyle" parent="@*com.google.android.gms:style/common.Theme.Light">
         <item name="android:textColor">@*android:color/white</item>
+        <item name="*com.google.android.gms:gf_as_circleDrawableBlackout">@*com.google.android.gms:drawable/gf_circle_drawable_blackout_without_stroke</item>
+        <item name="*com.google.android.gms:gf_as_circleDrawableBorder">@*com.google.android.gms:drawable/gf_circle_drawable_border_light</item>
+        <item name="*com.google.android.gms:gf_as_circleDrawableHighlight">@*com.google.android.gms:drawable/gf_circle_drawable_highlight_light</item>
+        <item name="*com.google.android.gms:gf_as_hairlineColor">@*android:color/white</item>
+        <item name="*com.google.android.gms:gf_as_infoTextBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gf_as_menuBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gf_disabledIconColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gf_divider">@*com.google.android.gms:drawable/gf_divider_light</item>
         <item name="*com.google.android.gms:gf_hintTextColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gf_isInDarkMode">true</item>
         <item name="*com.google.android.gms:gf_primaryBlueColor">@*com.google.android.gms:color/google_blue600</item>
         <item name="*com.google.android.gms:gf_primaryTextColor">@*android:color/white</item>
         <item name="*com.google.android.gms:gf_secondaryTextColor">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.gms:gf_surfaceColor">@*android:color/background_dark</item>
         <item name="*com.google.android.gms:gf_surfaceColorElevation1">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.gms:gf_surfaceColorElevation3">@*android:color/button_material_dark</item>
+        <item name="*com.google.android.gms:gf_systemInfoIcon">@*com.google.android.gms:drawable/system_info_dark</item>
+        <item name="*com.google.android.gms:ghf_greyIconColor">@*android:color/white</item>
         <item name="*com.google.android.gms:actionBarStyle">@*com.google.android.gms:style/FeedbackActionBar</item>
         <item name="*com.google.android.gms:colorAccent">@*com.google.android.gms:color/material_google_blue_500</item>
     </style>
@@ -52,11 +63,9 @@
         <item name="*com.google.android.gms:asLegacyFill400">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.gms:asLegacyFill500">@*android:color/primary_dark_material_dark</item>
         <item name="*com.google.android.gms:asLegacyFillSecondary200">@*android:color/background_dark</item>
-        <item name="*com.google.android.gms:asLegacyFillSecondary300">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.gms:asLegacyForeground35Percent">@*com.google.android.gms:color/as_white_35_percent</item>
         <item name="*com.google.android.gms:asLegacyForegroundSolid">@*android:color/white</item>
-        <item name="*com.google.android.gms:asLegacyHighlightSecondary300">@*com.google.android.gms:color/material_google_blue_600</item>
-        <item name="*com.google.android.gms:asLegacyLinkText">@*com.google.android.gms:color/as_g_blue_text</item>
+        <item name="*com.google.android.gms:asLegacyHighlight300">@*com.google.android.gms:color/google_blue600</item>
         <item name="*com.google.android.gms:asLegacyRippleHighlight">@*com.google.android.gms:color/google_blue600</item>
         <item name="*com.google.android.gms:asOnBackground">@*android:color/white</item>
         <item name="*com.google.android.gms:asOnError">@*android:color/background_dark</item>
@@ -76,8 +85,8 @@
         <item name="*com.google.android.gms:asRipple">@*com.google.android.gms:drawable/as_ripple_dark</item>
         <item name="*com.google.android.gms:asRippleRoundedBottom">@*com.google.android.gms:drawable/as_ripple_rounded_bottom_dark</item>
         <item name="*com.google.android.gms:asRippleRoundedTop">@*com.google.android.gms:drawable/as_ripple_rounded_top_dark</item>
-        <item name="*com.google.android.gms:asSecondary">@*com.google.android.gms:color/google_blue500</item>
-        <item name="*com.google.android.gms:asSecondaryVariant">@*com.google.android.gms:color/google_blue500</item>
+        <item name="*com.google.android.gms:asSecondary">@*com.google.android.gms:color/as_google_blue300_24</item>
+        <item name="*com.google.android.gms:asSecondaryVariant">@*com.google.android.gms:color/as_google_blue300_24</item>
         <item name="*com.google.android.gms:asSurface">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.gms:asSystemBarColor">@*android:color/primary_dark_material_dark</item>
         <item name="*com.google.android.gms:asTopNavTabSelectedIndicator">@*com.google.android.gms:drawable/as_top_nav_tab_selected_indicator_dark</item>
@@ -106,11 +115,9 @@
         <item name="*com.google.android.gms:asLegacyFill400">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.gms:asLegacyFill500">@*android:color/primary_dark_material_dark</item>
         <item name="*com.google.android.gms:asLegacyFillSecondary200">@*android:color/background_dark</item>
-        <item name="*com.google.android.gms:asLegacyFillSecondary300">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.gms:asLegacyForeground35Percent">@*com.google.android.gms:color/as_white_35_percent</item>
         <item name="*com.google.android.gms:asLegacyForegroundSolid">@*android:color/white</item>
-        <item name="*com.google.android.gms:asLegacyHighlightSecondary300">@*com.google.android.gms:color/material_google_blue_300</item>
-        <item name="*com.google.android.gms:asLegacyLinkText">@*com.google.android.gms:color/as_g_blue_text</item>
+        <item name="*com.google.android.gms:asLegacyHighlight300">@*com.google.android.gms:color/google_blue300</item>
         <item name="*com.google.android.gms:asLegacyRippleHighlight">@*com.google.android.gms:color/google_blue200</item>
         <item name="*com.google.android.gms:asOnBackground">@*android:color/white</item>
         <item name="*com.google.android.gms:asOnError">@*android:color/background_dark</item>
@@ -136,6 +143,20 @@
         <item name="*com.google.android.gms:asSystemBarColor">@*android:color/primary_dark_material_dark</item>
         <item name="*com.google.android.gms:asTopNavTabSelectedIndicator">@*com.google.android.gms:drawable/as_top_nav_tab_selected_indicator_dark</item>
         <item name="*com.google.android.gms:asVerticalSpace">@*com.google.android.gms:drawable/as_vertical_space</item>
+    </style>
+    <style name="AsDialogThemeDark" parent="@*com.google.android.gms:style/AsBaseDialogTheme">
+        <item name="android:background">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:asDialogBodyTextColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:asDialogLinkTextColor">@*com.google.android.gms:color/google_blue300</item>
+        <item name="*com.google.android.gms:asDialogTitleTextColor">@*android:color/white</item>
+        <item name="*com.google.android.gms:colorAccent">@*com.google.android.gms:color/google_blue300</item>
+    </style>
+    <style name="AsDialogThemeLight" parent="@*com.google.android.gms:style/AsBaseDialogTheme">
+        <item name="android:background">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:asDialogBodyTextColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:asDialogLinkTextColor">@*com.google.android.gms:color/google_blue600</item>
+        <item name="*com.google.android.gms:asDialogTitleTextColor">@*android:color/white</item>
+        <item name="*com.google.android.gms:colorAccent">@*com.google.android.gms:color/google_blue600</item>
     </style>
     <style name="AsErrorButtonStyle" parent="@*com.google.android.gms:style/Widget.GoogleMaterial.Button">
         <item name="android:textAppearance">@*com.google.android.gms:style/AsT13</item>
@@ -269,10 +290,6 @@
         <item name="*com.google.android.gms:colorPrimary">@*android:color/primary_material_dark</item>
         <item name="*com.google.android.gms:colorAccent">@*android:color/accent_material_dark</item>
     </style>
-    <style name="CommonAccount.AccountChip.AccountNameTextAppearanceBase" parent="@*com.google.android.gms:style/CommonAccount.AccountChip">
-        <item name="android:textSize">12.0sp</item>
-        <item name="android:textColor">#ffdddddd</item>
-    </style>
     <style name="CommonAccountChip.AccountNameTextAppearanceBase" parent="@*com.google.android.gms:style/CommonAccountChip">
         <item name="android:textSize">12.0sp</item>
         <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
@@ -282,25 +299,48 @@
         <item name="android:textColor">#ffffffff</item>
         <item name="android:fontFamily">sans-serif</item>
     </style>
+    <style name="DarkDialogActivityStyle" parent="@*android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:background">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gf_as_circleDrawableBlackout">@*com.google.android.gms:drawable/gf_circle_drawable_blackout_with_stroke</item>
+        <item name="*com.google.android.gms:gf_as_circleDrawableBorder">@*com.google.android.gms:drawable/gf_circle_drawable_border_dark</item>
+        <item name="*com.google.android.gms:gf_as_circleDrawableHighlight">@*com.google.android.gms:drawable/gf_circle_drawable_highlight_dark</item>
+        <item name="*com.google.android.gms:gf_as_hairlineColor">@*android:color/white</item>
+        <item name="*com.google.android.gms:gf_as_infoTextBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gf_as_menuBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gf_disabledIconColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gf_divider">@*com.google.android.gms:drawable/gf_divider_dark</item>
+        <item name="*com.google.android.gms:gf_hintTextColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gf_isInDarkMode">true</item>
+        <item name="*com.google.android.gms:gf_primaryBlueColor">@*com.google.android.gms:color/google_blue300</item>
+        <item name="*com.google.android.gms:gf_primaryTextColor">@*android:color/white</item>
+        <item name="*com.google.android.gms:gf_secondaryTextColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gf_surfaceColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gf_surfaceColorElevation1">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gf_surfaceColorElevation3">@*android:color/button_material_dark</item>
+        <item name="*com.google.android.gms:gf_systemInfoIcon">@*com.google.android.gms:drawable/system_info_dark</item>
+        <item name="*com.google.android.gms:ghf_greyIconColor">@*android:color/white</item>
+    </style>
     <style name="DialogActivityStyle" parent="@*android:style/Theme.DeviceDefault.Dialog">
         <item name="android:textColor">@*android:color/white</item>
+        <item name="*com.google.android.gms:gf_as_circleDrawableBlackout">@*com.google.android.gms:drawable/gf_circle_drawable_blackout_without_stroke</item>
+        <item name="*com.google.android.gms:gf_as_circleDrawableBorder">@*com.google.android.gms:drawable/gf_circle_drawable_border_light</item>
+        <item name="*com.google.android.gms:gf_as_circleDrawableHighlight">@*com.google.android.gms:drawable/gf_circle_drawable_highlight_light</item>
+        <item name="*com.google.android.gms:gf_as_hairlineColor">@*android:color/white</item>
+        <item name="*com.google.android.gms:gf_as_infoTextBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gf_as_menuBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gf_disabledIconColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gf_divider">@*com.google.android.gms:drawable/gf_divider_light</item>
         <item name="*com.google.android.gms:gf_hintTextColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gf_isInDarkMode">true</item>
         <item name="*com.google.android.gms:gf_primaryBlueColor">@*com.google.android.gms:color/google_blue600</item>
         <item name="*com.google.android.gms:gf_primaryTextColor">@*android:color/white</item>
         <item name="*com.google.android.gms:gf_secondaryTextColor">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.gms:gf_surfaceColor">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.gms:gf_surfaceColorElevation1">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.gms:gf_surfaceColorElevation3">@*android:color/button_material_dark</item>
-    </style>
-    <style name="DiscoveryCardStyle">
-        <item name="android:background">@*android:color/background_floating_material_dark</item>
-        <item name="android:elevation">2.0dip</item>
-    </style>
-    <style name="DiscoveryListHeaderStyle">
-        <item name="android:textSize">14.0sp</item>
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">wrap_content</item>
+        <item name="*com.google.android.gms:gf_systemInfoIcon">@*com.google.android.gms:drawable/system_info_dark</item>
+        <item name="*com.google.android.gms:ghf_greyIconColor">@*android:color/white</item>
     </style>
     <style name="Games.AlertDialog" parent="@*com.google.android.gms:style/Theme.AppCompat.Dialog.Alert">
         <item name="android:textAppearance">@*com.google.android.gms:style/Games.AlertDialog.Body</item>
@@ -357,6 +397,40 @@
         <item name="android:textColor">@*android:color/white</item>
         <item name="android:fontFamily">google-sans</item>
     </style>
+    <style name="OctarineBaseAppThemeDark" parent="@*com.google.android.gms:style/OctarineBaseAppTheme">
+        <item name="*com.google.android.gms:octBackCloseButton">@*android:color/white</item>
+        <item name="*com.google.android.gms:octBackground">@*android:color/background_dark</item>
+        <item name="*com.google.android.gms:octHairline">@*android:color/white</item>
+        <item name="*com.google.android.gms:octLegacyFill500">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.gms:octLegacyFillSecondary200">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.gms:octLegacyForegroundSolid">@*android:color/white</item>
+        <item name="*com.google.android.gms:octLegacyHighlight300">@*com.google.android.gms:color/google_blue600</item>
+        <item name="*com.google.android.gms:octOnBackground">@*android:color/white</item>
+        <item name="*com.google.android.gms:octOnPrimary">@*android:color/white</item>
+        <item name="*com.google.android.gms:octOnSurface">@*android:color/white</item>
+        <item name="*com.google.android.gms:octOnSurfaceVariant">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:octProductNameColor">@*android:color/white</item>
+        <item name="*com.google.android.gms:octRoundedRectangle">@*com.google.android.gms:drawable/rounded_rectangle_dark</item>
+        <item name="*com.google.android.gms:octSurface">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:octSystemBarColor">@*android:color/primary_dark_material_dark</item>
+    </style>
+    <style name="OctarineBaseAppThemeLight" parent="@*com.google.android.gms:style/OctarineBaseAppTheme">
+        <item name="*com.google.android.gms:octBackCloseButton">@*android:color/white</item>
+        <item name="*com.google.android.gms:octBackground">@*android:color/background_dark</item>
+        <item name="*com.google.android.gms:octHairline">@*android:color/white</item>
+        <item name="*com.google.android.gms:octLegacyFill500">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.gms:octLegacyFillSecondary200">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.gms:octLegacyForegroundSolid">@*android:color/white</item>
+        <item name="*com.google.android.gms:octLegacyHighlight300">@*com.google.android.gms:color/google_blue300</item>
+        <item name="*com.google.android.gms:octOnBackground">@*android:color/white</item>
+        <item name="*com.google.android.gms:octOnPrimary">@*android:color/white</item>
+        <item name="*com.google.android.gms:octOnSurface">@*android:color/white</item>
+        <item name="*com.google.android.gms:octOnSurfaceVariant">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:octProductNameColor">@*android:color/white</item>
+        <item name="*com.google.android.gms:octRoundedRectangle">@*com.google.android.gms:drawable/rounded_rectangle_light</item>
+        <item name="*com.google.android.gms:octSurface">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:octSystemBarColor">@*android:color/primary_dark_material_dark</item>
+    </style>
     <style name="PeopleButton.Borderless" parent="@*android:style/Widget.Material.Button.Borderless" />
     <style name="PeopleDialogTheme" parent="@*android:style/Theme.Material.Dialog" />
     <style name="Platform.AppCompat" parent="@*android:style/Theme.DeviceDefault.Light">
@@ -375,6 +449,28 @@
         <item name="android:windowActionBar">false</item>
         <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
     </style>
+    <style name="PwmBaseAppThemeDark" parent="@*com.google.android.gms:style/Theme.GoogleMaterial.DayNight.NoActionBar">
+        <item name="*com.google.android.gms:pwmBlacklistDeleteItemIconColor">@*android:color/white</item>
+        <item name="*com.google.android.gms:pwmDetailFieldBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:pwmLargeSeparatorInnerColor">@*android:color/transparent</item>
+        <item name="*com.google.android.gms:pwmLargeSeparatorOuterColor">@*android:color/transparent</item>
+        <item name="*com.google.android.gms:pwmLegacyFill500">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.gms:pwmRippleFillingV21">@*android:color/white</item>
+        <item name="*com.google.android.gms:pwmSearchCardIconColor">@*android:color/white</item>
+        <item name="*com.google.android.gms:pwmSearchCardTextColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:pwmSystemBarColor">@*android:color/primary_dark_material_dark</item>
+    </style>
+    <style name="PwmBaseAppThemeLight" parent="@*com.google.android.gms:style/Theme.GoogleMaterial.DayNight.NoActionBar">
+        <item name="*com.google.android.gms:pwmBlacklistDeleteItemIconColor">@*android:color/white</item>
+        <item name="*com.google.android.gms:pwmDetailFieldBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:pwmLargeSeparatorInnerColor">@*android:color/transparent</item>
+        <item name="*com.google.android.gms:pwmLargeSeparatorOuterColor">@*android:color/transparent</item>
+        <item name="*com.google.android.gms:pwmLegacyFill500">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.gms:pwmRippleFillingV21">@*android:color/white</item>
+        <item name="*com.google.android.gms:pwmSearchCardIconColor">@*android:color/white</item>
+        <item name="*com.google.android.gms:pwmSearchCardTextColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:pwmSystemBarColor">@*android:color/primary_dark_material_dark</item>
+    </style>
     <style name="SemiTransparentActivity" parent="@*android:style/Theme.DeviceDefault.Light">
         <item name="android:windowBackground">@*android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>
@@ -387,46 +483,6 @@
         <item name="android:statusBarColor">@*com.google.android.gms:color/activity_backdrop_bg_color</item>
     </style>
     <style name="SetBackupAccountActivity" parent="@*android:style/Theme.Material.Dialog" />
-    <style name="Sharing.Settings" parent="@*com.google.android.gms:style/Theme.AppCompat.Light.NoActionBar">
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-        <item name="android:windowLightStatusBar">false</item>
-        <item name="*com.google.android.gms:colorPrimary">@*com.google.android.gms:color/sharing_color_primary</item>
-        <item name="*com.google.android.gms:colorPrimaryDark">@*com.google.android.gms:color/sharing_color_primary_dark</item>
-        <item name="*com.google.android.gms:colorAccent">@*com.google.android.gms:color/sharing_color_accent</item>
-        <item name="*com.google.android.gms:colorControlNormal">#ffffffff</item>
-        <item name="*com.google.android.gms:colorControlActivated">#ffffffff</item>
-        <item name="*com.google.android.gms:colorControlHighlight">#ffffffff</item>
-        <item name="*com.google.android.gms:colorSwitchThumbNormal">#ffffffff</item>
-        <item name="*com.google.android.gms:colorError">@*com.google.android.gms:color/sharing_color_error</item>
-    </style>
-    <style name="Sharing.Setup" parent="@*com.google.android.gms:style/Theme.AppCompat.Light.NoActionBar">
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-        <item name="android:windowLightStatusBar">false</item>
-        <item name="*com.google.android.gms:colorPrimary">@*com.google.android.gms:color/sharing_color_primary</item>
-        <item name="*com.google.android.gms:colorPrimaryDark">@*com.google.android.gms:color/sharing_color_primary_dark</item>
-        <item name="*com.google.android.gms:colorAccent">@*com.google.android.gms:color/sharing_color_accent</item>
-        <item name="*com.google.android.gms:colorControlNormal">#ffffffff</item>
-        <item name="*com.google.android.gms:colorControlActivated">#ffffffff</item>
-        <item name="*com.google.android.gms:colorButtonNormal">@*com.google.android.gms:color/sharing_color_accent</item>
-        <item name="*com.google.android.gms:colorSwitchThumbNormal">#ffffffff</item>
-        <item name="*com.google.android.gms:colorError">@*com.google.android.gms:color/sharing_color_error</item>
-    </style>
-    <style name="Sharing.ShareSheet" parent="@*com.google.android.gms:style/Theme.AppCompat.Light.NoActionBar">
-        <item name="android:windowBackground">@*android:color/transparent</item>
-        <item name="android:windowFrame">@null</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowAnimationStyle">@null</item>
-        <item name="android:backgroundDimEnabled">true</item>
-        <item name="android:colorButtonNormal">@*com.google.android.gms:color/sharing_color_accent</item>
-        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:statusBarColor">@*android:color/transparent</item>
-        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
-        <item name="*com.google.android.gms:colorPrimary">@*com.google.android.gms:color/sharing_color_primary</item>
-        <item name="*com.google.android.gms:colorPrimaryDark">@*com.google.android.gms:color/sharing_color_primary_dark</item>
-        <item name="*com.google.android.gms:colorAccent">@*com.google.android.gms:color/sharing_color_accent</item>
-        <item name="*com.google.android.gms:colorError">@*com.google.android.gms:color/sharing_color_error</item>
-    </style>
     <style name="SubscriptionsLightTheme" parent="@*com.google.android.gms:style/Theme.AppCompat">
         <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="*com.google.android.gms:colorPrimary">@*android:color/primary_material_dark</item>
@@ -448,7 +504,6 @@
         <item name="*com.google.android.gms:colorPrimary">@*android:color/primary_material_dark</item>
         <item name="*com.google.android.gms:colorAccent">#ff1976d2</item>
     </style>
-    <style name="Theme.EmeraldSea.Preference.Dialog" parent="@*android:style/Theme.Holo.Dialog" />
     <style name="Theme.FamilyManagement" parent="@*com.google.android.gms:style/Theme.AppCompat.NoActionBar">
         <item name="android:colorBackground">@*com.google.android.gms:color/fm_background</item>
         <item name="android:windowBackground">@*com.google.android.gms:color/fm_background</item>
@@ -582,14 +637,18 @@
         <item name="*com.google.android.gms:colorPrimary">@*android:color/primary_material_dark</item>
         <item name="*com.google.android.gms:colorAccent">@*com.google.android.gms:color/google_blue600</item>
     </style>
-    <style name="Theme_Wallet_Google_Material_2_Base" parent="@*com.google.android.gms:style/Theme_Wallet_First_Party_Dark">
+    <style name="Theme_Wallet_Google_Material_2_Base_Light" parent="@*com.google.android.gms:style/Theme_Wallet_First_Party_Dark">
         <item name="*com.google.android.gms:internalUicAlertDialogThemeOverlay">@*com.google.android.gms:style/UicMaterialDarkAlertDialog</item>
         <item name="*com.google.android.gms:internalUicUseGoogleMaterial2Theme">true</item>
-        <item name="*com.google.android.gms:materialButtonStyle">@*com.google.android.gms:style/Widget.GoogleMaterial.Button</item>
         <item name="*com.google.android.gms:toolbarBackground">@*android:color/primary_material_dark</item>
         <item name="*com.google.android.gms:toolbarTheme">@*com.google.android.gms:style/Theme_Wallet_Google_Material_2.ToolbarTheme</item>
         <item name="*com.google.android.gms:uicFormStartEndMargin">@*com.google.android.gms:dimen/wallet_page_margin_side_gm2</item>
         <item name="*com.google.android.gms:toolbarStyle">@*com.google.android.gms:style/Theme_Wallet_Google_Material_2.ToolbarStyle</item>
+        <item name="*com.google.android.gms:toolbarNavigationButtonStyle">@*com.google.android.gms:style/Theme_Wallet_Google_Material_2_Navigation_Button_Style</item>
+    </style>
+    <style name="Theme_Wallet_Google_Material_2_Bottom_Sheet_Light" parent="@*com.google.android.gms:style/Theme_Wallet_Google_Material_2_Bottom_Sheet_Base_Dark">
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
     </style>
     <style name="Theme_Wallet_Google_Material_2_Light" parent="@*com.google.android.gms:style/Theme_Wallet_Google_Material_2_Base_Dark">
         <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
@@ -597,8 +656,9 @@
     </style>
     <style name="TrustAgentNotificationWithNoActionBar" parent="@*android:style/Theme.DeviceDefault.NoActionBar" />
     <style name="TrustAgentPromotionButton.Positive" parent="@*android:style/Widget.Material.Button" />
-    <style name="UrawTheme" parent="@*android:style/Theme.DeviceDefault.Light">
-        <item name="android:colorControlActivated">@*com.google.android.gms:color/quantum_googblue500</item>
+    <style name="UicMaterialDarkAlertDialog" parent="@*com.google.android.gms:style/Theme.GoogleMaterial.Dark.Dialog.Alert">
+        <item name="*com.google.android.gms:colorSurface">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:uicInfoDialogTextAppearance">@*com.google.android.gms:style/UicInfoMessageDialogMaterialTextAppearance</item>
     </style>
     <style name="WalletConfirmationDialogImageText">
         <item name="android:textSize">@*com.google.android.gms:dimen/wallet_uic_font_material_input</item>
@@ -612,15 +672,14 @@
         <item name="*com.google.android.gms:behavior_skipCollapsed">false</item>
     </style>
     <style name="Widget.GoogleMaterial.FloatingActionButton" parent="@*com.google.android.gms:style/Widget.MaterialComponents.FloatingActionButton">
-        <item name="*com.google.android.gms:rippleColor">@*com.google.android.gms:color/google_fab_ripple_color</item>
         <item name="*com.google.android.gms:elevation">@*com.google.android.gms:dimen/google_fab_elevation</item>
         <item name="*com.google.android.gms:tint">@*android:color/white</item>
+        <item name="*com.google.android.gms:backgroundTint">@*android:color/button_material_dark</item>
+        <item name="*com.google.android.gms:shapeAppearanceOverlay">@*com.google.android.gms:style/ShapeAppearanceOverlay.GoogleMaterial.FloatingActionButton</item>
+        <item name="*com.google.android.gms:rippleColor">@*com.google.android.gms:color/google_fab_ripple_color</item>
         <item name="*com.google.android.gms:hoveredFocusedTranslationZ">@*com.google.android.gms:dimen/google_fab_translation_z_hovered_focused</item>
         <item name="*com.google.android.gms:pressedTranslationZ">@*com.google.android.gms:dimen/google_fab_translation_z_pressed</item>
-        <item name="*com.google.android.gms:shapeAppearance">@null</item>
-        <item name="*com.google.android.gms:shapeAppearanceOverlay">@*com.google.android.gms:style/ShapeAppearanceOverlay.GoogleMaterial.FloatingActionButton</item>
         <item name="*com.google.android.gms:enforceMaterialTheme">true</item>
-        <item name="*com.google.android.gms:backgroundTint">@*android:color/button_material_dark</item>
     </style>
     <style name="Widget.GoogleMaterial.ProductLockupView.Dark" parent="@*com.google.android.gms:style/Widget.GoogleMaterial.ProductLockupView">
         <item name="*com.google.android.gms:productNameTextColor">@*android:color/white</item>
@@ -674,61 +733,170 @@
         <item name="android:textColor">#ffdddddd</item>
         <item name="android:fontFamily">roboto-medium</item>
     </style>
+    <style name="gf_ActivityStyleDark" parent="@*com.google.android.gms:style/Theme.AppCompat">
+        <item name="*com.google.android.gms:gf_as_circleDrawableBlackout">@*com.google.android.gms:drawable/gf_circle_drawable_blackout_without_stroke</item>
+        <item name="*com.google.android.gms:gf_as_circleDrawableBorder">@*com.google.android.gms:drawable/gf_circle_drawable_border_light</item>
+        <item name="*com.google.android.gms:gf_as_circleDrawableHighlight">@*com.google.android.gms:drawable/gf_circle_drawable_highlight_light</item>
+        <item name="*com.google.android.gms:gf_as_hairlineColor">@*android:color/white</item>
+        <item name="*com.google.android.gms:gf_as_infoTextBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gf_as_menuBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gf_disabledIconColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gf_divider">@*com.google.android.gms:drawable/gf_divider_light</item>
+        <item name="*com.google.android.gms:gf_hintTextColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gf_isInDarkMode">true</item>
+        <item name="*com.google.android.gms:gf_primaryBlueColor">@*com.google.android.gms:color/google_blue600</item>
+        <item name="*com.google.android.gms:gf_primaryTextColor">@*android:color/white</item>
+        <item name="*com.google.android.gms:gf_secondaryTextColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gf_surfaceColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gf_surfaceColorElevation1">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gf_surfaceColorElevation3">@*android:color/button_material_dark</item>
+        <item name="*com.google.android.gms:gf_systemInfoIcon">@*com.google.android.gms:drawable/system_info_dark</item>
+        <item name="*com.google.android.gms:ghf_greyIconColor">@*android:color/white</item>
+        <item name="*com.google.android.gms:actionBarStyle">@*com.google.android.gms:style/FeedbackActionBar</item>
+        <item name="*com.google.android.gms:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.gms:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.gms:colorAccent">@*com.google.android.gms:color/material_google_blue_500</item>
+    </style>
     <style name="gf_DarkActivityStyle" parent="@*com.google.android.gms:style/Theme.GoogleMaterial.Dark">
-        <item name="*com.google.android.gms:gf_hintTextColor">@*com.google.android.gms:color/gf_white_opacity_38_percent</item>
+        <item name="*com.google.android.gms:gf_as_circleDrawableBlackout">@*com.google.android.gms:drawable/gf_circle_drawable_blackout_with_stroke</item>
+        <item name="*com.google.android.gms:gf_as_circleDrawableBorder">@*com.google.android.gms:drawable/gf_circle_drawable_border_dark</item>
+        <item name="*com.google.android.gms:gf_as_circleDrawableHighlight">@*com.google.android.gms:drawable/gf_circle_drawable_highlight_dark</item>
+        <item name="*com.google.android.gms:gf_as_hairlineColor">@*android:color/white</item>
+        <item name="*com.google.android.gms:gf_as_infoTextBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gf_as_menuBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gf_disabledIconColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gf_divider">@*com.google.android.gms:drawable/gf_divider_dark</item>
+        <item name="*com.google.android.gms:gf_hintTextColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gf_isInDarkMode">true</item>
         <item name="*com.google.android.gms:gf_primaryBlueColor">@*com.google.android.gms:color/google_blue300</item>
         <item name="*com.google.android.gms:gf_primaryTextColor">@*android:color/white</item>
         <item name="*com.google.android.gms:gf_secondaryTextColor">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.gms:gf_surfaceColor">@*android:color/background_floating_material_dark</item>
-        <item name="*com.google.android.gms:gf_surfaceColorElevation1">@*com.google.android.gms:color/gf_surface_color_elevation1</item>
-        <item name="*com.google.android.gms:gf_surfaceColorElevation3">@*com.google.android.gms:color/gf_surface_color_elevation3</item>
+        <item name="*com.google.android.gms:gf_surfaceColorElevation1">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gf_surfaceColorElevation3">@*android:color/button_material_dark</item>
+        <item name="*com.google.android.gms:gf_systemInfoIcon">@*com.google.android.gms:drawable/system_info_dark</item>
+        <item name="*com.google.android.gms:ghf_greyIconColor">@*android:color/white</item>
         <item name="*com.google.android.gms:actionBarStyle">@*com.google.android.gms:style/gf_ActionBarStyle</item>
+    </style>
+    <style name="gf_DarkProgressDialogStyle" parent="@*com.google.android.gms:style/Theme.GoogleMaterial.Dark.Dialog">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:background">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gf_as_circleDrawableBlackout">@*com.google.android.gms:drawable/gf_circle_drawable_blackout_with_stroke</item>
+        <item name="*com.google.android.gms:gf_as_circleDrawableBorder">@*com.google.android.gms:drawable/gf_circle_drawable_border_dark</item>
+        <item name="*com.google.android.gms:gf_as_circleDrawableHighlight">@*com.google.android.gms:drawable/gf_circle_drawable_highlight_dark</item>
+        <item name="*com.google.android.gms:gf_as_hairlineColor">@*android:color/white</item>
+        <item name="*com.google.android.gms:gf_as_infoTextBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gf_as_menuBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gf_disabledIconColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gf_divider">@*com.google.android.gms:drawable/gf_divider_dark</item>
+        <item name="*com.google.android.gms:gf_hintTextColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gf_isInDarkMode">true</item>
+        <item name="*com.google.android.gms:gf_primaryBlueColor">@*com.google.android.gms:color/google_blue300</item>
+        <item name="*com.google.android.gms:gf_primaryTextColor">@*android:color/white</item>
+        <item name="*com.google.android.gms:gf_secondaryTextColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gf_surfaceColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gf_surfaceColorElevation1">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gf_surfaceColorElevation3">@*android:color/button_material_dark</item>
+        <item name="*com.google.android.gms:gf_systemInfoIcon">@*com.google.android.gms:drawable/system_info_dark</item>
+        <item name="*com.google.android.gms:ghf_greyIconColor">@*android:color/white</item>
     </style>
     <style name="gf_LightActivityStyle" parent="@*com.google.android.gms:style/Theme.GoogleMaterial.Dark">
-        <item name="*com.google.android.gms:gf_hintTextColor">@*com.google.android.gms:color/gf_white_opacity_38_percent</item>
+        <item name="*com.google.android.gms:gf_as_circleDrawableBlackout">@*com.google.android.gms:drawable/gf_circle_drawable_blackout_without_stroke</item>
+        <item name="*com.google.android.gms:gf_as_circleDrawableBorder">@*com.google.android.gms:drawable/gf_circle_drawable_border_light</item>
+        <item name="*com.google.android.gms:gf_as_circleDrawableHighlight">@*com.google.android.gms:drawable/gf_circle_drawable_highlight_light</item>
+        <item name="*com.google.android.gms:gf_as_hairlineColor">@*android:color/white</item>
+        <item name="*com.google.android.gms:gf_as_infoTextBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gf_as_menuBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gf_disabledIconColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gf_divider">@*com.google.android.gms:drawable/gf_divider_light</item>
+        <item name="*com.google.android.gms:gf_hintTextColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gf_isInDarkMode">true</item>
         <item name="*com.google.android.gms:gf_primaryBlueColor">@*com.google.android.gms:color/google_blue300</item>
         <item name="*com.google.android.gms:gf_primaryTextColor">@*android:color/white</item>
         <item name="*com.google.android.gms:gf_secondaryTextColor">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.gms:gf_surfaceColor">@*android:color/background_floating_material_dark</item>
-        <item name="*com.google.android.gms:gf_surfaceColorElevation1">@*com.google.android.gms:color/gf_surface_color_elevation1</item>
-        <item name="*com.google.android.gms:gf_surfaceColorElevation3">@*com.google.android.gms:color/gf_surface_color_elevation3</item>
+        <item name="*com.google.android.gms:gf_surfaceColorElevation1">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gf_surfaceColorElevation3">@*android:color/button_material_dark</item>
+        <item name="*com.google.android.gms:gf_systemInfoIcon">@*com.google.android.gms:drawable/system_info_dark</item>
+        <item name="*com.google.android.gms:ghf_greyIconColor">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.gms:actionBarStyle">@*com.google.android.gms:style/gf_ActionBarStyle</item>
     </style>
+    <style name="gf_LightProgressDialogStyle" parent="@*com.google.android.gms:style/Theme.GoogleMaterial.Dark.Dialog">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="*com.google.android.gms:gf_as_circleDrawableBlackout">@*com.google.android.gms:drawable/gf_circle_drawable_blackout_with_stroke</item>
+        <item name="*com.google.android.gms:gf_as_circleDrawableBorder">@*com.google.android.gms:drawable/gf_circle_drawable_border_dark</item>
+        <item name="*com.google.android.gms:gf_as_circleDrawableHighlight">@*com.google.android.gms:drawable/gf_circle_drawable_highlight_dark</item>
+        <item name="*com.google.android.gms:gf_as_hairlineColor">@*android:color/white</item>
+        <item name="*com.google.android.gms:gf_as_infoTextBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gf_as_menuBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gf_disabledIconColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gf_divider">@*com.google.android.gms:drawable/gf_divider_dark</item>
+        <item name="*com.google.android.gms:gf_hintTextColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gf_isInDarkMode">true</item>
+        <item name="*com.google.android.gms:gf_primaryBlueColor">@*com.google.android.gms:color/google_blue300</item>
+        <item name="*com.google.android.gms:gf_primaryTextColor">@*android:color/white</item>
+        <item name="*com.google.android.gms:gf_secondaryTextColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gf_surfaceColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gf_surfaceColorElevation1">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gf_surfaceColorElevation3">@*android:color/button_material_dark</item>
+        <item name="*com.google.android.gms:gf_systemInfoIcon">@*com.google.android.gms:drawable/system_info_dark</item>
+        <item name="*com.google.android.gms:ghf_greyIconColor">@*android:color/white</item>
+    </style>
     <style name="gh_ActivityStyleWithGoogleBrandedActionBar" parent="@*com.google.android.gms:style/Theme.AppCompat">
+        <item name="*com.google.android.gms:gh_chatAgentInitialCircleBackgroundColor">@*android:color/button_material_dark</item>
+        <item name="*com.google.android.gms:gh_chatAgentInitialCircleTextColor">@*com.google.android.gms:color/google_green500</item>
+        <item name="*com.google.android.gms:gh_chatInboundMessageBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gh_chatSendMessageSectionStrokeWidth">1.0dip</item>
+        <item name="*com.google.android.gms:gh_communityIcon">@*com.google.android.gms:drawable/gh_community_light_circle</item>
+        <item name="*com.google.android.gms:gh_disabledIconColor">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.gms:gh_divider">@*com.google.android.gms:drawable/gh_divider_light</item>
         <item name="*com.google.android.gms:gh_hintTextColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gh_isInDarkMode">true</item>
         <item name="*com.google.android.gms:gh_legalTextBackgroundColor">@*android:color/background_dark</item>
         <item name="*com.google.android.gms:gh_onPrimaryColor">@*android:color/background_dark</item>
         <item name="*com.google.android.gms:gh_primaryBlueColor">@*com.google.android.gms:color/google_blue600</item>
+        <item name="*com.google.android.gms:gh_primaryRedColor">@*com.google.android.gms:color/google_red600</item>
         <item name="*com.google.android.gms:gh_primaryTextColor">@*android:color/white</item>
         <item name="*com.google.android.gms:gh_promotedContentCardBackgroundColor">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.gms:gh_roundedCornerBackground">@*com.google.android.gms:drawable/gh_rounded_corner_light_background</item>
         <item name="*com.google.android.gms:gh_searchResultsBackgroundColor">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.gms:gh_secondaryTextColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gh_smartJourneyIcon">@*com.google.android.gms:drawable/gh_smart_journey_light_circle</item>
         <item name="*com.google.android.gms:gh_surfaceColor">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.gms:gh_surfaceColorElevation1">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.gms:gh_surfaceColorElevation2">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.gms:gh_surfaceColorElevation3">@*android:color/button_material_dark</item>
+        <item name="*com.google.android.gms:ghf_greyIconColor">@*android:color/white</item>
         <item name="*com.google.android.gms:actionBarStyle">@*com.google.android.gms:style/GoogleBrandedActionBar</item>
         <item name="*com.google.android.gms:colorPrimary">@*android:color/primary_material_dark</item>
         <item name="*com.google.android.gms:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
         <item name="*com.google.android.gms:colorAccent">@*com.google.android.gms:color/material_google_blue_500</item>
     </style>
     <style name="gh_ActivityStyleWithLightGoogleBrandedActionBar" parent="@*com.google.android.gms:style/Theme.AppCompat">
+        <item name="*com.google.android.gms:gh_chatAgentInitialCircleBackgroundColor">@*android:color/button_material_dark</item>
+        <item name="*com.google.android.gms:gh_chatAgentInitialCircleTextColor">@*com.google.android.gms:color/google_green500</item>
+        <item name="*com.google.android.gms:gh_chatInboundMessageBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gh_chatSendMessageSectionStrokeWidth">1.0dip</item>
+        <item name="*com.google.android.gms:gh_communityIcon">@*com.google.android.gms:drawable/gh_community_light_circle</item>
+        <item name="*com.google.android.gms:gh_disabledIconColor">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.gms:gh_divider">@*com.google.android.gms:drawable/gh_divider_light</item>
         <item name="*com.google.android.gms:gh_hintTextColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gh_isInDarkMode">true</item>
         <item name="*com.google.android.gms:gh_legalTextBackgroundColor">@*android:color/background_dark</item>
         <item name="*com.google.android.gms:gh_onPrimaryColor">@*android:color/background_dark</item>
         <item name="*com.google.android.gms:gh_primaryBlueColor">@*com.google.android.gms:color/google_blue600</item>
+        <item name="*com.google.android.gms:gh_primaryRedColor">@*com.google.android.gms:color/google_red600</item>
         <item name="*com.google.android.gms:gh_primaryTextColor">@*android:color/white</item>
         <item name="*com.google.android.gms:gh_promotedContentCardBackgroundColor">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.gms:gh_roundedCornerBackground">@*com.google.android.gms:drawable/gh_rounded_corner_light_background</item>
         <item name="*com.google.android.gms:gh_searchResultsBackgroundColor">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.gms:gh_secondaryTextColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gh_smartJourneyIcon">@*com.google.android.gms:drawable/gh_smart_journey_light_circle</item>
         <item name="*com.google.android.gms:gh_surfaceColor">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.gms:gh_surfaceColorElevation1">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.gms:gh_surfaceColorElevation2">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.gms:gh_surfaceColorElevation3">@*android:color/button_material_dark</item>
+        <item name="*com.google.android.gms:ghf_greyIconColor">@*android:color/white</item>
         <item name="*com.google.android.gms:actionBarStyle">@*com.google.android.gms:style/GoogleBrandedActionBar</item>
         <item name="*com.google.android.gms:colorPrimary">@*android:color/primary_material_dark</item>
         <item name="*com.google.android.gms:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
@@ -736,21 +904,31 @@
     </style>
     <style name="gh_ActivityStyleWithLightHeaderBackground" parent="@*com.google.android.gms:style/Theme.AppCompat">
         <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="*com.google.android.gms:gh_chatAgentInitialCircleBackgroundColor">@*android:color/button_material_dark</item>
+        <item name="*com.google.android.gms:gh_chatAgentInitialCircleTextColor">@*com.google.android.gms:color/google_green500</item>
+        <item name="*com.google.android.gms:gh_chatInboundMessageBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gh_chatSendMessageSectionStrokeWidth">1.0dip</item>
+        <item name="*com.google.android.gms:gh_communityIcon">@*com.google.android.gms:drawable/gh_community_light_circle</item>
+        <item name="*com.google.android.gms:gh_disabledIconColor">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.gms:gh_divider">@*com.google.android.gms:drawable/gh_divider_light</item>
         <item name="*com.google.android.gms:gh_hintTextColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gh_isInDarkMode">true</item>
         <item name="*com.google.android.gms:gh_legalTextBackgroundColor">@*android:color/background_dark</item>
         <item name="*com.google.android.gms:gh_onPrimaryColor">@*android:color/background_dark</item>
         <item name="*com.google.android.gms:gh_primaryBlueColor">@*com.google.android.gms:color/google_blue600</item>
+        <item name="*com.google.android.gms:gh_primaryRedColor">@*com.google.android.gms:color/google_red600</item>
         <item name="*com.google.android.gms:gh_primaryTextColor">@*android:color/white</item>
         <item name="*com.google.android.gms:gh_promotedContentCardBackgroundColor">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.gms:gh_roundedCornerBackground">@*com.google.android.gms:drawable/gh_rounded_corner_light_background</item>
         <item name="*com.google.android.gms:gh_searchResultsBackgroundColor">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.gms:gh_secondaryTextColor">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.gms:gh_selectableItemBackground">?*android:selectableItemBackground</item>
+        <item name="*com.google.android.gms:gh_smartJourneyIcon">@*com.google.android.gms:drawable/gh_smart_journey_light_circle</item>
         <item name="*com.google.android.gms:gh_surfaceColor">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.gms:gh_surfaceColorElevation1">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.gms:gh_surfaceColorElevation2">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.gms:gh_surfaceColorElevation3">@*android:color/button_material_dark</item>
+        <item name="*com.google.android.gms:ghf_greyIconColor">@*android:color/white</item>
         <item name="*com.google.android.gms:textAppearanceSearchResultTitle">@*com.google.android.gms:style/gh_textAppearanceSearchResultTitleLight</item>
         <item name="*com.google.android.gms:colorAccent">@*com.google.android.gms:color/material_google_blue_500</item>
     </style>
@@ -766,77 +944,117 @@
         <item name="android:inputType">textMultiLine</item>
     </style>
     <style name="gh_DarkActivityStyle" parent="@*com.google.android.gms:style/Theme.GoogleMaterial.Dark">
+        <item name="*com.google.android.gms:gh_chatAgentInitialCircleBackgroundColor">@*android:color/button_material_dark</item>
+        <item name="*com.google.android.gms:gh_chatAgentInitialCircleTextColor">@*com.google.android.gms:color/google_green500</item>
+        <item name="*com.google.android.gms:gh_chatInboundMessageBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gh_chatSendMessageSectionStrokeWidth">1.0dip</item>
+        <item name="*com.google.android.gms:gh_communityIcon">@*com.google.android.gms:drawable/gh_community_dark_circle</item>
+        <item name="*com.google.android.gms:gh_disabledIconColor">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.gms:gh_divider">@*com.google.android.gms:drawable/gh_divider_dark</item>
-        <item name="*com.google.android.gms:gh_hintTextColor">@*com.google.android.gms:color/gh_white_opacity_38_percent</item>
+        <item name="*com.google.android.gms:gh_hintTextColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gh_isInDarkMode">true</item>
         <item name="*com.google.android.gms:gh_legalTextBackgroundColor">@*android:color/background_dark</item>
         <item name="*com.google.android.gms:gh_onPrimaryColor">@*android:color/background_dark</item>
         <item name="*com.google.android.gms:gh_primaryBlueColor">@*com.google.android.gms:color/google_blue300</item>
+        <item name="*com.google.android.gms:gh_primaryRedColor">@*com.google.android.gms:color/google_red200</item>
         <item name="*com.google.android.gms:gh_primaryTextColor">@*android:color/white</item>
         <item name="*com.google.android.gms:gh_promotedContentCardBackgroundColor">@*com.google.android.gms:color/gh_promoted_content_card_dark_background</item>
         <item name="*com.google.android.gms:gh_roundedCornerBackground">@*com.google.android.gms:drawable/gh_rounded_corner_dark_background</item>
         <item name="*com.google.android.gms:gh_searchResultsBackgroundColor">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.gms:gh_secondaryTextColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gh_smartJourneyIcon">@*com.google.android.gms:drawable/gh_smart_journey_dark_circle</item>
         <item name="*com.google.android.gms:gh_surfaceColor">@*android:color/background_floating_material_dark</item>
-        <item name="*com.google.android.gms:gh_surfaceColorElevation1">@*com.google.android.gms:color/gh_surface_color_elevation1</item>
-        <item name="*com.google.android.gms:gh_surfaceColorElevation2">@*com.google.android.gms:color/gh_surface_color_elevation2</item>
-        <item name="*com.google.android.gms:gh_surfaceColorElevation3">@*com.google.android.gms:color/gh_surface_color_elevation3</item>
+        <item name="*com.google.android.gms:gh_surfaceColorElevation1">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gh_surfaceColorElevation2">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gh_surfaceColorElevation3">@*android:color/button_material_dark</item>
+        <item name="*com.google.android.gms:ghf_greyIconColor">@*android:color/white</item>
         <item name="*com.google.android.gms:actionBarStyle">@*com.google.android.gms:style/gh_ActionBarStyle</item>
     </style>
     <style name="gh_HeaderBackgroundLightStyle">
         <item name="android:background">@*android:color/primary_material_dark</item>
     </style>
     <style name="gh_LightActivityStyle" parent="@*com.google.android.gms:style/Theme.GoogleMaterial.Dark">
+        <item name="*com.google.android.gms:gh_chatAgentInitialCircleBackgroundColor">@*android:color/button_material_dark</item>
+        <item name="*com.google.android.gms:gh_chatAgentInitialCircleTextColor">@*com.google.android.gms:color/google_green500</item>
+        <item name="*com.google.android.gms:gh_chatInboundMessageBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gh_chatSendMessageSectionStrokeWidth">1.0dip</item>
+        <item name="*com.google.android.gms:gh_communityIcon">@*com.google.android.gms:drawable/gh_community_dark_circle</item>
+        <item name="*com.google.android.gms:gh_disabledIconColor">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.gms:gh_divider">@*com.google.android.gms:drawable/gh_divider_dark</item>
-        <item name="*com.google.android.gms:gh_hintTextColor">@*com.google.android.gms:color/gh_white_opacity_38_percent</item>
+        <item name="*com.google.android.gms:gh_hintTextColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gh_isInDarkMode">true</item>
         <item name="*com.google.android.gms:gh_legalTextBackgroundColor">@*android:color/background_dark</item>
         <item name="*com.google.android.gms:gh_onPrimaryColor">@*android:color/background_dark</item>
         <item name="*com.google.android.gms:gh_primaryBlueColor">@*com.google.android.gms:color/google_blue300</item>
+        <item name="*com.google.android.gms:gh_primaryRedColor">@*com.google.android.gms:color/google_red200</item>
         <item name="*com.google.android.gms:gh_primaryTextColor">@*android:color/white</item>
         <item name="*com.google.android.gms:gh_promotedContentCardBackgroundColor">@*com.google.android.gms:color/gh_promoted_content_card_dark_background</item>
         <item name="*com.google.android.gms:gh_roundedCornerBackground">@*com.google.android.gms:drawable/gh_rounded_corner_dark_background</item>
         <item name="*com.google.android.gms:gh_searchResultsBackgroundColor">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.gms:gh_secondaryTextColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gh_smartJourneyIcon">@*com.google.android.gms:drawable/gh_smart_journey_dark_circle</item>
         <item name="*com.google.android.gms:gh_surfaceColor">@*android:color/background_floating_material_dark</item>
-        <item name="*com.google.android.gms:gh_surfaceColorElevation1">@*com.google.android.gms:color/gh_surface_color_elevation1</item>
-        <item name="*com.google.android.gms:gh_surfaceColorElevation2">@*com.google.android.gms:color/gh_surface_color_elevation2</item>
-        <item name="*com.google.android.gms:gh_surfaceColorElevation3">@*com.google.android.gms:color/gh_surface_color_elevation3</item>
+        <item name="*com.google.android.gms:gh_surfaceColorElevation1">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gh_surfaceColorElevation2">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gh_surfaceColorElevation3">@*android:color/button_material_dark</item>
+        <item name="*com.google.android.gms:ghf_greyIconColor">@*android:color/white</item>
         <item name="*com.google.android.gms:actionBarStyle">@*com.google.android.gms:style/gh_ActionBarStyle</item>
     </style>
     <style name="gh_MainBackgroundStyle">
         <item name="android:background">@*android:color/background_dark</item>
     </style>
     <style name="gh_NoActionBarDarkActivityStyle" parent="@*com.google.android.gms:style/Theme.GoogleMaterial.Dark.NoActionBar">
+        <item name="*com.google.android.gms:gh_chatAgentInitialCircleBackgroundColor">@*android:color/button_material_dark</item>
+        <item name="*com.google.android.gms:gh_chatAgentInitialCircleTextColor">@*com.google.android.gms:color/google_green500</item>
+        <item name="*com.google.android.gms:gh_chatInboundMessageBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gh_chatSendMessageSectionStrokeWidth">1.0dip</item>
+        <item name="*com.google.android.gms:gh_communityIcon">@*com.google.android.gms:drawable/gh_community_dark_circle</item>
+        <item name="*com.google.android.gms:gh_disabledIconColor">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.gms:gh_divider">@*com.google.android.gms:drawable/gh_divider_dark</item>
-        <item name="*com.google.android.gms:gh_hintTextColor">@*com.google.android.gms:color/gh_white_opacity_38_percent</item>
+        <item name="*com.google.android.gms:gh_hintTextColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gh_isInDarkMode">true</item>
         <item name="*com.google.android.gms:gh_legalTextBackgroundColor">@*android:color/background_dark</item>
         <item name="*com.google.android.gms:gh_onPrimaryColor">@*android:color/background_dark</item>
         <item name="*com.google.android.gms:gh_primaryBlueColor">@*com.google.android.gms:color/google_blue300</item>
+        <item name="*com.google.android.gms:gh_primaryRedColor">@*com.google.android.gms:color/google_red200</item>
         <item name="*com.google.android.gms:gh_primaryTextColor">@*android:color/white</item>
         <item name="*com.google.android.gms:gh_promotedContentCardBackgroundColor">@*com.google.android.gms:color/gh_promoted_content_card_dark_background</item>
         <item name="*com.google.android.gms:gh_roundedCornerBackground">@*com.google.android.gms:drawable/gh_rounded_corner_dark_background</item>
         <item name="*com.google.android.gms:gh_searchResultsBackgroundColor">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.gms:gh_secondaryTextColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gh_smartJourneyIcon">@*com.google.android.gms:drawable/gh_smart_journey_dark_circle</item>
         <item name="*com.google.android.gms:gh_surfaceColor">@*android:color/background_floating_material_dark</item>
-        <item name="*com.google.android.gms:gh_surfaceColorElevation1">@*com.google.android.gms:color/gh_surface_color_elevation1</item>
-        <item name="*com.google.android.gms:gh_surfaceColorElevation2">@*com.google.android.gms:color/gh_surface_color_elevation2</item>
-        <item name="*com.google.android.gms:gh_surfaceColorElevation3">@*com.google.android.gms:color/gh_surface_color_elevation3</item>
+        <item name="*com.google.android.gms:gh_surfaceColorElevation1">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gh_surfaceColorElevation2">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gh_surfaceColorElevation3">@*android:color/button_material_dark</item>
+        <item name="*com.google.android.gms:ghf_greyIconColor">@*android:color/white</item>
         <item name="*com.google.android.gms:actionOverflowButtonStyle">@*com.google.android.gms:style/gh_OverflowButtonStyle</item>
     </style>
     <style name="gh_NoActionBarLightActivityStyle" parent="@*com.google.android.gms:style/Theme.GoogleMaterial.Dark.NoActionBar">
+        <item name="*com.google.android.gms:gh_chatAgentInitialCircleBackgroundColor">@*android:color/button_material_dark</item>
+        <item name="*com.google.android.gms:gh_chatAgentInitialCircleTextColor">@*com.google.android.gms:color/google_green500</item>
+        <item name="*com.google.android.gms:gh_chatInboundMessageBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gh_chatSendMessageSectionStrokeWidth">1.0dip</item>
+        <item name="*com.google.android.gms:gh_communityIcon">@*com.google.android.gms:drawable/gh_community_dark_circle</item>
+        <item name="*com.google.android.gms:gh_disabledIconColor">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.gms:gh_divider">@*com.google.android.gms:drawable/gh_divider_dark</item>
-        <item name="*com.google.android.gms:gh_hintTextColor">@*com.google.android.gms:color/gh_white_opacity_38_percent</item>
+        <item name="*com.google.android.gms:gh_hintTextColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gh_isInDarkMode">true</item>
         <item name="*com.google.android.gms:gh_legalTextBackgroundColor">@*android:color/background_dark</item>
         <item name="*com.google.android.gms:gh_onPrimaryColor">@*android:color/background_dark</item>
         <item name="*com.google.android.gms:gh_primaryBlueColor">@*com.google.android.gms:color/google_blue300</item>
+        <item name="*com.google.android.gms:gh_primaryRedColor">@*com.google.android.gms:color/google_red200</item>
         <item name="*com.google.android.gms:gh_primaryTextColor">@*android:color/white</item>
         <item name="*com.google.android.gms:gh_promotedContentCardBackgroundColor">@*com.google.android.gms:color/gh_promoted_content_card_dark_background</item>
         <item name="*com.google.android.gms:gh_roundedCornerBackground">@*com.google.android.gms:drawable/gh_rounded_corner_dark_background</item>
         <item name="*com.google.android.gms:gh_searchResultsBackgroundColor">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.gms:gh_secondaryTextColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:gh_smartJourneyIcon">@*com.google.android.gms:drawable/gh_smart_journey_dark_circle</item>
         <item name="*com.google.android.gms:gh_surfaceColor">@*android:color/background_floating_material_dark</item>
-        <item name="*com.google.android.gms:gh_surfaceColorElevation1">@*com.google.android.gms:color/gh_surface_color_elevation1</item>
-        <item name="*com.google.android.gms:gh_surfaceColorElevation2">@*com.google.android.gms:color/gh_surface_color_elevation2</item>
-        <item name="*com.google.android.gms:gh_surfaceColorElevation3">@*com.google.android.gms:color/gh_surface_color_elevation3</item>
+        <item name="*com.google.android.gms:gh_surfaceColorElevation1">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gh_surfaceColorElevation2">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gms:gh_surfaceColorElevation3">@*android:color/button_material_dark</item>
+        <item name="*com.google.android.gms:ghf_greyIconColor">@*android:color/white</item>
         <item name="*com.google.android.gms:actionOverflowButtonStyle">@*com.google.android.gms:style/gh_OverflowButtonStyle</item>
     </style>
     <style name="plus_oob_Interstitial" parent="@*android:style/Theme.Holo.NoActionBar">
@@ -844,7 +1062,7 @@
         <item name="android:windowFrame">@null</item>
         <item name="android:background">@*android:color/background_dark</item>
     </style>
-    <style name="systemUpdateActivityTheme" parent="@*com.google.android.gms:style/SuwThemeMaterial">
+    <style name="systemUpdateActivityTheme" parent="@*com.google.android.gms:style/SudThemeMaterial">
         <item name="android:windowAnimationStyle">@*android:style/Animation.Activity</item>
         <item name="android:colorAccent">@*com.google.android.gms:color/material_google_blue_500</item>
         <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
@@ -928,9 +1146,59 @@
         <item name="android:buttonBarNeutralButtonStyle">@*com.google.android.gms:style/matchstick.activityBaseDialog.button</item>
         <item name="android:buttonBarNegativeButtonStyle">@*com.google.android.gms:style/matchstick.activityBaseDialog.button</item>
     </style>
-    <style name="AsBaseAppThemeLightV23" parent="@*com.google.android.gms:style/AsBaseAppThemeLightV21">
+    <style name="AsBaseAppThemeLightV23" parent="@*com.google.android.gms:style/AsBaseAppThemeDarkV21">
         <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
         <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
         <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="OctarineBaseAppThemeLightV23" parent="@*com.google.android.gms:style/OctarineBaseAppThemeDarkV21">
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="PwmBaseAppThemeLightV23" parent="@*com.google.android.gms:style/PwmBaseAppThemeDarkV21">
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="Sharing.ReceiveSurface" parent="@*com.google.android.gms:style/Theme.GoogleMaterial.Dark.NoActionBar.Bridge">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:homeAsUpIndicator">@*com.google.android.gms:drawable/quantum_gm_ic_clear_vd_theme_24</item>
+        <item name="android:colorButtonNormal">@*com.google.android.gms:color/sharing_color_accent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="*com.google.android.gms:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.gms:colorAccent">@*com.google.android.gms:color/sharing_color_accent</item>
+        <item name="*com.google.android.gms:colorButtonNormal">@*com.google.android.gms:color/sharing_color_accent</item>
+        <item name="*com.google.android.gms:colorError">@*com.google.android.gms:color/sharing_color_error</item>
+    </style>
+    <style name="Sharing.Setup" parent="@*com.google.android.gms:style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:displayOptions">homeAsUp|showHome|showTitle</item>
+        <item name="android:homeAsUpIndicator">@*com.google.android.gms:drawable/quantum_gm_ic_clear_vd_theme_24</item>
+        <item name="android:colorButtonNormal">@*com.google.android.gms:color/sharing_color_accent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="*com.google.android.gms:displayOptions">homeAsUp|showTitle</item>
+        <item name="*com.google.android.gms:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.gms:colorAccent">@*com.google.android.gms:color/sharing_color_accent</item>
+        <item name="*com.google.android.gms:colorControlNormal">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:colorControlActivated">@*android:color/white</item>
+        <item name="*com.google.android.gms:colorButtonNormal">@*com.google.android.gms:color/sharing_color_accent</item>
+        <item name="*com.google.android.gms:colorSwitchThumbNormal">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:colorError">@*com.google.android.gms:color/sharing_color_error</item>
+    </style>
+    <style name="Sharing.ShareSheet" parent="@*com.google.android.gms:style/Theme.GoogleMaterial.Dark.NoActionBar.Bridge">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:homeAsUpIndicator">@*com.google.android.gms:drawable/quantum_gm_ic_clear_vd_theme_24</item>
+        <item name="android:colorButtonNormal">@*com.google.android.gms:color/sharing_color_accent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="*com.google.android.gms:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.gms:colorAccent">@*com.google.android.gms:color/sharing_color_accent</item>
+        <item name="*com.google.android.gms:colorButtonNormal">@*com.google.android.gms:color/sharing_color_accent</item>
+        <item name="*com.google.android.gms:colorError">@*com.google.android.gms:color/sharing_color_error</item>
     </style>
 </resources>

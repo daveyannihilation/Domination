@@ -75,6 +75,16 @@
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
+    <style name="DialpadKeyLetterStyle">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.0dip</item>
+        <item name="android:soundEffectsEnabled">false</item>
+        <item name="android:textAlignment">center</item>
+    </style>
     <style name="Divider">
         <item name="android:background">#00000000</item>
         <item name="android:layout_width">fill_parent</item>
@@ -152,7 +162,6 @@
         <item name="android:textColor">#ffffffff</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:background">@*com.google.android.googlequicksearchbox:drawable/lens_action_background</item>
-        <item name="android:minHeight">32.0dip</item>
         <item name="android:singleLine">true</item>
         <item name="android:drawablePadding">@*com.google.android.googlequicksearchbox:dimen/lens_suggestion_icon_padding</item>
         <item name="android:fontFamily">google-sans-medium</item>
@@ -166,9 +175,8 @@
         <item name="android:background">@*com.google.android.googlequicksearchbox:drawable/lens_suggestion_background</item>
         <item name="android:paddingLeft">@*com.google.android.googlequicksearchbox:dimen/lens_suggestion_text_horizontal_padding</item>
         <item name="android:paddingRight">@*com.google.android.googlequicksearchbox:dimen/lens_suggestion_text_horizontal_padding</item>
-        <item name="android:minHeight">32.0dip</item>
         <item name="android:singleLine">true</item>
-        <item name="android:drawablePadding">4.0dip</item>
+        <item name="android:drawablePadding">@*com.google.android.googlequicksearchbox:dimen/lens_suggestion_icon_padding</item>
         <item name="android:fontFamily">google-sans-medium</item>
     </style>
     <style name="LineOneText">
@@ -201,6 +209,36 @@
         <item name="android:alpha">0.3</item>
         <item name="android:layout_marginEnd">@*com.google.android.googlequicksearchbox:dimen/layout_end_margin</item>
         <item name="android:backgroundTint">@*android:color/button_material_dark</item>
+    </style>
+    <style name="MorrisGreetingMessageText">
+        <item name="android:textSize">32.0sp</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:fontFamily">google-sans-medium</item>
+    </style>
+    <style name="MorrisJustForYouMainText">
+        <item name="android:textSize">24.0sp</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:fontFamily">google-sans-medium</item>
+    </style>
+    <style name="MorrisJustForYouSecondText">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="android:fontFamily">google-sans-medium</item>
+    </style>
+    <style name="MorrisShortCutText">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:fontFamily">google-sans-medium</item>
+    </style>
+    <style name="MorrisTurnByTurnDistText">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:fontFamily">google-sans-bold</item>
+    </style>
+    <style name="MorrisTurnByTurnRoadText">
+        <item name="android:textSize">30.0sp</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:fontFamily">google-sans-medium</item>
     </style>
     <style name="OmpMediaItemPagePlayButtonText">
         <item name="android:textAppearance">@*com.google.android.googlequicksearchbox:style/TextAppearance.GoogleMaterial.Subhead2</item>
@@ -312,18 +350,20 @@
         <item name="android:background">@*android:color/background_floating_material_dark</item>
         <item name="android:elevation">@*com.google.android.googlequicksearchbox:dimen/suw_glif_card_elevation</item>
     </style>
-    <style name="SuwThemeGlifV2.Light" parent="@*com.google.android.googlequicksearchbox:style/SuwThemeGlif.Light">
-        <item name="android:colorBackground">@*com.google.android.googlequicksearchbox:color/suw_glif_background_color_light</item>
-        <item name="android:editTextStyle">@*com.google.android.googlequicksearchbox:style/SuwEditText</item>
-        <item name="android:alertDialogTheme">@*com.google.android.googlequicksearchbox:style/SuwAlertDialogTheme.Light</item>
-        <item name="*com.google.android.googlequicksearchbox:suwDividerInsetEnd">@*com.google.android.googlequicksearchbox:dimen/suw_glif_margin_sides</item>
-        <item name="*com.google.android.googlequicksearchbox:suwDividerInsetStart">@*com.google.android.googlequicksearchbox:dimen/suw_glif_margin_sides</item>
-        <item name="*com.google.android.googlequicksearchbox:suwDividerInsetStartNoIcon">@*com.google.android.googlequicksearchbox:dimen/suw_glif_margin_sides</item>
-        <item name="*com.google.android.googlequicksearchbox:suwEditTextBackgroundColor">@*com.google.android.googlequicksearchbox:color/suw_glif_edit_text_bg_light_color</item>
+    <style name="Theme.AssistantSettings.Base" parent="@*com.google.android.googlequicksearchbox:style/Theme.AssistantSettings.List">
+        <item name="android:windowBackground">@*com.google.android.googlequicksearchbox:color/assistant_settings_window_background</item>
+        <item name="android:homeAsUpIndicator">@*com.google.android.googlequicksearchbox:drawable/quantum_ic_arrow_back_grey600_24</item>
+        <item name="android:selectableItemBackground">@*com.google.android.googlequicksearchbox:drawable/assistant_settings_preference_background</item>
+        <item name="android:actionMenuTextColor">@*android:color/white</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:timePickerDialogTheme">@*android:style/Theme.DeviceDefault.Dialog</item>
         <item name="*com.google.android.googlequicksearchbox:suwGlifHeaderGravity">center_horizontal</item>
-        <item name="*com.google.android.googlequicksearchbox:suwScrollIndicators">bottom|top</item>
-        <item name="*com.google.android.googlequicksearchbox:suwBackgroundPatterned">false</item>
-        <item name="*com.google.android.googlequicksearchbox:suwBackgroundBaseColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.googlequicksearchbox:actionOverflowButtonStyle">@*com.google.android.googlequicksearchbox:style/AssistantSettingsOverflowButton</item>
+        <item name="*com.google.android.googlequicksearchbox:colorPrimary">@*com.google.android.googlequicksearchbox:color/assistant_settings_appbar_background</item>
+        <item name="*com.google.android.googlequicksearchbox:colorPrimaryDark">@*com.google.android.googlequicksearchbox:color/assistant_settings_statusbar_background</item>
+        <item name="*com.google.android.googlequicksearchbox:colorAccent">@*com.google.android.googlequicksearchbox:color/assistant_settings_primary_color</item>
+        <item name="*com.google.android.googlequicksearchbox:colorControlActivated">@*com.google.android.googlequicksearchbox:color/assistant_settings_primary_color</item>
+        <item name="*com.google.android.googlequicksearchbox:preferenceTheme">@*com.google.android.googlequicksearchbox:style/AssistantSettingsPreferenceTheme</item>
     </style>
     <style name="Theme.Gsa" parent="@*com.google.android.googlequicksearchbox:style/Theme.Shim">
         <item name="android:textColorHighlight">@*com.google.android.googlequicksearchbox:color/qp_highlight</item>
@@ -378,7 +418,7 @@
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowFullscreen">false</item>
-        <item name="*com.google.android.googlequicksearchbox:buttonBarNegativeButtonStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.StrokedButton</item>
+        <item name="*com.google.android.googlequicksearchbox:buttonBarNegativeButtonStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.Button.StrokedButton</item>
     </style>
     <style name="Theme.OptIn.UOS" parent="@*com.google.android.googlequicksearchbox:style/Theme.Velvet">
         <item name="android:windowBackground">@*android:color/transparent</item>
@@ -591,10 +631,6 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">4.0dip</item>
-    </style>
-    <style name="loading_account_hub_dialog" parent="@*com.google.android.googlequicksearchbox:style/Theme.MaterialComponents">
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:background">@*android:color/background_floating_material_dark</item>
     </style>
     <style name="menu_tip_description_style">
         <item name="android:textSize">@*com.google.android.googlequicksearchbox:dimen/qp_h5_text_size</item>

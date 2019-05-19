@@ -56,6 +56,7 @@
     <attr name="colorSecondary" format="color" />
     <attr name="colorSecondaryVariant" format="color" />
     <attr name="colorSurface" format="color" />
+    <attr name="columnCount" format="integer" />
     <attr name="constraintSet" format="reference" />
     <attr name="controller_layout_id" format="reference" />
     <attr name="coordinatorLayoutStyle" format="reference" />
@@ -248,6 +249,8 @@
     <attr name="materialDatePickerStyle" format="reference" />
     <attr name="materialDateRangePickerDialogTheme" format="reference" />
     <attr name="materialDateRangePickerStyle" format="reference" />
+    <attr name="materialPickerIconButtonStyle" format="reference" />
+    <attr name="materialPickerTextButtonStyle" format="reference" />
     <attr name="materialThemeOverlay" format="reference" />
     <attr name="maxColumnWidth" format="reference|dimension" />
     <attr name="mediaRouteAudioTrackDrawable" format="reference" />
@@ -269,6 +272,7 @@
     <attr name="mtrlColor" format="reference|color" />
     <attr name="mtrlColors" format="reference" />
     <attr name="navigationViewStyle" format="reference" />
+    <attr name="ogAccountMenuNavigationViewStyle" format="reference" />
     <attr name="ogAccountMenuStyle" format="reference" />
     <attr name="ogAccountParticleDiscStyle" format="reference" />
     <attr name="ogAccountParticleStyle" format="reference" />
@@ -334,6 +338,58 @@
     <attr name="show_shuffle_button" format="boolean" />
     <attr name="show_timeout" format="integer" />
     <attr name="sliceViewStyle" format="reference" />
+    <attr name="sucLayoutTheme" format="reference" />
+    <attr name="sudButtonAllCaps" format="boolean" />
+    <attr name="sudButtonCornerRadius" format="dimension" />
+    <attr name="sudButtonFontFamily" format="reference|string" />
+    <attr name="sudButtonHighlightAlpha" format="float" />
+    <attr name="sudCardBackground" format="reference|color" />
+    <attr name="sudColorPrimary" format="color" />
+    <attr name="sudDividerCondition">
+        <enum name="both" value="1" />
+        <enum name="either" value="0" />
+    </attr>
+    <attr name="sudDividerInset" format="reference|dimension" />
+    <attr name="sudDividerInsetEnd" format="reference|dimension" />
+    <attr name="sudDividerInsetStart" format="reference|dimension" />
+    <attr name="sudDividerInsetStartNoIcon" format="reference|dimension" />
+    <attr name="sudEditTextBackgroundColor" format="color" />
+    <attr name="sudFillContentLayoutStyle" format="reference" />
+    <attr name="sudGlifHeaderGravity">
+        <flag name="end" value="0x00800005" />
+        <flag name="center_horizontal" value="0x00000001" />
+        <flag name="fill_horizontal" value="0x00000007" />
+        <flag name="left" value="0x00000003" />
+        <flag name="right" value="0x00000005" />
+        <flag name="start" value="0x00800003" />
+    </attr>
+    <attr name="sudGlifIconStyle" format="reference" />
+    <attr name="sudHasStableIds" format="reference|boolean" />
+    <attr name="sudHeader" format="reference" />
+    <attr name="sudIconGravity">
+        <enum name="bottom" value="80" />
+        <enum name="center_vertical" value="16" />
+        <enum name="top" value="48" />
+    </attr>
+    <attr name="sudIconTint" format="color" />
+    <attr name="sudItemDescriptionStyle" format="reference" />
+    <attr name="sudItemDescriptionTitleStyle" format="reference" />
+    <attr name="sudLayoutTheme" format="reference" />
+    <attr name="sudListItemIconColor" format="color" />
+    <attr name="sudMarginSides" format="reference|dimension" />
+    <attr name="sudNavBarBackgroundColor" format="color" />
+    <attr name="sudNavBarButtonBackground" format="reference|color" />
+    <attr name="sudNavBarTextColor" format="color" />
+    <attr name="sudNavBarTheme" format="reference" />
+    <attr name="sudScrollIndicators">
+        <flag name="none" value="0x00000000" />
+        <flag name="end" value="0x00000020" />
+        <flag name="left" value="0x00000004" />
+        <flag name="right" value="0x00000008" />
+        <flag name="start" value="0x00000010" />
+        <flag name="bottom" value="0x00000002" />
+        <flag name="top" value="0x00000001" />
+    </attr>
     <attr name="suwButtonAllCaps" format="boolean" />
     <attr name="suwButtonCornerRadius" format="dimension" />
     <attr name="suwButtonFontFamily" format="reference|string" />
@@ -402,6 +458,7 @@
     <attr name="textAppearanceSubtitleAlt2" format="reference" />
     <attr name="textInputStyle" format="reference" />
     <attr name="useAppearAnimations" format="boolean" />
+    <attr name="useGlifFooter" format="boolean" />
     <attr name="verticalItemMargin" format="reference|dimension" />
     <attr name="vogPromptColor" format="reference|color" />
     <attr name="vogPromptTextStyle" format="integer" />
@@ -415,6 +472,8 @@
     <attr name="dividerColor" format="color" />
     <attr name="elevatedHeaderColor" format="color" />
     <attr name="embeddedNoSelectedAccountTitleColor" format="color" />
+    <attr name="lightStatusBar" format="boolean" />
+    <attr name="standaloneNoSelectedAccountTitleColor" format="color" />
     <attr name="iconColor" format="color" />
     <attr name="policyRippleColor" format="color" />
     <attr name="policyTextColor" format="color" />
@@ -702,16 +761,25 @@
     <attr name="arcThumbColor" format="color" />
     <attr name="arcThumbInnerColor" format="color" />
     <attr name="arcThumbSize" format="dimension" />
+    <attr name="arcStaticThumbSize" format="dimension" />
     <attr name="arcThumbHighlightColor" format="color" />
     <attr name="arcThumbHighlightHighColor" format="color" />
     <attr name="arcThumbHighlightSize" format="dimension" />
     <attr name="arcValueUpContentDescription" format="string" />
     <attr name="arcValueDownContentDescription" format="string" />
+    <attr name="iconType">
+        <enum name="logo" value="1" />
+        <enum name="mic" value="0" />
+    </attr>
+    <attr name="iconSize" format="dimension" />
     <attr name="state_audioEmpty" format="boolean" />
     <attr name="state_audioRecording" format="boolean" />
     <attr name="state_audioFilled" format="boolean" />
     <attr name="state_audioPlaying" format="boolean" />
     <attr name="state_audioPaused" format="boolean" />
+    <attr name="badgeTextColor" format="color" />
+    <attr name="maxCharacterCount" format="integer" />
+    <attr name="number" format="integer" />
     <attr name="revealBackground" format="reference" />
     <attr name="lineSpacing" format="dimension" />
     <attr name="baselineToTop" format="dimension" />
@@ -877,8 +945,8 @@
         <flag name="right" value="0x00000005" />
         <flag name="start" value="0x00800003" />
         <flag name="bottom" value="0x00000050" />
-        <flag name="top" value="0x00000030" />
         <flag name="center_vertical" value="0x00000010" />
+        <flag name="top" value="0x00000030" />
         <flag name="fill_vertical" value="0x00000070" />
     </attr>
     <attr name="expandedTitleGravity">
@@ -889,8 +957,8 @@
         <flag name="right" value="0x00000005" />
         <flag name="start" value="0x00800003" />
         <flag name="bottom" value="0x00000050" />
-        <flag name="top" value="0x00000030" />
         <flag name="center_vertical" value="0x00000010" />
+        <flag name="top" value="0x00000030" />
         <flag name="fill_vertical" value="0x00000070" />
     </attr>
     <attr name="titleEnabled" format="boolean" />
@@ -928,8 +996,8 @@
         <flag name="right" value="0x00000005" />
         <flag name="start" value="0x00800003" />
         <flag name="bottom" value="0x00000050" />
-        <flag name="top" value="0x00000030" />
         <flag name="center_vertical" value="0x00000010" />
+        <flag name="top" value="0x00000030" />
         <flag name="fill_vertical" value="0x00000070" />
         <flag name="clip_horizontal" value="0x00000008" />
         <flag name="clip_vertical" value="0x00000080" />
@@ -1345,10 +1413,11 @@
     <attr name="materialAlertDialogTitleIconStyle" format="reference" />
     <attr name="materialAlertDialogTitleTextStyle" format="reference" />
     <attr name="materialAlertDialogBodyTextStyle" format="reference" />
-    <attr name="iconSize" format="dimension" />
     <attr name="iconPadding" format="dimension" />
     <attr name="iconGravity">
+        <flag name="end" value="0x00000003" />
         <flag name="start" value="0x00000001" />
+        <flag name="textEnd" value="0x00000004" />
         <flag name="textStart" value="0x00000002" />
     </attr>
     <attr name="iconTint" format="color" />
@@ -1694,7 +1763,56 @@
     <attr name="compact_mode" format="boolean" />
     <attr name="text_size" format="dimension" />
     <attr name="text_color" format="color" />
-    <attr name="columnCount" format="integer" />
+    <attr name="sucFooterBarButtonAllCaps" format="boolean" />
+    <attr name="sucFooterBarButtonCornerRadius" format="dimension" />
+    <attr name="sucFooterBarButtonFontFamily" format="reference|string" />
+    <attr name="sucFooterBarPaddingTop" format="dimension" />
+    <attr name="sucFooterBarPaddingBottom" format="dimension" />
+    <attr name="sucFooterBarPrimaryFooterBackground" format="color" />
+    <attr name="sucFooterBarPrimaryFooterButton" format="reference" />
+    <attr name="sucFooterBarSecondaryFooterBackground" format="color" />
+    <attr name="sucFooterBarSecondaryFooterButton" format="reference" />
+    <attr name="sucFooterBarButtonHighlightAlpha" format="float" />
+    <attr name="sucFooterBarButtonColorControlHighlight" format="color" />
+    <attr name="sucFooterBarButtonColorControlHighlightRipple" format="color" />
+    <attr name="sucFooterBarPaddingVertical" format="dimension" />
+    <attr name="sucButtonType">
+        <enum name="add_another" value="1" />
+        <enum name="cancel" value="2" />
+        <enum name="clear" value="3" />
+        <enum name="done" value="4" />
+        <enum name="next" value="5" />
+        <enum name="opt_in" value="6" />
+        <enum name="other" value="0" />
+        <enum name="skip" value="7" />
+        <enum name="stop" value="8" />
+    </attr>
+    <attr name="sucHeaderText" format="string" />
+    <attr name="sucHeaderTextColor" format="reference|color" />
+    <attr name="sucLayoutFullscreen" format="boolean" />
+    <attr name="sucUsePartnerResource" format="boolean" />
+    <attr name="sucStatusBarBackground" format="reference|color" />
+    <attr name="sucLightStatusBar" format="boolean" />
+    <attr name="sucSystemNavBarBackgroundColor" format="color" />
+    <attr name="sucLightSystemNavBar" format="boolean" />
+    <attr name="sucContainer" format="reference" />
+    <attr name="sudCollapsedSummary" format="string" />
+    <attr name="sudExpandedSummary" format="string" />
+    <attr name="sudBackgroundPatterned" format="boolean" />
+    <attr name="sudBackgroundBaseColor" format="color" />
+    <attr name="sudStickyHeader" format="reference" />
+    <attr name="sudUsePartnerHeavyTheme" format="boolean" />
+    <attr name="sudUpscaleIcon" format="boolean" />
+    <attr name="sudAspectRatio" format="float" />
+    <attr name="sudVideo" format="reference" />
+    <attr name="sudBackground" format="reference|color" />
+    <attr name="sudBackgroundTile" format="reference|color" />
+    <attr name="sudDecorPaddingTop" format="reference|dimension" />
+    <attr name="sudIllustration" format="reference|color" />
+    <attr name="sudIllustrationAspectRatio" format="reference|float" />
+    <attr name="sudIllustrationHorizontalTile" format="reference|color" />
+    <attr name="sudIllustrationImage" format="reference|color" />
+    <attr name="sudContainer" format="reference" />
     <attr name="layout_headerOffsetX" format="dimension" />
     <attr name="layout_headerOffsetY" format="dimension" />
     <attr name="layout_stickToBottom" format="boolean" />
@@ -1967,7 +2085,6 @@
     <attr name="defaultScreen" format="integer" />
     <attr name="cellCountX" format="integer" />
     <attr name="cellCountY" format="integer" />
-    <attr name="hideRecents" format="boolean" />
     <attr name="mtrlSize">
         <enum name="small" value="1" />
         <enum name="large" value="3" />

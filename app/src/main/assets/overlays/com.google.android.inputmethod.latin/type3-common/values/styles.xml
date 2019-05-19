@@ -7,12 +7,12 @@
     <style name="AvatarCreationM2Theme" parent="@*com.google.android.inputmethod.latin:style/Theme.GoogleMaterial.Light.NoActionBar.Bridge">
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.inputmethod.latin:colorAccent">@*com.google.android.inputmethod.latin:color/google_blue500</item>
         <item name="*com.google.android.inputmethod.latin:colorPrimary">@*android:color/primary_material_dark</item>
         <item name="*com.google.android.inputmethod.latin:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
-        <item name="*com.google.android.inputmethod.latin:colorAccent">@*com.google.android.inputmethod.latin:color/google_blue500</item>
         <item name="*com.google.android.inputmethod.latin:materialAlertDialogTheme">@*com.google.android.inputmethod.latin:style/ThemeOverlay.GoogleMaterial.MaterialAlertDialog</item>
-        <item name="*com.google.android.inputmethod.latin:snackbarStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.Snackbar</item>
         <item name="*com.google.android.inputmethod.latin:snackbarButtonStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.TextButton.Snackbar</item>
+        <item name="*com.google.android.inputmethod.latin:snackbarStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.Snackbar</item>
     </style>
     <style name="AvatarCreationTitleTextStyle" parent="@*com.google.android.inputmethod.latin:style/TextAppearance.AppCompat">
         <item name="android:textColor">@*android:color/white</item>
@@ -48,6 +48,9 @@
     <style name="Base.Theme.GoogleMaterial.Light" parent="@*com.google.android.inputmethod.latin:style/Base.V14.Theme.GoogleMaterial.Light">
         <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
     </style>
+    <style name="Base.Widget.AppCompat.Light.ActionBar.TabText" parent="@*android:style/Widget.Material.ActionBar.TabText" />
+    <style name="Base.Widget.AppCompat.Light.ActionBar.TabView" parent="@*android:style/Widget.Material.ActionBar.TabView" />
+    <style name="Base.Widget.AppCompat.Light.PopupMenu" parent="@*android:style/Widget.Material.PopupMenu" />
     <style name="CardViewerQueryText">
         <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/search_box_font_size</item>
         <item name="android:textColor">@*android:color/white</item>
@@ -186,21 +189,11 @@
         <item name="android:singleLine">false</item>
         <item name="android:lineSpacingExtra">@*com.google.android.inputmethod.latin:dimen/permission_notice_content_text_line_space_extra</item>
     </style>
-    <style name="PrivacyNoticeContentText">
-        <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/privacy_notice_content_text_size</item>
-        <item name="android:textColor">#ffdddddd</item>
-        <item name="android:paddingBottom">@*com.google.android.inputmethod.latin:dimen/privacy_notice_content_text_padding_bottom</item>
-        <item name="android:scrollbars">vertical</item>
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:singleLine">false</item>
-        <item name="android:lineSpacingExtra">@*com.google.android.inputmethod.latin:dimen/privacy_notice_content_text_line_space_extra</item>
-    </style>
-    <style name="PrivacyNoticeLearnMore">
-        <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/privacy_notice_learn_more_text_size</item>
-        <item name="android:textColor">#ff1976d2</item>
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">wrap_content</item>
+    <style name="Platform.V21.AppCompat.Light" parent="@*android:style/Theme.Material.NoActionBar">
+        <item name="android:textColorHintInverse">#ffbbbbbb</item>
+        <item name="android:textColorHint">#ffbbbbbb</item>
+        <item name="android:textColorLink">@*android:color/accent_material_dark</item>
+        <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
     </style>
     <style name="RateUsDialogTheme" parent="@*com.google.android.inputmethod.latin:style/Theme.AppCompat.Light.Dialog.Alert">
         <item name="android:windowBackground">@*android:color/background_dark</item>
@@ -218,8 +211,8 @@
         <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/sharing_dialog_title_font_size</item>
         <item name="android:textColor">#ffdddddd</item>
         <item name="android:textColorLink">@*com.google.android.inputmethod.latin:color/blue_color</item>
-        <item name="android:layout_gravity">center_horizontal</item>
-        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:lineSpacingMultiplier">1.5</item>
         <item name="android:paddingStart">@*com.google.android.inputmethod.latin:dimen/sharing_dialog_content_padding</item>
@@ -260,7 +253,7 @@
         <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/gboard_sharing_description_font_size</item>
         <item name="android:textColor">#ffdddddd</item>
         <item name="android:layout_gravity">center_horizontal</item>
-        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">@*com.google.android.inputmethod.latin:dimen/gboard_sharing_description_padding_top</item>
         <item name="android:lineSpacingMultiplier">1.5</item>
@@ -291,8 +284,8 @@
         <item name="*com.google.android.inputmethod.latin:cardCornerRadius">@*com.google.android.inputmethod.latin:dimen/header_corner_radius</item>
         <item name="*com.google.android.inputmethod.latin:cardElevation">0.0dip</item>
         <item name="*com.google.android.inputmethod.latin:cardMaxElevation">0.0dip</item>
-        <item name="*com.google.android.inputmethod.latin:cardUseCompatPadding">false</item>
         <item name="*com.google.android.inputmethod.latin:cardPreventCornerOverlap">false</item>
+        <item name="*com.google.android.inputmethod.latin:cardUseCompatPadding">false</item>
     </style>
     <style name="ThemeDetailsApplyButtonHolder">
         <item name="android:background">@*android:color/button_material_dark</item>
@@ -383,7 +376,6 @@
         <item name="*com.google.android.inputmethod.latin:tint">@*com.google.android.inputmethod.latin:color/google_blue500</item>
         <item name="*com.google.android.inputmethod.latin:hoveredFocusedTranslationZ">@*com.google.android.inputmethod.latin:dimen/google_fab_translation_z_hovered_focused</item>
         <item name="*com.google.android.inputmethod.latin:pressedTranslationZ">@*com.google.android.inputmethod.latin:dimen/google_fab_translation_z_pressed</item>
-        <item name="*com.google.android.inputmethod.latin:shapeAppearance">@null</item>
         <item name="*com.google.android.inputmethod.latin:shapeAppearanceOverlay">@*com.google.android.inputmethod.latin:style/ShapeAppearanceOverlay.GoogleMaterial.FloatingActionButton</item>
         <item name="*com.google.android.inputmethod.latin:enforceMaterialTheme">true</item>
         <item name="*com.google.android.inputmethod.latin:backgroundTint">@*android:color/button_material_dark</item>
