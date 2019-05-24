@@ -42,14 +42,10 @@
         <item name="android:windowMinWidthMajor">@*android:dimen/dialog_min_width_major</item>
         <item name="android:windowMinWidthMinor">@*android:dimen/dialog_min_width_minor</item>
     </style>
-    <style name="CakemixTheme.AppCompatActivity.NoActionBar.Carbon" parent="@*com.google.android.apps.docs:style/CakemixTheme.AppCompatActivity.NoActionBar">
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
-    </style>
     <style name="CakemixTheme.Projector" parent="@*android:style/Theme.DeviceDefault.Light">
         <item name="android:actionBarStyle">@*com.google.android.apps.docs:style/ProjectorActionBar</item>
     </style>
-    <style name="CakemixTheme.SplashScreen" parent="@*com.google.android.apps.docs:style/Theme.GoogleMaterial.DayNight.NoActionBar">
+    <style name="CakemixTheme.SplashScreen" parent="@*com.google.android.apps.docs:style/CakemixTheme.GoogleMaterial.TextColorOverrides.NoActionBar">
         <item name="android:windowBackground">@*com.google.android.apps.docs:drawable/quantum_launchscreen_drive</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
@@ -69,6 +65,7 @@
         <item name="android:actionModeStyle">@*com.google.android.apps.docs:style/OverlayActionBarStyleLight</item>
         <item name="android:actionBarDivider">@null</item>
         <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.apps.docs:bottomSheetDialogTheme">@*com.google.android.apps.docs:style/Theme.GoogleMaterial.Dark.BottomSheetDialog</item>
         <item name="*com.google.android.apps.docs:windowActionBar">false</item>
         <item name="*com.google.android.apps.docs:windowActionBarOverlay">true</item>
         <item name="*com.google.android.apps.docs:windowActionModeOverlay">true</item>
@@ -221,6 +218,36 @@
     </style>
     <style name="ThemeOverlay.GoogleMaterial.Snackbar" parent="">
         <item name="*com.google.android.apps.docs:colorOnSurface">@*android:color/background_floating_material_dark</item>
+    </style>
+    <style name="TooltipActionButton" parent="@*com.google.android.apps.docs:style/Widget.GoogleMaterial.TextButton">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxWidth">210.0dip</item>
+        <item name="android:layout_marginEnd">8.0dip</item>
+    </style>
+    <style name="TooltipDetail" parent="@*com.google.android.apps.docs:style/TextAppearance.GoogleMaterial.Body2">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:layout_gravity">fill_horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxWidth">210.0dip</item>
+        <item name="android:lineSpacingExtra">2.0dip</item>
+        <item name="android:layout_marginStart">16.0dip</item>
+        <item name="android:layout_marginEnd">16.0dip</item>
+    </style>
+    <style name="TooltipTitle" parent="@*com.google.android.apps.docs:style/TextAppearance.GoogleMaterial.Subhead1">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:layout_gravity">fill_horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16.0dip</item>
+        <item name="android:maxWidth">210.0dip</item>
+        <item name="android:lineSpacingExtra">8.0dip</item>
+        <item name="android:layout_marginStart">16.0dip</item>
+        <item name="android:layout_marginEnd">16.0dip</item>
     </style>
     <style name="Upload.Button.Spinner.Daynight" parent="@*android:style/Widget.Holo.Spinner">
         <item name="android:spinnerItemStyle">@*com.google.android.apps.docs:style/Upload.SpinnerItem</item>

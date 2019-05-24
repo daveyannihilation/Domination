@@ -10,9 +10,14 @@
         <item name="android:lines">1</item>
         <item name="android:singleLine">true</item>
     </style>
-    <style name="Base.Theme" parent="@*android:style/Theme.Holo">
+    <style name="Base.Theme" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="android:colorAccent">@*com.instagram.android:color/blue_5</item>
         <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
         <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:colorEdgeEffect">@*android:color/secondary_text_default_material_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:backgroundTint">@*android:color/background_dark</item>
         <item name="*com.instagram.android:backgroundColorPrimaryDark">@*android:color/primary_dark_material_dark</item>
     </style>
     <style name="Body" parent="@*com.instagram.android:style/IgPrimaryText">
@@ -50,6 +55,7 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:lines">1</item>
+        <item name="android:letterSpacing">0.1</item>
     </style>
     <style name="CustomToast.Red" parent="@*com.instagram.android:style/CustomToast">
         <item name="android:backgroundTint">@null</item>
@@ -330,7 +336,12 @@
         <item name="android:textColor">@*android:color/white</item>
         <item name="android:fontFamily">sans-serif-light</item>
     </style>
-    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light" />
+    <style name="Platform.V21.AppCompat.Light" parent="@*android:style/Theme.Material.NoActionBar">
+        <item name="android:textColorHintInverse">#ffbbbbbb</item>
+        <item name="android:textColorHint">#ffbbbbbb</item>
+        <item name="android:textColorLink">@*android:color/accent_material_dark</item>
+        <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
+    </style>
     <style name="ReelViewerListMegaphoneTitleText">
         <item name="android:textSize">@*com.instagram.android:dimen/font_medium</item>
         <item name="android:textStyle">bold</item>
@@ -354,9 +365,16 @@
         <item name="android:textColor">@*android:color/white</item>
         <item name="android:lineSpacingMultiplier">1.25</item>
     </style>
+    <style name="ShoppingBagSubtotalTitleText">
+        <item name="android:textSize">@*com.instagram.android:dimen/font_medium_xlarge</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
     <style name="TabBarButton">
         <item name="*com.instagram.android:active">@*android:color/white</item>
-        <item name="*com.instagram.android:normal">@*com.instagram.android:color/grey_9</item>
+        <item name="*com.instagram.android:normal">@*android:color/secondary_text_default_material_dark</item>
     </style>
     <style name="TextViewStyle" parent="@*android:style/Widget.TextView">
         <item name="android:textSize">@*com.instagram.android:dimen/font_medium</item>

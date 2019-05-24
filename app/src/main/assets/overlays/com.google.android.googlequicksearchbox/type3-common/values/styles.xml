@@ -55,13 +55,6 @@
         <item name="android:shadowDy">2.0</item>
         <item name="android:shadowRadius">2.0</item>
     </style>
-    <style name="ChatUi.ChromeOs.Collapsed" parent="@*android:style/Widget">
-        <item name="android:background">@*android:color/background_dark</item>
-        <item name="android:paddingLeft">@*com.google.android.googlequicksearchbox:dimen/chatui_chromeos_collapsed_padding_left</item>
-        <item name="android:paddingTop">@*com.google.android.googlequicksearchbox:dimen/chatui_chromeos_collapsed_padding_top</item>
-        <item name="android:paddingRight">@*com.google.android.googlequicksearchbox:dimen/chatui_chromeos_collapsed_padding_right</item>
-        <item name="android:paddingBottom">@*com.google.android.googlequicksearchbox:dimen/chatui_chromeos_collapsed_padding_bottom</item>
-    </style>
     <style name="ChatUi.Suggestion.HqLaunch" parent="@*com.google.android.googlequicksearchbox:style/ChatUi.Suggestion.V2">
         <item name="android:textColor">#ffffffff</item>
     </style>
@@ -225,10 +218,20 @@
         <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
         <item name="android:fontFamily">google-sans-medium</item>
     </style>
+    <style name="MorrisSectionHeaderText">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:fontFamily">google-sans-medium</item>
+    </style>
     <style name="MorrisShortCutText">
         <item name="android:textSize">16.0sp</item>
         <item name="android:textColor">@*android:color/white</item>
         <item name="android:fontFamily">google-sans-medium</item>
+    </style>
+    <style name="MorrisSuggestionText">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:fontFamily">roboto-regular</item>
     </style>
     <style name="MorrisTurnByTurnDistText">
         <item name="android:textSize">18.0sp</item>
@@ -382,8 +385,10 @@
         <item name="*com.google.android.googlequicksearchbox:vogPromptTextStyle">2</item>
     </style>
     <style name="Theme.Gsa.AppCompat" parent="@*com.google.android.googlequicksearchbox:style/Theme.Gsa.AppCompat.Base">
+        <item name="android:spinnerDropDownItemStyle">@*com.google.android.googlequicksearchbox:style/Theme.Gsa.AppCompat.SpinnerDropDown</item>
         <item name="android:textColorHighlight">@*com.google.android.googlequicksearchbox:color/qp_highlight</item>
         <item name="android:actionBarStyle">@*com.google.android.googlequicksearchbox:style/Gsa</item>
+        <item name="android:listPopupWindowStyle">@*com.google.android.googlequicksearchbox:style/Theme.Gsa.AppCompat.SpinnerDropDown</item>
         <item name="android:alertDialogTheme">@*com.google.android.googlequicksearchbox:style/Theme.Gsa.AppCompat.Dialog</item>
         <item name="android:textColorHighlightInverse">@*com.google.android.googlequicksearchbox:color/qp_highlight</item>
         <item name="android:colorControlActivated">@*com.google.android.googlequicksearchbox:color/qp_blue</item>
@@ -412,6 +417,20 @@
         <item name="android:dropDownListViewStyle">@*com.google.android.googlequicksearchbox:style/KeepListViewDropdownStyle</item>
         <item name="android:popupMenuStyle">@*com.google.android.googlequicksearchbox:style/KeepPopupMenuStyle</item>
         <item name="android:backgroundTint">@null</item>
+    </style>
+    <style name="Theme.Lens.ExtendedFloatingActionButton.FilterChip" parent="@*com.google.android.googlequicksearchbox:style/Theme.Lens.ExtendedFloatingActionButton.Secondary">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:paddingTop">6.0dip</item>
+        <item name="android:paddingBottom">6.0dip</item>
+        <item name="android:layout_marginTop">4.0dip</item>
+        <item name="android:minHeight">32.0dip</item>
+        <item name="android:paddingStart">12.0dip</item>
+        <item name="android:paddingEnd">12.0dip</item>
+        <item name="*com.google.android.googlequicksearchbox:iconSize">18.0dip</item>
+        <item name="*com.google.android.googlequicksearchbox:borderWidth">0.0dip</item>
+        <item name="*com.google.android.googlequicksearchbox:iconPadding">4.0dip</item>
+        <item name="*com.google.android.googlequicksearchbox:strokeWidth">0.0dip</item>
+        <item name="*com.google.android.googlequicksearchbox:backgroundTint">@*android:color/button_material_dark</item>
     </style>
     <style name="Theme.Lens.FullScreenDialog" parent="@*com.google.android.googlequicksearchbox:style/Theme.Lens">
         <item name="android:windowBackground">@*android:color/background_dark</item>
@@ -661,7 +680,7 @@
     <style name="reminder_edit_spinner_button" parent="@*android:style/Widget.Holo.Spinner">
         <item name="android:textSize">16.0sp</item>
         <item name="android:textColor">@*android:color/white</item>
-        <item name="android:textColorHint">@*com.google.android.googlequicksearchbox:color/search_plate_hint_text_color</item>
+        <item name="android:textColorHint">@*android:color/secondary_text_default_material_dark</item>
         <item name="android:gravity">center|left</item>
         <item name="android:paddingLeft">12.0dip</item>
         <item name="android:paddingTop">24.0dip</item>

@@ -284,6 +284,22 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">#ffffffff</item>
     </style>
+    <style name="PlayPassSignupHeaderClusterButton">
+        <item name="android:textSize">@*com.android.vending:dimen/play_pass_signup_header_cluster_button_text_size</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@*com.android.vending:font/google_sans_medium</item>
+        <item name="*com.android.vending:fontFamily">@*com.android.vending:font/google_sans_medium</item>
+        <item name="*com.android.vending:textAllCaps">false</item>
+    </style>
+    <style name="PlayPassSpecialClusterAppTitle">
+        <item name="android:textAppearance">@*com.android.vending:style/TextAppearanceSubhead2.Medium</item>
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="PlayPassSpecialClusterCardTitle">
+        <item name="android:textAppearance">@*com.android.vending:style/TextAppearanceSubhead1.Medium</item>
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
     <style name="PlayProtectAssistCard">
         <item name="android:background">@*android:color/background_floating_material_dark</item>
         <item name="android:layout_width">fill_parent</item>
@@ -419,15 +435,17 @@
         <item name="android:textColor">#ffffffff</item>
         <item name="android:fontFamily">sans-serif-medium</item>
     </style>
-    <style name="TopChartRankingInfoModule">
-        <item name="android:gravity">center</item>
-        <item name="android:orientation">horizontal</item>
-        <item name="android:background">@*android:color/background_dark</item>
-        <item name="android:padding">@*com.android.vending:dimen/details_module_medium_padding</item>
-        <item name="android:focusable">true</item>
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:foreground">@*com.android.vending:drawable/focus_overlay</item>
+    <style name="VisReOverride">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="*com.android.vending:cluster_header_bottom_margin">@*com.android.vending:dimen/medium_typography_padding</item>
+        <item name="*com.android.vending:forceAllCapsForButtonAndTabLabels">false</item>
+        <item name="*com.android.vending:headlineFont">@*com.android.vending:font/google_sans</item>
+        <item name="*com.android.vending:headlineFontMedium">@*com.android.vending:font/google_sans_medium</item>
+        <item name="*com.android.vending:install_bar_layout">@*com.android.vending:layout/install_bar</item>
+        <item name="*com.android.vending:playCardCornerRadius">0.0dip</item>
+        <item name="*com.android.vending:playCardElevation">0.0dip</item>
+        <item name="*com.android.vending:play_main_background">@*android:color/background_dark</item>
+        <item name="*com.android.vending:visde_active">true</item>
     </style>
     <style name="WarmWelcomeV2CardAction" parent="@*com.android.vending:style/PlayMediumBoldText">
         <item name="android:textSize">@*com.android.vending:dimen/play_card_action_size</item>
