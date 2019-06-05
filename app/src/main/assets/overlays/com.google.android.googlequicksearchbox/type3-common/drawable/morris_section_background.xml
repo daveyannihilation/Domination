@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape android:shape="rectangle"
+<layer-list
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <corners android:radius="@*com.google.android.googlequicksearchbox:dimen/zero_state_card_corner_radius" />
-    <solid android:color="@*android:color/background_floating_material_dark" />
-</shape>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@*com.google.android.googlequicksearchbox:dimen/zero_state_card_corner_radius" />
+            <solid android:color="@*android:color/background_floating_material_dark" />
+        </shape>
+    </item>
+    <item>
+        <ripple android:color="@*android:color/secondary_text_default_material_dark">
+            <item android:id="@*android:id/mask">
+                <shape android:shape="rectangle">
+                    <corners android:radius="@*com.google.android.googlequicksearchbox:dimen/zero_state_card_corner_radius" />
+                    <solid android:color="@*android:color/secondary_text_default_material_dark" />
+                </shape>
+            </item>
+        </ripple>
+    </item>
+</layer-list>

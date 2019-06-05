@@ -19,6 +19,7 @@
     <attr name="asCarouselRoundedRipple" format="reference" />
     <attr name="asChevron" format="reference" />
     <attr name="asCircleRipple" format="reference" />
+    <attr name="asClpCarouselRoundedRipple" format="reference" />
     <attr name="asDialogBodyTextColor" format="reference" />
     <attr name="asDialogLinkTextColor" format="reference" />
     <attr name="asDialogTitleTextColor" format="reference" />
@@ -32,7 +33,6 @@
     <attr name="asLegacyFill100" format="reference" />
     <attr name="asLegacyFill400" format="reference" />
     <attr name="asLegacyFill500" format="reference" />
-    <attr name="asLegacyFillSecondary200" format="reference" />
     <attr name="asLegacyForeground35Percent" format="reference" />
     <attr name="asLegacyForegroundSolid" format="reference" />
     <attr name="asLegacyHighlight300" format="reference" />
@@ -93,6 +93,7 @@
     <attr name="colorOnPrimaryEmphasisHighType" format="color" />
     <attr name="colorOnPrimaryEmphasisMedium" format="color" />
     <attr name="colorOnPrimaryGoogle" format="color" />
+    <attr name="colorOnPrimaryRippleGoogle" format="color" />
     <attr name="colorOnSecondary" format="color" />
     <attr name="colorOnSurface" format="color" />
     <attr name="colorOnSurfaceDisabled" format="color" />
@@ -101,6 +102,7 @@
     <attr name="colorOnSurfaceVariant" format="color" />
     <attr name="colorPopupBackground" format="reference|color" />
     <attr name="colorPrimaryGoogle" format="color" />
+    <attr name="colorPrimaryStateGoogle" format="color" />
     <attr name="colorPrimaryVariant" format="color" />
     <attr name="colorPrimaryVariantGoogle" format="color" />
     <attr name="colorSecondary" format="color" />
@@ -244,6 +246,7 @@
     <attr name="internalUicEditModeIconDrawable" format="reference" />
     <attr name="internalUicEmailIconDrawable" format="reference" />
     <attr name="internalUicEmphasisDisplayType" format="reference" />
+    <attr name="internalUicEnableAlertTooltipDialogGm2StyleOverrideGservices" format="boolean" />
     <attr name="internalUicErrorDisplayType" format="reference" />
     <attr name="internalUicFilledInfoIconDrawable" format="reference" />
     <attr name="internalUicFilterListWhiteIconDrawable" format="reference" />
@@ -269,6 +272,7 @@
     <attr name="internalUicGoogleGLogoDrawable" format="reference" />
     <attr name="internalUicGoogleLogoColorHeroImageDrawable" format="reference" />
     <attr name="internalUicGoogleLogoHeroImageDrawable" format="reference" />
+    <attr name="internalUicGoogleSansMediumFont" format="reference" />
     <attr name="internalUicHeaderDisplayType" format="reference" />
     <attr name="internalUicHeaderRegularDisplayType" format="reference" />
     <attr name="internalUicHeadline5DisplayType" format="reference" />
@@ -452,6 +456,8 @@
     <attr name="materialDatePickerStyle" format="reference" />
     <attr name="materialDateRangePickerDialogTheme" format="reference" />
     <attr name="materialDateRangePickerStyle" format="reference" />
+    <attr name="materialPickerIconButtonStyle" format="reference" />
+    <attr name="materialPickerTextButtonStyle" format="reference" />
     <attr name="materialThemeOverlay" format="reference" />
     <attr name="mediaRouteAudioTrackDrawable" format="reference" />
     <attr name="mediaRouteBodyTextAppearance" format="reference" />
@@ -732,6 +738,7 @@
     <attr name="ensureDiscMinTouchTargetSize" format="boolean" />
     <attr name="defaultAvatarColor" format="color" />
     <attr name="badgeWrapperColor" format="color" />
+    <attr name="avatarBorderRingColor" format="color" />
     <attr name="navigationMode">
         <enum name="listMode" value="1" />
         <enum name="normal" value="0" />
@@ -849,6 +856,15 @@
     <attr name="drawableBottomCompat" format="reference" />
     <attr name="drawableStartCompat" format="reference" />
     <attr name="drawableEndCompat" format="reference" />
+    <attr name="drawableTint" format="color" />
+    <attr name="drawableTintMode">
+        <enum name="add" value="16" />
+        <enum name="multiply" value="14" />
+        <enum name="screen" value="15" />
+        <enum name="src_atop" value="9" />
+        <enum name="src_in" value="5" />
+        <enum name="src_over" value="3" />
+    </attr>
     <attr name="windowActionBar" format="boolean" />
     <attr name="windowNoTitle" format="boolean" />
     <attr name="windowActionBarOverlay" format="boolean" />
@@ -974,6 +990,10 @@
     <attr name="viewInflaterClass" format="string" />
     <attr name="listChoiceIndicatorMultipleAnimated" format="reference" />
     <attr name="listChoiceIndicatorSingleAnimated" format="reference" />
+    <attr name="backgroundColor" format="color" />
+    <attr name="badgeTextColor" format="color" />
+    <attr name="maxCharacterCount" format="integer" />
+    <attr name="number" format="integer" />
     <attr name="blurRadius" format="dimension" />
     <attr name="backgroundTint" format="color" />
     <attr name="fabAlignmentMode">
@@ -1152,7 +1172,6 @@
     </attr>
     <attr name="buttonRippleColor" format="reference|color" />
     <attr name="pressedButtonTranslationZ" format="dimension" />
-    <attr name="backgroundColor" format="color" />
     <attr name="strokeWidth" format="dimension" />
     <attr name="colorSchemeColors" format="reference|color" />
     <attr name="indeterminate" format="boolean" />
@@ -1234,6 +1253,7 @@
         <enum name="src_in" value="5" />
         <enum name="src_over" value="3" />
     </attr>
+    <attr name="isIncoming" format="boolean" />
     <attr name="keylines" format="reference" />
     <attr name="statusBarBackground" format="reference|color" />
     <attr name="layout_behavior" format="string" />
@@ -1553,7 +1573,9 @@
     <attr name="iconSize" format="dimension" />
     <attr name="iconPadding" format="dimension" />
     <attr name="iconGravity">
+        <flag name="end" value="0x00000003" />
         <flag name="start" value="0x00000001" />
+        <flag name="textEnd" value="0x00000004" />
         <flag name="textStart" value="0x00000002" />
     </attr>
     <attr name="iconTint" format="color" />
@@ -1610,6 +1632,7 @@
     <attr name="headerLayout" format="reference" />
     <attr name="itemHorizontalPadding" format="dimension" />
     <attr name="itemIconPadding" format="dimension" />
+    <attr name="itemMaxLines" format="integer" />
     <attr name="ocrAspectRatio" format="float" />
     <attr name="layout_titleType">
         <enum name="none" value="0" />
@@ -1981,6 +2004,7 @@
     <attr name="tabIndicatorAnimationDuration" format="integer" />
     <attr name="tabIndicatorFullWidth" format="boolean" />
     <attr name="tabMode">
+        <enum name="auto" value="2" />
         <enum name="fixed" value="1" />
         <enum name="scrollable" value="0" />
     </attr>
@@ -2100,8 +2124,6 @@
     <attr name="titleTextColor" format="color" />
     <attr name="subtitleTextColor" format="color" />
     <attr name="addressEnabled" format="boolean" />
-    <attr name="videoRes" format="reference" />
-    <attr name="loop" format="boolean" />
     <attr name="paddingStart" format="dimension" />
     <attr name="paddingEnd" format="dimension" />
     <attr name="theme" format="reference" />
