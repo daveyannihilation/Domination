@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.apps.photos.touchcapture.TouchCaptureView android:id="@*com.google.android.apps.photos:id/lens_fragment_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <android.support.design.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
         <com.google.android.apps.photos.photofragment.components.photoview.PhotoView android:id="@*com.google.android.apps.photos:id/lens_preview_pane" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
         <com.google.android.apps.photos.lens.ui.DrawableOverlayView android:id="@*com.google.android.apps.photos:id/lens_preview_pane_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
         <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@*com.google.android.apps.photos:id/lens_results_loading_spinner" android:layout_width="fill_parent" android:layout_height="fill_parent" app:lottie_fileName="lens_entrance_animation.json" app:lottie_autoPlay="false" app:lottie_loop="false" xmlns:app="http://schemas.android.com/apk/res-auto" />
@@ -19,5 +19,5 @@
         <FrameLayout android:id="@*com.google.android.apps.photos:id/photos_lens_impl_bottom_module" android:background="@*com.google.android.apps.photos:color/photos_lens_impl_bottom_module_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@*com.google.android.apps.photos:dimen/photos_lens_impl_toolbar_height" android:minHeight="@*com.google.android.apps.photos:dimen/photos_lens_impl_bottom_module_peek_height">
             <com.google.android.apps.photos.orthogonalscroll.VerticalParentRecyclerView android:id="@*com.google.android.apps.photos:id/lens_results_recycler_view" android:background="@*com.google.android.apps.photos:color/quantum_grey100" android:paddingBottom="8.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
         </FrameLayout>
-    </android.support.design.widget.CoordinatorLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </com.google.android.apps.photos.touchcapture.TouchCaptureView>

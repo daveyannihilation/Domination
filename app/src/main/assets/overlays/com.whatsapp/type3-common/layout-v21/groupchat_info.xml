@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <com.whatsapp.ChatInfoLayout android:id="@*com.whatsapp:id/content" android:layout_width="fill_parent" android:layout_height="fill_parent">
         <ListView android:id="@*android:id/list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@*com.whatsapp:drawable/selector_orange_gradient" android:drawSelectorOnTop="true" android:cacheColorHint="@*android:color/transparent" android:divider="@null" android:dividerHeight="0.0dip" android:choiceMode="none" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:transitionGroup="true" />
         <FrameLayout android:gravity="center_vertical" android:id="@*com.whatsapp:id/header" android:background="@*android:color/primary_material_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:transitionGroup="true" android:elevation="2.0dip">
@@ -20,7 +20,7 @@
                     <com.whatsapp.WaTextView android:textColor="@*android:color/white" android:ellipsize="end" android:gravity="left" android:layout_gravity="bottom|center|left" android:id="@*com.whatsapp:id/conversation_contact_status" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="false" android:shadowColor="#80000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" style="@*com.whatsapp:style/Theme.ActionBar.SubtitleTextStyle" />
                 </LinearLayout>
                 <FrameLayout android:layout_gravity="bottom|center|right" android:layout_width="48.0dip" android:layout_height="@*com.whatsapp:dimen/abc_action_bar_default_height_material">
-                    <ProgressBar android:layout_gravity="center" android:id="@*com.whatsapp:id/change_subject_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmall" />
+                    <ProgressBar android:layout_gravity="center" android:id="@*com.whatsapp:id/change_subject_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?*android:attr/progressBarStyleSmall" />
                     <com.whatsapp.WaImageButton android:layout_gravity="center" android:id="@*com.whatsapp:id/change_subject_btn" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@*com.whatsapp:drawable/ic_action_edit_shadow" android:contentDescription="@*com.whatsapp:string/change_subject" style="@*com.whatsapp:style/ActionBarButtonStyle" />
                 </FrameLayout>
             </LinearLayout>

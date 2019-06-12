@@ -300,7 +300,12 @@
         <item name="android:colorPrimary">@*android:color/primary_material_dark</item>
         <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
     </style>
-    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light" />
+    <style name="Platform.V21.AppCompat.Light" parent="@*android:style/Theme.Material.NoActionBar">
+        <item name="android:textColorHintInverse">#ffbbbbbb</item>
+        <item name="android:textColorHint">#ffbbbbbb</item>
+        <item name="android:textColorLink">@*android:color/accent_material_dark</item>
+        <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
+    </style>
     <style name="RecurrenceTextAppearance.RecurrencePickerStyle" parent="@*com.google.android.googlequicksearchbox:style/RecurrenceTextAppearance">
         <item name="android:textSize">15.0sp</item>
         <item name="android:textColor">#ffffffff</item>
@@ -473,9 +478,9 @@
         <item name="*com.google.android.googlequicksearchbox:vogPromptTextStyle">2</item>
         <item name="android:backgroundTint">@null</item>
     </style>
-    <style name="Theme.Shim.Light" parent="@*android:style/Theme.Holo" />
-    <style name="Theme.Shim.Light.Dialog" parent="@*android:style/Theme.Holo.Dialog" />
-    <style name="Theme.Shim.Light.NoActionBar" parent="@*android:style/Theme.Holo.NoActionBar" />
+    <style name="Theme.Shim.Light" parent="@*android:style/Theme.Material" />
+    <style name="Theme.Shim.Light.Dialog" parent="@*android:style/Theme.Material.Dialog" />
+    <style name="Theme.Shim.Light.NoActionBar" parent="@*android:style/Theme.Material.NoActionBar" />
     <style name="Theme.Transparent" parent="@*android:style/Theme.DeviceDefault.Light">
         <item name="android:windowBackground">@*android:color/transparent</item>
         <item name="android:windowIsTranslucent">false</item>
@@ -529,6 +534,12 @@
         <item name="android:textSize">16.0sp</item>
         <item name="android:textColor">#ffdddddd</item>
     </style>
+    <style name="Theme_Holo_Light_Dialog_Alert" parent="@*android:style/Theme.Holo.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowMinWidthMajor">@*android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@*android:dimen/dialog_min_width_minor</item>
+    </style>
     <style name="TopAppsPreviewTitle">
         <item name="android:textSize">12.0sp</item>
         <item name="android:textColor">#ffffffff</item>
@@ -543,6 +554,9 @@
         <item name="android:textSize">12.0sp</item>
         <item name="android:textColor">#ffdddddd</item>
         <item name="android:fontFamily">roboto-regular</item>
+    </style>
+    <style name="UrawTheme" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:colorControlActivated">@*com.google.android.googlequicksearchbox:color/quantum_googblue500</item>
     </style>
     <style name="Widget.Design.BottomSheet.Modal" parent="@*android:style/Widget">
         <item name="android:background">@*android:color/background_floating_material_dark</item>
@@ -559,7 +573,7 @@
         <item name="*com.google.android.googlequicksearchbox:productNameTextColor">@*android:color/white</item>
         <item name="*com.google.android.googlequicksearchbox:logoColor">light</item>
     </style>
-    <style name="Widget.Shim.Light.ActionBar" parent="@*android:style/Widget.Holo.ActionBar" />
+    <style name="Widget.Shim.Light.ActionBar" parent="@*android:style/Widget.Material.ActionBar" />
     <style name="YourPeopleSettingsAnnotation">
         <item name="android:background">@*android:color/background_dark</item>
     </style>
@@ -574,7 +588,7 @@
         <item name="android:paddingLeft">4.0dip</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:text"></item>
+        <item name="android:text">@null</item>
         <item name="android:layout_alignParentLeft">true</item>
         <item name="android:layout_centerVertical">true</item>
         <item name="android:fontFamily">google-sans</item>
@@ -585,7 +599,7 @@
         <item name="android:gravity">right</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:text"></item>
+        <item name="android:text">@null</item>
         <item name="android:layout_alignParentLeft">true</item>
         <item name="android:inputType">numberDecimal</item>
         <item name="android:imeOptions">actionDone</item>

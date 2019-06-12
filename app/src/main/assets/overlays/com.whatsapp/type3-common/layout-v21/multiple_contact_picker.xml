@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+<LinearLayout android:orientation="vertical" android:background="@*android:color/background_dark" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:id="@*com.whatsapp:id/action_bar" android:background="@*android:color/background_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@*com.whatsapp:dimen/actionbar_elevation">
+    <FrameLayout android:id="@*com.whatsapp:id/action_bar" android:background="@*android:color/primary_material_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@*com.whatsapp:dimen/actionbar_elevation">
         <include layout="@*com.whatsapp:layout/toolbar" />
         <FrameLayout android:id="@*com.whatsapp:id/search_holder" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@*com.whatsapp:dimen/abc_action_bar_default_height_material" />
     </FrameLayout>
     <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
         <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
             <FrameLayout android:orientation="vertical" android:id="@*com.whatsapp:id/warning" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@*com.whatsapp:dimen/selected_contacts_layout_height">
-                <com.whatsapp.WaTextView android:textColor="#ffdddddd" android:layout_gravity="center" android:id="@*com.whatsapp:id/warning_text" android:padding="@*com.whatsapp:dimen/conversation_row_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="center" />
+                <com.whatsapp.WaTextView android:textColor="@*com.whatsapp:color/text_subtle_warning" android:layout_gravity="center" android:id="@*com.whatsapp:id/warning_text" android:padding="@*com.whatsapp:dimen/conversation_row_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="center" />
                 <View android:layout_gravity="bottom" android:background="@*com.whatsapp:drawable/divider_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
             </FrameLayout>
             <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">

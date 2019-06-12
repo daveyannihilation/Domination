@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <attr name="appBarLayoutStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="badgeStyle" format="reference" />
     <attr name="bottomAppBarStyle" format="reference" />
     <attr name="bottomNavigationStyle" format="reference" />
     <attr name="bottomSheetDialogTheme" format="reference" />
@@ -39,6 +40,9 @@
     <attr name="isLightTheme" format="boolean" />
     <attr name="isMaterialTheme" format="boolean" />
     <attr name="isPhotosDarkTheme" format="boolean" />
+    <attr name="itemShapeAppearance" format="reference" />
+    <attr name="itemShapeAppearanceOverlay" format="reference" />
+    <attr name="itemTextColor" format="color" />
     <attr name="layout_constraintBaseline_creator" format="integer" />
     <attr name="layout_constraintBaseline_toBaselineOf" format="reference">
         <enum name="parent" value="0" />
@@ -130,14 +134,13 @@
     <attr name="materialButtonOutlinedStyle" format="reference" />
     <attr name="materialButtonStyle" format="reference" />
     <attr name="materialButtonToggleGroupStyle" format="reference" />
+    <attr name="materialCalendarDay" format="reference" />
     <attr name="materialCalendarHeaderLayout" format="reference" />
     <attr name="materialCalendarHeaderSelection" format="reference" />
     <attr name="materialCalendarHeaderTitle" format="reference" />
+    <attr name="materialCalendarStyle" format="reference" />
+    <attr name="materialCalendarTheme" format="reference" />
     <attr name="materialCardViewStyle" format="reference" />
-    <attr name="materialDatePickerDialogTheme" format="reference" />
-    <attr name="materialDatePickerStyle" format="reference" />
-    <attr name="materialDateRangePickerDialogTheme" format="reference" />
-    <attr name="materialDateRangePickerStyle" format="reference" />
     <attr name="materialThemeOverlay" format="reference" />
     <attr name="mediaRouteAudioTrackDrawable" format="reference" />
     <attr name="mediaRouteBodyTextAppearance" format="reference" />
@@ -205,6 +208,7 @@
     <attr name="accountMenuChipRippleColor" format="color" />
     <attr name="accountMenuChipStrokeColor" format="color" />
     <attr name="accountMenuChipTextColor" format="color" />
+    <attr name="accountMenuGoogleLogoImage" format="reference" />
     <attr name="actionTextColor" format="color" />
     <attr name="backgroundColor" format="color" />
     <attr name="bottomDrawerHandleColor" format="color" />
@@ -220,17 +224,14 @@
     <attr name="displayNameTextAppearance" format="reference" />
     <attr name="accountNameTextAppearance" format="reference" />
     <attr name="disabledAccountHelpIconTint" format="color" />
-    <attr name="discSize" format="dimension" />
-    <attr name="avatarSize" format="dimension" />
     <attr name="maxDiscContentSize" format="dimension" />
-    <attr name="imageViewSize" format="dimension" />
     <attr name="allowBadges" format="boolean" />
     <attr name="allowRings" format="boolean" />
     <attr name="discMinTouchTargetSize" format="dimension" />
     <attr name="ensureDiscMinTouchTargetSize" format="boolean" />
     <attr name="defaultAvatarColor" format="color" />
-    <attr name="badgeWrapperColor" format="color" />
     <attr name="avatarBorderRingColor" format="color" />
+    <attr name="imageViewSize" format="dimension" />
     <attr name="navigationMode">
         <enum name="listMode" value="1" />
         <enum name="normal" value="0" />
@@ -272,9 +273,6 @@
     <attr name="closeItemLayout" format="reference" />
     <attr name="initialActivityCount" format="string" />
     <attr name="expandActivityOverflowButtonDrawable" format="reference" />
-    <attr name="adSize" format="string" />
-    <attr name="adSizes" format="string" />
-    <attr name="adUnitId" format="string" />
     <attr name="buttonPanelSideLayout" format="reference" />
     <attr name="listLayout" format="reference" />
     <attr name="multiChoiceItemLayout" format="reference" />
@@ -694,6 +692,10 @@
         <enum name="dark" value="2" />
         <enum name="light" value="1" />
     </attr>
+    <attr name="customThemeStyle">
+        <enum name="googleMaterial2" value="2" />
+        <enum name="material" value="1" />
+    </attr>
     <attr name="expandingScrollViewMinExposure" format="dimension" />
     <attr name="expandingScrollViewMaxExposure" format="dimension" />
     <attr name="color" format="color" />
@@ -921,6 +923,7 @@
     <attr name="uiCompass" format="boolean" />
     <attr name="uiRotateGestures" format="boolean" />
     <attr name="uiScrollGestures" format="boolean" />
+    <attr name="uiScrollGesturesDuringRotateOrZoom" format="boolean" />
     <attr name="uiTiltGestures" format="boolean" />
     <attr name="uiZoomControls" format="boolean" />
     <attr name="uiZoomGestures" format="boolean" />
@@ -954,6 +957,13 @@
     <attr name="iconTint" format="color" />
     <attr name="cornerRadius" format="dimension" />
     <attr name="checkedButton" format="reference" />
+    <attr name="dayStyle" format="reference" />
+    <attr name="daySelectedStyle" format="reference" />
+    <attr name="dayTodayStyle" format="reference" />
+    <attr name="rangeFillColor" format="color" />
+    <attr name="itemFillColor" format="color" />
+    <attr name="itemStrokeColor" format="color" />
+    <attr name="itemStrokeWidth" format="dimension" />
     <attr name="cardForegroundColor" format="color" />
     <attr name="checkedIconTint" format="color" />
     <attr name="state_dragged" format="boolean" />
@@ -1003,7 +1013,6 @@
     <attr name="sizeThreshold" format="dimension" />
     <attr name="menu" format="reference" />
     <attr name="itemIconTint" format="color" />
-    <attr name="itemTextColor" format="color" />
     <attr name="itemBackground" format="reference" />
     <attr name="itemTextAppearance" format="reference" />
     <attr name="headerLayout" format="reference" />
@@ -1011,8 +1020,6 @@
     <attr name="itemIconPadding" format="dimension" />
     <attr name="itemIconSize" format="dimension" />
     <attr name="itemMaxLines" format="integer" />
-    <attr name="itemShapeAppearance" format="reference" />
-    <attr name="itemShapeAppearanceOverlay" format="reference" />
     <attr name="itemShapeInsetStart" format="dimension" />
     <attr name="itemShapeInsetTop" format="dimension" />
     <attr name="itemShapeInsetEnd" format="dimension" />

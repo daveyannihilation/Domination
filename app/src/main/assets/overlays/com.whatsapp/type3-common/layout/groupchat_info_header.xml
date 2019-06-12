@@ -7,11 +7,11 @@
     <include layout="@*com.whatsapp:layout/description_card" />
     <com.whatsapp.WaTextView android:textSize="16.0sp" android:textColor="@*android:color/white" android:gravity="center" android:id="@*com.whatsapp:id/no_participant" android:paddingLeft="@*com.whatsapp:dimen/card_h_padding" android:paddingTop="@*com.whatsapp:dimen/card_v_padding" android:paddingRight="@*com.whatsapp:dimen/card_h_padding" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@*com.whatsapp:string/not_a_group_participant" />
     <include layout="@*com.whatsapp:layout/live_location_card" />
-    <com.whatsapp.MediaCard android:id="@*com.whatsapp:id/media_card_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:icContentColor="@*android:color/white" app:mcTitle="@*com.whatsapp:string/view_conversation_media" style="@*com.whatsapp:style/InfoCard" />
+    <com.whatsapp.MediaCard android:id="@*com.whatsapp:id/media_card_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:icContentColor="@*android:color/background_floating_material_dark" app:mcTitle="@*com.whatsapp:string/view_conversation_media" style="@*com.whatsapp:style/InfoCard" />
     <include layout="@*com.whatsapp:layout/actions_card" />
-    <com.whatsapp.InfoCard android:orientation="vertical" android:id="@*com.whatsapp:id/invites_card" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@*com.whatsapp:style/InfoCard">
+    <com.whatsapp.InfoCard android:orientation="vertical" android:id="@*com.whatsapp:id/invites_card" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@*com.whatsapp:style/InfoCard">
         <View android:background="@*com.whatsapp:drawable/list_separator_bot" android:layout_width="fill_parent" android:layout_height="@*com.whatsapp:dimen/info_screen_card_spacing" />
-        <FrameLayout android:background="@*android:color/background_dark" android:paddingLeft="@*com.whatsapp:dimen/info_screen_padding" style="@*com.whatsapp:style/FlatCardHeader">
+        <FrameLayout android:background="@*android:color/background_floating_material_dark" android:paddingLeft="@*com.whatsapp:dimen/info_screen_padding" style="@*com.whatsapp:style/FlatCardHeader">
             <com.whatsapp.WaTextView android:ellipsize="end" android:paddingRight="32.0dip" android:text="@*com.whatsapp:string/invites_title" android:singleLine="true" style="@*com.whatsapp:style/FlatCardTitle" />
             <com.whatsapp.WaTextView android:id="@*com.whatsapp:id/invites_info" style="@*com.whatsapp:style/FlatCardInfo" />
         </FrameLayout>

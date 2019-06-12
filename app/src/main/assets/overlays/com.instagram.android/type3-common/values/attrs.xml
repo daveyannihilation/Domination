@@ -245,7 +245,6 @@
     <attr name="buttonUpdatable" format="reference" />
     <attr name="buttonUpdatableInverse" format="reference" />
     <attr name="button_collapse_width_reduction" format="dimension" />
-    <attr name="button_enabled" format="boolean" />
     <attr name="button_label" format="string" />
     <attr name="button_size" format="string" />
     <attr name="button_stroke_width" format="dimension" />
@@ -577,6 +576,7 @@
     <attr name="enableBorder" format="boolean" />
     <attr name="enableClearButton" format="boolean" />
     <attr name="enablePinchZoom" format="boolean" />
+    <attr name="enablePinchZoomDeprecated" format="boolean" />
     <attr name="endColor" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="endEdge" format="boolean" />
     <attr name="enforceMaterialTheme" format="boolean" />
@@ -791,6 +791,10 @@
     <attr name="indicatorShadowRadius" format="dimension" />
     <attr name="initialActivityCount" format="string" />
     <attr name="initialCameraFacing">
+        <enum name="back" value="0" />
+        <enum name="front" value="1" />
+    </attr>
+    <attr name="initialCameraFacingDeprecated">
         <enum name="back" value="0" />
         <enum name="front" value="1" />
     </attr>
@@ -1054,6 +1058,7 @@
     <attr name="loadingSubtitle" format="reference|string" />
     <attr name="loadingTitle" format="reference|string" />
     <attr name="lockMediaOrientation" format="boolean" />
+    <attr name="lockMediaOrientationDeprecated" format="boolean" />
     <attr name="logo" format="reference" />
     <attr name="logoDescription" format="string" />
     <attr name="materialButtonStyle" format="reference" />
@@ -1167,6 +1172,12 @@
     <attr name="perfTrackingCategory" format="string" />
     <attr name="persist" format="boolean" />
     <attr name="photoCaptureQuality">
+        <enum name="deactivated" value="3" />
+        <enum name="high" value="0" />
+        <enum name="low" value="2" />
+        <enum name="medium" value="1" />
+    </attr>
+    <attr name="photoCaptureQualityDeprecated">
         <enum name="deactivated" value="3" />
         <enum name="high" value="0" />
         <enum name="low" value="2" />
@@ -1416,6 +1427,11 @@
     <attr name="singleLine" format="boolean" />
     <attr name="singleSelection" format="boolean" />
     <attr name="singleTapGesture">
+        <flag name="disabled" value="0x00000000" />
+        <flag name="focus" value="0x00000001" />
+        <flag name="metering" value="0x00000002" />
+    </attr>
+    <attr name="singleTapGestureDeprecated">
         <flag name="disabled" value="0x00000000" />
         <flag name="focus" value="0x00000001" />
         <flag name="metering" value="0x00000002" />
@@ -1680,6 +1696,12 @@
     <attr name="variant_filled" format="reference" />
     <attr name="variant_outline" format="reference" />
     <attr name="videoCaptureQuality">
+        <enum name="deactivated" value="3" />
+        <enum name="high" value="0" />
+        <enum name="low" value="2" />
+        <enum name="medium" value="1" />
+    </attr>
+    <attr name="videoCaptureQualityDeprecated">
         <enum name="deactivated" value="3" />
         <enum name="high" value="0" />
         <enum name="low" value="2" />
