@@ -73,16 +73,13 @@
         <item name="*com.google.android.gm:popupMenuStyle">@*com.google.android.gm:style/PopupMenu</item>
     </style>
     <style name="ConversationListFadeBase" parent="@*android:style/Widget.Holo.ListView" />
-    <style name="DatePickerStyle" parent="@*com.google.android.gm:style/Widget.GoogleMaterial.DatePicker">
-        <item name="android:headerBackground">@*android:color/background_floating_material_dark</item>
-    </style>
     <style name="GmailGoogleMaterialActionBar" parent="@*com.google.android.gm:style/ThemeOverlay.GoogleMaterial.ActionBar">
-        <item name="android:textColorPrimary">@*com.google.android.gm:color/google_blue600</item>
+        <item name="android:textColorPrimary">@*com.google.android.gm:color/primary_color_blue</item>
         <item name="android:textColor">@*com.google.android.gm:color/primary_text_color_grey</item>
         <item name="android:background">@*android:color/transparent</item>
         <item name="*com.google.android.gm:colorAccent">@*android:color/white</item>
         <item name="*com.google.android.gm:colorControlNormal">@*com.google.android.gm:color/secondary_text_color_grey</item>
-        <item name="*com.google.android.gm:titleTextColor">@*com.google.android.gm:color/google_red600</item>
+        <item name="*com.google.android.gm:titleTextColor">@*com.google.android.gm:color/primary_color_red</item>
     </style>
     <style name="GmailGoogleMaterialDatePickerDialogTheme" parent="@*com.google.android.gm:style/ThemeOverlay.GoogleMaterial.Dialog">
         <item name="android:textColorPrimary">@*com.google.android.gm:color/primary_text_color_grey</item>
@@ -94,6 +91,12 @@
     <style name="GmailTheme.NoActionBar" parent="@*android:style/Theme.Material.NoActionBar" />
     <style name="GmailTheme.NoActionBar.WelcomeTour" parent="@*com.google.android.gm:style/GmailTheme.NoActionBar">
         <item name="android:windowBackground">@*android:color/background_dark</item>
+    </style>
+    <style name="GmailifyTheme" parent="@*com.google.android.gm:style/SudThemeMaterial.Light">
+        <item name="android:spinnerStyle">@*android:style/Widget.Holo.Spinner</item>
+        <item name="android:textColorLink">@*com.google.android.gm:color/text_color_blue</item>
+        <item name="android:actionModeBackground">@*com.google.android.gm:color/action_mode_background</item>
+        <item name="android:actionModeCloseDrawable">@*com.google.android.gm:drawable/ic_check_wht_24dp</item>
     </style>
     <style name="LabelSyncTheme" parent="@*android:style/Theme.Holo.Dialog" />
     <style name="MailActivityTheme" parent="@*com.google.android.gm:style/ColoredNavBarMailActivityTheme">
@@ -109,9 +112,6 @@
         <item name="*com.google.android.gm:colorPrimaryDark">@*com.google.android.gm:color/primary_dark_color</item>
         <item name="*com.google.android.gm:colorControlNormal">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.gm:alertDialogTheme">@*com.google.android.gm:style/AlertDialogTheme</item>
-    </style>
-    <style name="NotificationPrimaryText">
-        <item name="android:textColor">#ffffffff</item>
     </style>
     <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light" />
     <style name="Promo.Text" parent="@*com.google.android.gm:style/Promo">
@@ -151,24 +151,22 @@
         <item name="android:maxLines">1</item>
         <item name="android:fontFamily">@*com.google.android.gm:string/sans_serif_medium</item>
     </style>
-    <style name="SuwGlifCardContainer">
+    <style name="SudGlifCardContainer">
         <item name="android:background">@*android:color/background_floating_material_dark</item>
     </style>
-    <style name="SuwThemeGlifV2.Light" parent="@*com.google.android.gm:style/SuwThemeGlif.Light">
-        <item name="android:colorBackground">@*com.google.android.gm:color/suw_glif_background_color_light</item>
-        <item name="android:editTextStyle">@*com.google.android.gm:style/SuwEditText</item>
-        <item name="android:alertDialogTheme">@*com.google.android.gm:style/SuwAlertDialogTheme.Light</item>
-        <item name="*com.google.android.gm:suwDividerInsetEnd">@*com.google.android.gm:dimen/suw_layout_margin_sides</item>
-        <item name="*com.google.android.gm:suwDividerInsetStart">@*com.google.android.gm:dimen/suw_layout_margin_sides</item>
-        <item name="*com.google.android.gm:suwDividerInsetStartNoIcon">@*com.google.android.gm:dimen/suw_layout_margin_sides</item>
-        <item name="*com.google.android.gm:suwEditTextBackgroundColor">@*com.google.android.gm:color/suw_glif_edit_text_bg_light_color</item>
-        <item name="*com.google.android.gm:suwGlifHeaderGravity">center_horizontal</item>
-        <item name="*com.google.android.gm:suwScrollIndicators">bottom|top</item>
-        <item name="*com.google.android.gm:suwBackgroundPatterned">false</item>
-        <item name="*com.google.android.gm:suwBackgroundBaseColor">@*android:color/background_floating_material_dark</item>
-    </style>
-    <style name="TimePickerStyle" parent="@*com.google.android.gm:style/Widget.GoogleMaterial.TimePicker">
-        <item name="android:headerBackground">@*android:color/background_floating_material_dark</item>
+    <style name="SudThemeGlifV2.Light" parent="@*com.google.android.gm:style/SudThemeGlif.Light">
+        <item name="android:colorBackground">@*android:color/background_dark</item>
+        <item name="android:editTextStyle">@*com.google.android.gm:style/SudEditText</item>
+        <item name="android:alertDialogTheme">@*com.google.android.gm:style/SudAlertDialogTheme.Light</item>
+        <item name="*com.google.android.gm:sudDividerInsetEnd">@*com.google.android.gm:dimen/sud_layout_margin_sides</item>
+        <item name="*com.google.android.gm:sudDividerInsetStart">@*com.google.android.gm:dimen/sud_layout_margin_sides</item>
+        <item name="*com.google.android.gm:sudDividerInsetStartNoIcon">@*com.google.android.gm:dimen/sud_layout_margin_sides</item>
+        <item name="*com.google.android.gm:sudEditTextBackgroundColor">@*com.google.android.gm:color/sud_glif_edit_text_bg_light_color</item>
+        <item name="*com.google.android.gm:sudGlifHeaderGravity">center_horizontal</item>
+        <item name="*com.google.android.gm:sudScrollIndicators">bottom|top</item>
+        <item name="*com.google.android.gm:sucLightStatusBar">false</item>
+        <item name="*com.google.android.gm:sudBackgroundPatterned">false</item>
+        <item name="*com.google.android.gm:sudBackgroundBaseColor">@*android:color/background_floating_material_dark</item>
     </style>
     <style name="ToRecipientEditTextViewStyle" parent="@*com.google.android.gm:style/RecipientEditTextViewStyle">
         <item name="android:layout_width">0.0dip</item>

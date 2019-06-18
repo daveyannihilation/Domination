@@ -23,18 +23,6 @@
     </style>
     <style name="ColoredNavBarGmailTheme" parent="@*android:style/Theme.Material.NoActionBar" />
     <style name="ConversationListFadeBase" parent="@*android:style/Widget.Material.ListView" />
-    <style name="GmailGoogleMaterialButtonBarStyle" parent="@*com.google.android.gm:style/ButtonBarStyleBase">
-        <item name="android:colorAccent">@*android:color/white</item>
-    </style>
-    <style name="GmailGoogleMaterialDatePickerDialogTheme" parent="@*com.google.android.gm:style/ThemeOverlay.GoogleMaterial.Dialog">
-        <item name="android:textColorPrimary">@*com.google.android.gm:color/primary_text_color_grey</item>
-        <item name="android:textColorPrimaryInverse">@*android:color/white</item>
-        <item name="android:windowBackground">@*com.google.android.gm:drawable/dialog_background</item>
-        <item name="android:buttonBarButtonStyle">@*com.google.android.gm:style/GmailGoogleMaterialButtonBarStyle</item>
-        <item name="android:datePickerStyle">@*com.google.android.gm:style/DatePickerStyle</item>
-        <item name="android:colorAccent">@*com.google.android.gm:color/google_blue600</item>
-        <item name="android:timePickerStyle">@*com.google.android.gm:style/TimePickerStyle</item>
-    </style>
     <style name="GmailTheme.NoActionBar" parent="@*com.google.android.gm:style/ColoredNavBarGmailTheme">
         <item name="android:colorPrimary">@*com.google.android.gm:color/primary_color</item>
         <item name="android:colorPrimaryDark">@*com.google.android.gm:color/primary_dark_color</item>
@@ -45,12 +33,17 @@
         <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
     </style>
+    <style name="GmailifyTheme" parent="@*com.google.android.gm:style/SudThemeMaterial.Light">
+        <item name="android:spinnerStyle">@*android:style/Widget.Material.Spinner</item>
+        <item name="android:textColorLink">@*com.google.android.gm:color/text_color_blue</item>
+        <item name="android:colorPrimaryDark">@*com.google.android.gm:color/quantum_googblue800</item>
+    </style>
     <style name="MailActivityTheme" parent="@*com.google.android.gm:style/ColoredNavBarMailActivityTheme">
         <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="android:windowTitleStyle">@*com.google.android.gm:style/GmailDialogTitleTextAppearance</item>
         <item name="android:alertDialogTheme">@*com.google.android.gm:style/AlertDialogTheme</item>
         <item name="android:borderlessButtonStyle">@*com.google.android.gm:style/GmailGoogleMaterialBorderlessButtonStyle</item>
-        <item name="android:colorAccent">@*com.google.android.gm:color/google_blue600</item>
+        <item name="android:colorAccent">@*com.google.android.gm:color/color_accent_blue</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:statusBarColor">@*com.google.android.gm:color/mail_activity_status_bar_color</item>
         <item name="android:navigationBarColor">@*com.google.android.gm:color/navigation_bar_color</item>
@@ -66,21 +59,15 @@
         <item name="*com.google.android.gm:colorControlNormal">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.gm:alertDialogTheme">@*com.google.android.gm:style/AlertDialogTheme</item>
     </style>
-    <style name="NotificationPrimaryText">
-        <item name="android:textColor">#ffffffff</item>
-    </style>
-    <style name="NotificationSecondaryText">
-        <item name="android:textColor">#ffdddddd</item>
-    </style>
     <style name="Platform.V21.AppCompat.Light" parent="@*android:style/Theme.Material.NoActionBar">
         <item name="android:textColorHintInverse">#ffbbbbbb</item>
         <item name="android:textColorHint">#ffbbbbbb</item>
         <item name="android:textColorLink">@*android:color/accent_material_dark</item>
         <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
     </style>
-    <style name="SuwGlifCardContainer">
+    <style name="SudGlifCardContainer">
         <item name="android:background">@*android:color/background_floating_material_dark</item>
-        <item name="android:elevation">5.0dip</item>
+        <item name="android:elevation">@*com.google.android.gm:dimen/sud_glif_card_elevation</item>
     </style>
     <style name="UnifiedEmailTheme" parent="@*android:style/Theme.DeviceDefault.Light">
         <item name="android:listViewWhiteStyle">@*android:style/Widget.Material.ListView</item>
