@@ -42,6 +42,11 @@
         <item name="android:windowMinWidthMajor">@*android:dimen/dialog_min_width_major</item>
         <item name="android:windowMinWidthMinor">@*android:dimen/dialog_min_width_minor</item>
     </style>
+    <style name="CakemixTheme.GoogleMaterial.Preferences.AlertDialogTheme.Framework" parent="@*android:style/Theme.Material.Dialog.Alert">
+        <item name="android:windowTitleStyle">@*com.google.android.apps.docs:style/CakemixTheme.GoogleMaterial.Preferences.AlertDialogTheme.WindowTitleStyle</item>
+        <item name="android:textColorAlertDialogListItem">@*com.google.android.apps.docs:color/google_dark_default_color_on_surface_variant</item>
+        <item name="android:buttonBarButtonStyle">@*com.google.android.apps.docs:style/Widget.GoogleMaterial.Button.TextButton.Dialog</item>
+    </style>
     <style name="CakemixTheme.Projector" parent="@*android:style/Theme.DeviceDefault.Light">
         <item name="android:actionBarStyle">@*com.google.android.apps.docs:style/ProjectorActionBar</item>
     </style>
@@ -50,9 +55,6 @@
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
         <item name="android:windowShowWallpaper">false</item>
-    </style>
-    <style name="CarouselOverlay" parent="@*com.google.android.apps.docs:style/CakemixTheme.DocListActivity">
-        <item name="android:colorEdgeEffect">#ffdddddd</item>
     </style>
     <style name="CommonTheme" parent="@*com.google.android.apps.docs:style/VersionTheme">
         <item name="android:windowNoTitle">true</item>
@@ -80,6 +82,14 @@
         <item name="*com.google.android.apps.docs:actionModeBackground">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.apps.docs:actionModeCloseDrawable">@*com.google.android.apps.docs:drawable/action_mode_back_grey_gm2</item>
         <item name="*com.google.android.apps.docs:colorControlHighlight">@*android:color/white</item>
+    </style>
+    <style name="DarkGm2TitleText" parent="@*com.google.android.apps.docs:style/TextAppearance.GoogleMaterial.Display1">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="DarkSubtitleText">
+        <item name="android:textSize">10.0sp</item>
+        <item name="android:textColor">@*android:color/white</item>
     </style>
     <style name="DetailCard.Header.TeamDrive" parent="@*com.google.android.apps.docs:style/DetailCard.Header">
         <item name="android:background">@*android:color/background_floating_material_dark</item>
@@ -196,13 +206,26 @@
     <style name="RippleTheme">
         <item name="*com.google.android.apps.docs:colorControlHighlight">@*android:color/ripple_material_dark</item>
     </style>
+    <style name="SearchBarText" parent="@*com.google.android.apps.docs:style/TextAppearance.GoogleMaterial.Headline6">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:textColorHint">@*android:color/secondary_text_default_material_dark</item>
+    </style>
     <style name="SiteAccessOptionsDialogMessage.InfoTextAppearance" parent="@*com.google.android.apps.docs:style/SiteAccessOptionsDialogMessage">
         <item name="android:textSize">@*com.google.android.apps.docs:dimen/m_entry_text_size_secondary</item>
         <item name="android:textStyle">italic</item>
         <item name="android:textColor">#ffdddddd</item>
     </style>
+    <style name="Style.GrowthKit.Headline5" parent="@*com.google.android.apps.docs:style/TextAppearance.GoogleMaterial.Headline5">
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="Style.GrowthKit.Subhead1" parent="@*com.google.android.apps.docs:style/TextAppearance.GoogleMaterial.Subhead1">
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
     <style name="TextAppearance.Design.Snackbar.Message" parent="@*android:style/TextAppearance">
         <item name="android:textSize">@*com.google.android.apps.docs:dimen/design_snackbar_text_size</item>
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="TextAppearance.Discussions.AuthorHeader" parent="@*com.google.android.apps.docs:style/TextAppearance.GoogleMaterial.Subhead1">
         <item name="android:textColor">@*android:color/white</item>
     </style>
     <style name="ThemeOverlay.Discussions.GoogleMaterial" parent="">
@@ -222,6 +245,12 @@
     </style>
     <style name="ThemeOverlay.GoogleMaterial.Snackbar" parent="">
         <item name="*com.google.android.apps.docs:colorOnSurface">@*android:color/background_floating_material_dark</item>
+    </style>
+    <style name="ToolbarSubtitleCollectionName" parent="@*com.google.android.apps.docs:style/TextAppearance.GoogleMaterial.Body2">
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="ToolbarTitleCollectionName" parent="@*com.google.android.apps.docs:style/TextAppearance.GoogleMaterial.Headline6">
+        <item name="android:textColor">@*android:color/white</item>
     </style>
     <style name="TooltipActionButton" parent="@*com.google.android.apps.docs:style/Widget.GoogleMaterial.Button.TextButton">
         <item name="android:textColor">@*android:color/white</item>

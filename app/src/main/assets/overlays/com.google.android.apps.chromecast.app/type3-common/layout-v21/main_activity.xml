@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <android.support.design.appbar.AppBarLayout android:id="@*com.google.android.apps.chromecast.app:id/app_bar_layout" android:background="@*android:color/background_floating_material_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" app:elevation="@*com.google.android.apps.chromecast.app:dimen/toolbar_elevation">
         <include layout="@*com.google.android.apps.chromecast.app:layout/scrolling_toolbar" />
@@ -11,5 +11,6 @@
         <android.support.v7.widget.ActionMenuView android:layout_gravity="center_vertical" android:id="@*com.google.android.apps.chromecast.app:id/bottom_bar_menu" android:layout_width="wrap_content" android:layout_height="@*com.google.android.apps.chromecast.app:dimen/toolbar_no_statusbar_height" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" />
     </android.support.design.bottomappbar.BottomAppBar>
     <android.support.design.floatingactionbutton.FloatingActionButton android:id="@*com.google.android.apps.chromecast.app:id/center_fab" android:background="@*android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@*com.google.android.apps.chromecast.app:drawable/ic_opa_mic" android:contentDescription="@*com.google.android.apps.chromecast.app:string/accessibility_opa_mic_icon" android:importantForAccessibility="yes" app:layout_anchor="@*com.google.android.apps.chromecast.app:id/bottom_bar" app:backgroundTint="@*android:color/background_floating_material_dark" />
+    <include layout="@*com.google.android.apps.chromecast.app:layout/freeze_ui_shade" />
     <RelativeLayout android:id="@*com.google.android.apps.chromecast.app:id/scrim_background" android:background="@*com.google.android.apps.chromecast.app:color/home_tab_action_coin_dropdown_scrim" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="@*com.google.android.apps.chromecast.app:dimen/home_tab_scrim_elevation" />
-</android.support.design.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

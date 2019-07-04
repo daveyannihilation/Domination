@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@*com.google.android.apps.docs:id/choice_widget_bottom_sheet_content" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout android:orientation="horizontal" android:paddingLeft="@*com.google.android.apps.docs:dimen/choice_bottomsheet_side_padding" android:paddingRight="@*com.google.android.apps.docs:dimen/choice_bottomsheet_side_padding" android:layout_width="fill_parent" android:layout_height="@*com.google.android.apps.docs:dimen/choice_bottomsheet_header_height">
+        <TextView android:textColor="@*android:color/white" android:gravity="center_vertical" android:id="@*com.google.android.apps.docs:id/header" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@*com.google.android.apps.docs:string/choice_bottomsheet_header_text" app:layout_constraintStart_toStartOf="parent" style="@*com.google.android.apps.docs:style/TextAppearance.GoogleMaterial.Subhead2" />
+        <TextView android:textColor="@*com.google.android.apps.docs:color/google_blue600" android:gravity="center_vertical" android:id="@*com.google.android.apps.docs:id/done_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@*com.google.android.apps.docs:string/choice_bottomsheet_done_text" app:layout_constraintEnd_toEndOf="parent" style="@*com.google.android.apps.docs:style/TextAppearance.GoogleMaterial.Subhead2" />
+    </android.support.constraint.ConstraintLayout>
+    <View android:background="@*android:color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    <android.support.v7.widget.RecyclerView android:id="@*com.google.android.apps.docs:id/recyclerview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>
