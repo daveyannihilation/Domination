@@ -5,7 +5,7 @@
         <selector>
             <item android:state_pressed="true">
                 <shape android:shape="rectangle">
-                    <solid android:color="#ff555555" />
+                    <solid android:color="@*android:color/dim_foreground_light" />
                 </shape>
             </item>
             <item>
@@ -14,5 +14,14 @@
                 </shape>
             </item>
         </selector>
+    </item>
+    <item>
+        <ripple android:color="@*android:color/ripple_material_dark">
+            <item android:id="@*android:id/mask">
+                <shape android:shape="rectangle">
+                    <solid android:color="@*android:color/white" />
+                </shape>
+            </item>
+        </ripple>
     </item>
 </layer-list>

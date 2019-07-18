@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Base.Theme.GoogleMaterial.Light" parent="@*com.google.android.apps.fitness:style/Base.V14.Theme.GoogleMaterial.Light">
+    <style name="Base.Theme.GoogleMaterial.Light" parent="@*com.google.android.apps.fitness:style/Base.V14.Theme.GoogleMaterial.Dark">
         <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
     </style>
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabText" parent="@*android:style/Widget.Material.ActionBar.TabText" />
@@ -52,6 +52,37 @@
         <item name="android:visibility">gone</item>
         <item name="android:singleLine">true</item>
         <item name="android:color">@*android:color/white</item>
+    </style>
+    <style name="GDI.GM2.Dialog.Ab_Button" parent="@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.Button.TextButton.Icon">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:gravity">start|center</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingStart">0.0dip</item>
+        <item name="*com.google.android.apps.fitness:icon">@*com.google.android.apps.fitness:drawable/quantum_ic_chevron_right_grey600_24</item>
+        <item name="*com.google.android.apps.fitness:iconGravity">end</item>
+        <item name="*com.google.android.apps.fitness:iconTint">@*android:color/white</item>
+        <item name="*com.google.android.apps.fitness:lineHeight">20.0sp</item>
+    </style>
+    <style name="GDI.GM2.Dialog.Ab_LearnMore" parent="@*com.google.android.apps.fitness:style/GDI.GM2.Dialog">
+        <item name="android:textAppearance">@*com.google.android.apps.fitness:style/TextAppearance.GoogleMaterial.Subhead1</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffdddddd</item>
+        <item name="android:textColorLink">#ff1976d2</item>
+        <item name="android:lineSpacingExtra">4.0sp</item>
+    </style>
+    <style name="GDI.GM2.Dialog.Ab_SubHeading" parent="@*com.google.android.apps.fitness:style/GDI.GM2.Dialog">
+        <item name="android:textAppearance">@*com.google.android.apps.fitness:style/TextAppearance.GoogleMaterial.Subhead1</item>
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:lineSpacingExtra">4.0sp</item>
+    </style>
+    <style name="GDI.GM2.Dialog.Ab_Subtitle" parent="@*com.google.android.apps.fitness:style/GDI.GM2.Dialog">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffdddddd</item>
+        <item name="android:lineSpacingExtra">4.0sp</item>
     </style>
     <style name="GDI.GM2.Dialog.Subtitle" parent="@*com.google.android.apps.fitness:style/GDI.GM2.Dialog">
         <item name="android:textSize">14.0sp</item>
@@ -132,5 +163,9 @@
         <item name="*com.google.android.apps.fitness:rippleColor">@*android:color/ripple_material_dark</item>
         <item name="*com.google.android.apps.fitness:shapeAppearanceOverlay">@*com.google.android.apps.fitness:style/ShapeAppearanceOverlay.GoogleMaterial.FloatingActionButton</item>
         <item name="*com.google.android.apps.fitness:tint">@*com.google.android.apps.fitness:color/google_blue500</item>
+    </style>
+    <style name="Widget.GoogleMaterial.ProductLockupView.Dark" parent="@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.ProductLockupView">
+        <item name="*com.google.android.apps.fitness:logoColor">light</item>
+        <item name="*com.google.android.apps.fitness:productNameTextColor">@*android:color/white</item>
     </style>
 </resources>

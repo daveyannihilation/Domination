@@ -1,13 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="AppNoTitleTheme" parent="@*android:style/Theme.Material.NoActionBar" />
+    <style name="AppTheme" parent="@*com.google.android.apps.translate:style/AppBaseTheme">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@*com.google.android.apps.translate:color/status_bar_20pct_black</item>
+    </style>
     <style name="AppTheme.Launcher" parent="@*com.google.android.apps.translate:style/AppTheme">
 	    <item name="android:windowShowWallpaper">false</item>
         <item name="android:windowIsTranslucent">false</item>
         <item name="android:windowBackground">@*com.google.android.apps.translate:drawable/quantum_launchscreen_translate</item>
         <item name="*com.google.android.apps.translate:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
-    </style>
-    <style name="Base.Theme.GoogleMaterial.Light" parent="@*com.google.android.apps.translate:style/Base.V14.Theme.GoogleMaterial.Light">
         <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:backgroundTint">@null</item>
+    </style>
+    <style name="Base.Theme.GoogleMaterial.Light" parent="@*com.google.android.apps.translate:style/Base.V14.Theme.GoogleMaterial.Dark">
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+    </style>
+    <style name="Base.ThemeOverlay.AppCompat.Dark.ActionBar" parent="@*com.google.android.apps.translate:style/Base.ThemeOverlay.AppCompat.Dark">
+        <item name="*com.google.android.apps.translate:colorControlNormal">@*android:color/white</item>
+        <item name="*com.google.android.apps.translate:searchViewStyle">@*com.google.android.apps.translate:style/Widget.AppCompat.SearchView.ActionBar</item>
+        <item name="android:backgroundTint">@null</item>
+    </style>
+    <style name="ContinuousTranslationDarkTheme" parent="@*com.google.android.apps.translate:style/WhiteTheme">
+        <item name="android:textColorPrimary">@*android:color/white</item>
+        <item name="*com.google.android.apps.translate:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.apps.translate:dividerColor">@*android:color/transparent</item>
+        <item name="*com.google.android.apps.translate:pickerTextColor">@*android:color/white</item>
+        <item name="*com.google.android.apps.translate:tintColor">@*android:color/white</item>
+        <item name="*com.google.android.apps.translate:windowActionBar">false</item>
+    </style>
+    <style name="ContinuousTranslationTheme" parent="@*com.google.android.apps.translate:style/WhiteTheme">
+        <item name="android:textColorPrimary">@*android:color/white</item>
+        <item name="*com.google.android.apps.translate:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.apps.translate:dividerColor">@*android:color/transparent</item>
+        <item name="*com.google.android.apps.translate:pickerTextColor">@*android:color/white</item>
+        <item name="*com.google.android.apps.translate:tintColor">@*android:color/white</item>
     </style>
     <style name="OpticsDialogTheme" parent="@*com.google.android.apps.translate:style/Theme.GoogleMaterial.Dark.NoActionBar.Bridge">
         <item name="android:windowBackground">@*android:color/background_dark</item>
@@ -15,7 +43,12 @@
         <item name="*com.google.android.apps.translate:colorAccent">@*com.google.android.apps.translate:color/primary_blue</item>
         <item name="*com.google.android.apps.translate:alertDialogTheme">@*com.google.android.apps.translate:style/AlertDialogDarkTheme</item>
     </style>
-    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light" />
+    <style name="Platform.V21.AppCompat.Light" parent="@*android:style/Theme.Material.NoActionBar">
+        <item name="android:textColorHintInverse">#ffbbbbbb</item>
+        <item name="android:textColorHint">#ffbbbbbb</item>
+        <item name="android:textColorLink">@*android:color/accent_material_dark</item>
+        <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
+    </style>
     <style name="SimpleWhiteBgTheme" parent="@*com.google.android.apps.translate:style/AppBaseTheme">
         <item name="android:windowBackground">@*android:color/background_dark</item>
     </style>
@@ -24,7 +57,7 @@
         <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="android:windowIsTranslucent">true</item>
     </style>
-    <style name="Theme.AppInvite.Preview.Base" parent="@*android:style/Theme.NoTitleBar" />
+    <style name="Theme.AppInvite.Preview.Base" parent="@*android:style/Theme.Material.DialogWhenLarge.NoActionBar" />
     <style name="ThemeOverlay.GoogleMaterial.Light.BottomSheetDialog" parent="@*com.google.android.apps.translate:style/ThemeOverlay.MaterialComponents.Dialog">
         <item name="android:windowBackground">@*android:color/transparent</item>
         <item name="android:windowAnimationStyle">@*com.google.android.apps.translate:style/Animation.MaterialComponents.BottomSheetDialog</item>
@@ -33,13 +66,16 @@
         <item name="*com.google.android.apps.translate:bottomSheetStyle">@*com.google.android.apps.translate:style/Widget.GoogleMaterial.BottomSheet.Modal</item>
         <item name="*com.google.android.apps.translate:materialButtonStyle">@*com.google.android.apps.translate:style/Widget.GoogleMaterial.Button</item>
     </style>
-    <style name="WhiteDialogTheme" parent="@*com.google.android.apps.translate:style/Theme.AppCompat.Light.Dialog">
+    <style name="ToolbarOverlayAppCompat" parent="@*com.google.android.apps.translate:style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="*com.google.android.apps.translate:colorAccent">@*android:color/white</item>
+    </style>
+    <style name="WhiteDialogTheme" parent="@*com.google.android.apps.translate:style/Theme.AppCompat.Dialog">
         <item name="*com.google.android.apps.translate:windowActionBar">false</item>
         <item name="*com.google.android.apps.translate:windowNoTitle">true</item>
         <item name="*com.google.android.apps.translate:colorPrimary">@*android:color/primary_material_dark</item>
-        <item name="*com.google.android.apps.translate:colorPrimaryDark">@*com.google.android.apps.translate:color/grey_status_bar</item>
-        <item name="*com.google.android.apps.translate:colorControlNormal">@*com.google.android.apps.translate:color/grey_on_white_toolbar</item>
-        <item name="*com.google.android.apps.translate:titleTextColor">@*com.google.android.apps.translate:color/grey_on_white_toolbar</item>
+        <item name="*com.google.android.apps.translate:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.apps.translate:colorControlNormal">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.apps.translate:titleTextColor">@*android:color/white</item>
     </style>
     <style name="WhiteTheme" parent="@*com.google.android.apps.translate:style/Theme.AppCompat.Light.NoActionBar">
         <item name="*com.google.android.apps.translate:colorPrimary">@*android:color/primary_material_dark</item>
@@ -58,6 +94,10 @@
         <item name="*com.google.android.apps.translate:shapeAppearance">@null</item>
         <item name="*com.google.android.apps.translate:shapeAppearanceOverlay">@null</item>
         <item name="*com.google.android.apps.translate:enforceMaterialTheme">false</item>
+    </style>
+    <style name="Widget.GoogleMaterial.ProductLockupView.Dark" parent="@*com.google.android.apps.translate:style/Widget.GoogleMaterial.ProductLockupView">
+        <item name="*com.google.android.apps.translate:logoColor">light</item>
+        <item name="*com.google.android.apps.translate:productNameTextColor">@*android:color/white</item>
     </style>
     <style name="growthkit_feature_highlight_black">
         <item name="android:textColor">#ffffffff</item>

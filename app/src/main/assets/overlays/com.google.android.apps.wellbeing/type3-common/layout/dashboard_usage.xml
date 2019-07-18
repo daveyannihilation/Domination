@@ -2,12 +2,12 @@
 <LinearLayout android:orientation="vertical" android:background="@*android:color/background_dark" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <com.google.android.apps.wellbeing.common.ui.menubar.MenuBarView android:id="@*com.google.android.apps.wellbeing:id/menu_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <android.support.design.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
         <android.support.design.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
             <android.support.design.appbar.CollapsingToolbarLayout android:id="@*com.google.android.apps.wellbeing:id/collapsing_toolbar" android:background="@*android:color/primary_material_dark" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="exitUntilCollapsed|scroll">
                 <LinearLayout android:orientation="vertical" android:id="@*com.google.android.apps.wellbeing:id/dashboard" android:background="@*android:color/background_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" />
             </android.support.design.appbar.CollapsingToolbarLayout>
         </android.support.design.appbar.AppBarLayout>
         <com.google.android.apps.wellbeing.appusage.ui.OneDayAppDataListView android:id="@*com.google.android.apps.wellbeing:id/app_list" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@*com.google.android.apps.wellbeing:string/appbar_scrolling_view_behavior" />
-    </android.support.design.widget.CoordinatorLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </LinearLayout>

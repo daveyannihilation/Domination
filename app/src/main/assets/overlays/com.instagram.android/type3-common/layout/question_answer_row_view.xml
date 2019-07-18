@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@*com.instagram.android:id/answer_container" android:background="@*android:color/background_dark" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@*com.instagram.android:dimen/row_height_small"
+<FrameLayout android:id="@*com.instagram.android:id/answer_container" android:background="@*android:color/background_dark" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@*com.instagram.android:dimen/row_height_small" />
     <com.instagram.common.ui.base.IgTextView android:layout_gravity="center_vertical" android:id="@*com.instagram.android:id/text" android:paddingLeft="@*com.instagram.android:dimen/feed_header_padding" android:paddingRight="@*com.instagram.android:dimen/answer_textview_right_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" />
     <com.instagram.common.ui.base.IgRadioButton android:layout_gravity="end|center" android:id="@*com.instagram.android:id/button" android:paddingRight="@*com.instagram.android:dimen/feed_header_padding" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
 </FrameLayout>
