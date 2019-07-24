@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <attr name="ad_marker_color" format="color" />
+    <attr name="ad_marker_width" format="dimension" />
     <attr name="appBarLayoutStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="badgeStyle" format="reference" />
+    <attr name="bar_height" format="dimension" />
     <attr name="bind__disableParentTouchEventInterception" format="boolean" />
     <attr name="bind__isOwnedByParent" format="boolean" />
     <attr name="bind__nestedScrollingEnabled" format="boolean" />
@@ -9,6 +13,7 @@
     <attr name="bottomNavigationStyle" format="reference" />
     <attr name="bottomSheetDialogTheme" format="reference" />
     <attr name="bottomSheetStyle" format="reference" />
+    <attr name="buffered_color" format="color" />
     <attr name="cardViewStyle" format="reference" />
     <attr name="checkedIcon" format="reference" />
     <attr name="chipGroupStyle" format="reference" />
@@ -20,11 +25,13 @@
     <attr name="colorOnPrimary" format="color" />
     <attr name="colorOnPrimaryGoogle" format="color" />
     <attr name="colorOnPrimaryRippleGoogle" format="color" />
+    <attr name="colorOnPrimaryStateLayerGoogle" format="color" />
     <attr name="colorOnSecondary" format="color" />
     <attr name="colorOnSurface" format="color" />
     <attr name="colorOnSurfaceVariant" format="color" />
     <attr name="colorPrimaryGoogle" format="color" />
     <attr name="colorPrimaryStateGoogle" format="color" />
+    <attr name="colorPrimaryStateInkGoogle" format="color" />
     <attr name="colorPrimaryVariant" format="color" />
     <attr name="colorPrimaryVariantGoogle" format="color" />
     <attr name="colorSecondary" format="color" />
@@ -34,8 +41,8 @@
     <attr name="controller_layout_id" format="reference" />
     <attr name="coordinatorLayoutStyle" format="reference" />
     <attr name="drawerArrowStyle" format="reference" />
-    <attr name="elevationOverlaysColor" format="color" />
-    <attr name="elevationOverlaysEnabled" format="boolean" />
+    <attr name="elevationOverlayColor" format="color" />
+    <attr name="elevationOverlayEnabled" format="boolean" />
     <attr name="ensureMinTouchTargetSize" format="boolean" />
     <attr name="extendedFloatingActionButtonStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="fastforward_increment" format="integer" />
@@ -48,6 +55,9 @@
     <attr name="isMaterialTheme" format="boolean" />
     <attr name="is_avatar" format="boolean" />
     <attr name="is_avatar_no_ring" format="boolean" />
+    <attr name="itemShapeAppearance" format="reference" />
+    <attr name="itemShapeAppearanceOverlay" format="reference" />
+    <attr name="itemTextColor" format="color" />
     <attr name="layout_constraintBaseline_creator" format="integer" />
     <attr name="layout_constraintBaseline_toBaselineOf" format="reference">
         <enum name="parent" value="0" />
@@ -139,14 +149,15 @@
     <attr name="materialButtonOutlinedStyle" format="reference" />
     <attr name="materialButtonStyle" format="reference" />
     <attr name="materialButtonToggleGroupStyle" format="reference" />
+    <attr name="materialCalendarDay" format="reference" />
+    <attr name="materialCalendarFullscreenTheme" format="reference" />
     <attr name="materialCalendarHeaderLayout" format="reference" />
     <attr name="materialCalendarHeaderSelection" format="reference" />
     <attr name="materialCalendarHeaderTitle" format="reference" />
+    <attr name="materialCalendarHeaderToggleButton" format="reference" />
+    <attr name="materialCalendarStyle" format="reference" />
+    <attr name="materialCalendarTheme" format="reference" />
     <attr name="materialCardViewStyle" format="reference" />
-    <attr name="materialDatePickerDialogTheme" format="reference" />
-    <attr name="materialDatePickerStyle" format="reference" />
-    <attr name="materialDateRangePickerDialogTheme" format="reference" />
-    <attr name="materialDateRangePickerStyle" format="reference" />
     <attr name="materialThemeOverlay" format="reference" />
     <attr name="minTouchTargetSize" format="dimension" />
     <attr name="mtrlColor" format="reference|color" />
@@ -160,7 +171,8 @@
     <attr name="openSearchBarStyle" format="reference" />
     <attr name="openSearchViewPrefixStyle" format="reference" />
     <attr name="openSearchViewStyle" format="reference" />
-    <attr name="player_layout_id" format="reference" />
+    <attr name="played_ad_marker_color" format="color" />
+    <attr name="played_color" format="color" />
     <attr name="productLockupViewStyle" format="reference" />
     <attr name="repeat_toggle_modes">
         <flag name="all" value="0x00000002" />
@@ -176,6 +188,11 @@
     </attr>
     <attr name="rewind_increment" format="integer" />
     <attr name="scrimBackground" format="reference|color" />
+    <attr name="scrubber_color" format="color" />
+    <attr name="scrubber_disabled_size" format="dimension" />
+    <attr name="scrubber_dragged_size" format="dimension" />
+    <attr name="scrubber_drawable" format="reference" />
+    <attr name="scrubber_enabled_size" format="dimension" />
     <attr name="shapeAppearanceLargeComponent" format="reference" />
     <attr name="shapeAppearanceMediumComponent" format="reference" />
     <attr name="shapeAppearanceSmallComponent" format="reference" />
@@ -214,6 +231,8 @@
     <attr name="textInputStyle" format="reference" />
     <attr name="time_bar_min_update_interval" format="integer" />
     <attr name="title" format="string" />
+    <attr name="touch_target_height" format="dimension" />
+    <attr name="unplayed_color" format="color" />
     <attr name="useMaterialThemeColors" format="boolean" />
     <attr name="zoom" format="fraction" />
     <attr name="accessibilityClassOverride">
@@ -224,6 +243,7 @@
     <attr name="accountMenuChipRippleColor" format="color" />
     <attr name="accountMenuChipStrokeColor" format="color" />
     <attr name="accountMenuChipTextColor" format="color" />
+    <attr name="accountMenuGoogleLogoImage" format="reference" />
     <attr name="actionTextColor" format="color" />
     <attr name="backgroundColor" format="color" />
     <attr name="bottomDrawerHandleColor" format="color" />
@@ -235,21 +255,19 @@
     <attr name="iconColor" format="color" />
     <attr name="policyRippleColor" format="color" />
     <attr name="policyTextColor" format="color" />
+    <attr name="accountMenuCircleRipple" format="reference" />
     <attr name="indent_divider" format="boolean" />
     <attr name="displayNameTextAppearance" format="reference" />
     <attr name="accountNameTextAppearance" format="reference" />
     <attr name="disabledAccountHelpIconTint" format="color" />
-    <attr name="discSize" format="dimension" />
-    <attr name="avatarSize" format="dimension" />
     <attr name="maxDiscContentSize" format="dimension" />
-    <attr name="imageViewSize" format="dimension" />
     <attr name="allowBadges" format="boolean" />
     <attr name="allowRings" format="boolean" />
     <attr name="discMinTouchTargetSize" format="dimension" />
     <attr name="ensureDiscMinTouchTargetSize" format="boolean" />
     <attr name="defaultAvatarColor" format="color" />
-    <attr name="badgeWrapperColor" format="color" />
     <attr name="avatarBorderRingColor" format="color" />
+    <attr name="imageViewSize" format="dimension" />
     <attr name="navigationMode">
         <enum name="listMode" value="1" />
         <enum name="normal" value="0" />
@@ -800,19 +818,6 @@
     </attr>
     <attr name="barSpacing" format="reference|dimension" />
     <attr name="barColor" format="reference|color" />
-    <attr name="bar_height" format="dimension" />
-    <attr name="touch_target_height" format="dimension" />
-    <attr name="ad_marker_width" format="dimension" />
-    <attr name="scrubber_enabled_size" format="dimension" />
-    <attr name="scrubber_disabled_size" format="dimension" />
-    <attr name="scrubber_dragged_size" format="dimension" />
-    <attr name="scrubber_drawable" format="reference" />
-    <attr name="played_color" format="color" />
-    <attr name="scrubber_color" format="color" />
-    <attr name="buffered_color" format="color" />
-    <attr name="unplayed_color" format="color" />
-    <attr name="ad_marker_color" format="color" />
-    <attr name="played_ad_marker_color" format="color" />
     <attr name="dialogTitle" format="string" />
     <attr name="dialogMessage" format="string" />
     <attr name="dialogIcon" format="reference" />
@@ -965,6 +970,12 @@
         <enum name="canShrink" value="2" />
         <enum name="fixed" value="0" />
     </attr>
+    <attr name="columnSpan">
+        <enum name="all" value="0" />
+        <enum name="flexible" value="1" />
+        <enum name="half" value="2" />
+        <enum name="minimum" value="3" />
+    </attr>
     <attr name="measureWithLargestChild" format="boolean" />
     <attr name="showDividers">
         <flag name="none" value="0x00000000" />
@@ -1043,6 +1054,13 @@
     <attr name="iconTint" format="color" />
     <attr name="cornerRadius" format="reference|dimension" />
     <attr name="checkedButton" format="reference" />
+    <attr name="dayStyle" format="reference" />
+    <attr name="daySelectedStyle" format="reference" />
+    <attr name="dayTodayStyle" format="reference" />
+    <attr name="rangeFillColor" format="color" />
+    <attr name="itemFillColor" format="color" />
+    <attr name="itemStrokeColor" format="color" />
+    <attr name="itemStrokeWidth" format="dimension" />
     <attr name="cardForegroundColor" format="color" />
     <attr name="checkedIconTint" format="color" />
     <attr name="state_dragged" format="boolean" />
@@ -1158,7 +1176,6 @@
     <attr name="forceWrapContentHeight" format="reference|boolean" />
     <attr name="menu" format="reference" />
     <attr name="itemIconTint" format="color" />
-    <attr name="itemTextColor" format="color" />
     <attr name="itemBackground" format="reference" />
     <attr name="itemTextAppearance" format="reference" />
     <attr name="headerLayout" format="reference" />
@@ -1166,8 +1183,6 @@
     <attr name="itemIconPadding" format="dimension" />
     <attr name="itemIconSize" format="dimension" />
     <attr name="itemMaxLines" format="integer" />
-    <attr name="itemShapeAppearance" format="reference" />
-    <attr name="itemShapeAppearanceOverlay" format="reference" />
     <attr name="itemShapeInsetStart" format="dimension" />
     <attr name="itemShapeInsetTop" format="dimension" />
     <attr name="itemShapeInsetEnd" format="dimension" />
@@ -1284,6 +1299,7 @@
         <enum name="when_playing" value="1" />
     </attr>
     <attr name="keep_content_on_player_reset" format="boolean" />
+    <attr name="player_layout_id" format="reference" />
     <attr name="rippleColor" format="color" />
     <attr name="textColor" format="color" />
     <attr name="state_above_anchor" format="boolean" />
