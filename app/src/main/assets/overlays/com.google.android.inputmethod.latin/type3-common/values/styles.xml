@@ -4,7 +4,7 @@
     <style name="AvatarCreationBarBackButtonStyle" parent="@*com.google.android.inputmethod.latin:style/Widget.AppCompat.Toolbar.Button.Navigation">
         <item name="*com.google.android.inputmethod.latin:tint">@*android:color/white</item>
     </style>
-    <style name="AvatarCreationM2Theme" parent="@*com.google.android.inputmethod.latin:style/Theme.GoogleMaterial.Light.NoActionBar.Bridge">
+    <style name="AvatarCreationTheme" parent="@*com.google.android.inputmethod.latin:style/Theme.GoogleMaterial.Light.NoActionBar.Bridge">
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
         <item name="*com.google.android.inputmethod.latin:colorAccent">@*com.google.android.inputmethod.latin:color/google_blue500</item>
@@ -14,34 +14,13 @@
         <item name="*com.google.android.inputmethod.latin:snackbarButtonStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.Button.TextButton.Snackbar</item>
         <item name="*com.google.android.inputmethod.latin:snackbarStyle">@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.Snackbar</item>
     </style>
-    <style name="AvatarCreationTitleTextStyle" parent="@*com.google.android.inputmethod.latin:style/TextAppearance.AppCompat">
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:gravity">center_horizontal</item>
-        <item name="android:layout_marginTop">@*com.google.android.inputmethod.latin:dimen/avatar_creation_title_margin_top</item>
-        <item name="android:fontFamily">@*com.google.android.inputmethod.latin:font/quicksand_bold</item>
-        <item name="android:layout_marginStart">@*com.google.android.inputmethod.latin:dimen/avatar_creation_text_margin</item>
-        <item name="android:layout_marginEnd">@*com.google.android.inputmethod.latin:dimen/avatar_creation_text_margin</item>
-    </style>
-    <style name="AvatarPromoBannerButtonM2Style" parent="@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.Button">
+    <style name="AvatarPromoBannerButtonStyle" parent="@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.Button">
         <item name="android:textColor">@*android:color/white</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">@*com.google.android.inputmethod.latin:dimen/avatar_promo_button_margin_top</item>
         <item name="android:layout_marginBottom">@*com.google.android.inputmethod.latin:dimen/avatar_promo_button_margin_bottom</item>
         <item name="android:minWidth">0.0dip</item>
-        <item name="android:paddingStart">@*com.google.android.inputmethod.latin:dimen/avatar_promo_button_padding_lr</item>
-        <item name="android:paddingEnd">@*com.google.android.inputmethod.latin:dimen/avatar_promo_button_padding_lr</item>
-    </style>
-    <style name="AvatarPromoBannerButtonStyle" parent="@*com.google.android.inputmethod.latin:style/Widget.AppCompat.Button.Borderless">
-        <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/avatar_promo_button_text_size</item>
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:background">@*com.google.android.inputmethod.latin:drawable/avatar_promo_button_background</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">@*com.google.android.inputmethod.latin:dimen/avatar_promo_button_height</item>
-        <item name="android:layout_marginTop">@*com.google.android.inputmethod.latin:dimen/avatar_promo_button_margin_top</item>
-        <item name="android:layout_marginBottom">@*com.google.android.inputmethod.latin:dimen/avatar_promo_button_margin_bottom</item>
-        <item name="android:minWidth">0.0dip</item>
-        <item name="android:fontFamily">sans-serif-medium</item>
         <item name="android:paddingStart">@*com.google.android.inputmethod.latin:dimen/avatar_promo_button_padding_lr</item>
         <item name="android:paddingEnd">@*com.google.android.inputmethod.latin:dimen/avatar_promo_button_padding_lr</item>
     </style>
@@ -190,16 +169,6 @@
         <item name="android:layout_marginBottom">@*com.google.android.inputmethod.latin:dimen/opt_in_first_page_title_margin_bottom</item>
         <item name="android:layout_alignParentStart">true</item>
     </style>
-    <style name="PermissionNoticeContentText">
-        <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/permission_notice_content_text_size</item>
-        <item name="android:textColor">#ffdddddd</item>
-        <item name="android:paddingBottom">@*com.google.android.inputmethod.latin:dimen/permission_notice_content_text_padding_bottom</item>
-        <item name="android:scrollbars">vertical</item>
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:singleLine">false</item>
-        <item name="android:lineSpacingExtra">@*com.google.android.inputmethod.latin:dimen/permission_notice_content_text_line_space_extra</item>
-    </style>
     <style name="Platform.V21.AppCompat.Light" parent="@*android:style/Theme.Material.NoActionBar">
         <item name="android:textColorHintInverse">#ffbbbbbb</item>
         <item name="android:textColorHint">#ffbbbbbb</item>
@@ -238,18 +207,6 @@
         <item name="android:divider">@*com.google.android.inputmethod.latin:drawable/search_box_divider</item>
         <item name="android:showDividers">middle</item>
     </style>
-    <style name="SearchResultQueryTextView">
-        <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/search_box_font_size</item>
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:ellipsize">end</item>
-        <item name="android:gravity">start|center</item>
-        <item name="android:background">@*android:color/transparent</item>
-        <item name="android:layout_width">0.0dip</item>
-        <item name="android:layout_height">fill_parent</item>
-        <item name="android:maxLines">1</item>
-        <item name="android:singleLine">true</item>
-        <item name="android:layout_weight">1.0</item>
-    </style>
     <style name="SettingsButtonBorderlessColored" parent="@*android:style/Widget.Material.Button.Borderless" />
     <style name="SettingsTheme" parent="@*android:style/Theme.DeviceDefault.Light" />
     <style name="SharingActivityText">
@@ -282,22 +239,7 @@
         <item name="android:lineSpacingMultiplier">1.2</item>
         <item name="android:fontFamily">sans-medium</item>
     </style>
-    <style name="StickerButton">
-        <item name="android:background">@*android:color/button_material_dark</item>
-        <item name="android:layout_width">@*com.google.android.inputmethod.latin:dimen/sticker_category_item_size</item>
-        <item name="android:layout_height">@*com.google.android.inputmethod.latin:dimen/sticker_category_item_size</item>
-        <item name="android:scaleType">center</item>
-    </style>
-    <style name="StickerCardViewWrapper">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="*com.google.android.inputmethod.latin:cardBackgroundColor">@*android:color/background_floating_material_dark</item>
-        <item name="*com.google.android.inputmethod.latin:cardCornerRadius">@*com.google.android.inputmethod.latin:dimen/header_corner_radius</item>
-        <item name="*com.google.android.inputmethod.latin:cardElevation">0.0dip</item>
-        <item name="*com.google.android.inputmethod.latin:cardMaxElevation">0.0dip</item>
-        <item name="*com.google.android.inputmethod.latin:cardPreventCornerOverlap">false</item>
-        <item name="*com.google.android.inputmethod.latin:cardUseCompatPadding">false</item>
-    </style>
+    <style name="Theme.GoogleMaterial.DayNight" parent="@*com.google.android.inputmethod.latin:style/Theme.GoogleMaterial.Dark" />
     <style name="ThemeDetailsApplyButtonHolder">
         <item name="android:background">@*android:color/button_material_dark</item>
         <item name="android:paddingLeft">60.0dip</item>
