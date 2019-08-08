@@ -31,22 +31,8 @@
         <item name="*com.google.android.gms:alertDialogStyle">@*com.google.android.gms:style/MaterialAlertDialog.GoogleMaterial</item>
         <item name="*com.google.android.gms:alertDialogTheme">@*com.google.android.gms:style/ThemeOverlay.GoogleMaterial.MaterialAlertDialog</item>
     </style>
-    <style name="AsAppBaseTheme" parent="@*com.google.android.gms:style/Theme.MaterialComponents">
-        <item name="android:background">@null</item>
-        <item name="android:colorEdgeEffect">@*android:color/secondary_text_default_material_dark</item>
-        <item name="*com.google.android.gms:bottomAppBarStyle">@*com.google.android.gms:style/Widget.GoogleMaterial.BottomAppBar</item>
-        <item name="*com.google.android.gms:colorPrimaryGoogle">@*com.google.android.gms:color/google_blue300</item>
-        <item name="*com.google.android.gms:colorPrimaryStateGoogle">@*com.google.android.gms:color/google_blue300</item>
-        <item name="*com.google.android.gms:colorPrimaryVariantGoogle">@*com.google.android.gms:color/google_blue300</item>
-        <item name="*com.google.android.gms:materialButtonStyle">@*com.google.android.gms:style/Widget.GoogleMaterial.Button</item>
-        <item name="*com.google.android.gms:windowActionBar">false</item>
-        <item name="*com.google.android.gms:windowNoTitle">true</item>
-        <item name="*com.google.android.gms:colorAccent">@*com.google.android.gms:color/google_blue300</item>
-        <item name="*com.google.android.gms:colorControlNormal">@*android:color/secondary_text_default_material_dark</item>
-        <item name="*com.google.android.gms:colorControlHighlight">@*android:color/white</item>
-        <item name="*com.google.android.gms:alertDialogStyle">@*com.google.android.gms:style/MaterialAlertDialog.GoogleMaterial</item>
-    </style>
-    <style name="AsBaseAppThemeDark" parent="@*com.google.android.gms:style/AsAppBaseTheme">
+    <style name="AsBaseAppThemeDark" parent="@*com.google.android.gms:style/Theme.MaterialComponents">
+        <item name="android:windowContentOverlay">@null</item>
         <item name="*com.google.android.gms:asAccountCircleOutlineVdTheme24">@*com.google.android.gms:drawable/as_account_circle_outline_vd_theme_24_dark</item>
         <item name="*com.google.android.gms:asAvatarPlaceholder">@*com.google.android.gms:drawable/as_avatar_placeholder_dark</item>
         <item name="*com.google.android.gms:asBackCloseButton">@*android:color/white</item>
@@ -54,6 +40,7 @@
         <item name="*com.google.android.gms:asBottomNavItemColorState">@*com.google.android.gms:drawable/as_bottom_nav_item_color_state_dark</item>
         <item name="*com.google.android.gms:asBottomNavMenuDrawerItemHighlight">@*com.google.android.gms:drawable/as_bottom_nav_menu_drawer_item_highlight_dark</item>
         <item name="*com.google.android.gms:asCardBorder">@*com.google.android.gms:drawable/as_card_border_dark</item>
+        <item name="*com.google.android.gms:asCardLegendBackground">@*com.google.android.gms:drawable/as_card_legend_background_dark</item>
         <item name="*com.google.android.gms:asCardRoundedRipple">@*com.google.android.gms:drawable/as_card_rounded_ripple_dark</item>
         <item name="*com.google.android.gms:asCarouselRoundedRipple">@*com.google.android.gms:drawable/as_carousel_rounded_ripple_dark</item>
         <item name="*com.google.android.gms:asChevron">@*com.google.android.gms:drawable/as_chevron_dark</item>
@@ -97,9 +84,23 @@
         <item name="*com.google.android.gms:asSystemBarColor">@*android:color/primary_dark_material_dark</item>
         <item name="*com.google.android.gms:asTopNavTabSelectedIndicator">@*com.google.android.gms:drawable/as_top_nav_tab_selected_indicator_dark</item>
         <item name="*com.google.android.gms:asVerticalSpace">@*com.google.android.gms:drawable/as_vertical_space</item>
+        <item name="*com.google.android.gms:bottomAppBarStyle">@*com.google.android.gms:style/Widget.GoogleMaterial.BottomAppBar</item>
+        <item name="*com.google.android.gms:colorAccent">@*com.google.android.gms:color/google_blue300</item>
+        <item name="*com.google.android.gms:colorControlHighlight">@*android:color/white</item>
+        <item name="*com.google.android.gms:colorControlNormal">@*android:color/white</item>
+        <item name="*com.google.android.gms:colorPrimaryGoogle">@*com.google.android.gms:color/google_blue300</item>
+        <item name="*com.google.android.gms:colorPrimaryStateGoogle">@*com.google.android.gms:color/google_blue300</item>
+        <item name="*com.google.android.gms:colorPrimaryVariantGoogle">@*com.google.android.gms:color/google_blue300</item>
         <item name="*com.google.android.gms:materialAlertDialogTheme">@*com.google.android.gms:style/AsMaterialDialogThemeDark</item>
+        <item name="*com.google.android.gms:materialButtonStyle">@*com.google.android.gms:style/Widget.GoogleMaterial.Button</item>
+        <item name="*com.google.android.gms:windowActionBar">false</item>
+        <item name="*com.google.android.gms:windowNoTitle">true</item>
     </style>
-    <style name="AsBaseAppThemeLight" parent="@*com.google.android.gms:style/AsAppBaseTheme">
+    <style name="AsBaseAppThemeLight" parent="@*com.google.android.gms:style/Theme.MaterialComponents">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:colorEdgeEffect">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gms:alertDialogStyle">@*com.google.android.gms:style/MaterialAlertDialog.GoogleMaterial</item>
         <item name="*com.google.android.gms:asAccountCircleOutlineVdTheme24">@*com.google.android.gms:drawable/as_account_circle_outline_vd_theme_24_dark</item>
         <item name="*com.google.android.gms:asAvatarPlaceholder">@*com.google.android.gms:drawable/as_avatar_placeholder_dark</item>
         <item name="*com.google.android.gms:asBackCloseButton">@*android:color/white</item>
@@ -107,6 +108,7 @@
         <item name="*com.google.android.gms:asBottomNavItemColorState">@*com.google.android.gms:drawable/as_bottom_nav_item_color_state_dark</item>
         <item name="*com.google.android.gms:asBottomNavMenuDrawerItemHighlight">@*com.google.android.gms:drawable/as_bottom_nav_menu_drawer_item_highlight_dark</item>
         <item name="*com.google.android.gms:asCardBorder">@*com.google.android.gms:drawable/as_card_border_dark</item>
+        <item name="*com.google.android.gms:asCardLegendBackground">@*com.google.android.gms:drawable/as_card_legend_background_dark</item>
         <item name="*com.google.android.gms:asCardRoundedRipple">@*com.google.android.gms:drawable/as_card_rounded_ripple_dark</item>
         <item name="*com.google.android.gms:asCarouselRoundedRipple">@*com.google.android.gms:drawable/as_carousel_rounded_ripple_dark</item>
         <item name="*com.google.android.gms:asChevron">@*com.google.android.gms:drawable/as_chevron_dark</item>
@@ -150,7 +152,17 @@
         <item name="*com.google.android.gms:asSystemBarColor">@*android:color/primary_dark_material_dark</item>
         <item name="*com.google.android.gms:asTopNavTabSelectedIndicator">@*com.google.android.gms:drawable/as_top_nav_tab_selected_indicator_dark</item>
         <item name="*com.google.android.gms:asVerticalSpace">@*com.google.android.gms:drawable/as_vertical_space</item>
+        <item name="*com.google.android.gms:bottomAppBarStyle">@*com.google.android.gms:style/Widget.GoogleMaterial.BottomAppBar</item>
+        <item name="*com.google.android.gms:colorAccent">@*com.google.android.gms:color/google_blue300</item>
+        <item name="*com.google.android.gms:colorControlHighlight">@*android:color/white</item>
+        <item name="*com.google.android.gms:colorControlNormal">@*android:color/white</item>
+        <item name="*com.google.android.gms:colorPrimaryGoogle">@*com.google.android.gms:color/google_blue300</item>
+        <item name="*com.google.android.gms:colorPrimaryStateGoogle">@*com.google.android.gms:color/google_blue300</item>
+        <item name="*com.google.android.gms:colorPrimaryVariantGoogle">@*com.google.android.gms:color/google_blue300</item>
         <item name="*com.google.android.gms:materialAlertDialogTheme">@*com.google.android.gms:style/AsMaterialDialogThemeDark</item>
+        <item name="*com.google.android.gms:materialButtonStyle">@*com.google.android.gms:style/Widget.GoogleMaterial.Button</item>
+        <item name="*com.google.android.gms:windowActionBar">false</item>
+        <item name="*com.google.android.gms:windowNoTitle">true</item>
     </style>
     <style name="AsBaseAppThemeLightV23" parent="@*com.google.android.gms:style/AsBaseAppThemeDarkV21">
         <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
@@ -187,18 +199,16 @@
     <style name="AsHeaderWelcomeMessageTextAppearance" parent="@*com.google.android.gms:style/AsT2">
         <item name="android:textColor">@*android:color/white</item>
     </style>
-    <style name="AsMaterialDialogThemeDark" parent="@*com.google.android.gms:style/ThemeOverlay.GoogleMaterial.MaterialAlertDialog.Centered">
+    <style name="AsMaterialDialogThemeDark" parent="@*com.google.android.gms:style/ThemeOverlay.GoogleMaterial.MaterialAlertDialog">
         <item name="android:background">@*android:color/background_floating_material_dark</item>
-        <item name="*com.google.android.gms:alertDialogTheme">@*com.google.android.gms:style/MaterialAlertDialog.GoogleMaterial</item>
         <item name="*com.google.android.gms:colorAccent">@*com.google.android.gms:color/google_blue600</item>
         <item name="*com.google.android.gms:colorOnSurface">@*android:color/white</item>
         <item name="*com.google.android.gms:colorOnSurfaceVariant">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.gms:colorPrimary">@*com.google.android.gms:color/google_blue600</item>
         <item name="*com.google.android.gms:textAppearanceSubhead1">@*com.google.android.gms:style/TextAppearance.GoogleMaterial.Subhead1</item>
     </style>
-    <style name="AsMaterialDialogThemeLight" parent="@*com.google.android.gms:style/ThemeOverlay.GoogleMaterial.MaterialAlertDialog.Centered">
+    <style name="AsMaterialDialogThemeLight" parent="@*com.google.android.gms:style/ThemeOverlay.GoogleMaterial.MaterialAlertDialog">
         <item name="android:background">@*android:color/background_floating_material_dark</item>
-        <item name="*com.google.android.gms:alertDialogTheme">@*com.google.android.gms:style/MaterialAlertDialog.GoogleMaterial</item>
         <item name="*com.google.android.gms:colorAccent">@*com.google.android.gms:color/google_blue600</item>
         <item name="*com.google.android.gms:colorOnSurface">@*android:color/white</item>
         <item name="*com.google.android.gms:colorOnSurfaceVariant">@*android:color/secondary_text_default_material_dark</item>

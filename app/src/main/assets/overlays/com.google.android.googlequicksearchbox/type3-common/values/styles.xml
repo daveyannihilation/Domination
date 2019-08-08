@@ -24,6 +24,10 @@
         <item name="android:windowShowWallpaper">true</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
     </style>
+    <style name="BirthdayDatePickerDialogTheme" parent="@*android:style/Theme.Material.Dialog">
+        <item name="android:datePickerStyle">@*com.google.android.googlequicksearchbox:style/BirthdayDatePickerStyle</item>
+        <item name="android:colorAccent">@*com.google.android.googlequicksearchbox:color/google_blue600</item>
+    </style>
     <style name="CardActionButton">
         <item name="android:textSize">@*com.google.android.googlequicksearchbox:dimen/card_action_text</item>
         <item name="android:textColor">@*com.google.android.googlequicksearchbox:color/link_text</item>
@@ -178,28 +182,6 @@
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowFullscreen">false</item>
     </style>
-    <style name="Lens.Action" parent="@*android:style/TextAppearance.Medium">
-        <item name="android:textSize">14.0sp</item>
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:background">@*com.google.android.googlequicksearchbox:drawable/lens_action_background</item>
-        <item name="android:singleLine">true</item>
-        <item name="android:drawablePadding">@*com.google.android.googlequicksearchbox:dimen/lens_suggestion_icon_padding</item>
-        <item name="android:fontFamily">google-sans-medium</item>
-        <item name="android:paddingStart">@*com.google.android.googlequicksearchbox:dimen/lens_suggestion_text_horizontal_padding</item>
-        <item name="android:paddingEnd">@*com.google.android.googlequicksearchbox:dimen/lens_suggestion_text_horizontal_padding</item>
-    </style>
-    <style name="Lens.Suggestion" parent="@*android:style/TextAppearance.Medium">
-        <item name="android:textSize">14.0sp</item>
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:background">@*com.google.android.googlequicksearchbox:drawable/lens_suggestion_background</item>
-        <item name="android:paddingLeft">@*com.google.android.googlequicksearchbox:dimen/lens_suggestion_text_horizontal_padding</item>
-        <item name="android:paddingRight">@*com.google.android.googlequicksearchbox:dimen/lens_suggestion_text_horizontal_padding</item>
-        <item name="android:singleLine">true</item>
-        <item name="android:drawablePadding">@*com.google.android.googlequicksearchbox:dimen/lens_suggestion_icon_padding</item>
-        <item name="android:fontFamily">google-sans-medium</item>
-    </style>
     <style name="LineOneText">
         <item name="android:textAppearance">@*com.google.android.googlequicksearchbox:style/LineOneTextAppearance</item>
         <item name="android:ellipsize">end</item>
@@ -256,11 +238,6 @@
         <item name="android:textColor">@*android:color/white</item>
         <item name="android:fontFamily">@*com.google.android.googlequicksearchbox:font/google_sans_medium</item>
     </style>
-    <style name="MorrisSuggestionText">
-        <item name="android:textSize">16.0sp</item>
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:fontFamily">roboto-regular</item>
-    </style>
     <style name="MorrisTheme" parent="@*android:style/Theme.Material.NoActionBar" />
     <style name="MorrisTurnByTurnDistText">
         <item name="android:textSize">18.0sp</item>
@@ -289,6 +266,22 @@
         <item name="android:statusBarColor">@*android:color/transparent</item>
         <item name="android:navigationBarColor">@*android:color/transparent</item>
         <item name="android:backgroundTint">@null</item>
+    </style>
+    <style name="Opa.Button.Bya" parent="@*com.google.android.googlequicksearchbox:style/Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:background">@*android:color/button_material_dark</item>
+        <item name="android:padding">0.0dip</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@*com.google.android.googlequicksearchbox:font/google_sans_medium</item>
+    </style>
+    <style name="Opa.Button.Bya.Confirm" parent="@*com.google.android.googlequicksearchbox:style/Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@*com.google.android.googlequicksearchbox:color/bya_text_color</item>
+        <item name="android:background">@*android:color/button_material_dark</item>
+        <item name="android:padding">0.0dip</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@*com.google.android.googlequicksearchbox:font/google_sans_medium</item>
     </style>
     <style name="Opa.Button.Flat" parent="@*com.google.android.googlequicksearchbox:style/Widget.AppCompat.Button.Borderless">
         <item name="android:textColor">@*com.google.android.googlequicksearchbox:color/opa_button_tint</item>

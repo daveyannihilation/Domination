@@ -8,8 +8,13 @@
     <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse" parent="@*android:style/TextAppearance.Material.Widget.ActionBar.Title" />
     <style name="Base.TextAppearance.AppCompat.Widget.Button.Inverse" parent="@*android:style/TextAppearance.Material.Widget.Button" />
     <style name="Base.Theme.SystemSettings" parent="@*android:style/Theme.DeviceDefault.Light">
-        <item name="android:colorControlNormal">@*android:color/accent_material_dark</item>
+        <item name="android:colorControlNormal">@*android:color/white</item>
         <item name="*com.google.android.apps.wellbeing:titleTextColor">@*android:color/accent_material_dark</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:colorBackground">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:windowLightStatusBar">false</item>
     </style>
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabText" parent="@*android:style/Widget.Material.ActionBar.TabText" />
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabText.Inverse" parent="@*android:style/Widget.Material.ActionBar.TabText" />
@@ -35,18 +40,56 @@
         <item name="android:textColorLink">@*android:color/accent_material_dark</item>
         <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
     </style>
-    <style name="Platform.V25.AppCompat.Light" parent="@*android:style/Theme.Material.NoActionBar" />
-    <style name="Theme.GoogleMaterial.Light" parent="@*com.google.android.apps.wellbeing:style/Base.Theme.GoogleMaterial.Light">
+    <style name="Platform.V25.AppCompat" parent="@*android:style/Theme.Material.NoActionBar">
+        <item name="android:colorBackground">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowElevation">0.5dip</item>
+        <item name="android:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+    </style>
+    <style name="Platform.V25.AppCompat.Light" parent="@*android:style/Theme.Material.NoActionBar">
+        <item name="android:colorBackground">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowElevation">0.5dip</item>
+        <item name="android:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+    </style>
+    <style name="Theme.GoogleMaterial.Light" parent="@*com.google.android.apps.wellbeing:style/Base.Theme.GoogleMaterial.Dark">
         <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
         <item name="android:windowLightNavigationBar">false</item>
     </style>
-    <style name="Theme.GoogleMaterial.Light.BottomSheetDialog" parent="@*com.google.android.apps.wellbeing:style/Base.Theme.GoogleMaterial.Light.BottomSheetDialog">
+    <style name="Theme.GoogleMaterial.Light.BottomSheetDialog" parent="@*com.google.android.apps.wellbeing:style/Base.Theme.GoogleMaterial.Dark.BottomSheetDialog">
         <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
         <item name="android:windowLightNavigationBar">false</item>
         <item name="android:navigationBarDividerColor">@*android:color/primary_dark_material_dark</item>
     </style>
+    <style name="ThemeOverlay.SystemSettings.NoActionBar" parent="@*com.google.android.apps.wellbeing:style/Base.Theme.SystemSettings">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:buttonBarButtonStyle">@*com.google.android.apps.wellbeing:style/WellbeingButton</item>
+        <item name="*com.google.android.apps.wellbeing:colorAccent">@*android:color/accent_material_dark</item>
+        <item name="*com.google.android.apps.wellbeing:colorBackgroundFloating">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.apps.wellbeing:colorButtonNormal">?*android:colorButtonNormal</item>
+        <item name="*com.google.android.apps.wellbeing:colorControlActivated">?*android:colorControlActivated</item>
+        <item name="*com.google.android.apps.wellbeing:colorControlNormal">?*android:colorControlNormal</item>
+        <item name="*com.google.android.apps.wellbeing:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.apps.wellbeing:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.apps.wellbeing:colorPrimaryGoogle">@*android:color/accent_material_dark</item>
+        <item name="*com.google.android.apps.wellbeing:colorPrimaryStateInkGoogle">@*android:color/accent_material_dark</item>
+        <item name="*com.google.android.apps.wellbeing:colorPrimaryVariantGoogle">@*android:color/accent_material_dark</item>
+    </style>
     <style name="WellbeingPopup" parent="@*com.google.android.apps.wellbeing:style/Base.Theme.SystemSettings">
         <item name="*com.google.android.apps.wellbeing:colorSurface">@*android:color/background_floating_material_dark</item>
+    </style>
+    <style name="Widget.Design.AppBarLayout" parent="@*android:style/Widget">
+        <item name="android:background">@*android:color/primary_material_dark</item>
+        <item name="android:stateListAnimator">@*com.google.android.apps.wellbeing:animator/design_appbar_state_list_animator</item>
+        <item name="android:touchscreenBlocksFocus">true</item>
+        <item name="android:keyboardNavigationCluster">true</item>
     </style>
     <style name="Widget.Design.BottomSheet.Modal" parent="@*android:style/Widget">
         <item name="android:background">@*android:color/background_floating_material_dark</item>
@@ -72,6 +115,16 @@
     <style name="Widget.GoogleMaterial.ProductLockupView.Dark" parent="@*com.google.android.apps.wellbeing:style/Widget.GoogleMaterial.ProductLockupView">
         <item name="*com.google.android.apps.wellbeing:logoColor">light</item>
         <item name="*com.google.android.apps.wellbeing:productNameTextColor">@*android:color/white</item>
+    </style>
+    <style name="Widget.GoogleMaterial.Toolbar.Surface" parent="@*com.google.android.apps.wellbeing:style/Widget.GoogleMaterial.Toolbar">
+        <item name="android:background">@*android:color/primary_material_dark</item>
+    </style>
+    <style name="Widget.MaterialComponents.ActionBar.Surface" parent="@*com.google.android.apps.wellbeing:style/Widget.AppCompat.ActionBar.Solid">
+        <item name="*com.google.android.apps.wellbeing:background">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.apps.wellbeing:elevation">0.0dip</item>
+    </style>
+    <style name="Widget.MaterialComponents.AppBarLayout.Surface" parent="@*com.google.android.apps.wellbeing:style/Widget.Design.AppBarLayout">
+        <item name="android:background">@*android:color/primary_material_dark</item>
     </style>
     <style name="Widget.Wellbeing.ChevronButton" parent="@*com.google.android.apps.wellbeing:style/Widget.GoogleMaterial.Button.Icon">
         <item name="android:gravity">center</item>
