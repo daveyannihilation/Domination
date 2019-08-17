@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.GoogleMaterial.Light" parent="@*com.google.android.apps.googlevoice:style/Base.Theme.GoogleMaterial.Light">
+    <style name="Theme.GoogleMaterial.Light" parent="@*com.google.android.apps.googlevoice:style/Base.Theme.GoogleMaterial.Dark">
         <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
         <item name="android:windowLightNavigationBar">false</item>
     </style>
-    <style name="Theme.GoogleMaterial.Light.BottomSheetDialog" parent="@*com.google.android.apps.googlevoice:style/Base.Theme.GoogleMaterial.Light.BottomSheetDialog">
+    <style name="Theme.GoogleMaterial.Light.BottomSheetDialog" parent="@*com.google.android.apps.googlevoice:style/Base.Theme.GoogleMaterial.Dark.BottomSheetDialog">
         <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
         <item name="android:windowLightNavigationBar">false</item>
         <item name="android:navigationBarDividerColor">@*android:color/primary_dark_material_dark</item>
+    </style>
+    <style name="ThemeOverlay.GoogleMaterial.Light.BottomSheetDialog" parent="@*com.google.android.apps.googlevoice:style/ThemeOverlay.MaterialComponents.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@*com.google.android.apps.googlevoice:style/Animation.MaterialComponents.BottomSheetDialog</item>
+        <item name="android:statusBarColor">@*android:color/transparent</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:navigationBarDividerColor">@*android:color/transparent</item>
+        <item name="*com.google.android.apps.googlevoice:bottomSheetStyle">@*com.google.android.apps.googlevoice:style/Widget.GoogleMaterial.BottomSheet.Modal</item>
+        <item name="*com.google.android.apps.googlevoice:materialButtonStyle">@*com.google.android.apps.googlevoice:style/Widget.GoogleMaterial.Button</item>
     </style>
 </resources>

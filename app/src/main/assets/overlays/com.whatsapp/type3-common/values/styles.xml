@@ -35,6 +35,13 @@
         <item name="android:layout_centerInParent">true</item>
         <item name="android:textAllCaps">true</item>
     </style>
+    <style name="DatePickerDialog" parent="@*com.whatsapp:style/ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="android:headerBackground">#ff388e3c</item>
+        <item name="android:datePickerStyle">@*com.whatsapp:style/SpinnerDatePicker</item>
+        <item name="*com.whatsapp:colorControlActivated">@*com.whatsapp:color/accent</item>
+        <item name="*com.whatsapp:colorControlHighlight">@*com.whatsapp:color/accent</item>
+        <item name="*com.whatsapp:showTitle">false</item>
+    </style>
     <style name="DescribeProblemInlineLink" parent="@*android:style/Widget.TextView">
         <item name="android:textSize">14.0sp</item>
         <item name="android:textColor">#ff1976d2</item>
@@ -52,47 +59,17 @@
         <item name="android:divider">#00000000</item>
         <item name="android:dividerHeight">0.0px</item>
     </style>
-    <style name="MapBalloonDetails" parent="@*android:style/TextAppearance">
-        <item name="android:textSize">12.0sp</item>
-        <item name="android:textColor">#ffdddddd</item>
-        <item name="android:ellipsize">end</item>
-        <item name="android:paddingLeft">4.0dip</item>
-        <item name="android:paddingRight">4.0dip</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:maxLines">1</item>
-        <item name="android:lines">1</item>
-    </style>
-    <style name="MapBalloonTitle" parent="@*android:style/TextAppearance">
-        <item name="android:textSize">14.0sp</item>
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:ellipsize">end</item>
-        <item name="android:paddingLeft">4.0dip</item>
-        <item name="android:paddingRight">4.0dip</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:maxLines">1</item>
-        <item name="android:lines">1</item>
-    </style>
     <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light" />
     <style name="SettingsCategoryFooter" parent="@*com.whatsapp:style/Text.Description">
         <item name="android:textColor">#ffdddddd</item>
         <item name="android:gravity">fill_horizontal</item>
-        <item name="android:background">@*android:color/background_dark</item>
+        <item name="android:background">@*android:color/primary_dark_material_dark</item>
         <item name="android:paddingLeft">12.0dip</item>
         <item name="android:paddingTop">12.0dip</item>
         <item name="android:paddingRight">12.0dip</item>
         <item name="android:paddingBottom">12.0dip</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
-    </style>
-    <style name="Text" parent="@*android:style/TextAppearance">
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:shadowColor">#ff000000</item>
-        <item name="android:shadowDx">1.0</item>
-        <item name="android:shadowDy">1.0</item>
-        <item name="android:shadowRadius">0.0</item>
-        <item name="android:lineSpacingMultiplier">1.25</item>
     </style>
     <style name="Text.Bullet" parent="@*com.whatsapp:style/Text.Steps">
         <item name="android:textStyle">bold</item>
@@ -131,26 +108,15 @@
         <item name="android:shadowRadius">0.0</item>
         <item name="android:lineSpacingMultiplier">1.0</item>
     </style>
-    <style name="Theme.App" parent="@*com.whatsapp:style/Theme.AppCompat">
+    <style name="Theme.App.Black" parent="@*com.whatsapp:style/Theme.App">
         <item name="android:windowBackground">@*android:color/background_dark</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:fastScrollThumbDrawable">@*com.whatsapp:drawable/fastscroll_thumb</item>
-        <item name="android:fastScrollTrackDrawable">@*com.whatsapp:drawable/fastscroll_track</item>
-        <item name="*com.whatsapp:actionBarSize">@*com.whatsapp:dimen/actionbar_height</item>
-        <item name="*com.whatsapp:actionBarStyle">@*com.whatsapp:style/Widget.Styled.ActionBar</item>
-        <item name="*com.whatsapp:actionModeBackground">@*com.whatsapp:color/action_mode</item>
-        <item name="*com.whatsapp:colorAccent">@*com.whatsapp:color/accent</item>
-        <item name="*com.whatsapp:colorPrimary">@*com.whatsapp:color/primary</item>
-        <item name="*com.whatsapp:colorPrimaryDark">@*com.whatsapp:color/primary_dark</item>
-        <item name="*com.whatsapp:listItemSubtitle">@*com.whatsapp:style/ListItemSubtitle</item>
-        <item name="*com.whatsapp:listItemTitle">@*com.whatsapp:style/ListItemTitle</item>
-        <item name="*com.whatsapp:listSectionBackground">@*android:color/background_dark</item>
-        <item name="*com.whatsapp:listSectionDivider">@*com.whatsapp:style/ListSectionDivider</item>
-        <item name="*com.whatsapp:listSectionTitleText">@*com.whatsapp:style/ListSectionTitleText</item>
-        <item name="*com.whatsapp:panelMenuListTheme">@*com.whatsapp:style/PanelMenuList</item>
-        <item name="*com.whatsapp:primaryIconColor">@*com.whatsapp:color/icon_color</item>
-        <item name="*com.whatsapp:toolbarStyle">@*com.whatsapp:style/Widget.Styled.Toolbar</item>
-        <item name="*com.whatsapp:windowActionModeOverlay">true</item>
+        <item name="*com.whatsapp:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.whatsapp:colorPrimaryDark">@*android:color/transparent</item>
+    </style>
+    <style name="Theme.App.Bloks" parent="@*com.whatsapp:style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowTitleSize">56.0dip</item>
+        <item name="*com.whatsapp:colorPrimary">@*com.whatsapp:color/accent</item>
     </style>
     <style name="Theme.App.ChatInfo" parent="@*com.whatsapp:style/Theme.App">
         <item name="android:windowBackground">@*android:color/background_dark</item>
@@ -173,6 +139,14 @@
         <item name="*com.whatsapp:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
         <item name="*com.whatsapp:colorAccent">@*com.whatsapp:color/accent</item>
     </style>
+    <style name="Theme.App.Home" parent="@*com.whatsapp:style/Theme.App">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:fastScrollThumbDrawable">@*com.whatsapp:drawable/fastscroll_thumb_home</item>
+        <item name="android:fastScrollTrackDrawable">@*com.whatsapp:drawable/fastscroll_track</item>
+        <item name="*com.whatsapp:tabTitleStyle">@*com.whatsapp:style/TabTitle</item>
+        <item name="*com.whatsapp:windowActionBar">false</item>
+        <item name="*com.whatsapp:windowNoTitle">true</item>
+    </style>
     <style name="Theme.App.StatusPlayback" parent="@*com.whatsapp:style/Theme.App">
         <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="*com.whatsapp:windowActionBar">false</item>
@@ -194,13 +168,38 @@
         <item name="*com.whatsapp:windowActionBar">false</item>
         <item name="*com.whatsapp:windowNoTitle">true</item>
     </style>
+    <style name="Theme.RequestPermission" parent="@*com.whatsapp:style/Theme.App">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@*android:style/Animation.Dialog</item>
+        <item name="*com.whatsapp:colorAccent">@*com.whatsapp:color/accent</item>
+        <item name="*com.whatsapp:colorPrimaryDark">@*com.whatsapp:color/primary_dark_dimmed</item>
+        <item name="*com.whatsapp:windowActionBar">false</item>
+        <item name="*com.whatsapp:windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Voip" parent="@*com.whatsapp:style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="*com.whatsapp:actionBarSize">@*com.whatsapp:dimen/actionbar_height</item>
+        <item name="*com.whatsapp:actionBarStyle">@*com.whatsapp:style/Widget.Styled.ActionBar</item>
+        <item name="*com.whatsapp:colorAccent">@*com.whatsapp:color/accent</item>
+        <item name="*com.whatsapp:colorPrimary">@*com.whatsapp:color/primary_voip</item>
+        <item name="*com.whatsapp:colorPrimaryDark">@*com.whatsapp:color/primary_dark_voip</item>
+        <item name="*com.whatsapp:toolbarStyle">@*com.whatsapp:style/Widget.Styled.Toolbar</item>
+    </style>
     <style name="Toolbar" parent="@*com.whatsapp:style/ThemeOverlay.AppCompat.Dark.ActionBar">
         <item name="android:textColorPrimary">#ffffffff</item>
         <item name="android:textAppearanceMedium">@*com.whatsapp:style/TextAppearanceMenuList</item>
         <item name="*com.whatsapp:colorControlNormal">@*android:color/white</item>
-        <item name="*com.whatsapp:colorControlActivated">?android:textColorSecondary</item>
+        <item name="*com.whatsapp:colorControlActivated">?*android:textColorSecondary</item>
     </style>
     <style name="Toolbar.Popup" parent="@*com.whatsapp:style/ThemeOverlay.AppCompat.Dark" />
+    <style name="VoipDebugParam">
+        <item name="android:textSize">11.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@*android:color/background_dark</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
     <style name="WhatsAppButton.GreenTextButton" parent="@*com.whatsapp:style/Widget.AppCompat.Button.Borderless">
         <item name="android:textColor">#ff00796b</item>
         <item name="android:layout_gravity">center</item>

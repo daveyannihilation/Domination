@@ -2,7 +2,7 @@
 <merge
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto">
     <LinearLayout android:orientation="vertical" android:id="@*com.whatsapp:id/content" android:layout_width="@*com.whatsapp:dimen/conversation_row_document_width" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip">
-        <FrameLayout android:id="@*com.whatsapp:id/quoted_message_holder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@*com.whatsapp:style/QuotedFrame" />
+        <include layout="@*com.whatsapp:layout/conversation_row_quoted_frame" />
         <FrameLayout android:layout_gravity="center_vertical" android:id="@*com.whatsapp:id/map_frame" android:paddingLeft="@*com.whatsapp:dimen/conversation_video_thumb_padding" android:paddingTop="@*com.whatsapp:dimen/conversation_video_thumb_padding" android:paddingRight="@*com.whatsapp:dimen/conversation_video_thumb_padding" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="@*com.whatsapp:dimen/conversation_row_location_map_height">
             <com.whatsapp.WaImageView android:id="@*com.whatsapp:id/thumb" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@*com.whatsapp:drawable/map_loading" android:scaleType="fitCenter" />
             <com.whatsapp.location.WaMapView android:id="@*com.whatsapp:id/map_holder" android:layout_width="fill_parent" android:layout_height="fill_parent" />
