@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BasicActionButton" parent="@*com.android.vending:style/PlayMediumPlainText">
+        <item name="android:textSize">@*com.android.vending:dimen/play_price_small_size</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="*com.android.vending:action_bottom_padding">0.0dip</item>
+        <item name="*com.android.vending:action_top_padding">0.0dip</item>
+        <item name="*com.android.vending:action_xpadding">12.0dip</item>
+    </style>
+    <style name="DarkerMedium" parent="@*com.android.vending:style/TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="DetailsSecondaryActionButtonIcon">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">32.0dip</item>
+        <item name="android:layout_margin">2.0dip</item>
+        <item name="android:alpha">1.0</item>
+        <item name="android:tint">#ffdddddd</item>
+    </style>
+    <style name="ErrorNotifyButtonStyle" parent="@*com.android.vending:style/PlayCardTitle">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:background">@*com.android.vending:drawable/play_action_button_apps</item>
+        <item name="android:paddingLeft">@*com.android.vending:dimen/play_card_padding_xl</item>
+        <item name="android:paddingTop">@*com.android.vending:dimen/play_card_padding_m</item>
+        <item name="android:paddingRight">@*com.android.vending:dimen/play_card_padding_xl</item>
+        <item name="android:paddingBottom">@*com.android.vending:dimen/play_card_padding_m</item>
+        <item name="android:foreground">@*com.android.vending:drawable/play_highlight_round_overlay_dark</item>
+        <item name="android:minHeight">0.0dip</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="FamilyEducationCardAction" parent="@*com.android.vending:style/PlayCardAction">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">16.0dip</item>
+        <item name="android:minWidth">88.0dip</item>
+        <item name="android:minHeight">36.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="FamilyMemberSettingTheme" parent="@*com.android.vending:style/Theme.Replay.Apps">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:textColorLink">@*com.android.vending:color/family_action</item>
+        <item name="*com.android.vending:colorPrimary">@*com.android.vending:color/play_multi_primary</item>
+        <item name="*com.android.vending:colorPrimaryDark">@*com.android.vending:color/play_multi_recents</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+    </style>
+    <style name="FamilySetupTheme" parent="@*com.android.vending:style/FinskyTheme">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:textColorLink">#ff0097a7</item>
+        <item name="*com.android.vending:colorAccent">@*com.android.vending:color/play_multi_secondary</item>
+        <item name="*com.android.vending:colorPrimary">@*com.android.vending:color/play_multi_primary</item>
+        <item name="*com.android.vending:colorPrimaryDark">@*com.android.vending:color/play_multi_recents</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+    </style>
+    <style name="FamilySignupButton">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">56.0dip</item>
+    </style>
+    <style name="FinskyProgressSmallInverse" parent="@*android:style/Widget.Holo.ProgressBar.Small" />
+    <style name="FinskyOverlayTheme" parent="@*com.android.vending:style/FinskyTheme">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+    </style>
+    <style name="FinskyTheme" parent="@*com.android.vending:style/Theme.Replay.Apps.NoActionBar">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="*com.android.vending:colorAccent">@*com.android.vending:color/apps_primary_light</item>
+        <item name="*com.android.vending:delegateToSupportLibAlertDialog">true</item>
+        <item name="*com.android.vending:replayBottomSheetHandleBackground">@*com.android.vending:drawable/bottom_sheet_handle_background_light</item>
+        <item name="*com.android.vending:replayBottomSheetTopPaddingBackground">@*com.android.vending:drawable/bottom_sheet_top_padding_background_light</item>
+    </style>
+    <style name="GiftEmailTitleText">
+        <item name="android:textSize">@*com.android.vending:dimen/play_purchase_title_size</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="GvrDialogTheme" parent="@*android:style/Theme.Holo.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+    </style>
+    <style name="NotificationCenterCard">
+        <item name="android:background">@*android:color/background_floating_material_dark</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@*com.android.vending:dimen/notification_center_card_minimum_height</item>
+    </style>
+    <style name="PackageWarning.AlertDialog.PositiveButton" parent="@*com.android.vending:style/Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+    </style>
+    <style name="PEText">
+        <item name="android:textSize">@*com.android.vending:dimen/pe_medium_text_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="android:textColorLink">@*android:color/secondary_text_default_material_dark</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="PEText.CallToAction" parent="@*com.android.vending:style/PEText">
+        <item name="android:textSize">@*com.android.vending:dimen/pe_small_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:lines">1</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="PETitleText">
+        <item name="android:textSize">@*com.android.vending:dimen/pe_large_text_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="PhoneskyDrawerList">
+        <item name="android:background">@*android:color/background_floating_material_dark</item>
+        <item name="android:fadingEdgeLength">0.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.0dip</item>
+        <item name="android:cacheColorHint">@*android:color/background_floating_material_dark</item>
+        <item name="android:divider">@null</item>
+        <item name="android:choiceMode">none</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light" />
+    <style name="PlayAdLabelBaseline" parent="@*com.android.vending:style/PlayMediumPlainText">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:background">@*com.android.vending:drawable/play_ad_label</item>
+        <item name="android:paddingLeft">3.0dip</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:paddingRight">3.0dip</item>
+        <item name="android:paddingBottom">0.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="PlayAssistCardTemplate" parent="@*com.android.vending:style/PlayCardFlatList">
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:paddingBottom">0.0dip</item>
+        <item name="*com.android.vending:playCardBackgroundColor">@*android:color/background_dark</item>
+        <item name="*com.android.vending:playCardElevation">0.0dip</item>
+    </style>
+    <style name="PlayCardDescription" parent="@*com.android.vending:style/PlayPlainText">
+        <item name="android:textSize">@*com.android.vending:dimen/play_medium_size</item>
+        <item name="android:textColor">#ffdddddd</item>
+        <item name="android:singleLine">false</item>
+        <item name="*com.android.vending:lastLineOverdrawColor">@*android:color/primary_material_dark</item>
+    </style>
+    <style name="PlayCardLabel" parent="@*com.android.vending:style/PlayPlainText">
+       <item name="android:textSize">@*com.android.vending:dimen/play_medium_size</item>
+       <item name="android:textColor">@*android:color/white</item>
+       <item name="android:gravity">center</item>
+       <item name="android:background">@null</item>
+       <item name="android:layout_width">wrap_content</item>
+       <item name="android:layout_height">wrap_content</item>
+       <item name="android:minWidth">0.0dip</item>
+       <item name="android:minHeight">0.0dip</item>
+       <item name="android:maxLines">1</item>
+       <item name="android:singleLine">true</item>
+       <item name="android:drawablePadding">4.0dip</item>
+    </style>
+    <style name="PlayCardMyApps2" parent="@*com.android.vending:style/PlayCardFlatList">
+        <item name="*com.android.vending:playCardBackgroundColor">@*android:color/primary_material_dark</item>
+    </style>
+    <style name="PlayClusterAdLabel" parent="@*com.android.vending:style/PlayMediumPlainText">
+        <item name="android:textSize">11.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@*com.android.vending:drawable/play_ad_label</item>
+        <item name="android:paddingTop">1.0dip</item>
+        <item name="android:paddingBottom">1.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="PlayClusterMore" parent="@*com.android.vending:style/PlayMediumBoldText">
+        <item name="android:textSize">@*com.android.vending:dimen/play_cluster_header_more_size</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:paddingLeft">@*com.android.vending:dimen/play_cluster_header_more_xpadding</item>
+        <item name="android:paddingTop">@*com.android.vending:dimen/play_cluster_header_more_top_padding</item>
+        <item name="android:paddingRight">@*com.android.vending:dimen/play_cluster_header_more_xpadding</item>
+        <item name="android:paddingBottom">@*com.android.vending:dimen/play_cluster_header_more_bottom_padding</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="*com.android.vending:playCardBackgroundColor">@*android:color/primary_material_dark</item>
+        <item name="*com.android.vending:playCardCornerRadius">@*com.android.vending:dimen/play_action_button_corner</item>
+        <item name="*com.android.vending:playCardElevation">0.0dip</item>
+        <item name="*com.android.vending:playCardInset">0.0dip</item>
+        <item name="*com.android.vending:playCardClipToOutline">true</item>
+    </style>
+    <style name="PlayDrawerProfileEmailText" parent="@*com.android.vending:style/PlayPlainText">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffdddddd</item>
+    </style>
+    <style name="PlayDrawerProfileNameText" parent="@*com.android.vending:style/PlayMediumPlainText">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="PlayPassSpecialClusterAppTitle" parent="@*com.android.vending:style/TextAppearanceSubhead2.Medium">
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="PlayPassSpecialClusterCardTitle" parent="@*com.android.vending:style/TextAppearanceSubhead2">
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="PlaySearchPlate">
+        <item name="android:background">@*android:color/background_floating_material_dark</item>
+        <item name="android:paddingLeft">@*com.android.vending:dimen/play_search_plate_padding_side</item>
+        <item name="android:paddingRight">@*com.android.vending:dimen/play_search_plate_padding_side</item>
+    </style>
+    <style name="Play_DetailsPage_ActionButton" parent="@*com.android.vending:style/PlayMediumPlainText">
+        <item name="android:textSize">@*com.android.vending:dimen/play_price_small_size</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:foreground">@*com.android.vending:drawable/focus_overlay</item>
+        <item name="android:minWidth">@*com.android.vending:dimen/standard_button_minwidth</item>
+        <item name="android:minHeight">@*com.android.vending:dimen/details_button_small_height</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="*com.android.vending:action_bottom_padding">8.0dip</item>
+        <item name="*com.android.vending:action_top_padding">7.0dip</item>
+        <item name="*com.android.vending:action_xpadding">16.0dip</item>
+    </style>
+    <style name="PopupRedirectActivityThemeBottomSheet" parent="@*com.android.vending:style/PopupRedirectActivityTheme.BottomSheet">
+        <item name="*com.android.vending:colorPrimary">@*android:color/background_floating_material_dark</item>
+        <item name="*com.android.vending:colorPrimaryDark">@*android:color/background_dark</item>
+    </style>
+    <style name="PurchaseCheckCircleAnimation_apps">
+        <item name="*com.android.vending:checkColor">@*android:color/white</item>
+        <item name="*com.android.vending:circleColor">@*com.android.vending:color/apps_primary_light</item>
+    </style>
+    <style name="PurchaseCheckCircleAnimation_books">
+        <item name="*com.android.vending:checkColor">@*android:color/white</item>
+        <item name="*com.android.vending:circleColor">@*com.android.vending:color/books_primary_light</item>
+    </style>
+    <style name="PurchaseCheckCircleAnimation_movies">
+        <item name="*com.android.vending:checkColor">@*android:color/white</item>
+        <item name="*com.android.vending:circleColor">@*com.android.vending:color/movies_primary_light</item>
+    </style>
+    <style name="PurchaseCheckCircleAnimation_music">
+        <item name="*com.android.vending:checkColor">@*android:color/white</item>
+        <item name="*com.android.vending:circleColor">@*com.android.vending:color/music_primary_light</item>
+    </style>
+    <style name="PurchaseCheckCircleAnimation_newsstand">
+        <item name="*com.android.vending:checkColor">@*android:color/white</item>
+        <item name="*com.android.vending:circleColor">@*com.android.vending:color/news_primary_light</item>
+    </style>
+    <style name="RestoreDialog" parent="@*android:style/Theme.Material.Dialog.Alert">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+    </style>
+    <style name="RetailModeText">
+        <item name="android:textSize">@*com.android.vending:dimen/retail_mode_body_text_size</item>
+        <item name="android:textColor">#ffdddddd</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:lineSpacingMultiplier">@*com.android.vending:dimen/retail_mode_text_line_spacing</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="RetailModeTitleText">
+        <item name="android:textSize">@*com.android.vending:dimen/retail_mode_title_text_size</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:lineSpacingMultiplier">@*com.android.vending:dimen/retail_mode_title_line_spacing</item>
+        <item name="android:fontFamily">google-sans-medium</item>
+    </style>
+    <style name="SettingsTheme" parent="@*com.android.vending:style/Theme.Replay.Apps">
+        <item name="android:textAppearanceMedium">@*com.android.vending:style/DarkerMedium</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="*com.android.vending:colorAccent">@*com.android.vending:color/phonesky_apps_primary</item>
+        <item name="*com.android.vending:colorPrimary">@*com.android.vending:color/play_multi_primary</item>
+        <item name="*com.android.vending:colorPrimaryDark">@*com.android.vending:color/play_multi_primary</item>
+        <item name="*com.android.vending:delegateToSupportLibAlertDialog">true</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+    </style>
+    <style name="StreamIntroCard">
+        <item name="*com.android.vending:playCardBackgroundColor">@*android:color/background_dark</item>
+        <item name="*com.android.vending:playCardCornerRadius">@*com.android.vending:dimen/stream_intro_card_radius</item>
+        <item name="*com.android.vending:playCardElevation">@*com.android.vending:dimen/play_card_default_elevation</item>
+        <item name="*com.android.vending:playCardInset">@*com.android.vending:dimen/play_card_default_inset</item>
+        <item name="*com.android.vending:playCardClipToOutline">true</item>
+    </style>
+    <style name="SubscriptionClusterVisDRe">
+        <item name="android:background">@*android:color/primary_material_dark</item>
+        <item name="android:clickable">false</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="*com.android.vending:playCardBackgroundColor">@*android:color/primary_material_dark</item>
+    </style>
+    <style name="Theme.Base.InstrumentManager.Light" parent="@*android:style/Theme.Holo.NoActionBar" />
+    <style name="Theme.Instant.Dark" parent="@*com.android.vending:style/Theme.AppCompat.DayNight">
+        <item name="*com.android.vending:iaBackgroundPrimary">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.android.vending:iaBackgroundSecondary">@*android:color/primary_material_dark</item>
+        <item name="*com.android.vending:iaBlankUniformIcon">@*android:color/white</item>
+        <item name="*com.android.vending:iaChipTextSecondary">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.android.vending:iaErrorColorPrimary">@*com.android.vending:color/ia_alert_1_dark</item>
+        <item name="*com.android.vending:iaErrorColorSecondary">@*com.android.vending:color/ia_alert_2_dark</item>
+        <item name="*com.android.vending:iaHairlineDivider">@*android:color/white</item>
+        <item name="*com.android.vending:iaIconColored">@*com.android.vending:color/ia_primary_dark</item>
+        <item name="*com.android.vending:iaIconDefault">@*android:color/white</item>
+        <item name="*com.android.vending:iaIconHighContrast">@*android:color/white</item>
+        <item name="*com.android.vending:iaPrimary">@*com.android.vending:color/ia_primary_dark</item>
+        <item name="*com.android.vending:iaPrimary2">@*com.android.vending:color/ia_primary_2_dark</item>
+        <item name="*com.android.vending:iaPrimary3">@*com.android.vending:color/ia_primary_3_dark</item>
+        <item name="*com.android.vending:iaPrimaryButtonFillDisabled">@*android:color/background_floating_material_dark</item>
+        <item name="*com.android.vending:iaPrimaryButtonLabel">@*android:color/white</item>
+        <item name="*com.android.vending:iaPrimaryButtonLabelDisabled">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.android.vending:iaProgressBarBackground">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.android.vending:iaProgressBarIndicatorColor">@*com.android.vending:color/ia_primary_light</item>
+        <item name="*com.android.vending:iaProgressCircleIndicatorColor">@*android:color/white</item>
+        <item name="*com.android.vending:iaSecondaryButtonFillDisabled">@*android:color/background_floating_material_dark</item>
+        <item name="*com.android.vending:iaTextLink">@*com.android.vending:color/ia_primary_dark</item>
+        <item name="*com.android.vending:iaTextPrimary">@*android:color/white</item>
+        <item name="*com.android.vending:iaTextSecondary">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.android.vending:iaTextTertiary">@*android:color/secondary_text_default_material_dark</item>
+    </style>
+    <style name="Theme.Instant.Light" parent="@*com.android.vending:style/Theme.AppCompat.DayNight">
+        <item name="*com.android.vending:iaBackgroundPrimary">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.android.vending:iaBackgroundSecondary">@*android:color/primary_material_dark</item>
+        <item name="*com.android.vending:iaBlankUniformIcon">@*android:color/white</item>
+        <item name="*com.android.vending:iaChipTextSecondary">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.android.vending:iaErrorColorPrimary">@*com.android.vending:color/ia_alert_1_light</item>
+        <item name="*com.android.vending:iaErrorColorSecondary">@*com.android.vending:color/ia_alert_2_light</item>
+        <item name="*com.android.vending:iaHairlineDivider">@*android:color/white</item>
+        <item name="*com.android.vending:iaIconColored">@*com.android.vending:color/ia_primary_light</item>
+        <item name="*com.android.vending:iaIconDefault">@*android:color/white</item>
+        <item name="*com.android.vending:iaIconHighContrast">@*android:color/white</item>
+        <item name="*com.android.vending:iaPrimary">@*com.android.vending:color/ia_primary_light</item>
+        <item name="*com.android.vending:iaPrimary2">@*com.android.vending:color/ia_primary_2_light</item>
+        <item name="*com.android.vending:iaPrimary3">@*com.android.vending:color/ia_primary_3_light</item>
+        <item name="*com.android.vending:iaPrimaryButtonFillDisabled">@*android:color/background_floating_material_dark</item>
+        <item name="*com.android.vending:iaPrimaryButtonLabel">@*android:color/white</item>
+        <item name="*com.android.vending:iaPrimaryButtonLabelDisabled">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.android.vending:iaProgressBarBackground">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.android.vending:iaProgressBarIndicatorColor">@*com.android.vending:color/ia_primary_light</item>
+        <item name="*com.android.vending:iaProgressCircleIndicatorColor">@*android:color/white</item>
+        <item name="*com.android.vending:iaSecondaryButtonFillDisabled">@*android:color/background_floating_material_dark</item>
+        <item name="*com.android.vending:iaTextLink">@*com.android.vending:color/ia_primary_light</item>
+        <item name="*com.android.vending:iaTextPrimary">@*android:color/white</item>
+        <item name="*com.android.vending:iaTextSecondary">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.android.vending:iaTextTertiary">@*android:color/secondary_text_default_material_dark</item>
+    </style>
+    <style name="Theme.QuickInstallProgress.AppNameText" parent="@*android:style/TextAppearance.Material.Subhead">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="Theme.Replay.Apps.Dialog.Light" parent="@*com.android.vending:style/Theme.GoogleMaterial.Light.Dialog.Bridge">
+        <item name="android:textColorPrimary">@*com.android.vending:color/replay__text_color_primary_light</item>
+        <item name="android:textColorSecondary">@*com.android.vending:color/replay__text_color_secondary_light</item>
+        <item name="*com.android.vending:apps2">@*android:color/white</item>
+        <item name="*com.android.vending:apps3">@*android:color/background_dark</item>
+        <item name="*com.android.vending:appsPrimary">@*com.android.vending:color/apps_primary_light</item>
+        <item name="*com.android.vending:backgroundPrimary">@*android:color/background_floating_material_dark</item>
+        <item name="*com.android.vending:backgroundPrimaryInverse">@*android:color/background_floating_material_dark</item>
+        <item name="*com.android.vending:backgroundSecondary">@*android:color/button_material_dark</item>
+        <item name="*com.android.vending:blankUniformIcon">@*android:color/background_floating_material_dark</item>
+        <item name="*com.android.vending:bodyFont">roboto-regular</item>
+        <item name="*com.android.vending:books2">@*android:color/white</item>
+        <item name="*com.android.vending:books3">@*com.android.vending:color/books_3_light</item>
+        <item name="*com.android.vending:booksPrimary">@*com.android.vending:color/books_primary_light</item>
+        <item name="*com.android.vending:bottomSheetDialogTheme">@*com.android.vending:style/Theme.Replay.Dark.BottomSheetDialog</item>
+        <item name="*com.android.vending:bronze2">@*android:color/white</item>
+        <item name="*com.android.vending:bronze3">@*com.android.vending:color/bronze_3_light</item>
+        <item name="*com.android.vending:bronzePrimary">@*com.android.vending:color/bronze_primary_light</item>
+        <item name="*com.android.vending:captionFontMedium">sans-serif-medium</item>
+        <item name="*com.android.vending:chipTextSecondary">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.android.vending:diamond2">@*android:color/white</item>
+        <item name="*com.android.vending:diamond3">@*com.android.vending:color/diamond_3_light</item>
+        <item name="*com.android.vending:diamondPrimary">@*com.android.vending:color/diamond_primary_light</item>
+        <item name="*com.android.vending:enterprise2">@*android:color/white</item>
+        <item name="*com.android.vending:enterprise3">@*com.android.vending:color/enterprise_3_light</item>
+        <item name="*com.android.vending:enterprisePrimary">@*com.android.vending:color/enterprise_primary_light</item>
+        <item name="*com.android.vending:errorColorPrimary">@*com.android.vending:color/alert_1_light</item>
+        <item name="*com.android.vending:errorColorSecondary">@*com.android.vending:color/alert_2_light</item>
+        <item name="*com.android.vending:forceAllCapsForButtonAndTabLabels">true</item>
+        <item name="*com.android.vending:gold2">@*android:color/white</item>
+        <item name="*com.android.vending:gold3">@*com.android.vending:color/gold_3_light</item>
+        <item name="*com.android.vending:goldPrimary">@*com.android.vending:color/gold_primary_light</item>
+        <item name="*com.android.vending:gray_100">@*com.android.vending:color/replay__pal_gray_100</item>
+        <item name="*com.android.vending:gray_300">@*android:color/transparent</item>
+        <item name="*com.android.vending:gray_500">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.android.vending:gray_700">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.android.vending:gray_800">@*android:color/white</item>
+        <item name="*com.android.vending:hairlineDivider">@*android:color/white</item>
+        <item name="*com.android.vending:headlineFont">roboto-regular</item>
+        <item name="*com.android.vending:headlineFontMedium">sans-serif-medium</item>
+        <item name="*com.android.vending:iconDefault">@*android:color/white</item>
+        <item name="*com.android.vending:iconHighContrast">@*android:color/white</item>
+        <item name="*com.android.vending:movies2">@*android:color/white</item>
+        <item name="*com.android.vending:movies3">@*com.android.vending:color/movies_3_light</item>
+        <item name="*com.android.vending:moviesPrimary">@*com.android.vending:color/movies_primary_light</item>
+        <item name="*com.android.vending:music2">@*android:color/white</item>
+        <item name="*com.android.vending:music3">@*com.android.vending:color/music_3_light</item>
+        <item name="*com.android.vending:musicPrimary">@*com.android.vending:color/music_primary_light</item>
+        <item name="*com.android.vending:newsPrimary">@*com.android.vending:color/news_primary_light</item>
+        <item name="*com.android.vending:platinum2">@*android:color/white</item>
+        <item name="*com.android.vending:platinum3">@*com.android.vending:color/platinum_3_light</item>
+        <item name="*com.android.vending:platinumPrimary">@*com.android.vending:color/platinum_primary_light</item>
+        <item name="*com.android.vending:primaryButtonFillDisabled">@*android:color/background_floating_material_dark</item>
+        <item name="*com.android.vending:primaryButtonLabel">@*android:color/white</item>
+        <item name="*com.android.vending:primaryButtonLabelDisabled">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.android.vending:progressBarBackground">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.android.vending:ratingStarOutline">@*android:color/white</item>
+        <item name="*com.android.vending:replayDialogSelectableItemTint">@*com.android.vending:color/replay__selectable_item_tint</item>
+        <item name="*com.android.vending:secondaryButtonFillDisabled">@*android:color/background_floating_material_dark</item>
+        <item name="*com.android.vending:silver2">@*android:color/white</item>
+        <item name="*com.android.vending:silver3">@*com.android.vending:color/silver_3_light</item>
+        <item name="*com.android.vending:silverPrimary">@*com.android.vending:color/silver_primary_light</item>
+        <item name="*com.android.vending:subheadFont">roboto-regular</item>
+        <item name="*com.android.vending:subtitleFontMedium">sans-serif-medium</item>
+        <item name="*com.android.vending:textAppearanceBody1">@*com.android.vending:style/TextAppearanceBody1</item>
+        <item name="*com.android.vending:textAppearanceBody2">@*com.android.vending:style/TextAppearanceBody2</item>
+        <item name="*com.android.vending:textAppearanceBody2Medium">@*com.android.vending:style/TextAppearanceBody2.Medium</item>
+        <item name="*com.android.vending:textAppearanceButton">@*com.android.vending:style/TextAppearanceButton</item>
+        <item name="*com.android.vending:textAppearanceCaption">@*com.android.vending:style/TextAppearanceCaption</item>
+        <item name="*com.android.vending:textAppearanceCaption2">@*com.android.vending:style/TextAppearanceCaption2</item>
+        <item name="*com.android.vending:textAppearanceCaptionMedium">@*com.android.vending:style/TextAppearanceCaption.Medium</item>
+        <item name="*com.android.vending:textAppearanceDisplay1">@*com.android.vending:style/TextAppearanceDisplay1</item>
+        <item name="*com.android.vending:textAppearanceDisplay2">@*com.android.vending:style/TextAppearanceDisplay2</item>
+        <item name="*com.android.vending:textAppearanceDisplay3">@*com.android.vending:style/TextAppearanceDisplay3</item>
+        <item name="*com.android.vending:textAppearanceHeadline1">@*com.android.vending:style/TextAppearanceHeadline1</item>
+        <item name="*com.android.vending:textAppearanceHeadline1Medium">@*com.android.vending:style/TextAppearanceHeadline1.Medium</item>
+        <item name="*com.android.vending:textAppearanceHeadline2">@*com.android.vending:style/TextAppearanceHeadline2</item>
+        <item name="*com.android.vending:textAppearanceHeadline3">@*com.android.vending:style/TextAppearanceHeadline3</item>
+        <item name="*com.android.vending:textAppearanceHeadline3Medium">@*com.android.vending:style/TextAppearanceHeadline3.Medium</item>
+        <item name="*com.android.vending:textAppearanceHeadline4">@*com.android.vending:style/TextAppearanceHeadline4</item>
+        <item name="*com.android.vending:textAppearanceHeadline4Medium">@*com.android.vending:style/TextAppearanceHeadline4.Medium</item>
+        <item name="*com.android.vending:textAppearanceHeadline5">@*com.android.vending:style/TextAppearanceHeadline5</item>
+        <item name="*com.android.vending:textAppearanceHeadline5Medium">@*com.android.vending:style/TextAppearanceHeadline5.Medium</item>
+        <item name="*com.android.vending:textAppearanceHeadline6">@*com.android.vending:style/TextAppearanceHeadline6</item>
+        <item name="*com.android.vending:textAppearanceHeadline6Medium">@*com.android.vending:style/TextAppearanceHeadline6.Medium</item>
+        <item name="*com.android.vending:textAppearanceHeadline7">@*com.android.vending:style/TextAppearanceHeadline7</item>
+        <item name="*com.android.vending:textAppearanceOverline">@*com.android.vending:style/TextAppearanceOverline</item>
+        <item name="*com.android.vending:textAppearanceSubhead1">@*com.android.vending:style/TextAppearanceSubhead1</item>
+        <item name="*com.android.vending:textAppearanceSubhead1Medium">@*com.android.vending:style/TextAppearanceSubhead1.Medium</item>
+        <item name="*com.android.vending:textAppearanceSubhead2">@*com.android.vending:style/TextAppearanceSubhead2</item>
+        <item name="*com.android.vending:textAppearanceSubhead2Medium">@*com.android.vending:style/TextAppearanceSubhead2.Medium</item>
+        <item name="*com.android.vending:textAppearanceSubtitle1">@*com.android.vending:style/TextAppearanceSubtitle1</item>
+        <item name="*com.android.vending:textAppearanceSubtitle2">@*com.android.vending:style/TextAppearanceSubtitle2</item>
+        <item name="*com.android.vending:textAppearanceSubtitle2Medium">@*com.android.vending:style/TextAppearanceSubtitle2.Medium</item>
+        <item name="*com.android.vending:textPrimary">@*android:color/white</item>
+        <item name="*com.android.vending:textPrimaryDisabled">@*com.android.vending:color/grey_900_30_per_opacity</item>
+        <item name="*com.android.vending:textSecondary">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.android.vending:textSecondaryDisabled">@*com.android.vending:color/grey_700_30_per_opacity</item>
+        <item name="*com.android.vending:textTertiary">@*android:color/secondary_text_default_material_dark</item>
+    </style>
+    <style name="Theme.Replay.Apps.Light" parent="@*com.android.vending:style/Theme.GoogleMaterial.Light.Bridge">
+        <item name="android:textColorPrimary">@*com.android.vending:color/replay__text_color_primary_light</item>
+        <item name="android:textColorSecondary">@*com.android.vending:color/replay__text_color_secondary_light</item>
+        <item name="*com.android.vending:apps2">@*android:color/white</item>
+        <item name="*com.android.vending:apps3">@*android:color/background_dark</item>
+        <item name="*com.android.vending:appsPrimary">@*com.android.vending:color/apps_primary_light</item>
+        <item name="*com.android.vending:backgroundPrimary">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.android.vending:backgroundPrimaryInverse">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.android.vending:backgroundSecondary">@*android:color/primary_material_dark</item>
+        <item name="*com.android.vending:blankUniformIcon">@*android:color/background_floating_material_dark</item>
+        <item name="*com.android.vending:bodyFont">roboto-regular</item>
+        <item name="*com.android.vending:books2">@*android:color/white</item>
+        <item name="*com.android.vending:books3">@*com.android.vending:color/books_3_light</item>
+        <item name="*com.android.vending:booksPrimary">@*com.android.vending:color/books_primary_light</item>
+        <item name="*com.android.vending:bottomSheetDialogTheme">@*com.android.vending:style/Theme.Replay.Dark.BottomSheetDialog</item>
+        <item name="*com.android.vending:bronze2">@*android:color/white</item>
+        <item name="*com.android.vending:bronze3">@*com.android.vending:color/bronze_3_light</item>
+        <item name="*com.android.vending:bronzePrimary">@*com.android.vending:color/bronze_primary_light</item>
+        <item name="*com.android.vending:captionFontMedium">sans-serif-medium</item>
+        <item name="*com.android.vending:chipTextSecondary">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.android.vending:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.android.vending:diamond2">@*android:color/white</item>
+        <item name="*com.android.vending:diamond3">@*com.android.vending:color/diamond_3_light</item>
+        <item name="*com.android.vending:diamondPrimary">@*com.android.vending:color/diamond_primary_light</item>
+        <item name="*com.android.vending:enterprise2">@*android:color/white</item>
+        <item name="*com.android.vending:enterprise3">@*com.android.vending:color/enterprise_3_light</item>
+        <item name="*com.android.vending:enterprisePrimary">@*com.android.vending:color/enterprise_primary_light</item>
+        <item name="*com.android.vending:errorColorPrimary">@*com.android.vending:color/alert_1_light</item>
+        <item name="*com.android.vending:errorColorSecondary">@*com.android.vending:color/alert_2_light</item>
+        <item name="*com.android.vending:forceAllCapsForButtonAndTabLabels">true</item>
+        <item name="*com.android.vending:gold2">@*android:color/white</item>
+        <item name="*com.android.vending:gold3">@*com.android.vending:color/gold_3_light</item>
+        <item name="*com.android.vending:goldPrimary">@*com.android.vending:color/gold_primary_light</item>
+        <item name="*com.android.vending:gray_300">@*android:color/transparent</item>
+        <item name="*com.android.vending:gray_500">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.android.vending:gray_700">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.android.vending:gray_800">@*android:color/white</item>
+        <item name="*com.android.vending:hairlineDivider">@*android:color/white</item>
+        <item name="*com.android.vending:headlineFont">roboto-regular</item>
+        <item name="*com.android.vending:headlineFontMedium">sans-serif-medium</item>
+        <item name="*com.android.vending:iconDefault">@*android:color/white</item>
+        <item name="*com.android.vending:iconHighContrast">@*android:color/white</item>
+        <item name="*com.android.vending:movies2">@*android:color/white</item>
+        <item name="*com.android.vending:movies3">@*com.android.vending:color/movies_3_light</item>
+        <item name="*com.android.vending:moviesPrimary">@*com.android.vending:color/movies_primary_light</item>
+        <item name="*com.android.vending:music2">@*android:color/white</item>
+        <item name="*com.android.vending:music3">@*com.android.vending:color/music_3_light</item>
+        <item name="*com.android.vending:musicPrimary">@*com.android.vending:color/music_primary_light</item>
+        <item name="*com.android.vending:newsPrimary">@*com.android.vending:color/news_primary_light</item>
+        <item name="*com.android.vending:platinum2">@*android:color/white</item>
+        <item name="*com.android.vending:platinum3">@*com.android.vending:color/platinum_3_light</item>
+        <item name="*com.android.vending:platinumPrimary">@*com.android.vending:color/platinum_primary_light</item>
+        <item name="*com.android.vending:primaryButtonFillDisabled">@*android:color/background_floating_material_dark</item>
+        <item name="*com.android.vending:primaryButtonLabel">@*android:color/white</item>
+        <item name="*com.android.vending:primaryButtonLabelDisabled">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.android.vending:progressBarBackground">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.android.vending:ratingStarOutline">@*android:color/white</item>
+        <item name="*com.android.vending:replayDialogSelectableItemTint">@*com.android.vending:color/replay__selectable_item_tint</item>
+        <item name="*com.android.vending:replay__palette_050">@*com.android.vending:color/replay__pal_apps_050</item>
+        <item name="*com.android.vending:replay__palette_100">@*com.android.vending:color/replay__pal_apps_100</item>
+        <item name="*com.android.vending:replay__palette_200">@*com.android.vending:color/replay__pal_apps_200</item>
+        <item name="*com.android.vending:replay__palette_300">@*com.android.vending:color/replay__pal_apps_300</item>
+        <item name="*com.android.vending:replay__palette_400">@*com.android.vending:color/replay__pal_apps_400</item>
+        <item name="*com.android.vending:replay__palette_500">@*com.android.vending:color/replay__pal_apps_500</item>
+        <item name="*com.android.vending:replay__palette_600">@*com.android.vending:color/replay__pal_apps_600</item>
+        <item name="*com.android.vending:replay__palette_700">@*com.android.vending:color/replay__pal_apps_700</item>
+        <item name="*com.android.vending:replay__palette_800">@*com.android.vending:color/replay__pal_apps_800</item>
+        <item name="*com.android.vending:replay__palette_900">@*com.android.vending:color/replay__pal_apps_900</item>
+        <item name="*com.android.vending:secondaryButtonFillDisabled">@*android:color/background_floating_material_dark</item>
+        <item name="*com.android.vending:silver2">@*android:color/white</item>
+        <item name="*com.android.vending:silver3">@*com.android.vending:color/silver_3_light</item>
+        <item name="*com.android.vending:silverPrimary">@*com.android.vending:color/silver_primary_light</item>
+        <item name="*com.android.vending:subheadFont">roboto-regular</item>
+        <item name="*com.android.vending:subtitleFontMedium">sans-serif-medium</item>
+        <item name="*com.android.vending:textAppearanceBody1">@*com.android.vending:style/TextAppearanceBody1</item>
+        <item name="*com.android.vending:textAppearanceBody2">@*com.android.vending:style/TextAppearanceBody2</item>
+        <item name="*com.android.vending:textAppearanceBody2Medium">@*com.android.vending:style/TextAppearanceBody2.Medium</item>
+        <item name="*com.android.vending:textAppearanceButton">@*com.android.vending:style/TextAppearanceButton</item>
+        <item name="*com.android.vending:textAppearanceCaption">@*com.android.vending:style/TextAppearanceCaption</item>
+        <item name="*com.android.vending:textAppearanceCaption2">@*com.android.vending:style/TextAppearanceCaption2</item>
+        <item name="*com.android.vending:textAppearanceCaptionMedium">@*com.android.vending:style/TextAppearanceCaption.Medium</item>
+        <item name="*com.android.vending:textAppearanceDisplay1">@*com.android.vending:style/TextAppearanceDisplay1</item>
+        <item name="*com.android.vending:textAppearanceDisplay2">@*com.android.vending:style/TextAppearanceDisplay2</item>
+        <item name="*com.android.vending:textAppearanceDisplay3">@*com.android.vending:style/TextAppearanceDisplay3</item>
+        <item name="*com.android.vending:textAppearanceHeadline1">@*com.android.vending:style/TextAppearanceHeadline1</item>
+        <item name="*com.android.vending:textAppearanceHeadline1Medium">@*com.android.vending:style/TextAppearanceHeadline1.Medium</item>
+        <item name="*com.android.vending:textAppearanceHeadline2">@*com.android.vending:style/TextAppearanceHeadline2</item>
+        <item name="*com.android.vending:textAppearanceHeadline3">@*com.android.vending:style/TextAppearanceHeadline3</item>
+        <item name="*com.android.vending:textAppearanceHeadline3Medium">@*com.android.vending:style/TextAppearanceHeadline3.Medium</item>
+        <item name="*com.android.vending:textAppearanceHeadline4">@*com.android.vending:style/TextAppearanceHeadline4</item>
+        <item name="*com.android.vending:textAppearanceHeadline4Medium">@*com.android.vending:style/TextAppearanceHeadline4.Medium</item>
+        <item name="*com.android.vending:textAppearanceHeadline5">@*com.android.vending:style/TextAppearanceHeadline5</item>
+        <item name="*com.android.vending:textAppearanceHeadline5Medium">@*com.android.vending:style/TextAppearanceHeadline5.Medium</item>
+        <item name="*com.android.vending:textAppearanceHeadline6">@*com.android.vending:style/TextAppearanceHeadline6</item>
+        <item name="*com.android.vending:textAppearanceHeadline6Medium">@*com.android.vending:style/TextAppearanceHeadline6.Medium</item>
+        <item name="*com.android.vending:textAppearanceHeadline7">@*com.android.vending:style/TextAppearanceHeadline7</item>
+        <item name="*com.android.vending:textAppearanceOverline">@*com.android.vending:style/TextAppearanceOverline</item>
+        <item name="*com.android.vending:textAppearanceSubhead1">@*com.android.vending:style/TextAppearanceSubhead1</item>
+        <item name="*com.android.vending:textAppearanceSubhead1Medium">@*com.android.vending:style/TextAppearanceSubhead1.Medium</item>
+        <item name="*com.android.vending:textAppearanceSubhead2">@*com.android.vending:style/TextAppearanceSubhead2</item>
+        <item name="*com.android.vending:textAppearanceSubhead2Medium">@*com.android.vending:style/TextAppearanceSubhead2.Medium</item>
+        <item name="*com.android.vending:textAppearanceSubtitle1">@*com.android.vending:style/TextAppearanceSubtitle1</item>
+        <item name="*com.android.vending:textAppearanceSubtitle2">@*com.android.vending:style/TextAppearanceSubtitle2</item>
+        <item name="*com.android.vending:textAppearanceSubtitle2Medium">@*com.android.vending:style/TextAppearanceSubtitle2.Medium</item>
+        <item name="*com.android.vending:textPrimary">@*android:color/white</item>
+        <item name="*com.android.vending:textPrimaryDisabled">@*com.android.vending:color/grey_900_30_per_opacity</item>
+        <item name="*com.android.vending:textSecondary">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.android.vending:textSecondaryDisabled">@*com.android.vending:color/grey_700_30_per_opacity</item>
+        <item name="*com.android.vending:textTertiary">@*android:color/secondary_text_default_material_dark</item>
+    </style>
+    <style name="ThemeOverlay.GoogleMaterial.Snackbar" parent="">
+        <item name="*com.android.vending:colorOnSurface">@*android:color/background_floating_material_dark</item>
+    </style>
+    <style name="VisReOverride">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="*com.android.vending:cluster_header_bottom_margin">@*com.android.vending:dimen/medium_typography_padding</item>
+        <item name="*com.android.vending:forceAllCapsForButtonAndTabLabels">false</item>
+        <item name="*com.android.vending:headlineFont">@*com.android.vending:font/google_sans</item>
+        <item name="*com.android.vending:headlineFontMedium">@*com.android.vending:font/google_sans_medium</item>
+        <item name="*com.android.vending:playCardCornerRadius">0.0dip</item>
+        <item name="*com.android.vending:playCardElevation">0.0dip</item>
+        <item name="*com.android.vending:play_main_background">@*android:color/background_dark</item>
+        <item name="*com.android.vending:visde_active">true</item>
+    </style>
+    <style name="WarmWelcomeV2CardAction" parent="@*com.android.vending:style/PlayMediumBoldText">
+        <item name="android:textSize">@*com.android.vending:dimen/play_card_action_size</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+        <item name="android:minWidth">88.0dip</item>
+        <item name="android:minHeight">48.0dip</item>
+        <item name="*com.android.vending:playAccessibilityClassOverride">android.widget.Button</item>
+    </style>
+    <style name="WarmWelcomeV2CardDescription" parent="@*com.android.vending:style/PlayEduCardDescription">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:paddingLeft">@*com.android.vending:dimen/warm_welcome_v2_card_text_padding</item>
+        <item name="android:paddingRight">@*com.android.vending:dimen/warm_welcome_v2_card_text_padding</item>
+    </style>
+    <style name="WarmWelcomeV2CardTitle" parent="@*com.android.vending:style/PlayEduCardTitle">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:paddingLeft">@*com.android.vending:dimen/warm_welcome_v2_card_text_padding</item>
+        <item name="android:paddingRight">@*com.android.vending:dimen/warm_welcome_v2_card_text_padding</item>
+    </style>
+    <style name="Widget.Design.BottomSheet.Modal" parent="@*android:style/Widget">
+        <item name="android:background">@*android:color/background_floating_material_dark</item>
+        <item name="*com.android.vending:backgroundTint">@*android:color/background_floating_material_dark</item>
+        <item name="*com.android.vending:behavior_hideable">true</item>
+        <item name="*com.android.vending:behavior_peekHeight">auto</item>
+        <item name="*com.android.vending:behavior_skipCollapsed">false</item>
+        <item name="*com.android.vending:enforceMaterialTheme">false</item>
+        <item name="*com.android.vending:shapeAppearance">@null</item>
+        <item name="*com.android.vending:shapeAppearanceOverlay">@null</item>
+    </style>
+    <style name="Widget.GoogleMaterial.ProductLockupView.Dark" parent="@*com.android.vending:style/Widget.GoogleMaterial.ProductLockupView">
+        <item name="*com.android.vending:logoColor">light</item>
+        <item name="*com.android.vending:productNameTextColor">@*android:color/white</item>
+    </style>
+</resources>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@*com.google.android.calendar:id/view_screen_coordinator_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@*android:color/background_floating_material_dark"
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@*com.google.android.calendar:id/view_screen_coordinator_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <FrameLayout android:layout_gravity="center_horizontal" android:id="@*com.google.android.calendar:id/event_info_progress_bar_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
         <ProgressBar android:id="@*com.google.android.calendar:id/event_info_progress_bar" android:layout_width="@*com.google.android.calendar:dimen/info_segment_single_height" android:layout_height="@*com.google.android.calendar:dimen/info_segment_single_height" android:layout_marginTop="24.0dip" android:indeterminate="true" />
     </FrameLayout>
-    <FrameLayout android:id="@*com.google.android.calendar:id/event_info" android:backgroundTint="@*android:color/background_floating_material_dark" android:background="@*android:color/background_dark" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+    <FrameLayout android:id="@*com.google.android.calendar:id/event_info" android:background="@*android:color/primary_dark_material_dark" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
         <FrameLayout android:id="@*com.google.android.calendar:id/header_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no">
             <TextView android:textColor="@*android:color/white" android:layout_gravity="start|bottom|center" android:id="@*com.google.android.calendar:id/header_attribute" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="48.0dip" android:alpha="0.0" style="@*com.google.android.calendar:style/InfoHeadlineAttributionI18n" />
         </FrameLayout>
@@ -23,11 +23,11 @@
                 </FrameLayout>
             </FrameLayout>
             <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="-2.0dip" android:layout_weight="1.0" android:importantForAccessibility="no">
-                <com.google.android.calendar.swipeclosing.DraggableScrollView android:id="@*com.google.android.calendar:id/segments_scroll" android:background="@*android:color/background_floating_material_dark" android:paddingTop="2.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="yes">
+                <com.google.android.calendar.swipeclosing.DraggableScrollView android:id="@*com.google.android.calendar:id/segments_scroll" android:background="@*android:color/primary_dark_material_dark" android:paddingTop="2.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="yes">
                     <LinearLayout android:orientation="vertical" android:id="@*com.google.android.calendar:id/segments" android:paddingBottom="@*com.google.android.calendar:dimen/info_scroll_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" />
                 </com.google.android.calendar.swipeclosing.DraggableScrollView>
             </FrameLayout>
         </LinearLayout>
-        <FrameLayout android:layout_gravity="bottom" android:id="@*com.google.android.calendar:id/command_bar_container" android:background="@*android:color/background_floating_material_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@*com.google.android.calendar:dimen/calendar_bottombar_elevation" />
+        <FrameLayout android:layout_gravity="bottom" android:id="@*com.google.android.calendar:id/command_bar_container" android:background="@*android:color/primary_material_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@*com.google.android.calendar:dimen/calendar_bottombar_elevation" />
     </FrameLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

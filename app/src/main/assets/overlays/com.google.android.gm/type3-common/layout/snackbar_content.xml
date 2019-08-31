@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@*com.google.android.gm:color/snack_bar_container_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@*com.google.android.gm:dimen/snack_bar_margin_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@*com.google.android.gm:layout/toastbar_singleline_view" />
+    <LinearLayout android:orientation="horizontal" android:id="@*com.google.android.gm:id/snackbar_multiline" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@*com.google.android.gm:style/SnackBar">
+        <TextView android:textColor="@*android:color/white" android:layout_gravity="center_vertical" android:id="@*com.google.android.gm:id/multiline_description_text" android:paddingTop="@*com.google.android.gm:dimen/snack_bar_multiline_margin_vertical" android:paddingBottom="@*com.google.android.gm:dimen/snack_bar_multiline_margin_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@*com.google.android.gm:style/SnackBar.Text" />
+        <TextView android:layout_gravity="center_vertical" android:id="@*com.google.android.gm:id/multiline_action_text" android:paddingTop="@*com.google.android.gm:dimen/snack_bar_multiline_margin_vertical" android:paddingBottom="@*com.google.android.gm:dimen/snack_bar_multiline_margin_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@*com.google.android.gm:style/SnackBar.Text.Action.Material" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@*com.google.android.calendar:id/creation_sheet" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <requestFocus />
+        <include layout="@*com.google.android.calendar:layout/editor_header" />
+        <com.google.android.apps.calendar.vagabond.viewfactory.view.LayoutStub android:id="@*com.google.android.calendar:id/collapsed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@*com.google.android.calendar:dimen/creation_sheet_collapsed_margin_top" />
+        <com.google.android.apps.calendar.vagabond.viewfactory.view.LayoutStub android:id="@*com.google.android.calendar:id/half_collapsed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@*com.google.android.calendar:dimen/creation_sheet_half_collapsed_margin_top" />
+        <com.google.android.calendar.common.view.ObservableNestedScrollView android:id="@*com.google.android.calendar:id/expanded_scroll_view" android:background="@*android:color/background_floating_material_dark" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@*com.google.android.calendar:dimen/creation_sheet_expanded_margin_top">
+            <com.google.android.apps.calendar.vagabond.viewfactory.view.LayoutStub android:id="@*com.google.android.calendar:id/expanded" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </com.google.android.calendar.common.view.ObservableNestedScrollView>
+    </FrameLayout>
+</LinearLayout>

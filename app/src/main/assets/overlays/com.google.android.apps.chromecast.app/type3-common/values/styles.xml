@@ -27,10 +27,7 @@
     <style name="AlbumTagSelected" parent="@*com.google.android.apps.chromecast.app:style/RegularFontFamily.Tiny">
         <item name="android:textColor">@*android:color/white</item>
     </style>
-    <style name="AlertDialog" parent="@*android:style/Theme.DeviceDefault.Dialog">
-        <item name="android:background">@*android:color/background_floating_material_dark</item>
-    </style>
-    <style name="AppTheme" parent="@*com.google.android.apps.chromecast.app:style/Theme.GoogleMaterial.Light.NoActionBar.Bridge">
+    <style name="AppThemeBase" parent="@*com.google.android.apps.chromecast.app:style/Theme.GoogleMaterial.Light.NoActionBar.Bridge">
         <item name="android:spinnerStyle">@*com.google.android.apps.chromecast.app:style/Spinner</item>
         <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
         <item name="*com.google.android.apps.chromecast.app:chipViewStyle">@*com.google.android.apps.chromecast.app:style/ChipViewStyle.Protected</item>
@@ -51,7 +48,7 @@
         <item name="*com.google.android.apps.chromecast.app:colorPrimaryDark">@*android:color/primary_text_leanback_light</item>
         <item name="android:windowShowWallpaper">false</item>
     </style>
-    <style name="AppTheme.Material" parent="@*com.google.android.apps.chromecast.app:style/Theme.GoogleMaterial.Light.NoActionBar">
+    <style name="AppThemeMaterialBase" parent="@*com.google.android.apps.chromecast.app:style/Theme.GoogleMaterial.Light.NoActionBar">
         <item name="android:spinnerStyle">@*com.google.android.apps.chromecast.app:style/Spinner</item>
         <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
         <item name="*com.google.android.apps.chromecast.app:chipViewStyle">@*com.google.android.apps.chromecast.app:style/ChipViewStyle.Protected</item>
@@ -245,13 +242,6 @@
         <item name="android:textSize">20.0sp</item>
         <item name="android:textColor">#ffffffff</item>
         <item name="android:lineSpacingExtra">3.0sp</item>
-    </style>
-    <style name="GroupWarningText" parent="@*com.google.android.apps.chromecast.app:style/RegularFontFamily.Medium">
-        <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
-        <item name="android:ellipsize">end</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:maxLines">1</item>
     </style>
     <style name="HomeControlScreen.Subtitle" parent="@*com.google.android.apps.chromecast.app:style/HomeControlScreen">
         <item name="android:textSize">18.0sp</item>
@@ -471,6 +461,8 @@
     <style name="RemoteControlSubtitle.Camera" parent="@*com.google.android.apps.chromecast.app:style/RemoteControlSubtitle">
         <item name="android:textColor">@*android:color/white</item>
         <item name="android:layout_marginTop">@*com.google.android.apps.chromecast.app:dimen/remote_control_camera_status_margin_top</item>
+        <item name="android:layout_marginStart">@*com.google.android.apps.chromecast.app:dimen/l_space</item>
+        <item name="android:layout_marginEnd">@*com.google.android.apps.chromecast.app:dimen/l_space</item>
     </style>
     <style name="RemoteControlTitle" parent="@*com.google.android.apps.chromecast.app:style/RegularFontFamily">
         <item name="android:textSize">@*com.google.android.apps.chromecast.app:dimen/remote_control_title_font_size</item>

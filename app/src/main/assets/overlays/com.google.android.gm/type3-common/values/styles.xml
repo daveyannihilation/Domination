@@ -1,26 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AbstractComposeArea">
-        <item name="android:layout_gravity">center_horizontal</item>
-        <item name="android:background">@*android:color/background_dark</item>
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">fill_parent</item>
-        <item name="android:animateLayoutChanges">true</item>
-        <item name="android:paddingStart">@*com.google.android.gm:dimen/compose_area_start_padding</item>
-        <item name="android:paddingEnd">@*com.google.android.gm:dimen/compose_area_end_padding</item>
+    <style name="AdBadgeBaseTextStyle">
+        <item name="android:textSize">@*com.google.android.gm:dimen/conversation_sender_header_font_size</item>
+        <item name="android:textColor">@*android:color/white</item>
     </style>
-    <style name="AbstractVacationResponderComposeArea">
-        <item name="android:layout_gravity">center_horizontal</item>
-        <item name="android:background">@*android:color/background_dark</item>
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">fill_parent</item>
-        <item name="android:animateLayoutChanges">true</item>
-    </style>
-    <style name="ActionBarWidgetTheme" parent="@*android:style/Theme.Holo">
-        <item name="android:dropDownListViewStyle">@*com.google.android.gm:style/ActionBarDividerlessListViewStyle</item>
-        <item name="android:popupMenuStyle">@*android:style/Widget.Holo.ListPopupWindow</item>
-        <item name="android:textAppearanceLargePopupMenu">@*com.google.android.gm:style/ActionBarTextAppearanceLargeStyle</item>
-        <item name="android:textAppearanceSmallPopupMenu">@*com.google.android.gm:style/ActionBarTextAppearanceSmallStyle</item>
+    <style name="BadgeTextStyle">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@*android:color/white</item>
     </style>
     <style name="CalendarPromotionStyle">
         <item name="android:gravity">center_horizontal</item>
@@ -29,27 +16,6 @@
         <item name="android:layout_margin">@*com.google.android.gm:dimen/calendar_promotion_layout_margin</item>
         <item name="android:minHeight">60.0dip</item>
         <item name="android:paddingEnd">20.0dip</item>
-    </style>
-    <style name="CalendarPromotionText">
-        <item name="android:textSize">14.0sp</item>
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:paddingTop">@*com.google.android.gm:dimen/calendar_promotion_summary_padding</item>
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:fontFamily">@*com.google.android.gm:string/calendar_promotion_font_regular</item>
-        <item name="android:textAlignment">viewStart</item>
-        <item name="android:layout_toEndOf">@*com.google.android.gm:id/calendar_icon</item>
-    </style>
-    <style name="CalendarPromotionTitle">
-        <item name="android:textSize">14.0sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">20.0dip</item>
-        <item name="android:fontFamily">@*com.google.android.gm:string/calendar_promotion_font_medium</item>
-        <item name="android:textAlignment">viewStart</item>
-        <item name="android:layout_toEndOf">@*com.google.android.gm:id/calendar_icon</item>
     </style>
     <style name="ComposeFieldLayout">
         <item name="android:orientation">horizontal</item>
@@ -65,24 +31,17 @@
         <item name="android:shadowDy">1.3</item>
         <item name="android:shadowRadius">8.0</item>
     </style>
-    <style name="ComposeThemeBase" parent="@*com.google.android.gm:style/ColoredNavBarGeneralTheme">
-        <item name="android:colorBackground">@*android:color/background_dark</item>
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-        <item name="android:dropDownListViewStyle">@*com.google.android.gm:style/ComposeDropdownListViewStyle</item>
-        <item name="android:colorBackgroundCacheHint">@*android:color/background_dark</item>
-        <item name="*com.google.android.gm:popupMenuStyle">@*com.google.android.gm:style/PopupMenu</item>
-    </style>
     <style name="ConversationListFadeBase" parent="@*android:style/Widget.Holo.ListView" />
     <style name="GmailGoogleMaterialActionBar" parent="@*com.google.android.gm:style/ThemeOverlay.GoogleMaterial.ActionBar">
-        <item name="android:textColorPrimary">@*com.google.android.gm:color/primary_color_blue</item>
-        <item name="android:textColor">@*com.google.android.gm:color/primary_text_color_grey</item>
+        <item name="android:textColorPrimary">@*com.google.android.gm:color/action_bar_icon_enabled</item>
+        <item name="android:textColor">@*com.google.android.gm:color/ag_primary_text</item>
         <item name="android:background">@*android:color/transparent</item>
         <item name="*com.google.android.gm:colorAccent">@*android:color/white</item>
-        <item name="*com.google.android.gm:colorControlNormal">@*com.google.android.gm:color/secondary_text_color_grey</item>
+        <item name="*com.google.android.gm:colorControlNormal">@*com.google.android.gm:color/ag_secondary_text</item>
         <item name="*com.google.android.gm:titleTextColor">@*com.google.android.gm:color/primary_color_red</item>
     </style>
     <style name="GmailGoogleMaterialDatePickerDialogTheme" parent="@*com.google.android.gm:style/ThemeOverlay.GoogleMaterial.Dialog">
-        <item name="android:textColorPrimary">@*com.google.android.gm:color/primary_text_color_grey</item>
+        <item name="android:textColorPrimary">@*com.google.android.gm:color/ag_primary_text</item>
         <item name="android:textColorPrimaryInverse">@*android:color/white</item>
         <item name="android:windowBackground">@*com.google.android.gm:drawable/dialog_background</item>
         <item name="android:buttonBarButtonStyle">@*com.google.android.gm:style/GmailGoogleMaterialButtonBarStyle</item>
@@ -92,11 +51,15 @@
     <style name="GmailTheme.NoActionBar.WelcomeTour" parent="@*com.google.android.gm:style/GmailTheme.NoActionBar">
         <item name="android:windowBackground">@*android:color/background_dark</item>
     </style>
-    <style name="GmailifyTheme" parent="@*com.google.android.gm:style/SudThemeMaterial.Light">
+    <style name="GmailifyTheme" parent="@*com.google.android.gm:style/GmailifyTheme.DarkThemeSupport">
         <item name="android:spinnerStyle">@*android:style/Widget.Holo.Spinner</item>
         <item name="android:textColorLink">@*com.google.android.gm:color/text_color_blue</item>
         <item name="android:actionModeBackground">@*com.google.android.gm:color/action_mode_background</item>
         <item name="android:actionModeCloseDrawable">@*com.google.android.gm:drawable/ic_check_wht_24dp</item>
+    </style>
+    <style name="HatsText.PromoButton.Action" parent="@*com.google.android.gm:style/HatsText.PromoButton">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:background">@*com.google.android.gm:drawable/primary_action_button_background</item>
     </style>
     <style name="LabelSyncTheme" parent="@*android:style/Theme.Holo.Dialog" />
     <style name="MailActivityTheme" parent="@*com.google.android.gm:style/BaseMailActivityTheme">
@@ -116,11 +79,27 @@
     <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light" />
     <style name="Promo.Text" parent="@*com.google.android.gm:style/Promo">
         <item name="android:textSize">@*com.google.android.gm:dimen/promo_body_text_size</item>
-        <item name="android:textColor">#ffd32f2f</item>
+        <item name="android:textColor">@*com.google.android.gm:color/primary_color</item>
         <item name="android:textAllCaps">false</item>
         <item name="android:textAlignment">viewStart</item>
         <item name="android:layout_marginStart">@*com.google.android.gm:dimen/promo_inner_padding</item>
         <item name="android:layout_marginEnd">@*com.google.android.gm:dimen/promo_inner_padding</item>
+    </style>
+    <style name="PromoBadge">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">end|center</item>
+        <item name="android:paddingLeft">@*com.google.android.gm:dimen/promo_badge_padding_left</item>
+        <item name="android:paddingTop">@*com.google.android.gm:dimen/promo_badge_padding_top</item>
+        <item name="android:paddingRight">@*com.google.android.gm:dimen/promo_badge_padding_right</item>
+        <item name="android:paddingBottom">@*com.google.android.gm:dimen/promo_badge_padding_bottom</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">3.0dip</item>
+        <item name="android:layout_marginBottom">3.0dip</item>
+        <item name="android:singleLine">true</item>
     </style>
     <style name="RecipientComposeFieldLayout" parent="@*com.google.android.gm:style/ComposeFieldLayout">
         <item name="android:orientation">vertical</item>
@@ -131,7 +110,7 @@
         <item name="android:background">@*android:color/background_dark</item>
     </style>
     <style name="RecipientEditTextViewBase" parent="@*android:attr/autoCompleteTextViewStyle">
-        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textAppearance">?*android:textAppearanceMedium</item>
         <item name="android:background">@null</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -141,32 +120,16 @@
         <item name="android:textDirection">locale</item>
         <item name="android:textAlignment">viewStart</item>
     </style>
-    <style name="RichTeaserPromoBadgeStyle">
-        <item name="android:textSize">14.0sp</item>
-        <item name="android:textColor">#ff388e3c</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginBottom">1.0dip</item>
-        <item name="android:minWidth">57.0dip</item>
-        <item name="android:maxLines">1</item>
-        <item name="android:fontFamily">@*com.google.android.gm:string/sans_serif_medium</item>
+    <style name="SetupAccount.Text.Title" parent="@*com.google.android.gm:style/SetupAccount.Text">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:padding">10.0dip</item>
+        <item name="android:layout_marginTop">@*com.google.android.gm:dimen/setup_addresses_title_margin_vertical</item>
+        <item name="android:layout_marginBottom">@*com.google.android.gm:dimen/setup_addresses_title_margin_vertical</item>
+        <item name="android:layout_marginStart">@*com.google.android.gm:dimen/setup_addresses_title_margin_horizontal</item>
+        <item name="android:layout_marginEnd">@*com.google.android.gm:dimen/setup_addresses_title_margin_horizontal</item>
     </style>
     <style name="SudGlifCardContainer">
         <item name="android:background">@*android:color/background_floating_material_dark</item>
-    </style>
-    <style name="SudThemeGlifV2.Light" parent="@*com.google.android.gm:style/SudThemeGlif.Light">
-        <item name="android:colorBackground">@*android:color/background_dark</item>
-        <item name="android:editTextStyle">@*com.google.android.gm:style/SudEditText</item>
-        <item name="android:alertDialogTheme">@*com.google.android.gm:style/SudAlertDialogTheme.Light</item>
-        <item name="*com.google.android.gm:sudDividerInsetEnd">@*com.google.android.gm:dimen/sud_layout_margin_sides</item>
-        <item name="*com.google.android.gm:sudDividerInsetStart">@*com.google.android.gm:dimen/sud_layout_margin_sides</item>
-        <item name="*com.google.android.gm:sudDividerInsetStartNoIcon">@*com.google.android.gm:dimen/sud_layout_margin_sides</item>
-        <item name="*com.google.android.gm:sudEditTextBackgroundColor">@*com.google.android.gm:color/sud_glif_edit_text_bg_light_color</item>
-        <item name="*com.google.android.gm:sudGlifHeaderGravity">center_horizontal</item>
-        <item name="*com.google.android.gm:sudScrollIndicators">bottom|top</item>
-        <item name="*com.google.android.gm:sucLightStatusBar">false</item>
-        <item name="*com.google.android.gm:sudBackgroundPatterned">false</item>
-        <item name="*com.google.android.gm:sudBackgroundBaseColor">@*android:color/background_floating_material_dark</item>
     </style>
     <style name="ToRecipientEditTextViewStyle" parent="@*com.google.android.gm:style/RecipientEditTextViewStyle">
         <item name="android:layout_width">0.0dip</item>
@@ -177,12 +140,22 @@
         <item name="android:shadowDy">1.3</item>
         <item name="android:shadowRadius">8.0</item>
     </style>
-    <style name="UnifiedEmailTheme" parent="@*android:style/Theme.DeviceDefault.Light">
-        <item name="android:listViewWhiteStyle">@*android:style/Widget.Material.ListView</item>
-        <item name="android:actionBarStyle">@*com.google.android.gm:style/ActionBarStyle</item>
-        <item name="android:actionModeBackground">@*android:color/background_floating_material_dark</item>
-        <item name="android:actionOverflowButtonStyle">@*com.google.android.gm:style/ActionBarOverflowButtonStyle</item>
-        <item name="android:actionBarWidgetTheme">@*com.google.android.gm:style/ActionBarWidgetTheme</item>
+    <style name="UnseenCountBase">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">end|center</item>
+        <item name="android:paddingTop">@*com.google.android.gm:dimen/drawer_folder_teaser_pills_padding</item>
+        <item name="android:paddingBottom">@*com.google.android.gm:dimen/drawer_folder_teaser_pills_padding</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">3.0dip</item>
+        <item name="android:layout_marginBottom">3.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:paddingStart">6.0dip</item>
+        <item name="android:paddingEnd">6.0dip</item>
     </style>
     <style name="VacationResponderActionButtonText">
         <item name="android:textAppearance">?*android:actionMenuTextAppearance</item>
@@ -192,11 +165,6 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:singleLine">true</item>
-    </style>
-    <style name="WaitFragmentTitle" parent="@*com.google.android.gm:style/WaitFragmentTitleBase">
-        <item name="android:textAppearance">?*android:textAppearanceLarge</item>
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:layout_marginBottom">8.0dip</item>
     </style>
     <style name="Widget.Design.BottomSheet.Modal" parent="@*android:style/Widget">
         <item name="android:background">@*android:color/background_floating_material_dark</item>
@@ -208,23 +176,8 @@
         <item name="*com.google.android.gm:enforceMaterialTheme">false</item>
         <item name="*com.google.android.gm:backgroundTint">@*android:color/background_floating_material_dark</item>
     </style>
-    <style name="Widget.Design.FloatingActionButton" parent="@*android:style/Widget">
-        <item name="android:background">@*com.google.android.gm:drawable/design_fab_background</item>
-        <item name="android:focusable">true</item>
-        <item name="android:clickable">true</item>
-        <item name="*com.google.android.gm:elevation">@*com.google.android.gm:dimen/design_fab_elevation</item>
-        <item name="*com.google.android.gm:fabSize">auto</item>
-        <item name="*com.google.android.gm:hoveredFocusedTranslationZ">@*com.google.android.gm:dimen/design_fab_translation_z_hovered_focused</item>
-        <item name="*com.google.android.gm:pressedTranslationZ">@*com.google.android.gm:dimen/design_fab_translation_z_pressed</item>
-        <item name="*com.google.android.gm:borderWidth">@*com.google.android.gm:dimen/design_fab_border_width</item>
-        <item name="*com.google.android.gm:maxImageSize">@*com.google.android.gm:dimen/design_fab_image_size</item>
-        <item name="*com.google.android.gm:showMotionSpec">@*com.google.android.gm:animator/design_fab_show_motion_spec</item>
-        <item name="*com.google.android.gm:hideMotionSpec">@*com.google.android.gm:animator/design_fab_hide_motion_spec</item>
-        <item name="*com.google.android.gm:rippleColor">@*android:color/ripple_material_dark</item>
-        <item name="*com.google.android.gm:backgroundTint">@*com.google.android.gm:color/primary_color</item>
-    </style>
-    <style name="WidgetConversationListFade" parent="@*com.google.android.gm:style/ConversationListFadeBase">
-        <item name="android:background">@*android:color/background_dark</item>
-        <item name="android:divider">@null</item>
+    <style name="Widget.GoogleMaterial.ProductLockupView.Dark" parent="@*com.google.android.gm:style/Widget.GoogleMaterial.ProductLockupView">
+        <item name="*com.google.android.gm:logoColor">light</item>
+        <item name="*com.google.android.gm:productNameTextColor">@*android:color/white</item>
     </style>
 </resources>
