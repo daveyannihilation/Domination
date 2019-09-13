@@ -36,6 +36,8 @@
     <attr name="actionProviderClass" format="string" />
     <attr name="actionTextColorAlpha" format="float" />
     <attr name="actionViewClass" format="string" />
+    <attr name="activeTickColor" format="color" />
+    <attr name="activeTrackColor" format="color" />
     <attr name="activityChooserViewStyle" format="reference" />
     <attr name="adjustable" format="boolean" />
     <attr name="alertDialogButtonGroupStyle" format="reference" />
@@ -159,6 +161,7 @@
     <attr name="boxCornerRadiusTopStart" format="dimension" />
     <attr name="boxStrokeColor" format="color" />
     <attr name="boxStrokeWidth" format="dimension" />
+    <attr name="boxStrokeWidthFocused" format="dimension" />
     <attr name="buttonBarButtonStyle" format="reference" />
     <attr name="buttonBarNegativeButtonStyle" format="reference" />
     <attr name="buttonBarNeutralButtonStyle" format="reference" />
@@ -404,6 +407,7 @@
     </attr>
     <attr name="drawableTopCompat" format="reference" />
     <attr name="drawerArrowStyle" format="reference" />
+    <attr name="drawerLayoutStyle" format="reference" />
     <attr name="dropDownListViewStyle" format="reference" />
     <attr name="dropdownListPreferredItemHeight" format="dimension" />
     <attr name="dropdownPreferenceStyle" format="reference" />
@@ -417,6 +421,7 @@
     <attr name="elevationOverlayEnabled" format="boolean" />
     <attr name="enableCopying" format="boolean" />
     <attr name="enabled" format="boolean" />
+    <attr name="endIconCheckable" format="boolean" />
     <attr name="endIconContentDescription" format="string" />
     <attr name="endIconDrawable" format="reference" />
     <attr name="endIconMode">
@@ -440,6 +445,15 @@
     <attr name="entries" format="reference" />
     <attr name="entryValues" format="reference" />
     <attr name="errorEnabled" format="boolean" />
+    <attr name="errorIconDrawable" format="reference" />
+    <attr name="errorIconTint" format="reference" />
+    <attr name="errorIconTintMode">
+        <enum name="multiply" value="14" />
+        <enum name="screen" value="15" />
+        <enum name="src_atop" value="9" />
+        <enum name="src_in" value="5" />
+        <enum name="src_over" value="3" />
+    </attr>
     <attr name="errorTextAppearance" format="reference" />
     <attr name="errorTextColor" format="color" />
     <attr name="expandActivityOverflowButtonDrawable" format="reference" />
@@ -464,6 +478,7 @@
     <attr name="expandedTitleMarginTop" format="dimension" />
     <attr name="expandedTitleTextAppearance" format="reference" />
     <attr name="extendMotionSpec" format="reference" />
+    <attr name="extendedFloatingActionButtonBrandedStyle" format="reference" />
     <attr name="extendedFloatingActionButtonStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="fabAlignmentMode">
         <enum name="center" value="0" />
@@ -501,6 +516,7 @@
         <enum name="wrap" value="1" />
         <enum name="wrap_reverse" value="2" />
     </attr>
+    <attr name="floatingActionButtonBrandedStyle" format="reference" />
     <attr name="floatingActionButtonStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="font" format="reference" />
     <attr name="fontFamily" format="string" />
@@ -595,6 +611,8 @@
         <enum name="none" value="0" />
     </attr>
     <attr name="imageButtonStyle" format="reference" />
+    <attr name="inactiveTickColor" format="color" />
+    <attr name="inactiveTrackColor" format="color" />
     <attr name="indeterminateProgressStyle" format="reference" />
     <attr name="initialActivityCount" format="string" />
     <attr name="initialExpandedChildrenCount" format="integer" />
@@ -637,6 +655,7 @@
     </attr>
     <attr name="key" format="string" />
     <attr name="keylines" format="reference" />
+    <attr name="labelColor" format="color" />
     <attr name="labelVisibilityMode">
         <enum name="auto" value="-1" />
         <enum name="labeled" value="1" />
@@ -853,6 +872,8 @@
     <attr name="materialButtonToggleGroupStyle" format="reference" />
     <attr name="materialCalendarDay" format="reference" />
     <attr name="materialCalendarFullscreenTheme" format="reference" />
+    <attr name="materialCalendarHeaderConfirmButton" format="reference" />
+    <attr name="materialCalendarHeaderDivider" format="reference" />
     <attr name="materialCalendarHeaderLayout" format="reference" />
     <attr name="materialCalendarHeaderSelection" format="reference" />
     <attr name="materialCalendarHeaderTitle" format="reference" />
@@ -1036,6 +1057,7 @@
     <attr name="singleLine" format="boolean" />
     <attr name="singleLineTitle" format="boolean" />
     <attr name="singleSelection" format="boolean" />
+    <attr name="sliderStyle" format="reference" />
     <attr name="snackbarButtonStyle" format="reference" />
     <attr name="snackbarStyle" format="reference" />
     <attr name="soundLevelColor" format="reference" />
@@ -1046,6 +1068,7 @@
     <attr name="splitTrack" format="boolean" />
     <attr name="srcCompat" format="reference" />
     <attr name="stackFromEnd" format="boolean" />
+    <attr name="startIconCheckable" format="boolean" />
     <attr name="startIconContentDescription" format="string" />
     <attr name="startIconDrawable" format="reference" />
     <attr name="startIconTint" format="color" />
@@ -1079,6 +1102,7 @@
     <attr name="summary" format="string" />
     <attr name="summaryOff" format="string" />
     <attr name="summaryOn" format="string" />
+    <attr name="swipeRefreshLayoutProgressSpinnerBackgroundColor" format="color" />
     <attr name="switchMinWidth" format="dimension" />
     <attr name="switchPadding" format="dimension" />
     <attr name="switchPreferenceCompatStyle" format="reference" />
@@ -1171,6 +1195,7 @@
     <attr name="textStartPadding" format="dimension" />
     <attr name="theme" format="reference" />
     <attr name="thickness" format="dimension" />
+    <attr name="thumbColor" format="color" />
     <attr name="thumbTextPadding" format="dimension" />
     <attr name="thumbTint" format="color" />
     <attr name="thumbTintMode">
@@ -1181,6 +1206,7 @@
         <enum name="src_in" value="5" />
         <enum name="src_over" value="3" />
     </attr>
+    <attr name="tickColor" format="color" />
     <attr name="tickMark" format="reference" />
     <attr name="tickMarkTint" format="color" />
     <attr name="tickMarkTintMode">
@@ -1219,6 +1245,7 @@
     <attr name="tooltipFrameBackground" format="reference" />
     <attr name="tooltipText" format="string" />
     <attr name="track" format="reference" />
+    <attr name="trackColor" format="color" />
     <attr name="trackTint" format="color" />
     <attr name="trackTintMode">
         <enum name="add" value="16" />

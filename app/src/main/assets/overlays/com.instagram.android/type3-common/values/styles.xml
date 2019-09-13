@@ -10,7 +10,7 @@
         <item name="android:lines">1</item>
         <item name="android:singleLine">true</item>
     </style>
-    <style name="Base.Theme" parent="@*android:style/Theme.DeviceDefault.Light">
+    <style name="Base.Theme" parent="@*com.instagram.android:style/Theme.AppCompat.DayNight.NoActionBar">
         <item name="android:colorPrimary">@*android:color/primary_material_dark</item>
         <item name="android:colorAccent">@*com.instagram.android:color/blue_5</item>
         <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
@@ -369,14 +369,6 @@
         <item name="android:paddingTop">48.0dip</item>
         <item name="android:drawablePadding">12.0dip</item>
     </style>
-    <style name="ThumbnailGridItem">
-        <item name="android:background">@*android:color/background_floating_material_dark</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">fill_parent</item>
-        <item name="android:scaleType">centerCrop</item>
-        <item name="*com.instagram.android:strokeColor">@*android:color/white</item>
-        <item name="*com.instagram.android:strokeWidth">@*com.instagram.android:dimen/thumbnail_stroke_width</item>
-    </style>
     <style name="TimeSpentSectionTitleText">
         <item name="android:textSize">@*com.instagram.android:dimen/font_medium_xlarge</item>
         <item name="android:textColor">@*android:color/white</item>
@@ -418,6 +410,9 @@
     <style name="VideoCallTheme" parent="@*com.instagram.android:style/InstagramTheme.Fullscreen">
         <item name="*com.instagram.android:windowBackgroundColor">@*android:color/background_dark</item>
     </style>
+    <style name="VideoCallTheme.Night" parent="@*com.instagram.android:style/InstagramTheme.Fullscreen.Night">
+        <item name="*com.instagram.android:windowBackgroundColor">@*android:color/background_dark</item>
+    </style>
     <style name="VideoOptimizedDarkFeed">
         <item name="*com.instagram.android:backgroundColorPrimary">@*android:color/background_dark</item>
         <item name="*com.instagram.android:backgroundColorSecondary">@*android:color/background_dark</item>
@@ -433,7 +428,6 @@
         <item name="*com.instagram.android:shouldHideAllComments">true</item>
         <item name="*com.instagram.android:textColorBoldLink">@*android:color/white</item>
         <item name="*com.instagram.android:textColorHashtag">@*android:color/white</item>
-        <item name="*com.instagram.android:textColorHyperlink">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.instagram.android:textColorLocation">@*android:color/white</item>
         <item name="*com.instagram.android:textColorPrimary">@*android:color/white</item>
         <item name="*com.instagram.android:textColorProfileName">@*android:color/white</item>
@@ -444,7 +438,7 @@
     </style>
     <style name="Widget.FilterList" parent="">
         <item name="*com.instagram.android:filterListBackground">@*android:color/background_dark</item>
-        <item name="*com.instagram.android:filterListDividers">@*com.instagram.android:drawable/filter_list_divider</item>
+        <item name="*com.instagram.android:filterListDividers">@null</item>
         <item name="*com.instagram.android:filterListItemText">@*com.instagram.android:drawable/filter_list_text</item>
         <item name="*com.instagram.android:filterListCheckColor">@*android:color/white</item>
     </style>

@@ -78,6 +78,7 @@
         <flag name="SHIFT" value="0x00000001" />
         <flag name="SYM" value="0x00000004" />
     </attr>
+    <attr name="ambientEnabled" format="boolean" />
     <attr name="animateTrimHandles" format="boolean" />
     <attr name="animationMode">
         <enum name="fade" value="1" />
@@ -185,6 +186,13 @@
         <enum name="src_in" value="5" />
         <enum name="src_over" value="3" />
     </attr>
+    <attr name="cameraBearing" format="float" />
+    <attr name="cameraMaxZoomPreference" format="float" />
+    <attr name="cameraMinZoomPreference" format="float" />
+    <attr name="cameraTargetLat" format="float" />
+    <attr name="cameraTargetLng" format="float" />
+    <attr name="cameraTilt" format="float" />
+    <attr name="cameraZoom" format="float" />
     <attr name="cardBackgroundColor" format="color" />
     <attr name="cardCornerRadius" format="dimension" />
     <attr name="cardElevation" format="dimension" />
@@ -580,6 +588,10 @@
         <enum name="unlabeled" value="2" />
     </attr>
     <attr name="lastBaselineToBottomHeight" format="dimension" />
+    <attr name="latLngBoundsNorthEastLatitude" format="float" />
+    <attr name="latLngBoundsNorthEastLongitude" format="float" />
+    <attr name="latLngBoundsSouthWestLatitude" format="float" />
+    <attr name="latLngBoundsSouthWestLongitude" format="float" />
     <attr name="layout" format="reference" />
     <attr name="layoutManager" format="string" />
     <attr name="layout_alignSelf">
@@ -753,6 +765,7 @@
     <attr name="listPreferredItemPaddingLeft" format="dimension" />
     <attr name="listPreferredItemPaddingRight" format="dimension" />
     <attr name="listPreferredItemPaddingStart" format="dimension" />
+    <attr name="liteMode" format="boolean" />
     <attr name="lockupSizingMode">
         <enum name="auto" value="0" />
         <enum name="custom" value="-1" />
@@ -789,6 +802,13 @@
     <attr name="lottie_speed" format="float" />
     <attr name="lottie_url" format="string" />
     <attr name="makeStaticTextSelectable" format="boolean" />
+    <attr name="mapType">
+        <enum name="hybrid" value="4" />
+        <enum name="none" value="0" />
+        <enum name="normal" value="1" />
+        <enum name="satellite" value="2" />
+        <enum name="terrain" value="3" />
+    </attr>
     <attr name="materialAlertDialogBodyTextStyle" format="reference" />
     <attr name="materialAlertDialogTheme" format="reference" />
     <attr name="materialAlertDialogTitleIconStyle" format="reference" />
@@ -986,6 +1006,7 @@
     <attr name="showRing" format="boolean" />
     <attr name="showText" format="boolean" />
     <attr name="showTitle" format="boolean" />
+    <attr name="showWraps" format="boolean" />
     <attr name="shrinkMotionSpec" format="reference" />
     <attr name="singleChoiceItemLayout" format="reference" />
     <attr name="singleLine" format="boolean" />
@@ -1218,10 +1239,19 @@
     <attr name="tooltipText" format="string" />
     <attr name="track" format="reference" />
     <attr name="ttcIndex" format="integer" />
+    <attr name="uiCompass" format="boolean" />
+    <attr name="uiMapToolbar" format="boolean" />
+    <attr name="uiRotateGestures" format="boolean" />
+    <attr name="uiScrollGestures" format="boolean" />
+    <attr name="uiScrollGesturesDuringRotateOrZoom" format="boolean" />
+    <attr name="uiTiltGestures" format="boolean" />
+    <attr name="uiZoomControls" format="boolean" />
+    <attr name="uiZoomGestures" format="boolean" />
     <attr name="unselectedChipBackgroundColor" format="color" />
     <attr name="unselectedChipTextColor" format="color" />
     <attr name="useCompatPadding" format="boolean" />
     <attr name="useMaterialThemeColors" format="boolean" />
+    <attr name="useViewLifecycle" format="boolean" />
     <attr name="viewInflaterClass" format="string" />
     <attr name="voiceIcon" format="reference" />
     <attr name="windowActionBar" format="boolean" />
@@ -1237,8 +1267,8 @@
     <attr name="yearSelectedStyle" format="reference" />
     <attr name="yearStyle" format="reference" />
     <attr name="yearTodayStyle" format="reference" />
+    <attr name="zOrderOnTop" format="boolean" />
     <item type="attr" name="APKTOOL_DUMMY_35">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_39">false</item>
     <item type="attr" name="APKTOOL_DUMMY_3a">false</item>
     <item type="attr" name="APKTOOL_DUMMY_3b">false</item>
     <item type="attr" name="APKTOOL_DUMMY_3f">false</item>
@@ -1252,13 +1282,6 @@
     <item type="attr" name="APKTOOL_DUMMY_87">false</item>
     <item type="attr" name="APKTOOL_DUMMY_88">false</item>
     <item type="attr" name="APKTOOL_DUMMY_89">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_8a">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_8b">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_8c">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_8d">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_8e">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_8f">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_90">false</item>
     <item type="attr" name="APKTOOL_DUMMY_9a">false</item>
     <item type="attr" name="APKTOOL_DUMMY_b9">false</item>
     <item type="attr" name="APKTOOL_DUMMY_c4">false</item>
@@ -1299,10 +1322,6 @@
     <item type="attr" name="APKTOOL_DUMMY_1b8">false</item>
     <item type="attr" name="APKTOOL_DUMMY_1bb">false</item>
     <item type="attr" name="APKTOOL_DUMMY_1bc">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_1de">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_1df">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_1e0">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_1e1">false</item>
     <item type="attr" name="APKTOOL_DUMMY_1e9">false</item>
     <item type="attr" name="APKTOOL_DUMMY_1ea">false</item>
     <item type="attr" name="APKTOOL_DUMMY_1eb">false</item>
@@ -1314,10 +1333,8 @@
     <item type="attr" name="APKTOOL_DUMMY_231">false</item>
     <item type="attr" name="APKTOOL_DUMMY_232">false</item>
     <item type="attr" name="APKTOOL_DUMMY_245">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_246">false</item>
     <item type="attr" name="APKTOOL_DUMMY_24b">false</item>
     <item type="attr" name="APKTOOL_DUMMY_24c">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_25c">false</item>
     <item type="attr" name="APKTOOL_DUMMY_25d">false</item>
     <item type="attr" name="APKTOOL_DUMMY_25e">false</item>
     <item type="attr" name="APKTOOL_DUMMY_25f">false</item>
@@ -1351,41 +1368,32 @@
     <item type="attr" name="APKTOOL_DUMMY_2ef">false</item>
     <item type="attr" name="APKTOOL_DUMMY_2f5">false</item>
     <item type="attr" name="APKTOOL_DUMMY_2f6">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_312">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_317">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_320">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_313">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_318">false</item>
     <item type="attr" name="APKTOOL_DUMMY_321">false</item>
     <item type="attr" name="APKTOOL_DUMMY_322">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_328">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_323">false</item>
     <item type="attr" name="APKTOOL_DUMMY_329">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_32e">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_337">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_350">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_352">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_36a">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_32a">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_32f">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_338">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_351">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_353">false</item>
     <item type="attr" name="APKTOOL_DUMMY_36b">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3b7">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_36c">false</item>
     <item type="attr" name="APKTOOL_DUMMY_3b8">false</item>
     <item type="attr" name="APKTOOL_DUMMY_3b9">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3c1">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3cb">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3ba">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3c2">false</item>
     <item type="attr" name="APKTOOL_DUMMY_3cc">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3cf">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3d4">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3cd">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3d0">false</item>
     <item type="attr" name="APKTOOL_DUMMY_3d5">false</item>
     <item type="attr" name="APKTOOL_DUMMY_3d6">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3d8">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3d9">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3da">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3db">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3dc">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3dd">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3de">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3df">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3e3">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3e5">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3e6">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3d7">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3e4">false</item>
     <item type="attr" name="APKTOOL_DUMMY_3e7">false</item>
     <item type="attr" name="APKTOOL_DUMMY_3e8">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3f5">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3e9">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3f6">false</item>
 </resources>

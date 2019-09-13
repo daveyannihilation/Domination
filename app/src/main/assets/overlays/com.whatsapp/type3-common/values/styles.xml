@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="ActionBarPopupTheme" parent="@*com.whatsapp:style/ThemeOverlay.AppCompat.Dark" />
-    <style name="ActionBarTheme" parent="@*com.whatsapp:style/ThemeOverlay.AppCompat.Dark" />
+    <style name="ActionBarTheme" parent="@*com.whatsapp:style/ThemeOverlay.AppCompat.Dark">
+        <item name="android:textColorSecondary">@*android:color/white</item>
+    </style>
     <style name="ActivityTheme" parent="@*com.whatsapp:style/Theme.AppCompat.NoActionBar">
         <item name="*com.whatsapp:windowActionBar">false</item>
         <item name="*com.whatsapp:windowNoTitle">true</item>
@@ -155,11 +157,6 @@
         <item name="*com.whatsapp:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
         <item name="*com.whatsapp:colorAccent">@*com.whatsapp:color/accent</item>
     </style>
-    <style name="Theme.App.White" parent="@*com.whatsapp:style/Theme.App">
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-        <item name="*com.whatsapp:homeAsUpIndicator">@*com.whatsapp:drawable/ic_back_teal</item>
-        <item name="*com.whatsapp:rtoStyle">@*com.whatsapp:style/RtlTeal</item>
-    </style>
     <style name="Theme.PopupNotification" parent="@*com.whatsapp:style/Theme.App">
         <item name="android:windowBackground">@*android:color/primary_text_leanback_light</item>
         <item name="android:backgroundTint">@*android:color/transparent</item> 
@@ -199,19 +196,6 @@
         <item name="android:background">@*android:color/background_dark</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
-    </style>
-    <style name="WhatsAppButton.GreenTextButton" parent="@*com.whatsapp:style/Widget.AppCompat.Button.Borderless">
-        <item name="android:textColor">#ff00796b</item>
-        <item name="android:layout_gravity">center</item>
-        <item name="android:background">@*android:color/button_material_dark</item>
-        <item name="android:paddingLeft">6.0dip</item>
-        <item name="android:paddingTop">9.0dip</item>
-        <item name="android:paddingRight">6.0dip</item>
-        <item name="android:paddingBottom">9.0dip</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">36.0dip</item>
-        <item name="android:layout_margin">8.0dip</item>
-        <item name="android:minWidth">32.0dip</item>
     </style>
     <style name="Widget.Styled.ActionBar.Registration.White" parent="@*com.whatsapp:style/Widget.Styled.ActionBar">
         <item name="android:titleTextStyle">@*com.whatsapp:style/Theme.ActionBar.Registration.TitleTextStyle</item>
