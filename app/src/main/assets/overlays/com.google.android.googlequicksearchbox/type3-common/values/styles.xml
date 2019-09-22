@@ -489,7 +489,7 @@
         <item name="android:buttonBarButtonStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.Button</item>
         <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
         <item name="*com.google.android.googlequicksearchbox:buttonBarButtonStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.Button</item>
-        <item name="*com.google.android.googlequicksearchbox:buttonBarNegativeButtonStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.Button.StrokedButton</item>
+        <item name="*com.google.android.googlequicksearchbox:buttonBarNegativeButtonStyle">@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.Button.TextButton</item>
         <item name="*com.google.android.googlequicksearchbox:tabTextAppearance">@*com.google.android.googlequicksearchbox:style/TextAppearance.Lens.Tab</item>
     </style>
     <style name="Theme.OptIn.UOS" parent="@*com.google.android.googlequicksearchbox:style/Theme.Velvet">
@@ -598,17 +598,6 @@
         <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
         <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
     </style>
-    <style name="Widget.Design.BottomSheet.Modal" parent="@*android:style/Widget">
-        <item name="android:background">@*android:color/background_floating_material_dark</item>
-        <item name="android:elevation">@*com.google.android.googlequicksearchbox:dimen/design_bottom_sheet_modal_elevation</item>
-        <item name="*com.google.android.googlequicksearchbox:behavior_peekHeight">auto</item>
-        <item name="*com.google.android.googlequicksearchbox:behavior_hideable">true</item>
-        <item name="*com.google.android.googlequicksearchbox:behavior_skipCollapsed">false</item>
-        <item name="*com.google.android.googlequicksearchbox:shapeAppearance">@null</item>
-        <item name="*com.google.android.googlequicksearchbox:shapeAppearanceOverlay">@null</item>
-        <item name="*com.google.android.googlequicksearchbox:enforceMaterialTheme">false</item>
-        <item name="*com.google.android.googlequicksearchbox:backgroundTint">@*android:color/background_floating_material_dark</item>
-    </style>
     <style name="Widget.GoogleMaterial.ProductLockupView.Dark" parent="@*com.google.android.googlequicksearchbox:style/Widget.GoogleMaterial.ProductLockupView">
         <item name="*com.google.android.googlequicksearchbox:productNameTextColor">@*android:color/white</item>
         <item name="*com.google.android.googlequicksearchbox:logoColor">light</item>
@@ -616,6 +605,14 @@
     <style name="Widget.Shim.Light.ActionBar" parent="@*android:style/Widget.Material.ActionBar" />
     <style name="YourPeopleSettingsAnnotation">
         <item name="android:background">@*android:color/background_dark</item>
+    </style>
+    <style name="ZeroStateFabBottomSheetDialog" parent="@*com.google.android.googlequicksearchbox:style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowAnimationStyle">@*com.google.android.googlequicksearchbox:style/Animation.MaterialComponents.BottomSheetDialog</item>
+        <item name="android:statusBarColor">@*android:color/transparent</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.googlequicksearchbox:bottomSheetStyle">@*com.google.android.googlequicksearchbox:style/ZeroStateFabBottomSheet</item>
     </style>
     <style name="action_card_h1_immersive_actions" parent="@*com.google.android.googlequicksearchbox:style/action_card_text">
         <item name="android:textSize">18.0sp</item>

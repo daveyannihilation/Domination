@@ -143,6 +143,8 @@
     <attr name="backgroundElevatedDrawableSingle" format="reference" />
     <attr name="backgroundElevatedDrawableTop" format="reference" />
     <attr name="backgroundNotificationBadge" format="reference" />
+    <attr name="backgroundRoundedDrawableBottom" format="reference" />
+    <attr name="backgroundRoundedDrawableTop" format="reference" />
     <attr name="backgroundRoundedRect" format="reference" />
     <attr name="backgroundSplit" format="reference|color" />
     <attr name="backgroundStacked" format="reference|color" />
@@ -407,6 +409,7 @@
     <attr name="colour_wheel_stroke_width" format="dimension" />
     <attr name="columnCount" format="integer" />
     <attr name="columnOrderPreserved" format="boolean" />
+    <attr name="commentWarningLearnMoreDrawable" format="reference" />
     <attr name="commitIcon" format="reference" />
     <attr name="confirmation_icon" format="reference" />
     <attr name="constraintSet" format="reference" />
@@ -517,6 +520,7 @@
     <attr name="dialogPreferredPadding" format="dimension" />
     <attr name="dialogTheme" format="reference" />
     <attr name="directEphemeralReplyPillIcon" format="reference" />
+    <attr name="directGifPlaceholderBackground" format="reference" />
     <attr name="directGradientEnd" format="reference|color" />
     <attr name="directGradientStart" format="reference|color" />
     <attr name="directInboxEmptyStateDetailedEnabled" format="boolean" />
@@ -545,8 +549,6 @@
     <attr name="directReplyModalEditTextBackground" format="reference" />
     <attr name="directReplyPillBackground" format="reference" />
     <attr name="directRightPadding" format="dimension" />
-    <attr name="directRoundedBubbleBackground" format="reference" />
-    <attr name="directRoundedBubbleSelector" format="reference" />
     <attr name="directRowAvatar" format="reference" />
     <attr name="directRowHeight" format="reference" />
     <attr name="directRowLargeHeight" format="reference" />
@@ -557,8 +559,10 @@
     <attr name="directSearchInActionBar" format="boolean" />
     <attr name="directTextColorSelector" format="reference" />
     <attr name="directThreadComposerSendButtonTextColorSelector" format="reference" />
+    <attr name="directThreadDisabledComposerColor" format="color" />
     <attr name="directVideoCallActiveDrawable" format="reference" />
     <attr name="directVideoCallActivePulseColor" format="reference|color" />
+    <attr name="directVisualMessageBubbleBackground" format="reference" />
     <attr name="directVisualMessageThumbnailMask" format="reference" />
     <attr name="direction">
         <enum name="north" value="0" />
@@ -615,6 +619,10 @@
     <attr name="elevation" format="dimension" />
     <attr name="ellipsisText" format="string" />
     <attr name="emphasizedActionColor" format="color" />
+    <attr name="emptyStoryBadge" format="reference" />
+    <attr name="emptyStoryBadgeElevated" format="reference" />
+    <attr name="emptyStoryBadgeLarge" format="reference" />
+    <attr name="emptyStoryBadgeLargeElevated" format="reference" />
     <attr name="emptyVisibility">
         <enum name="gone" value="0" />
         <enum name="invisible" value="1" />
@@ -1205,9 +1213,11 @@
     <attr name="nuxActionButtonTextColor" format="reference" />
     <attr name="nuxAllowLanguagePicker" format="boolean" />
     <attr name="nuxAllowSignUpFlow" format="boolean" />
+    <attr name="nuxBirthdayIllustration" format="reference" />
     <attr name="nuxCardShadow" format="reference" />
     <attr name="nuxLogoDrawable" format="reference" />
     <attr name="nuxLogoTintColor" format="color" />
+    <attr name="nuxOneTapLoginCardRemoveIconMargin" format="dimension" />
     <attr name="nuxOneTapPhoneDrawable" format="reference" />
     <attr name="nuxSuggestedUserCardBackground" format="reference" />
     <attr name="nuxSuggestedUserPrivateProfileBackground" format="reference" />
@@ -1305,15 +1315,18 @@
     <attr name="profileGenderIcon" format="reference" />
     <attr name="profileHeaderBackground" format="color" />
     <attr name="profileHighlightThumbnailEditBackground" format="color" />
+    <attr name="profileMenuVerticalDivider" format="color" />
     <attr name="profileRowHeight" format="dimension" />
     <attr name="profileRowHeightLarge" format="reference" />
     <attr name="profileRowHeightMedium" format="reference" />
+    <attr name="profileSwitchAccountAudienceButtonBackground" format="reference" />
     <attr name="profileSwitchAccountAvatar" format="reference" />
     <attr name="profileSwitchAccountCheck" format="reference" />
     <attr name="profileSwitchAccountNotificationText" format="reference" />
     <attr name="profileSwitchAccountPadding" format="dimension" />
     <attr name="profileSwitchAccountUserInfo" format="reference" />
     <attr name="profileSwitchAccountUserInfoTextColor" format="reference" />
+    <attr name="profileSwitchCategorizedNotificationText" format="reference" />
     <attr name="profileUserInfo" format="reference" />
     <attr name="profileUserName" format="reference" />
     <attr name="progressBarBackground" format="reference" />
@@ -1335,6 +1348,8 @@
     <attr name="punchRadius" format="dimension" />
     <attr name="queryBackground" format="reference" />
     <attr name="queryHint" format="string" />
+    <attr name="questionResponseNavLeftButtonBackground" format="reference" />
+    <attr name="questionResponseNavRightButtonBackground" format="reference" />
     <attr name="quickBackExperimentParameter" format="string" />
     <attr name="quickCaptureControllerAllowCameraTooltip" format="boolean" />
     <attr name="quickCaptureControllerCameraFaceFilterButton" format="reference" />
@@ -1351,7 +1366,6 @@
     <attr name="quickCaptureControllerShutterButtonSize" format="reference|dimension" />
     <attr name="quickCaptureFormatPickerIconTintColor" format="reference|color" />
     <attr name="quickCaptureFormatPickerIndicatorVisible" format="boolean" />
-    <attr name="quickCaptureVerticalTransitionAndBlackBackgroundEnabled" format="boolean" />
     <attr name="radioButtonStyle" format="reference" />
     <attr name="radius" format="dimension" />
     <attr name="ratingBarStyle" format="reference" />
@@ -1363,7 +1377,6 @@
     <attr name="reelDashboardCTAIconBackground" format="reference" />
     <attr name="reelDashboardQuizAnswerRowBackground" format="reference" />
     <attr name="reelDashboardShareButtonEnabled" format="boolean" />
-    <attr name="reelEmptyStoryBadge" format="reference" />
     <attr name="reelItemBottomPadding" format="reference|dimension" />
     <attr name="reelItemLabelViewTextSize" format="reference|dimension" />
     <attr name="reelOptionsAllowFeedCreation" format="boolean" />
@@ -1577,6 +1590,7 @@
     <attr name="statusBarScrim" format="color" />
     <attr name="stickerLoadingEndColor" format="color" />
     <attr name="stickerLoadingStartColor" format="color" />
+    <attr name="storyErrorBadge" format="reference" />
     <attr name="strokeColor" format="color" />
     <attr name="strokeColour" format="color" />
     <attr name="strokeIncludesPadding" format="boolean" />
@@ -1787,6 +1801,8 @@
     <attr name="topEdge" format="boolean" />
     <attr name="total_bubble_count" format="integer" />
     <attr name="track" format="reference" />
+    <attr name="trackScrubber" format="reference" />
+    <attr name="trackScrubberThumb" format="reference" />
     <attr name="trackTint" format="color" />
     <attr name="trackTintMode">
         <enum name="add" value="16" />
@@ -1801,7 +1817,6 @@
     <attr name="track_width" format="dimension" />
     <attr name="transparentUpdatableButtonStyle" format="reference" />
     <attr name="transparentWhiteUpdatableButtonStyle" format="reference" />
-    <attr name="trayErrorIcon" format="reference" />
     <attr name="triangleColor" format="color" />
     <attr name="trianglePadding" format="dimension" />
     <attr name="triangleSize" format="dimension" />

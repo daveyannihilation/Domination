@@ -18,14 +18,12 @@
         <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="android:dropDownListViewStyle">@*com.google.android.gm:style/ComposeDropdownListViewStyle</item>
         <item name="android:colorBackgroundCacheHint">@*android:color/background_dark</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowLightNavigationBar">false</item>
         <item name="*com.google.android.gm:popupMenuStyle">@*com.google.android.gm:style/PopupMenu</item>
     </style>
     <style name="ConversationListFadeBase" parent="@*android:style/Widget.Material.ListView" />
-    <style name="GmailTheme.NoActionBar.WelcomeTour" parent="@*com.google.android.gm:style/GmailTheme.NoActionBar">
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-        <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
-    </style>
     <style name="GmailifyTheme" parent="@*com.google.android.gm:style/GmailifyTheme.DarkThemeSupport">
         <item name="android:spinnerStyle">@*android:style/Widget.Material.Spinner</item>
         <item name="android:textColorLink">@*com.google.android.gm:color/text_color_blue</item>
@@ -43,20 +41,17 @@
         <item name="android:textColorHint">#ffbbbbbb</item>
         <item name="android:textColorLink">@*android:color/accent_material_dark</item>
         <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowLightNavigationBar">false</item>
     </style>
     <style name="SudGlifCardContainer">
         <item name="android:background">@*android:color/background_floating_material_dark</item>
         <item name="android:elevation">@*com.google.android.gm:dimen/sud_glif_card_elevation</item>
     </style>
-    <style name="Widget.Design.BottomSheet.Modal" parent="@*android:style/Widget">
-        <item name="android:background">@*android:color/background_floating_material_dark</item>
-        <item name="android:elevation">@*com.google.android.gm:dimen/design_bottom_sheet_modal_elevation</item>
-        <item name="*com.google.android.gm:behavior_peekHeight">auto</item>
-        <item name="*com.google.android.gm:behavior_hideable">true</item>
-        <item name="*com.google.android.gm:behavior_skipCollapsed">false</item>
-        <item name="*com.google.android.gm:shapeAppearance">@null</item>
-        <item name="*com.google.android.gm:shapeAppearanceOverlay">@null</item>
-        <item name="*com.google.android.gm:enforceMaterialTheme">false</item>
-        <item name="*com.google.android.gm:backgroundTint">@*android:color/background_floating_material_dark</item>
+    <style name="SudThemeGlif" parent="@*com.google.android.gm:style/SudBaseThemeGlif">
+        <item name="*com.google.android.gm:sucSystemNavBarBackgroundColor">@*android:color/primary_dark_material_dark</item>
+    </style>
+    <style name="SudThemeGlif.Light" parent="@*com.google.android.gm:style/SudBaseThemeGlif">
+        <item name="*com.google.android.gm:sucSystemNavBarBackgroundColor">@*android:color/primary_dark_material_dark</item>
     </style>
 </resources>
