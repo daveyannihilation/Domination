@@ -45,6 +45,8 @@
     <attr name="actionTextColor" format="color" />
     <attr name="actionTextColorAlpha" format="float" />
     <attr name="actionViewClass" format="string" />
+    <attr name="activeTickColor" format="color" />
+    <attr name="activeTrackColor" format="color" />
     <attr name="activityChooserViewStyle" format="reference" />
     <attr name="adjustable" format="boolean" />
     <attr name="alertDialogButtonGroupStyle" format="reference" />
@@ -141,6 +143,12 @@
         <enum name="src_over" value="3" />
     </attr>
     <attr name="backupsEmptyState" format="reference" />
+    <attr name="badgeGravity">
+        <enum name="BOTTOM_END" value="2" />
+        <enum name="BOTTOM_START" value="3" />
+        <enum name="TOP_END" value="0" />
+        <enum name="TOP_START" value="1" />
+    </attr>
     <attr name="badgeStyle" format="reference" />
     <attr name="barLength" format="dimension" />
     <attr name="behavior_autoHide" format="boolean" />
@@ -184,6 +192,7 @@
     <attr name="boxCornerRadiusTopStart" format="dimension" />
     <attr name="boxStrokeColor" format="color" />
     <attr name="boxStrokeWidth" format="dimension" />
+    <attr name="boxStrokeWidthFocused" format="dimension" />
     <attr name="buttonBarButtonStyle" format="reference" />
     <attr name="buttonBarNegativeButtonStyle" format="reference" />
     <attr name="buttonBarNeutralButtonStyle" format="reference" />
@@ -412,6 +421,7 @@
     <attr name="disableDependentsState" format="boolean" />
     <attr name="disabledAccountHelpIconTint" format="color" />
     <attr name="discMinTouchTargetSize" format="dimension" />
+    <attr name="discPlaceholderColor" format="color" />
     <attr name="displayNameTextAppearance" format="reference" />
     <attr name="displayOptions">
         <flag name="disableHome" value="0x00000020" />
@@ -448,6 +458,7 @@
     </attr>
     <attr name="drawableTopCompat" format="reference" />
     <attr name="drawerArrowStyle" format="reference" />
+    <attr name="drawerLayoutStyle" format="reference" />
     <attr name="driveEmptyState" format="reference" />
     <attr name="dropDownImageSrc" format="reference" />
     <attr name="dropDownListViewStyle" format="reference" />
@@ -474,6 +485,7 @@
     <attr name="emptyTeamDriveEmptyState" format="reference" />
     <attr name="enableCopying" format="boolean" />
     <attr name="enabled" format="boolean" />
+    <attr name="endIconCheckable" format="boolean" />
     <attr name="endIconContentDescription" format="string" />
     <attr name="endIconDrawable" format="reference" />
     <attr name="endIconMode">
@@ -498,6 +510,15 @@
     <attr name="entries" format="reference" />
     <attr name="entryValues" format="reference" />
     <attr name="errorEnabled" format="boolean" />
+    <attr name="errorIconDrawable" format="reference" />
+    <attr name="errorIconTint" format="reference" />
+    <attr name="errorIconTintMode">
+        <enum name="multiply" value="14" />
+        <enum name="screen" value="15" />
+        <enum name="src_atop" value="9" />
+        <enum name="src_in" value="5" />
+        <enum name="src_over" value="3" />
+    </attr>
     <attr name="errorTextAppearance" format="reference" />
     <attr name="errorTextColor" format="color" />
     <attr name="expandActivityOverflowButtonDrawable" format="reference" />
@@ -523,6 +544,7 @@
     <attr name="expandedTitleMarginTop" format="dimension" />
     <attr name="expandedTitleTextAppearance" format="reference" />
     <attr name="extendMotionSpec" format="reference" />
+    <attr name="extendedFloatingActionButtonBrandedStyle" format="reference" />
     <attr name="extendedFloatingActionButtonStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="fabAlignmentMode">
         <enum name="center" value="0" />
@@ -563,6 +585,7 @@
         <enum name="wrap" value="1" />
         <enum name="wrap_reverse" value="2" />
     </attr>
+    <attr name="floatingActionButtonBrandedStyle" format="reference" />
     <attr name="floatingActionButtonStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="font" format="reference" />
     <attr name="fontFamily" format="string" />
@@ -590,8 +613,6 @@
     <attr name="frameCount" format="integer" />
     <attr name="gapBetweenBars" format="dimension" />
     <attr name="goIcon" format="reference" />
-    <attr name="googleMaterialBottomDrawerBackgroundColor" format="color" />
-    <attr name="googleMaterialBottomDrawerHandleColor" format="color" />
     <attr name="has_background" format="boolean" />
     <attr name="has_gif_animation" format="boolean" />
     <attr name="has_video_animation" format="boolean" />
@@ -658,12 +679,18 @@
     </attr>
     <attr name="imageViewSize" format="dimension" />
     <attr name="images" format="reference" />
+    <attr name="inactiveTickColor" format="color" />
+    <attr name="inactiveTrackColor" format="color" />
+    <attr name="incognitoTopRightIconColor" format="color" />
     <attr name="increaseProfileSizeWithoutRing" format="boolean" />
     <attr name="indeterminateProgressStyle" format="reference" />
     <attr name="initialActivityCount" format="string" />
     <attr name="initialExpandedChildrenCount" format="integer" />
     <attr name="insetForeground" format="reference|color" />
     <attr name="invalidChipBackground" format="reference" />
+    <attr name="invalidChipBackgroundColor" format="color" />
+    <attr name="invalidChipBorderColor" format="color" />
+    <attr name="invalidChipTextColor" format="color" />
     <attr name="isLightTheme" format="boolean" />
     <attr name="isMaterialTheme" format="boolean" />
     <attr name="isPreferenceVisible" format="boolean" />
@@ -701,6 +728,7 @@
     </attr>
     <attr name="key" format="string" />
     <attr name="keylines" format="reference" />
+    <attr name="labelColor" format="color" />
     <attr name="labelVisibilityMode">
         <enum name="auto" value="-1" />
         <enum name="labeled" value="1" />
@@ -930,6 +958,8 @@
     <attr name="materialButtonToggleGroupStyle" format="reference" />
     <attr name="materialCalendarDay" format="reference" />
     <attr name="materialCalendarFullscreenTheme" format="reference" />
+    <attr name="materialCalendarHeaderConfirmButton" format="reference" />
+    <attr name="materialCalendarHeaderDivider" format="reference" />
     <attr name="materialCalendarHeaderLayout" format="reference" />
     <attr name="materialCalendarHeaderSelection" format="reference" />
     <attr name="materialCalendarHeaderTitle" format="reference" />
@@ -1004,7 +1034,6 @@
     <attr name="ogAccountMenuStyle" format="reference" />
     <attr name="ogAccountParticleDiscStyle" format="reference" />
     <attr name="ogAccountParticleStyle" format="reference" />
-    <attr name="ogGoogleMaterialBottomDrawerStyle" format="reference" />
     <attr name="oneDiscussionHeaderBackground" format="reference|color" />
     <attr name="oneDiscussionHeaderTextButtonAppearance" format="reference" />
     <attr name="openSearchBarStyle" format="reference" />
@@ -1078,6 +1107,7 @@
     <attr name="ratingBarStyleIndicator" format="reference" />
     <attr name="ratingBarStyleSmall" format="reference" />
     <attr name="recentsEmptyState" format="reference" />
+    <attr name="reduceAvatarSizeWhenHasRing" format="boolean" />
     <attr name="reverseLayout" format="boolean" />
     <attr name="rippleColor" format="color" />
     <attr name="saveState" format="boolean" />
@@ -1151,6 +1181,7 @@
     <attr name="singleLineTitle" format="boolean" />
     <attr name="singleSelection" format="boolean" />
     <attr name="site_access_type_drawable" format="reference" />
+    <attr name="sliderStyle" format="reference" />
     <attr name="snackbarButtonStyle" format="reference" />
     <attr name="snackbarStyle" format="reference" />
     <attr name="spanCount" format="integer" />
@@ -1162,6 +1193,7 @@
     <attr name="stackFromEnd" format="boolean" />
     <attr name="standaloneNoSelectedAccountTitleColor" format="color" />
     <attr name="starredEmptyState" format="reference" />
+    <attr name="startIconCheckable" format="boolean" />
     <attr name="startIconContentDescription" format="string" />
     <attr name="startIconDrawable" format="reference" />
     <attr name="startIconTint" format="color" />
@@ -1192,6 +1224,7 @@
     <attr name="summary" format="string" />
     <attr name="summaryOff" format="string" />
     <attr name="summaryOn" format="string" />
+    <attr name="swipeRefreshLayoutProgressSpinnerBackgroundColor" format="color" />
     <attr name="switchMinWidth" format="dimension" />
     <attr name="switchPadding" format="dimension" />
     <attr name="switchPreferenceCompatStyle" format="reference" />
@@ -1285,6 +1318,7 @@
     <attr name="textStartPadding" format="dimension" />
     <attr name="theme" format="reference" />
     <attr name="thickness" format="dimension" />
+    <attr name="thumbColor" format="color" />
     <attr name="thumbTextPadding" format="dimension" />
     <attr name="thumbTint" format="color" />
     <attr name="thumbTintMode">
@@ -1295,6 +1329,7 @@
         <enum name="src_in" value="5" />
         <enum name="src_over" value="3" />
     </attr>
+    <attr name="tickColor" format="color" />
     <attr name="tickMark" format="reference" />
     <attr name="tickMarkTint" format="color" />
     <attr name="tickMarkTintMode">
@@ -1334,6 +1369,7 @@
     <attr name="topLeftRadius" format="dimension" />
     <attr name="topRightRadius" format="dimension" />
     <attr name="track" format="reference" />
+    <attr name="trackColor" format="color" />
     <attr name="trackTint" format="color" />
     <attr name="trackTintMode">
         <enum name="add" value="16" />
@@ -1346,7 +1382,9 @@
     <attr name="trashEmptyState" format="reference" />
     <attr name="ttcIndex" format="integer" />
     <attr name="unselectedChipBackgroundColor" format="color" />
+    <attr name="unselectedChipBorderColor" format="color" />
     <attr name="unselectedChipTextColor" format="color" />
+    <attr name="unselectedChipWarningBackgroundColor" format="color" />
     <attr name="updatesContinuously" format="boolean" />
     <attr name="useCompatPadding" format="boolean" />
     <attr name="useDrawerArrowDrawable" format="boolean" />
@@ -1378,47 +1416,46 @@
     <item type="attr" name="APKTOOL_DUMMY_1">false</item>
     <item type="attr" name="APKTOOL_DUMMY_2">false</item>
     <item type="attr" name="APKTOOL_DUMMY_3">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3b">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_62">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_6e">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_107">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_116">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_117">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_125">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_126">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_127">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_149">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_159">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_15a">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_15b">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_198">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_1e7">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_1ea">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_277">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_2ac">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_2ae">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_2b1">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_2c5">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_2c6">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3d">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_65">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_71">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_10b">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_11a">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_11b">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_129">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_12a">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_12b">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_14e">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_15f">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_160">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_161">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_1a3">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_1f4">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_1f7">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_288">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_2bf">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_2c1">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_2d6">false</item>
     <item type="attr" name="APKTOOL_DUMMY_2d7">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_2e7">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_300">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_301">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_309">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_30c">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_310">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_311">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_2e8">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_2f8">false</item>
     <item type="attr" name="APKTOOL_DUMMY_312">false</item>
     <item type="attr" name="APKTOOL_DUMMY_313">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_314">false</item>
     <item type="attr" name="APKTOOL_DUMMY_31b">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_31d">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_339">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_347">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_354">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3ba">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3c7">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_31e">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_322">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_323">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_324">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_325">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_326">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_32d">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_32f">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_34c">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_35b">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_368">false</item>
     <item type="attr" name="APKTOOL_DUMMY_3d1">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3d2">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3d3">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3df">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3eb">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3ec">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3ed">false</item>
 </resources>

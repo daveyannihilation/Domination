@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="?*android:windowContentOverlay">
+        <com.android.mail.ui.TaskTwoPaneLayout android:id="@*com.google.android.gm:id/inline_drawer_layout" android:background="@*android:color/background_floating_material_dark" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foregroundGravity="fill_horizontal|center|top">
+            <FrameLayout android:layout_gravity="left" android:id="@*com.google.android.gm:id/drawer" android:layout_width="@*com.google.android.gm:dimen/two_pane_drawer_width_open" android:layout_height="fill_parent">
+                <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@*com.google.android.gm:layout/drawer_fragment" />
+            </FrameLayout>
+            <FrameLayout android:layout_gravity="left" android:id="@*com.google.android.gm:id/content_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:touchscreenBlocksFocus="true">
+                <FrameLayout android:id="@*com.google.android.gm:id/content_pane" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <include layout="@*com.google.android.gm:layout/t4_floating_action_button" />
+            </FrameLayout>
+            <FrameLayout android:id="@*com.google.android.gm:id/detail_pane" android:layout_width="0.0dip" android:layout_height="fill_parent" style="@*com.google.android.gm:style/ConversationViewForegroundShadowStyle">
+                <ImageView android:layout_gravity="center" android:id="@*com.google.android.gm:id/detail_pane_no_task_view" android:visibility="gone" android:layout_width="@*com.google.android.gm:dimen/empty_state_icon_size" android:layout_height="@*com.google.android.gm:dimen/empty_state_icon_size" app:srcCompat="@*com.google.android.gm:drawable/ic_empty_task_mat" />
+            </FrameLayout>
+            <include layout="@*com.google.android.gm:layout/t4_floating_action" />
+        </com.android.mail.ui.TaskTwoPaneLayout>
+        <FrameLayout android:layout_gravity="left" android:id="@*com.google.android.gm:id/create_pane" android:layout_width="fill_parent" android:layout_height="fill_parent" android:touchscreenBlocksFocus="true" />
+    </FrameLayout>
+</LinearLayout>
