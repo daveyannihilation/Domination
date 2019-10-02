@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:background="@*android:color/primary_dark_material_dark" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:text="@*com.google.android.googlequicksearchbox:string/auto_download_global_settings" android:layout_marginStart="24.0dip" style="@*com.google.android.googlequicksearchbox:style/SettingsSection" />
+        <Switch android:id="@*com.google.android.googlequicksearchbox:id/enable_auto_download" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:text="@*com.google.android.googlequicksearchbox:string/auto_download_new_episodes" style="@*com.google.android.googlequicksearchbox:style/SettingsTitle" />
+        <LinearLayout android:orientation="vertical" android:id="@*com.google.android.googlequicksearchbox:id/detailed_settings_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginStart="24.0dip">
+            <View style="@*com.google.android.googlequicksearchbox:style/horizontal_bar" />
+            <Switch android:id="@*com.google.android.googlequicksearchbox:id/enable_auto_download_only_on_wifi" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="24.0dip" android:text="@*com.google.android.googlequicksearchbox:string/auto_download_only_on_wifi" android:layout_marginEnd="24.0dip" style="@*com.google.android.googlequicksearchbox:style/SettingsTitle" />
+            <LinearLayout android:orientation="horizontal" android:paddingTop="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_marginEnd="4.0dip">
+                <TextView android:paddingTop="12.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@*com.google.android.googlequicksearchbox:string/settings_for_your_podcasts" android:layout_weight="1.0" style="@*com.google.android.googlequicksearchbox:style/SettingsSection" />
+                <ImageView android:id="@*com.google.android.googlequicksearchbox:id/more_actions_button" android:padding="12.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@*com.google.android.googlequicksearchbox:drawable/quantum_gm_ic_more_vert_grey600_24" android:contentDescription="@*com.google.android.googlequicksearchbox:string/more_actions_title" />
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView android:id="@*com.google.android.googlequicksearchbox:id/favorites_settings_list" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@*android:color/primary_dark_material_dark" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@*com.google.android.googlequicksearchbox:id/appbar_container" android:background="@*android:color/primary_material_dark" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+            <com.google.android.libraries.gsa.monet.tools.childstub.ui.ChildStub android:id="@*com.google.android.googlequicksearchbox:id/appbar_header" android:layout_width="fill_parent" android:layout_height="@*com.google.android.googlequicksearchbox:dimen/search_overlay_height" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <FrameLayout android:id="@*com.google.android.googlequicksearchbox:id/main_content_container" android:background="@*android:color/primary_dark_material_dark" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@*com.google.android.googlequicksearchbox:id/upper_layer_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.libraries.gsa.monet.tools.childstub.ui.ChildStub android:id="@*com.google.android.googlequicksearchbox:id/search_overlay" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:id="@*com.google.android.googlequicksearchbox:id/mask" android:background="@*com.google.android.googlequicksearchbox:color/scrim" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+        <com.google.android.libraries.gsa.monet.tools.childstub.ui.ChildStub android:id="@*com.google.android.googlequicksearchbox:id/playback_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" app:behavior_peekHeight="@*com.google.android.googlequicksearchbox:dimen/podcast_bottom_sheet_peek_height" app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior" />
+        <com.google.android.libraries.gsa.monet.tools.childstub.ui.ChildStub android:layout_gravity="bottom" android:id="@*com.google.android.googlequicksearchbox:id/tab_bar" android:layout_width="fill_parent" android:layout_height="@*com.google.android.googlequicksearchbox:dimen/tab_bar_height" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <com.google.android.libraries.gsa.monet.tools.childstub.ui.ChildStub android:id="@*com.google.android.googlequicksearchbox:id/leaf" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@*com.google.android.googlequicksearchbox:id/root_mask" android:background="@*android:color/transparent" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>
