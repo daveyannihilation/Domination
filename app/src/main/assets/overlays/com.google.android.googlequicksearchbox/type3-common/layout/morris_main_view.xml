@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@*com.google.android.googlequicksearchbox:id/morris_main" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@*com.google.android.googlequicksearchbox:id/nav_expanded_view_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@*com.google.android.googlequicksearchbox:dimen/morris_energy_bar_height">
+            <com.google.android.apps.gsa.staticplugins.opa.morris.viewcomponent.CustomViewPager android:id="@*com.google.android.googlequicksearchbox:id/morris_full_screen_pager" android:background="@*android:color/primary_dark_material_dark" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:orientation="horizontal" android:id="@*com.google.android.googlequicksearchbox:id/float_nav_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+        </RelativeLayout>
+        <FrameLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@*com.google.android.googlequicksearchbox:id/bottom_navigation_view" android:background="@*android:color/transparent" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@*com.google.android.googlequicksearchbox:id/morris_energy_bar_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" />
+            <FrameLayout android:layout_gravity="top" android:id="@*com.google.android.googlequicksearchbox:id/mini_plate_container" android:background="@*com.google.android.googlequicksearchbox:drawable/mini_plate_container_background" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@*com.google.android.googlequicksearchbox:id/morris_onboarding_frame" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@*com.google.android.googlequicksearchbox:id/morris_access_prompt_frame" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

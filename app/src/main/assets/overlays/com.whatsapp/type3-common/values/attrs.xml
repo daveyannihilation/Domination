@@ -142,8 +142,10 @@
     <attr name="buttonBarNeutralButtonStyle" format="reference" />
     <attr name="buttonBarPositiveButtonStyle" format="reference" />
     <attr name="buttonBarStyle" format="reference" />
+    <attr name="buttonCompat" format="reference" />
     <attr name="buttonGravity">
         <flag name="bottom" value="0x00000050" />
+        <flag name="center_vertical" value="0x00000010" />
         <flag name="top" value="0x00000030" />
     </attr>
     <attr name="buttonIconDimen" format="dimension" />
@@ -237,6 +239,7 @@
     <attr name="colorAccent" format="color" />
     <attr name="colorBackgroundFloating" format="color" />
     <attr name="colorButtonNormal" format="color" />
+    <attr name="colorButtonStroke" format="color" />
     <attr name="colorControlActivated" format="color" />
     <attr name="colorControlHighlight" format="color" />
     <attr name="colorControlNormal" format="color" />
@@ -288,6 +291,11 @@
     <attr name="cstSeenColor" format="color" />
     <attr name="cstUnseenColor" format="color" />
     <attr name="customNavigationLayout" format="reference" />
+    <attr name="custom_key">
+        <enum name="double_zero" value="1" />
+        <enum name="none" value="0" />
+        <enum name="triple_zero" value="2" />
+    </attr>
     <attr name="defaultQueryHint" format="string" />
     <attr name="default_artwork" format="reference" />
     <attr name="dialogCornerRadius" format="dimension" />
@@ -306,7 +314,22 @@
     <attr name="dividerHorizontal" format="reference" />
     <attr name="dividerPadding" format="dimension" />
     <attr name="dividerVertical" format="reference" />
+    <attr name="drawableBottomCompat" format="reference" />
+    <attr name="drawableEndCompat" format="reference" />
+    <attr name="drawableLeftCompat" format="reference" />
+    <attr name="drawableRightCompat" format="reference" />
     <attr name="drawableSize" format="dimension" />
+    <attr name="drawableStartCompat" format="reference" />
+    <attr name="drawableTint" format="color" />
+    <attr name="drawableTintMode">
+        <enum name="add" value="16" />
+        <enum name="multiply" value="14" />
+        <enum name="screen" value="15" />
+        <enum name="src_atop" value="9" />
+        <enum name="src_in" value="5" />
+        <enum name="src_over" value="3" />
+    </attr>
+    <attr name="drawableTopCompat" format="reference" />
     <attr name="drawerArrowStyle" format="reference" />
     <attr name="dropDownListViewStyle" format="reference" />
     <attr name="dropdownListPreferredItemHeight" format="dimension" />
@@ -542,6 +565,8 @@
     <attr name="lineSpacing" format="dimension" />
     <attr name="lineStroke" format="dimension" />
     <attr name="listChoiceBackgroundIndicator" format="reference" />
+    <attr name="listChoiceIndicatorMultipleAnimated" format="reference" />
+    <attr name="listChoiceIndicatorSingleAnimated" format="reference" />
     <attr name="listDividerAlertDialog" format="reference" />
     <attr name="listItemLayout" format="reference" />
     <attr name="listItemSubtitle" format="reference" />
@@ -552,8 +577,10 @@
     <attr name="listPreferredItemHeight" format="dimension" />
     <attr name="listPreferredItemHeightLarge" format="dimension" />
     <attr name="listPreferredItemHeightSmall" format="dimension" />
+    <attr name="listPreferredItemPaddingEnd" format="dimension" />
     <attr name="listPreferredItemPaddingLeft" format="dimension" />
     <attr name="listPreferredItemPaddingRight" format="dimension" />
+    <attr name="listPreferredItemPaddingStart" format="dimension" />
     <attr name="listSectionBackground" format="color" />
     <attr name="listSectionDivider" format="reference" />
     <attr name="listSectionTitleText" format="reference" />
@@ -598,6 +625,11 @@
         <flag name="META" value="0x00010000" />
         <flag name="SHIFT" value="0x00000001" />
         <flag name="SYM" value="0x00000004" />
+    </attr>
+    <attr name="orientation">
+        <enum name="auto" value="0" />
+        <enum name="horizontal" value="1" />
+        <enum name="vertical" value="2" />
     </attr>
     <attr name="overlapAnchor" format="boolean" />
     <attr name="overlayImage" format="reference" />
@@ -683,16 +715,7 @@
     <attr name="psritSubText" format="string" />
     <attr name="psritTitleText" format="string" />
     <attr name="pstsDividerColor" format="color" />
-    <attr name="pstsDividerPadding" format="dimension" />
     <attr name="pstsIndicatorColor" format="color" />
-    <attr name="pstsIndicatorHeight" format="dimension" />
-    <attr name="pstsScrollOffset" format="dimension" />
-    <attr name="pstsShouldExpand" format="boolean" />
-    <attr name="pstsTabBackground" format="reference" />
-    <attr name="pstsTabPaddingLeftRight" format="dimension" />
-    <attr name="pstsTextAllCaps" format="boolean" />
-    <attr name="pstsUnderlineColor" format="color" />
-    <attr name="pstsUnderlineHeight" format="dimension" />
     <attr name="qrCodeColor" format="color" />
     <attr name="qsoShape">
         <enum name="round_corners" value="2" />
@@ -951,6 +974,7 @@
     <attr name="textColorSearchUrl" format="reference|color" />
     <attr name="textEndPadding" format="dimension" />
     <attr name="textInputStyle" format="reference" />
+    <attr name="textLocale" format="string" />
     <attr name="textStartPadding" format="dimension" />
     <attr name="theme" format="reference" />
     <attr name="thickness" format="dimension" />

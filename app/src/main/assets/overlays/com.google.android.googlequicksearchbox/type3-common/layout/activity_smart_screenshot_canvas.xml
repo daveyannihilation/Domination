@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@*com.google.android.googlequicksearchbox:id/smartscreenshot_container" android:background="@*android:color/background_dark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@*com.google.android.googlequicksearchbox:layout/screenshot_top_toolbar" />
+    <FrameLayout android:id="@*com.google.android.googlequicksearchbox:id/canvas_fragment" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@*com.google.android.googlequicksearchbox:id/screenshot_bottom_navigation" app:layout_constraintEnd_toEndOf="parent">
+        <include layout="@*com.google.android.googlequicksearchbox:layout/screenshot_lens_tooltip" />
+    </FrameLayout>
+    <include layout="@*com.google.android.googlequicksearchbox:layout/screenshot_bottom_navigation" />
+    <include layout="@*com.google.android.googlequicksearchbox:layout/screenshot_bottom_toolbar" />
+</android.support.constraint.ConstraintLayout>
