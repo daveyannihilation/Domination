@@ -12,7 +12,12 @@
         <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
         <item name="android:fontFamily">@*com.Slack:font/lato_regular</item>
     </style>
-    <style name="NoActionBarActivityTheme" parent="@*com.Slack:style/Theme.AppCompat.NoActionBar">
+    <style name="DrawerActivityTheme.Launcher" parent="@*com.Slack:style/DrawerActivityTheme">
+        <item name="android:windowBackground">@*com.Slack:drawable/launch_screen</item>
+        <item name="android:statusBarColor">@*android:color/primary_text_leanback_light</item>
+        <item name="android:windowShowWallpaper">false</item>
+    </style>
+    <style name="NoActionBarActivityTheme" parent="@*com.Slack:style/Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
         <item name="android:colorBackground">@*android:color/background_floating_material_dark</item>
         <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="android:fontFamily">@*com.Slack:font/lato_family</item>
@@ -27,7 +32,16 @@
         <item name="*com.Slack:textAppearanceButton">@*com.Slack:style/TextAppearance.AppCompat.Button</item>
         <item name="*com.Slack:windowActionModeOverlay">true</item>
     </style>
-    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light" />
+    <style name="Platform.V21.AppCompat.Light" parent="@*android:style/Theme.Material.NoActionBar">
+        <item name="android:textColorHintInverse">#ffbbbbbb</item>
+        <item name="android:textColorHint">#ffbbbbbb</item>
+        <item name="android:textColorLink">@*android:color/accent_material_dark</item>
+        <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
+    </style>
+    <style name="SignInFlatWhiteButton" parent="@*com.Slack:style/SlackKit.Button.Large.Primary">
+        <item name="*com.Slack:backgroundTint">@*android:color/button_material_dark</item>
+        <item name="*com.Slack:rippleColor">@*com.Slack:color/colorControlHighlight</item>
+    </style>
     <style name="SlackKit.Button.Large.White" parent="@*com.Slack:style/SlackKitButton.Large">
         <item name="android:textColor">@*com.Slack:color/selector_button_black</item>
         <item name="*com.Slack:backgroundTint">@*android:color/button_material_dark</item>
@@ -42,15 +56,12 @@
         <item name="*com.Slack:cardBackgroundColor">@*android:color/background_floating_material_dark</item>
         <item name="*com.Slack:cardCornerRadius">3.0dip</item>
     </style>
-    <style name="TransparentActivityTheme" parent="@*com.Slack:style/NoActionBarActivityTheme">
-        <item name="android:windowBackground">@*android:color/transparent</item>
-        <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowAnimationStyle">@null</item>
-        <item name="android:backgroundTint">@*android:color/background_dark</item>
-    </style>
-    <style name="TransparentActivityTheme.Light" parent="@*com.Slack:style/NoActionBarActivityTheme">
-        <item name="android:windowBackground">@*android:color/transparent</item>
-        <item name="android:windowIsTranslucent">true</item>
-        <item name="android:backgroundTint">@*android:color/background_dark</item>
+    <style name="UserTypingText">
+        <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@*com.Slack:dimen/user_typing_text_height</item>
+        <item name="android:maxLines">1</item>
     </style>
 </resources>
