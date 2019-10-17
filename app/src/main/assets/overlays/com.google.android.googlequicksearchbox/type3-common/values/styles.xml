@@ -69,6 +69,13 @@
     <style name="ChatUi.Suggestion.V3.Hq" parent="@*com.google.android.googlequicksearchbox:style/ChatUi.Suggestion.V3">
         <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
     </style>
+    <style name="CorpusBarBottomSheetDialog" parent="@*com.google.android.googlequicksearchbox:style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:colorBackground">@*android:color/transparent</item>
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@*android:color/transparent</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+    </style>
     <style name="Divider">
         <item name="android:background">#00000000</item>
         <item name="android:layout_width">fill_parent</item>
@@ -232,6 +239,7 @@
         <item name="*com.google.android.googlequicksearchbox:mainTextColor">@*android:color/white</item>
         <item name="*com.google.android.googlequicksearchbox:morrisRippleColor">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.googlequicksearchbox:morrisSectionBackgroundColor">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.googlequicksearchbox:morrisTopContactsCoverColor">@*android:color/primary_dark_material_dark</item>
         <item name="*com.google.android.googlequicksearchbox:secondaryTextColor">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.googlequicksearchbox:tertiaryTextColor">@*android:color/secondary_text_default_material_dark</item>
     </style>
@@ -289,6 +297,22 @@
         <item name="android:windowAnimationStyle">@*com.google.android.googlequicksearchbox:style/OpaAmbActivityTransition</item>
         <item name="android:windowDisablePreview">true</item>
     </style>
+    <style name="OpaBottomSheetDialog" parent="@*com.google.android.googlequicksearchbox:style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowAnimationStyle">@*com.google.android.googlequicksearchbox:style/Animation.MaterialComponents.BottomSheetDialog</item>
+        <item name="android:statusBarColor">@*android:color/transparent</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.googlequicksearchbox:bottomSheetStyle">@*com.google.android.googlequicksearchbox:style/ZeroStateOverflowMenuBottomSheet</item>
+    </style>
+    <style name="OpaElementsBottomSheetDialog" parent="@*com.google.android.googlequicksearchbox:style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowAnimationStyle">@*com.google.android.googlequicksearchbox:style/Animation.MaterialComponents.BottomSheetDialog</item>
+        <item name="android:statusBarColor">@*android:color/transparent</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.googlequicksearchbox:bottomSheetStyle">@*com.google.android.googlequicksearchbox:style/OpaElementsOverflowMenuBottomSheet</item>
+    </style>
     <style name="OpaHQActivity.Theme.Base" parent="@*com.google.android.googlequicksearchbox:style/Theme.AppCompat">
         <item name="android:windowElevation">0.5dip</item>
         <item name="android:activityOpenEnterAnimation">@*com.google.android.googlequicksearchbox:anim/slide_in_bottom_hq</item>
@@ -325,9 +349,6 @@
         <item name="android:background">@*android:color/background_dark</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">fill_parent</item>
-    </style>
-    <style name="OverflowMenuTheme" parent="@*android:style/Theme.Holo">
-        <item name="android:background">@*android:color/background_floating_material_dark</item>
     </style>
     <style name="PaymentsSettingsIMOobeStyle">
         <item name="android:colorPrimary">@*android:color/primary_material_dark</item>
@@ -738,10 +759,5 @@
         <item name="android:textSize">14.0dip</item>
         <item name="android:textColor">#ffdddddd</item>
         <item name="android:fontFamily">google-sans-medium</item>
-    </style>
-    <style name="zero_state_grey_icon">
-        <item name="android:layout_width">@*com.google.android.googlequicksearchbox:dimen/zero_state_menu_icon_size</item>
-        <item name="android:layout_height">@*com.google.android.googlequicksearchbox:dimen/zero_state_menu_icon_size</item>
-        <item name="android:tint">@*android:color/white</item>
     </style>
 </resources>

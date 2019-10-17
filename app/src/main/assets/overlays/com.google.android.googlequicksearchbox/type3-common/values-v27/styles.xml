@@ -14,9 +14,39 @@
         <item name="android:windowLightNavigationBar">false</item>
         <item name="*com.google.android.googlequicksearchbox:sudGlifHeaderGravity">center_horizontal</item>
     </style>
+    <style name="OpaBottomSheetDialog" parent="@*com.google.android.googlequicksearchbox:style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowAnimationStyle">@*com.google.android.googlequicksearchbox:style/Animation.MaterialComponents.BottomSheetDialog</item>
+        <item name="android:statusBarColor">@*android:color/transparent</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="*com.google.android.googlequicksearchbox:bottomSheetStyle">@*com.google.android.googlequicksearchbox:style/ZeroStateOverflowMenuBottomSheet</item>
+    </style>
+    <style name="OpaElementsBottomSheetDialog" parent="@*com.google.android.googlequicksearchbox:style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowAnimationStyle">@*com.google.android.googlequicksearchbox:style/Animation.MaterialComponents.BottomSheetDialog</item>
+        <item name="android:statusBarColor">@*android:color/transparent</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="*com.google.android.googlequicksearchbox:bottomSheetStyle">@*com.google.android.googlequicksearchbox:style/OpaElementsOverflowMenuBottomSheet</item>
+    </style>
     <style name="OpaHQActivity.Theme" parent="@*com.google.android.googlequicksearchbox:style/OpaHQActivity.Theme.Base">
         <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
         <item name="android:windowLightNavigationBar">false</item>
+    </style>
+    <style name="SheetDialog" parent="@*com.google.android.googlequicksearchbox:style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:colorBackground">@*android:color/transparent</item>
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@*android:color/transparent</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:navigationBarDividerColor">@*android:color/primary_dark_material_dark</item>
     </style>
     <style name="StandaloneZeroState.Theme" parent="@*com.google.android.googlequicksearchbox:style/StandaloneZeroState.Theme.Base">
         <item name="android:windowLightNavigationBar">false</item>
@@ -44,7 +74,8 @@
         <item name="android:navigationBarDividerColor">@*android:color/primary_dark_material_dark</item>
     </style>
     <style name="Theme.GoogleApp" parent="@*com.google.android.googlequicksearchbox:style/Theme.GoogleApp.Base">
-        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:navigationBarColor">@*android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
         <item name="android:windowLightNavigationBar">false</item>
     </style>
     <style name="Theme.Gsa" parent="@*com.google.android.googlequicksearchbox:style/Theme.Shim.Light">

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@*com.google.android.keep:id/browse_coordinator_layout" android:focusable="true" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:nextFocusForward="@*com.google.android.keep:id/quick_edit_layout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@*com.google.android.keep:id/swipe_refresh_widget" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@*com.google.android.keep:string/opensearchbar_scrolling_view_behavior">
+        <android.support.v7.widget.RecyclerView android:id="@*com.google.android.keep:id/notes" android:background="@*android:color/primary_dark_material_dark" android:paddingTop="@*com.google.android.keep:dimen/opensearchbar_content_top_padding" android:clipToPadding="false" style="@*com.google.android.keep:style/NoteListStyle" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <com.google.android.libraries.material.opensearchbar.OpenSearchView android:theme="@*com.google.android.keep:style/Theme.GoogleMaterial.DayNight" android:id="@*com.google.android.keep:id/open_search_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@*com.google.android.keep:string/search_bar_hint" android:elevation="1.0dip" app:layout_anchor="@*com.google.android.keep:id/toolbar" style="@*com.google.android.keep:style/Widget.GoogleMaterial.OpenSearchView" useDrawerArrowDrawable="true">
+        <fragment android:name="com.google.android.apps.keep.ui.search.ZeroSearchFragment" android:id="@*com.google.android.keep:id/zero_search_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.google.android.libraries.material.opensearchbar.OpenSearchView>
+    <com.google.android.material.appbar.AppBarLayout android:id="@*com.google.android.keep:id/app_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="top" android:id="@*com.google.android.keep:id/browse_toolbar_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="enterAlways|scroll|snap">
+            <com.google.android.libraries.material.opensearchbar.OpenSearchBar android:theme="@*com.google.android.keep:style/Theme.GoogleMaterial.DayNight" android:id="@*com.google.android.keep:id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@*com.google.android.keep:string/search_bar_hint" app:elevation="2.0dip" app:navigationContentDescription="@*com.google.android.keep:string/drawer_open" app:navigationIcon="@*com.google.android.keep:drawable/ic_menu_24" style="@*com.google.android.keep:style/Widget.GoogleMaterial.OpenSearchBar">
+                <com.google.android.libraries.material.productlockup.AnimatableProductLockupView android:layout_width="wrap_content" android:layout_height="@*com.google.android.keep:dimen/abc_action_bar_default_height_material" android:text="@*com.google.android.keep:string/app_name_full" />
+                <com.google.android.libraries.onegoogle.accountmenu.SelectedAccountDisc android:id="@*com.google.android.keep:id/account_particle" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@*com.google.android.keep:style/SelectedAccountDisc.OpenSearchBar" />
+            </com.google.android.libraries.material.opensearchbar.OpenSearchBar>
+        </FrameLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <include layout="@*com.google.android.keep:layout/browse_contextual_toolbar" />
+    <include layout="@*com.google.android.keep:layout/browse_coordinatorlayout_footer" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
