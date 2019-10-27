@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.whatsapp.BidiToolbar android:id="@*com.whatsapp:id/toolbar" android:background="@*android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@*com.whatsapp:dimen/actionbar_height" app:popupTheme="@*com.whatsapp:style/Toolbar.Popup" app:theme="@*com.whatsapp:style/ThemeOverlay.AppCompat.Dark.ActionBar" />
     <LinearLayout android:id="@*com.whatsapp:id/bloks_background_layout" android:background="@*android:color/background_dark" android:layout_width="fill_parent" android:layout_height="fill_parent">
         <FrameLayout android:id="@*com.whatsapp:id/fragment_container" android:background="@*android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
             <ProgressBar android:layout_gravity="center" android:id="@*com.whatsapp:id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
         </FrameLayout>
     </LinearLayout>
+    <com.whatsapp.payments.ui.widget.FbPayToolbar android:id="@*com.whatsapp:id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:contentInsetLeft="0.0dip" app:contentInsetStartWithNavigation="0.0dip" />
 </FrameLayout>

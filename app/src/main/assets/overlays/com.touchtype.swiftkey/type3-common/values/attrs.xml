@@ -100,6 +100,9 @@
     <attr name="autoSizeMinTextSize" format="dimension" />
     <attr name="autoSizePresetSizes" format="reference" />
     <attr name="autoSizeStepGranularity" format="dimension" />
+    <attr name="autoSizeTextGranularity" format="dimension" />
+    <attr name="autoSizeTextMax" format="dimension" />
+    <attr name="autoSizeTextMin" format="dimension" />
     <attr name="autoSizeTextType">
         <enum name="none" value="0" />
         <enum name="uniform" value="1" />
@@ -166,8 +169,10 @@
     <attr name="buttonBarNeutralButtonStyle" format="reference" />
     <attr name="buttonBarPositiveButtonStyle" format="reference" />
     <attr name="buttonBarStyle" format="reference" />
+    <attr name="buttonCompat" format="reference" />
     <attr name="buttonGravity">
         <flag name="bottom" value="0x00000050" />
+        <flag name="center_vertical" value="0x00000010" />
         <flag name="top" value="0x00000030" />
     </attr>
     <attr name="buttonIconDimen" format="dimension" />
@@ -325,7 +330,22 @@
     <attr name="dividerHorizontal" format="reference" />
     <attr name="dividerPadding" format="dimension" />
     <attr name="dividerVertical" format="reference" />
+    <attr name="drawableBottomCompat" format="reference" />
+    <attr name="drawableEndCompat" format="reference" />
+    <attr name="drawableLeftCompat" format="reference" />
+    <attr name="drawableRightCompat" format="reference" />
     <attr name="drawableSize" format="dimension" />
+    <attr name="drawableStartCompat" format="reference" />
+    <attr name="drawableTint" format="color" />
+    <attr name="drawableTintMode">
+        <enum name="add" value="16" />
+        <enum name="multiply" value="14" />
+        <enum name="screen" value="15" />
+        <enum name="src_atop" value="9" />
+        <enum name="src_in" value="5" />
+        <enum name="src_over" value="3" />
+    </attr>
+    <attr name="drawableTopCompat" format="reference" />
     <attr name="drawerArrowStyle" format="reference" />
     <attr name="dropDownListViewStyle" format="reference" />
     <attr name="dropdownListPreferredItemHeight" format="dimension" />
@@ -339,6 +359,7 @@
         <enum name="gone" value="0" />
         <enum name="invisible" value="1" />
     </attr>
+    <attr name="enableCopying" format="boolean" />
     <attr name="enabled" format="boolean" />
     <attr name="enforceMaterialTheme" format="boolean" />
     <attr name="enforceTextAppearance" format="boolean" />
@@ -709,6 +730,8 @@
     <attr name="lineHeight" format="dimension" />
     <attr name="lineSpacing" format="dimension" />
     <attr name="listChoiceBackgroundIndicator" format="reference" />
+    <attr name="listChoiceIndicatorMultipleAnimated" format="reference" />
+    <attr name="listChoiceIndicatorSingleAnimated" format="reference" />
     <attr name="listDividerAlertDialog" format="reference" />
     <attr name="listItemLayout" format="reference" />
     <attr name="listLayout" format="reference" />
@@ -717,8 +740,10 @@
     <attr name="listPreferredItemHeight" format="dimension" />
     <attr name="listPreferredItemHeightLarge" format="dimension" />
     <attr name="listPreferredItemHeightSmall" format="dimension" />
+    <attr name="listPreferredItemPaddingEnd" format="dimension" />
     <attr name="listPreferredItemPaddingLeft" format="dimension" />
     <attr name="listPreferredItemPaddingRight" format="dimension" />
+    <attr name="listPreferredItemPaddingStart" format="dimension" />
     <attr name="loadingButtonText" format="string" />
     <attr name="loadingButtonTextAllCaps" format="boolean" />
     <attr name="loadingButtonTextSize" format="dimension" />
@@ -819,18 +844,13 @@
     <attr name="popupTheme" format="reference" />
     <attr name="popupWindowStyle" format="reference" />
     <attr name="positiveButtonText" format="string" />
-    <attr name="preferenceActivityStyle" format="reference" />
     <attr name="preferenceCategoryStyle" format="reference" />
+    <attr name="preferenceCategoryTitleTextAppearance" format="reference" />
     <attr name="preferenceFragmentCompatStyle" format="reference" />
     <attr name="preferenceFragmentListStyle" format="reference" />
-    <attr name="preferenceFragmentPaddingSide" format="dimension" />
     <attr name="preferenceFragmentStyle" format="reference" />
-    <attr name="preferenceHeaderPanelStyle" format="reference" />
     <attr name="preferenceInformationStyle" format="reference" />
     <attr name="preferenceKey" format="string" />
-    <attr name="preferenceLayoutChild" format="reference" />
-    <attr name="preferenceListStyle" format="reference" />
-    <attr name="preferencePanelStyle" format="reference" />
     <attr name="preferenceScreenStyle" format="reference" />
     <attr name="preferenceStyle" format="reference" />
     <attr name="preferenceTheme" format="reference" />
@@ -879,7 +899,6 @@
         <enum name="none" value="-1" />
     </attr>
     <attr name="reverseLayout" format="boolean" />
-    <attr name="ringtonePreferenceStyle" format="reference" />
     <attr name="rippleColor" format="color" />
     <attr name="roundAsCircle" format="boolean" />
     <attr name="roundBottomEnd" format="boolean" />
@@ -1064,6 +1083,7 @@
     <attr name="textColorSearchUrl" format="reference|color" />
     <attr name="textEndPadding" format="dimension" />
     <attr name="textInputStyle" format="reference" />
+    <attr name="textLocale" format="string" />
     <attr name="textStartPadding" format="dimension" />
     <attr name="theme" format="reference" />
     <attr name="thickness" format="dimension" />
@@ -1131,8 +1151,10 @@
         <enum name="src_over" value="3" />
     </attr>
     <attr name="ttcIndex" format="integer" />
+    <attr name="updatesContinuously" format="boolean" />
     <attr name="useCompatPadding" format="boolean" />
     <attr name="useDefaultMargins" format="boolean" />
+    <attr name="useSimpleSummaryProvider" format="boolean" />
     <attr name="viewAspectRatio" format="float" />
     <attr name="viewInflaterClass" format="string" />
     <attr name="viewPagerIndicatorStyle" format="reference" />
@@ -1148,5 +1170,4 @@
     <attr name="windowMinWidthMajor" format="dimension|fraction" />
     <attr name="windowMinWidthMinor" format="dimension|fraction" />
     <attr name="windowNoTitle" format="boolean" />
-    <attr name="yesNoPreferenceStyle" format="reference" />
 </resources>

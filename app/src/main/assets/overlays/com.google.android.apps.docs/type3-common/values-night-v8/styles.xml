@@ -14,7 +14,6 @@
         <item name="android:backgroundSplit">@*com.google.android.apps.docs:drawable/action_bar_background</item>
         <item name="android:elevation">0.0dip</item>
     </style>
-    <style name="BaseActionBarOverflow" parent="@*android:style/Widget.Material.ActionButton.Overflow" />
     <style name="BaseAppTheme" parent="@*android:style/Theme.DeviceDefault.Light">
         <item name="android:buttonStyle">@*com.google.android.apps.docs:style/BaseButton</item>
         <item name="android:windowContentTransitions">true</item>
@@ -65,7 +64,7 @@
         <item name="android:windowNoTitle">true</item>
         <item name="android:actionBarStyle">@*com.google.android.apps.docs:style/OverlayActionBarStyle</item>
         <item name="android:actionModeBackground">@*android:color/background_floating_material_dark</item>
-        <item name="android:actionModeCloseDrawable">@*com.google.android.apps.docs:drawable/action_mode_back_grey_gm2</item>
+        <item name="android:actionModeCloseDrawable">@*com.google.android.apps.docs:drawable/action_mode_back_grey</item>
         <item name="android:windowActionModeOverlay">true</item>
         <item name="android:windowActionBarOverlay">true</item>
         <item name="android:actionOverflowButtonStyle">@*com.google.android.apps.docs:style/OverlayActionBarOverflowStyle</item>
@@ -81,7 +80,7 @@
         <item name="*com.google.android.apps.docs:actionMenuTextColor">@*com.google.android.apps.docs:color/action_mode_text_color_action</item>
         <item name="*com.google.android.apps.docs:actionModeBackground">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.apps.docs:actionModeCloseButtonStyle">@*com.google.android.apps.docs:style/ActionModeCloseButtonStyle</item>
-        <item name="*com.google.android.apps.docs:actionModeCloseDrawable">@*com.google.android.apps.docs:drawable/action_mode_back_grey_gm2</item>
+        <item name="*com.google.android.apps.docs:actionModeCloseDrawable">@*com.google.android.apps.docs:drawable/action_mode_back_grey</item>
         <item name="*com.google.android.apps.docs:actionModeStyle">@*com.google.android.apps.docs:style/OverlayActionBarStyleLight</item>
         <item name="*com.google.android.apps.docs:actionOverflowButtonStyle">@*com.google.android.apps.docs:style/OverlayActionBarOverflowStyle</item>
         <item name="*com.google.android.apps.docs:bottomSheetDialogTheme">@*com.google.android.apps.docs:style/Theme.GoogleMaterial.Dark.BottomSheetDialog</item>
@@ -153,7 +152,7 @@
         <item name="*com.google.android.apps.docs:backupsEmptyState">@*com.google.android.apps.docs:drawable/quantum_ic_cloud_grey600_48</item>
         <item name="*com.google.android.apps.docs:driveEmptyState">@*com.google.android.apps.docs:drawable/quantum_ic_drive_grey600_48</item>
     </style>
-    <style name="MediaViewerText.TimeGm2" parent="@*com.google.android.apps.docs:style/MediaViewerText">
+    <style name="MediaViewerText.Time" parent="@*com.google.android.apps.docs:style/MediaViewerText">
         <item name="android:textSize">12.0sp</item>
         <item name="android:textColor">@*android:color/white</item>
     </style>
@@ -162,12 +161,6 @@
     </style>
     <style name="OpenSearchBarText" parent="@*com.google.android.apps.docs:style/TextAppearance.GoogleMaterial.Headline6">
         <item name="android:textColor">@*android:color/white</item>
-    </style>
-    <style name="PageIndicatorStyle">
-        <item name="android:textSize">14.0sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">#ffdddddd</item>
-        <item name="android:gravity">center</item>
     </style>
     <style name="PeoplePredict.Text.LegacyBody" parent="@*com.google.android.apps.docs:style/PeoplePredict.Text">
         <item name="android:textSize">@*com.google.android.apps.docs:dimen/m_text_size_subhead</item>
@@ -306,7 +299,7 @@
     <style name="UrawTheme" parent="@*android:style/Theme.DeviceDefault.Light">
         <item name="android:colorControlActivated">@*com.google.android.apps.docs:color/quantum_googblue500</item>
     </style>
-    <style name="VersionTheme" parent="@*com.google.android.apps.docs:style/Theme.GoogleMaterial.DayNight.Bridge">
+    <style name="VersionTheme" parent="@*com.google.android.apps.docs:style/BaseVersionTheme">
         <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
         <item name="*com.google.android.apps.docs:colorAccent">@*com.google.android.apps.docs:color/quantum_googblue500</item>
         <item name="*com.google.android.apps.docs:colorPrimary">@*android:color/primary_material_dark</item>
@@ -335,6 +328,24 @@
         <item name="*com.google.android.apps.docs:productNameTextColor">@*android:color/white</item>
         <item name="*com.google.android.apps.docs:logoColor">light</item>
     </style>
+    <style name="Widget.GoogleMaterial.Snackbar" parent="@*com.google.android.apps.docs:style/Widget.MaterialComponents.Snackbar">
+        <item name="actionTextColorAlpha">@*com.google.android.apps.docs:dimen/design_snackbar_action_text_color_alpha</item>
+        <item name="*com.google.android.apps.docs:backgroundTint">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.apps.docs:enforceMaterialTheme">true</item>
+        <item name="*com.google.android.apps.docs:materialThemeOverlay">@*com.google.android.apps.docs:style/ThemeOverlay.GoogleMaterial.Snackbar</item>
+    </style>
+    <style name="Widget.MaterialComponents.Snackbar.TextView" parent="@*com.google.android.apps.docs:style/Widget.AppCompat.TextView">
+        <item name="android:textAppearance">@*com.google.android.apps.docs:style/TextAppearance.GoogleMaterial.Body2</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">@*com.google.android.apps.docs:dimen/design_snackbar_padding_horizontal</item>
+        <item name="android:paddingTop">@*com.google.android.apps.docs:dimen/design_snackbar_padding_vertical</item>
+        <item name="android:paddingRight">@*com.google.android.apps.docs:dimen/design_snackbar_padding_horizontal</item>
+        <item name="android:paddingBottom">@*com.google.android.apps.docs:dimen/design_snackbar_padding_vertical</item>
+        <item name="android:maxLines">@*com.google.android.apps.docs:integer/design_snackbar_text_max_lines</item>
+        <item name="android:alpha">@*com.google.android.apps.docs:dimen/material_emphasis_high_type</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
     <style name="discussion_author_name_text_style_dark" parent="@*com.google.android.apps.docs:style/discussion_author_name_text_style">
         <item name="android:textColor">@*android:color/white</item>
     </style>
@@ -353,20 +364,5 @@
         <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
-    </style>
-    <style name="pe_discussion_author_name_text_style">
-        <item name="android:textSize">12.0sp</item>
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:fontFamily">sans-serif-medium</item>
-    </style>
-    <style name="pe_discussion_edit_text_style">
-        <item name="android:textSize">16.0sp</item>
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:fontFamily">sans-serif</item>
-    </style>
-    <style name="pe_discussion_label_text_style">
-        <item name="android:textSize">12.0sp</item>
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:fontFamily">sans-serif-medium</item>
     </style>
 </resources>

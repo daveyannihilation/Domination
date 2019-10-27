@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:theme="@*com.google.android.keep:style/SettingsTheme" android:background="@*android:color/background_floating_material_dark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:theme="@*com.google.android.keep:style/LightToolbarTheme" android:gravity="center" android:id="@*com.google.android.keep:id/toolbar" android:layout_width="fill_parent" android:layout_height="@*com.google.android.keep:dimen/abc_action_bar_default_height_material" app:popupTheme="@*com.google.android.keep:style/ThemeOverlay.Popup" style="@*com.google.android.keep:style/LightToolbarStyle" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@*com.google.android.keep:dimen/abc_action_bar_default_height_material">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@*com.google.android.keep:string/settings_display_options" style="@*com.google.android.keep:style/SettingsHeaderStyle" />
+            <com.google.android.material.switchmaterial.SwitchMaterial android:id="@*com.google.android.keep:id/settings_add_new_items_to_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@*com.google.android.keep:string/settings_add_new_items_to_bottom" android:singleLine="false" />
+            <include layout="@*com.google.android.keep:layout/settings_divider" />
+            <com.google.android.material.switchmaterial.SwitchMaterial android:id="@*com.google.android.keep:id/settings_move_checked_items_to_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@*com.google.android.keep:string/settings_move_checked_items_to_bottom" android:singleLine="false" />
+            <include layout="@*com.google.android.keep:layout/settings_divider" />
+            <com.google.android.material.switchmaterial.SwitchMaterial android:id="@*com.google.android.keep:id/settings_enable_web_embeds" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@*com.google.android.keep:string/enable_web_embeds" android:singleLine="false" />
+            <include layout="@*com.google.android.keep:layout/settings_divider" />
+            <com.google.android.material.switchmaterial.SwitchMaterial android:id="@*com.google.android.keep:id/settings_enable_dark_mode" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@*com.google.android.keep:string/settings_enable_dark_mode" android:singleLine="false" />
+            <include android:id="@*com.google.android.keep:id/settings_enable_dark_mode_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" layout="@*com.google.android.keep:layout/settings_divider" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@*com.google.android.keep:string/settings_reminders" style="@*com.google.android.keep:style/SettingsHeaderStyle" />
+            <com.google.android.apps.keep.ui.settings.ReminderPresetSetting android:id="@*com.google.android.keep:id/settings_preset_morning" android:layout_width="fill_parent" android:layout_height="wrap_content" app:titleText="@*com.google.android.keep:string/reminder_time_morning" />
+            <com.google.android.apps.keep.ui.settings.ReminderPresetSetting android:id="@*com.google.android.keep:id/settings_preset_afternoon" android:layout_width="fill_parent" android:layout_height="wrap_content" app:titleText="@*com.google.android.keep:string/reminder_time_afternoon" />
+            <com.google.android.apps.keep.ui.settings.ReminderPresetSetting android:id="@*com.google.android.keep:id/settings_preset_evening" android:layout_width="fill_parent" android:layout_height="wrap_content" app:showDivider="false" app:titleText="@*com.google.android.keep:string/reminder_time_evening" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@*com.google.android.keep:string/settings_sharing" style="@*com.google.android.keep:style/SettingsHeaderStyle" />
+            <com.google.android.material.switchmaterial.SwitchMaterial android:id="@*com.google.android.keep:id/settings_enable_sharing" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@*com.google.android.keep:string/enable_sharing" android:singleLine="false" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
