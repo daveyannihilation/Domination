@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="ActionBarTitleFont" parent="@*com.google.android.keep:style/TextAppearance.AppCompat.Widget.ActionBar.Title">
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@*android:color/white</item>
-    </style>
     <style name="ContextualToolbarTheme">
         <item name="android:colorBackground">@*android:color/primary_material_dark</item>
         <item name="*com.google.android.keep:colorControlNormal">@*com.google.android.keep:color/google_blue600</item>
@@ -20,18 +16,6 @@
         <item name="android:buttonBarNegativeButtonStyle">@*com.google.android.keep:style/DialogTextButtonStyle</item>
         <item name="*com.google.android.keep:colorAccent">@*com.google.android.keep:color/button_color</item>
     </style>
-    <style name="EditorConflictAlertOverlayStyle">
-        <item name="android:gravity">center</item>
-        <item name="android:layout_gravity">center</item>
-        <item name="android:background">#b3000000</item>
-        <item name="android:padding">12.0dip</item>
-    </style>
-    <style name="EditorConflictAlertTextStyle">
-        <item name="android:textSize">12.0sp</item>
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:gravity">center</item>
-        <item name="android:paddingTop">4.0dip</item>
-    </style>
     <style name="EditorConflictResolutionTimestampStyle">
         <item name="android:textSize">12.0sp</item>
         <item name="android:textColor">#ffbbbbbb</item>
@@ -43,17 +27,6 @@
         <item name="android:background">@*android:color/primary_material_dark</item>
         <item name="android:touchscreenBlocksFocus">true</item>
         <item name="*com.google.android.keep:titleTextAppearance">@*com.google.android.keep:style/Heading6TextAppearance</item>
-    </style>
-    <style name="RecipientEditTextViewBase">
-        <item name="android:textAppearance">?*android:textAppearanceMedium</item>
-        <item name="android:background">@null</item>
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:minHeight">@*com.google.android.keep:dimen/chip_height</item>
-        <item name="android:popupBackground">@*android:color/background_floating_material_dark</item>
-        <item name="android:inputType">textEmailAddress|textMultiLine</item>
-        <item name="android:textDirection">locale</item>
-        <item name="android:textAlignment">viewStart</item>
     </style>
     <style name="ReminderDialogSpinner" parent="@*android:style/Widget.Material.Spinner">
         <item name="android:textSize">16.0sp</item>
@@ -67,26 +40,9 @@
         <item name="android:layout_height">0.0dip</item>
         <item name="android:layout_alignParentBottom">true</item>
     </style>
-   <style name="ShareActivityInvalidShareeEmail">
-        <item name="android:textSize">14.0sp</item>
-        <item name="android:textColor">#ffdddddd</item>
-        <item name="android:ellipsize">end</item>
-        <item name="android:paddingTop">2.0dip</item>
-        <item name="android:paddingBottom">2.0dip</item>
-        <item name="android:singleLine">true</item>
-        <item name="android:fontFamily">sans-serif-light</item>
-    </style>
     <style name="TextAppearance.Design.Snackbar.Message" parent="@*android:style/TextAppearance">
         <item name="android:textSize">@*com.google.android.keep:dimen/design_snackbar_text_size</item>
         <item name="android:textColor">@*android:color/white</item>
-    </style>
-    <style name="ThemeOverlay.GoogleMaterial.Light.BottomSheetDialog" parent="@*com.google.android.keep:style/ThemeOverlay.MaterialComponents.Dialog">
-        <item name="android:windowBackground">@*android:color/transparent</item>
-        <item name="android:windowAnimationStyle">@*com.google.android.keep:style/Animation.MaterialComponents.BottomSheetDialog</item>
-        <item name="android:statusBarColor">@*android:color/transparent</item>
-        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
-        <item name="*com.google.android.keep:bottomSheetStyle">@*com.google.android.keep:style/Widget.GoogleMaterial.BottomSheet.Modal</item>
-        <item name="*com.google.android.keep:materialButtonStyle">@*com.google.android.keep:style/Widget.GoogleMaterial.Button</item>
     </style>
     <style name="ThemeOverlay.GoogleMaterial.Snackbar" parent="">
         <item name="*com.google.android.keep:colorOnSurface">@*android:color/background_floating_material_dark</item>
@@ -95,36 +51,16 @@
         <item name="android:background">@*android:color/background_dark</item>
         <item name="*com.google.android.keep:colorControlNormal">@*android:color/secondary_text_default_material_dark</item>
     </style>
-    <style name="ToolbarTitleTextAppearance" parent="@*com.google.android.keep:style/TextAppearance.GoogleMaterial.Toolbar.Title">
+    <style name="Widget.GoogleMaterial.Snackbar" parent="@*com.google.android.keep:style/Widget.MaterialComponents.Snackbar">
+        <item name="*com.google.android.keep:actionTextColorAlpha">@*com.google.android.keep:dimen/design_snackbar_action_text_color_alpha</item>
+        <item name="*com.google.android.keep:backgroundTint">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.keep:enforceMaterialTheme">true</item>
+        <item name="*com.google.android.keep:materialThemeOverlay">@*com.google.android.keep:style/ThemeOverlay.GoogleMaterial.Snackbar</item>
+    </style>
+    <style name="Widget.GoogleMaterial.Snackbar.TextView" parent="@*com.google.android.keep:style/Widget.MaterialComponents.Snackbar.TextView">
         <item name="android:textColor">@*android:color/white</item>
-    </style>
-    <style name="Widget.GoogleMaterial.ProductLockupView.Dark" parent="@*com.google.android.keep:style/Widget.GoogleMaterial.ProductLockupView">
-        <item name="*com.google.android.keep:productNameTextColor">@*android:color/white</item>
-        <item name="*com.google.android.keep:logoColor">light</item>
-    </style>
-    <style name="Widget.GoogleMaterial.Toolbar.Surface" parent="@*com.google.android.keep:style/Widget.GoogleMaterial.Toolbar">
-        <item name="android:background">@*android:color/primary_material_dark</item>
-    </style>
-    <style name="Widget.MaterialComponents.ActionBar.Surface" parent="@*com.google.android.keep:style/Widget.AppCompat.ActionBar.Solid">
-        <item name="*com.google.android.keep:background">@*android:color/primary_material_dark</item>
-        <item name="*com.google.android.keep:elevation">0.0dip</item>
     </style>
     <style name="Widget.MaterialComponents.AppBarLayout.Surface" parent="@*com.google.android.keep:style/Widget.Design.AppBarLayout">
         <item name="android:background">@*android:color/primary_material_dark</item>
-    </style>
-    <style name="WidgetHeaderTitleStyle">
-        <item name="android:textAppearance">@*com.google.android.keep:style/Heading6TextAppearance</item>
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:layout_gravity">center|left</item>
-        <item name="android:paddingLeft">8.0dip</item>
-        <item name="android:paddingTop">6.0dip</item>
-        <item name="android:paddingBottom">6.0dip</item>
-    </style>
-    <style name="ZoomingActivityThemeLight" parent="@*android:style/Theme.Holo">
-        <item name="android:windowBackground">@*android:color/transparent</item>
-        <item name="android:windowIsFloating">false</item>
-        <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowAnimationStyle">@null</item>
-        <item name="android:windowActionBar">true</item>
     </style>
 </resources>

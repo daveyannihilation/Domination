@@ -1,38 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layer-list
+<inset android:insetLeft="1.0dip" android:insetRight="1.0dip" android:insetBottom="2.0dip"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <item>
-        <selector>
-            <item android:state_pressed="false">
-                <shape android:shape="rectangle">
-                    <corners android:radius="2.0dip" />
-                    <solid android:color="@*com.google.android.apps.chromecast.app:color/button_shadow" />
-                </shape>
-            </item>
-        </selector>
-    </item>
-    <item>
-        <inset android:insetLeft="1.0dip" android:insetRight="1.0dip" android:insetBottom="2.0dip">
-            <selector>
-                <item android:state_enabled="false">
+    <selector>
+        <item android:state_enabled="false">
+            <shape android:shape="rectangle">
+                <corners android:radius="2.0dip" />
+                <solid android:color="@*android:color/background_floating_material_dark" />
+            </shape>
+        </item>
+        <item android:state_enabled="true">
+            <ripple android:color="#ff0d47a1">
+                <item>
                     <shape android:shape="rectangle">
                         <corners android:radius="2.0dip" />
-                        <solid android:color="@*android:color/button_material_dark" />
+                        <solid android:color="#ff1976d2" />
                     </shape>
                 </item>
-                <item android:state_pressed="false">
-                    <shape android:shape="rectangle">
-                        <corners android:radius="2.0dip" />
-                        <solid android:color="@*com.google.android.apps.chromecast.app:color/blue_button" />
-                    </shape>
-                </item>
-                <item android:state_pressed="true">
-                    <shape android:shape="rectangle">
-                        <corners android:radius="2.0dip" />
-                        <solid android:color="@*com.google.android.apps.chromecast.app:color/blue_button_selected" />
-                    </shape>
-                </item>
-            </selector>
-        </inset>
-    </item>
-</layer-list>
+            </ripple>
+        </item>
+    </selector>
+</inset>

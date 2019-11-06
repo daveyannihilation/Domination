@@ -5,21 +5,18 @@
         <shape android:shape="rectangle">
             <corners android:radius="2.0dip" />
             <solid android:color="@*android:color/background_floating_material_dark" />
-            <stroke android:width="2.0px" android:color="@*android:color/white" />
+            <stroke android:width="4.0px" android:color="@*android:color/white" />
         </shape>
     </item>
-    <item android:state_pressed="false">
-        <shape android:shape="rectangle">
-            <corners android:radius="2.0dip" />
-            <solid android:color="@*android:color/button_material_dark" />
-            <stroke android:width="2.0px" android:color="@*android:color/white" />
-        </shape>
-    </item>
-    <item android:state_pressed="true">
-        <shape android:shape="rectangle">
-            <corners android:radius="2.0dip" />
-            <solid android:color="@*android:color/dim_foreground_light" />
-            <stroke android:width="2.0px" android:color="@*android:color/white" />
-        </shape>
+    <item android:state_enabled="true">
+        <ripple android:color="@*android:color/secondary_text_default_material_dark">
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="2.0dip" />
+                    <solid android:color="@*android:color/button_material_dark" />
+                    <stroke android:width="4.0px" android:color="@*android:color/white" />
+                </shape>
+            </item>
+        </ripple>
     </item>
 </selector>

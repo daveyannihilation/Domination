@@ -16,21 +16,13 @@
             <com.whatsapp.stickers.StickerView android:id="@*com.whatsapp:id/sticker_preview_expanded_sticker" android:visibility="invisible" android:layout_width="@*com.whatsapp:dimen/sticker_store_pack_item_preview_expanded" android:layout_height="@*com.whatsapp:dimen/sticker_store_pack_item_preview_expanded" android:scaleType="centerCrop" />
             <View android:id="@*com.whatsapp:id/divider" android:background="#00000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:alpha="0.0" />
         </FrameLayout>
-        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@*com.whatsapp:id/buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="16.0dip" android:baselineAligned="false">
-            <FrameLayout android:id="@*com.whatsapp:id/delete_btn" android:background="@*com.whatsapp:drawable/sticker_btn_red" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_weight="1.0" android:contentDescription="@*com.whatsapp:string/sticker_store_delete_pack_content_description" style="@*com.whatsapp:style/Widget.AppCompat.Button.Borderless">
-                <com.whatsapp.WaTextView android:layout_gravity="center" android:id="@*com.whatsapp:id/sticker_delete_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@*com.whatsapp:string/sticker_delete_button" style="@*com.whatsapp:style/StickerPreviewButtonCapText" />
+        <FrameLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="16.0dip" android:baselineAligned="false">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.whatsapp.components.Button android:id="@*com.whatsapp:id/download_btn" android:visibility="gone" android:layout_width="fill_parent" android:text="@*com.whatsapp:string/sticker_download_button" android:contentDescription="@*com.whatsapp:string/sticker_store_download_pack_content_description" style="@*com.whatsapp:style/WA.Button" />
+                <com.whatsapp.components.Button android:id="@*com.whatsapp:id/delete_btn" android:visibility="gone" android:layout_width="fill_parent" android:text="@*com.whatsapp:string/sticker_delete_button" android:contentDescription="@*com.whatsapp:string/sticker_store_delete_pack_content_description" style="@*com.whatsapp:style/WA.Button.Error" />
             </FrameLayout>
-            <LinearLayout android:orientation="horizontal" android:id="@*com.whatsapp:id/download_btn" android:background="@*com.whatsapp:drawable/sticker_btn_green" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@*com.whatsapp:style/Widget.AppCompat.Button.Borderless">
-                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
-                    <com.whatsapp.WaTextView android:id="@*com.whatsapp:id/sticker_preview_action_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@*com.whatsapp:string/sticker_download_button" style="@*com.whatsapp:style/StickerPreviewButtonCapText" />
-                    <com.whatsapp.WaTextView android:textColor="@*android:color/white" android:id="@*com.whatsapp:id/bullet_file_size" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@*com.whatsapp:style/ConversationDocumentInfoBullet" />
-                    <com.whatsapp.WaTextView android:id="@*com.whatsapp:id/sticker_pack_filesize" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@*com.whatsapp:style/StickerPreviewButtonText" />
-                </LinearLayout>
-                <FrameLayout android:id="@*com.whatsapp:id/pack_download_progress" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip">
-                    <com.whatsapp.CircularProgressBar android:layout_gravity="center" android:id="@*com.whatsapp:id/pack_download_spinner" android:layout_width="fill_parent" android:layout_height="fill_parent" android:indeterminate="true" app:cpbBackground="@*android:color/transparent" app:cpbColor="@*android:color/white" app:cpbStrokeWidthFactor="4.0" />
-                </FrameLayout>
-            </LinearLayout>
-        </LinearLayout>
+            <com.whatsapp.CircularProgressBar android:layout_gravity="center" android:id="@*com.whatsapp:id/pack_download_progress" android:visibility="gone" android:layout_width="36.0dip" android:layout_height="36.0dip" android:indeterminate="true" app:cpbColor="@*android:color/white" app:cpbStrokeWidthFactor="4.0" />
+        </FrameLayout>
     </LinearLayout>
     <FrameLayout android:id="@*com.whatsapp:id/loading_progress" android:layout_width="fill_parent" android:layout_height="fill_parent">
         <ProgressBar android:layout_gravity="center" android:layout_width="64.0dip" android:layout_height="64.0dip" />

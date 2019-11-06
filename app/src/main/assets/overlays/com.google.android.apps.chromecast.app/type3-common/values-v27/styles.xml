@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppTheme.NonTransparentStatusBar" parent="@*com.google.android.apps.chromecast.app:style/AppTheme">
+    <style name="AppTheme.NonTransparentStatusBar" parent="@*com.google.android.apps.chromecast.app:style/AppTheme.NonTransparentStatusBarBase">
         <item name="android:windowTranslucentStatus">false</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
@@ -19,6 +19,13 @@
         <item name="android:windowLightNavigationBar">false</item>
         <item name="android:navigationBarDividerColor">@*android:color/primary_dark_material_dark</item>
         <item name="*com.google.android.apps.chromecast.app:windowActionBar">false</item>
+    </style>
+    <style name="HomeHistoryTheme" parent="@*com.google.android.apps.chromecast.app:style/BaseHomeHistoryTheme">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
     </style>
     <style name="Theme.GoogleMaterial.Light" parent="@*com.google.android.apps.chromecast.app:style/Base.Theme.GoogleMaterial.Light">
         <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>

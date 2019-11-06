@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.whatsapp.EmojiPopupLayout android:id="@*com.whatsapp:id/conversation_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
+<com.whatsapp.KeyboardPopupLayout android:id="@*com.whatsapp:id/conversation_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <View android:id="@*com.whatsapp:id/attach_anchor" android:layout_width="0.0dip" android:layout_height="0.0dip" />
     <com.whatsapp.wallpaper.WallPaperView android:id="@*com.whatsapp:id/conversation_background" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
     <View android:id="@*com.whatsapp:id/transition_clipper_top" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_above="@*android:id/list" android:transitionName="@*com.whatsapp:string/transition_clipper_top" />
@@ -11,11 +11,11 @@
     <FrameLayout android:id="@*com.whatsapp:id/voice_recorder_decor" android:background="#00000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
     <FrameLayout android:id="@*com.whatsapp:id/next_important_message" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:visibility="gone" android:layout_width="56.0dip" android:layout_height="46.0dip" android:layout_above="@*com.whatsapp:id/scroll_bottom" android:layout_alignParentRight="true">
         <com.whatsapp.WaImageView android:layout_gravity="bottom|center" android:background="@*com.whatsapp:drawable/fast_scroll_circle" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@*com.whatsapp:drawable/group_catchup_scroll" android:scaleType="center" />
-        <com.whatsapp.WaTextView android:textSize="10.5sp" android:textStyle="bold" android:textColor="@*android:color/white" android:gravity="center" android:id="@*com.whatsapp:id/important_badge" android:background="@*com.whatsapp:drawable/new_messages_indicator" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="16.0sp" />
+        <com.whatsapp.WaTextView android:textSize="10.5sp" android:textStyle="bold" android:textColor="@*android:color/white" android:gravity="center" android:id="@*com.whatsapp:id/important_badge" android:background="@*com.whatsapp:drawable/new_messages_indicator" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="16.0sp" app:backgroundTint="#ff009688" />
     </FrameLayout>
     <FrameLayout android:id="@*com.whatsapp:id/scroll_bottom" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:paddingBottom="12.0dip" android:layout_width="56.0dip" android:layout_height="58.0dip" android:layout_alignBottom="@*android:id/list" android:layout_alignParentRight="true">
         <com.whatsapp.WaImageView android:layout_gravity="bottom|center" android:background="@*com.whatsapp:drawable/fast_scroll_circle" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@*com.whatsapp:drawable/fast_scroll_arrow_down" android:scaleType="center" />
-        <com.whatsapp.WaTextView android:textSize="10.5sp" android:textStyle="bold" android:textColor="@*android:color/white" android:gravity="center" android:id="@*com.whatsapp:id/unseen_badge" android:background="@*com.whatsapp:drawable/new_messages_indicator" android:padding="0.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="16.0sp" />
+        <com.whatsapp.WaTextView android:textSize="10.5sp" android:textStyle="bold" android:textColor="@*android:color/white" android:gravity="center" android:id="@*com.whatsapp:id/unseen_badge" android:background="@*com.whatsapp:drawable/new_messages_indicator" android:padding="0.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="16.0sp" app:backgroundTint="#ff009688" />
     </FrameLayout>
     <include layout="@*com.whatsapp:layout/conversation_entry" />
     <View android:id="@*com.whatsapp:id/footer_size" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_alignTop="@*com.whatsapp:id/footer" android:layout_alignBottom="@*com.whatsapp:id/footer" />
@@ -27,4 +27,4 @@
         <com.whatsapp.WaTextView android:textSize="17.0sp" android:textColor="@*android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@*com.whatsapp:string/tap_to_return_to_call" android:layout_toLeftOf="@*com.whatsapp:id/call_notification_timer" android:layout_alignParentLeft="true" />
         <com.whatsapp.WaTextView android:textSize="16.0sp" android:textColor="@*android:color/white" android:gravity="center_vertical" android:id="@*com.whatsapp:id/call_notification_timer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:textAllCaps="true" />
     </RelativeLayout>
-</com.whatsapp.EmojiPopupLayout>
+</com.whatsapp.KeyboardPopupLayout>
