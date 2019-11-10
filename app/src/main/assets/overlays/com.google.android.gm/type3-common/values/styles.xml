@@ -48,7 +48,7 @@
         <item name="android:datePickerStyle">@*com.google.android.gm:style/DatePickerStyle</item>
     </style>
     <style name="GmailTheme.NoActionBar" parent="@*android:style/Theme.Material.NoActionBar" />
-    <style name="GmailifyTheme" parent="@*com.google.android.gm:style/GmailifyTheme.DarkThemeSupport">
+    <style name="GmailifyTheme" parent="@*com.google.android.gm:style/SudThemeMaterial.DayNight">
         <item name="android:spinnerStyle">@*android:style/Widget.Holo.Spinner</item>
         <item name="android:textColorLink">@*com.google.android.gm:color/text_color_blue</item>
         <item name="android:actionModeBackground">@*com.google.android.gm:color/action_mode_background</item>
@@ -157,8 +157,25 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:singleLine">true</item>
     </style>
-    <style name="Widget.GoogleMaterial.ProductLockupView.Dark" parent="@*com.google.android.gm:style/Widget.GoogleMaterial.ProductLockupView">
-        <item name="*com.google.android.gm:logoColor">light</item>
-        <item name="*com.google.android.gm:productNameTextColor">@*android:color/white</item>
+    <style name="Widget.GoogleMaterial.Snackbar" parent="@*com.google.android.gm:style/Widget.MaterialComponents.Snackbar">
+        <item name="*com.google.android.gm:actionTextColorAlpha">@*com.google.android.gm:dimen/design_snackbar_action_text_color_alpha</item>
+        <item name="*com.google.android.gm:backgroundTint">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.gm:enforceMaterialTheme">true</item>
+        <item name="*com.google.android.gm:materialThemeOverlay">@*com.google.android.gm:style/ThemeOverlay.GoogleMaterial.Snackbar</item>
+    </style>
+    <style name="Widget.GoogleMaterial.Snackbar.TextView" parent="@*com.google.android.gm:style/Widget.MaterialComponents.Snackbar.TextView">
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="Widget.MaterialComponents.Snackbar.TextView" parent="@*com.google.android.gm:style/Widget.AppCompat.TextView">
+        <item name="android:textAppearance">@*com.google.android.gm:style/TextAppearance.GoogleMaterial.Body2</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">@*com.google.android.gm:dimen/design_snackbar_padding_horizontal</item>
+        <item name="android:paddingTop">@*com.google.android.gm:dimen/design_snackbar_padding_vertical</item>
+        <item name="android:paddingRight">@*com.google.android.gm:dimen/design_snackbar_padding_horizontal</item>
+        <item name="android:paddingBottom">@*com.google.android.gm:dimen/design_snackbar_padding_vertical</item>
+        <item name="android:maxLines">@*com.google.android.gm:integer/design_snackbar_text_max_lines</item>
+        <item name="android:alpha">@*com.google.android.gm:dimen/material_emphasis_high_type</item>
+        <item name="android:textAlignment">viewStart</item>
     </style>
 </resources>
