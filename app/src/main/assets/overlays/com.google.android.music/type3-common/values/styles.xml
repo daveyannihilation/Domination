@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="BaseMusicActivityTheme" parent="@*com.google.android.music:style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:gridViewStyle">@*com.google.android.music:style/MusicGridView</item>
+        <item name="android:listViewStyle">@*com.google.android.music:style/MusicListView</item>
+        <item name="*com.google.android.music:drawerArrowStyle">@*com.google.android.music:style/MusicDrawerArrowStyle</item>
+        <item name="*com.google.android.music:windowActionBarOverlay">true</item>
+        <item name="*com.google.android.music:actionBarPopupTheme">@*com.google.android.music:style/ThemeOverlay.AppCompat</item>
+        <item name="*com.google.android.music:actionBarDivider">@null</item>
+        <item name="*com.google.android.music:dialogTheme">@*com.google.android.music:style/MusicDialogTheme</item>
+        <item name="*com.google.android.music:selectableItemBackground">@*com.google.android.music:drawable/white_highlight</item>
+        <item name="*com.google.android.music:colorPrimary">@*com.google.android.music:color/app_color_primary</item>
+        <item name="*com.google.android.music:colorPrimaryDark">@*com.google.android.music:color/app_color_secondary</item>
+        <item name="*com.google.android.music:colorAccent">@*com.google.android.music:color/app_color_primary</item>
+        <item name="*com.google.android.music:alertDialogTheme">@*com.google.android.music:style/MusicDialogTheme</item>
+        <item name="android:navigationBarColor">@*android:color/background_dark</item>
+    </style>
     <style name="DialogSlideUpDownAnim" parent="@*android:style/Theme.Material.Dialog">
         <item name="android:windowAnimationStyle">@*com.google.android.music:style/BottomDialogAnimation</item>
     </style>
@@ -41,20 +59,6 @@
         <item name="android:fontFamily">sans-serif-medium</item>
     </style>
     <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light" />
-    <style name="PlayDrawerBaseText" parent="@*com.google.android.music:style/PlayMediumPlainText">
-        <item name="android:textSize">@*com.google.android.music:dimen/play_drawer_primary_size</item>
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:ellipsize">marquee</item>
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:background">@*android:color/background_floating_material_dark</item>
-        <item name="android:paddingLeft">@*com.google.android.music:dimen/play_drawer_item_left_padding</item>
-        <item name="android:paddingRight">@*com.google.android.music:dimen/play_drawer_item_right_padding</item>
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:minHeight">@*com.google.android.music:dimen/play_drawer_item_primary_min_height</item>
-        <item name="android:singleLine">true</item>
-        <item name="android:drawablePadding">32.0dip</item>
-    </style>
     <style name="PlayDrawerList">
         <item name="android:background">@*android:color/background_floating_material_dark</item>
         <item name="android:fadingEdgeLength">0.0dip</item>

@@ -423,6 +423,52 @@
     <attr name="controllerViewId" format="reference" />
     <attr name="controller_layout_id" format="reference" />
     <attr name="coordinatorLayoutStyle" format="reference" />
+    <attr name="coreColorAppBackground" format="color" />
+    <attr name="coreColorBadgeProtected" format="color" />
+    <attr name="coreColorBadgeVerified" format="color" />
+    <attr name="coreColorBorder" format="color" />
+    <attr name="coreColorButtonStrokeDisabled" format="color" />
+    <attr name="coreColorCaret" format="color" />
+    <attr name="coreColorComposerOverflowTextHighlight" format="color" />
+    <attr name="coreColorDeepGray30" format="color" />
+    <attr name="coreColorDeepGray50" format="color" />
+    <attr name="coreColorDrawerBackground" format="color" />
+    <attr name="coreColorFocusedBg" format="color" />
+    <attr name="coreColorFooterLogo" format="color" />
+    <attr name="coreColorGlobalRippleSelector" format="color" />
+    <attr name="coreColorInlineAction" format="color" />
+    <attr name="coreColorInlineActionDetail" format="color" />
+    <attr name="coreColorInlineActionDetailDisabled" format="color" />
+    <attr name="coreColorInlineActionDetailPressed" format="color" />
+    <attr name="coreColorInlineActionDisabled" format="color" />
+    <attr name="coreColorInlineActionPressed" format="color" />
+    <attr name="coreColorLinkSelected" format="color" />
+    <attr name="coreColorListMarginBg" format="color" />
+    <attr name="coreColorMediumGray30" format="color" />
+    <attr name="coreColorMediumGray50" format="color" />
+    <attr name="coreColorNavigationPillsLightDefault" format="color" />
+    <attr name="coreColorNavigationPillsLightPressed" format="color" />
+    <attr name="coreColorPlaceholderBg" format="color" />
+    <attr name="coreColorPopupBackground" format="color" />
+    <attr name="coreColorPopupFocusedBg" format="color" />
+    <attr name="coreColorPressed" format="color" />
+    <attr name="coreColorPressedOverlay" format="color" />
+    <attr name="coreColorPrimaryText" format="color" />
+    <attr name="coreColorSecondaryText" format="color" />
+    <attr name="coreColorSectionDivider" format="color" />
+    <attr name="coreColorSelectionBackground" format="color" />
+    <attr name="coreColorSelectionHighlightBackground" format="color" />
+    <attr name="coreColorSelectionHighlightText" format="color" />
+    <attr name="coreColorSelectionText" format="color" />
+    <attr name="coreColorSpeechBubble" format="color" />
+    <attr name="coreColorStatusBar" format="color" />
+    <attr name="coreColorSubtext" format="color" />
+    <attr name="coreColorTertiary" format="color" />
+    <attr name="coreColorTextDisabled" format="color" />
+    <attr name="coreColorTextLink" format="color" />
+    <attr name="coreColorTombstoneBackground" format="color" />
+    <attr name="coreColorToolbarBg" format="color" />
+    <attr name="coreColorTranslateLogo" format="color" />
     <attr name="cornerRadius" format="dimension" />
     <attr name="cornerRadiusBottomEnd" format="dimension" />
     <attr name="cornerRadiusBottomLeft" format="dimension" />
@@ -454,6 +500,7 @@
     <attr name="dashStrokeWidth" format="dimension" />
     <attr name="defaultConstraints" format="reference" />
     <attr name="defaultDrawable" format="reference" />
+    <attr name="defaultElevation" format="dimension" />
     <attr name="defaultQueryHint" format="string" />
     <attr name="defaultValue" format="reference|string|integer|boolean|float" />
     <attr name="default_artwork" format="reference" />
@@ -1259,6 +1306,10 @@
         <flag name="italic" value="0x00000002" />
         <flag name="normal" value="0x00000000" />
     </attr>
+    <attr name="messageType">
+        <enum name="received" value="0" />
+        <enum name="sent" value="1" />
+    </attr>
     <attr name="midDotSeparator" format="boolean" />
     <attr name="min" format="integer" />
     <attr name="minIconWidth" format="dimension" />
@@ -1977,7 +2028,6 @@
     <attr name="toggleModes" format="reference" />
     <attr name="toggleOnClick" format="boolean" />
     <attr name="toolBarDrawerItemStyle" format="reference" />
-    <attr name="toolBarElevation" format="dimension" />
     <attr name="toolBarOverflowSubtitleTextAppearance" format="reference" />
     <attr name="toolBarOverflowTextAppearance" format="reference" />
     <attr name="toolBarSize" format="dimension" />
@@ -2059,50 +2109,6 @@
     <attr name="twitterButtonMediumFontSize" format="dimension" />
     <attr name="twitterButtonMediumHeight" format="dimension" />
     <attr name="twitterButtonMediumIconSize" format="dimension" />
-    <attr name="twitterColorAppBackground" format="color" />
-    <attr name="twitterColorBadgeProtected" format="color" />
-    <attr name="twitterColorBadgeVerified" format="color" />
-    <attr name="twitterColorBorder" format="color" />
-    <attr name="twitterColorButtonStrokeDisabled" format="color" />
-    <attr name="twitterColorCaret" format="color" />
-    <attr name="twitterColorComposerOverflowTextHighlight" format="color" />
-    <attr name="twitterColorDeepGray30" format="color" />
-    <attr name="twitterColorDeepGray50" format="color" />
-    <attr name="twitterColorDrawerBackground" format="color" />
-    <attr name="twitterColorFocusedBg" format="color" />
-    <attr name="twitterColorFooterLogo" format="color" />
-    <attr name="twitterColorGlobalRippleSelector" format="color" />
-    <attr name="twitterColorInlineAction" format="color" />
-    <attr name="twitterColorInlineActionDetail" format="color" />
-    <attr name="twitterColorInlineActionDetailDisabled" format="color" />
-    <attr name="twitterColorInlineActionDetailPressed" format="color" />
-    <attr name="twitterColorInlineActionDisabled" format="color" />
-    <attr name="twitterColorInlineActionPressed" format="color" />
-    <attr name="twitterColorLinkSelected" format="color" />
-    <attr name="twitterColorListMarginBg" format="color" />
-    <attr name="twitterColorMediumGray30" format="color" />
-    <attr name="twitterColorMediumGray50" format="color" />
-    <attr name="twitterColorNavigationPillsLightDefault" format="color" />
-    <attr name="twitterColorNavigationPillsLightPressed" format="color" />
-    <attr name="twitterColorPlaceholderBg" format="color" />
-    <attr name="twitterColorPressed" format="color" />
-    <attr name="twitterColorPressedOverlay" format="color" />
-    <attr name="twitterColorPrimaryText" format="color" />
-    <attr name="twitterColorSecondaryText" format="color" />
-    <attr name="twitterColorSectionDivider" format="color" />
-    <attr name="twitterColorSelectionBackground" format="color" />
-    <attr name="twitterColorSelectionHighlightBackground" format="color" />
-    <attr name="twitterColorSelectionHighlightText" format="color" />
-    <attr name="twitterColorSelectionText" format="color" />
-    <attr name="twitterColorSpeechBubble" format="color" />
-    <attr name="twitterColorStatusBar" format="color" />
-    <attr name="twitterColorSubtext" format="color" />
-    <attr name="twitterColorTertiary" format="color" />
-    <attr name="twitterColorTextBlue" format="color" />
-    <attr name="twitterColorTextDisabled" format="color" />
-    <attr name="twitterColorTombstoneBackground" format="color" />
-    <attr name="twitterColorToolbarBg" format="color" />
-    <attr name="twitterColorTranslateLogo" format="color" />
     <attr name="typeaheadPrimaryTextColor" format="color" />
     <attr name="typeaheadSecondaryTextColor" format="color" />
     <attr name="typeaheadUserNameStyle" format="reference" />

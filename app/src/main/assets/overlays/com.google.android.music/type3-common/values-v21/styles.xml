@@ -10,11 +10,31 @@
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabText.Inverse" parent="@*android:style/Widget.Material.ActionBar.TabText" />
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabView" parent="@*android:style/Widget.Material.ActionBar.TabView" />
     <style name="Base.Widget.AppCompat.Light.PopupMenu" parent="@*android:style/Widget.Material.PopupMenu" />
+    <style name="BaseMusicActivityTheme" parent="@*com.google.android.music:style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:gridViewStyle">@*com.google.android.music:style/MusicGridView</item>
+        <item name="android:listViewStyle">@*com.google.android.music:style/MusicListView</item>
+        <item name="android:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="android:windowSharedElementsUseOverlay">false</item>
+        <item name="*com.google.android.music:drawerArrowStyle">@*com.google.android.music:style/MusicDrawerArrowStyle</item>
+        <item name="*com.google.android.music:windowActionBarOverlay">true</item>
+        <item name="*com.google.android.music:actionBarPopupTheme">@*com.google.android.music:style/ThemeOverlay.AppCompat</item>
+        <item name="*com.google.android.music:actionBarDivider">@null</item>
+        <item name="*com.google.android.music:dialogTheme">@*com.google.android.music:style/MusicDialogTheme</item>
+        <item name="*com.google.android.music:selectableItemBackground">@*com.google.android.music:drawable/white_highlight</item>
+        <item name="*com.google.android.music:colorPrimary">@*com.google.android.music:color/app_color_primary</item>
+        <item name="*com.google.android.music:colorPrimaryDark">@*com.google.android.music:color/app_color_secondary</item>
+        <item name="*com.google.android.music:colorAccent">@*com.google.android.music:color/app_color_primary</item>
+        <item name="*com.google.android.music:alertDialogTheme">@*com.google.android.music:style/MusicDialogTheme</item>
+        <item name="android:navigationBarColor">@*android:color/background_dark</item>
+    </style>
     <style name="MusicActivityTheme.Launcher" parent="@*com.google.android.music:style/MusicActivityTheme">
         <item name="android:windowBackground">@*com.google.android.music:drawable/splashscreen_logo</item>
-        <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_text_leanback_light</item>
         <item name="android:windowDrawsSystemBarBackgrounds">false</item>
-        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:statusBarColor">@*android:color/primary_text_leanback_light</item>
         <item name="android:windowShowWallpaper">false</item>
     </style>
     <style name="NowCard.ModuleTitle" parent="@*com.google.android.music:style/NowCard">
