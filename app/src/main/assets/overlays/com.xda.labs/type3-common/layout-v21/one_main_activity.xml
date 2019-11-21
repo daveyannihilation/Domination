@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@*com.xda.labs:id/drawerlayout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@*com.xda.labs:id/content_frame" android:background="@*android:color/primary_dark_material_dark" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <android.support.v7.widget.Toolbar android:theme="@*com.xda.labs:style/ToolbarTheme" android:id="@*com.xda.labs:id/toolbar" android:background="@*android:color/primary_material_dark" android:layout_width="fill_parent" android:layout_height="@*com.xda.labs:dimen/abc_action_bar_default_height_material" app:popupTheme="@*com.xda.labs:style/PopupTheme" />
+    </FrameLayout>
+    <com.xda.labs.views.ScrimInsetsFrameLayout android:layout_gravity="start" android:id="@*com.xda.labs:id/scrimInsetsFrameLayout" android:background="@*android:color/primary_dark_material_dark" android:fitsSystemWindows="true" android:layout_width="@*com.xda.labs:dimen/navbar_width" android:layout_height="fill_parent" android:elevation="10.0dip" app:insetForeground="#00000000">
+        <include android:id="@*com.xda.labs:id/navdrawer" layout="@*com.xda.labs:layout/navdrawer" />
+    </com.xda.labs.views.ScrimInsetsFrameLayout>
+    <com.xda.labs.views.ScrimInsetsFrameLayout android:id="@*com.xda.labs:id/login_modal_scrim" android:visibility="gone" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="11.0dip">
+        <com.xda.labs.views.LoginModal android:id="@*com.xda.labs:id/login_modal" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.xda.labs.views.ScrimInsetsFrameLayout>
+</android.support.v4.widget.DrawerLayout>

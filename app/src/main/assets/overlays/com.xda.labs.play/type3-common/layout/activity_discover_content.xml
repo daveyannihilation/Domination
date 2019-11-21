@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:background="@*android:color/primary_dark_material_dark" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:theme="@*com.xda.labs.play:style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@*com.xda.labs.play:id/app_bar_layout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="228.0dip">
+        <android.support.design.widget.CollapsingToolbarLayout android:id="@*com.xda.labs.play:id/collapsing_toolbar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:collapsedTitleTextAppearance="@*com.xda.labs.play:style/DiscoverContentCollapsedStyle" app:contentScrim="@*android:color/primary_dark_material_dark" app:expandedTitleMarginBottom="12.0dip" app:expandedTitleMarginEnd="20.0dip" app:expandedTitleMarginStart="20.0dip" app:expandedTitleTextAppearance="@*com.xda.labs.play:style/DiscoverContentExpandedStyle" app:layout_scrollFlags="exitUntilCollapsed|scroll">
+            <ImageView android:id="@*com.xda.labs.play:id/header" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="228.0dip" android:src="@*com.xda.labs.play:drawable/loading_banner" android:scaleType="centerCrop" android:adjustViewBounds="true" app:layout_collapseMode="parallax" />
+            <ImageView android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@*com.xda.labs.play:drawable/app_list_gradient" app:layout_collapseMode="pin" />
+            <ImageView android:layout_gravity="bottom" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@*com.xda.labs.play:drawable/bottom_app_list_gradient" app:layout_collapseMode="parallax" />
+            <android.support.v7.widget.Toolbar android:theme="@*com.xda.labs.play:style/ToolbarTheme" android:id="@*com.xda.labs.play:id/toolbar" android:layout_width="fill_parent" android:layout_height="@*com.xda.labs.play:dimen/abc_action_bar_default_height_material" app:layout_collapseMode="pin" app:popupTheme="@*com.xda.labs.play:style/PopupTheme" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView android:layout_gravity="fill_vertical" android:id="@*com.xda.labs.play:id/scroll" android:background="@*android:color/primary_dark_material_dark" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@*com.xda.labs.play:string/appbar_scrolling_view_behavior">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@*com.xda.labs.play:drawable/bottom_shadow">
+            <LinearLayout android:layout_gravity="fill_vertical" android:orientation="vertical" android:id="@*com.xda.labs.play:id/discover_cont" android:padding="12.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:id="@*com.xda.labs.play:id/infobar" android:padding="4.0dip" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@*com.xda.labs.play:dimen/regular1" android:ellipsize="end" android:id="@*com.xda.labs.play:id/discover_author" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:singleLine="true" android:layout_toLeftOf="@*com.xda.labs.play:id/discover_date" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="@*com.xda.labs.play:dimen/regular1" android:gravity="left" android:id="@*com.xda.labs.play:id/discover_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <com.xda.labs.play.DiscoverWebView android:id="@*com.xda.labs.play:id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:isScrollContainer="true" />
+                <LinearLayout android:orientation="horizontal" android:id="@*com.xda.labs.play:id/forum_link" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="110.0dip">
+                    <TextView android:textSize="@*com.xda.labs.play:dimen/regular2" android:textColor="@*android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@*com.xda.labs.play:string/discover_forum_link" />
+                    <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="4.0dip" android:src="@*com.xda.labs.play:drawable/ic_action_launch" android:tint="@*com.xda.labs.play:color/accent" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

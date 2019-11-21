@@ -17,13 +17,6 @@
         <item name="android:layout_height">@*com.google.android.apps.chromecast.app:dimen/oneline_listitem_height</item>
         <item name="android:fontFamily">@*com.google.android.apps.chromecast.app:font/google_sans</item>
     </style>
-    <style name="AlbumNameDesc" parent="@*com.google.android.apps.chromecast.app:style/RegularFontFamily.Tiny">
-        <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
-    </style>
-    <style name="AlbumNameSubTitle" parent="@*com.google.android.apps.chromecast.app:style/MediumFontFamily.Medium">
-        <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
-        <item name="android:fontFamily">@*com.google.android.apps.chromecast.app:font/google_sans_medium</item>
-    </style>
     <style name="AlbumTagSelected" parent="@*com.google.android.apps.chromecast.app:style/RegularFontFamily.Tiny">
         <item name="android:textColor">@*android:color/white</item>
     </style>
@@ -60,7 +53,7 @@
         <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
         <item name="*com.google.android.apps.chromecast.app:chipViewStyle">@*com.google.android.apps.chromecast.app:style/ChipViewStyle.Protected</item>
         <item name="*com.google.android.apps.chromecast.app:colorPrimaryGoogle">@*com.google.android.apps.chromecast.app:color/cast_blue</item>
-        <item name="*com.google.android.apps.chromecast.app:colorPrimaryStateInkGoogle">@*com.google.android.apps.chromecast.app:color/cast_blue</item>
+        <item name="*com.google.android.apps.chromecast.app:colorPrimaryStateContentGoogle">@*com.google.android.apps.chromecast.app:color/cast_blue</item>
         <item name="*com.google.android.apps.chromecast.app:colorPrimaryVariantGoogle">@*com.google.android.apps.chromecast.app:color/cast_blue</item>
         <item name="*com.google.android.apps.chromecast.app:popupMenuStyle">@*com.google.android.apps.chromecast.app:style/PopupMenu</item>
         <item name="*com.google.android.apps.chromecast.app:searchViewStyle">@*com.google.android.apps.chromecast.app:style/SearchViewStyle</item>
@@ -247,7 +240,6 @@
         <item name="*com.google.android.apps.chromecast.app:iconTint">#ffffffff</item>
     </style>
     <style name="GDI.GM2.Dialog.Ab_LearnMore" parent="@*com.google.android.apps.chromecast.app:style/GDI.GM2.Dialog">
-        <item name="android:textAppearance">@*com.google.android.apps.chromecast.app:style/TextAppearance.GoogleMaterial.Subhead1</item>
         <item name="android:textSize">14.0sp</item>
         <item name="android:textColor">#ffdddddd</item>
         <item name="android:textColorLink">#ff1976d2</item>
@@ -299,14 +291,6 @@
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
     </style>
-    <style name="HomeTabItemBadge">
-        <item name="android:textSize">@*com.google.android.apps.chromecast.app:dimen/home_tab_shelf_item_badge_text_size</item>
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:layout_width">@*com.google.android.apps.chromecast.app:dimen/home_tab_shelf_item_badge_size</item>
-        <item name="android:layout_height">@*com.google.android.apps.chromecast.app:dimen/home_tab_shelf_item_badge_size</item>
-        <item name="android:maxLines">1</item>
-        <item name="android:fontFamily">@*com.google.android.apps.chromecast.app:font/google_sans_medium</item>
-    </style>
     <style name="HomeTabItemLabel">
         <item name="android:textSize">@*com.google.android.apps.chromecast.app:dimen/home_tab_shelf_item_label_text_size</item>
         <item name="android:textColor">@*android:color/white</item>
@@ -314,12 +298,6 @@
         <item name="android:gravity">center</item>
         <item name="android:maxLines">2</item>
         <item name="android:fontFamily">@*com.google.android.apps.chromecast.app:font/google_sans</item>
-    </style>
-    <style name="HomeTabShelfLabelSubtitle">
-        <item name="android:textSize">@*com.google.android.apps.chromecast.app:dimen/home_tab_shelf_label_subtitle_text_size</item>
-        <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
-        <item name="android:gravity">center</item>
-        <item name="android:fontFamily">@*com.google.android.apps.chromecast.app:font/google_sans_medium</item>
     </style>
     <style name="HomeTabShelfLabelTitle">
         <item name="android:textSize">@*com.google.android.apps.chromecast.app:dimen/home_tab_shelf_label_title_text_size</item>
@@ -381,43 +359,12 @@
         <item name="android:background">@*com.google.android.apps.chromecast.app:drawable/abc_item_background_holo_dark</item>
         <item name="android:tint">@*android:color/white</item>
     </style>
-    <style name="MediaCardDeviceHeaderTitle" parent="@*com.google.android.apps.chromecast.app:style/MediumFontFamily">
-        <item name="android:textSize">25.0sp</item>
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:ellipsize">end</item>
-        <item name="android:maxLines">1</item>
-        <item name="android:textAlignment">viewStart</item>
-        <item name="android:fontFamily">@*com.google.android.apps.chromecast.app:font/google_sans_medium</item>
-    </style>
     <style name="MediaCardDevicePickerSection" parent="@*com.google.android.apps.chromecast.app:style/RegularFontFamily.Medium">
         <item name="android:textSize">12.0sp</item>
         <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
         <item name="android:ellipsize">end</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:letterSpacing">0.125</item>
-    </style>
-    <style name="MediaCardDeviceSubtitle" parent="@*com.google.android.apps.chromecast.app:style/RegularFontFamily.Tiny">
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:ellipsize">end</item>
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:maxLines">1</item>
-        <item name="android:textAlignment">viewStart</item>
-    </style>
-    <style name="MediaCardDeviceTitle" parent="@*com.google.android.apps.chromecast.app:style/MediumFontFamily.Small">
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:ellipsize">end</item>
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:maxLines">1</item>
-        <item name="android:drawablePadding">20.0dip</item>
-        <item name="android:textAlignment">viewStart</item>
-        <item name="android:fontFamily">@*com.google.android.apps.chromecast.app:font/google_sans_medium</item>
-    </style>
-    <style name="MediaCardDeviceVolumeIcon">
-        <item name="android:layout_width">@*com.google.android.apps.chromecast.app:dimen/media_card_device_icon_size</item>
-        <item name="android:layout_height">@*com.google.android.apps.chromecast.app:dimen/media_card_device_icon_size</item>
-        <item name="android:scaleType">fitXY</item>
-        <item name="android:tint">@*android:color/white</item>
-        <item name="*com.google.android.apps.chromecast.app:srcCompat">@*com.google.android.apps.chromecast.app:drawable/quantum_gm_ic_volume_up_vd_theme_24</item>
     </style>
     <style name="MediaCardProviderLabel" parent="@*com.google.android.apps.chromecast.app:style/RegularFontFamily.Medium">
         <item name="android:textSize">12.0sp</item>
@@ -469,21 +416,6 @@
         <item name="*com.google.android.apps.chromecast.app:fabCustomSize">@*com.google.android.apps.chromecast.app:dimen/remote_control_mode_button_size</item>
         <item name="*com.google.android.apps.chromecast.app:backgroundTint">@*android:color/button_material_dark</item>
     </style>
-    <style name="RemoteControlLiveBadge">
-        <item name="android:textSize">12.0sp</item>
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:layout_gravity">center_horizontal</item>
-        <item name="android:background">@*com.google.android.apps.chromecast.app:drawable/remote_control_live_badge_background</item>
-        <item name="android:layout_marginTop">@*com.google.android.apps.chromecast.app:dimen/remote_control_camera_status_margin_top</item>
-        <item name="android:minHeight">24.0dip</item>
-        <item name="android:text">@*com.google.android.apps.chromecast.app:string/remote_control_live_badge_text</item>
-        <item name="android:drawablePadding">5.0dip</item>
-        <item name="android:drawableStart">@*com.google.android.apps.chromecast.app:drawable/remote_control_live_badge_dot</item>
-        <item name="android:fontFamily">@*com.google.android.apps.chromecast.app:font/google_sans_medium</item>
-        <item name="android:paddingStart">6.0dip</item>
-        <item name="android:paddingEnd">9.0dip</item>
-    </style>
     <style name="RemoteControlModeSheetLabel" parent="@*com.google.android.apps.chromecast.app:style/RegularFontFamily">
         <item name="android:textSize">@*com.google.android.apps.chromecast.app:dimen/remote_control_mode_sheet_item_font_size</item>
         <item name="android:textColor">@*android:color/white</item>
@@ -523,13 +455,6 @@
         <item name="android:background">@*com.google.android.apps.chromecast.app:drawable/round_edge_button</item>
         <item name="android:minWidth">@*com.google.android.apps.chromecast.app:dimen/button_min_width</item>
         <item name="android:maxLines">1</item>
-    </style>
-    <style name="RoutineItemLabel" parent="@*com.google.android.apps.chromecast.app:style/MediumFontFamily.Medium">
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:background">?*android:selectableItemBackground</item>
-        <item name="android:padding">@*com.google.android.apps.chromecast.app:dimen/panel_padding</item>
-        <item name="android:maxLines">1</item>
-        <item name="android:fontFamily">@*com.google.android.apps.chromecast.app:font/google_sans_medium</item>
     </style>
     <style name="SettingName.Switch" parent="@*com.google.android.apps.chromecast.app:style/SettingName">
         <item name="*com.google.android.apps.chromecast.app:colorControlActivated">@*com.google.android.apps.chromecast.app:color/cast_blue</item>
@@ -588,10 +513,6 @@
         <item name="android:textColor">@*android:color/white</item>
         <item name="android:gravity">center</item>
     </style>
-    <style name="TalkbackStatusText" parent="@*com.google.android.apps.chromecast.app:style/MediumFontFamily.Small">
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:fontFamily">@*com.google.android.apps.chromecast.app:font/google_sans_medium</item>
-    </style>
     <style name="TemplateFooter" parent="@*com.google.android.apps.chromecast.app:style/RegularFontFamily.Small">
         <item name="android:background">@*com.google.android.apps.chromecast.app:color/app_background</item>
         <item name="android:paddingTop">15.0dip</item>
@@ -633,14 +554,6 @@
         <item name="android:gravity">center</item>
         <item name="*com.google.android.apps.chromecast.app:fontFamily">@*com.google.android.apps.chromecast.app:font/google_sans</item>
     </style>
-    <style name="ViewAllItemCardSubtitle" parent="@*com.google.android.apps.chromecast.app:style/RegularFontFamily.Small">
-        <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
-        <item name="android:ellipsize">end</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:maxLines">1</item>
-        <item name="android:fontFamily">@*com.google.android.apps.chromecast.app:font/google_sans</item>
-    </style>
     <style name="ViewAllItemCardTitle" parent="@*com.google.android.apps.chromecast.app:style/RegularFontFamily.Medium">
         <item name="android:textColor">@*android:color/white</item>
         <item name="android:ellipsize">end</item>
@@ -668,6 +581,9 @@
         <item name="*com.google.android.apps.chromecast.app:backgroundTint">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.apps.chromecast.app:enforceMaterialTheme">true</item>
         <item name="*com.google.android.apps.chromecast.app:materialThemeOverlay">@*com.google.android.apps.chromecast.app:style/ThemeOverlay.GoogleMaterial.Snackbar</item>
+    </style>
+    <style name="Widget.GoogleMaterial.Snackbar.TextView" parent="@*com.google.android.apps.chromecast.app:style/Widget.MaterialComponents.Snackbar.TextView">
+        <item name="android:textColor">@*android:color/white</item>
     </style>
     <style name="growthkit_feature_highlight_black">
         <item name="android:textColor">#ffffffff</item>
