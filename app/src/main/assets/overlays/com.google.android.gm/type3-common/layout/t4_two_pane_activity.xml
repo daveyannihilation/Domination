@@ -6,7 +6,7 @@
             <FrameLayout android:layout_gravity="left" android:id="@*com.google.android.gm:id/drawer" android:layout_width="@*com.google.android.gm:dimen/two_pane_drawer_width_open" android:layout_height="fill_parent">
                 <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@*com.google.android.gm:layout/drawer_fragment" />
             </FrameLayout>
-            <FrameLayout android:layout_gravity="left" android:id="@*com.google.android.gm:id/content_container" android:layout_width="0.0dip" android:layout_height="fill_parent">
+            <FrameLayout android:layout_gravity="left" android:id="@*com.google.android.gm:id/content_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:touchscreenBlocksFocus="true">
                 <FrameLayout android:id="@*com.google.android.gm:id/content_pane" android:layout_width="fill_parent" android:layout_height="fill_parent" />
                 <include layout="@*com.google.android.gm:layout/t4_floating_action_button" />
             </FrameLayout>
@@ -15,6 +15,6 @@
             </FrameLayout>
             <include layout="@*com.google.android.gm:layout/t4_floating_action" />
         </com.android.mail.ui.TaskTwoPaneLayout>
-        <FrameLayout android:layout_gravity="left" android:id="@*com.google.android.gm:id/create_pane" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:layout_gravity="left" android:id="@*com.google.android.gm:id/create_pane" android:layout_width="fill_parent" android:layout_height="fill_parent" android:touchscreenBlocksFocus="true" />
     </FrameLayout>
 </LinearLayout>
