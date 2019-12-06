@@ -27,6 +27,12 @@
         <item name="*com.google.android.apps.chromecast.app:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
         <item name="*com.google.android.apps.chromecast.app:windowActionBar">false</item>
     </style>
+    <style name="AppTheme.Launcher" parent="@*com.google.android.apps.chromecast.app:style/AppTheme.NonTransparentStatusBar">
+        <item name="android:windowBackground">@*com.google.android.apps.chromecast.app:drawable/quantum_launchscreen_google_home</item>
+        <item name="android:fitsSystemWindows">false</item>
+        <item name="*com.google.android.apps.chromecast.app:colorPrimaryDark">@*android:color/primary_text_leanback_light</item>
+        <item name="android:windowShowWallpaper">false</item>
+    </style>
     <style name="AppThemeBase" parent="@*com.google.android.apps.chromecast.app:style/Theme.GoogleMaterial.Light.NoActionBar.Bridge">
         <item name="android:spinnerStyle">@*com.google.android.apps.chromecast.app:style/Spinner</item>
         <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
@@ -41,12 +47,6 @@
         <item name="*com.google.android.apps.chromecast.app:popupMenuStyle">@*com.google.android.apps.chromecast.app:style/PopupMenu</item>
         <item name="*com.google.android.apps.chromecast.app:searchViewStyle">@*com.google.android.apps.chromecast.app:style/SearchViewStyle</item>
         <item name="*com.google.android.apps.chromecast.app:textInputStyle">@*com.google.android.apps.chromecast.app:style/TextInputLayoutStyle</item>
-    </style>
-    <style name="AppTheme.Launcher" parent="@*com.google.android.apps.chromecast.app:style/AppTheme.NonTransparentStatusBar">
-        <item name="android:windowBackground">@*com.google.android.apps.chromecast.app:drawable/quantum_launchscreen_google_home</item>
-        <item name="android:fitsSystemWindows">false</item>
-        <item name="*com.google.android.apps.chromecast.app:colorPrimaryDark">@*android:color/primary_text_leanback_light</item>
-        <item name="android:windowShowWallpaper">false</item>
     </style>
     <style name="AppThemeMaterialBase" parent="@*com.google.android.apps.chromecast.app:style/Theme.GoogleMaterial.Light.NoActionBar">
         <item name="android:spinnerStyle">@*com.google.android.apps.chromecast.app:style/Spinner</item>
@@ -373,6 +373,11 @@
         <item name="android:textAllCaps">true</item>
         <item name="android:letterSpacing">0.16</item>
     </style>
+    <style name="MediaCardProviderLabelLowerCase" parent="@*com.google.android.apps.chromecast.app:style/TextAppearance.GoogleMaterial.Subhead2">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:lineSpacingExtra">18.0dip</item>
+    </style>
     <style name="MediaCardSubtitle" parent="@*com.google.android.apps.chromecast.app:style/RegularFontFamily.Small">
         <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
         <item name="android:ellipsize">end</item>
@@ -415,6 +420,21 @@
         <item name="android:layout_margin">@*com.google.android.apps.chromecast.app:dimen/remote_control_mode_button_margin</item>
         <item name="*com.google.android.apps.chromecast.app:fabCustomSize">@*com.google.android.apps.chromecast.app:dimen/remote_control_mode_button_size</item>
         <item name="*com.google.android.apps.chromecast.app:backgroundTint">@*android:color/button_material_dark</item>
+    </style>
+    <style name="RemoteControlLiveBadge">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@*com.google.android.apps.chromecast.app:drawable/remote_control_live_badge_background</item>
+        <item name="android:layout_marginTop">@*com.google.android.apps.chromecast.app:dimen/remote_control_camera_status_margin_top</item>
+        <item name="android:minHeight">24.0dip</item>
+        <item name="android:text">@*com.google.android.apps.chromecast.app:string/remote_control_live_badge_text</item>
+        <item name="android:drawablePadding">5.0dip</item>
+        <item name="android:drawableStart">@*com.google.android.apps.chromecast.app:drawable/remote_control_live_badge_dot</item>
+        <item name="android:fontFamily">@*com.google.android.apps.chromecast.app:font/google_sans_medium</item>
+        <item name="android:paddingStart">6.0dip</item>
+        <item name="android:paddingEnd">9.0dip</item>
     </style>
     <style name="RemoteControlModeSheetLabel" parent="@*com.google.android.apps.chromecast.app:style/RegularFontFamily">
         <item name="android:textSize">@*com.google.android.apps.chromecast.app:dimen/remote_control_mode_sheet_item_font_size</item>
@@ -512,6 +532,10 @@
         <item name="android:textSize">32.0sp</item>
         <item name="android:textColor">@*android:color/white</item>
         <item name="android:gravity">center</item>
+    </style>
+    <style name="TalkbackStatusText" parent="@*com.google.android.apps.chromecast.app:style/MediumFontFamily.Small">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:fontFamily">@*com.google.android.apps.chromecast.app:font/google_sans_medium</item>
     </style>
     <style name="TemplateFooter" parent="@*com.google.android.apps.chromecast.app:style/RegularFontFamily.Small">
         <item name="android:background">@*com.google.android.apps.chromecast.app:color/app_background</item>
