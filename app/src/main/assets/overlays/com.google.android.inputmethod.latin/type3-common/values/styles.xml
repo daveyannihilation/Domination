@@ -344,8 +344,25 @@
         <item name="*com.google.android.inputmethod.latin:enforceMaterialTheme">true</item>
         <item name="*com.google.android.inputmethod.latin:backgroundTint">@*android:color/button_material_dark</item>
     </style>
-    <style name="Widget.GoogleMaterial.ProductLockupView.Dark" parent="@*com.google.android.inputmethod.latin:style/Widget.GoogleMaterial.ProductLockupView">
-        <item name="*com.google.android.inputmethod.latin:productNameTextColor">@*android:color/white</item>
-        <item name="*com.google.android.inputmethod.latin:logoColor">light</item>
+    <style name="Widget.GoogleMaterial.Snackbar" parent="@*com.google.android.inputmethod.latin:style/Widget.MaterialComponents.Snackbar">
+        <item name="*com.google.android.inputmethod.latin:actionTextColorAlpha">@*com.google.android.inputmethod.latin:dimen/design_snackbar_action_text_color_alpha</item>
+        <item name="*com.google.android.inputmethod.latin:backgroundTint">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.inputmethod.latin:enforceMaterialTheme">true</item>
+        <item name="*com.google.android.inputmethod.latin:materialThemeOverlay">@*com.google.android.inputmethod.latin:style/ThemeOverlay.GoogleMaterial.Snackbar</item>
+    </style>
+    <style name="Widget.GoogleMaterial.Snackbar.TextView" parent="@*com.google.android.inputmethod.latin:style/Widget.MaterialComponents.Snackbar.TextView">
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="Widget.MaterialComponents.Snackbar.TextView" parent="@*com.google.android.inputmethod.latin:style/Widget.AppCompat.TextView">
+        <item name="android:textAppearance">@*com.google.android.inputmethod.latin:style/TextAppearance.GoogleMaterial.Body2</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">@*com.google.android.inputmethod.latin:dimen/design_snackbar_padding_horizontal</item>
+        <item name="android:paddingTop">@*com.google.android.inputmethod.latin:dimen/design_snackbar_padding_vertical</item>
+        <item name="android:paddingRight">@*com.google.android.inputmethod.latin:dimen/design_snackbar_padding_horizontal</item>
+        <item name="android:paddingBottom">@*com.google.android.inputmethod.latin:dimen/design_snackbar_padding_vertical</item>
+        <item name="android:maxLines">@*com.google.android.inputmethod.latin:integer/design_snackbar_text_max_lines</item>
+        <item name="android:alpha">@*com.google.android.inputmethod.latin:dimen/material_emphasis_high_type</item>
+        <item name="android:textAlignment">viewStart</item>
     </style>
 </resources>
