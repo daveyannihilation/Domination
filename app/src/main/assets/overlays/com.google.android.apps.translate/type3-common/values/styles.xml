@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppNoTitleTheme" parent="@*android:style/Theme.Material.NoActionBar" />
     <style name="AppTheme" parent="@*com.google.android.apps.translate:style/AppBaseTheme">
         <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
@@ -36,6 +35,7 @@
         <item name="android:textColorPrimary">@*android:color/white</item>
         <item name="*com.google.android.apps.translate:colorPrimary">@*android:color/primary_material_dark</item>
         <item name="*com.google.android.apps.translate:dividerColor">@*android:color/transparent</item>
+        <item name="*com.google.android.apps.translate:pickerIconColor">@*android:color/white</item>
         <item name="*com.google.android.apps.translate:pickerTextColor">@*android:color/white</item>
         <item name="*com.google.android.apps.translate:tintColor">@*android:color/white</item>
     </style>
@@ -54,17 +54,6 @@
     <style name="SimpleWhiteBgTheme" parent="@*com.google.android.apps.translate:style/AppBaseTheme">
         <item name="android:windowBackground">@*android:color/background_dark</item>
     </style>
-    <style name="ThemeOverlay.GoogleMaterial.Light.BottomSheetDialog" parent="@*com.google.android.apps.translate:style/ThemeOverlay.MaterialComponents.Dialog">
-        <item name="android:windowBackground">@*android:color/transparent</item>
-        <item name="android:windowAnimationStyle">@*com.google.android.apps.translate:style/Animation.MaterialComponents.BottomSheetDialog</item>
-        <item name="android:statusBarColor">@*android:color/transparent</item>
-        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
-        <item name="*com.google.android.apps.translate:bottomSheetStyle">@*com.google.android.apps.translate:style/Widget.GoogleMaterial.BottomSheet.Modal</item>
-        <item name="*com.google.android.apps.translate:materialButtonStyle">@*com.google.android.apps.translate:style/Widget.GoogleMaterial.Button</item>
-    </style>
-    <style name="ToolbarOverlayAppCompat" parent="@*com.google.android.apps.translate:style/ThemeOverlay.AppCompat.Dark.ActionBar">
-        <item name="*com.google.android.apps.translate:colorAccent">@*android:color/white</item>
-    </style>
     <style name="WhiteDialogTheme" parent="@*com.google.android.apps.translate:style/Theme.AppCompat.Dialog">
         <item name="*com.google.android.apps.translate:windowActionBar">false</item>
         <item name="*com.google.android.apps.translate:windowNoTitle">true</item>
@@ -80,20 +69,26 @@
         <item name="*com.google.android.apps.translate:colorControlNormal">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.apps.translate:titleTextColor">@*android:color/white</item>
     </style>
-    <style name="Widget.Design.BottomSheet.Modal" parent="@*android:style/Widget">
-        <item name="android:background">@*android:color/background_floating_material_dark</item>
-        <item name="android:elevation">@*com.google.android.apps.translate:dimen/design_bottom_sheet_modal_elevation</item>
+    <style name="Widget.GoogleMaterial.Snackbar" parent="@*com.google.android.apps.translate:style/Widget.MaterialComponents.Snackbar">
+        <item name="*com.google.android.apps.translate:actionTextColorAlpha">@*com.google.android.apps.translate:dimen/design_snackbar_action_text_color_alpha</item>
         <item name="*com.google.android.apps.translate:backgroundTint">@*android:color/background_floating_material_dark</item>
-        <item name="*com.google.android.apps.translate:behavior_peekHeight">auto</item>
-        <item name="*com.google.android.apps.translate:behavior_hideable">true</item>
-        <item name="*com.google.android.apps.translate:behavior_skipCollapsed">false</item>
-        <item name="*com.google.android.apps.translate:shapeAppearance">@null</item>
-        <item name="*com.google.android.apps.translate:shapeAppearanceOverlay">@null</item>
-        <item name="*com.google.android.apps.translate:enforceMaterialTheme">false</item>
+        <item name="*com.google.android.apps.translate:enforceMaterialTheme">true</item>
+        <item name="*com.google.android.apps.translate:materialThemeOverlay">@*com.google.android.apps.translate:style/ThemeOverlay.GoogleMaterial.Snackbar</item>
     </style>
-    <style name="Widget.GoogleMaterial.ProductLockupView.Dark" parent="@*com.google.android.apps.translate:style/Widget.GoogleMaterial.ProductLockupView">
-        <item name="*com.google.android.apps.translate:logoColor">light</item>
-        <item name="*com.google.android.apps.translate:productNameTextColor">@*android:color/white</item>
+    <style name="Widget.GoogleMaterial.Snackbar.TextView" parent="@*com.google.android.apps.translate:style/Widget.MaterialComponents.Snackbar.TextView">
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="Widget.MaterialComponents.Snackbar.TextView" parent="@*com.google.android.apps.translate:style/Widget.AppCompat.TextView">
+        <item name="android:textAppearance">@*com.google.android.apps.translate:style/TextAppearance.GoogleMaterial.Body2</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">@*com.google.android.apps.translate:dimen/design_snackbar_padding_horizontal</item>
+        <item name="android:paddingTop">@*com.google.android.apps.translate:dimen/design_snackbar_padding_vertical</item>
+        <item name="android:paddingRight">@*com.google.android.apps.translate:dimen/design_snackbar_padding_horizontal</item>
+        <item name="android:paddingBottom">@*com.google.android.apps.translate:dimen/design_snackbar_padding_vertical</item>
+        <item name="android:maxLines">@*com.google.android.apps.translate:integer/design_snackbar_text_max_lines</item>
+        <item name="android:alpha">@*com.google.android.apps.translate:dimen/material_emphasis_high_type</item>
+        <item name="android:textAlignment">viewStart</item>
     </style>
     <style name="growthkit_feature_highlight_black">
         <item name="android:textColor">#ffffffff</item>
