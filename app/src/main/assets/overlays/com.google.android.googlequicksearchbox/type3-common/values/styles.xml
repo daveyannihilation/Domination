@@ -68,7 +68,7 @@
         <item name="android:shadowRadius">2.0</item>
     </style>
     <style name="ChatUi.Suggestion.HqLaunch" parent="@*com.google.android.googlequicksearchbox:style/ChatUi.Suggestion.V2">
-        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textColor">@*android:color/white</item>
     </style>
     <style name="ChatUi.Suggestion.V3.Hq" parent="@*com.google.android.googlequicksearchbox:style/ChatUi.Suggestion.V3">
         <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
@@ -80,10 +80,12 @@
         <item name="android:statusBarColor">@*android:color/transparent</item>
         <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
     </style>
-    <style name="Divider">
-        <item name="android:background">#00000000</item>
+    <style name="DividerStyle">
+        <item name="android:theme">@*com.google.android.googlequicksearchbox:style/Theme.GoogleMaterial.DayNight.Bridge</item>
+        <item name="android:background">@*android:color/transparent</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">0.0dip</item>
+        <item name="android:contentDescription">@null</item>
     </style>
     <style name="EntryItemTitleText" parent="@*android:style/TextAppearance.Medium">
         <item name="android:textColor">#ffffffff</item>
@@ -92,6 +94,11 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:maxLines">1</item>
+    </style>
+    <style name="ExitDrivingModeText">
+        <item name="android:textSize">@*com.google.android.googlequicksearchbox:dimen/exit_driving_mode_text_size</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:fontFamily">google-sans-medium</item>
     </style>
     <style name="FloatNavInstructionDistText">
         <item name="android:textSize">20.0sp</item>
@@ -152,6 +159,16 @@
         <item name="android:textSize">20.0sp</item>
         <item name="android:textColor">#ffffffff</item>
         <item name="android:lineSpacingExtra">3.0sp</item>
+    </style>
+    <style name="GridViewItemText">
+        <item name="android:textSize">@*com.google.android.googlequicksearchbox:dimen/grid_view_item_text_size</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:fontFamily">google-sans-medium</item>
+    </style>
+    <style name="HairlineDivider">
+        <item name="android:background">@*android:color/transparent</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.0dip</item>
     </style>
     <style name="HqRaisedButton" parent="@*com.google.android.googlequicksearchbox:style/Widget.AppCompat.Button.Colored">
         <item name="android:textColor">@*android:color/white</item>
@@ -428,12 +445,25 @@
     <style name="Settings.ActionButton.Overflow" parent="@*android:style/Widget.Holo.ActionButton.Overflow">
         <item name="android:src">@*com.google.android.googlequicksearchbox:drawable/quantum_ic_more_vert_white_24</item>
     </style>
-    <style name="TapasThemeOverlay" parent="@*com.google.android.googlequicksearchbox:style/ThemeOverlay.GoogleMaterial.Dark">
+    <style name="TapasDarkTheme" parent="@*com.google.android.googlequicksearchbox:style/ThemeOverlay.GoogleMaterial.Dark">
         <item name="android:colorBackground">@*android:color/background_dark</item>
+        <item name="android:textColorPrimary">@*android:color/white</item>
+        <item name="android:textColorSecondary">@*android:color/secondary_text_default_material_dark</item>
         <item name="android:colorControlActivated">@*com.google.android.googlequicksearchbox:color/google_blue300</item>
         <item name="*com.google.android.googlequicksearchbox:colorAccent">@*com.google.android.googlequicksearchbox:color/google_blue300</item>
         <item name="*com.google.android.googlequicksearchbox:colorOnSurface">@*android:color/white</item>
         <item name="*com.google.android.googlequicksearchbox:colorSurface">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.googlequicksearchbox:selectableItemBackground">@*android:color/primary_dark_material_dark</item>
+    </style>
+    <style name="TapasTheme" parent="@*com.google.android.googlequicksearchbox:style/ThemeOverlay.GoogleMaterial.Dark">
+        <item name="android:colorBackground">@*android:color/background_dark</item>
+        <item name="android:textColorPrimary">@*android:color/white</item>
+        <item name="android:textColorSecondary">@*android:color/secondary_text_default_material_dark</item>
+        <item name="android:colorControlActivated">@*com.google.android.googlequicksearchbox:color/google_blue300</item>
+        <item name="*com.google.android.googlequicksearchbox:colorAccent">@*com.google.android.googlequicksearchbox:color/google_blue300</item>
+        <item name="*com.google.android.googlequicksearchbox:colorOnSurface">@*android:color/white</item>
+        <item name="*com.google.android.googlequicksearchbox:colorSurface">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.googlequicksearchbox:selectableItemBackground">@*android:color/primary_dark_material_dark</item>
     </style>
     <style name="Theme.AssistantAndroidSettings" parent="@*android:style/Theme.DeviceDefault.Light" />
     <style name="Theme.AssistantSettings.Base" parent="@*com.google.android.googlequicksearchbox:style/Theme.AssistantSettings.List">
@@ -462,7 +492,6 @@
         <item name="android:textColorSecondary">@*com.google.android.googlequicksearchbox:color/google_dark_default_color_secondary_text</item>
         <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="android:textColorHint">@*android:color/secondary_text_default_material_dark</item>
-        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
         <item name="*com.google.android.googlequicksearchbox:colorHairline">@*android:color/white</item>
         <item name="*com.google.android.googlequicksearchbox:colorSurface">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.googlequicksearchbox:colorSurfaceElevation2">@*android:color/background_floating_material_dark</item>
@@ -576,7 +605,7 @@
     <style name="Theme.Shim.Light" parent="@*android:style/Theme.DeviceDefault.Light" />
     <style name="Theme.Shim.Light.Dialog" parent="@*android:style/Theme.Material.Dialog" />
     <style name="Theme.Shim.Light.NoActionBar" parent="@*android:style/Theme.Material.NoActionBar" />
-    <style name="Theme.Transparent" parent="@*android:style/Theme.DeviceDefault.Light">
+    <style name="Theme.Transparent" parent="@*com.google.android.googlequicksearchbox:style/Theme.Velvet">
         <item name="android:windowBackground">@*android:color/transparent</item>
         <item name="android:windowIsTranslucent">false</item>
         <item name="android:windowContentOverlay">@null</item>
@@ -618,10 +647,6 @@
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowAnimationStyle">@null</item>
         <item name="android:statusBarColor">@*com.google.android.googlequicksearchbox:color/search_scrim</item>
-        <item name="android:backgroundTint">@null</item>
-    </style>
-    <style name="Theme.Velvet.Card" parent="@*com.google.android.googlequicksearchbox:style/Theme.Velvet">
-        <item name="*com.google.android.googlequicksearchbox:cardBackground">@*com.google.android.googlequicksearchbox:drawable/card_background_c8_b4</item>
         <item name="android:backgroundTint">@null</item>
     </style>
     <style name="Theme.Velvet.Card.TextAppearance.Small" parent="@*android:style/TextAppearance.Small">
@@ -714,6 +739,11 @@
         <item name="android:textColor">@*android:color/white</item>
         <item name="android:background">@*com.google.android.googlequicksearchbox:drawable/collections_button_background_action</item>
     </style>
+    <style name="concierge_chip_text">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:fontFamily">@*com.google.android.googlequicksearchbox:font/google_sans_medium</item>
+    </style>
     <style name="feed_16_20_m" parent="@*com.google.android.googlequicksearchbox:style/feed_16_20_r">
         <item name="android:textColor">@*android:color/white</item>
         <item name="android:fontFamily">sans-serif-medium</item>
@@ -767,6 +797,10 @@
         <item name="android:textSize">16.0sp</item>
         <item name="android:textColor">#ffdddddd</item>
         <item name="android:itemBackground">@*com.google.android.googlequicksearchbox:drawable/monet_viewer_list_popup_tap_highlight</item>
+    </style>
+    <style name="qp_card_module">
+        <item name="android:backgroundTint">@*android:color/secondary_text_leanback_light</item>
+        <item name="android:minHeight">@*com.google.android.googlequicksearchbox:dimen/qp_min_module_height</item>
     </style>
     <style name="reminder_edit_spinner_button" parent="@*android:style/Widget.Holo.Spinner">
         <item name="android:textSize">16.0sp</item>
