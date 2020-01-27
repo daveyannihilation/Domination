@@ -26,6 +26,8 @@
         <item name="*com.Slack:actionModeStyle">@*com.Slack:style/ActionModeTheme</item>
         <item name="*com.Slack:actionOverflowButtonStyle">@*com.Slack:style/Widget.ActionButton.Overflow</item>
         <item name="*com.Slack:alertDialogTheme">@*com.Slack:style/AlertDialogTheme</item>
+        <item name="*com.Slack:bottomSheetDialogTheme">@*com.Slack:style/SlackModalBottomSheetDialog</item>
+        <item name="*com.Slack:bottomSheetStyle">@*com.Slack:style/SlackBottomSheet</item>
         <item name="*com.Slack:cardViewStyle">@*com.Slack:style/SlackCardStyle</item>
         <item name="*com.Slack:colorAccent">@*com.Slack:color/colorAccent</item>
         <item name="*com.Slack:panelBackground">@*android:color/background_dark</item>
@@ -41,6 +43,13 @@
     <style name="SignInFlatWhiteButton" parent="@*com.Slack:style/SlackKit.Button.Large.Primary">
         <item name="*com.Slack:backgroundTint">@*android:color/button_material_dark</item>
         <item name="*com.Slack:rippleColor">@*com.Slack:color/colorControlHighlight</item>
+    </style>
+    <style name="SlackBottomSheet" parent="@*com.Slack:style/Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="*com.Slack:backgroundTint">@*android:color/background_floating_material_dark</item>
+        <item name="*com.Slack:behavior_fitToContents">true</item>
+        <item name="*com.Slack:behavior_hideable">true</item>
+        <item name="*com.Slack:shapeAppearance">@*com.Slack:style/ShapeAppearance.Slack.BottomSheet</item>
+        <item name="*com.Slack:shapeAppearanceOverlay">@*com.Slack:style/ShapeAppearance.Slack.BottomSheet</item>
     </style>
     <style name="SlackKit.Button.Large.White" parent="@*com.Slack:style/SlackKitButton.Large">
         <item name="android:textColor">@*com.Slack:color/selector_button_black</item>
