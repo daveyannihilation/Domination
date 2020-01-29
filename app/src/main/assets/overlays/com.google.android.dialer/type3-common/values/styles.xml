@@ -3,6 +3,17 @@
     <style name="BottomRowIcon.Spam" parent="@*com.google.android.dialer:style/BottomRowIcon">
         <item name="*com.google.android.dialer:colorControlNormal">@*android:color/white</item>
     </style>
+    <style name="CallScreenSurveyActivityTheme.Dark" parent="@*com.google.android.dialer:style/Dialer.Dark.ThemeBase.NoActionBar">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="*com.google.android.dialer:colorSurface">@*android:color/background_floating_material_dark</item>
+    </style>
+    <style name="CallScreenTranscriptionQualityRatingIcon">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">18.0dip</item>
+        <item name="android:layout_height">18.0dip</item>
+        <item name="android:tint">@*android:color/white</item>
+    </style>
     <style name="CardView" parent="@*com.google.android.dialer:style/Base.CardView">
         <item name="*com.google.android.dialer:cardBackgroundColor">@*android:color/primary_material_dark</item>
     </style>
@@ -34,6 +45,8 @@
         <item name="*com.google.android.dialer:colorBackgroundDark">@*android:color/background_dark</item>
         <item name="*com.google.android.dialer:colorBackgroundPromo">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.dialer:colorBackgroundTransparent">#00ffffff</item>
+        <item name="*com.google.android.dialer:colorCallLogIconRead">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.dialer:colorCallLogIconUnread">@*android:color/white</item>
         <item name="*com.google.android.dialer:colorCallToActionBackground">@*com.google.android.dialer:color/google_blue_600</item>
         <item name="*com.google.android.dialer:colorControlActivated">@*android:color/white</item>
         <item name="*com.google.android.dialer:colorDialerPrimaryRed">@*com.google.android.dialer:color/google_red_300</item>
@@ -46,6 +59,7 @@
         <item name="*com.google.android.dialer:colorIconOnUnthemedDarkBackground">@*android:color/white</item>
         <item name="*com.google.android.dialer:colorIconOnUnthemedLightBackground">@*android:color/white</item>
         <item name="*com.google.android.dialer:colorIconRippleInCall">@*com.google.android.dialer:color/dialer_dark_theme_incall_ripple</item>
+        <item name="*com.google.android.dialer:colorIconSpamBackground">@*android:color/button_material_dark</item>
         <item name="*com.google.android.dialer:colorMobileOriginatingChatBackground">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.dialer:colorMobileOriginatingChatText">@*android:color/white</item>
         <item name="*com.google.android.dialer:colorMobileTerminatingChatBackground">@*android:color/background_floating_material_dark</item>
@@ -60,7 +74,7 @@
         <item name="*com.google.android.dialer:colorTextOnUnthemedLightBackground">@*android:color/white</item>
         <item name="*com.google.android.dialer:windowActionModeOverlay">true</item>
     </style>
-    <style name="Dialer.Incall.CallScreenSuggestions" parent="@*com.google.android.dialer:style/Dialer.TextAppearance.SubHeader">
+    <style name="Dialer.Incall.CallScreenSuggestions" parent="@*com.google.android.dialer:style/Dialer.TextAppearance.Subhead1">
         <item name="android:background">@*com.google.android.dialer:drawable/call_screen_suggestive_chip_background</item>
         <item name="android:paddingTop">@*com.google.android.dialer:dimen/call_screen_suggestions_button_padding_top_and_bottom</item>
         <item name="android:paddingBottom">@*com.google.android.dialer:dimen/call_screen_suggestions_button_padding_top_and_bottom</item>
@@ -73,7 +87,7 @@
     </style>
     <style name="Dialer.Incall.CallScreenSuggestions.ReplyButton" parent="@*com.google.android.dialer:style/Dialer.Incall.CallScreenSuggestions">
         <item name="android:background">@*com.google.android.dialer:drawable/call_screen_suggestive_chip_background</item>
-        <item name="android:drawableLeft">@*com.google.android.dialer:drawable/quantum_gm_ic_record_voice_over_black_24</item>
+        <item name="android:drawableLeft">@*com.google.android.dialer:drawable/quantum_gm_ic_record_voice_over_vd_theme_24</item>
         <item name="android:drawableTint">@*android:color/button_material_dark</item>
     </style>
     <style name="DialerBottomSheetDialogStyle.Dark" parent="@*com.google.android.dialer:style/Theme.Design.BottomSheetDialog">
@@ -125,6 +139,10 @@
     </style>
     <style name="Widget.GoogleMaterial.Snackbar.TextView" parent="@*com.google.android.dialer:style/Widget.MaterialComponents.Snackbar.TextView">
         <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="Widget.MaterialComponents.ActionBar.Surface" parent="@*com.google.android.dialer:style/Widget.AppCompat.ActionBar.Solid">
+        <item name="*com.google.android.dialer:background">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.dialer:elevation">0.0dip</item>
     </style>
     <style name="Widget.MaterialComponents.Snackbar.TextView" parent="@*com.google.android.dialer:style/Widget.AppCompat.TextView">
         <item name="android:textAppearance">@*com.google.android.dialer:style/TextAppearance.GoogleMaterial.Body2</item>

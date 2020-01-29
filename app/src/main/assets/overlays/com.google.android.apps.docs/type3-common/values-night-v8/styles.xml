@@ -56,6 +56,7 @@
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
         <item name="android:windowShowWallpaper">false</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_text_leanback_light</item>
     </style>
     <style name="CardView" parent="@*com.google.android.apps.docs:style/Base.CardView">
         <item name="*com.google.android.apps.docs:cardBackgroundColor">@*android:color/background_floating_material_dark</item>
@@ -126,31 +127,16 @@
     <style name="Discussion.Widget.TextView" parent="@*com.google.android.apps.docs:style/Base.Discussion.Widget.TextView">
         <item name="android:background">@*android:color/background_floating_material_dark</item>
     </style>
+    <style name="DividerStyle">
+        <item name="android:theme">@*com.google.android.apps.docs:style/Theme.GoogleMaterial.DayNight.Bridge</item>
+        <item name="android:background">@*android:color/transparent</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@*com.google.android.apps.docs:dimen/account_menu_divider_height</item>
+        <item name="android:contentDescription">@null</item>
+    </style>
     <style name="HoloLikeButton" parent="@*android:style/Widget.Holo.Button.Borderless">
         <item name="android:textAppearance">?*android:textAppearanceMedium</item>
         <item name="android:textColor">#ffffffff</item>
-    </style>
-    <style name="LegacyEmptyStateMessageTitleAppearance" parent="@*com.google.android.apps.docs:style/quantum_text_subhead_black">
-        <item name="android:textColor">@*android:color/white</item>
-    </style>
-    <style name="LegacyEmptyStateTheme">
-        <item name="*com.google.android.apps.docs:emptyStateIconSize">72.0dip</item>
-        <item name="*com.google.android.apps.docs:emptyStateTitleTextAppearance">@*com.google.android.apps.docs:style/LegacyEmptyStateMessageTitleAppearance</item>
-        <item name="*com.google.android.apps.docs:emptyStateMessageTextAppearance">@*com.google.android.apps.docs:style/LegacyEmptyStateMessageTextAppearance</item>
-        <item name="*com.google.android.apps.docs:emptyStateIconBackgroundVisibility">0</item>
-        <item name="*com.google.android.apps.docs:emptyStateIconTintColor">@*android:color/white</item>
-        <item name="*com.google.android.apps.docs:doclistEmptyState">@*com.google.android.apps.docs:drawable/doclist_empty_background_logo</item>
-        <item name="*com.google.android.apps.docs:offlineEmptyState">@*com.google.android.apps.docs:drawable/quantum_ic_offline_pin_grey600_48</item>
-        <item name="*com.google.android.apps.docs:recentsEmptyState">@*com.google.android.apps.docs:drawable/quantum_ic_schedule_grey600_48</item>
-        <item name="*com.google.android.apps.docs:searchEmptyState">@*com.google.android.apps.docs:drawable/doclist_empty_background_logo</item>
-        <item name="*com.google.android.apps.docs:sharedEmptyState">@*com.google.android.apps.docs:drawable/quantum_ic_group_grey600_48</item>
-        <item name="*com.google.android.apps.docs:starredEmptyState">@*com.google.android.apps.docs:drawable/quantum_ic_grade_grey600_48</item>
-        <item name="*com.google.android.apps.docs:noTeamDrivesEmptyState">@*com.google.android.apps.docs:drawable/quantum_ic_team_drive_grey600_48</item>
-        <item name="*com.google.android.apps.docs:emptyTeamDriveEmptyState">@*com.google.android.apps.docs:drawable/quantum_ic_folder_grey600_48</item>
-        <item name="*com.google.android.apps.docs:trashEmptyState">@*com.google.android.apps.docs:drawable/ic_trash_empty_state</item>
-        <item name="*com.google.android.apps.docs:devicesEmptyState">@*com.google.android.apps.docs:drawable/quantum_ic_devices_grey600_48</item>
-        <item name="*com.google.android.apps.docs:backupsEmptyState">@*com.google.android.apps.docs:drawable/quantum_ic_cloud_grey600_48</item>
-        <item name="*com.google.android.apps.docs:driveEmptyState">@*com.google.android.apps.docs:drawable/quantum_ic_drive_grey600_48</item>
     </style>
     <style name="MediaViewerText.Time" parent="@*com.google.android.apps.docs:style/MediaViewerText">
         <item name="android:textSize">12.0sp</item>
@@ -161,11 +147,6 @@
     </style>
     <style name="OpenSearchBarText" parent="@*com.google.android.apps.docs:style/TextAppearance.GoogleMaterial.Headline6">
         <item name="android:textColor">@*android:color/white</item>
-    </style>
-    <style name="PeoplePredict.Text.LegacyBody" parent="@*com.google.android.apps.docs:style/PeoplePredict.Text">
-        <item name="android:textSize">@*com.google.android.apps.docs:dimen/m_text_size_subhead</item>
-        <item name="android:textColor">#ffdddddd</item>
-        <item name="android:fontFamily">sans-serif</item>
     </style>
     <style name="Platform.V21.AppCompat.Light" parent="@*android:style/Theme.Material.NoActionBar">
         <item name="android:textColorHintInverse">#ffbbbbbb</item>
@@ -260,6 +241,7 @@
         <item name="android:layout_gravity">end</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">8.0dip</item>
         <item name="android:maxWidth">210.0dip</item>
         <item name="android:layout_marginEnd">8.0dip</item>
     </style>
@@ -268,6 +250,8 @@
         <item name="android:layout_gravity">fill_horizontal</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">16.0dip</item>
+        <item name="android:layout_marginRight">16.0dip</item>
         <item name="android:maxWidth">210.0dip</item>
         <item name="android:lineSpacingExtra">2.0dip</item>
         <item name="android:layout_marginStart">16.0dip</item>
@@ -278,7 +262,9 @@
         <item name="android:layout_gravity">fill_horizontal</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">16.0dip</item>
         <item name="android:layout_marginTop">16.0dip</item>
+        <item name="android:layout_marginRight">16.0dip</item>
         <item name="android:maxWidth">210.0dip</item>
         <item name="android:lineSpacingExtra">8.0dip</item>
         <item name="android:layout_marginStart">16.0dip</item>
