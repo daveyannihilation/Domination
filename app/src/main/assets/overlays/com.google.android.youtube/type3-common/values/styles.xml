@@ -13,8 +13,13 @@
         <item name="android:textColorTertiary">@*android:color/secondary_text_default_material_dark</item>
         <item name="android:textColorTertiaryInverse">@*android:color/secondary_text_default_material_dark</item>
         <item name="android:actionBarSize">@*com.google.android.youtube:dimen/theme_main_action_bar_size</item>
+        <item name="android:alertDialogTheme">@*com.google.android.youtube:style/Theme.YouTube.Dark.Dialog</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowSharedElementEnterTransition">@*android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@*android:transition/move</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
         <item name="*com.google.android.youtube:actionBarPopupTheme">@*com.google.android.youtube:style/ThemeOverlay.YouTube.Dark</item>
-        <item name="*com.google.android.youtube:actionBarSize">@*com.google.android.youtube:dimen/theme_main_action_bar_size</item>
         <item name="*com.google.android.youtube:actionBarStyle">@*com.google.android.youtube:style/Widget.YouTube.ActionBar</item>
         <item name="*com.google.android.youtube:actionBarTheme">@*com.google.android.youtube:style/ThemeOverlay.YouTube.ActionBar.Dark</item>
         <item name="*com.google.android.youtube:adHintText">@*com.google.android.youtube:color/ads_hint_text_dark</item>
@@ -99,7 +104,7 @@
         <item name="*com.google.android.youtube:volumeProgress">@*com.google.android.youtube:drawable/volume_progress_dark</item>
         <item name="*com.google.android.youtube:volumeThumb">@*com.google.android.youtube:drawable/volume_thumb_dark</item>
         <item name="*com.google.android.youtube:watchHistoryPausedIcon">@*com.google.android.youtube:drawable/ic_watch_history_paused_dark</item>
-        <item name="*com.google.android.youtube:youtubePremiumBadge">@*com.google.android.youtube:drawable/youtube_premium_badge_dark</item>
+        <item name="*com.google.android.youtube:youtubePremiumBadge">@*com.google.android.youtube:drawable/youtube_premium_badge_light</item>
         <item name="*com.google.android.youtube:youtubeRedOriginalsButtonRedIcon">@*com.google.android.youtube:drawable/quantum_ic_movie_creation_white_24</item>
         <item name="*com.google.android.youtube:ytAdBadgeBackground">@*com.google.android.youtube:drawable/standalone_ad_badge_background</item>
         <item name="*com.google.android.youtube:ytAdBadgePaddingStartEnd">4.0dip</item>
@@ -114,6 +119,7 @@
     <style name="Base.Theme.YouTube.Dark.Dialog" parent="@*com.google.android.youtube:style/Theme.AppCompat.Dialog">
         <item name="android:background">@*android:color/secondary_text_leanback_light</item>
         <item name="android:colorBackground">@*android:color/secondary_text_leanback_light</item>
+        <item name="android:colorControlActivated">@*com.google.android.youtube:color/yt_light_blue</item>
     </style>
     <style name="Base.Theme.YouTube.Launcher" parent="@*com.google.android.youtube:style/Theme.AppCompat.DayNight.NoActionBar">
         <item name="android:windowBackground">@*com.google.android.youtube:drawable/quantum_launchscreen_youtube</item>
@@ -358,8 +364,8 @@
         <item name="android:backgroundTint">@*android:color/transparent</item>
     </style>
     <style name="Widget.YouTube.MediaRouteButton" parent="@*com.google.android.youtube:style/Widget.MediaRouter.MediaRouteButton">
-        <item name="android:paddingStart">0.0dip</item>
-        <item name="android:paddingEnd">0.0dip</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
         <item name="*com.google.android.youtube:externalRouteEnabledDrawable">@*com.google.android.youtube:drawable/ic_media_route_mtrl_alpha</item>
         <item name="android:background">@*android:color/legacy_primary</item>
         <item name="android:backgroundTint">@*android:color/transparent</item>

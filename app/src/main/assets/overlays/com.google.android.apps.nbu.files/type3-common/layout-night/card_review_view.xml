@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.nbu.files.documentbrowser.filebrowser.reviewbrowser.CardReviewView android:id="@*com.google.android.apps.nbu.files:id/main_coordinator" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@*com.google.android.apps.nbu.files:id/main_appbar" android:background="@*android:color/primary_material_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@*com.google.android.apps.nbu.files:id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@*com.google.android.apps.nbu.files:dimen/design_appbar_elevation" app:layout_scrollFlags="enterAlways|scroll|snap" style="@*com.google.android.apps.nbu.files:style/Widget.GoogleMaterial.Toolbar.Surface" />
+        <include android:id="@*com.google.android.apps.nbu.files:id/removable_card_banner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@*com.google.android.apps.nbu.files:layout/removable_card_banner_view" />
+        <include android:id="@*com.google.android.apps.nbu.files:id/the_all_label" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@*com.google.android.apps.nbu.files:layout/group_label_view" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:id="@*com.google.android.apps.nbu.files:id/tabbed_file_list" android:paddingTop="102.0dip"  android:paddingBottom="60.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@*com.google.android.apps.nbu.files:string/appbar_scrolling_view_behavior" />
+    <include android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@*com.google.android.apps.nbu.files:layout/framed_button_view" />
+</com.google.android.apps.nbu.files.documentbrowser.filebrowser.reviewbrowser.CardReviewView>
