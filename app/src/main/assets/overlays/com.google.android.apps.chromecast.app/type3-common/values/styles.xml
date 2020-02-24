@@ -26,12 +26,27 @@
         <item name="*com.google.android.apps.chromecast.app:colorPrimaryDark">@*android:color/primary_text_leanback_light</item>
         <item name="android:windowShowWallpaper">false</item>
     </style>
+    <style name="AppTheme.NonTransparentStatusBar.Light" parent="@*com.google.android.apps.chromecast.app:style/AppThemeDark">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:navigationBarDividerColor">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.apps.chromecast.app:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.apps.chromecast.app:windowActionBar">false</item>
+    </style>
     <style name="AppTheme.SolidStatusBar" parent="@*com.google.android.apps.chromecast.app:style/AppTheme.SolidStatusBarBase">
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
         <item name="*com.google.android.apps.chromecast.app:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
         <item name="*com.google.android.apps.chromecast.app:windowActionBar">false</item>
+    </style>
+    <style name="AppTheme.SolidStatusBarBase" parent="@*com.google.android.apps.chromecast.app:style/AppTheme">
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
     </style>
     <style name="AppThemeBase" parent="@*com.google.android.apps.chromecast.app:style/Theme.GoogleMaterial.Light.NoActionBar.Bridge">
         <item name="android:spinnerStyle">@*com.google.android.apps.chromecast.app:style/Spinner</item>
@@ -48,19 +63,39 @@
         <item name="*com.google.android.apps.chromecast.app:searchViewStyle">@*com.google.android.apps.chromecast.app:style/SearchViewStyle</item>
         <item name="*com.google.android.apps.chromecast.app:textInputStyle">@*com.google.android.apps.chromecast.app:style/TextInputLayoutStyle</item>
     </style>
-    <style name="AppThemeMaterialBase" parent="@*com.google.android.apps.chromecast.app:style/Theme.GoogleMaterial.Dark.NoActionBar">
+    <style name="AppThemeDark" parent="@*com.google.android.apps.chromecast.app:style/AppThemeLight">
+        <item name="*com.google.android.apps.chromecast.app:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.apps.chromecast.app:colorSurface">@*android:color/background_floating_material_dark</item>
+    </style>
+    <style name="AppThemeLight" parent="@*com.google.android.apps.chromecast.app:style/Theme.GoogleMaterial.Dark.NoActionBar">
         <item name="android:spinnerStyle">@*com.google.android.apps.chromecast.app:style/Spinner</item>
         <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
         <item name="*com.google.android.apps.chromecast.app:chipViewStyle">@*com.google.android.apps.chromecast.app:style/ChipViewStyle.Protected</item>
         <item name="*com.google.android.apps.chromecast.app:colorPrimaryGoogle">@*com.google.android.apps.chromecast.app:color/cast_blue</item>
         <item name="*com.google.android.apps.chromecast.app:colorPrimaryStateContentGoogle">@*com.google.android.apps.chromecast.app:color/cast_blue</item>
         <item name="*com.google.android.apps.chromecast.app:colorPrimaryVariantGoogle">@*com.google.android.apps.chromecast.app:color/cast_blue</item>
+        <item name="*com.google.android.apps.chromecast.app:colorSurface">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.apps.chromecast.app:popupMenuStyle">@*com.google.android.apps.chromecast.app:style/PopupMenu</item>
         <item name="*com.google.android.apps.chromecast.app:searchViewStyle">@*com.google.android.apps.chromecast.app:style/SearchViewStyle</item>
         <item name="*com.google.android.apps.chromecast.app:colorPrimary">@*android:color/primary_material_dark</item>
         <item name="*com.google.android.apps.chromecast.app:colorPrimaryDark">@*com.google.android.apps.chromecast.app:color/cast_blue_selected</item>
         <item name="*com.google.android.apps.chromecast.app:colorAccent">@*com.google.android.apps.chromecast.app:color/cast_blue</item>
         <item name="*com.google.android.apps.chromecast.app:alertDialogTheme">@*com.google.android.apps.chromecast.app:style/CustomAlertDialog</item>
+    </style>
+    <style name="AppThemeMaterialDarkBase" parent="@*com.google.android.apps.chromecast.app:style/Theme.GoogleMaterial.Dark.NoActionBar">
+        <item name="android:spinnerStyle">@*com.google.android.apps.chromecast.app:style/Spinner</item>
+        <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
+        <item name="*com.google.android.apps.chromecast.app:alertDialogTheme">@*com.google.android.apps.chromecast.app:style/CustomAlertDialog</item>
+        <item name="*com.google.android.apps.chromecast.app:chipViewStyle">@*com.google.android.apps.chromecast.app:style/ChipViewStyle</item>
+        <item name="*com.google.android.apps.chromecast.app:colorAccent">@*com.google.android.apps.chromecast.app:color/cast_blue</item>
+        <item name="*com.google.android.apps.chromecast.app:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.google.android.apps.chromecast.app:colorPrimaryDark">@*com.google.android.apps.chromecast.app:color/cast_blue_selected</item>
+        <item name="*com.google.android.apps.chromecast.app:colorPrimaryGoogle">@*com.google.android.apps.chromecast.app:color/cast_blue</item>
+        <item name="*com.google.android.apps.chromecast.app:colorPrimaryStateContentGoogle">@*com.google.android.apps.chromecast.app:color/cast_blue</item>
+        <item name="*com.google.android.apps.chromecast.app:colorPrimaryVariantGoogle">@*com.google.android.apps.chromecast.app:color/cast_blue</item>
+        <item name="*com.google.android.apps.chromecast.app:colorSurface">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.apps.chromecast.app:popupMenuStyle">@*com.google.android.apps.chromecast.app:style/PopupMenu</item>
+        <item name="*com.google.android.apps.chromecast.app:searchViewStyle">@*com.google.android.apps.chromecast.app:style/SearchViewStyle</item>
     </style>
     <style name="AssistDescription" parent="@*com.google.android.apps.chromecast.app:style/RegularFontFamily.Small">
         <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
@@ -84,9 +119,6 @@
         <item name="android:textSize">20.0sp</item>
         <item name="android:textColor">@*android:color/white</item>
     </style>
-    <style name="Base.Theme.GoogleMaterial.Light" parent="@*com.google.android.apps.chromecast.app:style/Base.V14.Theme.GoogleMaterial.Light">
-        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
-    </style>
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabText" parent="@*android:style/Widget.Material.ActionBar.TabText" />
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabView" parent="@*android:style/Widget.Material.ActionBar.TabView" />
     <style name="Base.Widget.AppCompat.Light.PopupMenu" parent="@*android:style/Widget.Material.PopupMenu" />
@@ -104,6 +136,20 @@
         <item name="*com.google.android.apps.chromecast.app:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
         <item name="*com.google.android.apps.chromecast.app:selectedHistoryChipsBackgroundColor">@*com.google.android.apps.chromecast.app:color/google_blue50</item>
         <item name="*com.google.android.apps.chromecast.app:selectedHistoryChipsTextColor">@*com.google.android.apps.chromecast.app:color/action_menu_text_color</item>
+    </style>
+    <style name="CameraEventDetailsTheme" parent="@*com.google.android.apps.chromecast.app:style/AppTheme.Material.Dark.TransparentSystemBars">
+        <item name="android:textColorPrimary">@*com.google.android.apps.chromecast.app:color/camera_accent_blue</item>
+        <item name="android:textColorSecondary">@*com.google.android.apps.chromecast.app:color/camera_accent_blue</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="*com.google.android.apps.chromecast.app:colorAccent">@*com.google.android.apps.chromecast.app:color/camera_accent_blue</item>
+        <item name="*com.google.android.apps.chromecast.app:colorControlNormal">@*com.google.android.apps.chromecast.app:color/camera_accent_blue</item>
+        <item name="*com.google.android.apps.chromecast.app:colorHairline">@*com.google.android.apps.chromecast.app:color/camera_event_details_chrome_hairline</item>
+        <item name="*com.google.android.apps.chromecast.app:colorPrimaryGoogle">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.apps.chromecast.app:fontFamily">@*com.google.android.apps.chromecast.app:font/google_sans</item>
+        <item name="*com.google.android.apps.chromecast.app:seekBarStyle">@*com.google.android.apps.chromecast.app:style/HorizontalSlider.Dark.Accent</item>
+    </style>
+    <style name="CardView" parent="@*com.google.android.apps.chromecast.app:style/Base.CardView">
+        <item name="*com.google.android.apps.chromecast.app:cardBackgroundColor">@*android:color/primary_material_dark</item>
     </style>
     <style name="CastButtonBarNegativeButtonStyle" parent="@*com.google.android.apps.chromecast.app:style/Widget.AppCompat.Button.ButtonBar.AlertDialog">
         <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
@@ -217,6 +263,15 @@
         <item name="android:padding">@*com.google.android.apps.chromecast.app:dimen/template_padding</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="FamiliarFacesActionModeStyle" parent="@*com.google.android.apps.chromecast.app:style/Widget.GoogleMaterial.ActionMode">
+        <item name="*com.google.android.apps.chromecast.app:background">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.apps.chromecast.app:titleTextStyle">@*com.google.android.apps.chromecast.app:style/FamiliarFacesActionModeTitle</item>
+    </style>
+    <style name="FamiliarFacesBottomSheetDialogStyle" parent="@*com.google.android.apps.chromecast.app:style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@*android:color/transparent</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
     </style>
     <style name="FamiliarFacesCategorizationBottomSheetDialogStyle" parent="@*com.google.android.apps.chromecast.app:style/Theme.Design.Light.BottomSheetDialog">
         <item name="android:colorBackground">@*android:color/background_floating_material_dark</item>
@@ -403,6 +458,11 @@
         <item name="android:fontFamily">@*com.google.android.apps.chromecast.app:font/google_sans_medium</item>
         <item name="android:letterSpacing">0.02</item>
     </style>
+    <style name="NewFacesChipTextAppearance" parent="@*com.google.android.apps.chromecast.app:style/TextAppearance.MaterialComponents.Badge">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:fontFamily">@*com.google.android.apps.chromecast.app:font/google_sans</item>
+    </style>
     <style name="OfferRedemptionBody" parent="@*com.google.android.apps.chromecast.app:style/RegularFontFamily">
         <item name="android:textSize">16.0sp</item>
         <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
@@ -427,15 +487,6 @@
         <item name="*com.google.android.apps.chromecast.app:snackbarButtonStyle">@empty</item>
         <item name="*com.google.android.apps.chromecast.app:snackbarStyle">@empty</item>
         <item name="*com.google.android.apps.chromecast.app:snackbarTextViewStyle">@empty</item>
-    </style>
-    <style name="RemoteControlCenterButton" parent="@*com.google.android.apps.chromecast.app:style/Widget.Design.FloatingActionButton">
-        <item name="android:layout_gravity">center</item>
-        <item name="android:padding">@*com.google.android.apps.chromecast.app:dimen/remote_control_button_padding</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_margin">@*com.google.android.apps.chromecast.app:dimen/remote_control_mode_button_margin</item>
-        <item name="*com.google.android.apps.chromecast.app:fabCustomSize">@*com.google.android.apps.chromecast.app:dimen/remote_control_mode_button_size</item>
-        <item name="*com.google.android.apps.chromecast.app:backgroundTint">@*android:color/button_material_dark</item>
     </style>
     <style name="RemoteControlLiveBadge">
         <item name="android:textSize">12.0sp</item>
@@ -587,6 +638,9 @@
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:alpha">0.7</item>
         <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="VideoThumbnail">
+        <item name="*com.google.android.apps.chromecast.app:colorControlNormal">@*android:color/secondary_text_default_material_dark</item>
     </style>
     <style name="ViewAllHeaderText" parent="@*com.google.android.apps.chromecast.app:style/RegularFontFamily.Headline">
         <item name="android:textSize">@*com.google.android.apps.chromecast.app:dimen/media_suggestion_view_all_header_text_size</item>

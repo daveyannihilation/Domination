@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <attr name="accountSwitcherBylineTextColor" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="accountSwitcherNameTextColor" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="actionBarDivider" format="reference" />
     <attr name="actionBarItemBackground" format="reference" />
     <attr name="actionBarPopupTheme" format="reference" />
@@ -89,6 +91,7 @@
         <flag name="SYM" value="0x00000004" />
     </attr>
     <attr name="animateTrimHandles" format="boolean" />
+    <attr name="animate_relativeTo" format="reference" />
     <attr name="animationMode">
         <enum name="fade" value="1" />
         <enum name="slide" value="0" />
@@ -143,10 +146,20 @@
     </attr>
     <attr name="badgeStyle" format="reference" />
     <attr name="barLength" format="dimension" />
+    <attr name="barrierAllowsGoneWidgets" format="boolean" />
+    <attr name="barrierDirection">
+        <enum name="bottom" value="3" />
+        <enum name="end" value="6" />
+        <enum name="left" value="0" />
+        <enum name="right" value="1" />
+        <enum name="start" value="5" />
+        <enum name="top" value="2" />
+    </attr>
+    <attr name="barrierMargin" format="dimension" />
     <attr name="behavior_autoHide" format="boolean" />
     <attr name="behavior_autoShrink" format="boolean" />
     <attr name="behavior_draggable" format="boolean" />
-    <attr name="behavior_expandedOffset" format="reference|integer" />
+    <attr name="behavior_expandedOffset" format="reference|dimension" />
     <attr name="behavior_fitToContents" format="boolean" />
     <attr name="behavior_halfExpandedRatio" format="reference|float" />
     <attr name="behavior_hideable" format="boolean" />
@@ -257,6 +270,7 @@
     <attr name="castSkipNextButtonDrawable" format="reference" />
     <attr name="castSkipPreviousButtonDrawable" format="reference" />
     <attr name="castStopButtonDrawable" format="reference" />
+    <attr name="chainUseRtl" format="boolean" />
     <attr name="channelListSubMenuAvatarStatus" format="reference" />
     <attr name="checkBoxPreferenceStyle" format="reference" />
     <attr name="checkboxStyle" format="reference" />
@@ -372,6 +386,7 @@
     <attr name="commitIcon" format="reference" />
     <attr name="completeDrawable" format="reference" />
     <attr name="constraintSet" format="reference" />
+    <attr name="constraint_referenced_ids" format="string" />
     <attr name="containerBackgroundColor" format="color" />
     <attr name="containerCornerRadius" format="dimension" />
     <attr name="containerMargin" format="dimension" />
@@ -455,6 +470,7 @@
     <attr name="defaultTint" format="reference|color" />
     <attr name="defaultValue" format="reference|string|integer|boolean|float" />
     <attr name="dependency" format="string" />
+    <attr name="deriveConstraintsFrom" format="reference" />
     <attr name="dialogCornerRadius" format="dimension" />
     <attr name="dialogIcon" format="reference" />
     <attr name="dialogLayout" format="reference" />
@@ -484,6 +500,14 @@
     <attr name="dividerVertical" format="reference" />
     <attr name="dot_badge_background_dark" format="reference" />
     <attr name="downloadsPageEmptyIcon" format="reference" />
+    <attr name="drawPath">
+        <enum name="asConfigured" value="4" />
+        <enum name="deltaRelative" value="3" />
+        <enum name="none" value="0" />
+        <enum name="path" value="1" />
+        <enum name="pathRelative" value="2" />
+        <enum name="rectangles" value="5" />
+    </attr>
     <attr name="drawableBottomCompat" format="reference" />
     <attr name="drawableEndCompat" format="reference" />
     <attr name="drawableLeftCompat" format="reference" />
@@ -553,10 +577,13 @@
     <attr name="end_layout" format="reference" />
     <attr name="enforceMaterialTheme" format="boolean" />
     <attr name="enforceTextAppearance" format="boolean" />
+    <attr name="engagementPanelId" format="reference" />
+    <attr name="engagementPanelWrapperId" format="reference" />
     <attr name="ensureMinTouchTargetSize" format="boolean" />
     <attr name="entries" format="reference" />
     <attr name="entryValues" format="reference" />
     <attr name="errorContentDescription" format="string" />
+    <attr name="errorDrawable" format="reference" />
     <attr name="errorEnabled" format="boolean" />
     <attr name="errorIconDrawable" format="reference" />
     <attr name="errorIconTint" format="reference" />
@@ -627,6 +654,60 @@
     </attr>
     <attr name="floatingActionButtonBrandedStyle" format="reference" />
     <attr name="floatingActionButtonStyle" format="reference" />
+    <attr name="flow_firstHorizontalBias" format="float" />
+    <attr name="flow_firstHorizontalStyle">
+        <enum name="packed" value="2" />
+        <enum name="spread" value="0" />
+        <enum name="spread_inside" value="1" />
+    </attr>
+    <attr name="flow_firstVerticalBias" format="float" />
+    <attr name="flow_firstVerticalStyle">
+        <enum name="packed" value="2" />
+        <enum name="spread" value="0" />
+        <enum name="spread_inside" value="1" />
+    </attr>
+    <attr name="flow_horizontalAlign" format="float">
+        <enum name="end" value="1" />
+        <enum name="start" value="0" />
+    </attr>
+    <attr name="flow_horizontalBias" format="float" />
+    <attr name="flow_horizontalGap" format="dimension" />
+    <attr name="flow_horizontalStyle">
+        <enum name="packed" value="2" />
+        <enum name="spread" value="0" />
+        <enum name="spread_inside" value="1" />
+    </attr>
+    <attr name="flow_lastHorizontalBias" format="float" />
+    <attr name="flow_lastHorizontalStyle">
+        <enum name="packed" value="2" />
+        <enum name="spread" value="0" />
+        <enum name="spread_inside" value="1" />
+    </attr>
+    <attr name="flow_lastVerticalBias" format="float" />
+    <attr name="flow_lastVerticalStyle">
+        <enum name="packed" value="2" />
+        <enum name="spread" value="0" />
+        <enum name="spread_inside" value="1" />
+    </attr>
+    <attr name="flow_maxElementsWrap" format="integer" />
+    <attr name="flow_verticalAlign">
+        <enum name="baseline" value="3" />
+        <enum name="bottom" value="1" />
+        <enum name="center" value="2" />
+        <enum name="top" value="0" />
+    </attr>
+    <attr name="flow_verticalBias" format="float" />
+    <attr name="flow_verticalGap" format="dimension" />
+    <attr name="flow_verticalStyle">
+        <enum name="packed" value="2" />
+        <enum name="spread" value="0" />
+        <enum name="spread_inside" value="1" />
+    </attr>
+    <attr name="flow_wrapMode">
+        <enum name="aligned" value="2" />
+        <enum name="chain" value="1" />
+        <enum name="none" value="0" />
+    </attr>
     <attr name="font" format="reference" />
     <attr name="fontFamily" format="string" />
     <attr name="fontProviderAuthority" format="string" />
@@ -775,6 +856,7 @@
     </attr>
     <attr name="lastBaselineToBottomHeight" format="dimension" />
     <attr name="layout" format="reference" />
+    <attr name="layoutDescription" format="reference" />
     <attr name="layoutManager" format="string" />
     <attr name="layout_alignSelf">
         <enum name="auto" value="-1" />
@@ -808,6 +890,8 @@
         <enum name="pin" value="1" />
     </attr>
     <attr name="layout_collapseParallaxMultiplier" format="float" />
+    <attr name="layout_constrainedHeight" format="boolean" />
+    <attr name="layout_constrainedWidth" format="boolean" />
     <attr name="layout_constraintBaseline_creator" format="integer" />
     <attr name="layout_constraintBaseline_toBaselineOf" format="reference">
         <enum name="parent" value="0" />
@@ -819,6 +903,9 @@
     <attr name="layout_constraintBottom_toTopOf" format="reference">
         <enum name="parent" value="0" />
     </attr>
+    <attr name="layout_constraintCircle" format="reference" />
+    <attr name="layout_constraintCircleAngle" format="integer" />
+    <attr name="layout_constraintCircleRadius" format="dimension" />
     <attr name="layout_constraintDimensionRatio" format="string" />
     <attr name="layout_constraintEnd_toEndOf" format="reference">
         <enum name="parent" value="0" />
@@ -830,11 +917,17 @@
     <attr name="layout_constraintGuide_end" format="dimension" />
     <attr name="layout_constraintGuide_percent" format="float" />
     <attr name="layout_constraintHeight_default">
+        <enum name="percent" value="2" />
         <enum name="spread" value="0" />
         <enum name="wrap" value="1" />
     </attr>
-    <attr name="layout_constraintHeight_max" format="dimension" />
-    <attr name="layout_constraintHeight_min" format="dimension" />
+    <attr name="layout_constraintHeight_max" format="dimension">
+        <enum name="wrap" value="-2" />
+    </attr>
+    <attr name="layout_constraintHeight_min" format="dimension">
+        <enum name="wrap" value="-2" />
+    </attr>
+    <attr name="layout_constraintHeight_percent" format="float" />
     <attr name="layout_constraintHorizontal_bias" format="float" />
     <attr name="layout_constraintHorizontal_chainStyle">
         <enum name="packed" value="2" />
@@ -862,6 +955,7 @@
     <attr name="layout_constraintStart_toStartOf" format="reference">
         <enum name="parent" value="0" />
     </attr>
+    <attr name="layout_constraintTag" format="string" />
     <attr name="layout_constraintTop_creator" format="integer" />
     <attr name="layout_constraintTop_toBottomOf" format="reference">
         <enum name="parent" value="0" />
@@ -877,11 +971,17 @@
     </attr>
     <attr name="layout_constraintVertical_weight" format="float" />
     <attr name="layout_constraintWidth_default">
+        <enum name="percent" value="2" />
         <enum name="spread" value="0" />
         <enum name="wrap" value="1" />
     </attr>
-    <attr name="layout_constraintWidth_max" format="dimension" />
-    <attr name="layout_constraintWidth_min" format="dimension" />
+    <attr name="layout_constraintWidth_max" format="dimension">
+        <enum name="wrap" value="-2" />
+    </attr>
+    <attr name="layout_constraintWidth_min" format="dimension">
+        <enum name="wrap" value="-2" />
+    </attr>
+    <attr name="layout_constraintWidth_percent" format="float" />
     <attr name="layout_dodgeInsetEdges">
         <flag name="all" value="0x00000077" />
         <flag name="bottom" value="0x00000050" />
@@ -919,10 +1019,16 @@
     <attr name="layout_minHeight" format="dimension" />
     <attr name="layout_minWidth" format="dimension" />
     <attr name="layout_optimizationLevel">
-        <flag name="all" value="0x00000002" />
-        <flag name="basic" value="0x00000004" />
-        <flag name="chains" value="0x00000008" />
-        <flag name="none" value="0x00000001" />
+        <flag name="barrier" value="0x00000002" />
+        <flag name="chains" value="0x00000004" />
+        <flag name="dimensions" value="0x00000008" />
+        <flag name="direct" value="0x00000001" />
+        <flag name="graph" value="0x00000040" />
+        <flag name="graph_wrap" value="0x00000080" />
+        <flag name="groups" value="0x00000020" />
+        <flag name="none" value="0x00000000" />
+        <flag name="ratio" value="0x00000010" />
+        <flag name="standard" value="0x00000007" />
     </attr>
     <attr name="layout_order" format="integer" />
     <attr name="layout_scrollFlags">
@@ -963,6 +1069,7 @@
     <attr name="liveChatActionPanelChipBackgroundOverlimit" format="reference|color" />
     <attr name="liveChatActionPillBackground" format="reference|color" />
     <attr name="liveChatAutoModHighlightBar" format="reference" />
+    <attr name="liveChatAutoModHighlightColor" format="reference|color" />
     <attr name="liveChatBannerBackgroundGradient" format="reference" />
     <attr name="liveChatContentsBackground" format="reference|color" />
     <attr name="liveChatDonationAnnouncementBackground" format="reference" />
@@ -1078,6 +1185,8 @@
     <attr name="minCropHeight" format="dimension" />
     <attr name="minCropWidth" format="dimension" />
     <attr name="minTouchTargetSize" format="dimension" />
+    <attr name="motionProgress" format="float" />
+    <attr name="motionStagger" format="float" />
     <attr name="mtrlColor" format="reference|color" />
     <attr name="mtrlColors" format="reference" />
     <attr name="mtrlDeterminateProgressStyle">
@@ -1161,9 +1270,18 @@
         <enum name="src_in" value="5" />
         <enum name="src_over" value="3" />
     </attr>
+    <attr name="pathMotionArc">
+        <enum name="flip" value="3" />
+        <enum name="none" value="0" />
+        <enum name="startHorizontal" value="2" />
+        <enum name="startVertical" value="1" />
+    </attr>
     <attr name="pausedDrawable" format="reference" />
     <attr name="persistent" format="boolean" />
     <attr name="phoneEntrySendCodeButtonBackground" format="reference|color" />
+    <attr name="pivotAnchor" format="reference">
+        <enum name="parent" value="0" />
+    </attr>
     <attr name="pivotBarCountBadgeBackground" format="reference|color" />
     <attr name="pivotBarDotBadgeBackground" format="reference|color" />
     <attr name="placeholderText" format="string" />
@@ -1483,6 +1601,7 @@
     <attr name="textColorAlertDialogListItem" format="reference|color" />
     <attr name="textColorSearchUrl" format="reference|color" />
     <attr name="textEndPadding" format="dimension" />
+    <attr name="textInputLayoutFocusedRectEnabled" format="boolean" />
     <attr name="textInputStyle" format="reference" />
     <attr name="textLocale" format="string" />
     <attr name="textMargin" format="dimension" />
@@ -1560,6 +1679,13 @@
         <enum name="src_in" value="5" />
         <enum name="src_over" value="3" />
     </attr>
+    <attr name="transitionEasing" format="string">
+        <enum name="accelerate" value="1" />
+        <enum name="decelerate" value="2" />
+        <enum name="linear" value="3" />
+        <enum name="standard" value="0" />
+    </attr>
+    <attr name="transitionPathRotate" format="float" />
     <attr name="translucentPrimaryColor" format="color" />
     <attr name="translucentSecondaryColor" format="color" />
     <attr name="ttcIndex" format="integer" />
@@ -1706,6 +1832,16 @@
     <attr name="ytTextPrimary" format="reference|color" />
     <attr name="ytTextPrimaryInverse" format="reference|color" />
     <attr name="ytTextSecondary" format="reference|color" />
+    <attr name="ytTextStyleBody1a" format="reference" />
+    <attr name="ytTextStyleBody1b" format="reference" />
+    <attr name="ytTextStyleBody2a" format="reference" />
+    <attr name="ytTextStyleBody2b" format="reference" />
+    <attr name="ytTextStyleButton" format="reference" />
+    <attr name="ytTextStyleDisplay1" format="reference" />
+    <attr name="ytTextStyleDisplay2" format="reference" />
+    <attr name="ytTextStyleLabel" format="reference" />
+    <attr name="ytTextStyleTitle1" format="reference" />
+    <attr name="ytTextStyleTitle2" format="reference" />
     <attr name="ytThemeType">
         <enum name="dark" value="1" />
         <enum name="light" value="0" />
@@ -1718,215 +1854,312 @@
     <attr name="ytVerifiedBadgeBackground" format="reference|color" />
     <attr name="ytWordmarkHeader" format="reference" />
     <item type="attr" name="APKTOOL_DUMMY_0">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_1">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_2">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_5">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_a">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_b">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_4">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_7">false</item>
     <item type="attr" name="APKTOOL_DUMMY_c">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_11">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_12">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_d">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_e">false</item>
     <item type="attr" name="APKTOOL_DUMMY_13">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_39">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3a">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3f">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_4c">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_50">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_51">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_14">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_15">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3b">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3c">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_41">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_4e">false</item>
     <item type="attr" name="APKTOOL_DUMMY_52">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_56">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_57">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_5e">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_53">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_54">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_55">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5a">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5b">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5c">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5d">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_63">false</item>
     <item type="attr" name="APKTOOL_DUMMY_65">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_79">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_7a">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_7b">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_7d">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_7e">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_80">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_6b">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_6d">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_81">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_82">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_83">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_85">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_86">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_88">false</item>
     <item type="attr" name="APKTOOL_DUMMY_b2">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_b6">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_b9">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_ba">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_bb">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_bc">false</item>
     <item type="attr" name="APKTOOL_DUMMY_be">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_bf">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_c0">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_c1">false</item>
     <item type="attr" name="APKTOOL_DUMMY_c2">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_c3">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_c4">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_d4">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_d5">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_d6">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_d8">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_d9">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_df">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_c5">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_c6">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_c7">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_c8">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_ca">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_cb">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_cc">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_cd">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_ce">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_cf">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_d0">false</item>
     <item type="attr" name="APKTOOL_DUMMY_e0">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_e1">false</item>
     <item type="attr" name="APKTOOL_DUMMY_e2">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_e3">false</item>
     <item type="attr" name="APKTOOL_DUMMY_e4">false</item>
     <item type="attr" name="APKTOOL_DUMMY_e5">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_e7">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_e8">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_eb">false</item>
     <item type="attr" name="APKTOOL_DUMMY_ec">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_ee">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_ef">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_f0">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_f1">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_f3">false</item>
     <item type="attr" name="APKTOOL_DUMMY_f4">false</item>
     <item type="attr" name="APKTOOL_DUMMY_f8">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_f9">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_fa">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_fb">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_fc">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_fd">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_fe">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_ff">false</item>
     <item type="attr" name="APKTOOL_DUMMY_100">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_101">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_102">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_103">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_104">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_105">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_106">false</item>
     <item type="attr" name="APKTOOL_DUMMY_107">false</item>
     <item type="attr" name="APKTOOL_DUMMY_108">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_109">false</item>
     <item type="attr" name="APKTOOL_DUMMY_10a">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_10b">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_10c">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_10d">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_10e">false</item>
     <item type="attr" name="APKTOOL_DUMMY_10f">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_113">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_114">false</item>
     <item type="attr" name="APKTOOL_DUMMY_115">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_119">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_124">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_127">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_13c">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_13d">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_164">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_188">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_117">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_11c">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_120">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_122">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_126">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_131">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_132">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_134">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_136">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_14b">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_14c">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_173">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_183">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_184">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_186">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_18f">false</item>
     <item type="attr" name="APKTOOL_DUMMY_19c">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_19d">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_1af">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_1b0">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_19e">false</item>
     <item type="attr" name="APKTOOL_DUMMY_1b1">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_1b7">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_1b8">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_1b9">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_1c1">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_1d5">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_1b2">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_1c2">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_1c3">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_1c4">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_1c5">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_1c6">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_1c7">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_1c8">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_1c9">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_1ca">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_1cc">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_1cd">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_1cf">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_1d0">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_1d1">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_1d7">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_1d8">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_1d9">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_1da">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_1df">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_1e2">false</item>
     <item type="attr" name="APKTOOL_DUMMY_1e3">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_1e7">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_1e6">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_1fa">false</item>
     <item type="attr" name="APKTOOL_DUMMY_1fd">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_20e">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_211">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_21a">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_21b">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_21e">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_21f">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_227">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_22c">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_238">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_23b">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_23e">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_23f">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_240">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_241">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_242">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_243">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_244">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_245">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_1fe">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_20b">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_20f">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_210">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_226">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_239">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_23c">false</item>
     <item type="attr" name="APKTOOL_DUMMY_246">false</item>
     <item type="attr" name="APKTOOL_DUMMY_247">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_248">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_25b">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_25c">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_25d">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_265">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_24a">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_24b">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_253">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_258">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_264">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_267">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_26a">false</item>
     <item type="attr" name="APKTOOL_DUMMY_26b">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_275">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_277">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_27f">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_295">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_296">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_26c">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_26d">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_26e">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_26f">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_270">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_271">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_272">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_273">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_274">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_284">false</item>
     <item type="attr" name="APKTOOL_DUMMY_29a">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_2a1">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_2a3">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_2b3">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_2be">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_2c8">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_2ce">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_2cf">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_2d0">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_2d1">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_2d2">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_29b">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_29c">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_29d">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_2a5">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_2ab">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_2b5">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_2b7">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_2bf">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_2d5">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_2d6">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_2da">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_2e1">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_2e3">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_2f3">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_2fe">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_307">false</item>
     <item type="attr" name="APKTOOL_DUMMY_309">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_31a">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_32c">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_34f">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_350">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_360">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_361">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_362">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_363">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_364">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_30f">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_310">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_311">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_312">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_313">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_316">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_354">false</item>
     <item type="attr" name="APKTOOL_DUMMY_365">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_366">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_367">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_39e">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3aa">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3b5">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3b6">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3b7">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3b8">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3c0">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_377">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_39b">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_39c">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3ac">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3ad">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3ae">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3af">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3b0">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3b1">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3b2">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3b3">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3c8">false</item>
     <item type="attr" name="APKTOOL_DUMMY_3d1">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3d2">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3d9">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3e4">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3e5">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3e6">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_3e7">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3ec">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3ed">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3ef">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3f0">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3f1">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3f2">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3f3">false</item>
     <item type="attr" name="APKTOOL_DUMMY_3f4">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3f5">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3f6">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3f7">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3f8">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3fb">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3fc">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_3fd">false</item>
     <item type="attr" name="APKTOOL_DUMMY_3fe">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_409">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_414">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_415">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_416">false</item>
     <item type="attr" name="APKTOOL_DUMMY_417">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_41a">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_41b">false</item>
     <item type="attr" name="APKTOOL_DUMMY_41c">false</item>
     <item type="attr" name="APKTOOL_DUMMY_41d">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_422">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_423">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_424">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_42d">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_430">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_431">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_435">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_436">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_41e">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_41f">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_425">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_427">false</item>
     <item type="attr" name="APKTOOL_DUMMY_437">false</item>
     <item type="attr" name="APKTOOL_DUMMY_438">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_439">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_43f">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_441">false</item>
     <item type="attr" name="APKTOOL_DUMMY_442">false</item>
     <item type="attr" name="APKTOOL_DUMMY_443">false</item>
     <item type="attr" name="APKTOOL_DUMMY_444">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_445">false</item>
     <item type="attr" name="APKTOOL_DUMMY_446">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_45a">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_44c">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_44d">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_451">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_455">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_456">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_457">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_458">false</item>
     <item type="attr" name="APKTOOL_DUMMY_465">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_473">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_47d">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_491">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_4c8">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_502">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_517">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_51b">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_51e">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_523">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_52b">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_52d">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_52e">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_52f">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_530">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_531">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_532">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_533">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_534">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_53d">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_53f">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_542">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_543">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_46f">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_472">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_489">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_48a">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_48b">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_48c">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_48d">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_492">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_493">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_496">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_497">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_499">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_49b">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_49c">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_49d">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_4a6">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_4a9">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_4aa">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_4ae">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_4af">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_4b0">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_4b1">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_4b2">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_4bb">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_4bc">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_4bd">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_4bf">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_4d0">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_4d4">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_4d9">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_4e0">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_4e9">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_4ef">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_4f9">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_50d">false</item>
     <item type="attr" name="APKTOOL_DUMMY_544">false</item>
     <item type="attr" name="APKTOOL_DUMMY_545">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_546">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_547">false</item>
     <item type="attr" name="APKTOOL_DUMMY_548">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_54d">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_56b">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_572">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_583">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_598">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_59c">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_59f">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5a3">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5a4">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5a5">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5a7">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5ad">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5b2">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5b3">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5b4">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5b5">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5b7">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5b8">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5b9">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5ba">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5bb">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5bc">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5bd">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5be">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5c7">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5c9">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5cc">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5cd">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5ce">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5cf">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5d2">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5d7">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5e0">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5e7">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5eb">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5ec">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5ed">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5ee">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5ef">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5fc">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_603">false</item>
 </resources>

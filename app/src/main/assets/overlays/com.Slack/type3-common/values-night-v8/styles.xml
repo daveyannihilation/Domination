@@ -7,6 +7,12 @@
         <item name="*com.Slack:strokeColor">@*android:color/white</item>
         <item name="*com.Slack:strokeWidth">1.0dip</item>
     </style>
+    <style name="AndroidThemeColorAccentYellow">
+        <item name="android:colorAccent">#fffbc02d</item>
+    </style>
+    <style name="BlackActivityTheme" parent="@style/NoActionBarActivityTheme">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+    </style>
     <style name="CounterText" parent="@*com.Slack:style/TextAppearance.Design.Counter.Overflow">
         <item name="android:textSize">@*com.Slack:dimen/app_dialog_text_size_small</item>
         <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
@@ -65,12 +71,19 @@
         <item name="*com.Slack:cardBackgroundColor">@*android:color/background_floating_material_dark</item>
         <item name="*com.Slack:cardCornerRadius">3.0dip</item>
     </style>
-    <style name="UserTypingText">
-        <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
-        <item name="android:paddingLeft">8.0dip</item>
-        <item name="android:paddingRight">16.0dip</item>
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">@*com.Slack:dimen/user_typing_text_height</item>
-        <item name="android:maxLines">1</item>
+    <style name="ThemeOverlayColorAccentRed">
+        <item name="android:colorAccent">#ffd32f2f</item>
+    </style>
+    <style name="Widget.MaterialComponents.Snackbar.TextView" parent="@*com.Slack:style/Widget.AppCompat.TextView">
+        <item name="android:textAppearance">@*com.Slack:style/TextAppearance.MaterialComponents.Body2</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">@*com.Slack:dimen/design_snackbar_padding_horizontal</item>
+        <item name="android:paddingTop">@*com.Slack:dimen/design_snackbar_padding_vertical</item>
+        <item name="android:paddingRight">@*com.Slack:dimen/design_snackbar_padding_horizontal</item>
+        <item name="android:paddingBottom">@*com.Slack:dimen/design_snackbar_padding_vertical</item>
+        <item name="android:maxLines">@*com.Slack:integer/design_snackbar_text_max_lines</item>
+        <item name="android:alpha">@*com.Slack:dimen/material_emphasis_high_type</item>
+        <item name="android:textAlignment">viewStart</item>
     </style>
 </resources>

@@ -39,16 +39,13 @@
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabText" parent="@*android:style/Widget.Material.ActionBar.TabText" />
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabView" parent="@*android:style/Widget.Material.ActionBar.TabView" />
     <style name="Base.Widget.AppCompat.Light.PopupMenu" parent="@*android:style/Widget.Material.PopupMenu" />
-    <style name="CardViewerQueryText">
-        <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/search_box_font_size</item>
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:ellipsize">end</item>
-        <item name="android:gravity">start|center</item>
-        <item name="android:id">@*com.google.android.inputmethod.latin:id/card_viewer_query_text</item>
+    <style name="ClipboardNoticeWrapper">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@*android:color/background_floating_material_dark</item>
+        <item name="android:paddingTop">@*com.google.android.inputmethod.latin:dimen/clipboard_notice_padding_top</item>
         <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">fill_parent</item>
-        <item name="android:maxLines">1</item>
-        <item name="android:singleLine">true</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
     <style name="FirstRunPageDescription">
         <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/first_run_page_description_font_size</item>
@@ -183,9 +180,6 @@
         <item name="android:textColorHint">#ffbbbbbb</item>
         <item name="android:textColorLink">@*android:color/accent_material_dark</item>
         <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
-    </style>
-    <style name="RateUsDialogTheme" parent="@*com.google.android.inputmethod.latin:style/Theme.AppCompat.Light.Dialog.Alert">
-        <item name="android:windowBackground">@*android:color/background_dark</item>
     </style>
     <style name="ReceivingActivityDescription">
         <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/sharing_dialog_title_font_size</item>

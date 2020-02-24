@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@*com.android.documentsui:id/coordinator_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.drawerlayout.widget.DrawerLayout android:id="@*com.android.documentsui:id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@*com.android.documentsui:string/scrolling_behavior">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <FrameLayout android:id="@*com.android.documentsui:id/container_directory" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View android:id="@*com.android.documentsui:id/drawer_edge" android:background="@*android:color/transparent" android:layout_width="@*com.android.documentsui:dimen/drawer_edge_width" android:layout_height="fill_parent" />
+            </FrameLayout>
+            <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_gravity="bottom|center" android:id="@*com.android.documentsui:id/container_save" android:background="@*android:color/background_floating_material_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="8.0dip" />
+            <include layout="@*com.android.documentsui:layout/directory_app_bar" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <LinearLayout android:layout_gravity="start" android:orientation="vertical" android:id="@*com.android.documentsui:id/drawer_roots" android:background="@*android:color/background_floating_material_dark" android:layout_width="256.0dip" android:layout_height="fill_parent" android:elevation="0.0dip">
+            <androidx.appcompat.widget.Toolbar android:id="@*com.android.documentsui:id/roots_toolbar" android:background="@*android:color/primary_material_dark" android:layout_width="fill_parent" android:layout_height="?*android:actionBarSize" android:elevation="0.0dip" app:titleTextAppearance="@*com.android.documentsui:style/DrawerMenuTitle" app:titleTextColor="@*com.android.documentsui:color/primary" />
+            <FrameLayout android:id="@*com.android.documentsui:id/container_roots" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
