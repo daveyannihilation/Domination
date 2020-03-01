@@ -134,8 +134,11 @@
         <enum name="none" value="0" />
         <enum name="start" value="1" />
     </attr>
+    <attr name="bpfvHintText" format="string" />
     <attr name="bpfvImage" format="reference" />
     <attr name="bpfvSingleLine" format="boolean" />
+    <attr name="bpfvTextColor" format="color" />
+    <attr name="bpfvTextColorHint" format="color" />
     <attr name="buffered_color" format="color" />
     <attr name="buttonBarButtonStyle" format="reference" />
     <attr name="buttonBarNegativeButtonStyle" format="reference" />
@@ -286,15 +289,18 @@
     <attr name="cpvStrokeMax" format="dimension" />
     <attr name="cpvStrokeMin" format="dimension" />
     <attr name="cpvWidth" format="dimension" />
+    <attr name="crchNamePaddingLeft" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="crchNamePaddingRight" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="crchPushNamePaddingLeft" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="crchPushNamePaddingRight" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="css" format="string" />
     <attr name="cstErrorColor" format="color" />
     <attr name="cstSeenColor" format="color" />
     <attr name="cstUnseenColor" format="color" />
     <attr name="customNavigationLayout" format="reference" />
     <attr name="custom_key">
-        <enum name="decimal" value="2" />
+        <enum name="decimal" value="1" />
         <enum name="none" value="0" />
-        <enum name="triple_zero" value="1" />
     </attr>
     <attr name="defaultQueryHint" format="string" />
     <attr name="default_artwork" format="reference" />
@@ -394,6 +400,9 @@
     <attr name="fastScrollVerticalThumbDrawable" format="reference" />
     <attr name="fastScrollVerticalTrackDrawable" format="reference" />
     <attr name="fastforward_increment" format="integer" />
+    <attr name="fingerprintErrorIcon" format="color" />
+    <attr name="fingerprintPromptIcon" format="color" />
+    <attr name="fingerprintSuccessIcon" format="color" />
     <attr name="firstBaselineToTopHeight" format="dimension" />
     <attr name="floatingActionButtonStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="font" format="reference" />
@@ -438,6 +447,7 @@
     <attr name="hideMotionSpec" format="reference" />
     <attr name="hideOnContentScroll" format="boolean" />
     <attr name="hideOnScroll" format="boolean" />
+    <attr name="hide_during_ads" format="boolean" />
     <attr name="hide_on_touch" format="boolean" />
     <attr name="hintAnimationEnabled" format="boolean" />
     <attr name="hintEnabled" format="boolean" />
@@ -467,6 +477,7 @@
         <enum name="src_over" value="3" />
     </attr>
     <attr name="iconifiedByDefault" format="boolean" />
+    <attr name="ignoreForBidiLayout" format="boolean" />
     <attr name="imageAspectRatio" format="float" />
     <attr name="imageAspectRatioAdjust">
         <enum name="adjust_height" value="2" />
@@ -491,6 +502,7 @@
     <attr name="itemTextAppearanceActive" format="reference" />
     <attr name="itemTextAppearanceInactive" format="reference" />
     <attr name="itemTextColor" format="color" />
+    <attr name="keep_content_on_player_reset" format="boolean" />
     <attr name="key_digit_color" format="color" />
     <attr name="key_digit_height" format="dimension" />
     <attr name="key_digit_size" format="dimension" />
@@ -686,6 +698,7 @@
     <attr name="played_ad_marker_color" format="color" />
     <attr name="played_color" format="color" />
     <attr name="player_layout_id" format="reference" />
+    <attr name="pneBarColor" format="color" />
     <attr name="popupMenuStyle" format="reference" />
     <attr name="popupTheme" format="reference" />
     <attr name="popupWindowStyle" format="reference" />
@@ -747,6 +760,7 @@
         <enum name="fit" value="0" />
         <enum name="fixed_height" value="2" />
         <enum name="fixed_width" value="1" />
+        <enum name="zoom" value="4" />
     </attr>
     <attr name="retryImage" format="reference" />
     <attr name="retryImageScaleType">
@@ -769,13 +783,17 @@
     <attr name="rmtvLinkColor" format="color" />
     <attr name="rmtvText" format="string" />
     <attr name="roundAsCircle" format="boolean" />
+    <attr name="roundBottomEnd" format="boolean" />
     <attr name="roundBottomLeft" format="boolean" />
     <attr name="roundBottomRight" format="boolean" />
+    <attr name="roundBottomStart" format="boolean" />
+    <attr name="roundTopEnd" format="boolean" />
     <attr name="roundTopLeft" format="boolean" />
     <attr name="roundTopRight" format="boolean" />
+    <attr name="roundTopStart" format="boolean" />
     <attr name="roundWithOverlayColor" format="color" />
     <attr name="roundedCornerRadius" format="dimension" />
-    <attr name="roundingBorderColor" format="color" />
+    <attr name="roundingBorderColor" format="reference|color" />
     <attr name="roundingBorderPadding" format="dimension" />
     <attr name="roundingBorderWidth" format="dimension" />
     <attr name="rtoStyle" format="reference" />
@@ -786,6 +804,7 @@
     <attr name="scrubber_color" format="color" />
     <attr name="scrubber_disabled_size" format="dimension" />
     <attr name="scrubber_dragged_size" format="dimension" />
+    <attr name="scrubber_drawable" format="reference" />
     <attr name="scrubber_enabled_size" format="dimension" />
     <attr name="scvBorderColor" format="color" />
     <attr name="scvBorderSize" format="dimension" />
@@ -825,6 +844,37 @@
     <attr name="shadowDx" format="dimension" />
     <attr name="shadowDy" format="dimension" />
     <attr name="shadowRadius" format="dimension" />
+    <attr name="shimmer_auto_start" format="boolean" />
+    <attr name="shimmer_base_alpha" format="float" />
+    <attr name="shimmer_base_color" format="color" />
+    <attr name="shimmer_clip_to_children" format="boolean" />
+    <attr name="shimmer_colored" format="boolean" />
+    <attr name="shimmer_direction">
+        <enum name="bottom_to_top" value="3" />
+        <enum name="left_to_right" value="0" />
+        <enum name="right_to_left" value="2" />
+        <enum name="top_to_bottom" value="1" />
+    </attr>
+    <attr name="shimmer_dropoff" format="float" />
+    <attr name="shimmer_duration" format="integer" />
+    <attr name="shimmer_fixed_height" format="dimension" />
+    <attr name="shimmer_fixed_width" format="dimension" />
+    <attr name="shimmer_height_ratio" format="float" />
+    <attr name="shimmer_highlight_alpha" format="float" />
+    <attr name="shimmer_highlight_color" format="color" />
+    <attr name="shimmer_intensity" format="float" />
+    <attr name="shimmer_repeat_count" format="integer" />
+    <attr name="shimmer_repeat_delay" format="integer" />
+    <attr name="shimmer_repeat_mode">
+        <enum name="restart" value="1" />
+        <enum name="reverse" value="2" />
+    </attr>
+    <attr name="shimmer_shape">
+        <enum name="linear" value="0" />
+        <enum name="radial" value="1" />
+    </attr>
+    <attr name="shimmer_tilt" format="float" />
+    <attr name="shimmer_width_ratio" format="float" />
     <attr name="showAnim" format="boolean" />
     <attr name="showAsAction">
         <flag name="always" value="0x00000002" />
@@ -844,9 +894,16 @@
     <attr name="showMotionSpec" format="reference" />
     <attr name="showText" format="boolean" />
     <attr name="showTitle" format="boolean" />
+    <attr name="show_buffering">
+        <enum name="always" value="2" />
+        <enum name="never" value="0" />
+        <enum name="when_playing" value="1" />
+    </attr>
+    <attr name="show_shuffle_button" format="boolean" />
     <attr name="show_timeout" format="integer" />
     <attr name="shrvGridSize" format="dimension" />
     <attr name="shrvGridSpacing" format="dimension" />
+    <attr name="shutter_background_color" format="color" />
     <attr name="singleChoiceItemLayout" format="reference" />
     <attr name="singleLine" format="boolean" />
     <attr name="singleSelection" format="boolean" />
@@ -884,6 +941,7 @@
     <attr name="suggestionRowLayout" format="reference" />
     <attr name="surface_type">
         <enum name="none" value="0" />
+        <enum name="spherical_view" value="3" />
         <enum name="surface_view" value="1" />
         <enum name="texture_view" value="2" />
     </attr>

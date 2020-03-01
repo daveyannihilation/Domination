@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:background="@*android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <include layout="@*com.google.android.gms:layout/mic_check_view" />
+        <LinearLayout android:layout_gravity="start|bottom|center" android:orientation="vertical" android:id="@*com.google.android.gms:id/ms_debug_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textColor="@*com.google.android.gms:color/quantum_white_text" android:id="@*com.google.android.gms:id/ms_debug_dial_number" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textColor="@*com.google.android.gms:color/quantum_white_text" android:id="@*com.google.android.gms:id/ms_debug_dial_app_id" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textColor="@*com.google.android.gms:color/quantum_white_text" android:id="@*com.google.android.gms:id/ms_debug_dial_audio_only" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textColor="@*com.google.android.gms:color/quantum_white_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(Debug build only)" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@*com.google.android.gms:id/contacts_card_content" android:background="@*android:color/background_floating_material_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <TextView android:textSize="16.0sp" android:textColor="#ffdddddd" android:gravity="center_horizontal" android:paddingTop="21.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@*com.google.android.gms:string/prepare_call_onboard" android:lineSpacingExtra="3.0sp" android:fontFamily="@*com.google.android.gms:string/google_sans" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="16.0dip" android:layout_width="fill_parent" android:layout_height="@*com.google.android.gms:dimen/tachystick_contacts_card_height">
+            <RelativeLayout android:id="@*com.google.android.gms:id/remote_avatar_container" android:layout_width="@*com.google.android.gms:dimen/tachystick_contacts_card_avatar_dimen" android:layout_height="@*com.google.android.gms:dimen/tachystick_contacts_card_avatar_dimen">
+                <ImageView android:id="@*com.google.android.gms:id/remote_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@*com.google.android.gms:drawable/product_logo_avatar_anonymous_white_color_48" android:contentDescription="@null" />
+                <ImageView android:background="@*com.google.android.gms:drawable/ms_circular_background_red" android:padding="@*com.google.android.gms:dimen/tachystick_contacts_card_avatar_missed_icon_padding_dimen" android:layout_width="@*com.google.android.gms:dimen/tachystick_contacts_card_avatar_missed_icon_dimen" android:layout_height="@*com.google.android.gms:dimen/tachystick_contacts_card_avatar_missed_icon_dimen" android:src="@*com.google.android.gms:drawable/quantum_ic_call_missed_white_24" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@null" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <TextView android:textColor="@*com.google.android.gms:color/black_87_percent" android:gravity="center_horizontal" android:id="@*com.google.android.gms:id/remote_name" android:paddingTop="7.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@*com.google.android.gms:style/ContactsCardText" />
+        </LinearLayout>
+        <View android:background="#00000000" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@*com.google.android.gms:dimen/ms_end_call_promo_toast_padding" android:paddingRight="@*com.google.android.gms:dimen/ms_end_call_promo_toast_padding" android:layout_width="fill_parent" android:layout_height="@*com.google.android.gms:dimen/tachystick_block_bar_height" android:paddingStart="@*com.google.android.gms:dimen/ms_end_call_promo_toast_padding" android:paddingEnd="@*com.google.android.gms:dimen/ms_end_call_promo_toast_padding">
+            <TextView android:textColor="@*com.google.android.gms:color/black_87_percent" android:focusable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@*com.google.android.gms:string/end_call_promo_block_title" android:layout_weight="1.0" />
+            <Button android:id="@*com.google.android.gms:id/ms_block" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginBottom="0.0dip" android:minWidth="60.0dip" android:text="@*com.google.android.gms:string/common_block" style="@*com.google.android.gms:style/matchstick.activityBaseDialog.button" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
