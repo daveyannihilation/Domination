@@ -47,6 +47,8 @@
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:layout_centerVertical">true</item>
         <item name="android:fontFamily">sans-serif</item>
+        <item name="android:layout_marginStart">@*com.google.android.talk:dimen/last_read_message_text_margin</item>
+        <item name="android:layout_marginEnd">@*com.google.android.talk:dimen/last_read_message_text_margin</item>
     </style>
     <style name="PeopleListItemViewNameStyle">
         <item name="android:textSize">16.0sp</item>
@@ -60,50 +62,32 @@
         <item name="android:singleLine">true</item>
         <item name="android:fontFamily">@*com.google.android.talk:string/appcompat_sans_serif_medium_fontFamily</item>
     </style>
-    <style name="PhotoViewTheme" parent="@*android:style/Theme.Holo">
-        <item name="android:windowBackground">@*android:color/background_dark</item>
-        <item name="android:windowNoTitle">false</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:actionBarStyle">@*com.google.android.talk:style/Holo.ActionBar</item>
-        <item name="android:windowActionBarOverlay">true</item>
-    </style>
-    <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light" />
-    <style name="RealTimeChat.ConversationHeader.ConversationName" parent="@*com.google.android.talk:style/Theme.EmeraldSea">
-        <item name="android:textAppearance">?*android:textAppearanceSmall</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:ellipsize">end</item>
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:singleLine">true</item>
-    </style>
-    <style name="RealTimeChat.Message.Author" parent="@*com.google.android.talk:style/Theme.EmeraldSea">
-        <item name="android:textAppearance">?*android:textAppearanceSmall</item>
-        <item name="android:textSize">14.0sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">#ffdddddd</item>
-        <item name="android:ellipsize">end</item>
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:singleLine">true</item>
-    </style>
-    <style name="RealTimeChat.ParticipantHeader.ParticipantCount" parent="@*com.google.android.talk:style/Theme.EmeraldSea">
-        <item name="android:textAppearance">?*android:textAppearanceSmall</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:ellipsize">end</item>
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:singleLine">true</item>
+    <style name="Platform.V21.AppCompat.Light" parent="@*android:style/Theme.Material.NoActionBar">
+        <item name="android:textColorHintInverse">#ffbbbbbb</item>
+        <item name="android:textColorHint">#ffbbbbbb</item>
+        <item name="android:textColorLink">@*android:color/accent_material_dark</item>
+        <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
     </style>
     <style name="SettingsActionBarStyle" parent="@*android:style/Widget.Material.ActionBar">
         <item name="android:icon">@*android:color/transparent</item>
         <item name="android:background">@*com.google.android.talk:color/settings_action_bar_background_color</item>
         <item name="android:displayOptions">homeAsUp|showHome|showTitle</item>
+        <item name="android:contentInsetStart">@*com.google.android.talk:dimen/settings_action_bar_content_inset_start</item>
     </style>
     <style name="SettingsStyle" parent="@*android:style/Theme.DeviceDefault.Light">
         <item name="android:actionBarStyle">@*com.google.android.talk:style/SettingsActionBarStyle</item>
     </style>
     <style name="Theme.AlertDialog" parent="@*android:style/Theme.Material.Dialog.Alert" />
-    <style name="Theme.DialerPromo" parent="@*com.google.android.talk:style/Theme.AppCompat">
-        <item name="android:background">#ff388e3c</item>
+    <style name="Theme.CallerId" parent="@*android:style/Theme.Material.NoActionBar">
+        <item name="android:textColorPrimary">@*android:color/white</item>
+        <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="android:colorPrimary">@*com.google.android.talk:color/primary</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="android:colorAccent">@*com.google.android.talk:color/primary</item>
+    </style>
+    <style name="Theme.DialerPromo" parent="@*android:style/Theme.Material.NoActionBar">
+        <item name="android:background">@*com.google.android.talk:color/primary</item>
+        <item name="android:colorPrimaryDark">@*com.google.android.talk:color/primary_dark</item>
     </style>
     <style name="Theme.EmeraldSea.Launcher" parent="@*com.google.android.talk:style/Theme.EmeraldSea">	
         <item name="android:windowBackground">@*com.google.android.talk:drawable/quantum_launchscreen_hangouts</item>
@@ -114,7 +98,8 @@
     <style name="Theme.EmeraldSea.Settings" parent="@*android:style/Theme.DeviceDefault.Light">
         <item name="android:actionBarStyle">@*com.google.android.talk:style/EsActionBar</item>
         <item name="android:homeAsUpIndicator">@*com.google.android.talk:drawable/ic_arrow_back_black</item>
-        <item name="*com.google.android.talk:apnPreferenceStyle">@*com.google.android.talk:style/ApnPreference</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@*com.google.android.talk:color/primary_dark</item>
     </style>
     <style name="Theme.Hangout" parent="@*com.google.android.talk:style/Theme.EmeraldSea">
         <item name="android:windowBackground">@null</item>
@@ -133,22 +118,23 @@
         <item name="android:dividerHeight">@*com.google.android.talk:dimen/divider_height_settings</item>
         <item name="android:listDivider">@*com.google.android.talk:drawable/list_divider_settings</item>
         <item name="android:actionBarStyle">@*com.google.android.talk:style/Hangout.Settings.ActionBar</item>
+        <item name="android:colorAccent">@*com.google.android.talk:color/accent</item>
         <item name="*com.google.android.talk:actionOverflowButtonStyle">@*com.google.android.talk:style/ActionBarOverflow</item>
+        <item name="*com.google.android.talk:colorAccent">@*com.google.android.talk:color/accent</item>
         <item name="*com.google.android.talk:colorPrimary">@*com.google.android.talk:color/primary</item>
         <item name="*com.google.android.talk:colorPrimaryDark">@*com.google.android.talk:color/primary_dark</item>
-        <item name="*com.google.android.talk:colorAccent">@*com.google.android.talk:color/accent</item>
-        <item name="*com.google.android.talk:supportPreferenceCategoryStyle">@*com.google.android.talk:style/SupportPreference.Category</item>
-        <item name="*com.google.android.talk:supportPreferenceScreenStyle">@*com.google.android.talk:style/SupportPreference.PreferenceScreen</item>
-        <item name="*com.google.android.talk:supportPreferenceFragmentStyle">@*com.google.android.talk:style/SupportPreferenceFragment</item>
-        <item name="*com.google.android.talk:supportPreferenceStyle">@*com.google.android.talk:style/SupportPreference</item>
-        <item name="*com.google.android.talk:supportPreferenceInformationStyle">@*com.google.android.talk:style/SupportPreference.Information</item>
         <item name="*com.google.android.talk:supportCheckBoxPreferenceStyle">@*com.google.android.talk:style/SupportPreference.CheckBoxPreference</item>
-        <item name="*com.google.android.talk:supportYesNoPreferenceStyle">@*com.google.android.talk:style/SupportPreference.DialogPreference.YesNoPreference</item>
         <item name="*com.google.android.talk:supportDialogPreferenceStyle">@*com.google.android.talk:style/SupportPreference.DialogPreference</item>
         <item name="*com.google.android.talk:supportEditTextPreferenceStyle">@*com.google.android.talk:style/SupportPreference.DialogPreference.EditTextPreference</item>
-        <item name="*com.google.android.talk:supportRingtonePreferenceStyle">@*com.google.android.talk:style/SupportPreference.RingtonePreference</item>
+        <item name="*com.google.android.talk:supportPreferenceCategoryStyle">@*com.google.android.talk:style/SupportPreference.Category</item>
+        <item name="*com.google.android.talk:supportPreferenceFragmentStyle">@*com.google.android.talk:style/SupportPreferenceFragment</item>
+        <item name="*com.google.android.talk:supportPreferenceInformationStyle">@*com.google.android.talk:style/SupportPreference.Information</item>
         <item name="*com.google.android.talk:supportPreferencePanelStyle">@*com.google.android.talk:style/SupportPreferencePanel</item>
+        <item name="*com.google.android.talk:supportPreferenceScreenStyle">@*com.google.android.talk:style/SupportPreference.PreferenceScreen</item>
+        <item name="*com.google.android.talk:supportPreferenceStyle">@*com.google.android.talk:style/SupportPreference</item>
+        <item name="*com.google.android.talk:supportRingtonePreferenceStyle">@*com.google.android.talk:style/SupportPreference.RingtonePreference</item>
         <item name="*com.google.android.talk:supportSwitchPreferenceStyle">@*com.google.android.talk:style/SupportPreference.SwitchPreference</item>
+        <item name="*com.google.android.talk:supportYesNoPreferenceStyle">@*com.google.android.talk:style/SupportPreference.DialogPreference.YesNoPreference</item>
     </style>
     <style name="Theme.Hangouts.White" parent="@*com.google.android.talk:style/Theme.EmeraldSea">
         <item name="android:windowBackground">@*android:color/background_dark</item>
@@ -157,4 +143,18 @@
         <item name="*com.google.android.talk:actionOverflowButtonStyle">@*com.google.android.talk:style/Widget.AppCompat.ActionButton.Overflow</item>
     </style>
     <style name="Theme.InCallDialpad" parent="@*android:style/Theme.Holo.Dialog.NoActionBar" />
+    <style name="Theme.PhoneVerification" parent="@*android:style/Theme.Material.NoActionBar">
+        <item name="android:textColorPrimary">@*android:color/white</item>
+        <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="android:colorPrimary">@*com.google.android.talk:color/primary</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="android:colorAccent">@*com.google.android.talk:color/primary</item>
+    </style>
+    <style name="Theme.Promo" parent="@*android:style/Theme.Material.NoActionBar">
+        <item name="android:textColorPrimary">@*android:color/white</item>
+        <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="android:colorPrimary">@*com.google.android.talk:color/primary</item>
+        <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="android:colorAccent">@*com.google.android.talk:color/primary</item>
+    </style>
 </resources>

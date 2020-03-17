@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<type0>
+    <!-- ABOUT RESOURCE ATTRIBUTES
+
+         lighten [0..1] adds the lightness component from the selected color that converted to HSL components
+         darken [0..1] subtracts the lightness component from the selected color that converted to HSL components
+         saturate [0..1] adds the saturation component from the selected color that converted to HSL components
+         desaturate [0..1] subtracts the saturation component from the selected color that converted to HSL components
+         alpha [0..1] controls the transparency of the generated color
+    -->
+
+    <type0a name="Custom Accent" color="#787878" alpha_allowed="false">
+        <preset>#1976d2</preset>
+        <preset>#455a64</preset>
+        <preset>#850f0f</preset>
+        <preset>#a70d04</preset>
+        <preset>#388e3c</preset>
+        <preset>#33b5e5</preset>
+        <preset>#0288d1</preset>
+        <preset>#cddc39</preset>
+        <preset>#e64a19</preset>
+        <preset>#c2185b</preset>
+        <preset>#3367d6</preset>
+        <preset>#512da8</preset>
+        <preset>#d32f2f</preset>
+        <preset>#00796b</preset>
+        <preset>#ffffff</preset>
+        <preset>#fbc02d</preset>
+
+        <resource name="accent_material_dark" />
+        <resource name="accent_material_light" />
+        <resource name="material_deep_teal_500" />
+    </type0a>
+    <type0b name="Custom Buttons" color="#202020" alpha_allowed="true">
+        <preset>#ff000000</preset>
+        <preset>#ff303030</preset>
+        <preset>#ff424242</preset>
+        <preset>#ff505050</preset>
+        <preset>#ff586e75</preset>
+        <preset>#cc202020</preset>
+
+        <resource name="button_material_dark" />
+    </type0b>
+    <type0c name="Custom Window Background" color="#ff000000" alpha_allowed="true">
+        <!-- Colors with alpha is allowed when alpha_allowed is set true -->
+        <preset>#ff111111</preset>
+        <preset>#ff202020</preset>
+        <preset>#ff303030</preset>
+        <preset>#ff002b36</preset>
+        <preset>#80000000</preset>
+
+        <!-- When alpha_allowed is true, alpha attribute in resource object won't do anything.
+             Other attributes will work as usual. Multiple resources is also possible in any condition.
+        -->
+        <resource name="background_dark" />
+        <resource name="background_material_dark" />
+        <resource name="background_floating_material_dark" lighten="0.07" />
+    </type0c>
+</type0>
