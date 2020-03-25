@@ -5,6 +5,9 @@
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">fill_parent</item>
     </style>
+    <style name="Base.V23.Theme.GoogleMaterial.Light" parent="@*com.google.android.apps.docs:style/Base.V21.Theme.GoogleMaterial.Dark">
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
     <style name="Base.Widget.DocsSnackbar.TextView" parent="@*com.google.android.apps.docs:style/Widget.AppCompat.TextView">
         <item name="android:textColor">@*android:color/white</item>
         <item name="android:ellipsize">end</item>
@@ -136,9 +139,6 @@
     <style name="DialogTitleBlack" parent="@*android:style/TextAppearance.DialogWindowTitle">
         <item name="android:textColor">@*android:color/white</item>
     </style>
-    <style name="Discussion.Widget.TextView" parent="@*com.google.android.apps.docs:style/Base.Discussion.Widget.TextView">
-        <item name="android:background">@*android:color/background_floating_material_dark</item>
-    </style>
     <style name="DividerStyle">
         <item name="android:theme">@*com.google.android.apps.docs:style/Theme.GoogleMaterial.DayNight.Bridge</item>
         <item name="android:background">@*android:color/transparent</item>
@@ -217,18 +217,6 @@
     <style name="ThemeOverlay.Discussions.GoogleMaterial" parent="">
         <item name="android:textColorPrimary">@*com.google.android.apps.docs:color/google_dark_default_color_primary_text</item>
         <item name="android:textColorSecondary">@*com.google.android.apps.docs:color/google_dark_default_color_secondary_text</item>
-        <item name="*com.google.android.apps.docs:backArrowImageSrc">@*com.google.android.apps.docs:drawable/quantum_gm_ic_arrow_back_gm_grey_24</item>
-        <item name="*com.google.android.apps.docs:closeImageSrc">@*com.google.android.apps.docs:drawable/quantum_gm_ic_close_gm_grey_24</item>
-        <item name="*com.google.android.apps.docs:commentsButtonBarDivider">@null</item>
-        <item name="*com.google.android.apps.docs:commentsHeaderTextAppearance">@*com.google.android.apps.docs:style/TextAppearance.Discussions.CommentsHeader</item>
-        <item name="*com.google.android.apps.docs:deleteImageSrc">@*com.google.android.apps.docs:drawable/quantum_gm_ic_delete_gm_grey_24</item>
-        <item name="*com.google.android.apps.docs:dropDownImageSrc">@*com.google.android.apps.docs:drawable/quantum_gm_ic_arrow_drop_down_gm_grey_18</item>
-        <item name="*com.google.android.apps.docs:editCommentButtonStyle">@*com.google.android.apps.docs:style/Discussion.Widget.Button.EditComment</item>
-        <item name="*com.google.android.apps.docs:editImageSrc">@*com.google.android.apps.docs:drawable/quantum_gm_ic_edit_gm_grey_24</item>
-        <item name="*com.google.android.apps.docs:headerAuthorTextStyle">@*com.google.android.apps.docs:style/TextAppearance.Discussions.AuthorHeader</item>
-        <item name="*com.google.android.apps.docs:headerDateTextStyle">@*com.google.android.apps.docs:style/TextAppearance.Discussions.DateHeader</item>
-        <item name="*com.google.android.apps.docs:oneDiscussionHeaderBackground">@*android:color/background_dark</item>
-        <item name="*com.google.android.apps.docs:oneDiscussionHeaderTextButtonAppearance">@*com.google.android.apps.docs:style/TextAppearance.Discussions.TextButton</item>
         <item name="*com.google.android.apps.docs:primaryIconTint">@*android:color/white</item>
         <item name="*com.google.android.apps.docs:secondaryIconTint">@*android:color/white</item>
     </style>
