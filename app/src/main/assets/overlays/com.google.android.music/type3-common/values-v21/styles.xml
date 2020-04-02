@@ -20,7 +20,7 @@
         <item name="android:windowSharedElementsUseOverlay">false</item>
         <item name="*com.google.android.music:drawerArrowStyle">@*com.google.android.music:style/MusicDrawerArrowStyle</item>
         <item name="*com.google.android.music:windowActionBarOverlay">true</item>
-        <item name="*com.google.android.music:actionBarPopupTheme">@*com.google.android.music:style/ThemeOverlay.AppCompat</item>
+        <item name="*com.google.android.music:actionBarPopupTheme">@*com.google.android.music:style/ThemeOverlay.AppCompat.Light</item>
         <item name="*com.google.android.music:actionBarDivider">@null</item>
         <item name="*com.google.android.music:dialogTheme">@*com.google.android.music:style/MusicDialogTheme</item>
         <item name="*com.google.android.music:selectableItemBackground">@*com.google.android.music:drawable/white_highlight</item>
@@ -30,21 +30,27 @@
         <item name="*com.google.android.music:alertDialogTheme">@*com.google.android.music:style/MusicDialogTheme</item>
         <item name="android:navigationBarColor">@*android:color/background_dark</item>
     </style>
+    <style name="FsiMessageActionButton" parent="@*com.google.android.music:style/Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@*com.google.android.music:drawable/fsi_action_button_background_selector</item>
+        <item name="android:paddingTop">@*com.google.android.music:dimen/default_padding_large</item>
+        <item name="android:paddingBottom">@*com.google.android.music:dimen/default_padding_large</item>
+        <item name="android:layout_marginBottom">@*com.google.android.music:dimen/default_padding</item>
+        <item name="android:minWidth">@*com.google.android.music:dimen/fsi_action_button_min_width</item>
+        <item name="android:minHeight">@*com.google.android.music:dimen/fsi_action_button_min_height</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@*com.google.android.music:font/roboto_medium_family</item>
+        <item name="android:paddingStart">@*com.google.android.music:dimen/default_padding_large_plus</item>
+        <item name="android:paddingEnd">@*com.google.android.music:dimen/default_padding_large_plus</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
     <style name="MusicActivityTheme.Launcher" parent="@*com.google.android.music:style/MusicActivityTheme">
         <item name="android:windowBackground">@*com.google.android.music:drawable/splashscreen_logo</item>
         <item name="android:colorPrimaryDark">@*android:color/primary_text_leanback_light</item>
         <item name="android:windowDrawsSystemBarBackgrounds">false</item>
         <item name="android:statusBarColor">@*android:color/primary_text_leanback_light</item>
         <item name="android:windowShowWallpaper">false</item>
-    </style>
-    <style name="NowCard.ModuleTitle" parent="@*com.google.android.music:style/NowCard">
-        <item name="android:textSize">@*com.google.android.music:dimen/now_card_module_title_size</item>
-        <item name="android:textColor">#ffffffff</item>
-        <item name="android:ellipsize">end</item>
-        <item name="android:maxLines">1</item>
-        <item name="android:textAllCaps">true</item>
-        <item name="android:fontFamily">sans-serif-medium</item>
-        <item name="android:letterSpacing">0.05</item>
     </style>
     <style name="Platform.V21.AppCompat.Light" parent="@*android:style/Theme.Material.NoActionBar">
         <item name="android:textColorHintInverse">#ffbbbbbb</item>
