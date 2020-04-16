@@ -21,7 +21,6 @@
         <item name="*com.google.android.apps.magazines:iconTint">#ffffffff</item>
     </style>
     <style name="GDI.GM2.Dialog.Ab_LearnMore" parent="@*com.google.android.apps.magazines:style/GDI.GM2.Dialog">
-        <item name="android:textAppearance">@*com.google.android.apps.magazines:style/TextAppearance.GoogleMaterial.Subhead1</item>
         <item name="android:textSize">14.0sp</item>
         <item name="android:textColor">#ffdddddd</item>
         <item name="android:textColorLink">#ff1976d2</item>
@@ -70,6 +69,7 @@
         <item name="*com.google.android.apps.magazines:colorPrimary">@*com.google.android.apps.magazines:color/app_color_material</item>
         <item name="*com.google.android.apps.magazines:colorPrimaryDark">@*com.google.android.apps.magazines:color/app_color_material_dark</item>
         <item name="*com.google.android.apps.magazines:dialogTheme">@*com.google.android.apps.magazines:style/CustomDialogTheme</item>
+        <item name="*com.google.android.apps.magazines:fireballViewStyle">@*com.google.android.apps.magazines:style/FireballViewStyle</item>
         <item name="*com.google.android.apps.magazines:toolbarStyle">@*com.google.android.apps.magazines:style/Widget.Newsstand.Toolbar</item>
     </style>
     <style name="NSTheme.Night" parent="@*com.google.android.apps.magazines:style/NSTheme">
@@ -96,6 +96,12 @@
         <item name="android:windowShowWallpaper">false</item>
         <item name="android:windowIsTranslucent">false</item>
     </style>
+    <style name="Style.GrowthKit.Headline5" parent="@*com.google.android.apps.magazines:style/TextAppearance.GoogleMaterial.Headline5">
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="Style.GrowthKit.Subhead1" parent="@*com.google.android.apps.magazines:style/TextAppearance.GoogleMaterial.Subhead1">
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
     <style name="Widget.GoogleMaterial.FloatingActionButton" parent="@*com.google.android.apps.magazines:style/Widget.MaterialComponents.FloatingActionButton">
         <item name="*com.google.android.apps.magazines:rippleColor">@*android:color/ripple_material_dark</item>
         <item name="*com.google.android.apps.magazines:elevation">0.0dp</item>
@@ -106,5 +112,26 @@
         <item name="*com.google.android.apps.magazines:shapeAppearanceOverlay">@*com.google.android.apps.magazines:style/ShapeAppearanceOverlay.GoogleMaterial.FloatingActionButton</item>
         <item name="*com.google.android.apps.magazines:enforceMaterialTheme">true</item>
         <item name="*com.google.android.apps.magazines:backgroundTint">@*android:color/button_material_dark</item>
+    </style>
+    <style name="Widget.GoogleMaterial.Snackbar" parent="@*com.google.android.apps.magazines:style/Widget.MaterialComponents.Snackbar">
+        <item name="*com.google.android.apps.magazines:actionTextColorAlpha">@*com.google.android.apps.magazines:dimen/design_snackbar_action_text_color_alpha</item>
+        <item name="*com.google.android.apps.magazines:backgroundTint">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.apps.magazines:enforceMaterialTheme">true</item>
+        <item name="*com.google.android.apps.magazines:materialThemeOverlay">@*com.google.android.apps.magazines:style/ThemeOverlay.GoogleMaterial.Snackbar</item>
+    </style>
+    <style name="Widget.GoogleMaterial.Snackbar.TextView" parent="@*com.google.android.apps.magazines:style/Widget.MaterialComponents.Snackbar.TextView">
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="Widget.MaterialComponents.Snackbar.TextView" parent="@*com.google.android.apps.magazines:style/Widget.AppCompat.TextView">
+        <item name="android:textAppearance">@*com.google.android.apps.magazines:style/TextAppearance.GoogleMaterial.Body2</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">@*com.google.android.apps.magazines:dimen/design_snackbar_padding_horizontal</item>
+        <item name="android:paddingTop">@*com.google.android.apps.magazines:dimen/design_snackbar_padding_vertical</item>
+        <item name="android:paddingRight">@*com.google.android.apps.magazines:dimen/design_snackbar_padding_horizontal</item>
+        <item name="android:paddingBottom">@*com.google.android.apps.magazines:dimen/design_snackbar_padding_vertical</item>
+        <item name="android:maxLines">@*com.google.android.apps.magazines:integer/design_snackbar_text_max_lines</item>
+        <item name="android:alpha">@*com.google.android.apps.magazines:dimen/material_emphasis_high_type</item>
+        <item name="android:textAlignment">viewStart</item>
     </style>
 </resources>
