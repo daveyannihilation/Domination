@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="@*android:color/background_floating_material_dark" android:backgroundTint="@*android:color/background_floating_material_dark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@*com.google.android.calendar:id/edit_screen_content" android:background="@*android:color/background_floating_material_dark" android:backgroundTint="@*android:color/background_floating_material_dark" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@*com.google.android.calendar:id/edit_screen_header" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@*com.google.android.calendar:style/EditScreen">
+            <FrameLayout android:id="@*com.google.android.calendar:id/segment_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <FrameLayout android:background="@*android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.google.android.calendar.common.view.ClickTargetFrameLayout android:id="@*com.google.android.calendar:id/cancel" android:visibility="gone" android:nextFocusDown="@*com.google.android.calendar:id/save" android:contentDescription="@*com.google.android.calendar:string/edit_event_cancel" android:layout_marginStart="@*com.google.android.calendar:dimen/edit_screen_start_button_start_spacing" style="@*com.google.android.calendar:style/HeadlineButtonContainer">
+                    <ImageView android:id="@*com.google.android.calendar:id/cancel_image" style="@*com.google.android.calendar:style/HeadlineCloseButton" />
+                </com.google.android.calendar.common.view.ClickTargetFrameLayout>
+                <include layout="@*com.google.android.calendar:layout/newapi_edit_save_button" />
+            </FrameLayout>
+        </FrameLayout>
+        <ScrollView android:id="@*com.google.android.calendar:id/segments_scroll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@*com.google.android.calendar:id/segments" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+    </LinearLayout>
+    <FrameLayout android:id="@*com.google.android.calendar:id/fullscreen_fragment" android:background="@*android:color/background_floating_material_dark" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
