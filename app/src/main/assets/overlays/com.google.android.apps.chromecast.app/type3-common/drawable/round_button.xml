@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector>
+            <item android:state_pressed="false">
+                <shape android:shape="oval">
+                    <solid android:color="#3d000000" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+    <item>
+        <inset android:insetLeft="1.0dip" android:insetRight="1.0dip" android:insetBottom="2.0dip">
+            <selector>
+                <item android:state_enabled="false">
+                    <shape android:shape="oval">
+                        <solid android:color="@*android:color/background_dark" />
+                    </shape>
+                </item>
+                <item android:state_pressed="false">
+                    <shape android:shape="oval">
+                        <solid android:color="@*android:color/button_material_dark" />
+                    </shape>
+                </item>
+                <item android:state_pressed="true">
+                    <shape android:shape="oval">
+                        <solid android:color="@*android:color/dim_foreground_light" />
+                    </shape>
+                </item>
+            </selector>
+        </inset>
+    </item>
+</layer-list>

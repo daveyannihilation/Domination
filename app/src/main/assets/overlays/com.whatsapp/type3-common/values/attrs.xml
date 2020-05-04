@@ -36,20 +36,6 @@
     <attr name="actionProviderClass" format="string" />
     <attr name="actionViewClass" format="string" />
     <attr name="activityChooserViewStyle" format="reference" />
-    <attr name="actualImageResource" format="reference" />
-    <attr name="actualImageScaleType">
-        <enum name="center" value="4" />
-        <enum name="centerCrop" value="6" />
-        <enum name="centerInside" value="5" />
-        <enum name="fitBottomStart" value="8" />
-        <enum name="fitCenter" value="2" />
-        <enum name="fitEnd" value="3" />
-        <enum name="fitStart" value="1" />
-        <enum name="fitXY" value="0" />
-        <enum name="focusCrop" value="7" />
-        <enum name="none" value="-1" />
-    </attr>
-    <attr name="actualImageUri" format="string" />
     <attr name="ad_marker_color" format="color" />
     <attr name="ad_marker_width" format="dimension" />
     <attr name="adjustTextGravity" format="boolean" />
@@ -86,7 +72,6 @@
     </attr>
     <attr name="auto_show" format="boolean" />
     <attr name="background" format="reference" />
-    <attr name="backgroundImage" format="reference" />
     <attr name="backgroundSplit" format="reference|color" />
     <attr name="backgroundStacked" format="reference|color" />
     <attr name="backgroundTint" format="color" />
@@ -289,10 +274,10 @@
     <attr name="cpvStrokeMax" format="dimension" />
     <attr name="cpvStrokeMin" format="dimension" />
     <attr name="cpvWidth" format="dimension" />
-    <attr name="crchNamePaddingLeft" format="reference|string|integer|boolean|color|float|dimension|fraction" />
-    <attr name="crchNamePaddingRight" format="reference|string|integer|boolean|color|float|dimension|fraction" />
-    <attr name="crchPushNamePaddingLeft" format="reference|string|integer|boolean|color|float|dimension|fraction" />
-    <attr name="crchPushNamePaddingRight" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="crchNamePaddingLeft" format="dimension" />
+    <attr name="crchNamePaddingRight" format="dimension" />
+    <attr name="crchPushNamePaddingLeft" format="dimension" />
+    <attr name="crchPushNamePaddingRight" format="dimension" />
     <attr name="css" format="string" />
     <attr name="cstErrorColor" format="color" />
     <attr name="cstSeenColor" format="color" />
@@ -302,6 +287,8 @@
         <enum name="decimal" value="1" />
         <enum name="none" value="0" />
     </attr>
+    <attr name="dateWrapper_marginLeft" format="dimension" />
+    <attr name="dateWrapper_paddingRight" format="dimension" />
     <attr name="defaultQueryHint" format="string" />
     <attr name="default_artwork" format="reference" />
     <attr name="dialogCornerRadius" format="dimension" />
@@ -380,20 +367,6 @@
         <enum name="mini" value="1" />
         <enum name="normal" value="0" />
     </attr>
-    <attr name="fadeDuration" format="integer" />
-    <attr name="failureImage" format="reference" />
-    <attr name="failureImageScaleType">
-        <enum name="center" value="4" />
-        <enum name="centerCrop" value="6" />
-        <enum name="centerInside" value="5" />
-        <enum name="fitBottomStart" value="8" />
-        <enum name="fitCenter" value="2" />
-        <enum name="fitEnd" value="3" />
-        <enum name="fitStart" value="1" />
-        <enum name="fitXY" value="0" />
-        <enum name="focusCrop" value="7" />
-        <enum name="none" value="-1" />
-    </attr>
     <attr name="fastScrollEnabled" format="boolean" />
     <attr name="fastScrollHorizontalThumbDrawable" format="reference" />
     <attr name="fastScrollHorizontalTrackDrawable" format="reference" />
@@ -439,6 +412,7 @@
     <attr name="gapBetweenBars" format="dimension" />
     <attr name="gifSource" format="reference|string" />
     <attr name="goIcon" format="reference" />
+    <attr name="hasStatusView" format="boolean" />
     <attr name="headerLayout" format="reference" />
     <attr name="height" format="dimension" />
     <attr name="helperText" format="string" />
@@ -622,6 +596,10 @@
     <attr name="mctRadius" format="dimension" />
     <attr name="measureWithLargestChild" format="boolean" />
     <attr name="menu" format="reference" />
+    <attr name="micOverlay_background" format="reference" />
+    <attr name="micOverlay_backgroundTint" format="reference" />
+    <attr name="micOverlay_marginBottom" format="dimension" />
+    <attr name="micOverlay_marginLeft" format="dimension" />
     <attr name="multiChoiceItemLayout" format="reference" />
     <attr name="navigationContentDescription" format="string" />
     <attr name="navigationIcon" format="reference" />
@@ -646,7 +624,6 @@
         <enum name="vertical" value="2" />
     </attr>
     <attr name="overlapAnchor" format="boolean" />
-    <attr name="overlayImage" format="reference" />
     <attr name="paddingBottomNoButtons" format="dimension" />
     <attr name="paddingEnd" format="dimension" />
     <attr name="paddingStart" format="dimension" />
@@ -682,19 +659,8 @@
     <attr name="pinLineStrokeSelected" format="dimension" />
     <attr name="pinRepeatedHint" format="string" />
     <attr name="pinTextBottomPadding" format="dimension" />
-    <attr name="placeholderImage" format="reference" />
-    <attr name="placeholderImageScaleType">
-        <enum name="center" value="4" />
-        <enum name="centerCrop" value="6" />
-        <enum name="centerInside" value="5" />
-        <enum name="fitBottomStart" value="8" />
-        <enum name="fitCenter" value="2" />
-        <enum name="fitEnd" value="3" />
-        <enum name="fitStart" value="1" />
-        <enum name="fitXY" value="0" />
-        <enum name="focusCrop" value="7" />
-        <enum name="none" value="-1" />
-    </attr>
+    <attr name="playButton_marginLeft" format="dimension" />
+    <attr name="playButton_size" format="dimension" />
     <attr name="played_ad_marker_color" format="color" />
     <attr name="played_color" format="color" />
     <attr name="player_layout_id" format="reference" />
@@ -703,25 +669,16 @@
     <attr name="popupTheme" format="reference" />
     <attr name="popupWindowStyle" format="reference" />
     <attr name="preserveIconSpacing" format="boolean" />
-    <attr name="pressedStateOverlayImage" format="reference" />
     <attr name="pressedTranslationZ" format="dimension" />
     <attr name="primaryIconColor" format="reference" />
-    <attr name="progressBarAutoRotateInterval" format="integer" />
-    <attr name="progressBarImage" format="reference" />
-    <attr name="progressBarImageScaleType">
-        <enum name="center" value="4" />
-        <enum name="centerCrop" value="6" />
-        <enum name="centerInside" value="5" />
-        <enum name="fitBottomStart" value="8" />
-        <enum name="fitCenter" value="2" />
-        <enum name="fitEnd" value="3" />
-        <enum name="fitStart" value="1" />
-        <enum name="fitXY" value="0" />
-        <enum name="focusCrop" value="7" />
-        <enum name="none" value="-1" />
-    </attr>
+    <attr name="profileFrame_paddingBottom" format="dimension" />
+    <attr name="profileFrame_paddingLeft" format="dimension" />
+    <attr name="profileFrame_paddingTop" format="dimension" />
+    <attr name="profileView_layoutSize" format="dimension" />
+    <attr name="profileView_padding" format="dimension" />
     <attr name="progressBarPadding" format="dimension" />
     <attr name="progressBarStyle" format="reference" />
+    <attr name="progressSpinner_size" format="dimension" />
     <attr name="psritDescription" format="string" />
     <attr name="psritIcon" format="integer" />
     <attr name="psritIconColor" format="color" />
@@ -762,19 +719,6 @@
         <enum name="fixed_width" value="1" />
         <enum name="zoom" value="4" />
     </attr>
-    <attr name="retryImage" format="reference" />
-    <attr name="retryImageScaleType">
-        <enum name="center" value="4" />
-        <enum name="centerCrop" value="6" />
-        <enum name="centerInside" value="5" />
-        <enum name="fitBottomStart" value="8" />
-        <enum name="fitCenter" value="2" />
-        <enum name="fitEnd" value="3" />
-        <enum name="fitStart" value="1" />
-        <enum name="fitXY" value="0" />
-        <enum name="focusCrop" value="7" />
-        <enum name="none" value="-1" />
-    </attr>
     <attr name="reverseLayout" format="boolean" />
     <attr name="rewind_increment" format="integer" />
     <attr name="rippleColor" format="color" />
@@ -782,20 +726,6 @@
     <attr name="rmtvLinkBold" format="boolean" />
     <attr name="rmtvLinkColor" format="color" />
     <attr name="rmtvText" format="string" />
-    <attr name="roundAsCircle" format="boolean" />
-    <attr name="roundBottomEnd" format="boolean" />
-    <attr name="roundBottomLeft" format="boolean" />
-    <attr name="roundBottomRight" format="boolean" />
-    <attr name="roundBottomStart" format="boolean" />
-    <attr name="roundTopEnd" format="boolean" />
-    <attr name="roundTopLeft" format="boolean" />
-    <attr name="roundTopRight" format="boolean" />
-    <attr name="roundTopStart" format="boolean" />
-    <attr name="roundWithOverlayColor" format="color" />
-    <attr name="roundedCornerRadius" format="dimension" />
-    <attr name="roundingBorderColor" format="reference|color" />
-    <attr name="roundingBorderPadding" format="dimension" />
-    <attr name="roundingBorderWidth" format="dimension" />
     <attr name="rtoStyle" format="reference" />
     <attr name="scopeUris" format="reference|string" />
     <attr name="scrimAnimationDuration" format="integer" />
@@ -816,6 +746,10 @@
     <attr name="searchViewStyle" format="reference" />
     <attr name="see_more_icon" format="reference" />
     <attr name="seekBarStyle" format="reference" />
+    <attr name="seekbarContainer_paddingRight" format="dimension" />
+    <attr name="seekbar_marginLeft" format="dimension" />
+    <attr name="seekbar_paddingBottom" format="dimension" />
+    <attr name="seekbar_paddingTop" format="dimension" />
     <attr name="selectableItemBackground" format="reference" />
     <attr name="selectableItemBackgroundBorderless" format="reference" />
     <attr name="settingsBackgroundColor" format="color" />
@@ -1111,7 +1045,6 @@
     <attr name="useViewLifecycle" format="boolean" />
     <attr name="use_artwork" format="boolean" />
     <attr name="use_controller" format="boolean" />
-    <attr name="viewAspectRatio" format="float" />
     <attr name="viewInflaterClass" format="string" />
     <attr name="vnsbBackgroundColor" format="color" />
     <attr name="vnsbProgressColor" format="color" />
