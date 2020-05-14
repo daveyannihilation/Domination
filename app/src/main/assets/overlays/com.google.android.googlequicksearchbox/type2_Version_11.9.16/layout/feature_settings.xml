@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@*com.google.android.googlequicksearchbox:id/feature_show" android:background="@*android:color/primary_dark_material_dark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.widget.NestedScrollView android:orientation="vertical" android:id="@*com.google.android.googlequicksearchbox:id/settings" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@*com.google.android.googlequicksearchbox:string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:id="@*com.google.android.googlequicksearchbox:id/settings_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@*com.google.android.googlequicksearchbox:id/downloads_title" android:text="@*com.google.android.googlequicksearchbox:string/downloads" style="@*com.google.android.googlequicksearchbox:style/SettingsSection" />
+                <LinearLayout android:orientation="vertical" android:id="@*com.google.android.googlequicksearchbox:id/auto_download_container" android:paddingTop="@*com.google.android.googlequicksearchbox:dimen/settings_vertical_padding" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@*com.google.android.googlequicksearchbox:style/Ripple">
+                    <TextView android:text="@*com.google.android.googlequicksearchbox:string/auto_downloading" style="@*com.google.android.googlequicksearchbox:style/SettingsTitle" />
+                    <TextView android:id="@*com.google.android.googlequicksearchbox:id/auto_download_status" android:paddingBottom="@*com.google.android.googlequicksearchbox:dimen/settings_vertical_padding" style="@*com.google.android.googlequicksearchbox:style/SettingsOption" />
+                    <View style="@*com.google.android.googlequicksearchbox:style/horizontal_bar" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@*com.google.android.googlequicksearchbox:id/remove_completed_episode_container" android:paddingTop="@*com.google.android.googlequicksearchbox:dimen/settings_vertical_padding" android:paddingBottom="@*com.google.android.googlequicksearchbox:dimen/settings_vertical_padding" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@*com.google.android.googlequicksearchbox:style/Ripple">
+                    <TextView android:id="@*com.google.android.googlequicksearchbox:id/remove_completed_episode_title" android:text="@*com.google.android.googlequicksearchbox:string/remove_completed_episodes" style="@*com.google.android.googlequicksearchbox:style/SettingsTitle" />
+                    <TextView android:id="@*com.google.android.googlequicksearchbox:id/remove_completed_episode_option" android:text="@*com.google.android.googlequicksearchbox:string/never" style="@*com.google.android.googlequicksearchbox:style/SettingsOption" />
+                </LinearLayout>
+                <View style="@*com.google.android.googlequicksearchbox:style/horizontal_bar" />
+                <LinearLayout android:orientation="vertical" android:id="@*com.google.android.googlequicksearchbox:id/remove_unfinished_episode_container" android:paddingTop="@*com.google.android.googlequicksearchbox:dimen/settings_vertical_padding" android:paddingBottom="@*com.google.android.googlequicksearchbox:dimen/settings_vertical_padding" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@*com.google.android.googlequicksearchbox:style/Ripple">
+                    <TextView android:id="@*com.google.android.googlequicksearchbox:id/remove_unfinished_episode_title" android:text="@*com.google.android.googlequicksearchbox:string/remove_unfinished_episodes" style="@*com.google.android.googlequicksearchbox:style/SettingsTitle" />
+                    <TextView android:id="@*com.google.android.googlequicksearchbox:id/remove_unfinished_episode_option" android:text="@*com.google.android.googlequicksearchbox:string/never" style="@*com.google.android.googlequicksearchbox:style/SettingsOption" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="@*com.google.android.googlequicksearchbox:string/podcast_notifications" style="@*com.google.android.googlequicksearchbox:style/SettingsSection" />
+                <LinearLayout android:orientation="vertical" android:id="@*com.google.android.googlequicksearchbox:id/new_episode_notification_container" android:paddingTop="@*com.google.android.googlequicksearchbox:dimen/settings_vertical_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@*com.google.android.googlequicksearchbox:style/Ripple">
+                    <TextView android:text="@*com.google.android.googlequicksearchbox:string/new_episodes_notification_setting" style="@*com.google.android.googlequicksearchbox:style/SettingsTitle" />
+                    <TextView android:id="@*com.google.android.googlequicksearchbox:id/new_episode_notification_status" android:paddingBottom="@*com.google.android.googlequicksearchbox:dimen/settings_vertical_padding" style="@*com.google.android.googlequicksearchbox:style/SettingsOption" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@*com.google.android.googlequicksearchbox:id/audio_player_notification_container" android:paddingTop="@*com.google.android.googlequicksearchbox:dimen/settings_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@*com.google.android.googlequicksearchbox:style/Ripple">
+                    <TextView android:text="@*com.google.android.googlequicksearchbox:string/audio_player_notification_channel" style="@*com.google.android.googlequicksearchbox:style/SettingsTitle" />
+                    <TextView android:paddingBottom="@*com.google.android.googlequicksearchbox:dimen/settings_vertical_padding" android:text="@*com.google.android.googlequicksearchbox:string/audio_player_notification_hint" style="@*com.google.android.googlequicksearchbox:style/SettingsOption" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@*com.google.android.googlequicksearchbox:id/explore_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_marginRight="16.0dip" android:text="@*com.google.android.googlequicksearchbox:string/settings_category_explore" android:layout_marginEnd="16.0dip" style="@*com.google.android.googlequicksearchbox:style/SettingsSection" />
+                <Switch android:id="@*com.google.android.googlequicksearchbox:id/show_personalized_recommendations_switch" android:text="@*com.google.android.googlequicksearchbox:string/settings_show_personalized_recommendations" style="@*com.google.android.googlequicksearchbox:style/settings_section_switch" />
+                <View style="@*com.google.android.googlequicksearchbox:style/horizontal_bar" />
+                <TextView android:id="@*com.google.android.googlequicksearchbox:id/personalized_recommendations_more_info" android:text="@*com.google.android.googlequicksearchbox:string/settings_show_personalized_recommendations_more_info" style="@*com.google.android.googlequicksearchbox:style/SettingsTitleNoSubtitle" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@*com.google.android.googlequicksearchbox:id/playback_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_marginRight="16.0dip" android:text="@*com.google.android.googlequicksearchbox:string/settings_category_playback" android:layout_marginEnd="16.0dip" style="@*com.google.android.googlequicksearchbox:style/SettingsSection" />
+                <Switch android:id="@*com.google.android.googlequicksearchbox:id/autoplay_from_queue_switch" android:text="@*com.google.android.googlequicksearchbox:string/settings_autoplay_from_queue" style="@*com.google.android.googlequicksearchbox:style/settings_section_switch" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@*com.google.android.googlequicksearchbox:id/appearance_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="@*com.google.android.googlequicksearchbox:string/settings_category_appearance" style="@*com.google.android.googlequicksearchbox:style/SettingsSection" />
+                <LinearLayout android:orientation="vertical" android:id="@*com.google.android.googlequicksearchbox:id/theme_setting_container" android:paddingTop="@*com.google.android.googlequicksearchbox:dimen/settings_vertical_padding" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@*com.google.android.googlequicksearchbox:style/Ripple">
+                    <TextView android:text="@*com.google.android.googlequicksearchbox:string/theme" style="@*com.google.android.googlequicksearchbox:style/SettingsTitle" />
+                    <TextView android:id="@*com.google.android.googlequicksearchbox:id/current_theme_setting" android:paddingBottom="@*com.google.android.googlequicksearchbox:dimen/settings_vertical_padding" style="@*com.google.android.googlequicksearchbox:style/SettingsOption" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@*com.google.android.googlequicksearchbox:id/version" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="@*com.google.android.googlequicksearchbox:string/podcasts_version_info" style="@*com.google.android.googlequicksearchbox:style/SettingsSection" />
+                <LinearLayout android:orientation="horizontal" android:id="@*com.google.android.googlequicksearchbox:id/google_podcasts_version" android:layout_width="fill_parent" android:layout_height="56.0dip">
+                    <TextView android:gravity="start|center" android:id="@*com.google.android.googlequicksearchbox:id/google_podcasts_app_name" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:textAlignment="viewStart" style="@*com.google.android.googlequicksearchbox:style/SettingsTitle" />
+                    <TextView android:gravity="center_vertical" android:id="@*com.google.android.googlequicksearchbox:id/google_podcasts_app_version" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@*com.google.android.googlequicksearchbox:style/SettingsOption" />
+                </LinearLayout>
+                <View style="@*com.google.android.googlequicksearchbox:style/horizontal_bar" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="56.0dip">
+                    <TextView android:gravity="start|center" android:id="@*com.google.android.googlequicksearchbox:id/google_app_name" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:textAlignment="viewStart" style="@*com.google.android.googlequicksearchbox:style/SettingsTitle" />
+                    <TextView android:gravity="center_vertical" android:id="@*com.google.android.googlequicksearchbox:id/google_app_version" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@*com.google.android.googlequicksearchbox:style/SettingsOption" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <include layout="@*com.google.android.googlequicksearchbox:layout/default_appbar" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

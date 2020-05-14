@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AuthenticatorTheme.WhiteAccentColor" parent="@*com.google.android.apps.authenticator2:style/AuthenticatorTheme.Dark">
-        <item name="*com.google.android.apps.authenticator2:colorAccent">#ffffffff</item>
-    </style>
-    <style name="ButtonBarButtonStyle" parent="@*com.google.android.apps.authenticator2:style/Widget.AppCompat.Button.Colored">
-        <item name="android:theme">@*com.google.android.apps.authenticator2:style/AuthenticatorTheme.WhiteAccentColor.Dark</item>
-        <item name="android:textSize">14.0sp</item>
-        <item name="android:textColor">@*com.google.android.apps.authenticator2:color/google_blue_500</item>
-        <item name="android:background">@*android:color/button_material_dark</item>
-    </style>
     <style name="FirstAccountMessageDoneButtonStyle.Dark" parent="@*com.google.android.apps.authenticator2:style/Widget.AppCompat.Button.Colored">
         <item name="android:theme">@*com.google.android.apps.authenticator2:style/AuthenticatorTheme.WhiteAccentColor.Dark</item>
         <item name="android:textSize">14.0sp</item>
@@ -16,22 +7,44 @@
         <item name="android:minWidth">96.0dip</item>
         <item name="android:minHeight">48.0dip</item>
     </style>
-    <style name="HintTextAppearance" parent="@*android:style/TextAppearance">
-        <item name="android:textSize">12.0sp</item>
-        <item name="android:textColor">#ffbbbbbb</item>
-        <item name="android:lineSpacingExtra">8.0dip</item>
-    </style>
     <style name="Platform.AppCompat.Light" parent="@*android:style/Theme.DeviceDefault.Light" />
     <style name="WhiteActionBar" parent="@*com.google.android.apps.authenticator2:style/Theme.AppCompat">
         <item name="*com.google.android.apps.authenticator2:colorPrimary">@*android:color/primary_material_dark</item>
     </style>
     <style name="Widget.Design.FloatingActionButton" parent="@*android:style/Widget">
         <item name="android:background">@*com.google.android.apps.authenticator2:drawable/design_fab_background</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
         <item name="*com.google.android.apps.authenticator2:rippleColor">@*android:color/ripple_material_dark</item>
         <item name="*com.google.android.apps.authenticator2:fabSize">auto</item>
+        <item name="*com.google.android.apps.authenticator2:hideMotionSpec">@*com.google.android.apps.authenticator2:animator/design_fab_hide_motion_spec</item>
+        <item name="*com.google.android.apps.authenticator2:hoveredFocusedTranslationZ">@*com.google.android.apps.authenticator2:dimen/design_fab_translation_z_hovered_focused</item>
+        <item name="*com.google.android.apps.authenticator2:maxImageSize">@*com.google.android.apps.authenticator2:dimen/design_fab_image_size</item>
         <item name="*com.google.android.apps.authenticator2:pressedTranslationZ">@*com.google.android.apps.authenticator2:dimen/design_fab_translation_z_pressed</item>
         <item name="*com.google.android.apps.authenticator2:borderWidth">@*com.google.android.apps.authenticator2:dimen/design_fab_border_width</item>
         <item name="*com.google.android.apps.authenticator2:elevation">@*com.google.android.apps.authenticator2:dimen/design_fab_elevation</item>
-        <item name="*com.google.android.apps.authenticator2:backgroundTint">@*com.google.android.apps.authenticator2:color/google_blue_500</item>
+        <item name="*com.google.android.apps.authenticator2:backgroundTint">@*com.google.android.apps.authenticator2:color/google_blue500</item>
+        <item name="*com.google.android.apps.authenticator2:showMotionSpec">@*com.google.android.apps.authenticator2:animator/design_fab_show_motion_spec</item>
+    </style>
+    <style name="Widget.GoogleMaterial.Snackbar" parent="@*com.google.android.apps.authenticator2:style/Widget.MaterialComponents.Snackbar">
+        <item name="*com.google.android.apps.authenticator2:actionTextColorAlpha">@*com.google.android.apps.authenticator2:dimen/design_snackbar_action_text_color_alpha</item>
+        <item name="*com.google.android.apps.authenticator2:backgroundTint">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.apps.authenticator2:enforceMaterialTheme">true</item>
+        <item name="*com.google.android.apps.authenticator2:materialThemeOverlay">@*com.google.android.apps.authenticator2:style/ThemeOverlay.GoogleMaterial.Snackbar</item>
+    </style>
+    <style name="Widget.GoogleMaterial.Snackbar.TextView" parent="@*com.google.android.apps.authenticator2:style/Widget.MaterialComponents.Snackbar.TextView">
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="Widget.MaterialComponents.Snackbar.TextView" parent="@*com.google.android.apps.authenticator2:style/Widget.AppCompat.TextView">
+        <item name="android:textAppearance">@*com.google.android.apps.authenticator2:style/TextAppearance.GoogleMaterial.Body2</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">@*com.google.android.apps.authenticator2:dimen/design_snackbar_padding_horizontal</item>
+        <item name="android:paddingTop">@*com.google.android.apps.authenticator2:dimen/design_snackbar_padding_vertical</item>
+        <item name="android:paddingRight">@*com.google.android.apps.authenticator2:dimen/design_snackbar_padding_horizontal</item>
+        <item name="android:paddingBottom">@*com.google.android.apps.authenticator2:dimen/design_snackbar_padding_vertical</item>
+        <item name="android:maxLines">@*com.google.android.apps.authenticator2:integer/design_snackbar_text_max_lines</item>
+        <item name="android:alpha">@*com.google.android.apps.authenticator2:dimen/material_emphasis_high_type</item>
+        <item name="android:textAlignment">viewStart</item>
     </style>
 </resources>
