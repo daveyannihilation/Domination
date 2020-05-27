@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@*com.google.android.calendar:id/header" android:background="@*android:color/primary_text_leanback_light" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.calendar.common.view.ClickTargetFrameLayout android:layout_gravity="top" android:id="@*com.google.android.calendar:id/close" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginTop="@*com.google.android.calendar:dimen/editor_sheet_close_button_margin_top" android:contentDescription="@*com.google.android.calendar:string/cancel_button" android:layout_marginStart="4.0dip" android:layout_alignParentStart="true">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@*com.google.android.calendar:drawable/quantum_gm_ic_clear_vd_theme_24" />
+    </com.google.android.calendar.common.view.ClickTargetFrameLayout>
+    <include layout="@*com.google.android.calendar:layout/drag_handle" />
+    <FrameLayout android:layout_gravity="top" android:id="@*com.google.android.calendar:id/feedback_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@*com.google.android.calendar:dimen/editor_sheet_close_button_margin_top" android:layout_toEndOf="@*com.google.android.calendar:id/close">
+        <com.google.android.calendar.common.view.ClickTargetFrameLayout android:id="@*com.google.android.calendar:id/feedback" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="56.0dip" android:contentDescription="@*com.google.android.calendar:string/cancel_button">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@*com.google.android.calendar:drawable/quantum_gm_ic_feedback_vd_theme_24" android:paddingStart="4.0dip" android:paddingEnd="16.0dip" />
+        </com.google.android.calendar.common.view.ClickTargetFrameLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@*com.google.android.calendar:id/chat_disclaimer_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@*com.google.android.calendar:id/save" android:layout_alignBottom="@*com.google.android.calendar:id/save" android:layout_toStartOf="@*com.google.android.calendar:id/save">
+        <TextView android:textColor="@*android:color/secondary_text_default_material_dark" android:gravity="center_vertical" android:id="@*com.google.android.calendar:id/chat_disclaimer_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+    </FrameLayout>
+    <com.google.android.material.button.MaterialButton android:layout_gravity="top" android:id="@*com.google.android.calendar:id/save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@*com.google.android.calendar:dimen/editor_sheet_save_button_margin_top" android:minWidth="0.0dip" android:text="@*com.google.android.calendar:string/save" android:insetTop="8.0dip" android:insetBottom="8.0dip" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" android:layout_marginEnd="16.0dip" android:layout_alignParentEnd="true" style="@*com.google.android.calendar:style/Widget.GoogleMaterial.Button" />
+</RelativeLayout>

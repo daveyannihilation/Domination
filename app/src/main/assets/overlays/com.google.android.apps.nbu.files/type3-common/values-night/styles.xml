@@ -1,38 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Base.Theme.GoogleMaterial.Light" parent="@*com.google.android.apps.nbu.files:style/Base.V14.Theme.GoogleMaterial.Dark">
+    <style name="Base.Theme.GoogleMaterial.Light" parent="@*com.google.android.apps.nbu.files:style/Base.V21.Theme.GoogleMaterial.Dark">
         <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
     </style>
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabText" parent="@*android:style/Widget.Material.ActionBar.TabText" />
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabView" parent="@*android:style/Widget.Material.ActionBar.TabView" />
     <style name="Base.Widget.AppCompat.Light.PopupMenu" parent="@*android:style/Widget.Material.PopupMenu" />
-    <style name="CastMiniController">
-        <item name="*com.google.android.apps.nbu.files:castBackground">@*android:color/secondary_text_leanback_light</item>
-        <item name="*com.google.android.apps.nbu.files:castButtonColor">@null</item>
-        <item name="*com.google.android.apps.nbu.files:castClosedCaptionsButtonDrawable">@*com.google.android.apps.nbu.files:drawable/cast_ic_mini_controller_closed_caption</item>
-        <item name="*com.google.android.apps.nbu.files:castControlButtons">@*com.google.android.apps.nbu.files:array/cast_mini_controller_default_control_buttons</item>
-        <item name="*com.google.android.apps.nbu.files:castForward30ButtonDrawable">@*com.google.android.apps.nbu.files:drawable/cast_ic_mini_controller_forward30</item>
-        <item name="*com.google.android.apps.nbu.files:castLargePauseButtonDrawable">@*com.google.android.apps.nbu.files:drawable/cast_ic_mini_controller_pause_large</item>
-        <item name="*com.google.android.apps.nbu.files:castLargePlayButtonDrawable">@*com.google.android.apps.nbu.files:drawable/cast_ic_mini_controller_play_large</item>
-        <item name="*com.google.android.apps.nbu.files:castLargeStopButtonDrawable">@*com.google.android.apps.nbu.files:drawable/cast_ic_mini_controller_pause_large</item>
-        <item name="*com.google.android.apps.nbu.files:castMiniControllerLoadingIndicatorColor">@*com.google.android.apps.nbu.files:color/cast_mini_controller_loading_indicator_color</item>
-        <item name="*com.google.android.apps.nbu.files:castMuteToggleButtonDrawable">@*com.google.android.apps.nbu.files:drawable/cast_ic_mini_controller_mute</item>
-        <item name="*com.google.android.apps.nbu.files:castPauseButtonDrawable">@*com.google.android.apps.nbu.files:drawable/cast_ic_mini_controller_pause</item>
-        <item name="*com.google.android.apps.nbu.files:castPlayButtonDrawable">@*com.google.android.apps.nbu.files:drawable/cast_ic_mini_controller_play</item>
-        <item name="*com.google.android.apps.nbu.files:castProgressBarColor">@*com.google.android.apps.nbu.files:color/cast_seekbar_progress_thumb_color</item>
-        <item name="*com.google.android.apps.nbu.files:castRewind30ButtonDrawable">@*com.google.android.apps.nbu.files:drawable/cast_ic_mini_controller_rewind30</item>
-        <item name="*com.google.android.apps.nbu.files:castShowImageThumbnail">true</item>
-        <item name="*com.google.android.apps.nbu.files:castSkipNextButtonDrawable">@*com.google.android.apps.nbu.files:drawable/cast_ic_mini_controller_skip_next</item>
-        <item name="*com.google.android.apps.nbu.files:castSkipPreviousButtonDrawable">@*com.google.android.apps.nbu.files:drawable/cast_ic_mini_controller_skip_prev</item>
-        <item name="*com.google.android.apps.nbu.files:castStopButtonDrawable">@*com.google.android.apps.nbu.files:drawable/cast_ic_mini_controller_pause</item>
-        <item name="*com.google.android.apps.nbu.files:castSubtitleTextAppearance">@*com.google.android.apps.nbu.files:style/TextAppearance.CastMiniController.Subtitle</item>
-        <item name="*com.google.android.apps.nbu.files:castTitleTextAppearance">@*com.google.android.apps.nbu.files:style/TextAppearance.CastMiniController.Title</item>
-    </style>
-    <style name="CustomCastMiniControllerStyle" parent="@*com.google.android.apps.nbu.files:style/CastMiniController">
-        <item name="*com.google.android.apps.nbu.files:castBackground">@*android:color/secondary_text_leanback_light</item>
-        <item name="*com.google.android.apps.nbu.files:castProgressBarColor">@*com.google.android.apps.nbu.files:color/google_dark_default_color_primary_google</item>
-        <item name="*com.google.android.apps.nbu.files:castShowImageThumbnail">false</item>
-    </style>
     <style name="FilePreviewScreenTheme" parent="@*com.google.android.apps.nbu.files:style/HomeScreenTheme">
         <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="android:windowTranslucentStatus">true</item>
@@ -59,7 +32,10 @@
         <item name="android:textColorPrimary">@*com.google.android.apps.nbu.files:color/google_daynight_default_color_primary_text</item>
         <item name="android:textColorSecondary">@*com.google.android.apps.nbu.files:color/google_daynight_default_color_secondary_text</item>
         <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:actionOverflowButtonStyle">@*com.google.android.apps.nbu.files:style/FilesOverflowButtonStyle</item>
         <item name="android:popupMenuStyle">@*com.google.android.apps.nbu.files:style/Widget.GoogleMaterial.PopupMenu</item>
+        <item name="android:actionBarTheme">@*com.google.android.apps.nbu.files:style/FilesActionBarTheme</item>
+        <item name="*com.google.android.apps.nbu.files:actionBarTheme">@*com.google.android.apps.nbu.files:style/FilesActionBarTheme</item>
         <item name="*com.google.android.apps.nbu.files:actionModeCloseDrawable">@*com.google.android.apps.nbu.files:drawable/quantum_ic_close_vd_theme_24</item>
         <item name="*com.google.android.apps.nbu.files:actionModeStyle">@*com.google.android.apps.nbu.files:style/WhiteThemeActionModeStyle</item>
         <item name="*com.google.android.apps.nbu.files:materialCardViewStyle">@*com.google.android.apps.nbu.files:style/FilesMaterialCardViewStyle</item>
@@ -68,10 +44,6 @@
         <item name="*com.google.android.apps.nbu.files:snackbarTextViewStyle">@*com.google.android.apps.nbu.files:style/FilesSnackbarTextViewStyle</item>
         <item name="*com.google.android.apps.nbu.files:windowActionModeOverlay">true</item>
         <item name="*com.google.android.apps.nbu.files:colorPrimary">@*android:color/secondary_text_leanback_light</item>
-    </style>
-    <style name="PromotionCardSpinnerTheme" parent="@*com.google.android.apps.nbu.files:style/ThemeOverlay.AppCompat.Dark">
-        <item name="*com.google.android.apps.nbu.files:colorAccent">#ffffffff</item>
-        <item name="*com.google.android.apps.nbu.files:colorControlActivated">#ffffffff</item>
     </style>
     <style name="Widget.GoogleMaterial.Snackbar" parent="@*com.google.android.apps.nbu.files:style/Widget.MaterialComponents.Snackbar">
         <item name="*com.google.android.apps.nbu.files:actionTextColorAlpha">@*com.google.android.apps.nbu.files:dimen/design_snackbar_action_text_color_alpha</item>

@@ -136,6 +136,13 @@
         <enum name="src_over" value="3" />
     </attr>
     <attr name="background_color" format="color" />
+    <attr name="badgeLocation">
+        <enum name="account_switcher" value="2" />
+        <enum name="activity_feed" value="4" />
+        <enum name="bottom_navigation_bar" value="0" />
+        <enum name="profile_menu" value="2" />
+        <enum name="profile_page" value="1" />
+    </attr>
     <attr name="bannerSnackBarBackgroundColor" format="color" />
     <attr name="barImage" format="reference" />
     <attr name="barLength" format="dimension" />
@@ -438,6 +445,7 @@
     <attr name="directReplyPillBackground" format="reference" />
     <attr name="directRowAvatar" format="reference" />
     <attr name="directRowHeight" format="reference" />
+    <attr name="directSelfieStickerBackground" format="reference" />
     <attr name="directThreadDisabledComposerColor" format="color" />
     <attr name="directVideoCallActivePulseColor" format="reference|color" />
     <attr name="direction">
@@ -525,6 +533,7 @@
     <attr name="enablePinchZoom" format="boolean" />
     <attr name="enablePinchZoomDeprecated" format="boolean" />
     <attr name="endColor" format="color" />
+    <attr name="endGradientColor" format="color" />
     <attr name="enforceMaterialTheme" format="boolean" />
     <attr name="enforceTextAppearance" format="boolean" />
     <attr name="enterCvvEyeToggleDrawable" format="reference" />
@@ -586,7 +595,21 @@
     <attr name="fastScrollVerticalTrackDrawable" format="reference" />
     <attr name="fbpayAuthScreenBackground" format="reference" />
     <attr name="fbpay_background_color" format="color" />
+    <attr name="fbpay_disabled_text_color" format="color" />
+    <attr name="fbpay_divider_color" format="color" />
+    <attr name="fbpay_header_text_style" format="reference" />
+    <attr name="fbpay_hub_item_corner_radius" format="dimension" />
+    <attr name="fbpay_hub_item_icon_style" format="reference" />
+    <attr name="fbpay_hub_item_text_left_padding" format="dimension" />
+    <attr name="fbpay_hub_item_vertical_padding" format="dimension" />
+    <attr name="fbpay_hub_text_item_chevron_style" format="reference" />
+    <attr name="fbpay_hub_text_item_vertical_padding" format="dimension" />
+    <attr name="fbpay_link_text_color" format="color" />
+    <attr name="fbpay_link_text_style" format="reference" />
     <attr name="fbpay_primary_text_color" format="color" />
+    <attr name="fbpay_primary_text_style" format="reference" />
+    <attr name="fbpay_secondary_text_color" format="color" />
+    <attr name="fbpay_secondary_text_style" format="reference" />
     <attr name="feedLikeActiveColor" format="color" />
     <attr name="feedModeMediaPlaceholderColor" format="color" />
     <attr name="feedPostCreationOverlayColor" format="color" />
@@ -642,11 +665,13 @@
     <attr name="fourthColor" format="color" />
     <attr name="fraction_screen_width" format="float" />
     <attr name="fragmentShader" format="reference" />
+    <attr name="frictionCutoffMultiplier" format="float" />
     <attr name="fullWidth" format="boolean" />
     <attr name="fundraiserCurrencyAmountSelectorSelectedBackground" format="reference" />
     <attr name="fundraiserCurrencyAmountSelectorUnselectedBackground" format="reference" />
     <attr name="galleryItemBackgroundDrawable" format="reference" />
     <attr name="gapBetweenBars" format="dimension" />
+    <attr name="glyph" format="reference" />
     <attr name="glyphColorPrimary" format="color" />
     <attr name="glyphColorProfileActivationCardIncomplete" format="color" />
     <attr name="glyphColorSecondary" format="color" />
@@ -684,6 +709,7 @@
         <enum name="TwoColumnsOneRow" value="2" />
         <enum name="TwoRowsOneColumn" value="1" />
     </attr>
+    <attr name="hasBottomDivider" format="boolean" />
     <attr name="headerLayout" format="reference" />
     <attr name="heartColorTint" format="color" />
     <attr name="heartHeight" format="dimension" />
@@ -785,6 +811,7 @@
     <attr name="insetRadius" format="dimension" />
     <attr name="interval_ms" format="integer" />
     <attr name="inverseBackgroundColorPrimary" format="color" />
+    <attr name="inverseGlyphColor" format="color" />
     <attr name="inverseUpdatableButtonStyle" format="reference" />
     <attr name="isCollapsible" format="boolean" />
     <attr name="isLightTheme" format="boolean" />
@@ -1034,6 +1061,7 @@
     <attr name="loadingTitle" format="reference|string" />
     <attr name="lockMediaOrientation" format="boolean" />
     <attr name="lockMediaOrientationDeprecated" format="boolean" />
+    <attr name="logClickWhenSelected" format="boolean" />
     <attr name="logo" format="reference" />
     <attr name="logoDescription" format="string" />
     <attr name="materialButtonStyle" format="reference" />
@@ -1044,6 +1072,7 @@
     <attr name="maxEmojiCount" format="integer" />
     <attr name="maxHeight" format="dimension" />
     <attr name="maxImageSize" format="dimension" />
+    <attr name="maxMultiSelectCount" format="integer" />
     <attr name="maxSelectionMessageEnabled" format="boolean" />
     <attr name="maxWidth" format="dimension" />
     <attr name="max_stroke_width" format="dimension" />
@@ -1079,7 +1108,6 @@
         <enum name="scroll" value="1" />
     </attr>
     <attr name="multiChoiceItemLayout" format="reference" />
-    <attr name="multiSelectEnabled" format="boolean" />
     <attr name="multiSendButtonEnabled" format="boolean" />
     <attr name="navigationContentDescription" format="string" />
     <attr name="navigationIcon" format="reference" />
@@ -1233,7 +1261,6 @@
     <attr name="reactionBarBorderVisibility" format="integer" />
     <attr name="recyclerViewStyle" format="reference" />
     <attr name="reelArchiveDateBadgeBackground" format="reference" />
-    <attr name="reelAvatarTopPadding" format="reference|dimension" />
     <attr name="reelDashboardCTAIconBackground" format="reference" />
     <attr name="reelDashboardQuizAnswerRowBackground" format="reference" />
     <attr name="reelDashboardShareButtonEnabled" format="boolean" />
@@ -1358,6 +1385,7 @@
         <flag name="never" value="0x00000000" />
         <flag name="withText" value="0x00000004" />
     </attr>
+    <attr name="showBadgeWhenSelected" format="boolean" />
     <attr name="showBorder" format="boolean" />
     <attr name="showBorderOnBackAvatar" format="reference|boolean" />
     <attr name="showCarat" format="boolean" />
@@ -1401,7 +1429,6 @@
     <attr name="snackbarStyle" format="reference" />
     <attr name="spacing" format="dimension" />
     <attr name="spanCount" format="integer" />
-    <attr name="spatialAccountSwitchStatusBarColor" format="color" />
     <attr name="spinBars" format="boolean" />
     <attr name="spinnerDropDownItemStyle" format="reference" />
     <attr name="spinnerStyle" format="reference" />
@@ -1409,6 +1436,7 @@
     <attr name="srcCompat" format="reference" />
     <attr name="stackFromEnd" format="boolean" />
     <attr name="startColor" format="color" />
+    <attr name="startGradientColor" format="color" />
     <attr name="state">
         <enum name="Empty" value="0" />
         <enum name="Error" value="2" />
@@ -1416,18 +1444,12 @@
     </attr>
     <attr name="state_above_anchor" format="boolean" />
     <attr name="state_blue" format="boolean" />
-    <attr name="state_cancelled" format="boolean" />
     <attr name="state_collapsed" format="boolean" />
     <attr name="state_collapsible" format="boolean" />
     <attr name="state_disabled_blue" format="boolean" />
-    <attr name="state_failed" format="boolean" />
-    <attr name="state_finished" format="boolean" />
     <attr name="state_grey" format="boolean" />
     <attr name="state_liftable" format="boolean" />
     <attr name="state_lifted" format="boolean" />
-    <attr name="state_queued" format="boolean" />
-    <attr name="state_started" format="boolean" />
-    <attr name="state_unknown" format="boolean" />
     <attr name="statusBarBackground" format="reference|color" />
     <attr name="statusBarBackgroundColor" format="color" />
     <attr name="statusBarInitialColor" format="color" />
@@ -1469,7 +1491,6 @@
     <attr name="switchTextAppearance" format="reference" />
     <attr name="tabBackground" format="reference" />
     <attr name="tabBarHeight" format="reference" />
-    <attr name="tabButtonIconStyle" format="reference" />
     <attr name="tabContentStart" format="dimension" />
     <attr name="tabGravity">
         <enum name="center" value="1" />
@@ -1687,9 +1708,6 @@
     <attr name="videoInteractivityQuestionCardBackground" format="reference" />
     <attr name="videoScrubberProgressBarDrawable" format="reference" />
     <attr name="viewInflaterClass" format="string" />
-    <attr name="visibility_offscreen" format="boolean" />
-    <attr name="visibility_onscreen" format="boolean" />
-    <attr name="visibility_unknown" format="boolean" />
     <attr name="visualReplyMarginBottom" format="dimension" />
     <attr name="visualReplyMarginEnd" format="dimension" />
     <attr name="visualReplyMarginStart" format="dimension" />
@@ -1711,4 +1729,13 @@
     <attr name="windowMinWidthMajor" format="dimension|fraction" />
     <attr name="windowMinWidthMinor" format="dimension|fraction" />
     <attr name="windowNoTitle" format="boolean" />
+    <item type="attr" name="APKTOOL_DUMMY_435">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_439">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_43a">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_43e">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_43f">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_440">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_505">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_506">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_507">false</item>
 </resources>
