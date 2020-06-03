@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="AgendaButton" parent="@*com.Slack:style/SlackKitButton.Small">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="*com.Slack:backgroundTint">@*com.Slack:color/sk_lilypad_green</item>
+        <item name="*com.Slack:colorControlHighlight">@*android:color/secondary_text_default_material_dark</item>
+    </style>
     <style name="AgendaButton.Light" parent="@*com.Slack:style/AgendaButton">
         <item name="android:textColor">@*android:color/white</item>
         <item name="*com.Slack:backgroundTint">@*android:color/button_material_dark</item>
@@ -12,6 +17,10 @@
     </style>
     <style name="BlackActivityTheme" parent="@*com.Slack:style/NoActionBarActivityTheme">
         <item name="android:windowBackground">@*android:color/background_dark</item>
+    </style>
+    <style name="ButtonStyle.White" parent="@*com.Slack:style/ButtonStyle">
+        <item name="android:textColor">@*com.Slack:color/sk_sapphire_blue</item>
+        <item name="*com.Slack:colorButtonNormal">@*android:color/button_material_dark</item>
     </style>
     <style name="CounterText" parent="@*com.Slack:style/TextAppearance.Design.Counter.Overflow">
         <item name="android:textSize">@*com.Slack:dimen/app_dialog_text_size_small</item>
@@ -27,6 +36,7 @@
         <item name="android:colorBackground">@*android:color/background_floating_material_dark</item>
         <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="android:fontFamily">@*com.Slack:font/lato_family</item>
+        <item name="*com.Slack:actionButtonStyle">@*com.Slack:style/SKActionButtonStyle</item>
         <item name="*com.Slack:actionModeBackground">@*android:color/background_floating_material_dark</item>
         <item name="*com.Slack:actionModeCloseDrawable">@*com.Slack:drawable/ic_back_24dp</item>
         <item name="*com.Slack:actionModeStyle">@*com.Slack:style/ActionModeTheme</item>
@@ -61,6 +71,12 @@
         <item name="android:textColor">@*com.Slack:color/selector_button_black</item>
         <item name="*com.Slack:backgroundTint">@*android:color/button_material_dark</item>
     </style>
+    <style name="SlackKitButton.Small.Green" parent="@*com.Slack:style/SlackKitButton.Small">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:paddingLeft">24.0dip</item>
+        <item name="android:paddingRight">24.0dip</item>
+        <item name="*com.Slack:backgroundTint">@*com.Slack:color/sk_lilypad_green</item>
+    </style>
     <style name="SlackKit.Button.Small.White" parent="@*com.Slack:style/SlackKitButton.Small">
         <item name="android:textColor">@*com.Slack:color/selector_button_black</item>
         <item name="*com.Slack:backgroundTint">@*android:color/button_material_dark</item>
@@ -68,11 +84,18 @@
     <style name="StatusCardStyle">
         <item name="android:layout_marginLeft">8.0dip</item>
         <item name="android:layout_marginRight">8.0dip</item>
-        <item name="*com.Slack:cardBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.Slack:cardBackgroundColor">@*android:color/primary_material_dark</item>
         <item name="*com.Slack:cardCornerRadius">3.0dip</item>
     </style>
     <style name="ThemeOverlayColorAccentRed">
         <item name="android:colorAccent">#ffd32f2f</item>
+    </style>
+    <style name="Widget.Design.FloatingActionButton.NoBorder" parent="@*com.Slack:style/Widget.Design.FloatingActionButton">
+        <item name="*com.Slack:backgroundTint">@*android:color/button_material_dark</item>
+        <item name="*com.Slack:borderWidth">1.0dip</item>
+        <item name="*com.Slack:elevation">12.0dip</item>
+        <item name="*com.Slack:fabSize">normal</item>
+        <item name="*com.Slack:tint">@*com.Slack:color/selector_fab_tint</item>
     </style>
     <style name="Widget.MaterialComponents.Snackbar.TextView" parent="@*com.Slack:style/Widget.AppCompat.TextView">
         <item name="android:textAppearance">@*com.Slack:style/TextAppearance.MaterialComponents.Body2</item>

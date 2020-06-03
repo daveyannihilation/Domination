@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="CardView" parent="@*com.google.android.deskclock:style/Base.CardView">
+        <item name="*com.google.android.deskclock:cardBackgroundColor">@*android:color/primary_material_dark</item>
+    </style>
     <style name="ExpandableFab">
         <item name="android:textSize">14.0sp</item>
         <item name="android:textStyle">bold</item>
@@ -9,11 +12,10 @@
         <item name="android:textAllCaps">false</item>
         <item name="android:fontFamily">@*com.google.android.deskclock:font/google_sans</item>
     </style>
-    <style name="Platform.V21.AppCompat.Light" parent="@*android:style/Theme.Material.NoActionBar">
-        <item name="android:textColorHintInverse">#ffbbbbbb</item>
-        <item name="android:textColorHint">#ffbbbbbb</item>
-        <item name="android:textColorLink">@*android:color/accent_material_dark</item>
-        <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
+    <style name="TabStyle" parent="@*com.google.android.deskclock:style/Widget.GoogleMaterial.BottomNavigationView">
+        <item name="android:textColor">@*com.google.android.deskclock:color/tab_color</item>
+        <item name="android:background">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.deskclock:itemIconTint">@*com.google.android.deskclock:color/tab_color</item>
     </style>
     <style name="Theme.DeskClock" parent="@*com.google.android.deskclock:style/Theme.GoogleMaterial.Dark.NoActionBar.Bridge">
         <item name="android:colorBackground">@*android:color/background_dark</item>
@@ -24,9 +26,10 @@
         <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
         <item name="android:timePickerStyle">@*com.google.android.deskclock:style/Widget.TimePicker</item>
         <item name="android:popupTheme">@*com.google.android.deskclock:style/ThemeOverlay.Popup</item>
+        <item name="android:colorBackgroundFloating">@*android:color/primary_material_dark</item>
         <item name="*com.google.android.deskclock:appBarLayoutStyle">@empty</item>
         <item name="*com.google.android.deskclock:bottomAppBarStyle">@empty</item>
-        <item name="*com.google.android.deskclock:bottomNavigationStyle">@empty</item>
+        <item name="*com.google.android.deskclock:bottomNavigationStyle">@*com.google.android.deskclock:style/TabStyle</item>
         <item name="*com.google.android.deskclock:chipGroupStyle">@empty</item>
         <item name="*com.google.android.deskclock:chipStandaloneStyle">@empty</item>
         <item name="*com.google.android.deskclock:chipStyle">@empty</item>
@@ -56,6 +59,12 @@
         <item name="*com.google.android.deskclock:snackbarStyle">@empty</item>
         <item name="*com.google.android.deskclock:tabStyle">@empty</item>
         <item name="*com.google.android.deskclock:textInputStyle">@empty</item>
+    </style>
+    <style name="Theme.DeskClock.BedtimeScheduleActivity" parent="@*com.google.android.deskclock:style/Theme.DeskClock">
+        <item name="*com.google.android.deskclock:actionBarStyle">@*com.google.android.deskclock:style/Widget.ActionBar</item>
+        <item name="*com.google.android.deskclock:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.deskclock:windowActionBar">true</item>
+        <item name="*com.google.android.deskclock:windowNoTitle">false</item>
     </style>
     <style name="Theme.DeskClock.Licenses" parent="@*com.google.android.deskclock:style/Theme.DeskClock">
         <item name="android:title">@*com.google.android.deskclock:string/menu_item_licenses</item>
@@ -91,6 +100,20 @@
         <item name="*com.google.android.deskclock:colorControlActivated">@*com.google.android.deskclock:color/google_blue300</item>
         <item name="*com.google.android.deskclock:preferenceTheme">@*com.google.android.deskclock:style/PreferenceThemeOverlay.v14.Material</item>
     </style>
+    <style name="Theme.DeskClock.SleepSoundActivity" parent="@*com.google.android.deskclock:style/Theme.DeskClock">
+        <item name="android:windowBackground">@*android:color/primary_text_leanback_light</item>
+        <item name="*com.google.android.deskclock:actionBarStyle">@*com.google.android.deskclock:style/Widget.ActionBar.Black</item>
+        <item name="*com.google.android.deskclock:windowActionBar">true</item>
+        <item name="*com.google.android.deskclock:windowNoTitle">false</item>
+    </style>
+    <style name="ThemeOverlay.Control.Dark" parent="@*com.google.android.deskclock:style/ThemeOverlay.AppCompat">
+        <item name="*com.google.android.deskclock:colorControlActivated">@*android:color/white</item>
+        <item name="*com.google.android.deskclock:colorControlHighlight">@*android:color/white</item>
+        <item name="*com.google.android.deskclock:colorControlNormal">@*android:color/white</item>
+    </style>
+    <style name="Widget.ActionBar.Black" parent="@*com.google.android.deskclock:style/Widget.ActionBar">
+        <item name="*com.google.android.deskclock:background">@*android:color/primary_text_leanback_light</item>
+    </style>
     <style name="Widget.GoogleMaterial.Snackbar" parent="@*com.google.android.deskclock:style/Widget.MaterialComponents.Snackbar">
         <item name="*com.google.android.deskclock:actionTextColorAlpha">@*com.google.android.deskclock:dimen/design_snackbar_action_text_color_alpha</item>
         <item name="*com.google.android.deskclock:backgroundTint">@*android:color/background_floating_material_dark</item>
@@ -99,5 +122,17 @@
     </style>
     <style name="Widget.GoogleMaterial.Snackbar.TextView" parent="@*com.google.android.deskclock:style/Widget.MaterialComponents.Snackbar.TextView">
         <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="Widget.MaterialComponents.Snackbar.TextView" parent="@*com.google.android.deskclock:style/Widget.AppCompat.TextView">
+        <item name="android:textAppearance">@*com.google.android.deskclock:style/TextAppearance.GoogleMaterial.Body2</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">@*com.google.android.deskclock:dimen/design_snackbar_padding_horizontal</item>
+        <item name="android:paddingTop">@*com.google.android.deskclock:dimen/design_snackbar_padding_vertical</item>
+        <item name="android:paddingRight">@*com.google.android.deskclock:dimen/design_snackbar_padding_horizontal</item>
+        <item name="android:paddingBottom">@*com.google.android.deskclock:dimen/design_snackbar_padding_vertical</item>
+        <item name="android:maxLines">@*com.google.android.deskclock:integer/design_snackbar_text_max_lines</item>
+        <item name="android:alpha">@*com.google.android.deskclock:dimen/material_emphasis_high_type</item>
+        <item name="android:textAlignment">viewStart</item>
     </style>
 </resources>

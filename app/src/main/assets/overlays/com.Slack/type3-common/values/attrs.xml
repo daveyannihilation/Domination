@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <attr name="LoadingDots_auto_play" format="boolean" />
+    <attr name="LoadingDots_dots_color" format="color" />
+    <attr name="LoadingDots_dots_count" format="integer" />
+    <attr name="LoadingDots_dots_size" format="dimension" />
+    <attr name="LoadingDots_dots_space" format="dimension" />
+    <attr name="LoadingDots_jump_duration" format="integer" />
+    <attr name="LoadingDots_jump_height" format="dimension" />
+    <attr name="LoadingDots_loop_duration" format="integer" />
+    <attr name="LoadingDots_loop_start_delay" format="integer" />
     <attr name="actionBarDivider" format="reference" />
     <attr name="actionBarItemBackground" format="reference" />
     <attr name="actionBarPopupTheme" format="reference" />
@@ -142,7 +151,7 @@
     <attr name="behavior_autoHide" format="boolean" />
     <attr name="behavior_autoShrink" format="boolean" />
     <attr name="behavior_draggable" format="boolean" />
-    <attr name="behavior_expandedOffset" format="reference|integer" />
+    <attr name="behavior_expandedOffset" format="reference|dimension" />
     <attr name="behavior_fitToContents" format="boolean" />
     <attr name="behavior_halfExpandedRatio" format="reference|float" />
     <attr name="behavior_hideable" format="boolean" />
@@ -311,6 +320,7 @@
         <enum name="threads" value="1" />
     </attr>
     <attr name="commitIcon" format="reference" />
+    <attr name="compact" format="boolean" />
     <attr name="constraintSet" format="reference" />
     <attr name="constraint_referenced_ids" format="string" />
     <attr name="content" format="reference" />
@@ -506,6 +516,7 @@
     <attr name="fastScrollVerticalTrackDrawable" format="reference" />
     <attr name="fastforward_increment" format="integer" />
     <attr name="firstBaselineToTopHeight" format="dimension" />
+    <attr name="fixedSize" format="reference|dimension" />
     <attr name="flexDirection">
         <enum name="column" value="2" />
         <enum name="column_reverse" value="3" />
@@ -543,8 +554,12 @@
     </attr>
     <attr name="fontVariationSettings" format="string" />
     <attr name="fontWeight" format="integer" />
+    <attr name="footerText1" format="string" />
+    <attr name="footerText2" format="string" />
+    <attr name="footerText3" format="string" />
     <attr name="foregroundInsidePadding" format="boolean" />
     <attr name="gapBetweenBars" format="dimension" />
+    <attr name="gestureInsetBottomIgnored" format="boolean" />
     <attr name="goIcon" format="reference" />
     <attr name="haloColor" format="color" />
     <attr name="haloRadius" format="dimension" />
@@ -595,6 +610,7 @@
         <enum name="src_over" value="3" />
     </attr>
     <attr name="iconifiedByDefault" format="boolean" />
+    <attr name="image" format="reference" />
     <attr name="imageAspectRatio" format="float" />
     <attr name="imageAspectRatioAdjust">
         <enum name="adjust_height" value="2" />
@@ -611,6 +627,7 @@
     <attr name="isCentered" format="boolean" />
     <attr name="isLightTheme" format="boolean" />
     <attr name="isMaterialTheme" format="boolean" />
+    <attr name="isThemeable" format="boolean" />
     <attr name="itemBackground" format="reference" />
     <attr name="itemFillColor" format="color" />
     <attr name="itemHorizontalPadding" format="dimension" />
@@ -909,6 +926,7 @@
     <attr name="maxCharacterCount" format="integer" />
     <attr name="maxImageSize" format="dimension" />
     <attr name="maxLine" format="integer" />
+    <attr name="maxLines" format="integer" />
     <attr name="maxWidth" format="dimension" />
     <attr name="measureWithLargestChild" format="boolean" />
     <attr name="menu" format="reference" />
@@ -928,6 +946,7 @@
         <enum name="tabMode" value="2" />
     </attr>
     <attr name="navigationViewStyle" format="reference" />
+    <attr name="noLimit" format="boolean" />
     <attr name="number" format="integer" />
     <attr name="numericModifiers">
         <flag name="ALT" value="0x00000002" />
@@ -941,6 +960,7 @@
         <enum name="horizontal" value="0" />
         <enum name="vertical" value="1" />
     </attr>
+    <attr name="overflowTextSize" format="reference|dimension" />
     <attr name="overlapAnchor" format="boolean" />
     <attr name="paddingBottomNoButtons" format="dimension" />
     <attr name="paddingBottomSystemWindowInsets" format="boolean" />
@@ -1211,10 +1231,15 @@
     <attr name="textAppearanceSubtitle2" format="reference" />
     <attr name="textColorAlertDialogListItem" format="reference|color" />
     <attr name="textColorSearchUrl" format="reference|color" />
+    <attr name="textDescription" format="string" />
     <attr name="textEndPadding" format="dimension" />
+    <attr name="textInputLayoutFocusedRectEnabled" format="boolean" />
     <attr name="textInputStyle" format="reference" />
     <attr name="textLocale" format="string" />
+    <attr name="textPrimaryActionButton" format="string" />
+    <attr name="textSecondaryActionButton" format="string" />
     <attr name="textStartPadding" format="dimension" />
+    <attr name="textTitle" format="string" />
     <attr name="theme" format="reference" />
     <attr name="themeLineHeight" format="dimension" />
     <attr name="thickness" format="dimension" />
@@ -1291,6 +1316,7 @@
         <enum name="src_in" value="5" />
         <enum name="src_over" value="3" />
     </attr>
+    <attr name="transitionShapeAppearance" format="reference" />
     <attr name="ttcIndex" format="integer" />
     <attr name="unplayed_color" format="color" />
     <attr name="uploadProgressStyle">
@@ -1302,6 +1328,7 @@
     <attr name="useMaterialThemeColors" format="boolean" />
     <attr name="use_artwork" format="boolean" />
     <attr name="use_controller" format="boolean" />
+    <attr name="use_sensor_rotation" format="boolean" />
     <attr name="userName" format="string" />
     <attr name="verticalItemSpacing" format="dimension" />
     <attr name="verticalOffset" format="dimension" />

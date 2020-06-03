@@ -14,14 +14,14 @@
             </FrameLayout>
             <LinearLayout android:orientation="vertical" android:id="@*com.whatsapp:id/header" android:background="@*com.whatsapp:color/primary" android:layout_width="fill_parent" android:layout_height="wrap_content">
                 <com.whatsapp.BidiToolbar android:id="@*com.whatsapp:id/toolbar" android:background="@*com.whatsapp:color/primary" android:layout_width="fill_parent" android:layout_height="@*com.whatsapp:dimen/actionbar_height" android:minHeight="@*com.whatsapp:dimen/actionbar_height" whatsapp:popupTheme="@*com.whatsapp:style/Toolbar.Popup" whatsapp:theme="@*com.whatsapp:style/Toolbar.HomeActivity" />
+                <View android:id="@*com.whatsapp:id/toolbar_padding" android:layout_width="wrap_content" android:layout_height="0.0dip" />
                 <com.whatsapp.HomePagerSlidingTabStrip android:id="@*com.whatsapp:id/tabs" android:background="@*com.whatsapp:color/primary" android:layout_width="fill_parent" android:layout_height="@*com.whatsapp:dimen/tab_height" whatsapp:pstsDividerColor="@*android:color/transparent" whatsapp:pstsIndicatorColor="@*com.whatsapp:color/homeActivityTabIndicator" />
             </LinearLayout>
-            <FrameLayout android:id="@*com.whatsapp:id/search_fragment_holder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <FrameLayout android:id="@*com.whatsapp:id/search_fragment_holder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
             <FrameLayout android:id="@*com.whatsapp:id/search_holder" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@*com.whatsapp:dimen/abc_action_bar_default_height_material" />
             <ViewStub android:layout_gravity="center|right|top" android:id="@*com.whatsapp:id/filter_chat_tip_view_stub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@*com.whatsapp:dimen/abc_action_bar_default_height_material" />
-            <com.whatsapp.components.FloatingActionButton android:id="@*com.whatsapp:id/fab" style="@*com.whatsapp:style/WA.FAB" />
             <com.whatsapp.components.FloatingActionButton android:id="@*com.whatsapp:id/fab_aux" android:visibility="gone" android:layout_marginBottom="@*com.whatsapp:dimen/fab_aux_margin_bottom" android:contentDescription="@*com.whatsapp:string/menuitem_new_text_status" android:tint="@*com.whatsapp:color/fabSecondaryContent" style="@*com.whatsapp:style/WA.FAB.Secondary" />
+            <com.whatsapp.components.FloatingActionButton android:id="@*com.whatsapp:id/fab" style="@*com.whatsapp:style/WA.FAB" />
         </FrameLayout>
     </LinearLayout>
-    <FrameLayout android:id="@*com.whatsapp:id/preview_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
 </FrameLayout>

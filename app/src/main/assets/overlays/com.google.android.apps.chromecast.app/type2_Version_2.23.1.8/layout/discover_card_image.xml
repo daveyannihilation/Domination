@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@*com.google.android.apps.chromecast.app:id/discover_image_container" android:background="@*android:color/primary_dark_material_dark" android:paddingTop="@*com.google.android.apps.chromecast.app:dimen/panel_padding" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@*com.google.android.apps.chromecast.app:id/cover_image" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:contentDescription="@null" />
+        <FrameLayout android:id="@*com.google.android.apps.chromecast.app:id/video_scrim" android:background="#24000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignTop="@*com.google.android.apps.chromecast.app:id/cover_image" android:layout_alignBottom="@*com.google.android.apps.chromecast.app:id/cover_image" android:layout_alignStart="@*com.google.android.apps.chromecast.app:id/cover_image" android:layout_alignEnd="@*com.google.android.apps.chromecast.app:id/cover_image">
+            <android.support.v7.widget.AppCompatImageView android:layout_gravity="center" android:id="@*com.google.android.apps.chromecast.app:id/video_button" android:clickable="true" android:layout_width="@*com.google.android.apps.chromecast.app:dimen/google_min_touch_target_size" android:layout_height="@*com.google.android.apps.chromecast.app:dimen/google_min_touch_target_size" android:scaleType="fitCenter" android:alpha="@*com.google.android.apps.chromecast.app:dimen/play_icon_opacity" app:srcCompat="@*com.google.android.apps.chromecast.app:drawable/ic_play_circle_filled" />
+        </FrameLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@*com.google.android.apps.chromecast.app:id/video_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>
