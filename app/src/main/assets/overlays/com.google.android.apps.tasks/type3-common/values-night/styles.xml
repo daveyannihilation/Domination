@@ -9,14 +9,12 @@
     <style name="CardView" parent="@*com.google.android.apps.tasks:style/Base.CardView">
         <item name="*com.google.android.apps.tasks:cardBackgroundColor">@*android:color/background_floating_material_dark</item>
     </style>
-    <style name="DatePickerTheme" parent="@*com.google.android.apps.tasks:style/ThemeOverlay.GoogleMaterial.Dialog">
-        <item name="android:textColorPrimaryInverse">@*android:color/white</item>
-        <item name="android:windowBackground">@*com.google.android.apps.tasks:drawable/tasks_dialog_background</item>
-        <item name="android:buttonBarButtonStyle">@*com.google.android.apps.tasks:style/Widget.GoogleMaterial.Button.TextButton</item>
-        <item name="android:datePickerStyle">@*com.google.android.apps.tasks:style/TasksDatePickerStyle</item>
-        <item name="*com.google.android.apps.tasks:colorAccent">@*com.google.android.apps.tasks:color/colorAccent</item>
-        <item name="*com.google.android.apps.tasks:colorControlActivated">@*com.google.android.apps.tasks:color/colorAccent</item>
-        <item name="*com.google.android.apps.tasks:colorControlHighlight">@*com.google.android.apps.tasks:color/colorAccent</item>
+    <style name="DividerStyle">
+        <item name="android:theme">@*com.google.android.apps.tasks:style/Theme.GoogleMaterial.DayNight.Bridge</item>
+        <item name="android:background">@*android:color/transparent</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.0dip</item>
+        <item name="android:contentDescription">@null</item>
     </style>
     <style name="Style.GrowthKit.Headline5" parent="@*com.google.android.apps.tasks:style/TextAppearance.GoogleMaterial.Headline5">
         <item name="android:textColor">@*android:color/white</item>
@@ -26,16 +24,7 @@
     </style>
     <style name="TasksDatePickerStyle" parent="@*android:style/Widget.Material.DatePicker">
         <item name="android:headerBackground">@*android:color/background_floating_material_dark</item>
-        <item name="android:headerMonthTextAppearance">@*com.google.android.apps.tasks:style/DatePickerMonthTextAppearance</item>
-    </style>
-    <style name="TimePickerTheme" parent="@*com.google.android.apps.tasks:style/ThemeOverlay.GoogleMaterial.Dialog">
-        <item name="android:textColorPrimaryInverse">@*android:color/white</item>
-        <item name="android:windowBackground">@*com.google.android.apps.tasks:drawable/tasks_dialog_background</item>
-        <item name="android:buttonBarButtonStyle">@*com.google.android.apps.tasks:style/Widget.GoogleMaterial.Button.TextButton</item>
-        <item name="android:timePickerStyle">@*com.google.android.apps.tasks:style/TasksTimePickerStyle</item>
-        <item name="*com.google.android.apps.tasks:colorAccent">@*com.google.android.apps.tasks:color/colorAccent</item>
-        <item name="*com.google.android.apps.tasks:colorControlActivated">@*com.google.android.apps.tasks:color/colorAccent</item>
-        <item name="*com.google.android.apps.tasks:colorControlHighlight">@*com.google.android.apps.tasks:color/colorBackground</item>
+        <item name="android:headerMonthTextAppearance">@*com.google.android.apps.tasks:style/TasksDatePickerMonthTextAppearance</item>
     </style>
     <style name="Widget.GoogleMaterial.Snackbar" parent="@*com.google.android.apps.tasks:style/Widget.MaterialComponents.Snackbar">
         <item name="*com.google.android.apps.tasks:actionTextColorAlpha">@*com.google.android.apps.tasks:dimen/design_snackbar_action_text_color_alpha</item>

@@ -48,6 +48,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:adjustViewBounds">true</item>
         <item name="android:maxLines">1</item>
+        <item name="android:fontFamily">@*com.google.android.inputmethod.latin:font/google_sans</item>
     </style>
     <style name="ClipboardNoticeWrapper">
         <item name="android:gravity">center_vertical</item>
@@ -280,9 +281,9 @@
     <style name="ThemeDetailsApplyButtonHolder">
         <item name="android:background">@*android:color/button_material_dark</item>
         <item name="android:paddingLeft">60.0dip</item>
-        <item name="android:paddingTop">24.0dip</item>
+        <item name="android:paddingTop">@*com.google.android.inputmethod.latin:dimen/theme_details_apply_button_top_padding</item>
         <item name="android:paddingRight">60.0dip</item>
-        <item name="android:paddingBottom">48.0dip</item>
+        <item name="android:paddingBottom">@*com.google.android.inputmethod.latin:dimen/theme_details_apply_button_bottom_padding</item>
         <item name="android:clipToPadding">false</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -314,7 +315,7 @@
         <item name="android:orientation">horizontal</item>
         <item name="android:background">@*android:color/background_floating_material_dark</item>
         <item name="android:paddingLeft">24.0dip</item>
-        <item name="android:paddingTop">12.0dip</item>
+        <item name="android:paddingTop">@*com.google.android.inputmethod.latin:dimen/theme_details_key_border_switch_top_padding</item>
         <item name="android:paddingRight">24.0dip</item>
         <item name="android:paddingBottom">12.0dip</item>
         <item name="android:layout_width">fill_parent</item>
@@ -348,6 +349,38 @@
         <item name="android:inputType">text</item>
         <item name="android:imeOptions">actionDone</item>
         <item name="android:paddingStart">10.0dip</item>
+    </style>
+    <style name="VoiceDonationCommitmentText" parent="@*com.google.android.inputmethod.latin:style/VoiceDonationDialogText">
+        <item name="android:textColor">#ffdddddd</item>
+        <item name="android:gravity">start</item>
+        <item name="android:paddingBottom">18.0dip</item>
+        <item name="android:paddingStart">8.0dip</item>
+    </style>
+    <style name="VoiceDonationDialogText">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingExtra">4.0dip</item>
+        <item name="android:fontFamily">@*com.google.android.inputmethod.latin:font/google_sans</item>
+    </style>
+    <style name="VoiceDonationDialogTitle">
+        <item name="android:textSize">22.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingExtra">6.0dip</item>
+        <item name="android:fontFamily">@*com.google.android.inputmethod.latin:font/google_sans</item>
+    </style>
+    <style name="VoiceDonationNegativeButton" parent="@*com.google.android.inputmethod.latin:style/VoiceDonationButton">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffdddddd</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:background">@*android:color/transparent</item>
+        <item name="android:layout_marginStart">10.0dip</item>
     </style>
     <style name="Widget.GoogleMaterial.FloatingActionButton" parent="@*com.google.android.inputmethod.latin:style/Widget.MaterialComponents.FloatingActionButton">
         <item name="*com.google.android.inputmethod.latin:rippleColor">@*com.google.android.inputmethod.latin:color/google_fab_ripple_color</item>
