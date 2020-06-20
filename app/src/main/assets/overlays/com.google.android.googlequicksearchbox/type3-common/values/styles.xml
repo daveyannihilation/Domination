@@ -150,6 +150,32 @@
         <item name="android:textColor">#ffffffff</item>
         <item name="android:lineSpacingExtra">3.0sp</item>
     </style>
+    <style name="GreetingMultiSuggestion" parent="@*android:style/TextAppearance.Medium">
+        <item name="android:textSize">@*com.google.android.googlequicksearchbox:dimen/greeting_query_suggestion_small_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:paddingRight">32.0dip</item>
+        <item name="android:paddingBottom">24.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@*com.google.android.googlequicksearchbox:dimen/greeting_query_suggestion_margin_top</item>
+        <item name="android:fontFamily">google-sans</item>
+        <item name="android:letterSpacing">@*com.google.android.googlequicksearchbox:dimen/greeting_query_suggestion_letter_spacing</item>
+    </style>
+    <style name="GreetingSingleSuggestion" parent="@*android:style/TextAppearance.Medium">
+        <item name="android:textSize">@*com.google.android.googlequicksearchbox:dimen/greeting_query_suggestion_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@*com.google.android.googlequicksearchbox:dimen/greeting_query_suggestion_margin_top</item>
+        <item name="android:lineSpacingExtra">5.0dip</item>
+        <item name="android:fontFamily">google-sans</item>
+        <item name="android:letterSpacing">@*com.google.android.googlequicksearchbox:dimen/greeting_query_suggestion_letter_spacing</item>
+    </style>
     <style name="GridViewItemText">
         <item name="android:textSize">@*com.google.android.googlequicksearchbox:dimen/grid_view_item_text_size</item>
         <item name="android:textColor">@*android:color/white</item>
@@ -268,6 +294,10 @@
         <item name="android:textAppearance">@*com.google.android.googlequicksearchbox:style/TextAppearance.GoogleMaterial.Subhead2</item>
         <item name="android:textColor">@*android:color/white</item>
     </style>
+    <style name="OnboardingVideoListActivityHeader">
+        <item name="android:background">@*android:color/background_dark</item>
+        <item name="android:elevation">@*com.google.android.googlequicksearchbox:dimen/onboarding_video_header_elevation</item>
+    </style>
     <style name="Opa.Activity.BaseTheme" parent="@*com.google.android.googlequicksearchbox:style/Theme.Velvet">
         <item name="android:backgroundDimAmount">@*com.google.android.googlequicksearchbox:integer/opa_background_dim_amount</item>
         <item name="android:windowBackground">@*android:color/transparent</item>
@@ -304,6 +334,14 @@
         <item name="android:background">@*android:color/button_material_dark</item>
         <item name="android:padding">0.0dip</item>
         <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="Opa.Button.Greeting.QuerySuggestion" parent="@*com.google.android.googlequicksearchbox:style/Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@*com.google.android.googlequicksearchbox:color/google_blue500</item>
+        <item name="android:background">@*android:color/button_material_dark</item>
+        <item name="android:padding">0.0dip</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@*com.google.android.googlequicksearchbox:font/google_sans_medium</item>
     </style>
     <style name="OpaAmbActivity" parent="@*com.google.android.googlequicksearchbox:style/Theme.AppCompat.NoActionBar">
         <item name="android:windowBackground">@*android:color/background_dark</item>

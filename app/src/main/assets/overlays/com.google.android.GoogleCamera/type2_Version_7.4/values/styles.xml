@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.V27.Theme.GoogleMaterial.Light" parent="@*com.google.android.GoogleCamera:style/Base.V24.Theme.GoogleMaterial.Dark">
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+    <style name="Base.V27.Theme.GoogleMaterial.Light.BottomSheetDialog" parent="@*com.google.android.GoogleCamera:style/Base.V21.Theme.GoogleMaterial.Dark.BottomSheetDialog">
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:navigationBarDividerColor">@*android:color/transparent</item>
+    </style>
+    <style name="CardView" parent="@*com.google.android.GoogleCamera:style/Base.CardView">
+        <item name="*com.google.android.GoogleCamera:cardBackgroundColor">@*android:color/background_floating_material_dark</item>
+    </style>
+    <style name="DialogTutorialStyle" parent="@*android:style/ThemeOverlay.Material.Dialog">
+        <item name="android:textColorPrimary">@*android:color/white</item>
+        <item name="android:windowBackground">@*android:color/background_floating_material_dark</item>
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:fontFamily">@*com.google.android.GoogleCamera:font/google_sans_medium</item>
+        <item name="android:buttonBarPositiveButtonStyle">@*com.google.android.GoogleCamera:style/CameraDialogButtonStyle</item>
+        <item name="android:buttonBarNegativeButtonStyle">@*com.google.android.GoogleCamera:style/CameraDialogButtonStyle</item>
+        <item name="*com.google.android.GoogleCamera:colorAccent">@*com.google.android.GoogleCamera:color/settings_accent_color</item>
+    </style>
+    <style name="GvrDialogTheme" parent="@*android:style/Theme.Material.Dialog" />
+    <style name="Platform.V25.AppCompat.Light" parent="@*android:style/Theme.Material.NoActionBar" />
+    <style name="Theme.Camera" parent="@*com.google.android.GoogleCamera:style/Theme.GoogleMaterial.Dark.NoActionBar">
+        <item name="android:colorBackground">@*android:color/background_dark</item>
+        <item name="android:windowBackground">@*com.google.android.GoogleCamera:drawable/cover</item>
+        <item name="android:windowTitleSize">0.0dip</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:colorBackgroundCacheHint">@*android:color/background_dark</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:colorControlHighlight">@*android:color/secondary_text_default_material_dark</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:navigationBarColor">@*com.google.android.GoogleCamera:color/default_system_ui_background</item>
+        <item name="android:rotationAnimation">seamless</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="*com.google.android.GoogleCamera:checkboxStyle">@*com.google.android.GoogleCamera:style/CameraCheckbox</item>
+    </style>
+    <style name="Theme.CameraSettings" parent="@*com.google.android.GoogleCamera:style/Theme.GoogleMaterial.DayNight.NoActionBar">
+        <item name="android:textColorPrimary">@*com.google.android.GoogleCamera:color/camera_google_blue_600</item>
+        <item name="android:textColorSecondary">@*android:color/secondary_text_default_material_dark</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:preferenceCategoryStyle">@*com.google.android.GoogleCamera:style/PreferenceCategoryStyle</item>
+        <item name="android:preferenceStyle">@*com.google.android.GoogleCamera:style/PreferenceStyle</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:tint">@*android:color/white</item>
+        <item name="android:divider">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:alertDialogTheme">@*com.google.android.GoogleCamera:style/CameraListPreferenceStyle</item>
+        <item name="android:colorControlActivated">@*com.google.android.GoogleCamera:color/settings_accent_color</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.GoogleCamera:colorPrimary">@*android:color/primary_material_dark</item>
+    </style>
+    <style name="Tooltip">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Widget.GoogleMaterial.Snackbar" parent="@*com.google.android.GoogleCamera:style/Widget.MaterialComponents.Snackbar">
+        <item name="*com.google.android.GoogleCamera:actionTextColorAlpha">@*com.google.android.GoogleCamera:dimen/design_snackbar_action_text_color_alpha</item>
+        <item name="*com.google.android.GoogleCamera:backgroundTint">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.GoogleCamera:enforceMaterialTheme">true</item>
+        <item name="*com.google.android.GoogleCamera:materialThemeOverlay">@*com.google.android.GoogleCamera:style/ThemeOverlay.GoogleMaterial.Snackbar</item>
+    </style>
+    <style name="Widget.GoogleMaterial.Snackbar.TextView" parent="@*com.google.android.GoogleCamera:style/Widget.MaterialComponents.Snackbar.TextView">
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="Widget.MaterialComponents.Snackbar.TextView" parent="@*com.google.android.GoogleCamera:style/Widget.AppCompat.TextView">
+        <item name="android:textAppearance">@*com.google.android.GoogleCamera:style/TextAppearance.GoogleMaterial.Body2</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">@*com.google.android.GoogleCamera:dimen/design_snackbar_padding_horizontal</item>
+        <item name="android:paddingTop">@*com.google.android.GoogleCamera:dimen/design_snackbar_padding_vertical</item>
+        <item name="android:paddingRight">@*com.google.android.GoogleCamera:dimen/design_snackbar_padding_horizontal</item>
+        <item name="android:paddingBottom">@*com.google.android.GoogleCamera:dimen/design_snackbar_padding_vertical</item>
+        <item name="android:maxLines">@*com.google.android.GoogleCamera:integer/design_snackbar_text_max_lines</item>
+        <item name="android:alpha">@*com.google.android.GoogleCamera:dimen/material_emphasis_high_type</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+</resources>
