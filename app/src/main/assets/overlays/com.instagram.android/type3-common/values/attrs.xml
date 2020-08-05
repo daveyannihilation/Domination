@@ -6,10 +6,12 @@
     <attr name="accountLinkingChildAccountInset" format="reference" />
     <attr name="accountLinkingMainAccountBackground" format="reference" />
     <attr name="actionBarBackground" format="reference" />
+    <attr name="actionBarBackgroundColor" format="color" />
     <attr name="actionBarButtonWidth" format="reference|dimension" />
     <attr name="actionBarDivider" format="reference" />
     <attr name="actionBarHeight" format="reference|dimension" />
     <attr name="actionBarHeightWithShadow" format="reference|dimension" />
+    <attr name="actionBarInstagramLogo" format="reference" />
     <attr name="actionBarItemBackground" format="reference" />
     <attr name="actionBarPopupTheme" format="reference" />
     <attr name="actionBarPressedColor" format="color" />
@@ -24,6 +26,7 @@
     <attr name="actionBarTabTextStyle" format="reference" />
     <attr name="actionBarTextCapitalize" format="boolean" />
     <attr name="actionBarTheme" format="reference" />
+    <attr name="actionBarTitleTextSize" format="reference" />
     <attr name="actionBarWidgetTheme" format="reference" />
     <attr name="actionButtonStyle" format="reference" />
     <attr name="actionDropDownStyle" format="reference" />
@@ -74,6 +77,7 @@
         <flag name="SHIFT" value="0x00000001" />
         <flag name="SYM" value="0x00000004" />
     </attr>
+    <attr name="analyticsTag" format="string" />
     <attr name="animateFirstImage" format="boolean" />
     <attr name="animationEnabled" format="boolean" />
     <attr name="animationMaxTime" format="integer" />
@@ -89,9 +93,11 @@
     <attr name="arrowThickness" format="dimension" />
     <attr name="aspect" format="float" />
     <attr name="assetServerHandle" format="string" />
+    <attr name="atlas" format="reference" />
+    <attr name="atlasHeight" format="dimension" />
+    <attr name="atlasWidth" format="dimension" />
     <attr name="authBottomSheetDialogStyle" format="reference" />
     <attr name="authBottomSheetSliderStyle" format="reference" />
-    <attr name="authCredLinkColorText" format="reference" />
     <attr name="autoCompleteTextViewStyle" format="reference" />
     <attr name="autoSizeMaxTextSize" format="dimension" />
     <attr name="autoSizeMinTextSize" format="dimension" />
@@ -113,6 +119,7 @@
     <attr name="backgroundColorPrimary" format="color" />
     <attr name="backgroundColorSecondary" format="color" />
     <attr name="backgroundColour" format="color" />
+    <attr name="backgroundDimmerColor" format="reference" />
     <attr name="backgroundDrawable" format="reference" />
     <attr name="backgroundDrawableBottom" format="reference" />
     <attr name="backgroundDrawableSingle" format="reference" />
@@ -172,6 +179,7 @@
     <attr name="borderStrokeWidth" format="dimension" />
     <attr name="borderWidth" format="dimension" />
     <attr name="borderlessButtonStyle" format="reference" />
+    <attr name="bottom" format="dimension" />
     <attr name="bottomSheetDialogTheme" format="reference" />
     <attr name="bottomSheetStyle" format="reference" />
     <attr name="bottom_spacing" format="dimension" />
@@ -192,6 +200,7 @@
     <attr name="bubble_color" format="color" />
     <attr name="bubble_radius" format="float" />
     <attr name="bubble_style" format="integer" />
+    <attr name="bucket" format="integer" />
     <attr name="buildLeftHandle" format="boolean" />
     <attr name="buildRightHandle" format="boolean" />
     <attr name="businessAccountSetupIconBorder" format="reference" />
@@ -267,14 +276,16 @@
     <attr name="cardUseCompatPadding" format="boolean" />
     <attr name="cardViewStyle" format="reference" />
     <attr name="centerColor" format="color" />
+    <attr name="centerCrop" format="boolean" />
     <attr name="center_bubble_vertically" format="boolean" />
     <attr name="chainUseRtl" format="boolean" />
     <attr name="channelSearchResultChannelNameColour" format="color" />
     <attr name="channelSearchResultUsernameColour" format="color" />
     <attr name="channelSearchResultsTitleColour" format="color" />
+    <attr name="checkLengthLongRatio" format="float" />
+    <attr name="checkLengthShortRatio" format="float" />
     <attr name="checkboxStyle" format="reference" />
     <attr name="checkedChip" format="reference" />
-    <attr name="checkedDrawable" format="reference" />
     <attr name="checkedIcon" format="reference" />
     <attr name="checkedIconEnabled" format="boolean" />
     <attr name="checkedIconVisible" format="boolean" />
@@ -380,6 +391,8 @@
     <attr name="containerStyle" format="boolean" />
     <attr name="content" format="reference" />
     <attr name="contentDescription" format="string" />
+    <attr name="contentDescriptionOff" format="reference|string" />
+    <attr name="contentDescriptionOn" format="reference|string" />
     <attr name="contentInsetEnd" format="dimension" />
     <attr name="contentInsetEndWithActions" format="dimension" />
     <attr name="contentInsetLeft" format="dimension" />
@@ -434,17 +447,21 @@
     <attr name="density" format="integer" />
     <attr name="deprecatedDialogBackgroundDrawable" format="reference" />
     <attr name="descendantWithErrorBackground" format="reference" />
+    <attr name="destinationFollowButton" format="reference" />
     <attr name="dialogCornerRadius" format="dimension" />
     <attr name="dialogPreferredPadding" format="dimension" />
     <attr name="dialogTheme" format="reference" />
     <attr name="dimmerColor" format="color" />
     <attr name="directGifPlaceholderBackground" format="reference" />
     <attr name="directInboxFooterBackground" format="reference" />
+    <attr name="directLinkPreviewBorder" format="reference" />
     <attr name="directPendingInboxPermissionsDivider" format="reference" />
     <attr name="directReplyModalEditTextBackground" format="reference" />
     <attr name="directReplyPillBackground" format="reference" />
     <attr name="directRowAvatar" format="reference" />
     <attr name="directRowHeight" format="reference" />
+    <attr name="directSavedSelfieEffectsColor" format="color" />
+    <attr name="directSelfieSelectedEffectBackground" format="reference" />
     <attr name="directSelfieStickerBackground" format="reference" />
     <attr name="directThreadDisabledComposerColor" format="color" />
     <attr name="directVideoCallActivePulseColor" format="reference|color" />
@@ -463,6 +480,11 @@
         <flag name="showHome" value="0x00000002" />
         <flag name="showTitle" value="0x00000008" />
         <flag name="useLogo" value="0x00000001" />
+    </attr>
+    <attr name="displayStyle">
+        <enum name="dot" value="1" />
+        <enum name="number" value="2" />
+        <enum name="toast" value="0" />
     </attr>
     <attr name="divider" format="reference" />
     <attr name="dividerColor" format="color" />
@@ -510,6 +532,7 @@
     <attr name="editTextBackground" format="reference" />
     <attr name="editTextColor" format="reference|color" />
     <attr name="editTextStyle" format="reference" />
+    <attr name="editTextStyleTitle" format="reference" />
     <attr name="elevatedBackgroundColor" format="color" />
     <attr name="elevatedBackgroundDrawable" format="reference" />
     <attr name="elevatedDividerColor" format="color" />
@@ -547,6 +570,7 @@
     <attr name="errorImage" format="reference" />
     <attr name="errorSubtitle" format="reference|string" />
     <attr name="errorTextAppearance" format="reference" />
+    <attr name="errorTextStyle" format="reference" />
     <attr name="errorTitle" format="reference|string" />
     <attr name="expandActivityOverflowButtonDrawable" format="reference" />
     <attr name="expanded" format="boolean" />
@@ -594,22 +618,80 @@
     <attr name="fastScrollVerticalThumbDrawable" format="reference" />
     <attr name="fastScrollVerticalTrackDrawable" format="reference" />
     <attr name="fbpayAuthScreenBackground" format="reference" />
+    <attr name="fbpay_add_payment_bottom_sheet_row_icon_style" format="reference" />
+    <attr name="fbpay_add_payment_bottom_sheet_row_title_style" format="reference" />
     <attr name="fbpay_background_color" format="color" />
+    <attr name="fbpay_bottom_sheet_content_fragment_credential_info_primary_button_style" format="reference" />
+    <attr name="fbpay_bottom_sheet_content_fragment_credential_info_primary_image_style" format="reference" />
+    <attr name="fbpay_bottom_sheet_content_fragment_credential_info_primary_text_label_style" format="reference" />
+    <attr name="fbpay_bottom_sheet_content_fragment_credential_info_primary_text_style" format="reference" />
+    <attr name="fbpay_bottom_sheet_content_fragment_credential_info_second_button_text_style" format="reference" />
+    <attr name="fbpay_bottom_sheet_content_fragment_email_style" format="reference" />
+    <attr name="fbpay_bottom_sheet_content_fragment_footer_text_style" format="reference" />
+    <attr name="fbpay_bottom_sheet_content_fragment_name_style" format="reference" />
+    <attr name="fbpay_bottom_sheet_content_fragment_profile_image_style" format="reference" />
+    <attr name="fbpay_bottom_sheet_content_fragment_style" format="reference" />
+    <attr name="fbpay_bottom_sheet_content_fragment_subtitle_style" format="reference" />
+    <attr name="fbpay_bottom_sheet_content_fragment_title_style" format="reference" />
+    <attr name="fbpay_bottom_sheet_content_fragment_user_info_container_style" format="reference" />
+    <attr name="fbpay_bottom_sheet_dialog_style" format="reference" />
+    <attr name="fbpay_bottom_sheet_disconnect_content_fragment_app_style" format="reference" />
+    <attr name="fbpay_bottom_sheet_disconnect_content_fragment_name_style" format="reference" />
+    <attr name="fbpay_bottom_sheet_disconnect_content_fragment_profile_image_style" format="reference" />
+    <attr name="fbpay_bottom_sheet_disconnect_content_fragment_radio_button_style" format="reference" />
+    <attr name="fbpay_bottom_sheet_drag_handle_style" format="reference" />
+    <attr name="fbpay_bottom_sheet_fragment_drag_handle_style" format="reference" />
+    <attr name="fbpay_bottom_sheet_fragment_title_style" format="reference" />
+    <attr name="fbpay_bottom_sheet_title_style" format="reference" />
+    <attr name="fbpay_branding_view" format="reference" />
+    <attr name="fbpay_cell_horizontal_margin" format="dimension" />
+    <attr name="fbpay_cta_text_Style" format="reference" />
+    <attr name="fbpay_destructive_button_text_style" format="reference" />
     <attr name="fbpay_disabled_text_color" format="color" />
+    <attr name="fbpay_disclaimer_text_style" format="reference" />
+    <attr name="fbpay_disconnect_bottom_sheet_content_fragment_subtitle_style" format="reference" />
+    <attr name="fbpay_disconnect_bottom_sheet_content_user_info_list_style" format="reference" />
+    <attr name="fbpay_disconnect_bottom_sheet_content_user_info_row_style" format="reference" />
     <attr name="fbpay_divider_color" format="color" />
+    <attr name="fbpay_elevated_divider" format="reference" />
+    <attr name="fbpay_elevated_divider_no_top_margin" format="reference" />
+    <attr name="fbpay_error_text_color" format="color" />
     <attr name="fbpay_header_text_style" format="reference" />
+    <attr name="fbpay_hint_text_color" format="color" />
+    <attr name="fbpay_hub_header_item_padding_bottom" format="dimension" />
+    <attr name="fbpay_hub_header_item_padding_top" format="dimension" />
+    <attr name="fbpay_hub_home_divider_margin_top" format="dimension" />
     <attr name="fbpay_hub_item_corner_radius" format="dimension" />
     <attr name="fbpay_hub_item_icon_style" format="reference" />
     <attr name="fbpay_hub_item_text_left_padding" format="dimension" />
     <attr name="fbpay_hub_item_vertical_padding" format="dimension" />
     <attr name="fbpay_hub_text_item_chevron_style" format="reference" />
+    <attr name="fbpay_hub_text_item_horizontal_margin" format="dimension" />
     <attr name="fbpay_hub_text_item_vertical_padding" format="dimension" />
+    <attr name="fbpay_info_icon" format="reference" />
+    <attr name="fbpay_input_field_background" format="reference" />
+    <attr name="fbpay_input_field_bottom_padding" format="dimension" />
+    <attr name="fbpay_input_field_hint_text_color" format="color" />
+    <attr name="fbpay_input_field_horizontal_padding" format="dimension" />
+    <attr name="fbpay_input_field_margin_bottom" format="dimension" />
+    <attr name="fbpay_input_field_margin_top" format="dimension" />
+    <attr name="fbpay_input_field_text_top_padding" format="dimension" />
+    <attr name="fbpay_input_field_top_padding" format="dimension" />
+    <attr name="fbpay_light_divider" format="reference" />
     <attr name="fbpay_link_text_color" format="color" />
     <attr name="fbpay_link_text_style" format="reference" />
+    <attr name="fbpay_menu_primary_text_style" format="reference" />
+    <attr name="fbpay_order_icon" format="reference" />
+    <attr name="fbpay_order_null_state_container_style" format="reference" />
+    <attr name="fbpay_order_null_state_image_style" format="reference" />
+    <attr name="fbpay_order_null_state_subtitle_style" format="reference" />
+    <attr name="fbpay_order_null_state_title_style" format="reference" />
+    <attr name="fbpay_pages_icon" format="reference" />
     <attr name="fbpay_primary_text_color" format="color" />
     <attr name="fbpay_primary_text_style" format="reference" />
     <attr name="fbpay_secondary_text_color" format="color" />
     <attr name="fbpay_secondary_text_style" format="reference" />
+    <attr name="featureTag" format="string" />
     <attr name="feedLikeActiveColor" format="color" />
     <attr name="feedModeMediaPlaceholderColor" format="color" />
     <attr name="feedPostCreationOverlayColor" format="color" />
@@ -734,8 +816,10 @@
     <attr name="highlightedOrWarningCommentBackground" format="color" />
     <attr name="hint" format="string" />
     <attr name="hintAnimationEnabled" format="boolean" />
+    <attr name="hintBackgroundColor" format="reference|color" />
     <attr name="hintColor" format="color" />
     <attr name="hintEnabled" format="boolean" />
+    <attr name="hintIconsColor" format="reference|color" />
     <attr name="hintText" format="string" />
     <attr name="hintTextAppearance" format="reference" />
     <attr name="homeAsUpIndicator" format="reference" />
@@ -771,7 +855,14 @@
     </attr>
     <attr name="icon_padding" format="dimension" />
     <attr name="iconifiedByDefault" format="boolean" />
-    <attr name="igSwitchStyle" format="reference" />
+    <attr name="id_capture_hide_id_placeholder" format="boolean" />
+    <attr name="id_capture_hide_photo_requirements_divider" format="boolean" />
+    <attr name="id_permissions_body_text" format="reference|string" />
+    <attr name="id_photo_review_body_text" format="reference|string" />
+    <attr name="id_photo_review_centered_text" format="boolean" />
+    <attr name="id_photo_review_hide_header" format="boolean" />
+    <attr name="id_photo_review_title_text" format="reference|string" />
+    <attr name="id_photo_review_title_text_size" format="dimension" />
     <attr name="image" format="reference" />
     <attr name="imageAspectRatio" format="float" />
     <attr name="imageAspectRatioAdjust">
@@ -816,6 +907,7 @@
     <attr name="isCollapsible" format="boolean" />
     <attr name="isLightTheme" format="boolean" />
     <attr name="isScaleAnimation" format="boolean" />
+    <attr name="isToggled" format="boolean" />
     <attr name="itemBackground" format="reference" />
     <attr name="itemHorizontalPadding" format="dimension" />
     <attr name="itemHorizontalTranslationEnabled" format="boolean" />
@@ -1033,6 +1125,7 @@
     </attr>
     <attr name="layout_scrollInterpolator" format="reference" />
     <attr name="layout_widthPercent" format="fraction" />
+    <attr name="left" format="dimension" />
     <attr name="leftAlignCheckBoxes" format="boolean" />
     <attr name="liftOnScroll" format="boolean" />
     <attr name="lineColor" format="color" />
@@ -1091,7 +1184,9 @@
     <attr name="menuRowButtonItemBackground" format="reference" />
     <attr name="messageBorderEnabled" format="reference|boolean" />
     <attr name="messageComposerBackground" format="reference" />
+    <attr name="messageComposerBackgroundColor" format="reference" />
     <attr name="messageComposerRedesignBackground" format="reference" />
+    <attr name="messageComposerRedesignBackgroundColor" format="reference" />
     <attr name="messageContextLineBackground" format="reference" />
     <attr name="messageFromMeMask" format="reference" />
     <attr name="messageFromOthersGrayBackground" format="reference" />
@@ -1109,6 +1204,9 @@
     </attr>
     <attr name="multiChoiceItemLayout" format="reference" />
     <attr name="multiSendButtonEnabled" format="boolean" />
+    <attr name="navBarBackgroundColor" format="color" />
+    <attr name="navBarIconDefaultTint" format="color" />
+    <attr name="navBarIconSelectedTint" format="color" />
     <attr name="navigationContentDescription" format="string" />
     <attr name="navigationIcon" format="reference" />
     <attr name="navigationMode">
@@ -1117,13 +1215,10 @@
         <enum name="tabMode" value="2" />
     </attr>
     <attr name="navigationViewStyle" format="reference" />
-    <attr name="newCheckedDrawable" format="reference" />
-    <attr name="newCheckedThumbDrawable" format="reference" />
-    <attr name="newThumbDrawable" format="reference" />
-    <attr name="newUncheckedDrawable" format="reference" />
     <attr name="normal" format="color" />
     <attr name="normal_alpha" format="integer" min="0" max="255" />
     <attr name="numberAvatarBackground" format="reference" />
+    <attr name="numberCap" format="integer" />
     <attr name="numericModifiers">
         <flag name="ALT" value="0x00000002" />
         <flag name="CTRL" value="0x00001000" />
@@ -1150,11 +1245,13 @@
     <attr name="outlineWidth" format="dimension" />
     <attr name="overlapAnchor" format="boolean" />
     <attr name="overlay40Color" format="color" />
+    <attr name="paddingBottom" format="dimension" />
     <attr name="paddingBottomNoButtons" format="dimension" />
     <attr name="paddingEnd" format="dimension" />
     <attr name="paddingLeft" format="dimension" />
     <attr name="paddingRight" format="dimension" />
     <attr name="paddingStart" format="dimension" />
+    <attr name="paddingTop" format="dimension" />
     <attr name="paddingTopNoTitle" format="dimension" />
     <attr name="padding_icon" format="dimension" />
     <attr name="pageSpacing" format="dimension" />
@@ -1178,6 +1275,7 @@
     <attr name="peopleTagSearchItemBackground" format="reference" />
     <attr name="peopleTagSearchTheme" format="reference" />
     <attr name="perfTrackingCategory" format="string" />
+    <attr name="persist" format="boolean" />
     <attr name="photoCaptureQuality">
         <enum name="deactivated" value="3" />
         <enum name="high" value="0" />
@@ -1201,7 +1299,6 @@
     <attr name="pillTextColor" format="reference" />
     <attr name="pillUnselectedColor" format="color" />
     <attr name="pinBioSettingOtherAppsName" format="string" />
-    <attr name="pinBioSettingResetChangePinStyle" format="reference" />
     <attr name="pinBioSwitchStyle" format="reference" />
     <attr name="placeholder" format="reference|color" />
     <attr name="placeholderColor" format="color" />
@@ -1220,6 +1317,7 @@
     <attr name="primaryActionText" format="string" />
     <attr name="primaryButtonBackground" format="reference" />
     <attr name="primaryText" format="string" />
+    <attr name="priority" format="float" />
     <attr name="profileAvatarLarge" format="reference" />
     <attr name="profileAvatarSize" format="reference" />
     <attr name="profileBusinessTitle" format="reference" />
@@ -1259,6 +1357,7 @@
     <attr name="ratingBarStyleIndicator" format="reference" />
     <attr name="ratingBarStyleSmall" format="reference" />
     <attr name="reactionBarBorderVisibility" format="integer" />
+    <attr name="reactionsMessagePillBackgroundColor" format="reference" />
     <attr name="recyclerViewStyle" format="reference" />
     <attr name="reelArchiveDateBadgeBackground" format="reference" />
     <attr name="reelDashboardCTAIconBackground" format="reference" />
@@ -1267,11 +1366,13 @@
     <attr name="reelItemBottomPadding" format="reference|dimension" />
     <attr name="reelOptionsAllowFeedCreation" format="boolean" />
     <attr name="refreshHeight" format="dimension" />
+    <attr name="replyIconBackgroundColor" format="reference" />
     <attr name="retryType">
         <enum name="icon" value="1" />
         <enum name="text" value="0" />
     </attr>
     <attr name="reverseLayout" format="boolean" />
+    <attr name="right" format="dimension" />
     <attr name="rippleColor" format="color" />
     <attr name="roundedCorners">
         <flag name="all" value="0x0000000f" />
@@ -1285,6 +1386,62 @@
     <attr name="rowHeaderDivider" format="reference" />
     <attr name="rowOrderPreserved" format="boolean" />
     <attr name="rowUserInfo" format="reference" />
+    <attr name="scArrowsBackgroundOnboardingColor" format="reference|color" />
+    <attr name="scArrowsBackgroundReplayColor" format="reference|color" />
+    <attr name="scButtonBackgroundColor" format="reference|color" />
+    <attr name="scButtonCornerRadius" format="reference|dimension" />
+    <attr name="scButtonPressedBackgroundColor" format="reference|color" />
+    <attr name="scButtonTextColor" format="reference|color" />
+    <attr name="scCaptureHelpBigDividerColor" format="reference|color" />
+    <attr name="scCaptureHelpFadeColor" format="reference|color" />
+    <attr name="scCaptureHelpIconsBackgroundColor" format="reference|color" />
+    <attr name="scCaptureHelpIconsColor" format="reference|color" />
+    <attr name="scCaptureHelpPinColor" format="reference|color" />
+    <attr name="scCaptureHelpSmallDividerColor" format="reference|color" />
+    <attr name="scDarkStatusBarColor" format="reference|color" />
+    <attr name="scLightBubbleBackgroundColor" format="reference|color" />
+    <attr name="scLightBubbleIconColor" format="reference|color" />
+    <attr name="scLightBubbleTextColor" format="reference|color" />
+    <attr name="scLightFillColor" format="reference|color" />
+    <attr name="scLightStatusBarColor" format="reference|color" />
+    <attr name="scLightSubtitleColor" format="reference|color" />
+    <attr name="scLightTitleColor" format="reference|color" />
+    <attr name="scPageIndicatorColor" format="reference|color" />
+    <attr name="scPageIndicatorSelectedColor" format="reference|color" />
+    <attr name="sc_accent" format="reference|color" />
+    <attr name="sc_accent_deemphasized" format="reference|color" />
+    <attr name="sc_always_black" format="reference|color" />
+    <attr name="sc_always_white" format="reference|color" />
+    <attr name="sc_background_deemphasized" format="reference|color" />
+    <attr name="sc_card_background" format="reference|color" />
+    <attr name="sc_card_background_flat" format="reference|color" />
+    <attr name="sc_dark_shadow" format="reference|color" />
+    <attr name="sc_default_instructions_hint_view_background_color" format="reference|color" />
+    <attr name="sc_default_instructions_hint_view_icons_color" format="reference|color" />
+    <attr name="sc_default_instructions_preview_translucent_color" format="reference|color" />
+    <attr name="sc_divider" format="reference|color" />
+    <attr name="sc_font_family" format="reference|string" />
+    <attr name="sc_forced_light_primary_text" format="reference|color" />
+    <attr name="sc_forced_light_secondary_text" format="reference|color" />
+    <attr name="sc_popover_background" format="reference|color" />
+    <attr name="sc_positive" format="reference|color" />
+    <attr name="sc_primary_button_background" format="reference|color" />
+    <attr name="sc_primary_button_background_drawable" format="reference" />
+    <attr name="sc_primary_button_text" format="reference|color" />
+    <attr name="sc_primary_button_text_size" format="reference|dimension" />
+    <attr name="sc_primary_icon" format="reference|color" />
+    <attr name="sc_primary_text" format="reference|color" />
+    <attr name="sc_primary_text_on_media" format="reference|color" />
+    <attr name="sc_secondary_button_background" format="reference|color" />
+    <attr name="sc_secondary_button_background_drawable" format="reference" />
+    <attr name="sc_secondary_button_text" format="reference|color" />
+    <attr name="sc_secondary_button_text_size" format="reference|dimension" />
+    <attr name="sc_secondary_icon" format="reference|color" />
+    <attr name="sc_secondary_text" format="reference|color" />
+    <attr name="sc_surface_background" format="reference|color" />
+    <attr name="sc_translucent_background" format="reference|color" />
+    <attr name="sc_warning" format="reference|color" />
+    <attr name="sc_wash" format="reference|color" />
     <attr name="scaleEnd" format="float" />
     <attr name="scaleStart" format="float" />
     <attr name="scopeUris" format="reference|string" />
@@ -1331,12 +1488,46 @@
     <attr name="selectedCommentBackground" format="color" />
     <attr name="selectedCommentTransitionEnd" format="color" />
     <attr name="selectedCommentTransitionStart" format="color" />
+    <attr name="selectedDisplayStyle">
+        <enum name="dot" value="1" />
+        <enum name="number" value="2" />
+        <enum name="toast" value="0" />
+    </attr>
     <attr name="selectedNumberedCircleColor" format="color" />
     <attr name="selectedStrokeWidth" format="dimension" />
     <attr name="selectedTextColor" format="color" />
     <attr name="selectedTextSize" format="dimension" />
     <attr name="selectorColor" format="color" />
     <attr name="selectorWidth" format="dimension" />
+    <attr name="selfie_arrow_hint" format="reference|color" />
+    <attr name="selfie_arrow_hint_border" format="reference|dimension" />
+    <attr name="selfie_arrow_hint_border_color" format="reference|color" />
+    <attr name="selfie_arrow_hint_fill" format="reference|color" />
+    <attr name="selfie_background" format="reference|color" />
+    <attr name="selfie_capture_placeholder" format="reference|color" />
+    <attr name="selfie_capture_progress_active" format="reference|color" />
+    <attr name="selfie_capture_progress_failure" format="reference|color" />
+    <attr name="selfie_capture_progress_filled" format="reference|color" />
+    <attr name="selfie_capture_progress_idle" format="reference|color" />
+    <attr name="selfie_capture_progress_nonactive" format="reference|color" />
+    <attr name="selfie_capture_progress_success" format="reference|color" />
+    <attr name="selfie_circle_hole_background" format="reference|color" />
+    <attr name="selfie_divider_color" format="reference|color" />
+    <attr name="selfie_help_alternative_image_visibility" format="integer" />
+    <attr name="selfie_help_background" format="reference|color" />
+    <attr name="selfie_help_direction_hintview_visibility" format="integer" />
+    <attr name="selfie_help_primary_text_size" format="reference|dimension" />
+    <attr name="selfie_help_row_margin_start" format="reference|dimension" />
+    <attr name="selfie_help_row_styling_visibility" format="integer" />
+    <attr name="selfie_help_secondary_text_size" format="reference|dimension" />
+    <attr name="selfie_help_subtext_color" format="reference|color" />
+    <attr name="selfie_help_text_color" format="reference|color" />
+    <attr name="selfie_help_text_gravity" format="integer" />
+    <attr name="selfie_review_retake_background" format="reference|color" />
+    <attr name="selfie_subtitle_color" format="reference|color" />
+    <attr name="selfie_subtitle_size" format="reference|dimension" />
+    <attr name="selfie_title_color" format="reference|color" />
+    <attr name="selfie_title_size" format="reference|dimension" />
     <attr name="shadowColor" format="color" />
     <attr name="shadowRadius" format="dimension" />
     <attr name="shadow_radius" format="dimension" />
@@ -1378,6 +1569,7 @@
     <attr name="shouldHideAllComments" format="boolean" />
     <attr name="shouldMinimizeAllComments" format="boolean" />
     <attr name="shouldShowFollowBack" format="boolean" />
+    <attr name="shouldToast" format="boolean" />
     <attr name="showAsAction">
         <flag name="always" value="0x00000002" />
         <flag name="collapseActionView" value="0x00000008" />
@@ -1389,6 +1581,7 @@
     <attr name="showBorder" format="boolean" />
     <attr name="showBorderOnBackAvatar" format="reference|boolean" />
     <attr name="showCarat" format="boolean" />
+    <attr name="showCollectionHeader" format="boolean" />
     <attr name="showDividers">
         <flag name="beginning" value="0x00000001" />
         <flag name="end" value="0x00000004" />
@@ -1396,6 +1589,7 @@
         <flag name="none" value="0x00000000" />
     </attr>
     <attr name="showDrawableOnRightSide" format="boolean" />
+    <attr name="showFilterTitle" format="boolean" />
     <attr name="showIcons" format="boolean" />
     <attr name="showMiddleSpace" format="boolean" />
     <attr name="showMissingBackAvatar" format="reference|boolean" />
@@ -1406,7 +1600,6 @@
     <attr name="showStroke" format="boolean" />
     <attr name="showText" format="boolean" />
     <attr name="showTitle" format="boolean" />
-    <attr name="showTwoByTwo" format="boolean" />
     <attr name="showfooterText" format="boolean" />
     <attr name="shutterButtonStyle" format="reference" />
     <attr name="singleAvatarGradientRingSize" format="dimension" />
@@ -1434,6 +1627,7 @@
     <attr name="spinnerStyle" format="reference" />
     <attr name="splitTrack" format="boolean" />
     <attr name="srcCompat" format="reference" />
+    <attr name="srcSmartCapture" format="reference" />
     <attr name="stackFromEnd" format="boolean" />
     <attr name="startColor" format="color" />
     <attr name="startGradientColor" format="color" />
@@ -1456,12 +1650,14 @@
     <attr name="statusBarScrim" format="color" />
     <attr name="stickerLoadingEndColor" format="color" />
     <attr name="stickerLoadingStartColor" format="color" />
+    <attr name="storyViewerScrimBackgroundColor" format="color" />
     <attr name="strictDelimiterMode" format="boolean" />
     <attr name="strokeColor" format="color" />
     <attr name="strokeColour" format="color" />
     <attr name="strokeIncludesPadding" format="boolean" />
     <attr name="strokeOnOutside" format="boolean" />
     <attr name="strokeRadius" format="dimension" />
+    <attr name="strokeThicknessRatio" format="integer" />
     <attr name="strokeWidth" format="dimension" />
     <attr name="stroke_colour" format="color" />
     <attr name="stroke_width" format="dimension" />
@@ -1474,7 +1670,7 @@
     <attr name="suEntityCardContextHeight" format="reference|dimension" />
     <attr name="subMenuArrow" format="reference" />
     <attr name="submitBackground" format="reference" />
-    <attr name="subtitle" format="reference|string" />
+    <attr name="subtitle" format="string" />
     <attr name="subtitleTextAppearance" format="reference" />
     <attr name="subtitleTextColor" format="color" />
     <attr name="subtitleTextStyle" format="reference" />
@@ -1567,6 +1763,7 @@
     <attr name="textColorEmphasizedEnabledDisabled" format="color" />
     <attr name="textColorEnabledDisabled" format="color" />
     <attr name="textColorLocation" format="color" />
+    <attr name="textColorOnMedia" format="reference" />
     <attr name="textColorPrimary" format="color" />
     <attr name="textColorProfileName" format="color" />
     <attr name="textColorRegularLink" format="color" />
@@ -1586,16 +1783,24 @@
     <attr name="textHorizontalPadding" format="dimension" />
     <attr name="textInputStyle" format="reference" />
     <attr name="textLocale" format="string" />
+    <attr name="textOff" format="reference|string" />
+    <attr name="textOn" format="reference|string" />
     <attr name="textPadding" format="dimension" />
     <attr name="textPaddingLeft" format="dimension" />
     <attr name="textPaddingRight" format="dimension" />
     <attr name="textSize" format="dimension" />
     <attr name="textStartPadding" format="dimension" />
+    <attr name="textStyleDescription" format="reference" />
+    <attr name="textStyleDescription1" format="reference" />
+    <attr name="textStyleDescription2" format="reference" />
+    <attr name="textStyleLink" format="reference" />
+    <attr name="textStyleSubtitle" format="reference" />
+    <attr name="textStyleTitle" format="reference" />
+    <attr name="textStyleTitle1" format="reference" />
     <attr name="textViewStyle" format="reference" />
     <attr name="theme" format="reference" />
     <attr name="thickness" format="dimension" />
     <attr name="thirdColor" format="color" />
-    <attr name="thumbDrawable" format="reference" />
     <attr name="thumbTextPadding" format="dimension" />
     <attr name="thumbTint" format="color" />
     <attr name="thumbTintMode">
@@ -1619,6 +1824,7 @@
         <enum name="src_over" value="3" />
     </attr>
     <attr name="tint" format="color" />
+    <attr name="tintColor" format="reference|color" />
     <attr name="tintMode">
         <enum name="add" value="16" />
         <enum name="multiply" value="14" />
@@ -1643,7 +1849,17 @@
     <attr name="titleTextAppearance" format="reference" />
     <attr name="titleTextColor" format="color" />
     <attr name="titleTextStyle" format="reference" />
-    <attr name="toastBackgroundColor" format="color" />
+    <attr name="toastCappedFallbackStyle">
+        <enum name="dot" value="1" />
+        <enum name="number" value="2" />
+        <enum name="toast" value="0" />
+    </attr>
+    <attr name="toastFallbackStyle">
+        <enum name="dot" value="1" />
+        <enum name="number" value="2" />
+        <enum name="toast" value="0" />
+    </attr>
+    <attr name="toastWhenSelected" format="boolean" />
     <attr name="tokenTextViewShouldShowX" format="boolean" />
     <attr name="tombstoneBackground" format="reference" />
     <attr name="tombstoneReasonClickableBackground" format="reference" />
@@ -1653,7 +1869,12 @@
     <attr name="toolbarStyle" format="reference" />
     <attr name="tooltipForegroundColor" format="reference|color" />
     <attr name="tooltipFrameBackground" format="reference" />
+    <attr name="tooltipPosition">
+        <enum name="above_anchor" value="0" />
+        <enum name="below_anchor" value="1" />
+    </attr>
     <attr name="tooltipText" format="string" />
+    <attr name="top" format="dimension" />
     <attr name="total_bubble_count" format="integer" />
     <attr name="track" format="reference" />
     <attr name="trackScrubber" format="reference" />
@@ -1681,7 +1902,7 @@
     <attr name="ttcIndex" format="integer" />
     <attr name="typeaheadBackground" format="reference" />
     <attr name="typingEnabled" format="boolean" />
-    <attr name="uncheckedDrawable" format="reference" />
+    <attr name="typingIndicatorPulsingBg" format="reference" />
     <attr name="unfilledColor" format="color" />
     <attr name="updatableButtonStyle" format="reference" />
     <attr name="updatableButtonTextSelector" format="reference" />
@@ -1690,6 +1911,10 @@
     <attr name="useDefaultMargins" format="boolean" />
     <attr name="useSquareLayout" format="boolean" />
     <attr name="variantSelectorThumbnailOutline" format="reference" />
+    <attr name="variant_dark" format="reference" />
+    <attr name="variant_filled" format="reference" />
+    <attr name="variant_light" format="reference" />
+    <attr name="variant_outline" format="reference" />
     <attr name="verticalDivider1dp" format="reference" />
     <attr name="verticalLines" format="integer" />
     <attr name="videoCaptureQuality">
@@ -1729,13 +1954,13 @@
     <attr name="windowMinWidthMajor" format="dimension|fraction" />
     <attr name="windowMinWidthMinor" format="dimension|fraction" />
     <attr name="windowNoTitle" format="boolean" />
-    <item type="attr" name="APKTOOL_DUMMY_435">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_439">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_43a">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_43e">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_43f">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_440">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_505">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_506">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_507">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_4ef">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_4f3">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_4f4">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_4f8">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_4f9">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_4fa">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5d3">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5d4">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5d5">false</item>
 </resources>

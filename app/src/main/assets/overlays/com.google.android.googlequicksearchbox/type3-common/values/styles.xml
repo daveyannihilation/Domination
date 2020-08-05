@@ -18,6 +18,20 @@
         <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="android:windowLightStatusBar">false</item>
     </style>
+    <style name="AppShortcut.DialogStyle" parent="@*com.google.android.googlequicksearchbox:style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:statusBarColor">@*android:color/transparent</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.googlequicksearchbox:bottomSheetStyle">@*com.google.android.googlequicksearchbox:style/AppShortcut.CustomModalStyle</item>
+    </style>
+    <style name="BaseLensNbuTheme" parent="@*com.google.android.googlequicksearchbox:style/Theme.GoogleMaterial.Dark.NoActionBar">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
     <style name="BaseWallpaperTheme" parent="@*android:style/Theme.DeviceDefault.NoActionBar">
         <item name="android:windowBackground">@*android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>
@@ -312,6 +326,24 @@
         <item name="android:background">@*android:color/background_dark</item>
         <item name="android:elevation">@*com.google.android.googlequicksearchbox:dimen/onboarding_video_header_elevation</item>
     </style>
+    <style name="Opa.Activity.AppActionShortcutTheme" parent="@*com.google.android.googlequicksearchbox:style/Theme.GoogleMaterial.Dark.NoActionBar">
+        <item name="android:backgroundDimAmount">0.58</item>
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowSoftInputMode">adjustPan|stateUnchanged</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:popupMenuStyle">@*com.google.android.googlequicksearchbox:style/Opa.AppActionShortcut.PopupMenu</item>
+        <item name="android:textAppearanceLargePopupMenu">@*com.google.android.googlequicksearchbox:style/TextAppearance.AppCompat.Widget.PopupMenu.Large</item>
+        <item name="android:textAppearanceSmallPopupMenu">@*com.google.android.googlequicksearchbox:style/TextAppearance.AppCompat.Widget.PopupMenu.Small</item>
+        <item name="android:statusBarColor">@*android:color/transparent</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:timePickerDialogTheme">@null</item>
+    </style>
     <style name="Opa.Activity.BaseTheme" parent="@*com.google.android.googlequicksearchbox:style/Theme.Velvet">
         <item name="android:backgroundDimAmount">@*com.google.android.googlequicksearchbox:integer/opa_background_dim_amount</item>
         <item name="android:windowBackground">@*android:color/transparent</item>
@@ -561,7 +593,7 @@
         <item name="android:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
     </style>
     <style name="Theme.IntentApi.Material" parent="@*android:style/Theme.DeviceDefault.Light">
-        <item name="android:background">@*com.google.android.googlequicksearchbox:drawable/intent_api_rounded_background</item>
+        <item name="android:background">@*com.google.android.googlequicksearchbox:drawable/transcription_intent_api_rounded_background</item>
     </style>
     <style name="Theme.KeepPopupMenu" parent="@*com.google.android.googlequicksearchbox:style/Theme.Velvet">
         <item name="android:dropDownListViewStyle">@*com.google.android.googlequicksearchbox:style/KeepListViewDropdownStyle</item>
@@ -762,6 +794,12 @@
         <item name="*com.google.android.googlequicksearchbox:cardActionIconTint">#ffffffff</item>
         <item name="*com.google.android.googlequicksearchbox:cardActionLabelColor">#ffffffff</item>
         <item name="android:backgroundTint">@*android:color/background_floating_material_dark</item>
+    </style>
+    <style name="bottom_menu_dark_theme">
+        <item name="*com.google.android.googlequicksearchbox:bottomMenuBackgroundColor">@*android:color/background_floating_material_dark</item>
+        <item name="*com.google.android.googlequicksearchbox:bottomMenuCloseFontColor">#ffffffff</item>
+        <item name="*com.google.android.googlequicksearchbox:bottomMenuLabelColor">#ffffffff</item>
+        <item name="*com.google.android.googlequicksearchbox:bottomMenuLineColor">@*android:color/transparent</item>
     </style>
     <style name="collections_button_action_style" parent="@*com.google.android.googlequicksearchbox:style/collections_button_style">
         <item name="android:textColor">@*android:color/white</item>
