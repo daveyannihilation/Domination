@@ -19,9 +19,10 @@
         <item name="android:windowLightStatusBar">false</item>
     </style>
     <style name="AppShortcut.DialogStyle" parent="@*com.google.android.googlequicksearchbox:style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:backgroundDimAmount">0.6</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsFloating">false</item>
-        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
         <item name="android:windowSoftInputMode">adjustResize</item>
         <item name="android:windowCloseOnTouchOutside">false</item>
         <item name="android:statusBarColor">@*android:color/transparent</item>
@@ -101,11 +102,6 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:maxLines">1</item>
     </style>
-    <style name="ExitDrivingModeText">
-        <item name="android:textSize">@*com.google.android.googlequicksearchbox:dimen/exit_driving_mode_text_size</item>
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:fontFamily">google-sans-medium</item>
-    </style>
     <style name="FullScreenDialogStyle" parent="@*com.google.android.googlequicksearchbox:style/Theme.AppCompat.Dialog">
         <item name="android:windowBackground">@*android:color/background_floating_material_dark</item>
         <item name="android:windowIsFloating">false</item>
@@ -181,11 +177,6 @@
         <item name="android:lineSpacingExtra">5.0dip</item>
         <item name="android:fontFamily">google-sans</item>
         <item name="android:letterSpacing">@*com.google.android.googlequicksearchbox:dimen/greeting_query_suggestion_letter_spacing</item>
-    </style>
-    <style name="GridViewItemText">
-        <item name="android:textSize">@*com.google.android.googlequicksearchbox:dimen/grid_view_item_text_size</item>
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:fontFamily">google-sans-medium</item>
     </style>
     <style name="HairlineDivider">
         <item name="android:background">@*android:color/transparent</item>
@@ -295,7 +286,6 @@
         <item name="android:layout_marginEnd">@*com.google.android.googlequicksearchbox:dimen/layout_end_margin</item>
         <item name="android:backgroundTint">@*android:color/button_material_dark</item>
     </style>
-    <style name="MorrisTheme" parent="@*android:style/Theme.Material.NoActionBar" />
     <style name="NgaPieButtonFlat" parent="@*com.google.android.googlequicksearchbox:style/Widget.AppCompat.Button.Borderless">
         <item name="android:textSize">17.0sp</item>
         <item name="android:textColor">#ff1976d2</item>
@@ -326,8 +316,8 @@
         <item name="android:background">@*android:color/background_dark</item>
         <item name="android:elevation">@*com.google.android.googlequicksearchbox:dimen/onboarding_video_header_elevation</item>
     </style>
-    <style name="Opa.Activity.AppActionShortcutTheme" parent="@*com.google.android.googlequicksearchbox:style/Theme.GoogleMaterial.Dark.NoActionBar">
-        <item name="android:backgroundDimAmount">0.58</item>
+    <style name="Opa.Activity.AppActionShortcutTheme.Base" parent="@*com.google.android.googlequicksearchbox:style/Theme.GoogleMaterial.Dark.NoActionBar">
+        <item name="android:backgroundDimAmount">0.6</item>
         <item name="android:windowBackground">@*android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsTranslucent">true</item>
@@ -519,6 +509,10 @@
     </style>
     <style name="Settings.ActionButton.Overflow" parent="@*android:style/Widget.Holo.ActionButton.Overflow">
         <item name="android:src">@*com.google.android.googlequicksearchbox:drawable/quantum_ic_more_vert_white_24</item>
+    </style>
+    <style name="StampViewerTheme.v2UI" parent="@*com.google.android.googlequicksearchbox:style/Theme.GoogleMaterial.Dark.NoActionBar">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowFullscreen">true</item>
     </style>
     <style name="Theme.AssistantAndroidSettings" parent="@*android:style/Theme.DeviceDefault.Light" />
     <style name="Theme.AssistantSettings.Base" parent="@*com.google.android.googlequicksearchbox:style/Theme.AssistantSettings.List">
@@ -798,12 +792,9 @@
     <style name="bottom_menu_dark_theme">
         <item name="*com.google.android.googlequicksearchbox:bottomMenuBackgroundColor">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.googlequicksearchbox:bottomMenuCloseFontColor">#ffffffff</item>
+        <item name="*com.google.android.googlequicksearchbox:bottomMenuIconTint">#ffffffff</item>
         <item name="*com.google.android.googlequicksearchbox:bottomMenuLabelColor">#ffffffff</item>
         <item name="*com.google.android.googlequicksearchbox:bottomMenuLineColor">@*android:color/transparent</item>
-    </style>
-    <style name="collections_button_action_style" parent="@*com.google.android.googlequicksearchbox:style/collections_button_style">
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:background">@*com.google.android.googlequicksearchbox:drawable/collections_button_background_action</item>
     </style>
     <style name="feed_16_20_m" parent="@*com.google.android.googlequicksearchbox:style/feed_16_20_r">
         <item name="android:textColor">@*android:color/white</item>
