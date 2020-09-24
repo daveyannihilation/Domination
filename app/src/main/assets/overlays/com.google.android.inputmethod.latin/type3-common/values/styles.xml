@@ -68,6 +68,19 @@
         <item name="android:maxLines">1</item>
         <item name="android:imeOptions">actionSearch</item>
     </style>
+    <style name="InlineSuggestionTooltipV2ChipText">
+        <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/inline_suggestion_tooltip_v2_chip_text_size</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:fontFamily">@*com.google.android.inputmethod.latin:font/google_sans_medium</item>
+        <item name="android:layout_marginStart">@*com.google.android.inputmethod.latin:dimen/inline_suggestion_tooltip_v2_chip_text_margin_start</item>
+        <item name="android:layout_marginEnd">@*com.google.android.inputmethod.latin:dimen/inline_suggestion_tooltip_v2_chip_text_margin_end</item>
+    </style>
     <style name="KeyboardOverlay">
         <item name="android:background">@*android:color/background_dark</item>
         <item name="android:paddingTop">@*com.google.android.inputmethod.latin:dimen/keyboard_overlay_padding_top</item>
@@ -132,34 +145,6 @@
         <item name="android:singleLine">false</item>
         <item name="android:layout_weight">800.0</item>
         <item name="android:lineSpacingMultiplier">@*com.google.android.inputmethod.latin:dimen/native_language_hint_line_spacing_multiplier</item>
-    </style>
-    <style name="OffOverlayContent" parent="@*com.google.android.inputmethod.latin:style/Label">
-        <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/off_overlay_content_text_size</item>
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:gravity">center</item>
-        <item name="android:visibility">visible</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:maxLines">10</item>
-    </style>
-    <style name="OffOverlayTitle" parent="@*com.google.android.inputmethod.latin:style/Label">
-        <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/off_overlay_title_text_size</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:visibility">visible</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginBottom">@*com.google.android.inputmethod.latin:dimen/off_overlay_title_margin_bottom</item>
-        <item name="android:maxLines">4</item>
-    </style>
-    <style name="OptInFirstPageTitle">
-        <item name="android:textSize">@*com.google.android.inputmethod.latin:dimen/opt_in_first_page_title_text_size</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginBottom">@*com.google.android.inputmethod.latin:dimen/opt_in_first_page_title_margin_bottom</item>
-        <item name="android:layout_alignParentStart">true</item>
     </style>
     <style name="Platform.V21.AppCompat.Light" parent="@*android:style/Theme.Material.NoActionBar">
         <item name="android:textColorHintInverse">#ffbbbbbb</item>
@@ -271,6 +256,14 @@
         <item name="android:imeOptions">actionDone</item>
         <item name="android:paddingStart">10.0dip</item>
     </style>
+    <style name="VoiceDonationBannerView">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:tag">.keyboard-voice-overlay</item>
+        <item name="android:background">@*android:color/background_floating_material_dark</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@*com.google.android.inputmethod.latin:dimen/keyboard_header_height</item>
+    </style>
     <style name="VoiceDonationCommitmentText" parent="@*com.google.android.inputmethod.latin:style/VoiceDonationDialogText">
         <item name="android:textColor">#ffdddddd</item>
         <item name="android:gravity">start</item>
@@ -295,13 +288,6 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:lineSpacingExtra">6.0dip</item>
         <item name="android:fontFamily">@*com.google.android.inputmethod.latin:font/google_sans</item>
-    </style>
-    <style name="VoiceDonationNegativeButton" parent="@*com.google.android.inputmethod.latin:style/VoiceDonationButton">
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">#ffdddddd</item>
-        <item name="android:layout_gravity">start</item>
-        <item name="android:background">@*android:color/transparent</item>
-        <item name="android:layout_marginStart">10.0dip</item>
     </style>
     <style name="Widget.GoogleMaterial.FloatingActionButton" parent="@*com.google.android.inputmethod.latin:style/Widget.MaterialComponents.FloatingActionButton">
         <item name="*com.google.android.inputmethod.latin:rippleColor">@*com.google.android.inputmethod.latin:color/google_fab_ripple_color</item>
