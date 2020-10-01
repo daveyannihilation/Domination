@@ -73,6 +73,21 @@
     <attr name="alertDialogCenterButtons" format="boolean" />
     <attr name="alertDialogStyle" format="reference" />
     <attr name="alertDialogTheme" format="reference" />
+    <attr name="alignContent">
+        <enum name="center" value="2" />
+        <enum name="flex_end" value="1" />
+        <enum name="flex_start" value="0" />
+        <enum name="space_around" value="4" />
+        <enum name="space_between" value="3" />
+        <enum name="stretch" value="5" />
+    </attr>
+    <attr name="alignItems">
+        <enum name="baseline" value="3" />
+        <enum name="center" value="2" />
+        <enum name="flex_end" value="1" />
+        <enum name="flex_start" value="0" />
+        <enum name="stretch" value="4" />
+    </attr>
     <attr name="alignmentMode">
         <enum name="alignBounds" value="0" />
         <enum name="alignMargins" value="1" />
@@ -88,7 +103,6 @@
         <flag name="SHIFT" value="0x00000001" />
         <flag name="SYM" value="0x00000004" />
     </attr>
-    <attr name="analyticsTag" format="string" />
     <attr name="animateFirstImage" format="boolean" />
     <attr name="animationEnabled" format="boolean" />
     <attr name="animationMaxTime" format="integer" />
@@ -281,6 +295,7 @@
         <enum name="text" value="1" />
     </attr>
     <attr name="button_collapse_width_reduction" format="dimension" />
+    <attr name="button_icon" format="reference" />
     <attr name="button_label" format="string" />
     <attr name="button_size" format="string" />
     <attr name="button_stroke_width" format="dimension" />
@@ -430,7 +445,6 @@
     <attr name="constraintSet" format="reference" />
     <attr name="constraint_referenced_ids" format="string" />
     <attr name="containerBackgroundColor" format="color" />
-    <attr name="containerCenterRightStatusBarBackgroundColor" format="color" />
     <attr name="containerMarginEnd" format="dimension" />
     <attr name="containerPaddingStart" format="dimension" />
     <attr name="containerStyle" format="boolean" />
@@ -568,6 +582,9 @@
     </attr>
     <attr name="divider" format="reference" />
     <attr name="dividerColor" format="color" />
+    <attr name="dividerDrawable" format="reference" />
+    <attr name="dividerDrawableHorizontal" format="reference" />
+    <attr name="dividerDrawableVertical" format="reference" />
     <attr name="dividerHorizontal" format="reference" />
     <attr name="dividerPadding" format="dimension" />
     <attr name="dividerVertical" format="reference" />
@@ -818,7 +835,6 @@
     <attr name="fbpay_primary_text_style" format="reference" />
     <attr name="fbpay_secondary_text_color" format="color" />
     <attr name="fbpay_secondary_text_style" format="reference" />
-    <attr name="featureTag" format="string" />
     <attr name="feedLikeActiveColor" format="color" />
     <attr name="feedModeMediaPlaceholderColor" format="color" />
     <attr name="feedPostCreationOverlayColor" format="color" />
@@ -847,6 +863,17 @@
     <attr name="fittingTextSize" format="dimension" />
     <attr name="fixedTabBarStyle" format="reference" />
     <attr name="flatBorderButtonBackground" format="reference" />
+    <attr name="flexDirection">
+        <enum name="column" value="2" />
+        <enum name="column_reverse" value="3" />
+        <enum name="row" value="0" />
+        <enum name="row_reverse" value="1" />
+    </attr>
+    <attr name="flexWrap">
+        <enum name="nowrap" value="0" />
+        <enum name="wrap" value="1" />
+        <enum name="wrap_reverse" value="2" />
+    </attr>
     <attr name="focusOnTouch" format="boolean" />
     <attr name="followButtonStyle" format="string" />
     <attr name="font" format="reference" />
@@ -1078,6 +1105,14 @@
     <attr name="itemTextAppearanceActive" format="reference" />
     <attr name="itemTextAppearanceInactive" format="reference" />
     <attr name="itemTextColor" format="color" />
+    <attr name="justifyContent">
+        <enum name="center" value="2" />
+        <enum name="flex_end" value="1" />
+        <enum name="flex_start" value="0" />
+        <enum name="space_around" value="4" />
+        <enum name="space_between" value="3" />
+        <enum name="space_evenly" value="5" />
+    </attr>
     <attr name="keepObservingAfterRequestDisallowTouchEvent" format="boolean" />
     <attr name="keylines" format="reference" />
     <attr name="label" format="string" />
@@ -1098,6 +1133,14 @@
     <attr name="launchSingleTop" format="boolean" />
     <attr name="layout" format="reference" />
     <attr name="layoutManager" format="string" />
+    <attr name="layout_alignSelf">
+        <enum name="auto" value="-1" />
+        <enum name="baseline" value="3" />
+        <enum name="center" value="2" />
+        <enum name="flex_end" value="1" />
+        <enum name="flex_start" value="0" />
+        <enum name="stretch" value="4" />
+    </attr>
     <attr name="layout_anchor" format="reference" />
     <attr name="layout_anchorGravity">
         <flag name="bottom" value="0x00000050" />
@@ -1229,6 +1272,9 @@
     </attr>
     <attr name="layout_editor_absoluteX" format="dimension" />
     <attr name="layout_editor_absoluteY" format="dimension" />
+    <attr name="layout_flexBasisPercent" format="fraction" />
+    <attr name="layout_flexGrow" format="float" />
+    <attr name="layout_flexShrink" format="float" />
     <attr name="layout_goneMarginBottom" format="dimension" />
     <attr name="layout_goneMarginEnd" format="dimension" />
     <attr name="layout_goneMarginLeft" format="dimension" />
@@ -1269,6 +1315,10 @@
     <attr name="layout_marginRightPercent" format="fraction" />
     <attr name="layout_marginStartPercent" format="fraction" />
     <attr name="layout_marginTopPercent" format="fraction" />
+    <attr name="layout_maxHeight" format="dimension" />
+    <attr name="layout_maxWidth" format="dimension" />
+    <attr name="layout_minHeight" format="dimension" />
+    <attr name="layout_minWidth" format="dimension" />
     <attr name="layout_optimizationLevel">
         <flag name="barrier" value="0x00000002" />
         <flag name="chains" value="0x00000004" />
@@ -1278,6 +1328,7 @@
         <flag name="none" value="0x00000000" />
         <flag name="standard" value="0x00000007" />
     </attr>
+    <attr name="layout_order" format="integer" />
     <attr name="layout_row" format="integer" />
     <attr name="layout_rowSpan" format="integer" min="1" />
     <attr name="layout_rowWeight" format="float" />
@@ -1292,6 +1343,7 @@
     </attr>
     <attr name="layout_scrollInterpolator" format="reference" />
     <attr name="layout_widthPercent" format="fraction" />
+    <attr name="layout_wrapBefore" format="boolean" />
     <attr name="leftAlignCheckBoxes" format="boolean" />
     <attr name="liftOnScroll" format="boolean" />
     <attr name="liftOnScrollTargetViewId" format="reference" />
@@ -1348,6 +1400,7 @@
     <attr name="maxEmojiCount" format="integer" />
     <attr name="maxHeight" format="dimension" />
     <attr name="maxImageSize" format="dimension" />
+    <attr name="maxLine" format="integer" />
     <attr name="maxLines" format="integer" />
     <attr name="maxMultiSelectCount" format="integer" />
     <attr name="maxSelectionMessageEnabled" format="boolean" />
@@ -1370,6 +1423,7 @@
     <attr name="messageBorderEnabled" format="reference|boolean" />
     <attr name="messageComposerBackground" format="reference" />
     <attr name="messageComposerBackgroundColor" format="reference" />
+    <attr name="messageComposerBorderColor" format="reference" />
     <attr name="messageComposerRedesignBackground" format="reference" />
     <attr name="messageComposerRedesignBackgroundColor" format="reference" />
     <attr name="messageContextLineBackground" format="reference" />
@@ -1377,6 +1431,7 @@
     <attr name="messageFromOthersGrayBackground" format="reference" />
     <attr name="messageFromOthersMask" format="reference" />
     <attr name="messageMaskBorderless" format="reference" />
+    <attr name="messageWrapContentId" format="integer" />
     <attr name="minTouchTargetSize" format="dimension" />
     <attr name="min_stroke_width" format="dimension" />
     <attr name="minimizedVideoCallBackgroundColor" format="color" />
@@ -1523,8 +1578,10 @@
     <attr name="profileBackgroundColor" format="color" />
     <attr name="profileBusinessTitle" format="reference" />
     <attr name="profileHeaderBackground" format="color" />
+    <attr name="profileHeaderUserActionsButtonHeight" format="dimension" />
     <attr name="profileHighlightThumbnailEditBackground" format="color" />
     <attr name="profileMenuVerticalDivider" format="color" />
+    <attr name="profileReelsTrayHeaderTopPadding" format="dimension" />
     <attr name="profileSwitchAccountAudienceButtonBackground" format="reference" />
     <attr name="profileSwitchAccountAvatar" format="reference" />
     <attr name="profileSwitchAvatarCircle" format="reference" />
@@ -1807,6 +1864,24 @@
     <attr name="showBorderOnBackAvatar" format="reference|boolean" />
     <attr name="showCarat" format="boolean" />
     <attr name="showCollectionHeader" format="boolean" />
+    <attr name="showDivider">
+        <flag name="beginning" value="0x00000001" />
+        <flag name="end" value="0x00000004" />
+        <flag name="middle" value="0x00000002" />
+        <flag name="none" value="0x00000000" />
+    </attr>
+    <attr name="showDividerHorizontal">
+        <flag name="beginning" value="0x00000001" />
+        <flag name="end" value="0x00000004" />
+        <flag name="middle" value="0x00000002" />
+        <flag name="none" value="0x00000000" />
+    </attr>
+    <attr name="showDividerVertical">
+        <flag name="beginning" value="0x00000001" />
+        <flag name="end" value="0x00000004" />
+        <flag name="middle" value="0x00000002" />
+        <flag name="none" value="0x00000000" />
+    </attr>
     <attr name="showDividers">
         <flag name="beginning" value="0x00000001" />
         <flag name="end" value="0x00000004" />
@@ -2229,16 +2304,16 @@
     <attr name="yearSelectedStyle" format="reference" />
     <attr name="yearStyle" format="reference" />
     <attr name="yearTodayStyle" format="reference" />
-    <item type="attr" name="APKTOOL_DUMMY_141">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_147">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_5a0">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_5a1">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_5a6">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_5aa">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_5ab">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_5ac">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_5ad">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_699">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_69a">false</item>
-    <item type="attr" name="APKTOOL_DUMMY_69b">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_143">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_149">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5b8">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5b9">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5be">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5c2">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5c3">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5c4">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_5c5">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_6b1">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_6b2">false</item>
+    <item type="attr" name="APKTOOL_DUMMY_6b3">false</item>
 </resources>
