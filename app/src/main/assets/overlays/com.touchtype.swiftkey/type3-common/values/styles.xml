@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="ContainerTheme" parent="@*com.touchtype.swiftkey:style/BaseContainerTheme">
+    <style name="Authentication" parent="@*com.touchtype.swiftkey:style/Theme.MaterialComponents.DayNight.Dialog">
+        <item name="*com.touchtype.swiftkey:colorAccent">@*com.touchtype.swiftkey:color/accent</item>
+        <item name="*com.touchtype.swiftkey:colorPrimary">@*android:color/primary_material_dark</item>
         <item name="*com.touchtype.swiftkey:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.touchtype.swiftkey:windowNoTitle">true</item>
     </style>
-    <style name="ContainerTheme.BackgroundImageEditor" parent="@*com.touchtype.swiftkey:style/ContainerTheme">
+    <style name="BaseContainerTheme" parent="@*com.touchtype.swiftkey:style/Theme.MaterialComponents.DayNight">
+        <item name="android:textColorPrimary">@*com.touchtype.swiftkey:color/text_color_primary</item>
+        <item name="android:textColorSecondary">@*com.touchtype.swiftkey:color/text_color_secondary</item>
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:divider">@*android:color/transparent</item>
+        <item name="android:dividerHeight">0.0dip</item>
+        <item name="android:actionOverflowButtonStyle">@*com.touchtype.swiftkey:style/OverflowButtonStyle</item>
+        <item name="android:colorEdgeEffect">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.touchtype.swiftkey:actionOverflowMenuStyle">@*com.touchtype.swiftkey:style/ActionOverflowMenuStyle</item>
+        <item name="*com.touchtype.swiftkey:alertDialogTheme">@*com.touchtype.swiftkey:style/AlertDialogTheme</item>
+        <item name="*com.touchtype.swiftkey:colorAccent">@*com.touchtype.swiftkey:color/accent</item>
+        <item name="*com.touchtype.swiftkey:colorOnPrimary">@*android:color/white</item>
+        <item name="*com.touchtype.swiftkey:colorPrimary">@*android:color/primary_material_dark</item>
+        <item name="*com.touchtype.swiftkey:elevation">0.0dip</item>
+        <item name="*com.touchtype.swiftkey:fabColor">@*com.touchtype.swiftkey:color/swiftkey_blue</item>
+        <item name="*com.touchtype.swiftkey:homeAsUpIndicator">@*com.touchtype.swiftkey:drawable/ic_topnav_back</item>
+        <item name="*com.touchtype.swiftkey:preferenceTheme">@*com.touchtype.swiftkey:style/CustomPreferenceTheme</item>
+        <item name="*com.touchtype.swiftkey:searchViewStyle">@*com.touchtype.swiftkey:style/CustomSearchView</item>
+        <item name="*com.touchtype.swiftkey:switchStyle">@*com.touchtype.swiftkey:style/SwitchBaseStyle</item>
+        <item name="*com.touchtype.swiftkey:titleTextColor">@*android:color/white</item>
+        <item name="*com.touchtype.swiftkey:windowActionBar">false</item>
+        <item name="*com.touchtype.swiftkey:windowNoTitle">true</item>
+    </style>
+    <style name="ContainerTheme" parent="@*com.touchtype.swiftkey:style/BaseContainerTheme">
         <item name="*com.touchtype.swiftkey:colorPrimaryDark">@*android:color/primary_dark_material_dark</item>
     </style>
     <style name="DeleteMyAccountAgeGateButtonTheme" parent="@*com.touchtype.swiftkey:style/Widget.AppCompat.Button.Colored">
@@ -13,35 +39,6 @@
         <item name="android:colorButtonNormal">@*com.touchtype.swiftkey:color/swiftkey_kahn_darker</item>
         <item name="*com.touchtype.swiftkey:colorButtonNormal">@*com.touchtype.swiftkey:color/swiftkey_kahn_darker</item>
     </style>
-    <style name="FancyPanelErrorButton" parent="@*com.touchtype.swiftkey:style/Widget.MaterialComponents.Button">
-        <item name="android:textSize">16.0sp</item>
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:layout_gravity">center</item>
-        <item name="android:paddingLeft">24.0dip</item>
-        <item name="android:paddingRight">24.0dip</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textAllCaps">false</item>
-        <item name="android:paddingStart">24.0dip</item>
-        <item name="android:paddingEnd">24.0dip</item>
-        <item name="*com.touchtype.swiftkey:backgroundTint">@*android:color/button_material_dark</item>
-        <item name="*com.touchtype.swiftkey:rippleColor">@*android:color/secondary_text_default_material_dark</item>
-    </style>
-    <style name="FancyPanelErrorButtonWithIcon" parent="@*com.touchtype.swiftkey:style/Widget.MaterialComponents.Button.Icon">
-        <item name="android:textSize">16.0sp</item>
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:layout_gravity">center</item>
-        <item name="android:paddingLeft">24.0dip</item>
-        <item name="android:paddingRight">24.0dip</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textAllCaps">false</item>
-        <item name="android:paddingStart">24.0dip</item>
-        <item name="android:paddingEnd">24.0dip</item>
-        <item name="*com.touchtype.swiftkey:backgroundTint">@*android:color/button_material_dark</item>
-        <item name="*com.touchtype.swiftkey:iconTint">@*android:color/white</item>
-        <item name="*com.touchtype.swiftkey:rippleColor">@*android:color/white</item>
-    </style>
     <style name="HandwritingCoachmarkButton">
         <item name="android:textSize">@*com.touchtype.swiftkey:dimen/hwr_unavailable_coachmark_button_text_size</item>
         <item name="android:textColor">@*android:color/white</item>
@@ -50,6 +47,9 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="InstallerTheme" parent="@*com.touchtype.swiftkey:style/ContainerTheme">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
     </style>
     <style name="OverlayCoachmarkButton" parent="@*com.touchtype.swiftkey:style/Widget.MaterialComponents.Button.TextButton">
         <item name="android:textSize">@*com.touchtype.swiftkey:dimen/overlay_coachmark_button_text_size</item>
@@ -64,14 +64,5 @@
         <item name="android:textColorHint">#ffbbbbbb</item>
         <item name="android:textColorLink">@*android:color/accent_material_dark</item>
         <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
-    </style>
-    <style name="ToolbarMessagingButton" parent="@*com.touchtype.swiftkey:style/Widget.AppCompat.Button.Colored">
-        <item name="android:textSize">16.0sp</item>
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:layout_margin">5.0dip</item>
-        <item name="android:maxLength">12</item>
-        <item name="android:textAllCaps">false</item>
-        <item name="android:fontFamily">sans-serif</item>
-        <item name="*com.touchtype.swiftkey:backgroundTint">@*com.touchtype.swiftkey:color/toolbar_messaging_background_tint</item>
     </style>
 </resources>

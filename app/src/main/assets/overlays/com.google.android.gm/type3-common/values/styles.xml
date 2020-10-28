@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="AbstractComposeArea">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@*android:color/primary_dark_material_dark</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:animateLayoutChanges">true</item>
+        <item name="android:paddingStart">@*com.google.android.gm:dimen/compose_area_start_padding</item>
+        <item name="android:paddingEnd">@*com.google.android.gm:dimen/compose_area_end_padding</item>
+    </style>
     <style name="AdBadgeBaseTextStyle">
         <item name="android:textSize">@*com.google.android.gm:dimen/conversation_sender_header_font_size</item>
         <item name="android:textColor">@*android:color/white</item>
@@ -8,6 +17,15 @@
         <item name="android:textSize">12.0sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="BottomSheetDialogMenuItem">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">?*android:selectableItemBackground</item>
+        <item name="android:paddingTop">@*com.google.android.gm:dimen/menu_bottom_sheet_vertical_padding</item>
+        <item name="android:paddingBottom">@*com.google.android.gm:dimen/menu_bottom_sheet_vertical_padding</item>
+        <item name="android:paddingStart">@*com.google.android.gm:dimen/menu_bottom_sheet_horizontal_padding</item>
+        <item name="android:paddingEnd">@*com.google.android.gm:dimen/menu_bottom_sheet_horizontal_padding</item>
     </style>
     <style name="CalendarPromotionStyle">
         <item name="android:gravity">center_horizontal</item>
@@ -31,6 +49,13 @@
         <item name="android:shadowDy">1.3</item>
         <item name="android:shadowRadius">8.0</item>
     </style>
+    <style name="DarkNavigationBarBottomSheetTheme" parent="@*com.google.android.gm:style/ThemeOverlay.MaterialComponents.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@*com.google.android.gm:style/Animation.Design.BottomSheetDialog</item>
+        <item name="android:statusBarColor">@*android:color/transparent</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="*com.google.android.gm:bottomSheetStyle">@*com.google.android.gm:style/Widget.Design.BottomSheet.Modal</item>
+    </style>
     <style name="GmailGoogleMaterialActionBar" parent="@*com.google.android.gm:style/ThemeOverlay.GoogleMaterial.ActionBar">
         <item name="android:textColorPrimary">@*com.google.android.gm:color/action_bar_icon_enabled</item>
         <item name="android:textColor">@*com.google.android.gm:color/ag_primary_text</item>
@@ -52,6 +77,19 @@
         <item name="android:textColor">@*android:color/white</item>
         <item name="android:background">@*com.google.android.gm:drawable/primary_action_button_background</item>
     </style>
+    <style name="HubBottomNavMaterialThemeOverlay">
+        <item name="*com.google.android.gm:colorOnSurfaceVariant">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gm:colorPrimaryGoogle">@*com.google.android.gm:color/ag_hbn_selected_icon_color</item>
+        <item name="*com.google.android.gm:colorSurface">@*android:color/background_floating_material_dark</item>
+    </style>
+    <style name="InteropDialog" parent="@*com.google.android.gm:style/Theme.MaterialComponents.Dialog">
+        <item name="android:colorBackground">@*android:color/background_floating_material_dark</item>
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@*com.google.android.gm:style/Animation.Design.BottomSheetDialog</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="*com.google.android.gm:bottomSheetStyle">@*com.google.android.gm:style/Widget.Design.BottomSheet.Modal</item>
+    </style>
     <style name="MailActivityTheme" parent="@*com.google.android.gm:style/BaseMailActivityTheme">
         <item name="android:windowBackground">@*android:color/background_dark</item>
         <item name="android:windowTitleStyle">@*com.google.android.gm:style/GmailDialogTitleTextAppearance</item>
@@ -72,6 +110,10 @@
         <item name="*com.google.android.gm:colorPrimaryDark">@*com.google.android.gm:color/primary_dark_color</item>
         <item name="*com.google.android.gm:colorControlNormal">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.gm:alertDialogTheme">@*com.google.android.gm:style/AlertDialogTheme</item>
+    </style>
+    <style name="OverdrawTheme" parent="@*android:style/Theme.NoTitleBar">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:windowContentOverlay">@null</item>
     </style>
     <style name="Platform.V21.AppCompat.Light" parent="@*android:style/Theme.Material.NoActionBar">
         <item name="android:textColorHintInverse">#ffbbbbbb</item>
@@ -104,6 +146,10 @@
         <item name="android:layout_marginBottom">3.0dip</item>
         <item name="android:singleLine">true</item>
     </style>
+    <style name="ReadReceiptsTabStyle" parent="@*com.google.android.gm:style/Widget.MaterialComponents.TabLayout.Colored">
+        <item name="android:background">@*android:color/background_dark</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
     <style name="RecipientComposeFieldLayout" parent="@*com.google.android.gm:style/ComposeFieldLayout">
         <item name="android:orientation">vertical</item>
         <item name="android:paddingTop">0.0dip</item>
@@ -123,7 +169,38 @@
         <item name="android:textDirection">locale</item>
         <item name="android:textAlignment">viewStart</item>
     </style>
+    <style name="SudAlertDialogTheme.Light" parent="@*android:style/Theme.DeviceDefault.Dialog.Alert" />
     <style name="SudGlifCardContainer">
+        <item name="android:background">@*android:color/background_floating_material_dark</item>
+    </style>
+    <style name="Theme.Conference.CallActivity" parent="@*com.google.android.gm:style/Theme.GoogleMaterial.DayNight.NoActionBar">
+        <item name="android:windowBackground">@*android:color/background_dark</item>
+        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+    <style name="Theme.Conference.InputView.Dark" parent="@*com.google.android.gm:style/Theme.GoogleMaterial.DayNight.NoActionBar">
+        <item name="*com.google.android.gm:inputViewDisabledBackgroundColor">@*android:color/background_dark</item>
+        <item name="*com.google.android.gm:inputViewDisabledIconTintColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gm:inputViewOffBackgroundBorderColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gm:inputViewOffBackgroundColor">@*android:color/background_dark</item>
+        <item name="*com.google.android.gm:inputViewOffIconTintColor">@*android:color/white</item>
+        <item name="*com.google.android.gm:inputViewOnBackgroundBorderColor">@*android:color/white</item>
+        <item name="*com.google.android.gm:inputViewOnBackgroundColor">@*android:color/button_material_dark</item>
+        <item name="*com.google.android.gm:inputViewOnIconTintColor">@*android:color/white</item>
+    </style>
+    <style name="Theme.Conference.InputView.Light" parent="@*com.google.android.gm:style/Theme.GoogleMaterial.DayNight.NoActionBar">
+        <item name="*com.google.android.gm:inputViewDisabledBackgroundColor">@*android:color/background_dark</item>
+        <item name="*com.google.android.gm:inputViewDisabledIconTintColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gm:inputViewOffBackgroundBorderColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="*com.google.android.gm:inputViewOffBackgroundColor">@*android:color/background_dark</item>
+        <item name="*com.google.android.gm:inputViewOffIconTintColor">@*android:color/white</item>
+        <item name="*com.google.android.gm:inputViewOnBackgroundBorderColor">@*android:color/white</item>
+        <item name="*com.google.android.gm:inputViewOnBackgroundColor">@*android:color/button_material_dark</item>
+        <item name="*com.google.android.gm:inputViewOnIconTintColor">@*android:color/white</item>
+    </style>
+    <style name="Theme.Conference.QuickActionsDialog" parent="@*com.google.android.gm:style/ThemeOverlay.GoogleMaterial.MaterialAlertDialog">
         <item name="android:background">@*android:color/background_floating_material_dark</item>
     </style>
     <style name="ToRecipientEditTextViewStyle" parent="@*com.google.android.gm:style/RecipientEditTextViewStyle">
@@ -174,12 +251,18 @@
         <item name="android:textAppearance">@*com.google.android.gm:style/TextAppearance.GoogleMaterial.Body2</item>
         <item name="android:textColor">@*android:color/white</item>
         <item name="android:ellipsize">end</item>
-        <item name="android:paddingLeft">@*com.google.android.gm:dimen/design_snackbar_padding_horizontal</item>
         <item name="android:paddingTop">@*com.google.android.gm:dimen/design_snackbar_padding_vertical</item>
-        <item name="android:paddingRight">@*com.google.android.gm:dimen/design_snackbar_padding_horizontal</item>
         <item name="android:paddingBottom">@*com.google.android.gm:dimen/design_snackbar_padding_vertical</item>
+        <item name="android:layout_marginLeft">@*com.google.android.gm:dimen/mtrl_snackbar_message_margin_horizontal</item>
+        <item name="android:layout_marginRight">@*com.google.android.gm:dimen/mtrl_snackbar_message_margin_horizontal</item>
         <item name="android:maxLines">@*com.google.android.gm:integer/design_snackbar_text_max_lines</item>
         <item name="android:alpha">@*com.google.android.gm:dimen/material_emphasis_high_type</item>
         <item name="android:textAlignment">viewStart</item>
+    </style>
+    <style name="WorkTimePickerDialogStyle" parent="@*android:style/Widget.Material.TimePicker">
+        <item name="android:numbersBackgroundColor">@*android:color/background_dark</item>
+    </style>
+    <style name="WorkingHoursDisabledTheme">
+        <item name="*com.google.android.gm:colorControlNormal">@*android:color/secondary_text_default_material_dark</item>
     </style>
 </resources>
