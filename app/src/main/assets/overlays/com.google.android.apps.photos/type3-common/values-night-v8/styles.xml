@@ -45,6 +45,9 @@
         <item name="*com.google.android.apps.photos:textColor">@*android:color/white</item>
         <item name="*com.google.android.apps.photos:textSize">10.0sp</item>
     </style>
+    <style name="Share.SharedAlbums.Button.CopyButton" parent="@*com.google.android.apps.photos:style/Widget.Photos.Button.Borderless">
+        <item name="*com.google.android.apps.photos:rippleColor">@*android:color/secondary_text_default_material_dark</item>
+    </style>
     <style name="Theme.ConsentFlow.PositiveMaterialButton" parent="@*com.google.android.apps.photos:style/Widget.MaterialComponents.Button">
         <item name="android:textColor">@*android:color/white</item>
         <item name="android:minWidth">100.0dip</item>
@@ -92,6 +95,7 @@
     </style>
     <style name="Widget.GoogleMaterial.Snackbar.TextView" parent="@*com.google.android.apps.photos:style/Widget.MaterialComponents.Snackbar.TextView">
         <item name="android:textColor">@*android:color/white</item>
+        <item name="android:alpha">1.0</item>
     </style>
     <style name="Widget.Photos.ActionBar.Inverse.Overflow" parent="@*android:style/Widget.Holo.ActionButton.Overflow">
         <item name="android:id">@*com.google.android.apps.photos:id/actionbar_overflow</item>
@@ -127,6 +131,14 @@
         <item name="android:background">@*com.google.android.apps.photos:drawable/photos_photoeditor_commonui_help_text_background</item>
         <item name="android:padding">8.0dip</item>
         <item name="android:visibility">gone</item>
+    </style>
+    <style name="photos_photoeditor_markup_impl_edit_text_style" parent="@*com.google.android.apps.photos:style/TextAppearance.Photos.Headline1">
+        <item name="android:shadowColor">#4dffffff</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">4.0</item>
+        <item name="android:shadowRadius">4.0</item>
+        <item name="android:textAlignment">center</item>
+        <item name="fontFamily">sans-serif</item>
     </style>
     <style name="photos_printingskus_photobook_confirmation_back_button" parent="@*com.google.android.apps.photos:style/Widget.Photos.Button">
         <item name="android:textColor">@*android:color/white</item>

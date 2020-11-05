@@ -94,6 +94,11 @@
     <style name="ChatUi.Suggestion.V3.Hq" parent="@*com.google.android.googlequicksearchbox:style/ChatUi.Suggestion.V3">
         <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
     </style>
+    <style name="ConciergeBlackWidgetText" parent="@*com.google.android.googlequicksearchbox:style/ConciergeBaseWidgetTextTitle">
+        <item name="android:textColor">@*android:color/secondary_text_default_material_dark</item>
+        <item name="android:paddingLeft">@*com.google.android.googlequicksearchbox:dimen/cw_text_horizontal_padding</item>
+        <item name="android:paddingRight">@*com.google.android.googlequicksearchbox:dimen/cw_text_horizontal_padding</item>
+    </style>
     <style name="CorpusBarBottomSheetDialog" parent="@*com.google.android.googlequicksearchbox:style/Theme.Design.Light.BottomSheetDialog">
         <item name="android:colorBackground">@*android:color/transparent</item>
         <item name="android:windowBackground">@*android:color/transparent</item>
@@ -108,6 +113,20 @@
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">0.0dip</item>
         <item name="android:contentDescription">@null</item>
+    </style>
+    <style name="EdgeToEdgeExpandedActionBarButton" parent="@*android:style/Widget.Material.Button.Borderless.Small">
+        <item name="android:textAppearance">@*com.google.android.googlequicksearchbox:style/TextAppearance.Compat.Notification.Title</item>
+        <item name="android:textSize">@*com.google.android.googlequicksearchbox:dimen/notification_action_text_size</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">start|center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">?*android:selectableItemBackground</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:layout_marginEnd">4.0dip</item>
     </style>
     <style name="EntryItemTitleText" parent="@*android:style/TextAppearance.Medium">
         <item name="android:textColor">#ffffffff</item>
@@ -846,7 +865,7 @@
         <item name="android:alpha">1.0</item>
     </style>
     <style name="Widget.MaterialComponents.Snackbar.TextView" parent="@*com.google.android.googlequicksearchbox:style/Widget.AppCompat.TextView">
-        <item name="android:textAppearance">?textAppearanceBody2</item>
+        <item name="android:textAppearance">@*com.google.android.googlequicksearchbox:style/TextAppearance.GoogleMaterial.Body2</item>
         <item name="android:textColor">@*android:color/white</item>
         <item name="android:ellipsize">end</item>
         <item name="android:paddingTop">@*com.google.android.googlequicksearchbox:dimen/design_snackbar_padding_vertical</item>
