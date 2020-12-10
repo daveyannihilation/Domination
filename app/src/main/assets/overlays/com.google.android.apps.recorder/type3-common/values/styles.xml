@@ -2,13 +2,18 @@
 <resources>
     <style name="ActivityThemeBase" parent="@*com.google.android.apps.recorder:style/Theme.GoogleMaterial.DayNight">
         <item name="android:windowBackground">@*android:color/primary_dark_material_dark</item>
+        <item name="android:actionButtonStyle">@*com.google.android.apps.recorder:style/ActionButtonStyle</item>
         <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
         <item name="android:navigationBarColor">@*android:color/transparent</item>
         <item name="*com.google.android.apps.recorder:actionBarStyle">@*com.google.android.apps.recorder:style/TransparentActionBar</item>
+        <item name="*com.google.android.apps.recorder:bottomSheetDialogTheme">@*com.google.android.apps.recorder:style/BaseThemeGoogleMaterialBottomSheetDialog</item>
+        <item name="*com.google.android.apps.recorder:materialAlertDialogTheme">@*com.google.android.apps.recorder:style/BaseThemeGoogleMaterialAlertDialog</item>
     </style>
     <style name="AppTheme.NoActionBar" parent="@*com.google.android.apps.recorder:style/Theme.GoogleMaterial.DayNight.NoActionBar">
         <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
         <item name="android:navigationBarColor">@*android:color/transparent</item>
+        <item name="*com.google.android.apps.recorder:bottomSheetDialogTheme">@*com.google.android.apps.recorder:style/BaseThemeGoogleMaterialBottomSheetDialog</item>
+        <item name="*com.google.android.apps.recorder:materialAlertDialogTheme">@*com.google.android.apps.recorder:style/BaseThemeGoogleMaterialAlertDialog</item>
     </style>
     <style name="AppThemeBase" parent="@*com.google.android.apps.recorder:style/Theme.GoogleMaterial.DayNight">
         <item name="android:windowBackground">@*android:color/background_dark</item>
@@ -29,13 +34,21 @@
         <item name="*com.google.android.apps.recorder:colorSurface">@*android:color/background_dark</item>
     </style>
     <style name="Platform.V25.AppCompat.Light" parent="@*android:style/Theme.Material.NoActionBar" />
-    <style name="Theme.GoogleMaterial.Light" parent="@*com.google.android.apps.recorder:style/Base.Theme.GoogleMaterial.Dark">
-        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
-        <item name="android:windowLightNavigationBar">false</item>
+    <style name="RangeDurationTextStyle" parent="@*com.google.android.apps.recorder:style/ElapsedTimeTextStyle">
+        <item name="android:textSize">11.0sp</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:fontFamily">google-sans-medium</item>
     </style>
-    <style name="Theme.GoogleMaterial.Light.BottomSheetDialog" parent="@*com.google.android.apps.recorder:style/Base.Theme.GoogleMaterial.Dark.BottomSheetDialog">
-        <item name="android:navigationBarColor">@*android:color/primary_dark_material_dark</item>
-        <item name="android:windowLightNavigationBar">false</item>
-        <item name="android:navigationBarDividerColor">@*android:color/transparent</item>
+    <style name="Widget.MaterialComponents.Snackbar.TextView" parent="@*com.google.android.apps.recorder:style/Widget.AppCompat.TextView">
+        <item name="android:textAppearance">@*com.google.android.apps.recorder:style/TextAppearance.GoogleMaterial.Body2</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingTop">@*com.google.android.apps.recorder:dimen/design_snackbar_padding_vertical</item>
+        <item name="android:paddingBottom">@*com.google.android.apps.recorder:dimen/design_snackbar_padding_vertical</item>
+        <item name="android:layout_marginLeft">@*com.google.android.apps.recorder:dimen/mtrl_snackbar_message_margin_horizontal</item>
+        <item name="android:layout_marginRight">@*com.google.android.apps.recorder:dimen/mtrl_snackbar_message_margin_horizontal</item>
+        <item name="android:maxLines">@*com.google.android.apps.recorder:integer/design_snackbar_text_max_lines</item>
+        <item name="android:alpha">@*com.google.android.apps.recorder:dimen/material_emphasis_high_type</item>
+        <item name="android:textAlignment">viewStart</item>
     </style>
 </resources>

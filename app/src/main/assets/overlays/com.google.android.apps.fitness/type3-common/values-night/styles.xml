@@ -1,22 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Base.Theme.GoogleMaterial.Light" parent="@*com.google.android.apps.fitness:style/Base.V14.Theme.GoogleMaterial.Dark">
-        <item name="android:statusBarColor">@*android:color/primary_dark_material_dark</item>
-    </style>
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabText" parent="@*android:style/Widget.Material.ActionBar.TabText" />
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabView" parent="@*android:style/Widget.Material.ActionBar.TabView" />
     <style name="Base.Widget.AppCompat.Light.PopupMenu" parent="@*android:style/Widget.Material.PopupMenu" />
-    <style name="ChartView.Data.Default" parent="@*com.google.android.apps.fitness:style/ChartView.Data">
-        <item name="*com.google.android.apps.fitness:chart_data_background_color">@*com.google.android.apps.fitness:color/fit_blue_chart_background</item>
-        <item name="*com.google.android.apps.fitness:chart_data_color">@*com.google.android.apps.fitness:color/fit_blue</item>
-        <item name="*com.google.android.apps.fitness:chart_data_ghost_color">@*com.google.android.apps.fitness:color/fit_chart_ghost</item>
-        <item name="*com.google.android.apps.fitness:chart_data_light_color">@*com.google.android.apps.fitness:color/fit_blue_chart_light</item>
-        <item name="*com.google.android.apps.fitness:chart_data_shade_color">@*com.google.android.apps.fitness:color/fit_blue_chart_shade</item>
-        <item name="*com.google.android.apps.fitness:chart_marker_color">@*android:color/white</item>
+    <style name="CardView" parent="@*com.google.android.apps.fitness:style/Base.CardView">
+        <item name="*com.google.android.apps.fitness:cardBackgroundColor">@*android:color/background_floating_material_dark</item>
     </style>
     <style name="FitAppTheme" parent="@*com.google.android.apps.fitness:style/FitAppThemeBase">
-        <item name="android:textColorPrimary">@*android:color/white</item>
-        <item name="android:textColorSecondary">@*android:color/secondary_text_default_material_dark</item>
+        <item name="android:textColorPrimary">@*com.google.android.apps.fitness:color/google_daynight_default_color_primary_text</item>
+        <item name="android:textColorSecondary">@*com.google.android.apps.fitness:color/google_daynight_default_color_secondary_text</item>
         <item name="android:dividerHeight">0.0dip</item>
         <item name="android:textColorTertiary">@*android:color/secondary_text_default_material_dark</item>
         <item name="android:listDivider">@*android:color/transparent</item>
@@ -28,9 +20,11 @@
         <item name="*com.google.android.apps.fitness:actionMenuTextColor">@*com.google.android.apps.fitness:color/google_btn_text_color_selector_secondary</item>
         <item name="*com.google.android.apps.fitness:background">@*android:color/background_dark</item>
         <item name="*com.google.android.apps.fitness:bottomNavigationStyle">@*com.google.android.apps.fitness:style/Widget.Fit.BottomNavigationView</item>
+        <item name="*com.google.android.apps.fitness:bottomSheetStyle">@*com.google.android.apps.fitness:style/Widget.Fit.BottomSheet</item>
         <item name="*com.google.android.apps.fitness:collapsingToolbarStyle">@*com.google.android.apps.fitness:style/Widget.Fit.CollapsingToolbar</item>
         <item name="*com.google.android.apps.fitness:colorAccent">@*com.google.android.apps.fitness:color/fit_blue</item>
         <item name="*com.google.android.apps.fitness:colorControlHighlight">@*android:color/white</item>
+        <item name="*com.google.android.apps.fitness:colorControlNormal">@*android:color/secondary_text_default_material_dark</item>
         <item name="*com.google.android.apps.fitness:colorHairlineVariant">@*android:color/white</item>
         <item name="*com.google.android.apps.fitness:colorSurfaceElevated">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.apps.fitness:dialogCornerRadius">@*com.google.android.apps.fitness:dimen/google_dialog_corner_radius</item>
@@ -67,7 +61,6 @@
         <item name="*com.google.android.apps.fitness:lineHeight">20.0sp</item>
     </style>
     <style name="GDI.GM2.Dialog.Ab_LearnMore" parent="@*com.google.android.apps.fitness:style/GDI.GM2.Dialog">
-        <item name="android:textAppearance">@*com.google.android.apps.fitness:style/TextAppearance.GoogleMaterial.Subhead1</item>
         <item name="android:textSize">14.0sp</item>
         <item name="android:textColor">#ffdddddd</item>
         <item name="android:textColorLink">#ff1976d2</item>
@@ -101,68 +94,15 @@
         <item name="android:textColorLink">@*android:color/accent_material_dark</item>
         <item name="android:textColorLinkInverse">@*android:color/accent_material_dark</item>
     </style>
-    <style name="Text.Fit.Toolbar.1" parent="@*com.google.android.apps.fitness:style/TextAppearance.GoogleMaterial.Headline1">
-        <item name="android:textColor">@*android:color/white</item>
-    </style>
-    <style name="Text.Fit.Toolbar.3" parent="@*com.google.android.apps.fitness:style/TextAppearance.GoogleMaterial.Headline3">
-        <item name="android:textColor">@*android:color/white</item>
-    </style>
-    <style name="Text.Fit.Toolbar.4" parent="@*com.google.android.apps.fitness:style/TextAppearance.GoogleMaterial.Headline4">
-        <item name="android:textColor">@*android:color/white</item>
-    </style>
-    <style name="Text.Fit.Toolbar.6" parent="@*com.google.android.apps.fitness:style/TextAppearance.GoogleMaterial.Headline6">
-        <item name="android:textColor">@*android:color/white</item>
-    </style>
-    <style name="TooltipActionButton" parent="@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.Button.TextButton">
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:gravity">center</item>
-        <item name="android:layout_gravity">end</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:maxWidth">210.0dip</item>
-        <item name="android:layout_marginEnd">8.0dip</item>
-    </style>
-    <style name="TooltipDetail" parent="@*com.google.android.apps.fitness:style/TextAppearance.GoogleMaterial.Body2">
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:layout_gravity">fill_horizontal</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:maxWidth">210.0dip</item>
-        <item name="android:lineSpacingExtra">2.0dip</item>
-        <item name="android:layout_marginStart">16.0dip</item>
-        <item name="android:layout_marginEnd">16.0dip</item>
-    </style>
-    <style name="TooltipTitle" parent="@*com.google.android.apps.fitness:style/TextAppearance.GoogleMaterial.Subhead1">
-        <item name="android:textColor">@*android:color/white</item>
-        <item name="android:layout_gravity">fill_horizontal</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">16.0dip</item>
-        <item name="android:maxWidth">210.0dip</item>
-        <item name="android:lineSpacingExtra">8.0dip</item>
-        <item name="android:layout_marginStart">16.0dip</item>
-        <item name="android:layout_marginEnd">16.0dip</item>
-    </style>
-    <style name="Widget.Fit.CollapsingToolbar" parent="@*com.google.android.apps.fitness:style/Widget.Design.CollapsingToolbar">
-        <item name="*com.google.android.apps.fitness:collapsedTitleTextAppearance">@*com.google.android.apps.fitness:style/Text.Fit.Toolbar.6</item>
-        <item name="*com.google.android.apps.fitness:contentScrim">@*android:color/primary_material_dark</item>
-        <item name="*com.google.android.apps.fitness:expandedTitleMarginBottom">@*com.google.android.apps.fitness:dimen/spacing_list</item>
-        <item name="*com.google.android.apps.fitness:expandedTitleMarginStart">@*com.google.android.apps.fitness:dimen/toolbar_inset</item>
-        <item name="*com.google.android.apps.fitness:expandedTitleTextAppearance">@*com.google.android.apps.fitness:style/Text.Fit.Toolbar.3</item>
-    </style>
-    <style name="Widget.GoogleMaterial.FloatingActionButton" parent="@*com.google.android.apps.fitness:style/Widget.MaterialComponents.FloatingActionButton">
-        <item name="*com.google.android.apps.fitness:backgroundTint">@*android:color/button_material_dark</item>
-        <item name="*com.google.android.apps.fitness:elevation">@*com.google.android.apps.fitness:dimen/google_fab_elevation</item>
+    <style name="Widget.GoogleMaterial.Snackbar" parent="@*com.google.android.apps.fitness:style/Widget.MaterialComponents.Snackbar">
+        <item name="*com.google.android.apps.fitness:actionTextColorAlpha">@*com.google.android.apps.fitness:dimen/design_snackbar_action_text_color_alpha</item>
+        <item name="*com.google.android.apps.fitness:backgroundTint">@*android:color/background_floating_material_dark</item>
         <item name="*com.google.android.apps.fitness:enforceMaterialTheme">true</item>
-        <item name="*com.google.android.apps.fitness:hoveredFocusedTranslationZ">@*com.google.android.apps.fitness:dimen/google_fab_translation_z_hovered_focused</item>
-        <item name="*com.google.android.apps.fitness:pressedTranslationZ">@*com.google.android.apps.fitness:dimen/google_fab_translation_z_pressed</item>
-        <item name="*com.google.android.apps.fitness:rippleColor">@*android:color/ripple_material_dark</item>
-        <item name="*com.google.android.apps.fitness:shapeAppearanceOverlay">@*com.google.android.apps.fitness:style/ShapeAppearanceOverlay.GoogleMaterial.FloatingActionButton</item>
-        <item name="*com.google.android.apps.fitness:tint">@*com.google.android.apps.fitness:color/google_blue500</item>
+        <item name="*com.google.android.apps.fitness:materialThemeOverlay">@*com.google.android.apps.fitness:style/ThemeOverlay.GoogleMaterial.Snackbar</item>
     </style>
-    <style name="Widget.GoogleMaterial.ProductLockupView.Dark" parent="@*com.google.android.apps.fitness:style/Widget.GoogleMaterial.ProductLockupView">
-        <item name="*com.google.android.apps.fitness:logoColor">light</item>
-        <item name="*com.google.android.apps.fitness:productNameTextColor">@*android:color/white</item>
+    <style name="Widget.GoogleMaterial.Snackbar.TextView" parent="@*com.google.android.apps.fitness:style/Widget.MaterialComponents.Snackbar.TextView">
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:alpha">1.0</item>
     </style>
     <style name="Widget.MaterialComponents.AppBarLayout.Surface" parent="@*com.google.android.apps.fitness:style/Widget.Design.AppBarLayout">
         <item name="android:background">@*android:color/primary_material_dark</item>
