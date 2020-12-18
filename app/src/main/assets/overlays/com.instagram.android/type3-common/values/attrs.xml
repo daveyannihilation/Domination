@@ -808,6 +808,7 @@
     <attr name="fbpay_input_field_horizontal_padding" format="dimension" />
     <attr name="fbpay_input_field_margin_bottom" format="dimension" />
     <attr name="fbpay_input_field_margin_top" format="dimension" />
+    <attr name="fbpay_input_field_right_chevron" format="reference" />
     <attr name="fbpay_input_field_text_top_padding" format="dimension" />
     <attr name="fbpay_input_field_top_padding" format="dimension" />
     <attr name="fbpay_light_divider" format="reference" />
@@ -824,6 +825,10 @@
     <attr name="fbpay_positive_color" format="color" />
     <attr name="fbpay_primary_text_color" format="color" />
     <attr name="fbpay_primary_text_style" format="reference" />
+    <attr name="fbpay_qr_code_description_style" format="reference" />
+    <attr name="fbpay_qr_code_image_style" format="reference" />
+    <attr name="fbpay_qr_code_link_text_style" format="reference" />
+    <attr name="fbpay_qr_code_share_button_style" format="reference" />
     <attr name="fbpay_secondary_text_color" format="color" />
     <attr name="fbpay_secondary_text_style" format="reference" />
     <attr name="fbpay_tertiary_text_style" format="reference" />
@@ -1632,9 +1637,6 @@
     <attr name="rowHeaderDivider" format="reference" />
     <attr name="rowUserInfo" format="reference" />
     <attr name="saturation" format="float" />
-    <attr name="scButtonBackgroundColor" format="reference|color" />
-    <attr name="scButtonCornerRadius" format="reference|dimension" />
-    <attr name="scButtonPressedBackgroundColor" format="reference|color" />
     <attr name="scButtonTextColor" format="reference|color" />
     <attr name="scCaptureHelpFadeColor" format="reference|color" />
     <attr name="scCaptureHelpIconsBackgroundColor" format="reference|color" />
@@ -1669,6 +1671,7 @@
     <attr name="sc_positive" format="reference|color" />
     <attr name="sc_primary_button_background" format="reference|color" />
     <attr name="sc_primary_button_background_drawable" format="reference" />
+    <attr name="sc_primary_button_corner_radius" format="reference|dimension" />
     <attr name="sc_primary_button_text" format="reference|color" />
     <attr name="sc_primary_button_text_size" format="reference|dimension" />
     <attr name="sc_primary_icon" format="reference|color" />
@@ -1676,6 +1679,7 @@
     <attr name="sc_primary_text_on_media" format="reference|color" />
     <attr name="sc_secondary_button_background" format="reference|color" />
     <attr name="sc_secondary_button_background_drawable" format="reference" />
+    <attr name="sc_secondary_button_corner_radius" format="reference|dimension" />
     <attr name="sc_secondary_button_text" format="reference|color" />
     <attr name="sc_secondary_button_text_size" format="reference|dimension" />
     <attr name="sc_secondary_icon" format="reference|color" />
@@ -1725,6 +1729,9 @@
     <attr name="seekBarStyle" format="reference" />
     <attr name="seekBarTextAlpha" format="integer" />
     <attr name="seekBarTextColor" format="color" />
+    <attr name="seekbarCornerRadius" format="dimension" />
+    <attr name="seekbarHeight" format="dimension" />
+    <attr name="seekbarWidth" format="dimension" />
     <attr name="seenMediaAlpha" format="float" />
     <attr name="segmentColor" format="color" />
     <attr name="segmentSpacing" format="dimension" />
@@ -2093,6 +2100,7 @@
         <enum name="src_in" value="5" />
         <enum name="src_over" value="3" />
     </attr>
+    <attr name="timelineHeight" format="dimension" />
     <attr name="tint" format="color" />
     <attr name="tintMode">
         <enum name="add" value="16" />
@@ -2301,179 +2309,179 @@
     <attr name="APKTOOL_DUMMY_260" />
     <attr name="APKTOOL_DUMMY_261" />
     <attr name="APKTOOL_DUMMY_262" />
-    <attr name="APKTOOL_DUMMY_2e4" />
-    <attr name="APKTOOL_DUMMY_2e5" />
-    <attr name="APKTOOL_DUMMY_2e6" />
-    <attr name="APKTOOL_DUMMY_2e8" />
     <attr name="APKTOOL_DUMMY_2e9" />
     <attr name="APKTOOL_DUMMY_2ea" />
     <attr name="APKTOOL_DUMMY_2eb" />
-    <attr name="APKTOOL_DUMMY_2ec" />
     <attr name="APKTOOL_DUMMY_2ed" />
-    <attr name="APKTOOL_DUMMY_315" />
-    <attr name="APKTOOL_DUMMY_316" />
-    <attr name="APKTOOL_DUMMY_339" />
-    <attr name="APKTOOL_DUMMY_33a" />
-    <attr name="APKTOOL_DUMMY_33d" />
-    <attr name="APKTOOL_DUMMY_351" />
-    <attr name="APKTOOL_DUMMY_361" />
-    <attr name="APKTOOL_DUMMY_384" />
-    <attr name="APKTOOL_DUMMY_385" />
-    <attr name="APKTOOL_DUMMY_393" />
-    <attr name="APKTOOL_DUMMY_395" />
-    <attr name="APKTOOL_DUMMY_3a2" />
-    <attr name="APKTOOL_DUMMY_3a3" />
-    <attr name="APKTOOL_DUMMY_3ae" />
-    <attr name="APKTOOL_DUMMY_3b0" />
-    <attr name="APKTOOL_DUMMY_3b1" />
-    <attr name="APKTOOL_DUMMY_3b2" />
+    <attr name="APKTOOL_DUMMY_2ee" />
+    <attr name="APKTOOL_DUMMY_2ef" />
+    <attr name="APKTOOL_DUMMY_2f0" />
+    <attr name="APKTOOL_DUMMY_2f1" />
+    <attr name="APKTOOL_DUMMY_2f2" />
+    <attr name="APKTOOL_DUMMY_31a" />
+    <attr name="APKTOOL_DUMMY_31b" />
+    <attr name="APKTOOL_DUMMY_33e" />
+    <attr name="APKTOOL_DUMMY_33f" />
+    <attr name="APKTOOL_DUMMY_342" />
+    <attr name="APKTOOL_DUMMY_356" />
+    <attr name="APKTOOL_DUMMY_366" />
+    <attr name="APKTOOL_DUMMY_389" />
+    <attr name="APKTOOL_DUMMY_38a" />
+    <attr name="APKTOOL_DUMMY_398" />
+    <attr name="APKTOOL_DUMMY_39a" />
+    <attr name="APKTOOL_DUMMY_3a7" />
+    <attr name="APKTOOL_DUMMY_3a8" />
     <attr name="APKTOOL_DUMMY_3b3" />
-    <attr name="APKTOOL_DUMMY_3b4" />
     <attr name="APKTOOL_DUMMY_3b5" />
+    <attr name="APKTOOL_DUMMY_3b6" />
     <attr name="APKTOOL_DUMMY_3b7" />
+    <attr name="APKTOOL_DUMMY_3b8" />
+    <attr name="APKTOOL_DUMMY_3b9" />
     <attr name="APKTOOL_DUMMY_3ba" />
-    <attr name="APKTOOL_DUMMY_3bb" />
     <attr name="APKTOOL_DUMMY_3bc" />
-    <attr name="APKTOOL_DUMMY_3bd" />
-    <attr name="APKTOOL_DUMMY_3be" />
+    <attr name="APKTOOL_DUMMY_3bf" />
+    <attr name="APKTOOL_DUMMY_3c0" />
+    <attr name="APKTOOL_DUMMY_3c1" />
     <attr name="APKTOOL_DUMMY_3c2" />
     <attr name="APKTOOL_DUMMY_3c3" />
-    <attr name="APKTOOL_DUMMY_3c4" />
+    <attr name="APKTOOL_DUMMY_3c7" />
     <attr name="APKTOOL_DUMMY_3c8" />
-    <attr name="APKTOOL_DUMMY_3cb" />
-    <attr name="APKTOOL_DUMMY_3cc" />
-    <attr name="APKTOOL_DUMMY_3cf" />
+    <attr name="APKTOOL_DUMMY_3c9" />
+    <attr name="APKTOOL_DUMMY_3cd" />
+    <attr name="APKTOOL_DUMMY_3d0" />
+    <attr name="APKTOOL_DUMMY_3d1" />
     <attr name="APKTOOL_DUMMY_3d4" />
-    <attr name="APKTOOL_DUMMY_3d6" />
     <attr name="APKTOOL_DUMMY_3d9" />
-    <attr name="APKTOOL_DUMMY_3dd" />
+    <attr name="APKTOOL_DUMMY_3db" />
     <attr name="APKTOOL_DUMMY_3de" />
-    <attr name="APKTOOL_DUMMY_3df" />
-    <attr name="APKTOOL_DUMMY_40d" />
-    <attr name="APKTOOL_DUMMY_40e" />
-    <attr name="APKTOOL_DUMMY_40f" />
-    <attr name="APKTOOL_DUMMY_416" />
-    <attr name="APKTOOL_DUMMY_417" />
-    <attr name="APKTOOL_DUMMY_41a" />
+    <attr name="APKTOOL_DUMMY_3e2" />
+    <attr name="APKTOOL_DUMMY_3e3" />
+    <attr name="APKTOOL_DUMMY_3e4" />
+    <attr name="APKTOOL_DUMMY_412" />
+    <attr name="APKTOOL_DUMMY_413" />
+    <attr name="APKTOOL_DUMMY_414" />
     <attr name="APKTOOL_DUMMY_41b" />
     <attr name="APKTOOL_DUMMY_41c" />
-    <attr name="APKTOOL_DUMMY_41d" />
-    <attr name="APKTOOL_DUMMY_41e" />
     <attr name="APKTOOL_DUMMY_41f" />
     <attr name="APKTOOL_DUMMY_420" />
     <attr name="APKTOOL_DUMMY_421" />
     <attr name="APKTOOL_DUMMY_422" />
     <attr name="APKTOOL_DUMMY_423" />
     <attr name="APKTOOL_DUMMY_424" />
+    <attr name="APKTOOL_DUMMY_425" />
     <attr name="APKTOOL_DUMMY_426" />
     <attr name="APKTOOL_DUMMY_427" />
     <attr name="APKTOOL_DUMMY_428" />
     <attr name="APKTOOL_DUMMY_429" />
+    <attr name="APKTOOL_DUMMY_42b" />
     <attr name="APKTOOL_DUMMY_42c" />
     <attr name="APKTOOL_DUMMY_42d" />
+    <attr name="APKTOOL_DUMMY_42e" />
     <attr name="APKTOOL_DUMMY_431" />
-    <attr name="APKTOOL_DUMMY_44b" />
-    <attr name="APKTOOL_DUMMY_44f" />
+    <attr name="APKTOOL_DUMMY_432" />
+    <attr name="APKTOOL_DUMMY_436" />
     <attr name="APKTOOL_DUMMY_450" />
-    <attr name="APKTOOL_DUMMY_451" />
-    <attr name="APKTOOL_DUMMY_452" />
-    <attr name="APKTOOL_DUMMY_453" />
-    <attr name="APKTOOL_DUMMY_460" />
-    <attr name="APKTOOL_DUMMY_467" />
-    <attr name="APKTOOL_DUMMY_468" />
+    <attr name="APKTOOL_DUMMY_454" />
+    <attr name="APKTOOL_DUMMY_455" />
+    <attr name="APKTOOL_DUMMY_456" />
+    <attr name="APKTOOL_DUMMY_457" />
+    <attr name="APKTOOL_DUMMY_458" />
+    <attr name="APKTOOL_DUMMY_465" />
     <attr name="APKTOOL_DUMMY_46c" />
-    <attr name="APKTOOL_DUMMY_46e" />
-    <attr name="APKTOOL_DUMMY_48c" />
-    <attr name="APKTOOL_DUMMY_48f" />
-    <attr name="APKTOOL_DUMMY_490" />
+    <attr name="APKTOOL_DUMMY_46d" />
+    <attr name="APKTOOL_DUMMY_471" />
+    <attr name="APKTOOL_DUMMY_473" />
     <attr name="APKTOOL_DUMMY_491" />
-    <attr name="APKTOOL_DUMMY_492" />
-    <attr name="APKTOOL_DUMMY_493" />
     <attr name="APKTOOL_DUMMY_494" />
+    <attr name="APKTOOL_DUMMY_495" />
+    <attr name="APKTOOL_DUMMY_496" />
+    <attr name="APKTOOL_DUMMY_497" />
     <attr name="APKTOOL_DUMMY_498" />
     <attr name="APKTOOL_DUMMY_499" />
     <attr name="APKTOOL_DUMMY_49d" />
     <attr name="APKTOOL_DUMMY_49e" />
-    <attr name="APKTOOL_DUMMY_49f" />
-    <attr name="APKTOOL_DUMMY_4a0" />
-    <attr name="APKTOOL_DUMMY_4a7" />
-    <attr name="APKTOOL_DUMMY_4b5" />
-    <attr name="APKTOOL_DUMMY_4b6" />
-    <attr name="APKTOOL_DUMMY_4b7" />
-    <attr name="APKTOOL_DUMMY_4b8" />
+    <attr name="APKTOOL_DUMMY_4a2" />
+    <attr name="APKTOOL_DUMMY_4a3" />
+    <attr name="APKTOOL_DUMMY_4a4" />
+    <attr name="APKTOOL_DUMMY_4a5" />
+    <attr name="APKTOOL_DUMMY_4ac" />
+    <attr name="APKTOOL_DUMMY_4ba" />
+    <attr name="APKTOOL_DUMMY_4bb" />
     <attr name="APKTOOL_DUMMY_4bc" />
-    <attr name="APKTOOL_DUMMY_4c7" />
-    <attr name="APKTOOL_DUMMY_4ca" />
+    <attr name="APKTOOL_DUMMY_4bd" />
+    <attr name="APKTOOL_DUMMY_4c1" />
     <attr name="APKTOOL_DUMMY_4cc" />
-    <attr name="APKTOOL_DUMMY_4df" />
-    <attr name="APKTOOL_DUMMY_4e0" />
-    <attr name="APKTOOL_DUMMY_4e1" />
-    <attr name="APKTOOL_DUMMY_4e2" />
+    <attr name="APKTOOL_DUMMY_4cf" />
+    <attr name="APKTOOL_DUMMY_4d1" />
+    <attr name="APKTOOL_DUMMY_4e4" />
     <attr name="APKTOOL_DUMMY_4e5" />
-    <attr name="APKTOOL_DUMMY_4f5" />
-    <attr name="APKTOOL_DUMMY_504" />
-    <attr name="APKTOOL_DUMMY_520" />
-    <attr name="APKTOOL_DUMMY_521" />
-    <attr name="APKTOOL_DUMMY_551" />
-    <attr name="APKTOOL_DUMMY_552" />
-    <attr name="APKTOOL_DUMMY_555" />
+    <attr name="APKTOOL_DUMMY_4e6" />
+    <attr name="APKTOOL_DUMMY_4e7" />
+    <attr name="APKTOOL_DUMMY_4ea" />
+    <attr name="APKTOOL_DUMMY_4fa" />
+    <attr name="APKTOOL_DUMMY_509" />
+    <attr name="APKTOOL_DUMMY_525" />
+    <attr name="APKTOOL_DUMMY_526" />
+    <attr name="APKTOOL_DUMMY_556" />
     <attr name="APKTOOL_DUMMY_557" />
-    <attr name="APKTOOL_DUMMY_590" />
-    <attr name="APKTOOL_DUMMY_5b9" />
-    <attr name="APKTOOL_DUMMY_614" />
-    <attr name="APKTOOL_DUMMY_615" />
-    <attr name="APKTOOL_DUMMY_616" />
-    <attr name="APKTOOL_DUMMY_61f" />
+    <attr name="APKTOOL_DUMMY_55a" />
+    <attr name="APKTOOL_DUMMY_55c" />
+    <attr name="APKTOOL_DUMMY_594" />
+    <attr name="APKTOOL_DUMMY_5c0" />
+    <attr name="APKTOOL_DUMMY_61b" />
+    <attr name="APKTOOL_DUMMY_61c" />
+    <attr name="APKTOOL_DUMMY_61d" />
     <attr name="APKTOOL_DUMMY_626" />
-    <attr name="APKTOOL_DUMMY_62e" />
-    <attr name="APKTOOL_DUMMY_62f" />
-    <attr name="APKTOOL_DUMMY_63d" />
-    <attr name="APKTOOL_DUMMY_647" />
-    <attr name="APKTOOL_DUMMY_649" />
-    <attr name="APKTOOL_DUMMY_64a" />
+    <attr name="APKTOOL_DUMMY_62d" />
+    <attr name="APKTOOL_DUMMY_635" />
+    <attr name="APKTOOL_DUMMY_636" />
+    <attr name="APKTOOL_DUMMY_644" />
     <attr name="APKTOOL_DUMMY_64e" />
-    <attr name="APKTOOL_DUMMY_64f" />
-    <attr name="APKTOOL_DUMMY_653" />
-    <attr name="APKTOOL_DUMMY_654" />
+    <attr name="APKTOOL_DUMMY_650" />
+    <attr name="APKTOOL_DUMMY_651" />
     <attr name="APKTOOL_DUMMY_655" />
     <attr name="APKTOOL_DUMMY_656" />
-    <attr name="APKTOOL_DUMMY_668" />
-    <attr name="APKTOOL_DUMMY_67b" />
-    <attr name="APKTOOL_DUMMY_6a3" />
-    <attr name="APKTOOL_DUMMY_6a6" />
-    <attr name="APKTOOL_DUMMY_6a8" />
-    <attr name="APKTOOL_DUMMY_6a9" />
+    <attr name="APKTOOL_DUMMY_65a" />
+    <attr name="APKTOOL_DUMMY_65b" />
+    <attr name="APKTOOL_DUMMY_65c" />
+    <attr name="APKTOOL_DUMMY_65d" />
+    <attr name="APKTOOL_DUMMY_66f" />
+    <attr name="APKTOOL_DUMMY_682" />
     <attr name="APKTOOL_DUMMY_6aa" />
-    <attr name="APKTOOL_DUMMY_6d1" />
-    <attr name="APKTOOL_DUMMY_6d2" />
-    <attr name="APKTOOL_DUMMY_6e8" />
-    <attr name="APKTOOL_DUMMY_6e9" />
-    <attr name="APKTOOL_DUMMY_6ea" />
+    <attr name="APKTOOL_DUMMY_6ad" />
+    <attr name="APKTOOL_DUMMY_6af" />
+    <attr name="APKTOOL_DUMMY_6b0" />
+    <attr name="APKTOOL_DUMMY_6b1" />
+    <attr name="APKTOOL_DUMMY_6d8" />
+    <attr name="APKTOOL_DUMMY_6d9" />
+    <attr name="APKTOOL_DUMMY_6ef" />
     <attr name="APKTOOL_DUMMY_6f0" />
     <attr name="APKTOOL_DUMMY_6f1" />
-    <attr name="APKTOOL_DUMMY_6f2" />
-    <attr name="APKTOOL_DUMMY_717" />
-    <attr name="APKTOOL_DUMMY_718" />
-    <attr name="APKTOOL_DUMMY_719" />
-    <attr name="APKTOOL_DUMMY_71b" />
-    <attr name="APKTOOL_DUMMY_71c" />
-    <attr name="APKTOOL_DUMMY_71d" />
-    <attr name="APKTOOL_DUMMY_71e" />
+    <attr name="APKTOOL_DUMMY_6f7" />
+    <attr name="APKTOOL_DUMMY_6f8" />
+    <attr name="APKTOOL_DUMMY_6f9" />
+    <attr name="APKTOOL_DUMMY_71f" />
+    <attr name="APKTOOL_DUMMY_720" />
+    <attr name="APKTOOL_DUMMY_721" />
+    <attr name="APKTOOL_DUMMY_723" />
+    <attr name="APKTOOL_DUMMY_724" />
     <attr name="APKTOOL_DUMMY_725" />
-    <attr name="APKTOOL_DUMMY_727" />
+    <attr name="APKTOOL_DUMMY_726" />
+    <attr name="APKTOOL_DUMMY_72d" />
     <attr name="APKTOOL_DUMMY_72f" />
-    <attr name="APKTOOL_DUMMY_730" />
-    <attr name="APKTOOL_DUMMY_731" />
-    <attr name="APKTOOL_DUMMY_73e" />
-    <attr name="APKTOOL_DUMMY_73f" />
-    <attr name="APKTOOL_DUMMY_74c" />
+    <attr name="APKTOOL_DUMMY_737" />
+    <attr name="APKTOOL_DUMMY_738" />
+    <attr name="APKTOOL_DUMMY_739" />
+    <attr name="APKTOOL_DUMMY_746" />
+    <attr name="APKTOOL_DUMMY_747" />
     <attr name="APKTOOL_DUMMY_754" />
-    <attr name="APKTOOL_DUMMY_755" />
-    <attr name="APKTOOL_DUMMY_756" />
-    <attr name="APKTOOL_DUMMY_76c" />
-    <attr name="APKTOOL_DUMMY_76d" />
-    <attr name="APKTOOL_DUMMY_76e" />
-    <attr name="APKTOOL_DUMMY_76f" />
-    <attr name="APKTOOL_DUMMY_770" />
-    <attr name="APKTOOL_DUMMY_771" />
+    <attr name="APKTOOL_DUMMY_75c" />
+    <attr name="APKTOOL_DUMMY_75d" />
+    <attr name="APKTOOL_DUMMY_75e" />
+    <attr name="APKTOOL_DUMMY_774" />
+    <attr name="APKTOOL_DUMMY_775" />
+    <attr name="APKTOOL_DUMMY_776" />
+    <attr name="APKTOOL_DUMMY_777" />
+    <attr name="APKTOOL_DUMMY_778" />
+    <attr name="APKTOOL_DUMMY_779" />
 </resources>
